@@ -5,7 +5,7 @@ the table schemas used.
 
 '''
 import yaml
-import pandas 
+import pandas as pd
 from jsonpath_ng import parse 
 from pathlib import Path
 dd_key = {
