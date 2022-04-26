@@ -529,7 +529,6 @@ fields:
   title: 'Drug use count: other'
   type: integer
 - constraints:
-    maxLength: 80
     required: false
   custom:
     jcoin:core_measure_id: S4z
@@ -545,7 +544,6 @@ fields:
   title: 'Drug use: description of other drugs'
   type: string
 - constraints:
-    maxLength: 160
     required: true
   custom:
     jcoin:core_measure_id: S5
