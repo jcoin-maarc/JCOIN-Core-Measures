@@ -1,0 +1,308 @@
+{
+    "fields": [
+        {
+            "name": "jdc_person_id",
+            "title": "JCOIN data commons person identifier",
+            "type": "string",
+            "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
+            "constraints": {
+                "required": true,
+                "maxLength": 9
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Record and linkage",
+                "jcoin:final_variable_name": "jdc_person_id"
+            }
+        },
+        {
+            "name": "quarter_enrolled",
+            "title": "Quarter Enrolled",
+            "type": "string",
+            "description": "The financial quarter and year of enrollment",
+            "constraints": {
+                "required": true,
+                "maxLength": 6,
+                "pattern": "[0-9]{4}Q[0-9]"
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Enrollment",
+                "jcoin:final_variable_name": "quarter_enrolled"
+            }
+        },
+        {
+            "name": "state_of_site_enrollment",
+            "title": "State of Site For Enrollment",
+            "type": "string",
+            "description": "The U.S. State abbreviation of the site where client (participant) was initially enrolled",
+            "constraints": {
+                "required": true,
+                "maxLength": 2,
+                "pattern": "[A-Z][A-Z]"
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Enrollment",
+                "jcoin:final_variable_name": "state of site"
+            }
+        },
+        {
+            "name": "current_study_status",
+            "title": "Current Study Status",
+            "type": "string",
+            "description": "A summary of the current status where client (participant) is in study",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "On study",
+                    "Dropped out",
+                    "Withdrawn by investigator",
+                    "Completed study"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Enrollment",
+                "jcoin:final_variable_name": "current_study_status"
+            }
+        },
+        {
+            "name": "o2",
+            "title": "Gender Identity",
+            "type": "string",
+            "description": "Gender identity",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Male",
+                    "Female",
+                    "Transgender man/trans man/female-to-male (FTM)",
+                    "Transgender woman/trans woman/male-to-female (MTF)",
+                    "Genderqueer/gender nonconforming/neither exclusively male nor female",
+                    "Additional gender category (or other)",
+                    "Not reported"
+                ]
+            },
+            "custom": {
+                "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your gender identity?",
+                "jcoin:core_measure_id": "o2",
+                "jcoin:final_variable_name": "gender_identity_long"
+            }
+        },
+        {
+            "name": "d4b",
+            "title": "Gender Identity (condensed)",
+            "type": "string",
+            "description": "A condensed version of the gender identity common data element",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Male",
+                    "Female",
+                    "Transgender",
+                    "Gender nonconforming",
+                    "Something else",
+                    "Not reported"
+                ]
+            },
+            "custom": {
+                "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your gender identity?",
+                "jcoin:core_measure_id": "d4b",
+                "jcoin:final_variable_name": "gender identity_short"
+            }
+        },
+        {
+            "name": "d3_white",
+            "title": "Race: White",
+            "type": "string",
+            "description": "Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_white",
+                "heal:common_data_element_code": "C41261",
+                "heal:common_data_element_system": "NCI Thesaurus"
+            }
+        },
+        {
+            "name": "d3_black",
+            "title": "Race: Black or African American",
+            "type": "string",
+            "description": "A person having origins in any of the Black racial groups of Africa. Terms such as \"Haitian\" or \"Negro\" can be used in addition to \"Black or African American\". (OMB)",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_black",
+                "heal:common_data_element_code": "C16352",
+                "heal:common_data_element_system": "NCI Thesaurus"
+            }
+        },
+        {
+            "name": "d3_american_indian",
+            "title": "Race: American Indian or Alaska Native",
+            "type": "string",
+            "description": "Denotes a person having origins in one of the indigenous peoples of North America, who lived on the continent prior to the European colonization. The term includes individuals belonging to a large number of tribes, states, and ethnic groups, many of them still enduring as communities.",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_american_indian",
+                "heal:common_data_element_code": "C41259",
+                "heal:common_data_element_system": "NCI Thesaurus"
+            }
+        },
+        {
+            "name": "d3_hawaiian",
+            "title": "Race: Native Hawaiian or Other Pacific Islander",
+            "type": "string",
+            "description": "Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_hawaiian",
+                "heal:common_data_element_code": "C41219",
+                "heal:common_data_element_system": "NCI Thesaurus"
+            }
+        },
+        {
+            "name": "d3_asian",
+            "title": "Race: Asian",
+            "type": "string",
+            "description": "A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (OMB)",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_asian",
+                "heal:common_data_element_code": "C41260",
+                "heal:common_data_element_system": "NCI Thesaurus"
+            }
+        },
+        {
+            "name": "d3_other",
+            "title": "Race: Other",
+            "type": "string",
+            "description": "A person having origins in a race not identified with other racial categories presented",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_other"
+            }
+        },
+        {
+            "name": "d3_specify_tribe",
+            "title": "Race: American indian principal tribe or community specified",
+            "type": "string",
+            "description": "The specific principal tribe or community if the person answered answered 'yes' to this racial category",
+            "constraints": {
+                "required": true,
+                "maxLength": 80
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_specify_american_indian_tribe"
+            }
+        },
+        {
+            "name": "d3_specify_other",
+            "title": "Race: Other specified",
+            "type": "string",
+            "description": "The specific racial category of a person having origins in a race not identified with other racial categories presented",
+            "constraints": {
+                "required": true,
+                "maxLength": 80
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your race? SELECT ALL THAT APPLY",
+                "jcoin:core_measure_id": "d3",
+                "jcoin:final_variable_name": "race_specify_other"
+            }
+        },
+        {
+            "name": "d2",
+            "title": "Hispanic, Latino, or Spanish Origin",
+            "type": "string",
+            "description": "A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Are you of Hispanic, Latino, or Spanish origin?",
+                "jcoin:core_measure_id": "d2",
+                "jcoin:final_variable_name": "hispanic"
+            }
+        }
+    ],
+    "primaryKey": [
+        "jdc_person_id"
+    ],
+    "missingValues": [
+        "NaN",
+        "NA",
+        "",
+        "."
+    ],
+    "description": "Baseline Fields: Measures collected only at baseline "
+}

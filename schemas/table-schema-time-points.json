@@ -1,0 +1,1462 @@
+{
+    "fields": [
+        {
+            "name": "jdc_person_id",
+            "title": "JCOIN data commons person identifier",
+            "type": "string",
+            "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
+            "constraints": {
+                "required": true,
+                "maxLength": 9,
+                "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Record and linkage",
+                "jcoin:final_variable_name": "jdc_person_id"
+            }
+        },
+        {
+            "name": "visit_number",
+            "title": "Visit Number",
+            "type": "integer",
+            "description": "A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Record and linkage",
+                "jcoin:final_variable_name": "visit_number"
+            }
+        },
+        {
+            "name": "visit_type",
+            "title": "Visit Type",
+            "type": "string",
+            "description": "The visit type/category (either baseline or follow up)",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Baseline",
+                    "Follow-up"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Record and linkage",
+                "jcoin:final_variable_name": "visit_type"
+            }
+        },
+        {
+            "name": "s1a",
+            "title": "Last time drug use",
+            "type": "string",
+            "description": "Last time a person used alcohol or other drugs weekly or more often",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you used alcohol or other drugs weekly or more often?",
+                "jcoin:core_measure_id": "S1a",
+                "jcoin:final_variable_name": "last_drug_use"
+            }
+        },
+        {
+            "name": "s1b",
+            "title": "Last time drug use: getting, using, or recovering",
+            "type": "string",
+            "description": "Last time a person spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)?",
+                "jcoin:core_measure_id": "S1b",
+                "jcoin:final_variable_name": "last_drug_get_use_recover"
+            }
+        },
+        {
+            "name": "s1c",
+            "title": "Last time drug use: social dysfunction",
+            "type": "string",
+            "description": "Last time a person kept using alcohol or other drugs even though it was causing social  problems, leading to fights, or getting you into trouble with other people",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people?",
+                "jcoin:core_measure_id": "S1c",
+                "jcoin:final_variable_name": "last_drug_use_social_dysfunction"
+            }
+        },
+        {
+            "name": "s1d",
+            "title": "Last time drug use: work or life dysfunction",
+            "type": "string",
+            "description": "Last time a person's use of alcohol or other drugs caused giving up or reducing involvement in activities at work, school, home or social events",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events?",
+                "jcoin:core_measure_id": "S1d",
+                "jcoin:final_variable_name": "last_drug_use_work_life_dysfunction"
+            }
+        },
+        {
+            "name": "s1e",
+            "title": "Last time drug use: withdrawal",
+            "type": "string",
+            "description": "Last time a person had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or used any  alcohol or other drugs to stop being sick or avoid withdrawal problems",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems?",
+                "jcoin:core_measure_id": "S1e",
+                "jcoin:final_variable_name": "last_drug_use_withdrawal"
+            }
+        },
+        {
+            "name": "s2a",
+            "title": "Last time drug use: any opioids",
+            "type": "string",
+            "description": "Last time a person used any kind of heroin, fentanyl, or other opioid",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_id": "S2a",
+                "jcoin:final_variable_name": "last_time_opioid_use"
+            }
+        },
+        {
+            "name": "s2b",
+            "title": "Last time drug use: opioid overdose",
+            "type": "string",
+            "description": "Last time a person had an opioid overdose",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]",
+                "jcoin:core_measure_id": "S2b",
+                "jcoin:final_variable_name": "last_time_opioid_overdose"
+            }
+        },
+        {
+            "name": "s2c",
+            "title": "Last time drug use: OUD medication-assisted treatment",
+            "type": "string",
+            "description": "Last time a person had a medication assisted treatment for opioid use disorder",
+            "constraints": {
+                "required": false,
+                "enum": [
+                    "Never",
+                    "More than a year ago",
+                    "4 to 12 months ago",
+                    "2 to 3 months ago",
+                    "Past month",
+                    "Do not know"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "When was the last time you went to any kind of medication assisted treatment for opioid use disorder?",
+                "jcoin:core_measure_id": "S2c",
+                "jcoin:final_variable_name": "last_time_opioid_med_treatment"
+            }
+        },
+        {
+            "name": "s3a",
+            "title": "Opioid Overdose Count",
+            "type": "integer",
+            "description": "Number of times a person overdosed on heroin, fentanyl or other opioids during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention",
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you overdose on heroin, fentanyl or other opioids?  [Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention]",
+                "jcoin:core_measure_id": "S3a",
+                "jcoin:final_variable_name": "opioid_overdose_ct"
+            }
+        },
+        {
+            "name": "s3b",
+            "title": "Opioid Overdose Count: Receiving Naloxone",
+            "type": "integer",
+            "description": "Number of times a person received naloxone (Evzio or Narcan) to reverse your overdose during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention",
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you receive naloxone (Evzio or Narcan) to reverse your overdose?",
+                "jcoin:core_measure_id": "S3b",
+                "jcoin:final_variable_name": "opioid_overdose_naloxone_ct"
+            }
+        },
+        {
+            "name": "s3c",
+            "title": "Person Who Administered Nalaxone for Overdose",
+            "type": "array",
+            "description": "People who administered naloxone or narcan",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "TODO: expand fields to each of the possible selections",
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)",
+                "jcoin:core_measure_id": "S3c",
+                "jcoin:final_variable_name": "who_administered_naloxone"
+            }
+        },
+        {
+            "name": "s3d",
+            "title": "Drugs 4 hrs Before Overdose",
+            "type": "array",
+            "description": "Drugs taken in the 4 hours before overdose",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "TODO: expand fields to each of the possible selections",
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)",
+                "jcoin:core_measure_id": "S3d",
+                "jcoin:final_variable_name": "drugs_4hrs_prior_to_overdose"
+            }
+        },
+        {
+            "name": "s3e",
+            "title": "Emergency Medical Service Following Overdose",
+            "type": "integer",
+            "description": "Number of times a person received emergency medical service following an overdose",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "How many of these times did you receive emergency medical service following an overdose?",
+                "jcoin:core_measure_id": "S3e",
+                "jcoin:final_variable_name": "emergency_service_after_overdose"
+            }
+        },
+        {
+            "name": "s3f",
+            "title": "Emergency Department Visit Count Following Overdose",
+            "type": "integer",
+            "description": "Number of times a person went to the emergency department following an overdose",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "How many of these times did you go to the emergency department following an overdose?",
+                "jcoin:core_measure_id": "S3f",
+                "jcoin:final_variable_name": "emergency_dept_after_overdose_ct"
+            }
+        },
+        {
+            "name": "s3g",
+            "title": "Hospital Admissions Count Following Overdose",
+            "type": "integer",
+            "description": "Number of times a person got admitted to the hospital following an overdose",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "How many of these times did you get admitted to the hospital following an overdose?",
+                "jcoin:core_measure_id": "S3g",
+                "jcoin:final_variable_name": "hospital_admission_after_overdose_ct"
+            }
+        },
+        {
+            "name": "s3h",
+            "title": "Substance Use Treatment Referral Count Following Overdose",
+            "type": "integer",
+            "description": "Number of times a person received a referral to substance use treatment from the police, EMS, ED or hospital staff",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "How many of these times did you receive a referral to substance use treatment from the police, EMS, ED or hospital staff?",
+                "jcoin:core_measure_id": "S3h",
+                "jcoin:final_variable_name": "substance_use_treatment_referral_ct"
+            }
+        },
+        {
+            "name": "s4a",
+            "title": "Drug Use Count",
+            "type": "integer",
+            "description": "Number of times a person used any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/since your last assessment), on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?",
+                "jcoin:core_measure_id": "S4a",
+                "jcoin:final_variable_name": "drug_use_ct"
+            }
+        },
+        {
+            "name": "s4b",
+            "title": "Alcohol Use Count",
+            "type": "integer",
+            "description": "Number of times a person drank any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?",
+                "jcoin:core_measure_id": "S4b",
+                "jcoin:final_variable_name": "alcohol_use_ct"
+            }
+        },
+        {
+            "name": "s4c",
+            "title": "Alcohol Use Count: Binge Drinking",
+            "type": "integer",
+            "description": "Number of times a person had 5 or more drinks during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you have 5 or more drinks?",
+                "jcoin:core_measure_id": "S4c",
+                "jcoin:final_variable_name": "alcohol_binge_ct"
+            }
+        },
+        {
+            "name": "s4d",
+            "title": "Marijuana use count: medical",
+            "type": "integer",
+            "description": "Number of times a person used medical marijuana that was obtained from a dispensary with their own recommendation card or prescription during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?",
+                "jcoin:core_measure_id": "S4d",
+                "jcoin:final_variable_name": "marijuana_medical_use_ct"
+            }
+        },
+        {
+            "name": "s4e",
+            "title": "Marijuana use count: Not own",
+            "type": "integer",
+            "description": "Number of times a person used other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not their own",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?",
+                "jcoin:core_measure_id": "S4e",
+                "jcoin:final_variable_name": "marijuana_not_own_use_ct"
+            }
+        },
+        {
+            "name": "s4f",
+            "title": "Opioid use count: Heroin",
+            "type": "integer",
+            "description": "Number of times a person used heroin (alone or mixed with other drugs) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use heroin (alone or mixed with other drugs)?",
+                "jcoin:core_measure_id": "S4f",
+                "jcoin:final_variable_name": "opioid_heroin_use_ct"
+            }
+        },
+        {
+            "name": "s4g",
+            "title": "Opioid use count: Fentanyl",
+            "type": "integer",
+            "description": "Number of times a person used fentanyl (alone or mixed with other drugs)  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use fentanyl (alone or mixed with other drugs)?",
+                "jcoin:core_measure_id": "S4g",
+                "jcoin:final_variable_name": "opioid_fentanyl_use_ct"
+            }
+        },
+        {
+            "name": "s4h",
+            "title": "Opioid use count: Street Methadone",
+            "type": "integer",
+            "description": "Number of times a person used nonprescription or street methadone  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use nonprescription or street methadone?",
+                "jcoin:core_measure_id": "S4h",
+                "jcoin:final_variable_name": "opioid_street_methadone_use_ct"
+            }
+        },
+        {
+            "name": "s4j",
+            "title": "Opioid use count: Suboxone",
+            "type": "integer",
+            "description": "Number of times a person used nonprescription or street Suboxone  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use use nonprescription or street Suboxone?",
+                "jcoin:core_measure_id": "S4j",
+                "jcoin:final_variable_name": "opioid_suboxone_use_ct"
+            }
+        },
+        {
+            "name": "s4k",
+            "title": "Opioid use count: other",
+            "type": "integer",
+            "description": "Number of times a person used other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_id": "S4k",
+                "jcoin:final_variable_name": "opioid_other_use_ct"
+            }
+        },
+        {
+            "name": "s4m",
+            "title": "Cocaine use count",
+            "type": "integer",
+            "description": "Number of times a person used crack, smoked rock, freebase, or other forms of cocaine during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use crack, smoked rock, freebase, or other forms of cocaine?",
+                "jcoin:core_measure_id": "S4m",
+                "jcoin:final_variable_name": "cocaine_use_ct"
+            }
+        },
+        {
+            "name": "s4n",
+            "title": "Speed use count",
+            "type": "integer",
+            "description": "Number of times a person used any methamphetamines, amphetamines, or other forms of speed during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use any methamphetamines, amphetamines, or other forms of speed?",
+                "jcoin:core_measure_id": "S4n",
+                "jcoin:final_variable_name": "speed_use_ct"
+            }
+        },
+        {
+            "name": "s4p",
+            "title": "Benzodiazapine, anti-anxiety, and tranquilizer use count",
+            "type": "integer",
+            "description": "Number of times a person used any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?",
+                "jcoin:core_measure_id": "S4p",
+                "jcoin:final_variable_name": "benzos_anti_anxiety_use_ct"
+            }
+        },
+        {
+            "name": "s4z",
+            "title": "Drug use count: other",
+            "type": "integer",
+            "description": "Number of days a person use any other drug that has not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/since your last assessment), on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)?",
+                "jcoin:core_measure_id": "S4z",
+                "jcoin:final_variable_name": "drug_use_other_ct"
+            }
+        },
+        {
+            "name": "s4z_describe",
+            "title": "Drug use: description of other drugs",
+            "type": "string",
+            "description": "A description of drugs that have not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the 90 days(prior to entering jail or prison/since your last assessment), on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )",
+                "jcoin:core_measure_id": "S4z",
+                "jcoin:final_variable_name": "drug_use_other_desc"
+            }
+        },
+        {
+            "name": "s5",
+            "title": "Place of No Opioid Use (Jail, Hospital, etc)",
+            "type": "integer",
+            "description": "Number of days a person has been in jail, hospital, or other place where they could not use heroin, fentanyl, other opioids, alcohol, marijuana, or other drugs",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Substance Use",
+                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)",
+                "jcoin:core_measure_id": "S5",
+                "jcoin:final_variable_name": "place_of_no_drug_use_ct"
+            }
+        },
+        {
+            "name": "j1a",
+            "title": "Activities against law besides drugs",
+            "type": "integer",
+            "description": "During the past 90 days (since last assessment), on how many days were a person involved in any activities that might get a person into trouble or be against the law besides drug use? [IF 0, GO TO J2]",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "[IF 0, GO TO J2]",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use? [IF 0, GO TO J2]",
+                "jcoin:final_variable_name": "activities_against_law_besides_drugs_ct"
+            }
+        },
+        {
+            "name": "j1a1",
+            "title": "Drug possession",
+            "type": "integer",
+            "description": "Number of times  a person  been in possession of small amounts of drugs? (drug possession)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been in possession of small amounts of drugs? (drug possession)",
+                "jcoin:final_variable_name": "drug_possession_ct"
+            }
+        },
+        {
+            "name": "j1a2",
+            "title": "Drunkenness or other liquor law violations",
+            "type": "integer",
+            "description": "Number of times  a person  been drunk or high in public? (drunkenness or other liquor law violations)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been drunk or high in public? (drunkenness or other liquor law violations)",
+                "jcoin:final_variable_name": "drunkenness_or_other_liquor_law_violations_ct"
+            }
+        },
+        {
+            "name": "j1a3",
+            "title": "Driving under the influence or while intoxicated",
+            "type": "integer",
+            "description": "Number of times  a person  driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)",
+                "jcoin:final_variable_name": "driving_under_the_influence_or_while_intoxicated_ct"
+            }
+        },
+        {
+            "name": "j1a4",
+            "title": "Possession, dealing, distribution or sale of drugs",
+            "type": "integer",
+            "description": "Number of times  a person \u2026sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you \u2026sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)",
+                "jcoin:final_variable_name": "possession_dealing_distribution_or_sale_of_drugs_ct"
+            }
+        },
+        {
+            "name": "j1a5",
+            "title": "Vandalism or property destruction",
+            "type": "integer",
+            "description": "Number of times  a person  purposely damaged or destroyed property that did not belong to a person? (vandalism or property destruction)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)",
+                "jcoin:final_variable_name": "vandalism_or_property_destruction_ct"
+            }
+        },
+        {
+            "name": "j1a6",
+            "title": "Receiving, possessing or selling stolen goods",
+            "type": "integer",
+            "description": "Number of times  a person  bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)",
+                "jcoin:final_variable_name": "receiving_possessing_or_selling_stolen_goods_ct"
+            }
+        },
+        {
+            "name": "j1a7",
+            "title": "Forgery, fraud or embezzlement",
+            "type": "integer",
+            "description": "Number of times  a person  passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)",
+                "jcoin:final_variable_name": "forgery_fraud_or_embezzlement_ct"
+            }
+        },
+        {
+            "name": "j1a8",
+            "title": "Shoplifting",
+            "type": "integer",
+            "description": "Number of times  a person  taken something from a store without paying for it? (shoplifting)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken something from a store without paying for it? (shoplifting)",
+                "jcoin:final_variable_name": "shoplifting_ct"
+            }
+        },
+        {
+            "name": "j1a9",
+            "title": "Larceny or theft",
+            "type": "integer",
+            "description": "Number of times  a person  other than from a store, taken money or property that didn't belong to a person? (larceny or theft)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  other than from a store, taken money or property that didn't belong to you? (larceny or theft)",
+                "jcoin:final_variable_name": "larceny_or_theft_ct"
+            }
+        },
+        {
+            "name": "j1a10",
+            "title": "Burglary or breaking and entering",
+            "type": "integer",
+            "description": "Number of times  a person  broken into a house or building to steal something or just to look around? (burglary or breaking and entering)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  broken into a house or building to steal something or just to look around? (burglary or breaking and entering)",
+                "jcoin:final_variable_name": "burglary_or_breaking_and_entering_ct"
+            }
+        },
+        {
+            "name": "j1a11",
+            "title": "Motor vehicle theft",
+            "type": "integer",
+            "description": "Number of times  a person  taken a car without people in it that didn't belong to a person? (motor vehicle theft)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken a car without people in it that didn't belong to you? (motor vehicle theft)",
+                "jcoin:final_variable_name": "motor_vehicle_theft_ct"
+            }
+        },
+        {
+            "name": "j1a12",
+            "title": "Carjacking",
+            "type": "integer",
+            "description": "Number of times  a person  taken a car from someone who was in it? (carjacking)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken a car from someone who was in it? (carjacking)",
+                "jcoin:final_variable_name": "carjacking_ct"
+            }
+        },
+        {
+            "name": "j1a13",
+            "title": "Simple assault or battery",
+            "type": "integer",
+            "description": "Number of times  a person  hit someone or gotten into a physical fight? (simple assault or battery)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  hit someone or gotten into a physical fight? (simple assault or battery)",
+                "jcoin:final_variable_name": "simple_assault_or_battery_ct"
+            }
+        },
+        {
+            "name": "j1a14",
+            "title": "Robbery",
+            "type": "integer",
+            "description": "Number of times  a person  used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)",
+                "jcoin:final_variable_name": "robbery_ct"
+            }
+        },
+        {
+            "name": "j1a15",
+            "title": "Aggravated assault or battery",
+            "type": "integer",
+            "description": "Number of times  a person  hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)",
+                "jcoin:final_variable_name": "aggravated_assault_or_battery_ct"
+            }
+        },
+        {
+            "name": "j1a16",
+            "title": "Forcible rape",
+            "type": "integer",
+            "description": "Number of times  a person  made someone have sex with a person by force when they did not want to have sex? (forcible rape)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  made someone have sex with you by force when they did not want to have sex? (forcible rape)",
+                "jcoin:final_variable_name": "forcible_rape_ct"
+            }
+        },
+        {
+            "name": "j1a17",
+            "title": "Murder, homicide or no-negligent manslaughter",
+            "type": "integer",
+            "description": "Number of times  a person  been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)",
+                "jcoin:final_variable_name": "murder_homicide_or_no-negligent_manslaughter_ct"
+            }
+        },
+        {
+            "name": "j1a18",
+            "title": "Arson",
+            "type": "integer",
+            "description": "Number of times  a person  intentionally set a building, car or other property on fire? (arson)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  intentionally set a building, car or other property on fire? (arson)",
+                "jcoin:final_variable_name": "arson_ct"
+            }
+        },
+        {
+            "name": "j1a19",
+            "title": "Prostitution, pimping or commercialized sex",
+            "type": "integer",
+            "description": "Number of times  a person  traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)",
+                "jcoin:final_variable_name": "prostitution_pimping_or_commercialized_sex_ct"
+            }
+        },
+        {
+            "name": "j1a99",
+            "title": "Other unlawful activities",
+            "type": "integer",
+            "description": "Number of times  a person  done something else that would have gotten a person into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "notes": "(common charge names associated with behavior for reference only)",
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)",
+                "jcoin:final_variable_name": "other_unlawful_activities_ct"
+            }
+        },
+        {
+            "name": "j2",
+            "title": "Overall charged arrests",
+            "type": "integer",
+            "description": "Number of a times person was arrested and charged",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times were you arrested and charged?",
+                "jcoin:final_variable_name": "overall_charged_arrests_ct"
+            }
+        },
+        {
+            "name": "j2a",
+            "title": "Drug possession arrests",
+            "type": "integer",
+            "description": "Number of arrests for drug possession (for small amounts)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for drug possession (for small amounts)",
+                "jcoin:final_variable_name": "drug_possession_arrests_ct"
+            }
+        },
+        {
+            "name": "j2b",
+            "title": "Law violations arrests",
+            "type": "integer",
+            "description": "Number of arrests for drunkenness or other liquor law violations",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for drunkenness or other liquor law violations",
+                "jcoin:final_variable_name": "law_violations_arrests_ct"
+            }
+        },
+        {
+            "name": "j2c",
+            "title": "Driving under the influence/intoxicated arrests",
+            "type": "integer",
+            "description": "Number of arrests for driving under the influence or while intoxicated",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for driving under the influence or while intoxicated",
+                "jcoin:final_variable_name": "driving_under_the_influence/intoxicated_arrests_ct"
+            }
+        },
+        {
+            "name": "j2d",
+            "title": "Drug activity arrests",
+            "type": "integer",
+            "description": "Number of arrests for possession, dealing, distribution or sale of drugs",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for possession, dealing, distribution or sale of drugs",
+                "jcoin:final_variable_name": "drug_activity_arrests_ct"
+            }
+        },
+        {
+            "name": "j2e",
+            "title": "Vandalism or property destruction arrests",
+            "type": "integer",
+            "description": "Number of arrests for vandalism or property destruction",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for vandalism or property destruction",
+                "jcoin:final_variable_name": "vandalism_or_property_destruction_arrests_ct"
+            }
+        },
+        {
+            "name": "j2f",
+            "title": "Stolen goods arrests",
+            "type": "integer",
+            "description": "Number of arrests for receiving, possessing or selling stolen goods",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for receiving, possessing or selling stolen goods",
+                "jcoin:final_variable_name": "stolen_goods_arrests_ct"
+            }
+        },
+        {
+            "name": "j2g",
+            "title": "Forgery, fraud or embezzlement arrests",
+            "type": "integer",
+            "description": "Number of arrests for forgery, fraud or embezzlement",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for forgery, fraud or embezzlement",
+                "jcoin:final_variable_name": "forgery_fraud_or_embezzlement_arrests_ct"
+            }
+        },
+        {
+            "name": "j2h",
+            "title": "Shoplifting arrests",
+            "type": "integer",
+            "description": "Number of arrests for shoplifting",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for shoplifting",
+                "jcoin:final_variable_name": "shoplifting_arrests_ct"
+            }
+        },
+        {
+            "name": "j2i",
+            "title": "Theft/larceny arrests",
+            "type": "integer",
+            "description": "Number of arrests for larceny or theft",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for larceny or theft",
+                "jcoin:final_variable_name": "theft_larceny_arrests_ct"
+            }
+        },
+        {
+            "name": "j2j",
+            "title": "Burglary or breaking and entering arrests",
+            "type": "integer",
+            "description": "Number of arrests for burglary or breaking and entering",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for burglary or breaking and entering",
+                "jcoin:final_variable_name": "burglary_or_breaking_and_entering_arrests_ct"
+            }
+        },
+        {
+            "name": "j2k",
+            "title": "Vehicle theft arrests",
+            "type": "integer",
+            "description": "Number of arrests for motor vehicle theft",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for motor vehicle theft",
+                "jcoin:final_variable_name": "vehicle_theft_arrests_ct"
+            }
+        },
+        {
+            "name": "j2l",
+            "title": "Car jacking arrests",
+            "type": "integer",
+            "description": "Number of arrests for car jacking",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for car jacking",
+                "jcoin:final_variable_name": "car_jacking_arrests_ct"
+            }
+        },
+        {
+            "name": "j2m",
+            "title": "Simple assault or battery arrests",
+            "type": "integer",
+            "description": "Number of arrests for simple assault or battery",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for simple assault or battery",
+                "jcoin:final_variable_name": "simple_assault_or_battery_arrests_ct"
+            }
+        },
+        {
+            "name": "j2n",
+            "title": "Robbery arrests",
+            "type": "integer",
+            "description": "Number of arrests for robbery",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for robbery",
+                "jcoin:final_variable_name": "robbery_arrests_ct"
+            }
+        },
+        {
+            "name": "j2o",
+            "title": "Aggravated assault or battery arrests",
+            "type": "integer",
+            "description": "Number of arrests for aggravated assault or battery",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for aggravated assault or battery",
+                "jcoin:final_variable_name": "aggravated_assault_or_battery_arrests_ct"
+            }
+        },
+        {
+            "name": "j2p",
+            "title": "Forcible rape arrests",
+            "type": "integer",
+            "description": "Number of arrests for forcible rape",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for forcible rape",
+                "jcoin:final_variable_name": "forcible_rape_arrests_ct"
+            }
+        },
+        {
+            "name": "j2q",
+            "title": "Negligent manslaughter arrests",
+            "type": "integer",
+            "description": "Number of arrests for murder, homicide or non-negligent manslaughter",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for murder, homicide or non-negligent manslaughter",
+                "jcoin:final_variable_name": "negligent_manslaughter_arrests_ct"
+            }
+        },
+        {
+            "name": "j2r",
+            "title": "Arson arrests",
+            "type": "integer",
+            "description": "Number of arrests for arson",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for arson",
+                "jcoin:final_variable_name": "arson_arrests_ct"
+            }
+        },
+        {
+            "name": "j2s",
+            "title": "Commercialized sex arrests",
+            "type": "integer",
+            "description": "Number of arrests for prostitution, pimping or commercialized sex",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for prostitution, pimping or commercialized sex",
+                "jcoin:final_variable_name": "commercialized_sex_arrests_ct"
+            }
+        },
+        {
+            "name": "j2t",
+            "title": "Other charges arrests",
+            "type": "integer",
+            "description": "Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)",
+            "constraints": {
+                "required": false
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)",
+                "jcoin:final_variable_name": "other_charges_arrests_ct"
+            }
+        },
+        {
+            "name": "j3a",
+            "title": "Electronic monitoring",
+            "type": "integer",
+            "description": "Number of days person has been on electronic monitoring",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  on electronic monitoring?",
+                "jcoin:final_variable_name": "num_days_electronic_monitoring"
+            }
+        },
+        {
+            "name": "j3b",
+            "title": "House arrest",
+            "type": "integer",
+            "description": "Number of days a person has been on house arrest",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  on house arrest?",
+                "jcoin:final_variable_name": "num_days_house_arrest"
+            }
+        },
+        {
+            "name": "j3c",
+            "title": "Jail time",
+            "type": "integer",
+            "description": "Number of days a person has been in jail",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  in jail?",
+                "jcoin:final_variable_name": "num_days_jail_time"
+            }
+        },
+        {
+            "name": "j3d",
+            "title": "Prison time",
+            "type": "integer",
+            "description": "Number of days a person has been in prison",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  in prison?",
+                "jcoin:final_variable_name": "num_days_prison_time"
+            }
+        },
+        {
+            "name": "j3e",
+            "title": "Current jail or prison",
+            "type": "string",
+            "description": "Person is currently in jail or prison",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "Are you currently in jail or prison? (CAN MARK IF OBVIOUS)",
+                "jcoin:final_variable_name": "current_jail_or_prison_ind"
+            }
+        },
+        {
+            "name": "j3f",
+            "title": "Length of jail or prison time",
+            "type": "integer",
+            "description": "Length of jail or prison time for this episode",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "How long have you been in jail or prison? (just this episode)",
+                "jcoin:final_variable_name": "length_of_jail_or_prison_time"
+            }
+        },
+        {
+            "name": "j4a",
+            "title": "Parole",
+            "type": "integer",
+            "description": "Number of days a person has been on parole",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on parole?",
+                "jcoin:final_variable_name": "num_days_parole"
+            }
+        },
+        {
+            "name": "j4b",
+            "title": "Probation",
+            "type": "integer",
+            "description": "Number of days a person has been on probation",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on probation?",
+                "jcoin:final_variable_name": "num_days_probation"
+            }
+        },
+        {
+            "name": "j4c",
+            "title": "Other kind of community supervision",
+            "type": "integer",
+            "description": "Number of days a person has been on any other kind of community supervision",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on any other kind of community supervision?",
+                "jcoin:final_variable_name": "num_days_other_kind_of_community_supervision"
+            }
+        },
+        {
+            "name": "j4d",
+            "title": "Meeting with probation or parole officer",
+            "type": "integer",
+            "description": "Number of days a person has met with a probation or parole officer",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you met with your probation or parole officer?",
+                "jcoin:final_variable_name": "num_days_meeting_with_probation_or_parole_officer"
+            }
+        },
+        {
+            "name": "j4e",
+            "title": "Trouble with probation or parole officer",
+            "type": "integer",
+            "description": "Number of days a person has been in trouble with a probation or parole officer",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been in trouble with your probation or parole officer?",
+                "jcoin:final_variable_name": "num_days_trouble_with_probation_or_parole_officer"
+            }
+        },
+        {
+            "name": "j5a",
+            "title": "Life time arrests",
+            "type": "integer",
+            "description": "Number of days a person has been arrested in their lifetime (including juvenile)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how many times in your life have you been arrested including as a juvenile?",
+                "jcoin:final_variable_name": "num_days_life_time_arrests"
+            }
+        },
+        {
+            "name": "j5b",
+            "title": "First time arrest",
+            "type": "integer",
+            "description": "Age at time of first arrest",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how old were you the first time you were arrested?",
+                "jcoin:final_variable_name": "age_at_first_time_arrest"
+            }
+        },
+        {
+            "name": "j5c_years",
+            "title": "Lifetime years in detention, jail, or prison time",
+            "type": "integer",
+            "description": "Number of times a person has spent in detention, jail or prison during a personr lifetime?",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:final_variable_name": "lifetime_years_in_detention_jail_or_prison_time_ct"
+            }
+        },
+        {
+            "name": "j5c_months",
+            "title": "Lifetime months in detention, jail, or prison time",
+            "type": "integer",
+            "description": "Number of times a person has spent in detention, jail or prison during lifetime",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:final_variable_name": "lifetime_months_in_detention_jail_or_prison_time_ct"
+            }
+        },
+        {
+            "name": "j5d",
+            "title": "Lifetime guity and sentenced",
+            "type": "integer",
+            "description": "Number of times a person has been found guilty and sentenced (including adjudications as a a personth or convictions as an adult)",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?",
+                "jcoin:final_variable_name": "lifetime_guity_and_sentenced_ct"
+            }
+        },
+        {
+            "name": "j5e",
+            "title": "First time adjudication conviction",
+            "type": "integer",
+            "description": "Age at which a person was first adjudicated and convicted",
+            "constraints": {
+                "required": true
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Justice Involvement",
+                "jcoin:core_measure_question": "During your lifetime, how old were you the first time you were adjudicated or convicted?",
+                "jcoin:final_variable_name": "first_time_adjudication_conviction_ct"
+            }
+        }
+    ],
+    "primaryKey": [
+        "jdc_person_id",
+        "visit_number"
+    ],
+    "missingValues": [
+        "NaN",
+        "NA",
+        "",
+        "."
+    ],
+    "foreignKeys": [
+        "jdc_person_id"
+    ],
+    "description": "Time point Fields: Measures collected at all time points (baseline and follow ups)"
+}

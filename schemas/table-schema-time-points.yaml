@@ -1277,6 +1277,8 @@ fields:
   name: j5e
   title: First time adjudication conviction
   type: integer
+foreignKeys:
+- jdc_person_id
 missingValues:
 - NaN
 - NA
@@ -1284,3 +1286,4 @@ missingValues:
 - .
 primaryKey:
 - jdc_person_id
+- visit_number

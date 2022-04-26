@@ -149,10 +149,10 @@ for schema_description, schema_path in table_schemas.items():
         format_table_schema_df
     )
     #tbl_schema_df.replace('\n','').to_csv(os.path.splitext(spreadsheet_dir)[0]+".tsv",sep='\t')
-    if "baseline" in schema_description.lower():
+    if "baseline fields:" in schema_description.lower():
         primary_keys = ["jdc_person_id"]
         foreign_keys = None
-    elif "time point" in schema_description.lower():
+    elif "time point fields:" in schema_description.lower():
         primary_keys = ["jdc_person_id", "visit_number"]
         foreign_keys = ["jdc_person_id"]
 
