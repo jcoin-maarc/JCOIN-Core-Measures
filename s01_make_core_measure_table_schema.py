@@ -62,6 +62,12 @@ def format_table_schema_df(
     """
     def _combine_cols_into_dict(df):
         return df.apply(lambda x: x.dropna().to_dict(),axis='columns')
+    
+    def _split_if_str(s,delimiter=','):
+        if type(s) is str:
+            return s.split(delimiter)
+        else:
+            return None
 
     for cols in tbl_schema_df.columns:
         #python 3.10 has diff string dtypes so just have to see if it has str method
@@ -75,7 +81,7 @@ def format_table_schema_df(
     tbl_schema_df["custom"] = custom
     # combine constraint columns
     ## convert enum to list
-    tbl_schema_df['enum'].update(tbl_schema_df['enum'].apply(lambda x:x.split(",") if type(x) is str else None))
+    tbl_schema_df['enum'].update(tbl_schema_df['enum'].apply( _split_if_str))
     constraints = tbl_schema_df[constraint_columns].pipe(
         _combine_cols_into_dict
     )
@@ -165,6 +171,16 @@ for schema_description, schema_path in table_schemas.items():
     if validate_report.metadata_valid:
         with open(yaml_dir, "w") as f:
             yaml.safe_dump(tbl_schema_dict, f)
+    else:
+        print("Schema not valid due to these errors:")
+        print("\n".join(validate_report["errors"]))
+        sys.exit()
+
+
+    json_dir = os.path.join('schemas', f"{schema_path}.json")
+    if validate_report.metadata_valid:
+        with open(json_dir, "w") as f:
+            json.dump(tbl_schema_dict, f,indent=4)
     else:
         print("Schema not valid due to these errors:")
         print("\n".join(validate_report["errors"]))
