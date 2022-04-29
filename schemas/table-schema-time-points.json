@@ -7,7 +7,6 @@
             "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
             "constraints": {
                 "required": true,
-                "maxLength": 9,
                 "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
             },
             "custom": {

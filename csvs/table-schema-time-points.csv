@@ -1,5 +1,5 @@
 ﻿name,title,description,type,required,maxLength,pattern,minimum,maximum,enum,examples,notes,jcoin:core_measure_section,jcoin:core_measure_question,jcoin:core_measure_id,jcoin:final_variable_name,heal:common_data_element_code,heal:common_data_element_system
-jdc_person_id,JCOIN data commons person identifier,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,string,TRUE,9,[A-Z][0-9]{3}-[0-9]{4},,,,"J150-5555, J200-5555",,Record and linkage,,,jdc_person_id,,
+jdc_person_id,JCOIN data commons person identifier,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,string,TRUE,,[A-Z][0-9]{3}-[0-9]{4},,,,"J150-5555, J200-5555",,Record and linkage,,,jdc_person_id,,
 visit_number,Visit Number,A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).,integer,TRUE,,,1,,,,,Record and linkage,,,visit_number,,
 visit_type,Visit Type,The visit type/category (either baseline or follow up),string,TRUE,,,,,"Baseline,Follow-up",,,Record and linkage,,,visit_type,,
 s1a,Last time drug use,"Last time a person used alcohol or other drugs weekly or more often

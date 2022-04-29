@@ -2,6 +2,7 @@ description: 'Baseline Fields: Measures collected only at baseline '
 fields:
 - constraints:
     maxLength: 9
+    pattern: '[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]'
     required: true
   custom:
     jcoin:core_measure_section: Record and linkage
@@ -13,7 +14,7 @@ fields:
   type: string
 - constraints:
     maxLength: 6
-    pattern: '[0-9]{4}Q[0-9]'
+    pattern: '[0-9][0-9][0-9][0-9]Q[0-9]'
     required: true
   custom:
     jcoin:core_measure_section: Enrollment

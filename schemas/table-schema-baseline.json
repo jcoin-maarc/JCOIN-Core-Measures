@@ -7,7 +7,8 @@
             "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
             "constraints": {
                 "required": true,
-                "maxLength": 9
+                "maxLength": 9,
+                "pattern": "[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"
             },
             "custom": {
                 "jcoin:core_measure_section": "Record and linkage",
@@ -22,7 +23,7 @@
             "constraints": {
                 "required": true,
                 "maxLength": 6,
-                "pattern": "[0-9]{4}Q[0-9]"
+                "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]"
             },
             "custom": {
                 "jcoin:core_measure_section": "Enrollment",

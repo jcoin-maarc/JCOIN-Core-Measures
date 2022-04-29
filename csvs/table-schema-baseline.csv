@@ -1,6 +1,6 @@
 ﻿name,title,description,type,required,maxLength,pattern,enum,examples,notes,jcoin:core_measure_section,jcoin:core_measure_question,jcoin:core_measure_id,jcoin:final_variable_name,heal:common_data_element_code,heal:common_data_element_system
-jdc_person_id,JCOIN data commons person identifier,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,string,TRUE,9,,,"J150-5555, J200-5555",,Record and linkage,,,jdc_person_id,,
-quarter_enrolled,Quarter Enrolled,The financial quarter and year of enrollment,string,TRUE,6,[0-9]{4}Q[0-9],,"2020Q1,2021Q4",,Enrollment,,,quarter_enrolled,,
+jdc_person_id,JCOIN data commons person identifier,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,string,TRUE,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],,"J150-5555, J200-5555",,Record and linkage,,,jdc_person_id,,
+quarter_enrolled,Quarter Enrolled,The financial quarter and year of enrollment,string,TRUE,6,[0-9][0-9][0-9][0-9]Q[0-9],,"2020Q1,2021Q4",,Enrollment,,,quarter_enrolled,,
 state_of_site_enrollment,State of Site For Enrollment,The U.S. State abbreviation of the site where client (participant) was initially enrolled,string,TRUE,2,[A-Z][A-Z],,"MA,NY,CT,KY,IL",,Enrollment,,,state of site,,
 current_study_status,Current Study Status,A summary of the current status where client (participant) is in study,string,TRUE,,,"On study,Dropped out,Withdrawn by investigator,Completed study",,,Enrollment,,,current_study_status,,
 o2 ,Gender Identity ,"Gender identity 
