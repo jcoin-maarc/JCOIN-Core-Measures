@@ -1454,8 +1454,5 @@
         "",
         "."
     ],
-    "foreignKeys": [
-        "jdc_person_id"
-    ],
     "description": "Time point Fields: Measures collected at all time points (baseline and follow ups)"
 }

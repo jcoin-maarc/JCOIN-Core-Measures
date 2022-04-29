@@ -154,7 +154,7 @@ for schema_description, schema_path in table_schemas.items():
         foreign_keys = None
     elif "time point fields:" in schema_description.lower():
         primary_keys = ["jdc_person_id", "visit_number"]
-        foreign_keys = ["jdc_person_id"]
+        #foreign_keys = ["jdc_person_id"]
 
     #convert and format the table schema dictionary
     tbl_schema_dict = convert_table_schema_df_to_dict(
