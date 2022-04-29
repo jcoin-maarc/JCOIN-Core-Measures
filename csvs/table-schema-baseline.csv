@@ -27,9 +27,9 @@ d3_other,Race: Other,"A person having origins in a race not identified with othe
 ",string,TRUE,,,"Yes,No,Unknown",,,Demographics,"What is your race? SELECT ALL THAT APPLY
 ",d3,race_other,,
 d3_specify_tribe,Race: American indian principal tribe or community specified,"The specific principal tribe or community if the person answered answered 'yes' to this racial category
-",string,TRUE,80,,,,,Demographics,"What is your race? SELECT ALL THAT APPLY
+",string,FALSE,80,,,,,Demographics,"What is your race? SELECT ALL THAT APPLY
 ",d3,race_specify_american_indian_tribe,,
 d3_specify_other,Race: Other specified,"The specific racial category of a person having origins in a race not identified with other racial categories presented
-",string,TRUE,80,,,,,Demographics,"What is your race? SELECT ALL THAT APPLY
+",string,FALSE,80,,,,,Demographics,"What is your race? SELECT ALL THAT APPLY
 ",d3,race_specify_other,,
 d2,"Hispanic, Latino, or Spanish Origin","A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race",string,TRUE,,,"Yes,No,Unknown",,,Demographics,"Are you of Hispanic, Latino, or Spanish origin?",d2,hispanic,,

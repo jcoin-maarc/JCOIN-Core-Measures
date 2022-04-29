@@ -248,7 +248,7 @@
             "type": "string",
             "description": "The specific principal tribe or community if the person answered answered 'yes' to this racial category",
             "constraints": {
-                "required": true,
+                "required": false,
                 "maxLength": 80
             },
             "custom": {
@@ -264,7 +264,7 @@
             "type": "string",
             "description": "The specific racial category of a person having origins in a race not identified with other racial categories presented",
             "constraints": {
-                "required": true,
+                "required": false,
                 "maxLength": 80
             },
             "custom": {

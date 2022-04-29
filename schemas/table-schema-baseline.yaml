@@ -208,7 +208,7 @@ fields:
   type: string
 - constraints:
     maxLength: 80
-    required: true
+    required: false
   custom:
     jcoin:core_measure_id: d3
     jcoin:core_measure_question: What is your race? SELECT ALL THAT APPLY
@@ -221,7 +221,7 @@ fields:
   type: string
 - constraints:
     maxLength: 80
-    required: true
+    required: false
   custom:
     jcoin:core_measure_id: d3
     jcoin:core_measure_question: What is your race? SELECT ALL THAT APPLY
