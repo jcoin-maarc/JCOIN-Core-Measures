@@ -42,6 +42,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: true
   custom:
     jcoin:core_measure_id: S1a
@@ -49,6 +50,8 @@ fields:
       drugs weekly or more often?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_drug_use
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person used alcohol or other drugs weekly or more often
   name: s1a
   title: Last time drug use
@@ -61,6 +64,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: true
   custom:
     jcoin:core_measure_id: S1b
@@ -69,6 +73,8 @@ fields:
       from the effects of alcohol or other drugs (feeling sick)?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_drug_get_use_recover
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person spent a lot of time either getting alcohol or other
     drugs, using alcohol or other drugs, or recovering from the effects of alcohol
     or other drugs (feeling sick)
@@ -83,6 +89,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: true
   custom:
     jcoin:core_measure_id: S1c
@@ -91,6 +98,8 @@ fields:
       or getting you into trouble with other people?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_drug_use_social_dysfunction
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person kept using alcohol or other drugs even though it
     was causing social  problems, leading to fights, or getting you into trouble with
     other people
@@ -105,6 +114,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: true
   custom:
     jcoin:core_measure_id: S1d
@@ -113,6 +123,8 @@ fields:
       school, home or social events?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_drug_use_work_life_dysfunction
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person's use of alcohol or other drugs caused giving up
     or reducing involvement in activities at work, school, home or social events
   name: s1d
@@ -126,6 +138,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: true
   custom:
     jcoin:core_measure_id: S1e
@@ -135,6 +148,8 @@ fields:
       or avoid withdrawal problems?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_drug_use_withdrawal
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person had withdrawal problems from alcohol or other drugs
     like shaky hands, throwing up, having trouble sitting still or sleeping, or used
     any  alcohol or other drugs to stop being sick or avoid withdrawal problems
@@ -149,6 +164,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: false
   custom:
     jcoin:core_measure_id: S2a
@@ -158,6 +174,8 @@ fields:
       Tylenol with codeine, Vicodin, Zohydro)?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_time_opioid_use
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person used any kind of heroin, fentanyl, or other opioid
   name: s2a
   title: 'Last time drug use: any opioids'
@@ -170,6 +188,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: false
   custom:
     jcoin:core_measure_id: S2b
@@ -178,6 +197,8 @@ fields:
       medical attention]
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_time_opioid_overdose
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person had an opioid overdose
   name: s2b
   title: 'Last time drug use: opioid overdose'
@@ -190,6 +211,7 @@ fields:
     - 2 to 3 months ago
     - Past month
     - Do not know
+    - Not reported
     required: false
   custom:
     jcoin:core_measure_id: S2c
@@ -197,6 +219,8 @@ fields:
       assisted treatment for opioid use disorder?
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: last_time_opioid_med_treatment
+    notes: Not reported not a part of the core measures but id'ed a few missing values
+      that cant be accounted for by skip logic. In future, may want to make more precise
   description: Last time a person had a medication assisted treatment for opioid use
     disorder
   name: s2c

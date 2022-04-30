@@ -57,10 +57,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you used alcohol or other drugs weekly or more often?",
                 "jcoin:core_measure_id": "S1a",
@@ -80,10 +82,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)?",
                 "jcoin:core_measure_id": "S1b",
@@ -103,10 +107,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people?",
                 "jcoin:core_measure_id": "S1c",
@@ -126,10 +132,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events?",
                 "jcoin:core_measure_id": "S1d",
@@ -149,10 +157,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems?",
                 "jcoin:core_measure_id": "S1e",
@@ -172,10 +182,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
                 "jcoin:core_measure_id": "S2a",
@@ -195,10 +207,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]",
                 "jcoin:core_measure_id": "S2b",
@@ -218,10 +232,12 @@
                     "4 to 12 months ago",
                     "2 to 3 months ago",
                     "Past month",
-                    "Do not know"
+                    "Do not know",
+                    "Not reported"
                 ]
             },
             "custom": {
+                "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "When was the last time you went to any kind of medication assisted treatment for opioid use disorder?",
                 "jcoin:core_measure_id": "S2c",
