@@ -1152,12 +1152,14 @@ fields:
     enum:
     - 'Yes'
     - 'No'
+    - Unknown
     required: true
   custom:
     jcoin:core_measure_question: Are you currently in jail or prison? (CAN MARK IF
       OBVIOUS)
     jcoin:core_measure_section: Justice Involvement
     jcoin:final_variable_name: current_jail_or_prison_ind
+    notes: 'MBK: added Unknown to satisfy a small amount of respondents for one hub.'
   description: Person is currently in jail or prison
   name: j3e
   title: Current jail or prison

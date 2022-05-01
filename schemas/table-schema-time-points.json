@@ -1282,10 +1282,12 @@
                 "required": true,
                 "enum": [
                     "Yes",
-                    "No"
+                    "No",
+                    "Unknown"
                 ]
             },
             "custom": {
+                "notes": "MBK: added Unknown to satisfy a small amount of respondents for one hub.",
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Are you currently in jail or prison? (CAN MARK IF OBVIOUS)",
                 "jcoin:final_variable_name": "current_jail_or_prison_ind"
