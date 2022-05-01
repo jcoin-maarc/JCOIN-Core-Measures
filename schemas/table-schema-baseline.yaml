@@ -41,6 +41,7 @@ fields:
     - Dropped out
     - Withdrawn by investigator
     - Completed study
+    - Unknown
     required: true
   custom:
     jcoin:core_measure_section: Enrollment

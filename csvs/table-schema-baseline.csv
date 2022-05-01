@@ -2,7 +2,7 @@
 jdc_person_id,JCOIN data commons person identifier,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,string,TRUE,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],,"J150-5555, J200-5555",,Record and linkage,,,jdc_person_id,,
 quarter_enrolled,Quarter Enrolled,The financial quarter and year of enrollment,string,TRUE,6,[0-9][0-9][0-9][0-9]Q[0-9],,"2020Q1,2021Q4",,Enrollment,,,quarter_enrolled,,
 state_of_site_enrollment,State of Site For Enrollment,The U.S. State abbreviation of the site where client (participant) was initially enrolled,string,TRUE,2,[A-Z][A-Z],,"MA,NY,CT,KY,IL",,Enrollment,,,state of site,,
-current_study_status,Current Study Status,A summary of the current status where client (participant) is in study,string,TRUE,,,"On study,Dropped out,Withdrawn by investigator,Completed study",,,Enrollment,,,current_study_status,,
+current_study_status,Current Study Status,A summary of the current status where client (participant) is in study,string,TRUE,,,"On study,Dropped out,Withdrawn by investigator,Completed study,Unknown",MBK: forgot to get client status from a hub so added Unknown -- this hub had Completed studies though so is either Completed or Unknown,,Enrollment,,,current_study_status,,
 o2 ,Gender Identity ,"Gender identity 
 ",string,FALSE,,,"Male,Female,Transgender man/trans man/female-to-male (FTM),Transgender woman/trans woman/male-to-female (MTF),Genderqueer/gender nonconforming/neither exclusively male nor female,Additional gender category (or other),Not reported",,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
 False if not 'Male' and not 'Transfgender' else True",Demographics,"What is your gender identity? 

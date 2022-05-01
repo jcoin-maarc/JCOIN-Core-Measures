@@ -56,7 +56,8 @@
                     "On study",
                     "Dropped out",
                     "Withdrawn by investigator",
-                    "Completed study"
+                    "Completed study",
+                    "Unknown"
                 ]
             },
             "custom": {
