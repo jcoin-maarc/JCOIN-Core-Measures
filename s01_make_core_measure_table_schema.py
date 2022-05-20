@@ -134,54 +134,54 @@ def convert_table_schema_df_to_dict(
 
     return tbl_schema_dict
 
-# if __name__ == "__main__":
-table_schemas = {
-    "Baseline Fields: Measures collected only at baseline ": "table-schema-baseline",
-    "Time point Fields: Measures collected at all time points (baseline and follow ups)": "table-schema-time-points",
-}
+if __name__ == "__main__":
+    table_schemas = {
+        "Baseline Fields: Measures collected only at baseline ": "table-schema-baseline",
+        "Time point Fields: Measures collected at all time points (baseline and follow ups)": "table-schema-time-points",
+    }
 
 
-for schema_description, schema_path in table_schemas.items():
+    for schema_description, schema_path in table_schemas.items():
 
-    # format the flattened tabular table schema view
-    spreadsheet_dir = os.path.join('csvs', f"{schema_path}.csv")
-    tbl_schema_df = read_table_schema_spreadsheet(spreadsheet_dir,delimiter=',').pipe(
-        format_table_schema_df
-    )
-    #tbl_schema_df.replace('\n','').to_csv(os.path.splitext(spreadsheet_dir)[0]+".tsv",sep='\t')
-    if "baseline fields:" in schema_description.lower():
-        primary_keys = ["jdc_person_id"]
-        foreign_keys = None
-    elif "time point fields:" in schema_description.lower():
-        primary_keys = ["jdc_person_id", "visit_number"]
-        #foreign_keys = ["jdc_person_id"]
+        # format the flattened tabular table schema view
+        spreadsheet_dir = os.path.join('csvs', f"{schema_path}.csv")
+        tbl_schema_df = read_table_schema_spreadsheet(spreadsheet_dir,delimiter=',').pipe(
+            format_table_schema_df
+        )
+        #tbl_schema_df.replace('\n','').to_csv(os.path.splitext(spreadsheet_dir)[0]+".tsv",sep='\t')
+        if "baseline fields:" in schema_description.lower():
+            primary_keys = ["jdc_person_id"]
+            foreign_keys = None
+        elif "time point fields:" in schema_description.lower():
+            primary_keys = ["jdc_person_id", "visit_number"]
+            #foreign_keys = ["jdc_person_id"]
 
-    #convert and format the table schema dictionary
-    tbl_schema_dict = convert_table_schema_df_to_dict(
-        tbl_schema_df,
-        table_description=schema_description,
-        primary_keys=primary_keys,
-        foreign_keys=foreign_keys,
-    )
-    tbl_schema_dict["description"] = schema_description
-    validate_report = validate_schema(tbl_schema_dict)
+        #convert and format the table schema dictionary
+        tbl_schema_dict = convert_table_schema_df_to_dict(
+            tbl_schema_df,
+            table_description=schema_description,
+            primary_keys=primary_keys,
+            foreign_keys=foreign_keys,
+        )
+        tbl_schema_dict["description"] = schema_description
+        validate_report = validate_schema(tbl_schema_dict)
 
-    #write table schema dictionary to YAML file
-    yaml_dir = os.path.join('schemas', f"{schema_path}.yaml")
-    if validate_report.metadata_valid:
-        with open(yaml_dir, "w") as f:
-            yaml.safe_dump(tbl_schema_dict, f)
-    else:
-        print("Schema not valid due to these errors:")
-        print("\n".join(validate_report["errors"]))
-        sys.exit()
+        #write table schema dictionary to YAML file
+        yaml_dir = os.path.join('schemas', f"{schema_path}.yaml")
+        if validate_report.metadata_valid:
+            with open(yaml_dir, "w") as f:
+                yaml.safe_dump(tbl_schema_dict, f)
+        else:
+            print("Schema not valid due to these errors:")
+            print("\n".join(validate_report["errors"]))
+            sys.exit()
 
 
-    json_dir = os.path.join('schemas', f"{schema_path}.json")
-    if validate_report.metadata_valid:
-        with open(json_dir, "w") as f:
-            json.dump(tbl_schema_dict, f,indent=4)
-    else:
-        print("Schema not valid due to these errors:")
-        print("\n".join(validate_report["errors"]))
-        sys.exit()
+        json_dir = os.path.join('schemas', f"{schema_path}.json")
+        if validate_report.metadata_valid:
+            with open(json_dir, "w") as f:
+                json.dump(tbl_schema_dict, f,indent=4)
+        else:
+            print("Schema not valid due to these errors:")
+            print("\n".join(validate_report["errors"]))
+            sys.exit()
