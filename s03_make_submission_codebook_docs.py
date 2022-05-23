@@ -73,7 +73,12 @@ def add_examples(examples):
 def add_core_measure_question(field):
     question_exp = Fields('custom').child(Fields("jcoin:core_measure_question"))
     question = question_exp.find(field)
+
+    subsection_exp = Fields('custom').child(Fields("jcoin:core_measure_subsection_text"))
+    subsection = subsection_exp.find(field)
     
+    if question and subsection:
+        f'{subsection[0].value}\n{question[0].value}'
     if question:
         return question[0].value
     else:
@@ -122,8 +127,13 @@ def make_field_md(field):
         ("**Notes:**",add_note(field))
     ]
 
+    field_md = "\n\n\t".join([prop_name+" "+prop for prop_name,prop in field_list if prop])
+
+
+    #field_expandable = f'<details>\n\t<summary>\n\t{field_md}\n</details>'
+
     
-    return "\n\n".join([prop_name+" "+prop for prop_name,prop in field_list if prop])
+    return field_md
 
 section_md_template = '''
 ----------
@@ -136,33 +146,41 @@ def get_section(field,first_level='custom',second_level='jcoin:core_measure_sect
         section = json_section[0].value
     else:
         section = "Other"
-    return section_md_template.format(section=section)
-
+    return section
+    
 baseline_schema_path = f'{SCHEMA_DIR}/table-schema-baseline.yaml'
 timepoint_schema_path = f'{SCHEMA_DIR}/table-schema-time-points.yaml'
 schemas = [Schema(baseline_schema_path),Schema(timepoint_schema_path)]
 
 
 # Field Codebook
+overall_md = ''
 for schema in schemas:
     field_md_list = []
     section = '' #initiate section name
     for field in schema.fields:
         #compare this section with last section and add section header to markdown if new
         if section!=get_section(field):
-            field_md_list.append(get_section(field))
+            collapse_start = f'\n<details>\n\t<summary><h2>{get_section(field)}</h2></summary>\n'
+            collapse_end = '\n</details>\n'
+            if section:
+                field_md_list.append(collapse_end)
+
+            field_md_list.append(f'{collapse_start}')
+            #field_md_list.append(get_section(field))
         section = get_section(field)
 
         field_md_list.append(make_field_md(field))
-        
+    
+    field_md_list.append('\n</details>\n')
     fields_mds = '\n'.join(field_md_list)
 
     #schema/dataset/file level 
     schema_description = schema.get('description','No description')
     schema_file_name = schema_description.split(":")[0].lower().replace(" ","_")
-    overall_md = f"# {schema_description}"
+    overall_md+=f"\n# {schema_description}\n"
     overall_md+=fields_mds #add field markdowns to schema dataset/file level
-    with open(f"docs/submission/{schema_file_name}.md",'w',encoding='utf-8') as f:
-        f.write(overall_md)
+with open(f"codebooks/codebook.md",'w',encoding='utf-8') as f:
+    f.write(overall_md)
 
 
