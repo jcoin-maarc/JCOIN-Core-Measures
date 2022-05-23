@@ -1,5 +1,9 @@
 # JCOIN Frictionless Table Schemas/Data Dictionaries
 
+See `codebooks` for an interactive codebook
+and `data_dictionaries` for spreadsheet format
+
+
 Note: In development is the interactive "codebook", the data dictionary excel formatting (eg merging cells with redundant info like Section and subsection question text) detailed explanations of the:
 
 - work flow (and how to contribute to this project)

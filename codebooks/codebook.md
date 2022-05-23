@@ -1,3 +1,5 @@
+**Click on each section to view variable information!**
+
 
 # Baseline Fields: Measures collected only at baseline 
 
@@ -96,7 +98,8 @@
 
 **Required:** Yes
 
-**Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True
+**Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
+ False if not 'Male' and not 'Transfgender' else True
  ---------
 
  
