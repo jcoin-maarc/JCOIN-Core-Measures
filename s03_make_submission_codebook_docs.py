@@ -127,7 +127,7 @@ def make_field_md(field):
         ("**Notes:**",add_note(field))
     ]
 
-    field_md = "\n\n\t".join([prop_name+" "+prop for prop_name,prop in field_list if prop])
+    field_md = "\n\n".join([prop_name+" "+prop for prop_name,prop in field_list if prop])
 
 
     #field_expandable = f'<details>\n\t<summary>\n\t{field_md}\n</details>'
