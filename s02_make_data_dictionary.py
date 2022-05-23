@@ -15,6 +15,7 @@ dd_key = {
     "Variable Description":"description",	
     "Variable Type":"type",
     "Required":"required",
+    "Subsection Question Text (if applicable)":"jcoin:core_measure_subsection_text",
     "Question (if applicable)":"jcoin:core_measure_question",	
     "Max Length (if string type)":"maxLength",
     "Regular Expression pattern (see examples)":"pattern",	
@@ -54,6 +55,8 @@ for f in yaml_files:
     )
     dd = make_dd_from_yaml(f)
     pd.DataFrame(dd).to_csv('data_dictionaries/'+file_path+".tsv",sep='\t')
-    
+    pd.DataFrame(dd).to_excel('data_dictionaries/jcoin_core_measure_data_dictionaries.xlsx',
+        sheet_name=Path(f).stem)
 
-    
+
+
