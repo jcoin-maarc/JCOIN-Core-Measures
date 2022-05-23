@@ -47,16 +47,38 @@ def make_dd_from_yaml(yaml_file):
     return dd_values
 
 
-for f in yaml_files:
-    file_path = (
-        Path(f).name
-        .split(".")[0]
-        .replace('table-schema','data-dictionary')
-    )
-    dd = make_dd_from_yaml(f)
-    pd.DataFrame(dd).to_csv('data_dictionaries/'+file_path+".tsv",sep='\t')
-    pd.DataFrame(dd).to_excel('data_dictionaries/jcoin_core_measure_data_dictionaries.xlsx',
-        sheet_name=Path(f).stem)
+
+df = pd.DataFrame(make_dd_from_yaml(yaml_files[0]))
+
+with pd.ExcelWriter('data_dictionaries/jcoin_core_measure_data_dictionaries.xlsx') as writer:
+    for f in yaml_files:
+        file_path = (
+            Path(f).name
+            .split(".")[0]
+            .replace('table-schema','data-dictionary')
+        )
+
+        sheet_name = Path(f).stem
+
+        dd = pd.DataFrame(make_dd_from_yaml(f))
+        subsection = dd['Variable Name'].str.extract('(^[a-z][1-9]{1,2})')[0]
+        dd.insert(2,'Core Measure Subsection',subsection)
+        dd.to_csv('data_dictionaries/'+file_path+".tsv",sep='\t')
+        dd.to_excel(
+            writer,
+            sheet_name=sheet_name,
+        )
+
+        # merge cells
+        # cols_merge = [
+        #     'Category/Core Measure Section',
+        #     'Subsection Question Text (if applicable)',
+
+
+        # ]
+
+
+
 
 
 
