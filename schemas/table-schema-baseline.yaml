@@ -65,9 +65,9 @@ fields:
     jcoin:core_measure_question: What is your gender identity?
     jcoin:core_measure_section: Demographics
     jcoin:final_variable_name: gender_identity_long
-    notes: For gender/orientation/identity, use items O1-O2 if possible, otherwise
-      use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender'
-      else True
+    notes: "For gender/orientation/identity, use items O1-O2 if possible, otherwise\
+      \ use D4a-D4c.   [Must use one or the other.] \r False if not 'Male' and not\
+      \ 'Transfgender' else True"
   description: Gender identity
   name: o2
   title: Gender Identity
@@ -249,6 +249,623 @@ fields:
     or other Spanish culture or origin regardless of race
   name: d2
   title: Hispanic, Latino, or Spanish Origin
+  type: string
+- constraints:
+    enum:
+    - Straight or heterosexual
+    - Lesbian or gay
+    - Bisexual
+    - Queer,pansexual, and/or questioning
+    - Something else
+  custom:
+    jcoin:core_measure_question: "Sexual orientation:  Do you think of yourself as\xE2\
+      \u20AC\xA6?"
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: sexual_orientation
+  description: Sexual orientation
+  name: d4c
+  title: Sexual orientation
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: "Sexual orientation:  Do you think of yourself as\xE2\
+      \u20AC\xA6?"
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: sexual_orientation_other
+  description: The specific other sexual orientation of a person having a sexual orientation
+    other than the categories presented
+  name: d4c_specify_other
+  title: 'Sexual orientation:  Other specified'
+  type: string
+- constraints:
+    enum:
+    - Never been pregnant
+    - Currenly pregnant
+    - Previously pregnant,had a child
+    - Previously pregnant,did not have a child
+    - Not applicable
+    - Don't know
+  custom:
+    jcoin:core_measure_question: Have you ever been pregnant?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: pregnant
+    notes: Does this just apply to that past 90 days?  If not, then the participant
+      should be able to check more than one response.
+  description: Denotes whether person has ever been pregnant
+  name: d4d
+  title: Ever pregnant
+  type: string
+- constraints:
+    enum:
+    - Married
+    - Widowed
+    - Divorced
+    - Separated
+    - Never married
+  custom:
+    jcoin:core_measure_question: What is your marital status?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: marital_status
+  description: Marital status
+  name: d5
+  title: Marital status
+  type: string
+- constraints:
+    enum:
+    - Yes,I am living as married with partner
+    - No,I am not living as married with partner
+  custom:
+    jcoin:core_measure_question: Are you currently living as married with a romantic
+      partner?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: unmarried_partner
+  description: Denotes whether unmarried person is living as married with romantic
+    partner
+  name: d5a
+  title: Married with partner
+  type: string
+- constraints:
+    enum:
+    - Did not complete high school
+    - GED or equivalent
+    - Regular high school diploma
+    - Some college credit
+    - ' but less than 1 year of college credit'
+    - 1 or more years of college credit
+    - ' but no degree'
+    - Associate's degree (e.g.
+    - ' AA or AS)'
+    - Bachelor's degree (e.g.
+    - ' BA or BS)'
+    - Graduate degree (e.g.
+    - ' MSW'
+    - ' MA'
+    - ' MS'
+    - ' JD'
+    - ' MD'
+    - ' DSW'
+    - ' EdD'
+    - ' PhD)'
+    - Other (specify)
+  custom:
+    jcoin:core_measure_question: What is the highest grade or level of school you
+      have completed or the highest degree you have received?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: education
+  description: The highest level of education completed
+  name: d6
+  title: Education
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: What is the highest grade completed?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: education_grade
+  description: Highest grade level completed, if less than GED or high school diploma
+  name: d6_grade
+  title: 'Education:  Highest grade level (if less than GED or h.s. diploma)'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: What is the highest grade or level of school you
+      have completed or the highest degree you have received?
+    jcoin:core_measure_section: Demographics
+    jcoin:final_variable_name: education_other
+  description: Denotes educational status other than categories presented
+  name: d6_specify_other
+  title: 'Education: Other specified'
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+  custom:
+    jcoin:core_measure_question: Interview conducted with participant during incarceration?
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: iv_incarceration
+  description: Indicates whether or not the person was interviewed during incarceration
+  name: u14f
+  title: Interviewed during incarceration
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: During the past xx/30 days, how many days have you
+      been incarcerated?
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: incarceration_days
+  description: Number of days incarcerated in past 30/xx days
+  name: u14g
+  title: Days incarcerated (in past 30/xx days)
+  type: number
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+  custom:
+    jcoin:core_measure_question: Have you ever been prescribed and taken medication
+      to treat opioid use disorder?  (Illicit use should be excluded.)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: oud_meds_rx
+  description: Indicates whether or not participant has ever been prescribed medication
+    for OUD
+  name: u15
+  title: Medication ever prescribed for opioid use disorder?
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (buprenorphine-naloxone or buprenorphine
+      daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or
+      Subutex tablets])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: buprenorphine_tab_mos
+  description: Number of months participant was prescribed and took buprenorphine-naloxone
+    or buprenorphine daily sublingual
+  name: u15a1
+  title: 'Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (buprenorphine-naloxone
+      or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films
+      or tablets, or Subutex tablets])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: buprenorphine_tab_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took buprenorphine-naloxone or buprenorphine daily sublingual
+  name: u15a2
+  title: 'Buprenorphine-naloxone or buprenorphine daily sublingual: Past 30/xx days
+    PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (buprenorphine-naloxone
+      or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films
+      or tablets, or Subutex tablets])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: buprenorphine_tab_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of buprenorphine-naloxone
+    or buprenorphine daily sublingual
+  name: u15a3
+  title: 'Buprenorphine-naloxone or buprenorphine daily sublingual: Past 30/xx PTI
+    days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (buprenorphine-naloxone or buprenorphine
+      daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or
+      Subutex tablets])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: buprenorphine_tab_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    buprenorphine-naloxone or buprenorphine daily sublingual
+  name: u15a4
+  title: 'Buprenorphine-naloxone or buprenorphine daily sublingual: Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (buprenorphine-naloxone
+      or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films
+      or tablets, or Subutex tablets])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: buprenorphine_tab_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of buprenorphine-naloxone or
+    buprenorphine daily sublingual
+  name: u15a5
+  title: 'Buprenorphine-naloxone or buprenorphine daily sublingual: Past 30/xx days
+    dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (buprenorphine injection [Sublocade])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: sublocade_mos
+  description: Number of months participant was prescribed and took buprenorphine
+    injection (Sublocade)
+  name: u15b1
+  title: 'Buprenorphine injection (Sublocade):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (buprenorphine injection
+      [Sublocade])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: sublocade_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took buprenorphine injection (Sublocade)
+  name: u15b2
+  title: 'Buprenorphine injection (Sublocade): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (buprenorphine injection
+      [Sublocade])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: sublocade_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of buprenorphine injection
+    (Sublocade)
+  name: u15b3
+  title: 'Buprenorphine injection (Sublocade): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (buprenorphine injection [Sublocade])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: sublocade_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    buprenorphine injection (Sublocade)
+  name: u15b4
+  title: 'Buprenorphine injection (Sublocade): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (buprenorphine injection
+      [Sublocade])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: sublocade_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of buprenorphine injection (Sublocade)
+  name: u15b5
+  title: 'Buprenorphine injection (Sublocade): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (buprenorphine weekly injection [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_weekly_mos
+  description: Number of months participant was prescribed and took buprenorphine
+    weekly injection (Brixadi)
+  name: u15c1
+  title: 'Buprenorphine  weekly injection (Brixadi):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (buprenorphine weekly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_weekly_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took buprenorphine weekly injection (Brixadi)
+  name: u15c2
+  title: 'Buprenorphine weekly injection (Brixadi): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (buprenorphine weekly
+      injection [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_weekly_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of buprenorphine weekly injection
+    (Brixadi)
+  name: u15c3
+  title: 'Buprenorphine weekly injection (Brixadi): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (buprenorphine weekly injection [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_weekly_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    buprenorphine weekly injection (Brixadi)
+  name: u15c4
+  title: 'Buprenorphine weekly injection (Brixadi): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (buprenorphine weekly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_weekly_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of buprenorphine weekly injection
+    (Brixadi)
+  name: u15c5
+  title: 'Buprenorphine weekly injection (Brixadi): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (buprenorphine monthly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_monthly_mos
+  description: Number of months participant was prescribed and took buprenorphine
+    monthly injection (Brixadi)
+  name: u15d1
+  title: 'Buprenorphine  monthly injection (Brixadi):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (buprenorphine monthly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_monthly_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took buprenorphine monthly injection (Brixadi)
+  name: u15d2
+  title: 'Buprenorphine monthly injection (Brixadi): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (buprenorphine monthly
+      injection [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_monthly_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of buprenorphine monthly
+    injection (Brixadi)
+  name: u15d3
+  title: 'Buprenorphine monthly injection (Brixadi): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (buprenorphine monthly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_monthly_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    buprenorphine monthly injection (Brixadi)
+  name: u15d4
+  title: 'Buprenorphine monthly injection (Brixadi): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (buprenorphine monthly injection
+      [Brixadi])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: brixadi_monthly_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of buprenorphine monthly injection
+    (Brixadi)
+  name: u15d5
+  title: 'Buprenorphine monthly injection (Brixadi): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (buprenorphine 6-month implant [Probuphine])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: probuphine_mos
+  description: Number of months participant was prescribed and took buprenorphine
+    6-month implant (Probuphine)
+  name: u15e1
+  title: 'Buprenorphine 6-month implant (Probuphine):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (buprenorphine 6-month implant
+      [Probuphine])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: probuphine_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took buprenorphine 6-month implant (Probuphine)
+  name: u15e2
+  title: 'Buprenorphine 6-month implant (Probuphine): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (buprenorphine 6-month
+      implant [Probuphine])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: probuphine_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of buprenorphine 6-month
+    implant (Probuphine)
+  name: u15e3
+  title: 'Buprenorphine 6-month implant (Probuphine): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (buprenorphine 6-month implant [Probuphine])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: probuphine_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    buprenorphine 6-month implant (Probuphine)
+  name: u15e4
+  title: 'Buprenorphine 6-month implant (Probuphine): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (buprenorphine 6-month implant
+      [Probuphine])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: probuphine_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of buprenorphine 6-month implant
+    (Probuphine)
+  name: u15e5
+  title: 'Buprenorphine 6-month implant (Probuphine): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (Naltrexone daily (oral))
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: naltrexone_mos
+  description: Number of months participant was prescribed and took Naltrexone daily
+    (oral)
+  name: u15f1
+  title: 'Naltrexone daily (oral):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (Naltrexone daily (oral))
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: naltrexone_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took Naltrexone daily (oral)
+  name: u15f2
+  title: 'Naltrexone daily (oral): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (Naltrexone daily (oral))
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: naltrexone_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of Naltrexone daily (oral)
+  name: u15f3
+  title: 'Naltrexone daily (oral): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (Naltrexone daily (oral))
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: naltrexone_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    Naltrexone daily (oral)
+  name: u15f4
+  title: 'Naltrexone daily (oral): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (Naltrexone daily (oral))
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: naltrexone_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of Naltrexone daily (oral)
+  name: u15f5
+  title: 'Naltrexone daily (oral): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (Naltrexone monthly injection [Vivitrol])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: vivitrol_mos
+  description: Number of months participant was prescribed and took Naltrexone monthly
+    injection (Vivitrol)
+  name: u15g1
+  title: 'Naltrexone monthly injection (Vivitrol):  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (Naltrexone monthly injection
+      [Vivitrol])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: vivitrol_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took Naltrexone monthly injection (Vivitrol)
+  name: u15g2
+  title: 'Naltrexone monthly injection (Vivitrol): Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (Naltrexone monthly
+      injection [Vivitrol])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: vivitrol_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of Naltrexone monthly injection
+    (Vivitrol)
+  name: u15g3
+  title: 'Naltrexone monthly injection (Vivitrol): Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (Naltrexone monthly injection [Vivitrol])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: vivitrol_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    Naltrexone monthly injection (Vivitrol)
+  name: u15g4
+  title: 'Naltrexone monthly injection (Vivitrol): Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (Naltrexone monthly injection
+      [Vivitrol])
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: vivitrol_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of Naltrexone monthly injection
+    (Vivitrol)
+  name: u15g5
+  title: 'Naltrexone monthly injection (Vivitrol): Past 30/xx days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Lifetime months (methadone daily)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: methadone_mos
+  description: Number of months participant was prescribed and took methadone daily
+  name: u15h1
+  title: 'Methadone daily:  Lifetime months'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI days (methadone daily)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: methadone_pti_days
+  description: Number of days in past 30/xx PTI days participant was prescribed and
+    took methadone daily
+  name: u15h2
+  title: 'Methadone daily: Past 30/xx days PTI # days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days PTI dose/day (methadone daily)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: methadone_pti_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days PTI) of methadone daily
+  name: u15h3
+  title: 'Methadone daily: Past 30/xx PTI days dose/day'
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days (methadone daily)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: methadone_days
+  description: Number of days in past 30/xx days participant was prescribed and took
+    methadone daily
+  name: u15h4
+  title: 'Methadone daily: Past 30/xx days'
+  type: number
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: Past 30/xx days dose/day (methadone daily)
+    jcoin:core_measure_section: MOUD
+    jcoin:final_variable_name: methadone_dose
+    notes: Dose/day is the dose taken most often during the 30 days PTI or past 30
+      days
+  description: Dose per day (in the past 30/xx days) of methadone daily
+  name: u15h5
+  title: 'Methadone daily: Past 30/xx days dose/day'
   type: string
 missingValues:
 - NaN

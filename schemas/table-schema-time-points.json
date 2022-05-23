@@ -64,7 +64,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you used alcohol or other drugs weekly or more often?",
+                "jcoin:core_measure_question": "... you used alcohol or other drugs weekly or more often?",
+                "jcoin:core_measure_subsection_text": "When was the last time you\u2026",
                 "jcoin:core_measure_id": "S1a",
                 "jcoin:final_variable_name": "last_drug_use"
             }
@@ -75,7 +76,6 @@
             "type": "string",
             "description": "Last time a person spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -89,7 +89,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)?",
+                "jcoin:core_measure_question": "... You spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)?",
+                "jcoin:core_measure_subsection_text": "When was the last time you\u2026",
                 "jcoin:core_measure_id": "S1b",
                 "jcoin:final_variable_name": "last_drug_get_use_recover"
             }
@@ -100,7 +101,6 @@
             "type": "string",
             "description": "Last time a person kept using alcohol or other drugs even though it was causing social  problems, leading to fights, or getting you into trouble with other people",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -114,7 +114,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people?",
+                "jcoin:core_measure_question": "... You kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people?",
+                "jcoin:core_measure_subsection_text": "When was the last time you\u2026",
                 "jcoin:core_measure_id": "S1c",
                 "jcoin:final_variable_name": "last_drug_use_social_dysfunction"
             }
@@ -125,7 +126,6 @@
             "type": "string",
             "description": "Last time a person's use of alcohol or other drugs caused giving up or reducing involvement in activities at work, school, home or social events",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -139,7 +139,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events?",
+                "jcoin:core_measure_question": "\u2026 your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events?",
+                "jcoin:core_measure_subsection_text": "When was the last time you\u2026",
                 "jcoin:core_measure_id": "S1d",
                 "jcoin:final_variable_name": "last_drug_use_work_life_dysfunction"
             }
@@ -150,7 +151,6 @@
             "type": "string",
             "description": "Last time a person had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or used any  alcohol or other drugs to stop being sick or avoid withdrawal problems",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -164,7 +164,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems?",
+                "jcoin:core_measure_question": "... You had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems?",
+                "jcoin:core_measure_subsection_text": "When was the last time you\u2026",
                 "jcoin:core_measure_id": "S1e",
                 "jcoin:final_variable_name": "last_drug_use_withdrawal"
             }
@@ -175,7 +176,6 @@
             "type": "string",
             "description": "Last time a person used any kind of heroin, fentanyl, or other opioid",
             "constraints": {
-                "required": false,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -189,7 +189,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_question": "... used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_subsection_text": "When was the last time\u2026",
                 "jcoin:core_measure_id": "S2a",
                 "jcoin:final_variable_name": "last_time_opioid_use"
             }
@@ -200,7 +201,6 @@
             "type": "string",
             "description": "Last time a person had an opioid overdose",
             "constraints": {
-                "required": false,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -214,7 +214,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]",
+                "jcoin:core_measure_question": "... had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]",
+                "jcoin:core_measure_subsection_text": "When was the last time\u2026",
                 "jcoin:core_measure_id": "S2b",
                 "jcoin:final_variable_name": "last_time_opioid_overdose"
             }
@@ -225,7 +226,6 @@
             "type": "string",
             "description": "Last time a person had a medication assisted treatment for opioid use disorder",
             "constraints": {
-                "required": false,
                 "enum": [
                     "Never",
                     "More than a year ago",
@@ -239,7 +239,8 @@
             "custom": {
                 "notes": "Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise",
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "When was the last time you went to any kind of medication assisted treatment for opioid use disorder?",
+                "jcoin:core_measure_question": "... went to any kind of medication assisted treatment for opioid use disorder?",
+                "jcoin:core_measure_subsection_text": "When was the last time\u2026",
                 "jcoin:core_measure_id": "S2c",
                 "jcoin:final_variable_name": "last_time_opioid_med_treatment"
             }
@@ -249,13 +250,12 @@
             "title": "Opioid Overdose Count",
             "type": "integer",
             "description": "Number of times a person overdosed on heroin, fentanyl or other opioids during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you overdose on heroin, fentanyl or other opioids?  [Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention]",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3a",
                 "jcoin:final_variable_name": "opioid_overdose_ct"
             }
@@ -265,13 +265,12 @@
             "title": "Opioid Overdose Count: Receiving Naloxone",
             "type": "integer",
             "description": "Number of times a person received naloxone (Evzio or Narcan) to reverse your overdose during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you receive naloxone (Evzio or Narcan) to reverse your overdose?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3b",
                 "jcoin:final_variable_name": "opioid_overdose_naloxone_ct"
             }
@@ -281,13 +280,12 @@
             "title": "Person Who Administered Nalaxone for Overdose",
             "type": "array",
             "description": "People who administered naloxone or narcan",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "TODO: expand fields to each of the possible selections",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3c",
                 "jcoin:final_variable_name": "who_administered_naloxone"
             }
@@ -297,13 +295,12 @@
             "title": "Drugs 4 hrs Before Overdose",
             "type": "array",
             "description": "Drugs taken in the 4 hours before overdose",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "TODO: expand fields to each of the possible selections",
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3d",
                 "jcoin:final_variable_name": "drugs_4hrs_prior_to_overdose"
             }
@@ -313,12 +310,11 @@
             "title": "Emergency Medical Service Following Overdose",
             "type": "integer",
             "description": "Number of times a person received emergency medical service following an overdose",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "How many of these times did you receive emergency medical service following an overdose?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3e",
                 "jcoin:final_variable_name": "emergency_service_after_overdose"
             }
@@ -328,12 +324,11 @@
             "title": "Emergency Department Visit Count Following Overdose",
             "type": "integer",
             "description": "Number of times a person went to the emergency department following an overdose",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "How many of these times did you go to the emergency department following an overdose?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3f",
                 "jcoin:final_variable_name": "emergency_dept_after_overdose_ct"
             }
@@ -343,12 +338,11 @@
             "title": "Hospital Admissions Count Following Overdose",
             "type": "integer",
             "description": "Number of times a person got admitted to the hospital following an overdose",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "How many of these times did you get admitted to the hospital following an overdose?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3g",
                 "jcoin:final_variable_name": "hospital_admission_after_overdose_ct"
             }
@@ -358,12 +352,11 @@
             "title": "Substance Use Treatment Referral Count Following Overdose",
             "type": "integer",
             "description": "Number of times a person received a referral to substance use treatment from the police, EMS, ED or hospital staff",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
                 "jcoin:core_measure_question": "How many of these times did you receive a referral to substance use treatment from the police, EMS, ED or hospital staff?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .",
                 "jcoin:core_measure_id": "S3h",
                 "jcoin:final_variable_name": "substance_use_treatment_referral_ct"
             }
@@ -373,12 +366,11 @@
             "title": "Drug Use Count",
             "type": "integer",
             "description": "Number of times a person used any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/since your last assessment), on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?",
+                "jcoin:core_measure_question": "...on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4a",
                 "jcoin:final_variable_name": "drug_use_ct"
             }
@@ -388,12 +380,11 @@
             "title": "Alcohol Use Count",
             "type": "integer",
             "description": "Number of times a person drank any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?",
+                "jcoin:core_measure_question": "...how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4b",
                 "jcoin:final_variable_name": "alcohol_use_ct"
             }
@@ -403,12 +394,11 @@
             "title": "Alcohol Use Count: Binge Drinking",
             "type": "integer",
             "description": "Number of times a person had 5 or more drinks during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you have 5 or more drinks?",
+                "jcoin:core_measure_question": "...how many times did you have 5 or more drinks?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4c",
                 "jcoin:final_variable_name": "alcohol_binge_ct"
             }
@@ -418,12 +408,11 @@
             "title": "Marijuana use count: medical",
             "type": "integer",
             "description": "Number of times a person used medical marijuana that was obtained from a dispensary with their own recommendation card or prescription during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?",
+                "jcoin:core_measure_question": "...how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4d",
                 "jcoin:final_variable_name": "marijuana_medical_use_ct"
             }
@@ -433,12 +422,11 @@
             "title": "Marijuana use count: Not own",
             "type": "integer",
             "description": "Number of times a person used other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not their own",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?",
+                "jcoin:core_measure_question": "... how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4e",
                 "jcoin:final_variable_name": "marijuana_not_own_use_ct"
             }
@@ -448,12 +436,11 @@
             "title": "Opioid use count: Heroin",
             "type": "integer",
             "description": "Number of times a person used heroin (alone or mixed with other drugs) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use heroin (alone or mixed with other drugs)?",
+                "jcoin:core_measure_question": "... how many times did you use heroin (alone or mixed with other drugs)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4f",
                 "jcoin:final_variable_name": "opioid_heroin_use_ct"
             }
@@ -463,12 +450,11 @@
             "title": "Opioid use count: Fentanyl",
             "type": "integer",
             "description": "Number of times a person used fentanyl (alone or mixed with other drugs)  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use fentanyl (alone or mixed with other drugs)?",
+                "jcoin:core_measure_question": "... how many times did you use fentanyl (alone or mixed with other drugs)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4g",
                 "jcoin:final_variable_name": "opioid_fentanyl_use_ct"
             }
@@ -478,12 +464,11 @@
             "title": "Opioid use count: Street Methadone",
             "type": "integer",
             "description": "Number of times a person used nonprescription or street methadone  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use nonprescription or street methadone?",
+                "jcoin:core_measure_question": "... how many times did you use nonprescription or street methadone?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4h",
                 "jcoin:final_variable_name": "opioid_street_methadone_use_ct"
             }
@@ -493,12 +478,11 @@
             "title": "Opioid use count: Suboxone",
             "type": "integer",
             "description": "Number of times a person used nonprescription or street Suboxone  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use use nonprescription or street Suboxone?",
+                "jcoin:core_measure_question": "... how many times did you use use nonprescription or street Suboxone?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4j",
                 "jcoin:final_variable_name": "opioid_suboxone_use_ct"
             }
@@ -508,12 +492,11 @@
             "title": "Opioid use count: other",
             "type": "integer",
             "description": "Number of times a person used other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)  during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_question": "... how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4k",
                 "jcoin:final_variable_name": "opioid_other_use_ct"
             }
@@ -523,12 +506,11 @@
             "title": "Cocaine use count",
             "type": "integer",
             "description": "Number of times a person used crack, smoked rock, freebase, or other forms of cocaine during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use crack, smoked rock, freebase, or other forms of cocaine?",
+                "jcoin:core_measure_question": "... how many times did you use crack, smoked rock, freebase, or other forms of cocaine?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4m",
                 "jcoin:final_variable_name": "cocaine_use_ct"
             }
@@ -538,12 +520,11 @@
             "title": "Speed use count",
             "type": "integer",
             "description": "Number of times a person used any methamphetamines, amphetamines, or other forms of speed during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use any methamphetamines, amphetamines, or other forms of speed?",
+                "jcoin:core_measure_question": "... how many times did you use any methamphetamines, amphetamines, or other forms of speed?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4n",
                 "jcoin:final_variable_name": "speed_use_ct"
             }
@@ -553,12 +534,11 @@
             "title": "Benzodiazapine, anti-anxiety, and tranquilizer use count",
             "type": "integer",
             "description": "Number of times a person used any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?",
+                "jcoin:core_measure_question": "... how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4p",
                 "jcoin:final_variable_name": "benzos_anti_anxiety_use_ct"
             }
@@ -568,12 +548,11 @@
             "title": "Drug use count: other",
             "type": "integer",
             "description": "Number of days a person use any other drug that has not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/since your last assessment), on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)?",
+                "jcoin:core_measure_question": "...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4z",
                 "jcoin:final_variable_name": "drug_use_other_ct"
             }
@@ -583,12 +562,11 @@
             "title": "Drug use: description of other drugs",
             "type": "string",
             "description": "A description of drugs that have not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the 90 days(prior to entering jail or prison/since your last assessment), on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )",
+                "jcoin:core_measure_question": "...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]",
                 "jcoin:core_measure_id": "S4z",
                 "jcoin:final_variable_name": "drug_use_other_desc"
             }
@@ -598,24 +576,20 @@
             "title": "Place of No Opioid Use (Jail, Hospital, etc)",
             "type": "integer",
             "description": "Number of days a person has been in jail, hospital, or other place where they could not use heroin, fentanyl, other opioids, alcohol, marijuana, or other drugs",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Substance Use",
-                "jcoin:core_measure_question": "During the 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)",
+                "jcoin:core_measure_question": "During the past 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)",
                 "jcoin:core_measure_id": "S5",
                 "jcoin:final_variable_name": "place_of_no_drug_use_ct"
             }
         },
         {
-            "name": "j1a",
+            "name": "j1",
             "title": "Activities against law besides drugs",
             "type": "integer",
             "description": "During the past 90 days (since last assessment), on how many days were a person involved in any activities that might get a person into trouble or be against the law besides drug use? [IF 0, GO TO J2]",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "[IF 0, GO TO J2]",
                 "jcoin:core_measure_section": "Justice Involvement",
@@ -628,13 +602,12 @@
             "title": "Drug possession",
             "type": "integer",
             "description": "Number of times  a person  been in possession of small amounts of drugs? (drug possession)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been in possession of small amounts of drugs? (drug possession)",
+                "jcoin:core_measure_question": "... been in possession of small amounts of drugs? (drug possession)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "drug_possession_ct"
             }
         },
@@ -643,13 +616,12 @@
             "title": "Drunkenness or other liquor law violations",
             "type": "integer",
             "description": "Number of times  a person  been drunk or high in public? (drunkenness or other liquor law violations)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been drunk or high in public? (drunkenness or other liquor law violations)",
+                "jcoin:core_measure_question": "... been drunk or high in public? (drunkenness or other liquor law violations)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "drunkenness_or_other_liquor_law_violations_ct"
             }
         },
@@ -658,13 +630,12 @@
             "title": "Driving under the influence or while intoxicated",
             "type": "integer",
             "description": "Number of times  a person  driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)",
+                "jcoin:core_measure_question": "... driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "driving_under_the_influence_or_while_intoxicated_ct"
             }
         },
@@ -673,13 +644,12 @@
             "title": "Possession, dealing, distribution or sale of drugs",
             "type": "integer",
             "description": "Number of times  a person \u2026sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you \u2026sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)",
+                "jcoin:core_measure_question": "...sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "possession_dealing_distribution_or_sale_of_drugs_ct"
             }
         },
@@ -688,13 +658,12 @@
             "title": "Vandalism or property destruction",
             "type": "integer",
             "description": "Number of times  a person  purposely damaged or destroyed property that did not belong to a person? (vandalism or property destruction)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)",
+                "jcoin:core_measure_question": "... purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "vandalism_or_property_destruction_ct"
             }
         },
@@ -703,13 +672,12 @@
             "title": "Receiving, possessing or selling stolen goods",
             "type": "integer",
             "description": "Number of times  a person  bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)",
+                "jcoin:core_measure_question": "... bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "receiving_possessing_or_selling_stolen_goods_ct"
             }
         },
@@ -718,13 +686,12 @@
             "title": "Forgery, fraud or embezzlement",
             "type": "integer",
             "description": "Number of times  a person  passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)",
+                "jcoin:core_measure_question": "... passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "forgery_fraud_or_embezzlement_ct"
             }
         },
@@ -733,13 +700,12 @@
             "title": "Shoplifting",
             "type": "integer",
             "description": "Number of times  a person  taken something from a store without paying for it? (shoplifting)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken something from a store without paying for it? (shoplifting)",
+                "jcoin:core_measure_question": "... taken something from a store without paying for it? (shoplifting)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "shoplifting_ct"
             }
         },
@@ -748,13 +714,12 @@
             "title": "Larceny or theft",
             "type": "integer",
             "description": "Number of times  a person  other than from a store, taken money or property that didn't belong to a person? (larceny or theft)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  other than from a store, taken money or property that didn't belong to you? (larceny or theft)",
+                "jcoin:core_measure_question": "... other than from a store, taken money or property that didn't belong to you? (larceny or theft)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "larceny_or_theft_ct"
             }
         },
@@ -763,13 +728,12 @@
             "title": "Burglary or breaking and entering",
             "type": "integer",
             "description": "Number of times  a person  broken into a house or building to steal something or just to look around? (burglary or breaking and entering)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  broken into a house or building to steal something or just to look around? (burglary or breaking and entering)",
+                "jcoin:core_measure_question": "... broken into a house or building to steal something or just to look around? (burglary or breaking and entering)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "burglary_or_breaking_and_entering_ct"
             }
         },
@@ -778,13 +742,12 @@
             "title": "Motor vehicle theft",
             "type": "integer",
             "description": "Number of times  a person  taken a car without people in it that didn't belong to a person? (motor vehicle theft)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken a car without people in it that didn't belong to you? (motor vehicle theft)",
+                "jcoin:core_measure_question": "... taken a car without people in it that didn't belong to you? (motor vehicle theft)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "motor_vehicle_theft_ct"
             }
         },
@@ -793,13 +756,12 @@
             "title": "Carjacking",
             "type": "integer",
             "description": "Number of times  a person  taken a car from someone who was in it? (carjacking)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  taken a car from someone who was in it? (carjacking)",
+                "jcoin:core_measure_question": "... taken a car from someone who was in it? (carjacking)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "carjacking_ct"
             }
         },
@@ -808,13 +770,12 @@
             "title": "Simple assault or battery",
             "type": "integer",
             "description": "Number of times  a person  hit someone or gotten into a physical fight? (simple assault or battery)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  hit someone or gotten into a physical fight? (simple assault or battery)",
+                "jcoin:core_measure_question": "... hit someone or gotten into a physical fight? (simple assault or battery)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "simple_assault_or_battery_ct"
             }
         },
@@ -823,13 +784,12 @@
             "title": "Robbery",
             "type": "integer",
             "description": "Number of times  a person  used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)",
+                "jcoin:core_measure_question": "... used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "robbery_ct"
             }
         },
@@ -838,13 +798,12 @@
             "title": "Aggravated assault or battery",
             "type": "integer",
             "description": "Number of times  a person  hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)",
+                "jcoin:core_measure_question": "... hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "aggravated_assault_or_battery_ct"
             }
         },
@@ -853,13 +812,12 @@
             "title": "Forcible rape",
             "type": "integer",
             "description": "Number of times  a person  made someone have sex with a person by force when they did not want to have sex? (forcible rape)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  made someone have sex with you by force when they did not want to have sex? (forcible rape)",
+                "jcoin:core_measure_question": "... made someone have sex with you by force when they did not want to have sex? (forcible rape)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "forcible_rape_ct"
             }
         },
@@ -868,13 +826,12 @@
             "title": "Murder, homicide or no-negligent manslaughter",
             "type": "integer",
             "description": "Number of times  a person  been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)",
+                "jcoin:core_measure_question": "... been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "murder_homicide_or_no-negligent_manslaughter_ct"
             }
         },
@@ -883,13 +840,12 @@
             "title": "Arson",
             "type": "integer",
             "description": "Number of times  a person  intentionally set a building, car or other property on fire? (arson)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  intentionally set a building, car or other property on fire? (arson)",
+                "jcoin:core_measure_question": "... intentionally set a building, car or other property on fire? (arson)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "arson_ct"
             }
         },
@@ -898,13 +854,12 @@
             "title": "Prostitution, pimping or commercialized sex",
             "type": "integer",
             "description": "Number of times  a person  traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)",
+                "jcoin:core_measure_question": "... traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "prostitution_pimping_or_commercialized_sex_ct"
             }
         },
@@ -913,13 +868,12 @@
             "title": "Other unlawful activities",
             "type": "integer",
             "description": "Number of times  a person  done something else that would have gotten a person into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "notes": "(common charge names associated with behavior for reference only)",
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times have you  done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)",
+                "jcoin:core_measure_question": "... done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many times have you\u2026(common charge names associated with behavior for reference only)",
                 "jcoin:final_variable_name": "other_unlawful_activities_ct"
             }
         },
@@ -928,9 +882,7 @@
             "title": "Overall charged arrests",
             "type": "integer",
             "description": "Number of a times person was arrested and charged",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many times were you arrested and charged?",
@@ -942,12 +894,11 @@
             "title": "Drug possession arrests",
             "type": "integer",
             "description": "Number of arrests for drug possession (for small amounts)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for drug possession (for small amounts)",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "drug_possession_arrests_ct"
             }
         },
@@ -956,12 +907,11 @@
             "title": "Law violations arrests",
             "type": "integer",
             "description": "Number of arrests for drunkenness or other liquor law violations",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for drunkenness or other liquor law violations",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "law_violations_arrests_ct"
             }
         },
@@ -970,12 +920,11 @@
             "title": "Driving under the influence/intoxicated arrests",
             "type": "integer",
             "description": "Number of arrests for driving under the influence or while intoxicated",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for driving under the influence or while intoxicated",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "driving_under_the_influence/intoxicated_arrests_ct"
             }
         },
@@ -984,12 +933,11 @@
             "title": "Drug activity arrests",
             "type": "integer",
             "description": "Number of arrests for possession, dealing, distribution or sale of drugs",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for possession, dealing, distribution or sale of drugs",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "drug_activity_arrests_ct"
             }
         },
@@ -998,12 +946,11 @@
             "title": "Vandalism or property destruction arrests",
             "type": "integer",
             "description": "Number of arrests for vandalism or property destruction",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for vandalism or property destruction",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "vandalism_or_property_destruction_arrests_ct"
             }
         },
@@ -1012,12 +959,11 @@
             "title": "Stolen goods arrests",
             "type": "integer",
             "description": "Number of arrests for receiving, possessing or selling stolen goods",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for receiving, possessing or selling stolen goods",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "stolen_goods_arrests_ct"
             }
         },
@@ -1026,12 +972,11 @@
             "title": "Forgery, fraud or embezzlement arrests",
             "type": "integer",
             "description": "Number of arrests for forgery, fraud or embezzlement",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for forgery, fraud or embezzlement",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "forgery_fraud_or_embezzlement_arrests_ct"
             }
         },
@@ -1040,12 +985,11 @@
             "title": "Shoplifting arrests",
             "type": "integer",
             "description": "Number of arrests for shoplifting",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for shoplifting",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "shoplifting_arrests_ct"
             }
         },
@@ -1054,12 +998,11 @@
             "title": "Theft/larceny arrests",
             "type": "integer",
             "description": "Number of arrests for larceny or theft",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for larceny or theft",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "theft_larceny_arrests_ct"
             }
         },
@@ -1068,12 +1011,11 @@
             "title": "Burglary or breaking and entering arrests",
             "type": "integer",
             "description": "Number of arrests for burglary or breaking and entering",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for burglary or breaking and entering",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "burglary_or_breaking_and_entering_arrests_ct"
             }
         },
@@ -1082,12 +1024,11 @@
             "title": "Vehicle theft arrests",
             "type": "integer",
             "description": "Number of arrests for motor vehicle theft",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for motor vehicle theft",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "vehicle_theft_arrests_ct"
             }
         },
@@ -1096,12 +1037,11 @@
             "title": "Car jacking arrests",
             "type": "integer",
             "description": "Number of arrests for car jacking",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for car jacking",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "car_jacking_arrests_ct"
             }
         },
@@ -1110,12 +1050,11 @@
             "title": "Simple assault or battery arrests",
             "type": "integer",
             "description": "Number of arrests for simple assault or battery",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for simple assault or battery",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "simple_assault_or_battery_arrests_ct"
             }
         },
@@ -1124,12 +1063,11 @@
             "title": "Robbery arrests",
             "type": "integer",
             "description": "Number of arrests for robbery",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for robbery",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "robbery_arrests_ct"
             }
         },
@@ -1138,12 +1076,11 @@
             "title": "Aggravated assault or battery arrests",
             "type": "integer",
             "description": "Number of arrests for aggravated assault or battery",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for aggravated assault or battery",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "aggravated_assault_or_battery_arrests_ct"
             }
         },
@@ -1152,12 +1089,11 @@
             "title": "Forcible rape arrests",
             "type": "integer",
             "description": "Number of arrests for forcible rape",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for forcible rape",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "forcible_rape_arrests_ct"
             }
         },
@@ -1166,12 +1102,11 @@
             "title": "Negligent manslaughter arrests",
             "type": "integer",
             "description": "Number of arrests for murder, homicide or non-negligent manslaughter",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for murder, homicide or non-negligent manslaughter",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "negligent_manslaughter_arrests_ct"
             }
         },
@@ -1180,12 +1115,11 @@
             "title": "Arson arrests",
             "type": "integer",
             "description": "Number of arrests for arson",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for arson",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "arson_arrests_ct"
             }
         },
@@ -1194,12 +1128,11 @@
             "title": "Commercialized sex arrests",
             "type": "integer",
             "description": "Number of arrests for prostitution, pimping or commercialized sex",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for prostitution, pimping or commercialized sex",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "commercialized_sex_arrests_ct"
             }
         },
@@ -1208,12 +1141,11 @@
             "title": "Other charges arrests",
             "type": "integer",
             "description": "Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)",
-            "constraints": {
-                "required": false
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)",
+                "jcoin:core_measure_subsection_text": "During the past 90 days (since last assessment)",
                 "jcoin:final_variable_name": "other_charges_arrests_ct"
             }
         },
@@ -1222,12 +1154,11 @@
             "title": "Electronic monitoring",
             "type": "integer",
             "description": "Number of days person has been on electronic monitoring",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  on electronic monitoring?",
+                "jcoin:core_measure_question": "...on electronic monitoring?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "num_days_electronic_monitoring"
             }
         },
@@ -1236,12 +1167,11 @@
             "title": "House arrest",
             "type": "integer",
             "description": "Number of days a person has been on house arrest",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  on house arrest?",
+                "jcoin:core_measure_question": "...on house arrest?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "num_days_house_arrest"
             }
         },
@@ -1250,12 +1180,11 @@
             "title": "Jail time",
             "type": "integer",
             "description": "Number of days a person has been in jail",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  in jail?",
+                "jcoin:core_measure_question": "...in jail?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "num_days_jail_time"
             }
         },
@@ -1264,12 +1193,11 @@
             "title": "Prison time",
             "type": "integer",
             "description": "Number of days a person has been in prison",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been  in prison?",
+                "jcoin:core_measure_question": "...in prison?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "num_days_prison_time"
             }
         },
@@ -1279,7 +1207,6 @@
             "type": "string",
             "description": "Person is currently in jail or prison",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Yes",
                     "No",
@@ -1290,6 +1217,7 @@
                 "notes": "MBK: added Unknown to satisfy a small amount of respondents for one hub.",
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "Are you currently in jail or prison? (CAN MARK IF OBVIOUS)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "current_jail_or_prison_ind"
             }
         },
@@ -1298,12 +1226,11 @@
             "title": "Length of jail or prison time",
             "type": "integer",
             "description": "Length of jail or prison time for this episode",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_question": "How long have you been in jail or prison? (just this episode)",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you been \u2026",
                 "jcoin:final_variable_name": "length_of_jail_or_prison_time"
             }
         },
@@ -1312,12 +1239,11 @@
             "title": "Parole",
             "type": "integer",
             "description": "Number of days a person has been on parole",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on parole?",
+                "jcoin:core_measure_question": "...been on parole?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you\u2026",
                 "jcoin:final_variable_name": "num_days_parole"
             }
         },
@@ -1326,12 +1252,11 @@
             "title": "Probation",
             "type": "integer",
             "description": "Number of days a person has been on probation",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on probation?",
+                "jcoin:core_measure_question": "...been on probation?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you\u2026",
                 "jcoin:final_variable_name": "num_days_probation"
             }
         },
@@ -1340,12 +1265,11 @@
             "title": "Other kind of community supervision",
             "type": "integer",
             "description": "Number of days a person has been on any other kind of community supervision",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been on any other kind of community supervision?",
+                "jcoin:core_measure_question": "...been on any other kind of community supervision?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you\u2026",
                 "jcoin:final_variable_name": "num_days_other_kind_of_community_supervision"
             }
         },
@@ -1354,12 +1278,11 @@
             "title": "Meeting with probation or parole officer",
             "type": "integer",
             "description": "Number of days a person has met with a probation or parole officer",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you met with your probation or parole officer?",
+                "jcoin:core_measure_question": "...met with your probation or parole officer?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you\u2026",
                 "jcoin:final_variable_name": "num_days_meeting_with_probation_or_parole_officer"
             }
         },
@@ -1368,12 +1291,11 @@
             "title": "Trouble with probation or parole officer",
             "type": "integer",
             "description": "Number of days a person has been in trouble with a probation or parole officer",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During the past 90 days (since last assessment), how many days have you been in trouble with your probation or parole officer?",
+                "jcoin:core_measure_question": "...been in trouble with your probation or parole officer?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many days have you\u2026",
                 "jcoin:final_variable_name": "num_days_trouble_with_probation_or_parole_officer"
             }
         },
@@ -1382,12 +1304,11 @@
             "title": "Life time arrests",
             "type": "integer",
             "description": "Number of days a person has been arrested in their lifetime (including juvenile)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how many times in your life have you been arrested including as a juvenile?",
+                "jcoin:core_measure_question": "...how many times in your life have you been arrested including as a juvenile?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "num_days_life_time_arrests"
             }
         },
@@ -1396,12 +1317,11 @@
             "title": "First time arrest",
             "type": "integer",
             "description": "Age at time of first arrest",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how old were you the first time you were arrested?",
+                "jcoin:core_measure_question": "...how old were you the first time you were arrested?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "age_at_first_time_arrest"
             }
         },
@@ -1410,12 +1330,11 @@
             "title": "Lifetime years in detention, jail, or prison time",
             "type": "integer",
             "description": "Number of times a person has spent in detention, jail or prison during a personr lifetime?",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:core_measure_question": "...how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "lifetime_years_in_detention_jail_or_prison_time_ct"
             }
         },
@@ -1424,12 +1343,11 @@
             "title": "Lifetime months in detention, jail, or prison time",
             "type": "integer",
             "description": "Number of times a person has spent in detention, jail or prison during lifetime",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:core_measure_question": "...how much total time have you spent in detention, jail or prison during your lifetime?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "lifetime_months_in_detention_jail_or_prison_time_ct"
             }
         },
@@ -1438,12 +1356,11 @@
             "title": "Lifetime guity and sentenced",
             "type": "integer",
             "description": "Number of times a person has been found guilty and sentenced (including adjudications as a a personth or convictions as an adult)",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?",
+                "jcoin:core_measure_question": "...how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "lifetime_guity_and_sentenced_ct"
             }
         },
@@ -1452,13 +1369,1273 @@
             "title": "First time adjudication conviction",
             "type": "integer",
             "description": "Age at which a person was first adjudicated and convicted",
-            "constraints": {
-                "required": true
-            },
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Justice Involvement",
-                "jcoin:core_measure_question": "During your lifetime, how old were you the first time you were adjudicated or convicted?",
+                "jcoin:core_measure_question": "...how old were you the first time you were adjudicated or convicted?",
+                "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:final_variable_name": "first_time_adjudication_conviction_ct"
+            }
+        },
+        {
+            "name": "u1",
+            "title": "Emergency room:  Number of visits",
+            "type": "integer",
+            "description": "Number of times person had to go to ER",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...times have you had to go to an emergency room without being admitted to the hospital?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_er_times"
+            }
+        },
+        {
+            "name": "u2",
+            "title": "Hospital detox program: Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in hospital detox for alcohol/drug use",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a hospital detoxification program for your alcohol and other drug use (across all episodes)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_hospital_detox_nights"
+            }
+        },
+        {
+            "name": "u3",
+            "title": "Hospitalization:  Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in hospital other than detox",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a hospital for any other reason than detoxification?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_hospital_nights"
+            }
+        },
+        {
+            "name": "u4",
+            "title": "Residential detox: Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in non-hospital/social/residential detox",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a non-hospital or social detoxification program from alcohol or other drugs (also called residential detox)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_res_detox_nights"
+            }
+        },
+        {
+            "name": "u5a",
+            "title": "Residential treatment program for alcohol/drugs: Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in residential treatment program for alcohol/drug use",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a residential treatment program for alcohol or drug use?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_res_tx_alcohol_nights"
+            }
+        },
+        {
+            "name": "u5b",
+            "title": "Residential treatment program for mental health: Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in residential treatment program for mental health",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a residential treatment program for mental health?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_res_tx_mental_nights"
+            }
+        },
+        {
+            "name": "u5c",
+            "title": "Rehab facility for physical health: Number of nights",
+            "type": "integer",
+            "description": "Number of nights person was in rehab facility for physical health",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...nights were you in a residential, nursing home, or other rehabilitation facility for your physical health?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_rehab_phys_nights"
+            }
+        },
+        {
+            "name": "u6",
+            "title": "Primary care provider:  Number of visits",
+            "type": "integer",
+            "description": "Number of times person has visited primary care provider",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...times have you visited a primary care provier (physician, nurse, nurse practitioner, or physician's assistant)?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]",
+                "jcoin:core_measure_id": "us_primary_times"
+            }
+        },
+        {
+            "name": "u6a",
+            "title": "Primary care visit reason: Alcohol/drug use",
+            "type": "string",
+            "description": "Indicates whether or not person visited primary care provider for alcohol/drug use",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Alcohol or other drug use?",
+                "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
+                "jcoin:core_measure_id": "us_primary_alcohol"
+            }
+        },
+        {
+            "name": "u6b",
+            "title": "Primary care visit reason: Mental health",
+            "type": "string",
+            "description": "Indicates whether or not person visited primary care provider for mental health",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Mental health?",
+                "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
+                "jcoin:core_measure_id": "us_primary_mental"
+            }
+        },
+        {
+            "name": "u6c",
+            "title": "Primary care visit reason:  Physical health",
+            "type": "string",
+            "description": "Indicates whether or not person visited primary care provider for physical health",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Physical health?",
+                "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
+                "jcoin:core_measure_id": "us_primary_physical"
+            }
+        },
+        {
+            "name": "u6d",
+            "title": "Primary care visit reason:  Some other reason (specify)",
+            "type": "string",
+            "description": "Indicates whether or not person visited primary care provider for some other reason",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Some other reason?",
+                "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
+                "jcoin:core_measure_id": "us_primary_other"
+            }
+        },
+        {
+            "name": "u6d_specify",
+            "title": "Primary care visit reason: Specify other reason",
+            "type": "string",
+            "description": "Specifies other reason person visited primary care provider",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Specify other reason you visited primary care provider",
+                "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
+                "jcoin:core_measure_id": "us_primary_other_specify"
+            }
+        },
+        {
+            "name": "u7",
+            "title": "Outpatient treament program for alcohol/substance use: Number of days",
+            "type": "integer",
+            "description": "Number of days person participated in outpatient alcohol/substance use treatment program",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "\u2026days did you participate in any other outpatient treatment program specializing in alcohol or substance use? (OTHER THAN U1-6)",
+                "jcoin:core_measure_subsection_text": "Other than times you already mentioned in <reference to u6>, during the past 3 months (since last assessment), how many\u2026",
+                "jcoin:core_measure_id": "us_outpt_tx_days"
+            }
+        },
+        {
+            "name": "u7a",
+            "title": "Outpatient treatment program: Number of days physically visiting program",
+            "type": "integer",
+            "description": "Number of days person physically visited outpatient treatment program",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these days did you physically visit the (outpatient treatment) program?",
+                "jcoin:core_measure_id": "us_outpt_inperson_days"
+            }
+        },
+        {
+            "name": "u7b",
+            "title": "Outpatient treatment program: Number of days participating online",
+            "type": "integer",
+            "description": "Number of days person participated in outpatient tx program online",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these days did you participate (in the outpatient tx program) online (e.g., smart phone, computer, or tablet)?",
+                "jcoin:core_measure_id": "us_outpt_online_days"
+            }
+        },
+        {
+            "name": "u7c",
+            "title": "Outpatient treatment program: Number of days seeing doctor",
+            "type": "integer",
+            "description": "Number of days person saw a doctor at outpatient tx program",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these days did you see a doctor (at the outpatient treatment program)?",
+                "jcoin:core_measure_id": "us_outpt_doc_days"
+            }
+        },
+        {
+            "name": "u7d",
+            "title": "Outpatient treatment program: Number of days participating in therapy",
+            "type": "integer",
+            "description": "Number of days person only participated in therapy at outpatient tx program",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these days did you only participate in individual or group therapy?",
+                "jcoin:core_measure_id": "us_outpt_therapy_days"
+            }
+        },
+        {
+            "name": "u7e",
+            "title": "Outpatient treatment program: Number of days for medication management",
+            "type": "integer",
+            "description": "Number of days person only received medication management at outpatient tx program",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these days were for medication management only?",
+                "jcoin:core_measure_id": "us_outpt_meds_days"
+            }
+        },
+        {
+            "name": "u8",
+            "title": "Psychiatrist/psychologist:  Number of total visits",
+            "type": "integer",
+            "description": "Number of times person has seen a psychiatrist or psychologist:  Total",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist (Ph.D., Psy.D)?",
+                "jcoin:core_measure_id": "us_psych_times"
+            }
+        },
+        {
+            "name": "u8a",
+            "title": "Psychiatrist/psychologist: Number of in-person visits",
+            "type": "integer",
+            "description": "Number of times person has seen a psychiatrist/psychologist:  In person",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these times did you physically visit the program (psychiatrist/psychologist)?",
+                "jcoin:core_measure_id": "us_psych_inperson_times"
+            }
+        },
+        {
+            "name": "u8b",
+            "title": "Psychiatrist/psychologist: Number of online visits",
+            "type": "integer",
+            "description": "Number of times person has seen a psychiatrist/psychologist:  Online",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "How many of these times did you participate online (phone, computer, or tablet; with a psychiatrist/psychologist)?",
+                "jcoin:core_measure_id": "us_psych_online_times"
+            }
+        },
+        {
+            "name": "u9",
+            "title": "Counselor/social worker: Number of total visits",
+            "type": "integer",
+            "description": "Number of times person has seen a counselor/social worker:  Total",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen any other kind or counselor or social worker?",
+                "jcoin:core_measure_id": "us_counsel_times"
+            }
+        },
+        {
+            "name": "u9a",
+            "title": "Counselor/social worker: Number of in-person visits",
+            "type": "integer",
+            "description": "Number of times person has seen a counselor/social worker:  In person",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...did you physically visit the program (counselor/social worker)?",
+                "jcoin:core_measure_subsection_text": "How many of these times did you\u2026",
+                "jcoin:core_measure_id": "us_counsel_inperson_times"
+            }
+        },
+        {
+            "name": "u9b",
+            "title": "Counselor/social worker: Number of online visits",
+            "type": "integer",
+            "description": "Number of times person has seen a counselor/social worker:  Online",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "...did you participate online (phone, computer, or tablet; with a counselor/social worker)?",
+                "jcoin:core_measure_id": "us_counsel_online_times"
+            }
+        },
+        {
+            "name": "u13",
+            "title": "Healthcare cost",
+            "type": "number",
+            "description": "Amount of money person has spent on healthcare",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "In the past xx days (since last assessment), how much money have you spent on all healthcare (e.g., copayments or prescriptions)?",
+                "jcoin:core_measure_id": "us_healthcare_cost"
+            }
+        },
+        {
+            "name": "u14",
+            "title": "Substance use treatment",
+            "type": "string",
+            "description": "Indicates whether or not person has received substance use treatment",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Unknown"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "Have you received any substance use treatment in the past xx days (since last assessment)?",
+                "jcoin:core_measure_id": "us_substance_tx"
+            }
+        },
+        {
+            "name": "u14a",
+            "title": "Substance use tx provider:  Well-organized",
+            "type": "string",
+            "description": "Indicates level of agreement with provider's organization",
+            "constraints": {
+                "enum": [
+                    "Strongly agree",
+                    " Somewhat agree",
+                    " Neutral",
+                    "Somewhat disagree",
+                    "Strongly disagree"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "The provider is organized and well-run.",
+                "jcoin:core_measure_subsection_text": "Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements",
+                "jcoin:core_measure_id": "us_provider_organized"
+            }
+        },
+        {
+            "name": "u14b",
+            "title": "Substance use tx provider:  Satisfaction",
+            "type": "string",
+            "description": "Indicates level of satisfaction with provider",
+            "constraints": {
+                "enum": [
+                    "Strongly agree",
+                    " Somewhat agree",
+                    " Neutral",
+                    "Somewhat disagree",
+                    "Strongly disagree"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "You are satisfied with this provider.",
+                "jcoin:core_measure_subsection_text": "Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements",
+                "jcoin:core_measure_id": "us_provider_satisfied"
+            }
+        },
+        {
+            "name": "u14c",
+            "title": "Substance use tx provider:  Efficient staff",
+            "type": "string",
+            "description": "Indicates level of agreement with provider's staff efficiency",
+            "constraints": {
+                "enum": [
+                    "Strongly agree",
+                    " Somewhat agree",
+                    " Neutral",
+                    "Somewhat disagree",
+                    "Strongly disagree"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "The staff are efficient at doing their job.",
+                "jcoin:core_measure_subsection_text": "Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements",
+                "jcoin:core_measure_id": "us_provider_efficient"
+            }
+        },
+        {
+            "name": "u14d",
+            "title": "Substance use tx provider:  Personal counseling",
+            "type": "string",
+            "description": "Indicates level of agreement with personal counseling provided",
+            "constraints": {
+                "enum": [
+                    "Strongly agree",
+                    " Somewhat agree",
+                    " Neutral",
+                    "Somewhat disagree",
+                    "Strongly disagree"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "You can get plenty of personal counseling at this provider.",
+                "jcoin:core_measure_subsection_text": "Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements",
+                "jcoin:core_measure_id": "us_provider_counseling"
+            }
+        },
+        {
+            "name": "u14e",
+            "title": "Substance use tx provider:  Medication assistance for opioid use",
+            "type": "string",
+            "description": "Indicates level of agreement with provider's medication assistance",
+            "constraints": {
+                "enum": [
+                    "Strongly agree",
+                    " Somewhat agree",
+                    " Neutral",
+                    "Somewhat disagree",
+                    "Strongly disagree"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Utilization of Services",
+                "jcoin:core_measure_question": "You can get plenty of medication assistance for opioid use at this provider.",
+                "jcoin:core_measure_subsection_text": "Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements",
+                "jcoin:core_measure_id": "us_provider_medication"
+            }
+        },
+        {
+            "name": "m1",
+            "title": "Not candidate for OUD treatment",
+            "type": "boolean",
+            "description": "Indicates person is not a candidate for OUD treatment",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "If respondent is not a candidate for OUD treatment, mark here and skip this set of items:",
+                "jcoin:core_measure_id": "txprefs_not"
+            }
+        },
+        {
+            "name": "m2_meds",
+            "title": "Preferred type of OUD treatment:  OUD medication",
+            "type": "boolean",
+            "description": "Indicates person prefers OUD medication for treatment",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol) [Ask M3]",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_meds"
+            }
+        },
+        {
+            "name": "m2_detox",
+            "title": "Preferred type of OUD treatment:  Detox",
+            "type": "boolean",
+            "description": "Indicates person prefers detox for treatment",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Detox",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_detox"
+            }
+        },
+        {
+            "name": "m2_outpt_counsel",
+            "title": "Preferred type of OUD treatment:  Outpatient counseling",
+            "type": "boolean",
+            "description": "Indicates person prefers outpatient counseling for treatment",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Outpatient counseling",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_outpt_counsel"
+            }
+        },
+        {
+            "name": "m2_outpt_intensive",
+            "title": "Preferred type of OUD treatment:  Intensive outpatient",
+            "type": "boolean",
+            "description": "Indicates person prefers intensive outpatient for treatment",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Intensive outpatient",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_outpt_intensive"
+            }
+        },
+        {
+            "name": "m2_residential",
+            "title": "Preferred type of OUD treatment:  Residential treatment",
+            "type": "boolean",
+            "description": "Indicates person prefers residential treatment for OUD",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Residential treatment",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_residential"
+            }
+        },
+        {
+            "name": "m2_other",
+            "title": "Preferred type of OUD treatment:  Other treatment",
+            "type": "boolean",
+            "description": "Indicates person prefers other treatment for OUD",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Other",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_other"
+            }
+        },
+        {
+            "name": "m2_other_specify",
+            "title": "Preferred type of OUD treatment:  Other treatment specified",
+            "type": "boolean",
+            "description": "Specifies other treatment person prefers for OUD",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Other (specify)",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_other_specify"
+            }
+        },
+        {
+            "name": "m2_none",
+            "title": "Preferred type of OUD treatment:  No treatment",
+            "type": "boolean",
+            "description": "Indicates person prefers no treatment for OUD",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "No treatment",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_none"
+            }
+        },
+        {
+            "name": "m2_dont_know",
+            "title": "Preferred type of OUD treatment:  Don't know or no preference",
+            "type": "boolean",
+            "description": "Indicates person does not know (or does not have) an OUD treatment preference",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_question": "Don\u2019t know / No preference",
+                "jcoin:core_measure_subsection_text": "Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+                "jcoin:core_measure_id": "txprefs_dk"
+            }
+        },
+        {
+            "name": "m3",
+            "title": "Preferred OUD medication",
+            "type": "string",
+            "description": "Specifies which OUD medication person prefers",
+            "constraints": {
+                "enum": [
+                    "Methadone",
+                    "Buprenorphine/Suboxone",
+                    "Naltrexone/Vivitrol",
+                    "Don't know/No preference"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_subsection_text": "Which OUD medication treatment type would you most prefer to receive if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of questions.]",
+                "jcoin:core_measure_id": "txprefs_meds_prefer"
+            }
+        },
+        {
+            "name": "m4",
+            "title": "Type of buprenorphine preferred",
+            "type": "string",
+            "description": "Specifies which type of buprenorphine person would prefer",
+            "constraints": {
+                "enum": [
+                    "I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)",
+                    "I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)",
+                    "I would prefer to receive the 6-month buprenorphine implant",
+                    "Don't know/No preference"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_id": "txprefs_bupren_prefer"
+            }
+        },
+        {
+            "name": "m5",
+            "title": "Type of naltrexone preferred",
+            "type": "string",
+            "description": "Specifies which type of naltrexone person would prefer",
+            "constraints": {
+                "enum": [
+                    "I would prefer to receive daily naltrexone oral (Revia)",
+                    "I would prefer to receive monthly naltrexone injections (Vivitrol)",
+                    "Don't know/No preference"
+                ]
+            },
+            "custom": {
+                "jcoin:core_measure_section": "Treatment Preferences",
+                "jcoin:core_measure_id": "txprefs_naltrex_prefer"
+            }
+        },
+        {
+            "name": "d7a",
+            "title": "People in household",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "How many people, including yourself, are there in your household?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7b",
+            "title": "People under 18 years old in household",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o4",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "How many of the people in your household are under the age of 18?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7c",
+            "title": "Total household income",
+            "type": "number",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, what was the total income of everyone in your household together that provided you with support?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others.",
+                "heal:common_data_element_system": "The next question is about the income of everyone in your household together.  We do not need an exact number.  You can give your answer to the nearest hundreds or thousands of dollars if that is easier."
+            }
+        },
+        {
+            "name": "d7d",
+            "title": "Total household income from legal sources",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Less than $12,500",
+                    "$12,500 - $20,000 ",
+                    "$20,001 - $30,000 ",
+                    "$30,001 - $40,000 ",
+                    "$40,001 \u2013 $50,000 ",
+                    "$50,001 - $100,000 ",
+                    "More than $100,000"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o6",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past 12 months, which of the following is the category that your total household income from legal sources would be in?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7d1",
+            "title": "Public assistance for household",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7d2",
+            "title": "Total household money from public assistance",
+            "type": "number",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o8",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), approximately how much money has your household all together received from public assistance sources like unemployment, food stamps (TANF), subsidized housing, supplemental security income?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7e1",
+            "title": "Other non-employmnet income sources",
+            "type": "string",
+            "constraints": {},
+            "custom": {
+                "notes": "If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7e2",
+            "title": "Total household money from other non-employment income sources",
+            "type": "number",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o10",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), approximately how much money has your household all together received from other non-employment sources like retirement, pension, alimony, child support, interest?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7f1",
+            "title": "Non-employment income with risk of legal or other trouble",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Refused to answer"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d7f2",
+            "title": "Total household money with risk of causing  legal or other trouble activities",
+            "type": "number",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o12",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), outside of employment described above, how much money did you earn from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?",
+                "heal:common_data_element_code": "The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others."
+            }
+        },
+        {
+            "name": "d8",
+            "title": "Current school or work situation description",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Working full-time, 35 hours or more a week",
+                    "Working part-time, less than 35 hours a week",
+                    "Have a job where you are paid one day at a time (day labor)",
+                    "Have a job, but not at work because of treatment, extended illness, maternity leave, furlough or strike",
+                    "Have a job but not at work because it is seasonal work",
+                    "Unemployed or laid off and looking for work",
+                    "Unemployed or laid off and not looking for work",
+                    "Full-time homemaker (keeping house)",
+                    "In school or training",
+                    "In school or training, but not currently going to classes",
+                    "Retired",
+                    "In jail, prison or detention",
+                    "Too disabled for work",
+                    "In the military",
+                    "Doing volunteer work",
+                    "Some other work situation"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Which one of the following statements best describes your work or school situation currently? (CLARIFY AND CODE) [For D8, include work under the table but not any other illegal work or income]"
+            }
+        },
+        {
+            "name": "d8a",
+            "title": "Number of days worked",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o14",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), on how many days have you worked?"
+            }
+        },
+        {
+            "name": "d8b",
+            "title": "Days per week worked",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), how many days per week do you typically work?"
+            }
+        },
+        {
+            "name": "d8b1",
+            "title": "Hours per week worked",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o16",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), How many hours per week do you usually work?"
+            }
+        },
+        {
+            "name": "d8c",
+            "title": "Hourly rate",
+            "type": "number",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]"
+            }
+        },
+        {
+            "name": "d8d_health_insurance",
+            "title": "Health insurance from work",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Don't Know"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Health Insurance",
+                "jcoin:core_measure_subsection_text": "Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)"
+            }
+        },
+        {
+            "name": "d8d_paid_time_off",
+            "title": "Paid time off from work",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Don't Know"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Paid time off",
+                "jcoin:core_measure_subsection_text": "Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)"
+            }
+        },
+        {
+            "name": "d8d_benefit_plan",
+            "title": "Benefit or pension plan from work",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Don't Know"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Defined benefit plan or pension",
+                "jcoin:core_measure_subsection_text": "Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)"
+            }
+        },
+        {
+            "name": "d8d_retirement_plan",
+            "title": "Retirement plan from work",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "Don't Know"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period",
+                "jcoin:core_measure_subsection_text": "Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)"
+            }
+        },
+        {
+            "name": "d8e",
+            "type": "string",
+            "constraints": {},
+            "custom": {
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "What is your occupation?"
+            }
+        },
+        {
+            "name": "d9",
+            "title": "Currently covered by health insurance",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Are you currently covered by health insurance or some other kind of health care plan?"
+            }
+        },
+        {
+            "name": "d9a_private",
+            "title": "Private health insurance plan coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Private health insurance",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_medicare",
+            "title": "Medicare plan coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Medicare",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_medigap",
+            "title": "Medigap plan coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Medigap",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_medicaid",
+            "title": "Medicaid plan coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Medicaid ({If Available, Display State Plan Name})",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_schip",
+            "title": "Children's Health Insurance coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "SCHIP (CHIP/Children\u2019s Health Insurance Program)",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_military",
+            "title": "Military plan coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Military Health Care (Tricare/VA/CHAMP-VA)",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_indian",
+            "title": "Indian Health Service coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Indian Health Service",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_state",
+            "title": "State health coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "State-Sponsored Health Plan ({If Available, Display State Plan Name})",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_other_government",
+            "title": "Other government coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Other government program",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_single_service",
+            "title": "Single service coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Single service plan (e.g., dental, vision, prescriptions)",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d9a_dont_know",
+            "title": "Don't know about coverage",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Don\u2019t know",
+                "jcoin:core_measure_subsection_text": "What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]"
+            }
+        },
+        {
+            "name": "d10",
+            "title": "Days uninsured",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o34",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "During the past xx days (since last assessment), on how many days were you uninsured?"
+            }
+        },
+        {
+            "name": "d11a",
+            "title": "Number of days at self help group",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11b",
+            "title": "Number of days at non-alcoholic, structured activities",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o36",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Been in other structured activities where no one was using alcohol or drugs?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11c",
+            "title": "Number of days being homeless",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Been homeless or had to stay with someone else to avoid being homeless?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11d",
+            "title": "Number of days in homeless shelter",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o38",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Lived in a homeless shelter or emergency housing?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11e",
+            "title": "Number of days in household with alcohol use",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Lived where other people were using alcohol?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11f",
+            "title": "Number of days in household with drug use",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o40",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Lived where other people were using drugs?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11g",
+            "title": "Number of days of formal activities with alcohol",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Been to formal activities where people were using alcohol or drugs?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11h",
+            "title": "Number of days of home or family trouble",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o42",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Gotten into trouble at home or with your family for any reason?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11i",
+            "title": "Number of days of  abusive behavior in arguments",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "d11j",
+            "title": "Number of days being physically, emotionally, sexually abused",
+            "type": "integer",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o44",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Been attacked with a weapon, beaten, sexually abused or emotionally abused?",
+                "jcoin:core_measure_subsection_text": "During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]"
+            }
+        },
+        {
+            "name": "o3",
+            "title": "Received Narcan kit",
+            "type": "string",
+            "constraints": {
+                "enum": [
+                    "Yes",
+                    "No",
+                    "n/a not recently incarcerated"
+                ]
+            },
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (\u201cNarcan kit\u201d) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]",
+                "jcoin:core_measure_subsection_text": "If respondent was in jail/prison during the past 3 months but not currently, ask:"
+            }
+        },
+        {
+            "name": "o3a",
+            "title": "Used Narcan Kit",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Have you had to use it?",
+                "jcoin:core_measure_subsection_text": "If respondent was in jail/prison during the past 3 months but not currently, ask:"
+            }
+        },
+        {
+            "name": "o3b",
+            "title": "Refilled Narcan Kit",
+            "type": "boolean",
+            "constraints": {},
+            "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47",
+                "jcoin:core_measure_section": "Demographics",
+                "jcoin:core_measure_question": "Have you obtained a refill/replacement kit?",
+                "jcoin:core_measure_subsection_text": "If respondent was in jail/prison during the past 3 months but not currently, ask:"
             }
         }
     ],

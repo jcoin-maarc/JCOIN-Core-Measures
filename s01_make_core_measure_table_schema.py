@@ -63,7 +63,7 @@ def format_table_schema_df(
     def _combine_cols_into_dict(df):
         return df.apply(lambda x: x.dropna().to_dict(),axis='columns')
     
-    def _split_if_str(s,delimiter=','):
+    def _split_if_str(s,delimiter='|'):
         if type(s) is str:
             return s.split(delimiter)
         else:
