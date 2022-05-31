@@ -116,7 +116,7 @@ def make_field_md(field):
     # )
 
     field_list = [
-        ("","---------"), #field divider
+        ("","\n---------"), #field divider
         ("",add_title(field)),
         ("**Variable name:**",f"```{add_variable_name(field)}```"),
        ("**JCOIN Core Measure Question Text:**", add_core_measure_question(field)),
@@ -154,7 +154,7 @@ schemas = [Schema(baseline_schema_path),Schema(timepoint_schema_path)]
 
 
 # Field Codebook
-overall_md = ''
+overall_md = '**Click on a section category to view variables!**\n\n'
 for schema in schemas:
     field_md_list = []
     section = '' #initiate section name

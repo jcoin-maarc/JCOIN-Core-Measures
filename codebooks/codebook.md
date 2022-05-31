@@ -1,4 +1,4 @@
-**Click on each section to view variable information!**
+**Click on a section category to view variables!**
 
 
 # Baseline Fields: Measures collected only at baseline 
@@ -6,7 +6,8 @@
 <details>
 	<summary><h2>Record and linkage</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Jcoin Data Commons Person Identifier
@@ -28,7 +29,8 @@
 <details>
 	<summary><h2>Enrollment</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Quarter Enrolled
@@ -43,7 +45,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### State Of Site For Enrollment
@@ -58,7 +61,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Current Study Status
@@ -80,7 +84,8 @@
 <details>
 	<summary><h2>Demographics</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Gender Identity
@@ -98,9 +103,9 @@
 
 **Required:** Yes
 
-**Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
- False if not 'Male' and not 'Transfgender' else True
- ---------
+**Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True
+ 
+---------
 
  
 ### Gender Identity (Condensed)
@@ -119,7 +124,8 @@
 **Required:** Yes
 
 **Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]
- ---------
+ 
+---------
 
  
 ### Race: White
@@ -136,7 +142,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: Black Or African American
@@ -153,7 +160,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: American Indian Or Alaska Native
@@ -170,7 +178,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: Native Hawaiian Or Other Pacific Islander
@@ -187,7 +196,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: Asian
@@ -204,7 +214,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: Other
@@ -221,7 +232,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: American Indian Principal Tribe Or Community Specified
@@ -238,7 +250,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Race: Other Specified
@@ -255,7 +268,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Hispanic, Latino, Or Spanish Origin
@@ -272,7 +286,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Sexual Orientation
@@ -287,7 +302,8 @@
 **Variable type:** String
 
 **Possible values:** Straight or heterosexual,Lesbian or gay,Bisexual,Queer,pansexual, and/or questioning,Something else
- ---------
+ 
+---------
 
  
 ### Sexual Orientation:  Other Specified
@@ -302,7 +318,8 @@
 **Variable type:** String
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Ever Pregnant
@@ -319,7 +336,8 @@
 **Possible values:** Never been pregnant,Currenly pregnant,Previously pregnant,had a child,Previously pregnant,did not have a child,Not applicable,Don't know
 
 **Notes:** Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.
- ---------
+ 
+---------
 
  
 ### Marital Status
@@ -334,7 +352,8 @@
 **Variable type:** String
 
 **Possible values:** Married,Widowed,Divorced,Separated,Never married
- ---------
+ 
+---------
 
  
 ### Married With Partner
@@ -349,7 +368,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,I am living as married with partner,No,I am not living as married with partner
- ---------
+ 
+---------
 
  
 ### Education
@@ -364,7 +384,8 @@
 **Variable type:** String
 
 **Possible values:** Did not complete high school,GED or equivalent,Regular high school diploma,Some college credit, but less than 1 year of college credit,1 or more years of college credit, but no degree,Associate's degree (e.g., AA or AS),Bachelor's degree (e.g., BA or BS),Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD),Other (specify)
- ---------
+ 
+---------
 
  
 ### Education:  Highest Grade Level (If Less Than Ged Or H.S. Diploma)
@@ -379,7 +400,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Education: Other Specified
@@ -401,7 +423,8 @@
 <details>
 	<summary><h2>MOUD</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Interviewed During Incarceration
@@ -416,7 +439,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Days Incarcerated (In Past 30/Xx Days)
@@ -431,7 +455,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Medication Ever Prescribed For Opioid Use Disorder?
@@ -446,7 +471,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Lifetime Months
@@ -461,7 +487,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days Pti # Days
@@ -476,7 +503,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Pti Days Dose/Day
@@ -493,7 +521,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days
@@ -508,7 +537,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days Dose/Day
@@ -525,7 +555,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine Injection (Sublocade):  Lifetime Months
@@ -540,7 +571,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Injection (Sublocade): Past 30/Xx Days Pti # Days
@@ -555,7 +587,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Injection (Sublocade): Past 30/Xx Pti Days Dose/Day
@@ -572,7 +605,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine Injection (Sublocade): Past 30/Xx Days
@@ -587,7 +621,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Injection (Sublocade): Past 30/Xx Days Dose/Day
@@ -604,7 +639,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine  Weekly Injection (Brixadi):  Lifetime Months
@@ -619,7 +655,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days Pti # Days
@@ -634,7 +671,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Pti Days Dose/Day
@@ -651,7 +689,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days
@@ -666,7 +705,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days Dose/Day
@@ -683,7 +723,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine  Monthly Injection (Brixadi):  Lifetime Months
@@ -698,7 +739,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days Pti # Days
@@ -713,7 +755,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Pti Days Dose/Day
@@ -730,7 +773,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days
@@ -745,7 +789,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days Dose/Day
@@ -762,7 +807,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine 6-Month Implant (Probuphine):  Lifetime Months
@@ -777,7 +823,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days Pti # Days
@@ -792,7 +839,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Pti Days Dose/Day
@@ -809,7 +857,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days
@@ -824,7 +873,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days Dose/Day
@@ -841,7 +891,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Naltrexone Daily (Oral):  Lifetime Months
@@ -856,7 +907,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Daily (Oral): Past 30/Xx Days Pti # Days
@@ -871,7 +923,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Daily (Oral): Past 30/Xx Pti Days Dose/Day
@@ -888,7 +941,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Naltrexone Daily (Oral): Past 30/Xx Days
@@ -903,7 +957,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Daily (Oral): Past 30/Xx Days Dose/Day
@@ -920,7 +975,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Naltrexone Monthly Injection (Vivitrol):  Lifetime Months
@@ -935,7 +991,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days Pti # Days
@@ -950,7 +1007,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Pti Days Dose/Day
@@ -967,7 +1025,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days
@@ -982,7 +1041,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days Dose/Day
@@ -999,7 +1059,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Methadone Daily:  Lifetime Months
@@ -1014,7 +1075,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Methadone Daily: Past 30/Xx Days Pti # Days
@@ -1029,7 +1091,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Methadone Daily: Past 30/Xx Pti Days Dose/Day
@@ -1046,7 +1109,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- ---------
+ 
+---------
 
  
 ### Methadone Daily: Past 30/Xx Days
@@ -1061,7 +1125,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Methadone Daily: Past 30/Xx Days Dose/Day
@@ -1086,7 +1151,8 @@
 <details>
 	<summary><h2>Record and linkage</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Jcoin Data Commons Person Identifier
@@ -1101,7 +1167,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Visit Number
@@ -1116,7 +1183,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
- ---------
+ 
+---------
 
  
 ### Visit Type
@@ -1138,7 +1206,8 @@
 <details>
 	<summary><h2>Substance Use</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use
@@ -1157,7 +1226,8 @@
 **Required:** Yes
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Getting, Using, Or Recovering
@@ -1174,7 +1244,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Social Dysfunction
@@ -1191,7 +1262,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Work Or Life Dysfunction
@@ -1208,7 +1280,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Withdrawal
@@ -1225,7 +1298,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Any Opioids
@@ -1242,7 +1316,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Opioid Overdose
@@ -1259,7 +1334,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Last Time Drug Use: Oud Medication-Assisted Treatment
@@ -1276,7 +1352,8 @@
 **Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
 
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
- ---------
+ 
+---------
 
  
 ### Opioid Overdose Count
@@ -1293,7 +1370,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention
- ---------
+ 
+---------
 
  
 ### Opioid Overdose Count: Receiving Naloxone
@@ -1310,7 +1388,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention
- ---------
+ 
+---------
 
  
 ### Person Who Administered Nalaxone For Overdose
@@ -1327,7 +1406,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** TODO: expand fields to each of the possible selections
- ---------
+ 
+---------
 
  
 ### Drugs 4 Hrs Before Overdose
@@ -1344,7 +1424,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** TODO: expand fields to each of the possible selections
- ---------
+ 
+---------
 
  
 ### Emergency Medical Service Following Overdose
@@ -1359,7 +1440,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Emergency Department Visit Count Following Overdose
@@ -1374,7 +1456,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Hospital Admissions Count Following Overdose
@@ -1389,7 +1472,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Substance Use Treatment Referral Count Following Overdose
@@ -1404,7 +1488,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Drug Use Count
@@ -1419,7 +1504,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Alcohol Use Count
@@ -1434,7 +1520,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Alcohol Use Count: Binge Drinking
@@ -1449,7 +1536,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Marijuana Use Count: Medical
@@ -1464,7 +1552,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Marijuana Use Count: Not Own
@@ -1479,7 +1568,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Opioid Use Count: Heroin
@@ -1494,7 +1584,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Opioid Use Count: Fentanyl
@@ -1509,7 +1600,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Opioid Use Count: Street Methadone
@@ -1524,7 +1616,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Opioid Use Count: Suboxone
@@ -1539,7 +1632,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Opioid Use Count: Other
@@ -1554,7 +1648,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Cocaine Use Count
@@ -1569,7 +1664,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Speed Use Count
@@ -1584,7 +1680,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Benzodiazapine, Anti-Anxiety, And Tranquilizer Use Count
@@ -1599,7 +1696,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Drug Use Count: Other
@@ -1614,7 +1712,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Drug Use: Description Of Other Drugs
@@ -1629,7 +1728,8 @@
 **Variable type:** String
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Place Of No Opioid Use (Jail, Hospital, Etc)
@@ -1651,7 +1751,8 @@
 <details>
 	<summary><h2>Justice Involvement</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Activities Against Law Besides Drugs
@@ -1668,7 +1769,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** [IF 0, GO TO J2]
- ---------
+ 
+---------
 
  
 ### Drug Possession
@@ -1685,7 +1787,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Drunkenness Or Other Liquor Law Violations
@@ -1702,7 +1805,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Driving Under The Influence Or While Intoxicated
@@ -1719,7 +1823,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Possession, Dealing, Distribution Or Sale Of Drugs
@@ -1736,7 +1841,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Vandalism Or Property Destruction
@@ -1753,7 +1859,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Receiving, Possessing Or Selling Stolen Goods
@@ -1770,7 +1877,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Forgery, Fraud Or Embezzlement
@@ -1787,7 +1895,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Shoplifting
@@ -1804,7 +1913,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Larceny Or Theft
@@ -1821,7 +1931,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Burglary Or Breaking And Entering
@@ -1838,7 +1949,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Motor Vehicle Theft
@@ -1855,7 +1967,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Carjacking
@@ -1872,7 +1985,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Simple Assault Or Battery
@@ -1889,7 +2003,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Robbery
@@ -1906,7 +2021,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Aggravated Assault Or Battery
@@ -1923,7 +2039,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Forcible Rape
@@ -1940,7 +2057,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Murder, Homicide Or No-Negligent Manslaughter
@@ -1957,7 +2075,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Arson
@@ -1974,7 +2093,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Prostitution, Pimping Or Commercialized Sex
@@ -1991,7 +2111,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Other Unlawful Activities
@@ -2008,7 +2129,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** (common charge names associated with behavior for reference only)
- ---------
+ 
+---------
 
  
 ### Overall Charged Arrests
@@ -2023,7 +2145,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Drug Possession Arrests
@@ -2038,7 +2161,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Law Violations Arrests
@@ -2053,7 +2177,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Driving Under The Influence/Intoxicated Arrests
@@ -2068,7 +2193,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Drug Activity Arrests
@@ -2083,7 +2209,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Vandalism Or Property Destruction Arrests
@@ -2098,7 +2225,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Stolen Goods Arrests
@@ -2113,7 +2241,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Forgery, Fraud Or Embezzlement Arrests
@@ -2128,7 +2257,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Shoplifting Arrests
@@ -2143,7 +2273,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Theft/Larceny Arrests
@@ -2158,7 +2289,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Burglary Or Breaking And Entering Arrests
@@ -2173,7 +2305,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Vehicle Theft Arrests
@@ -2188,7 +2321,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Car Jacking Arrests
@@ -2203,7 +2337,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Simple Assault Or Battery Arrests
@@ -2218,7 +2353,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Robbery Arrests
@@ -2233,7 +2369,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Aggravated Assault Or Battery Arrests
@@ -2248,7 +2385,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Forcible Rape Arrests
@@ -2263,7 +2401,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Negligent Manslaughter Arrests
@@ -2278,7 +2417,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Arson Arrests
@@ -2293,7 +2433,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Commercialized Sex Arrests
@@ -2308,7 +2449,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Other Charges Arrests
@@ -2323,7 +2465,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Electronic Monitoring
@@ -2338,7 +2481,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### House Arrest
@@ -2353,7 +2497,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Jail Time
@@ -2368,7 +2513,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Prison Time
@@ -2383,7 +2529,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Current Jail Or Prison
@@ -2400,7 +2547,8 @@
 **Possible values:** Yes,No,Unknown
 
 **Notes:** MBK: added Unknown to satisfy a small amount of respondents for one hub.
- ---------
+ 
+---------
 
  
 ### Length Of Jail Or Prison Time
@@ -2415,7 +2563,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Parole
@@ -2430,7 +2579,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Probation
@@ -2445,7 +2595,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Other Kind Of Community Supervision
@@ -2460,7 +2611,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Meeting With Probation Or Parole Officer
@@ -2475,7 +2627,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Trouble With Probation Or Parole Officer
@@ -2490,7 +2643,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Life Time Arrests
@@ -2505,7 +2659,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### First Time Arrest
@@ -2520,7 +2675,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Lifetime Years In Detention, Jail, Or Prison Time
@@ -2535,7 +2691,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Lifetime Months In Detention, Jail, Or Prison Time
@@ -2550,7 +2707,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Lifetime Guity And Sentenced
@@ -2565,7 +2723,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### First Time Adjudication Conviction
@@ -2587,7 +2746,8 @@
 <details>
 	<summary><h2>Utilization of Services</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Emergency Room:  Number Of Visits
@@ -2602,7 +2762,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Hospital Detox Program: Number Of Nights
@@ -2617,7 +2778,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Hospitalization:  Number Of Nights
@@ -2632,7 +2794,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Residential Detox: Number Of Nights
@@ -2647,7 +2810,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Residential Treatment Program For Alcohol/Drugs: Number Of Nights
@@ -2662,7 +2826,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Residential Treatment Program For Mental Health: Number Of Nights
@@ -2677,7 +2842,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Rehab Facility For Physical Health: Number Of Nights
@@ -2692,7 +2858,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Primary Care Provider:  Number Of Visits
@@ -2707,7 +2874,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Primary Care Visit Reason: Alcohol/Drug Use
@@ -2722,7 +2890,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Primary Care Visit Reason: Mental Health
@@ -2737,7 +2906,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Primary Care Visit Reason:  Physical Health
@@ -2752,7 +2922,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Primary Care Visit Reason:  Some Other Reason (Specify)
@@ -2767,7 +2938,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No
- ---------
+ 
+---------
 
  
 ### Primary Care Visit Reason: Specify Other Reason
@@ -2782,7 +2954,8 @@
 **Variable type:** String
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treament Program For Alcohol/Substance Use: Number Of Days
@@ -2797,7 +2970,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treatment Program: Number Of Days Physically Visiting Program
@@ -2812,7 +2986,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treatment Program: Number Of Days Participating Online
@@ -2827,7 +3002,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treatment Program: Number Of Days Seeing Doctor
@@ -2842,7 +3018,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treatment Program: Number Of Days Participating In Therapy
@@ -2857,7 +3034,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Outpatient Treatment Program: Number Of Days For Medication Management
@@ -2872,7 +3050,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Psychiatrist/Psychologist:  Number Of Total Visits
@@ -2887,7 +3066,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Psychiatrist/Psychologist: Number Of In-Person Visits
@@ -2902,7 +3082,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Psychiatrist/Psychologist: Number Of Online Visits
@@ -2917,7 +3098,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Counselor/Social Worker: Number Of Total Visits
@@ -2932,7 +3114,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Counselor/Social Worker: Number Of In-Person Visits
@@ -2947,7 +3130,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Counselor/Social Worker: Number Of Online Visits
@@ -2962,7 +3146,8 @@
 **Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Healthcare Cost
@@ -2977,7 +3162,8 @@
 **Variable type:** Number
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Substance Use Treatment
@@ -2992,7 +3178,8 @@
 **Variable type:** String
 
 **Possible values:** Yes,No,Unknown
- ---------
+ 
+---------
 
  
 ### Substance Use Tx Provider:  Well-Organized
@@ -3007,7 +3194,8 @@
 **Variable type:** String
 
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
- ---------
+ 
+---------
 
  
 ### Substance Use Tx Provider:  Satisfaction
@@ -3022,7 +3210,8 @@
 **Variable type:** String
 
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
- ---------
+ 
+---------
 
  
 ### Substance Use Tx Provider:  Efficient Staff
@@ -3037,7 +3226,8 @@
 **Variable type:** String
 
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
- ---------
+ 
+---------
 
  
 ### Substance Use Tx Provider:  Personal Counseling
@@ -3052,7 +3242,8 @@
 **Variable type:** String
 
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
- ---------
+ 
+---------
 
  
 ### Substance Use Tx Provider:  Medication Assistance For Opioid Use
@@ -3074,7 +3265,8 @@
 <details>
 	<summary><h2>Treatment Preferences</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### Not Candidate For Oud Treatment
@@ -3089,7 +3281,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Oud Medication
@@ -3104,7 +3297,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Detox
@@ -3119,7 +3313,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Outpatient Counseling
@@ -3134,7 +3329,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Intensive Outpatient
@@ -3149,7 +3345,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Residential Treatment
@@ -3164,7 +3361,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Other Treatment
@@ -3179,7 +3377,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Other Treatment Specified
@@ -3194,7 +3393,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  No Treatment
@@ -3209,7 +3409,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Type Of Oud Treatment:  Don'T Know Or No Preference
@@ -3224,7 +3425,8 @@
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Preferred Oud Medication
@@ -3237,7 +3439,8 @@
 **Variable type:** String
 
 **Possible values:** Methadone,Buprenorphine/Suboxone,Naltrexone/Vivitrol,Don't know/No preference
- ---------
+ 
+---------
 
  
 ### Type Of Buprenorphine Preferred
@@ -3250,7 +3453,8 @@
 **Variable type:** String
 
 **Possible values:** I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone),I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi),I would prefer to receive the 6-month buprenorphine implant,Don't know/No preference
- ---------
+ 
+---------
 
  
 ### Type Of Naltrexone Preferred
@@ -3270,7 +3474,8 @@
 <details>
 	<summary><h2>Demographics</h2></summary>
 
- ---------
+ 
+---------
 
  
 ### People In Household
@@ -3287,7 +3492,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3
- ---------
+ 
+---------
 
  
 ### People Under 18 Years Old In Household
@@ -3304,7 +3510,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o4
- ---------
+ 
+---------
 
  
 ### Total Household Income
@@ -3321,7 +3528,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5
- ---------
+ 
+---------
 
  
 ### Total Household Income From Legal Sources
@@ -3338,7 +3546,8 @@
 **Possible values:** Less than $12,500,$12,500 - $20,000 ,$20,001 - $30,000 ,$30,001 - $40,000 ,$40,001 – $50,000 ,$50,001 - $100,000 ,More than $100,000
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o6
- ---------
+ 
+---------
 
  
 ### Public Assistance For Household
@@ -3355,7 +3564,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7
- ---------
+ 
+---------
 
  
 ### Total Household Money From Public Assistance
@@ -3372,7 +3582,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o8
- ---------
+ 
+---------
 
  
 ### Other Non-Employmnet Income Sources
@@ -3389,7 +3600,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9
- ---------
+ 
+---------
 
  
 ### Total Household Money From Other Non-Employment Income Sources
@@ -3406,7 +3618,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o10
- ---------
+ 
+---------
 
  
 ### Non-Employment Income With Risk Of Legal Or Other Trouble
@@ -3423,7 +3636,8 @@
 **Possible values:** Yes,No,Refused to answer
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11
- ---------
+ 
+---------
 
  
 ### Total Household Money With Risk Of Causing  Legal Or Other Trouble Activities
@@ -3440,7 +3654,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o12
- ---------
+ 
+---------
 
  
 ### Current School Or Work Situation Description
@@ -3457,7 +3672,8 @@
 **Possible values:** Working full-time, 35 hours or more a week,Working part-time, less than 35 hours a week,Have a job where you are paid one day at a time (day labor),Have a job, but not at work because of treatment, extended illness, maternity leave, furlough or strike,Have a job but not at work because it is seasonal work,Unemployed or laid off and looking for work,Unemployed or laid off and not looking for work,Full-time homemaker (keeping house),In school or training,In school or training, but not currently going to classes,Retired,In jail, prison or detention,Too disabled for work,In the military,Doing volunteer work,Some other work situation
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13
- ---------
+ 
+---------
 
  
 ### Number Of Days Worked
@@ -3474,7 +3690,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o14
- ---------
+ 
+---------
 
  
 ### Days Per Week Worked
@@ -3491,7 +3708,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15
- ---------
+ 
+---------
 
  
 ### Hours Per Week Worked
@@ -3508,7 +3726,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o16
- ---------
+ 
+---------
 
  
 ### Hourly Rate
@@ -3525,7 +3744,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17
- ---------
+ 
+---------
 
  
 ### Health Insurance From Work
@@ -3542,7 +3762,8 @@
 **Possible values:** Yes,No,Don't Know
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18
- ---------
+ 
+---------
 
  
 ### Paid Time Off From Work
@@ -3559,7 +3780,8 @@
 **Possible values:** Yes,No,Don't Know
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19
- ---------
+ 
+---------
 
  
 ### Benefit Or Pension Plan From Work
@@ -3576,7 +3798,8 @@
 **Possible values:** Yes,No,Don't Know
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20
- ---------
+ 
+---------
 
  
 ### Retirement Plan From Work
@@ -3593,7 +3816,8 @@
 **Possible values:** Yes,No,Don't Know
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21
- ---------
+ 
+---------
 
 **Variable name:** ```d8e```
 
@@ -3604,7 +3828,8 @@
 **Variable type:** String
 
 **Possible values:** Any of the fields type and other constraints
- ---------
+ 
+---------
 
  
 ### Currently Covered By Health Insurance
@@ -3621,7 +3846,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22
- ---------
+ 
+---------
 
  
 ### Private Health Insurance Plan Coverage
@@ -3638,7 +3864,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23
- ---------
+ 
+---------
 
  
 ### Medicare Plan Coverage
@@ -3655,7 +3882,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24
- ---------
+ 
+---------
 
  
 ### Medigap Plan Coverage
@@ -3672,7 +3900,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25
- ---------
+ 
+---------
 
  
 ### Medicaid Plan Coverage
@@ -3689,7 +3918,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26
- ---------
+ 
+---------
 
  
 ### Children'S Health Insurance Coverage
@@ -3706,7 +3936,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27
- ---------
+ 
+---------
 
  
 ### Military Plan Coverage
@@ -3723,7 +3954,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28
- ---------
+ 
+---------
 
  
 ### Indian Health Service Coverage
@@ -3740,7 +3972,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29
- ---------
+ 
+---------
 
  
 ### State Health Coverage
@@ -3757,7 +3990,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30
- ---------
+ 
+---------
 
  
 ### Other Government Coverage
@@ -3774,7 +4008,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31
- ---------
+ 
+---------
 
  
 ### Single Service Coverage
@@ -3791,7 +4026,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32
- ---------
+ 
+---------
 
  
 ### Don'T Know About Coverage
@@ -3808,7 +4044,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33
- ---------
+ 
+---------
 
  
 ### Days Uninsured
@@ -3825,7 +4062,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o34
- ---------
+ 
+---------
 
  
 ### Number Of Days At Self Help Group
@@ -3842,7 +4080,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35
- ---------
+ 
+---------
 
  
 ### Number Of Days At Non-Alcoholic, Structured Activities
@@ -3859,7 +4098,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o36
- ---------
+ 
+---------
 
  
 ### Number Of Days Being Homeless
@@ -3876,7 +4116,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37
- ---------
+ 
+---------
 
  
 ### Number Of Days In Homeless Shelter
@@ -3893,7 +4134,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o38
- ---------
+ 
+---------
 
  
 ### Number Of Days In Household With Alcohol Use
@@ -3910,7 +4152,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39
- ---------
+ 
+---------
 
  
 ### Number Of Days In Household With Drug Use
@@ -3927,7 +4170,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o40
- ---------
+ 
+---------
 
  
 ### Number Of Days Of Formal Activities With Alcohol
@@ -3944,7 +4188,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41
- ---------
+ 
+---------
 
  
 ### Number Of Days Of Home Or Family Trouble
@@ -3961,7 +4206,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o42
- ---------
+ 
+---------
 
  
 ### Number Of Days Of  Abusive Behavior In Arguments
@@ -3978,7 +4224,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43
- ---------
+ 
+---------
 
  
 ### Number Of Days Being Physically, Emotionally, Sexually Abused
@@ -3995,7 +4242,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o44
- ---------
+ 
+---------
 
  
 ### Received Narcan Kit
@@ -4012,7 +4260,8 @@
 **Possible values:** Yes,No,n/a not recently incarcerated
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45
- ---------
+ 
+---------
 
  
 ### Used Narcan Kit
@@ -4029,7 +4278,8 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46
- ---------
+ 
+---------
 
  
 ### Refilled Narcan Kit
