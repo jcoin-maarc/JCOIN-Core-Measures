@@ -2602,6 +2602,942 @@ fields:
   name: o3b
   title: Refilled Narcan Kit
   type: boolean
+- constraints:
+    enum:
+    - Without any difficulty
+    - ' With a little difficulty'
+    - '  With some difficulty'
+    - ' With much difficulty'
+    - ' Unable to do'
+  custom:
+    jcoin:core_measure_question: '... do chores such as sweeping, mopping, janitorial
+      work or other house cleaning work'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  name: p1a
+  title: Difficulty with chores and house keeping
+  type: string
+- constraints:
+    enum:
+    - Without any difficulty
+    - ' With a little difficulty'
+    - '  With some difficulty'
+    - ' With much difficulty'
+    - ' Unable to do'
+  custom:
+    jcoin:core_measure_question: '...go up and down stairs at a normal pace'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  name: p1b
+  title: Difficulty using stairs
+  type: string
+- constraints:
+    enum:
+    - Without any difficulty
+    - ' With a little difficulty'
+    - '  With some difficulty'
+    - ' With much difficulty'
+    - ' Unable to do'
+  custom:
+    jcoin:core_measure_question: '...walk around for at least 15 minutes'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  name: p1c
+  title: Difficulty walking
+  type: string
+- constraints:
+    enum:
+    - Without any difficulty
+    - ' With a little difficulty'
+    - '  With some difficulty'
+    - ' With much difficulty'
+    - ' Unable to do'
+  custom:
+    jcoin:core_measure_question: '... get from place to place'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  name: p1d
+  title: Difficulty traveling
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I had trouble doing all of my regular leisure
+      activities with others'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p2a
+  title: Trouble with Leisure activities with others
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I had trouble doing all of the family activities
+      that I want to do'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p2b
+  title: Trouble with family activities
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I had trouble doing all of my usual work (include
+      work at home)'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p2c
+  title: Trouble with work
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I had trouble doing all of the activities with
+      friends that I want to do'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p2d
+  title: Trouble with activities with friends
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt fearful'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p3a
+  title: Feeling fearful
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I found it hard to focus on anything other than
+      my anxiety'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p3b
+  title: Feeling hard to focus on anything other than anxiety
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...My worries overwhelmed me'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p3c
+  title: Feeling overwhelming worry
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt uneasy'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p3d
+  title: Feeling uneasy
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt worthless'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p4a
+  title: Feeling worthless
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt helpless'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p4b
+  title: Feeling helpless
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt depressed'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p4c
+  title: Feeling depressed
+  type: string
+- constraints:
+    enum:
+    - Never
+    - Rarely
+    - Sometimes
+    - Often
+    - Always
+  custom:
+    jcoin:core_measure_question: '...I felt hopeless'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p4d
+  title: Feeling hopeless
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I felt fatigued'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p5a
+  title: Feeling fatigued
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I had trouble starting things because I was tired'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p5b
+  title: Trouble starting things because tired
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: "\u2026how run-down did you feel on average?"
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p5c
+  title: Feeling run-down
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: "\u2026how fatigued were you on average?"
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p5d
+  title: Fatigue level
+  type: string
+- constraints:
+    enum:
+    - Very poor
+    - Poor
+    - Fair
+    - Good
+    - Very good
+  custom:
+    jcoin:core_measure_question: '...my sleep quality was'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p6a
+  title: Sleep quality
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...my sleep was refreshing'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p6b
+  title: Refreshing sleep
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I had problems with my sleep'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p6c
+  title: Sleep problems
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I had difficulty falling asleep'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p6d
+  title: Difficulty falling asleep
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I have been able to concentrate'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Cognitive Function Abilities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p7a
+  title: Concentration
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...I have been able to remember to do things, like
+      take medicine or buy something I needed'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Cognitive Function Abilities
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p7b
+  title: Remembering things
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...How much did pain interfere with your day to
+      day activities?'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p8a
+  title: Pain interference with day to day activity
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...How much did pain interfere with work around
+      the home?'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p8b
+  title: Pain inteference with home work
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...How much did pain interfere with your ability
+      to participate in social activities?'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p8c
+  title: Pain interference with social activities
+  type: string
+- constraints:
+    enum:
+    - Not at all
+    - A little bit
+    - Somewhat
+    - Quite a bit
+    - Very much
+  custom:
+    jcoin:core_measure_question: '...How much did pain interfere with your household
+      chores?'
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  name: p8d
+  title: Pain interference with household chores
+  type: string
+- constraints: {}
+  custom:
+    jcoin:core_measure_question: In the past 7 days, how would you rate your pain
+      on average?
+    jcoin:core_measure_section: PROMIS 29+2/ PROPr
+    jcoin:core_measure_sub_section: Pain Intensity
+    jcoin:core_measure_subsection_text: For the next question, please responds on
+      scale from 0 being no pain to 10 being the worst pain imaginable.
+  name: p9
+  title: Pain intensity rating
+  type: integer
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026had two or more sex partners during the same\
+      \ time period?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1a
+  title: Multiple sex partners
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026had sex without using any kind of condom,\
+      \ dental dam or other barrier to protect you and your partner from diseases\
+      \ or pregnancy?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1b
+  title: Unprotected sex
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026had sex while you or your partner was intoxicated\
+      \ from alcohol or other drugs?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1c
+  title: Alcohol and drug intoxication
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026used a needle to inject drugs like heroin,\
+      \ cocaine or amphetamines?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1d
+  title: Drug injection with needle
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were attacked with a weapon, including a gun,\
+      \ knife, stick, bottle or other weapon?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1g
+  title: Attacked with weapon
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were physically abused, to the point that\
+      \ you had bruises, cuts or broken bones?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1h
+  title: Physical abuse
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were sexually abused, where someone pressured\
+      \ or forced you to participate in sexual acts against your will, including your\
+      \ regular sex partner, a family member or friend?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1j
+  title: Sexually abused
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were emotionally abused, where someone did\
+      \ or said things to make you feel very bad about yourself or your life?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1k
+  title: Emotionally abused
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were physically, sexual or emotionally abused\
+      \ several times or over a long period of time?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1m
+  title: Physically, sexually, or emotionally abused
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026were afraid for your life or that you might\
+      \ be seriously injured by the abuse?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "When was the last time you\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r1n
+  title: Afraid for life or serious injury from abuse
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026became very distressed and upset when something\
+      \ reminded you of the past?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: When was the last time you. . .
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r2a
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: "\u2026thought about ending your life or dying by\
+      \ suicide?"
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: When was the last time you. . .
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r2b
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Human Immunodeficiency Virus, HIV or AIDS?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3a
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Hepatitis C?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3b
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Hepatitis B?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3c
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Other sexually transmitted diseases or infections,
+      such as syphilis.
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3d
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Tuberculosis or TB?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3e
+  type: string
+- constraints:
+    enum:
+    - 'Yes'
+    - 'No'
+    - Don't recall
+  custom:
+    jcoin:core_measure_question: Coronavirus 19 or COVID19?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: "Were you ever told by a doctor or nurse that\
+      \ you had\u2026"
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3f
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Human Immunodeficiency Virus, HIV or AIDS?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3a_first_dx
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Hepatitis C?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3b_first_dx
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Hepatitis B?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3c_first_dx
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Other sexually transmitted diseases or infections,
+      such as syphilis.
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3d_first_dx
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Tuberculosis or TB?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3e_first_dx
+  type: string
+- constraints:
+    enum:
+    - Never
+    - More than a year ago
+    - 4 to 12 months ago
+    - 2 to 3 months ago
+    - Past month
+    - Do not know
+    - Not reported
+  custom:
+    jcoin:core_measure_question: Coronavirus 19 or COVID19?
+    jcoin:core_measure_section: Risk of Harms and Consequences
+    jcoin:core_measure_subsection_text: If yes, when were you FIRST diagnosed?
+    notes: 'RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT
+      CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
+      THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
+      WITH HUB CONSENT FORMS)'
+  name: r3f_first_dx
+  type: string
 missingValues:
 - NaN
 - NA
