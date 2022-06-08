@@ -9,13 +9,9 @@
  
 ---------
 
- 
-### Jcoin Data Commons Person Identifier
+ ```jdc_person_id```
 
-
-**Variable name:** ```jdc_person_id```
-
-**Description:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
+**Description/Question:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
 
 **Variable type:** String
 
@@ -32,13 +28,9 @@
  
 ---------
 
- 
-### Quarter Enrolled
+ ```quarter_enrolled```
 
-
-**Variable name:** ```quarter_enrolled```
-
-**Description:** The financial quarter and year of enrollment
+**Description/Question:** The financial quarter and year of enrollment
 
 **Variable type:** String
 
@@ -48,13 +40,9 @@
  
 ---------
 
- 
-### State Of Site For Enrollment
+ ```state_of_site_enrollment```
 
-
-**Variable name:** ```state_of_site_enrollment```
-
-**Description:** The U.S. State abbreviation of the site where client (participant) was initially enrolled
+**Description/Question:** The U.S. State abbreviation of the site where client (participant) was initially enrolled
 
 **Variable type:** String
 
@@ -64,13 +52,9 @@
  
 ---------
 
- 
-### Current Study Status
+ ```current_study_status```
 
-
-**Variable name:** ```current_study_status```
-
-**Description:** A summary of the current status where client (participant) is in study
+**Description/Question:** A summary of the current status where client (participant) is in study
 
 **Variable type:** String
 
@@ -87,15 +71,9 @@
  
 ---------
 
- 
-### Gender Identity
+ ```o2```
 
-
-**Variable name:** ```o2```
-
-**JCOIN Core Measure Question Text:** What is your gender identity?
-
-**Description:** Gender identity
+**Description/Question:** What is your gender identity?
 
 **Variable type:** String
 
@@ -107,15 +85,9 @@
  
 ---------
 
- 
-### Gender Identity (Condensed)
+ ```d4b```
 
-
-**Variable name:** ```d4b```
-
-**JCOIN Core Measure Question Text:** What is your gender identity?
-
-**Description:** A condensed version of the gender identity common data element
+**Description/Question:** What is your gender identity?
 
 **Variable type:** String
 
@@ -127,15 +99,9 @@
  
 ---------
 
- 
-### Race: White
+ ```d3_white```
 
-
-**Variable name:** ```d3_white```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** Denotes person with European, Middle Eastern, or North African ancestral origin who identifies, or is identified, as White.
+**Description/Question:** [White] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -145,15 +111,9 @@
  
 ---------
 
- 
-### Race: Black Or African American
+ ```d3_black```
 
-
-**Variable name:** ```d3_black```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** A person having origins in any of the Black racial groups of Africa. Terms such as "Haitian" or "Negro" can be used in addition to "Black or African American". (OMB)
+**Description/Question:** [Black or African American] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -163,15 +123,9 @@
  
 ---------
 
- 
-### Race: American Indian Or Alaska Native
+ ```d3_american_indian```
 
-
-**Variable name:** ```d3_american_indian```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** Denotes a person having origins in one of the indigenous peoples of North America, who lived on the continent prior to the European colonization. The term includes individuals belonging to a large number of tribes, states, and ethnic groups, many of them still enduring as communities.
+**Description/Question:** [American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -181,15 +135,9 @@
  
 ---------
 
- 
-### Race: Native Hawaiian Or Other Pacific Islander
+ ```d3_hawaiian```
 
-
-**Variable name:** ```d3_hawaiian```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** Denotes a person having origins in any of the original peoples of Hawaii, Guam, Samoa, or other Pacific Islands. The term covers particularly people who identify themselves as part-Hawaiian, Native Hawaiian, Guamanian or Chamorro, Carolinian, Samoan, Chuukese (Trukese), Fijian, Kosraean, Melanesian, Micronesian, Northern Mariana Islander, Palauan, Papua New Guinean, Pohnpeian, Polynesian, Solomon Islander, Tahitian, Tokelauan, Tongan, Yapese, or Pacific Islander, not specified.
+**Description/Question:** [Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -199,15 +147,9 @@
  
 ---------
 
- 
-### Race: Asian
+ ```d3_asian```
 
-
-**Variable name:** ```d3_asian```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** A person having origins in any of the original peoples of the Far East, Southeast Asia, or the Indian subcontinent, including for example, Cambodia, China, India, Japan, Korea, Malaysia, Pakistan, the Philippine Islands, Thailand, and Vietnam. (OMB)
+**Description/Question:** [Asian] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -217,15 +159,9 @@
  
 ---------
 
- 
-### Race: Other
+ ```d3_other```
 
-
-**Variable name:** ```d3_other```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** A person having origins in a race not identified with other racial categories presented
+**Description/Question:** [Other] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -235,15 +171,9 @@
  
 ---------
 
- 
-### Race: American Indian Principal Tribe Or Community Specified
+ ```d3_specify_tribe```
 
-
-**Variable name:** ```d3_specify_tribe```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** The specific principal tribe or community if the person answered answered 'yes' to this racial category
+**Description/Question:** [American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -253,15 +183,9 @@
  
 ---------
 
- 
-### Race: Other Specified
+ ```d3_specify_other```
 
-
-**Variable name:** ```d3_specify_other```
-
-**JCOIN Core Measure Question Text:** What is your race? SELECT ALL THAT APPLY
-
-**Description:** The specific racial category of a person having origins in a race not identified with other racial categories presented
+**Description/Question:** [Other specified] What is your race? SELECT ALL THAT APPLY
 
 **Variable type:** String
 
@@ -271,15 +195,9 @@
  
 ---------
 
- 
-### Hispanic, Latino, Or Spanish Origin
+ ```d2```
 
-
-**Variable name:** ```d2```
-
-**JCOIN Core Measure Question Text:** Are you of Hispanic, Latino, or Spanish origin?
-
-**Description:** A person of Cuban, Mexican, Puerto Rican, South or Central American, or other Spanish culture or origin regardless of race
+**Description/Question:** Are you of Hispanic, Latino, or Spanish origin?
 
 **Variable type:** String
 
@@ -289,15 +207,9 @@
  
 ---------
 
- 
-### Sexual Orientation
+ ```d4c```
 
-
-**Variable name:** ```d4c```
-
-**JCOIN Core Measure Question Text:** Sexual orientation:  Do you think of yourself asâ€¦?
-
-**Description:** Sexual orientation
+**Description/Question:** Sexual orientation:  Do you think of yourself as…
 
 **Variable type:** String
 
@@ -305,15 +217,9 @@
  
 ---------
 
- 
-### Sexual Orientation:  Other Specified
+ ```d4c_specify_other```
 
-
-**Variable name:** ```d4c_specify_other```
-
-**JCOIN Core Measure Question Text:** Sexual orientation:  Do you think of yourself asâ€¦?
-
-**Description:** The specific other sexual orientation of a person having a sexual orientation other than the categories presented
+**Description/Question:** Sexual orientation:  Do you think of yourself as…
 
 **Variable type:** String
 
@@ -321,15 +227,9 @@
  
 ---------
 
- 
-### Ever Pregnant
+ ```d4d```
 
-
-**Variable name:** ```d4d```
-
-**JCOIN Core Measure Question Text:** Have you ever been pregnant?
-
-**Description:** Denotes whether person has ever been pregnant
+**Description/Question:** Have you ever been pregnant?
 
 **Variable type:** String
 
@@ -339,15 +239,9 @@
  
 ---------
 
- 
-### Marital Status
+ ```d5```
 
-
-**Variable name:** ```d5```
-
-**JCOIN Core Measure Question Text:** What is your marital status?
-
-**Description:** Marital status
+**Description/Question:** What is your marital status?
 
 **Variable type:** String
 
@@ -355,15 +249,9 @@
  
 ---------
 
- 
-### Married With Partner
+ ```d5a```
 
-
-**Variable name:** ```d5a```
-
-**JCOIN Core Measure Question Text:** Are you currently living as married with a romantic partner?
-
-**Description:** Denotes whether unmarried person is living as married with romantic partner
+**Description/Question:** Are you currently living as married with a romantic partner?
 
 **Variable type:** String
 
@@ -371,47 +259,29 @@
  
 ---------
 
- 
-### Education
+ ```d6```
 
-
-**Variable name:** ```d6```
-
-**JCOIN Core Measure Question Text:** What is the highest grade or level of school you have completed or the highest degree you have received?
-
-**Description:** The highest level of education completed
+**Description/Question:** What is the highest grade or level of school you have completed or the highest degree you have received?
 
 **Variable type:** String
 
-**Possible values:** Did not complete high school,GED or equivalent,Regular high school diploma,Some college credit, but less than 1 year of college credit,1 or more years of college credit, but no degree,Associate's degree (e.g., AA or AS),Bachelor's degree (e.g., BA or BS),Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD),Other (specify)
+**Possible values:** Did not complete high school,GED or equivalent,Regular high school diploma,Some college credit but less than 1 year of college credit,1 or more years of college credit but no degree,Associate's degree (e.g., AA or AS),Bachelor's degree (e.g.,  BA or BS),Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD),Other (specify)
  
 ---------
 
- 
-### Education:  Highest Grade Level (If Less Than Ged Or H.S. Diploma)
+ ```d6_grade```
 
+**Description/Question:** What is the highest grade completed?
 
-**Variable name:** ```d6_grade```
-
-**JCOIN Core Measure Question Text:** What is the highest grade completed?
-
-**Description:** Highest grade level completed, if less than GED or high school diploma
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Education: Other Specified
+ ```d6_specify_other```
 
-
-**Variable name:** ```d6_specify_other```
-
-**JCOIN Core Measure Question Text:** What is the highest grade or level of school you have completed or the highest degree you have received?
-
-**Description:** Denotes educational status other than categories presented
+**Description/Question:** What is the highest grade or level of school you have completed or the highest degree you have received?
 
 **Variable type:** String
 
@@ -426,15 +296,9 @@
  
 ---------
 
- 
-### Interviewed During Incarceration
+ ```u14f```
 
-
-**Variable name:** ```u14f```
-
-**JCOIN Core Measure Question Text:** Interview conducted with participant during incarceration?
-
-**Description:** Indicates whether or not the person was interviewed during incarceration
+**Description/Question:** Interview conducted with participant during incarceration?
 
 **Variable type:** String
 
@@ -442,31 +306,19 @@
  
 ---------
 
- 
-### Days Incarcerated (In Past 30/Xx Days)
+ ```u14g```
 
+**Description/Question:** During the past xx/30 days, how many days have you been incarcerated?
 
-**Variable name:** ```u14g```
-
-**JCOIN Core Measure Question Text:** During the past xx/30 days, how many days have you been incarcerated?
-
-**Description:** Number of days incarcerated in past 30/xx days
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Medication Ever Prescribed For Opioid Use Disorder?
+ ```u15```
 
-
-**Variable name:** ```u15```
-
-**JCOIN Core Measure Question Text:** Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)
-
-**Description:** Indicates whether or not participant has ever been prescribed medication for OUD
+**Description/Question:** Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)
 
 **Variable type:** String
 
@@ -474,675 +326,83 @@
  
 ---------
 
- 
-### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Lifetime Months
+ ```u15a1```
 
+**Description/Question:** Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
 
-**Variable name:** ```u15a1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
-
-**Description:** Number of months participant was prescribed and took buprenorphine-naloxone or buprenorphine daily sublingual
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days Pti # Days
+ ```u15b1```
 
+**Description/Question:** Lifetime months (buprenorphine injection [Sublocade])
 
-**Variable name:** ```u15a2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took buprenorphine-naloxone or buprenorphine daily sublingual
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Pti Days Dose/Day
+ ```u15c1```
 
+**Description/Question:** Lifetime months (buprenorphine weekly injection [Brixadi])
 
-**Variable name:** ```u15a3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of buprenorphine-naloxone or buprenorphine daily sublingual
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days
-
-
-**Variable name:** ```u15a4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took buprenorphine-naloxone or buprenorphine daily sublingual
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Past 30/Xx Days Dose/Day
+ ```u15d1```
 
+**Description/Question:** Lifetime months (buprenorphine monthly injection [Brixadi])
 
-**Variable name:** ```u15a5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])
-
-**Description:** Dose per day (in the past 30/xx days) of buprenorphine-naloxone or buprenorphine daily sublingual
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine Injection (Sublocade):  Lifetime Months
-
-
-**Variable name:** ```u15b1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (buprenorphine injection [Sublocade])
-
-**Description:** Number of months participant was prescribed and took buprenorphine injection (Sublocade)
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine Injection (Sublocade): Past 30/Xx Days Pti # Days
+ ```u15e1```
 
+**Description/Question:** Lifetime months (buprenorphine 6-month implant [Probuphine])
 
-**Variable name:** ```u15b2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (buprenorphine injection [Sublocade])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took buprenorphine injection (Sublocade)
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine Injection (Sublocade): Past 30/Xx Pti Days Dose/Day
+ ```u15f1```
 
+**Description/Question:** Lifetime months (Naltrexone daily (oral))
 
-**Variable name:** ```u15b3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (buprenorphine injection [Sublocade])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of buprenorphine injection (Sublocade)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine Injection (Sublocade): Past 30/Xx Days
-
-
-**Variable name:** ```u15b4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (buprenorphine injection [Sublocade])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took buprenorphine injection (Sublocade)
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine Injection (Sublocade): Past 30/Xx Days Dose/Day
+ ```u15g1```
 
+**Description/Question:** Lifetime months (Naltrexone monthly injection [Vivitrol])
 
-**Variable name:** ```u15b5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (buprenorphine injection [Sublocade])
-
-**Description:** Dose per day (in the past 30/xx days) of buprenorphine injection (Sublocade)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine  Weekly Injection (Brixadi):  Lifetime Months
-
-
-**Variable name:** ```u15c1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (buprenorphine weekly injection [Brixadi])
-
-**Description:** Number of months participant was prescribed and took buprenorphine weekly injection (Brixadi)
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
  
 ---------
 
- 
-### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days Pti # Days
+ ```u15h1```
 
+**Description/Question:** Lifetime months (methadone daily)
 
-**Variable name:** ```u15c2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (buprenorphine weekly injection [Brixadi])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took buprenorphine weekly injection (Brixadi)
-
-**Variable type:** Number
+**Variable type:** Integer
 
 **Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15c3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (buprenorphine weekly injection [Brixadi])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of buprenorphine weekly injection (Brixadi)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days
-
-
-**Variable name:** ```u15c4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (buprenorphine weekly injection [Brixadi])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took buprenorphine weekly injection (Brixadi)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine Weekly Injection (Brixadi): Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15c5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (buprenorphine weekly injection [Brixadi])
-
-**Description:** Dose per day (in the past 30/xx days) of buprenorphine weekly injection (Brixadi)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine  Monthly Injection (Brixadi):  Lifetime Months
-
-
-**Variable name:** ```u15d1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (buprenorphine monthly injection [Brixadi])
-
-**Description:** Number of months participant was prescribed and took buprenorphine monthly injection (Brixadi)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days Pti # Days
-
-
-**Variable name:** ```u15d2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (buprenorphine monthly injection [Brixadi])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took buprenorphine monthly injection (Brixadi)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15d3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (buprenorphine monthly injection [Brixadi])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of buprenorphine monthly injection (Brixadi)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days
-
-
-**Variable name:** ```u15d4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (buprenorphine monthly injection [Brixadi])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took buprenorphine monthly injection (Brixadi)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine Monthly Injection (Brixadi): Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15d5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (buprenorphine monthly injection [Brixadi])
-
-**Description:** Dose per day (in the past 30/xx days) of buprenorphine monthly injection (Brixadi)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine 6-Month Implant (Probuphine):  Lifetime Months
-
-
-**Variable name:** ```u15e1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (buprenorphine 6-month implant [Probuphine])
-
-**Description:** Number of months participant was prescribed and took buprenorphine 6-month implant (Probuphine)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days Pti # Days
-
-
-**Variable name:** ```u15e2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (buprenorphine 6-month implant [Probuphine])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took buprenorphine 6-month implant (Probuphine)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15e3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (buprenorphine 6-month implant [Probuphine])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of buprenorphine 6-month implant (Probuphine)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days
-
-
-**Variable name:** ```u15e4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (buprenorphine 6-month implant [Probuphine])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took buprenorphine 6-month implant (Probuphine)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Buprenorphine 6-Month Implant (Probuphine): Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15e5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (buprenorphine 6-month implant [Probuphine])
-
-**Description:** Dose per day (in the past 30/xx days) of buprenorphine 6-month implant (Probuphine)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Naltrexone Daily (Oral):  Lifetime Months
-
-
-**Variable name:** ```u15f1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (Naltrexone daily (oral))
-
-**Description:** Number of months participant was prescribed and took Naltrexone daily (oral)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Daily (Oral): Past 30/Xx Days Pti # Days
-
-
-**Variable name:** ```u15f2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (Naltrexone daily (oral))
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took Naltrexone daily (oral)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Daily (Oral): Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15f3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (Naltrexone daily (oral))
-
-**Description:** Dose per day (in the past 30/xx days PTI) of Naltrexone daily (oral)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Naltrexone Daily (Oral): Past 30/Xx Days
-
-
-**Variable name:** ```u15f4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (Naltrexone daily (oral))
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took Naltrexone daily (oral)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Daily (Oral): Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15f5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (Naltrexone daily (oral))
-
-**Description:** Dose per day (in the past 30/xx days) of Naltrexone daily (oral)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Naltrexone Monthly Injection (Vivitrol):  Lifetime Months
-
-
-**Variable name:** ```u15g1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (Naltrexone monthly injection [Vivitrol])
-
-**Description:** Number of months participant was prescribed and took Naltrexone monthly injection (Vivitrol)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days Pti # Days
-
-
-**Variable name:** ```u15g2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (Naltrexone monthly injection [Vivitrol])
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took Naltrexone monthly injection (Vivitrol)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15g3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (Naltrexone monthly injection [Vivitrol])
-
-**Description:** Dose per day (in the past 30/xx days PTI) of Naltrexone monthly injection (Vivitrol)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days
-
-
-**Variable name:** ```u15g4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (Naltrexone monthly injection [Vivitrol])
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took Naltrexone monthly injection (Vivitrol)
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Naltrexone Monthly Injection (Vivitrol): Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15g5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (Naltrexone monthly injection [Vivitrol])
-
-**Description:** Dose per day (in the past 30/xx days) of Naltrexone monthly injection (Vivitrol)
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Methadone Daily:  Lifetime Months
-
-
-**Variable name:** ```u15h1```
-
-**JCOIN Core Measure Question Text:** Lifetime months (methadone daily)
-
-**Description:** Number of months participant was prescribed and took methadone daily
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Methadone Daily: Past 30/Xx Days Pti # Days
-
-
-**Variable name:** ```u15h2```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI days (methadone daily)
-
-**Description:** Number of days in past 30/xx PTI days participant was prescribed and took methadone daily
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Methadone Daily: Past 30/Xx Pti Days Dose/Day
-
-
-**Variable name:** ```u15h3```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days PTI dose/day (methadone daily)
-
-**Description:** Dose per day (in the past 30/xx days PTI) of methadone daily
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
- 
----------
-
- 
-### Methadone Daily: Past 30/Xx Days
-
-
-**Variable name:** ```u15h4```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days (methadone daily)
-
-**Description:** Number of days in past 30/xx days participant was prescribed and took methadone daily
-
-**Variable type:** Number
-
-**Possible values:** Any of the fields type and other constraints
- 
----------
-
- 
-### Methadone Daily: Past 30/Xx Days Dose/Day
-
-
-**Variable name:** ```u15h5```
-
-**JCOIN Core Measure Question Text:** Past 30/xx days dose/day (methadone daily)
-
-**Description:** Dose per day (in the past 30/xx days) of methadone daily
-
-**Variable type:** String
-
-**Possible values:** Any of the fields type and other constraints
-
-**Notes:** Dose/day is the dose taken most often during the 30 days PTI or past 30 days
 
 </details>
 
@@ -1154,13 +414,9 @@
  
 ---------
 
- 
-### Jcoin Data Commons Person Identifier
+ ```jdc_person_id```
 
-
-**Variable name:** ```jdc_person_id```
-
-**Description:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
+**Description/Question:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
 
 **Variable type:** String
 
@@ -1170,13 +426,9 @@
  
 ---------
 
- 
-### Visit Number
+ ```visit_number```
 
-
-**Variable name:** ```visit_number```
-
-**Description:** A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).
+**Description/Question:** A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).
 
 **Variable type:** Integer
 
@@ -1186,13 +438,9 @@
  
 ---------
 
- 
-### Visit Type
+ ```visit_type```
 
-
-**Variable name:** ```visit_type```
-
-**Description:** The visit type/category (either baseline or follow up)
+**Description/Question:** The visit type/category (either baseline or follow up)
 
 **Variable type:** String
 
@@ -1209,15 +457,9 @@
  
 ---------
 
- 
-### Last Time Drug Use
+ ```s1a```
 
-
-**Variable name:** ```s1a```
-
-**JCOIN Core Measure Question Text:** ... you used alcohol or other drugs weekly or more often?
-
-**Description:** Last time a person used alcohol or other drugs weekly or more often
+**Description/Question:** [... you used alcohol or other drugs weekly or more often?  ] When was the last time you…
 
 **Variable type:** String
 
@@ -1229,15 +471,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Getting, Using, Or Recovering
+ ```s1b```
 
-
-**Variable name:** ```s1b```
-
-**JCOIN Core Measure Question Text:** ... You spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)?
-
-**Description:** Last time a person spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)
+**Description/Question:** [... You spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)? ] When was the last time you…
 
 **Variable type:** String
 
@@ -1247,15 +483,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Social Dysfunction
+ ```s1c```
 
-
-**Variable name:** ```s1c```
-
-**JCOIN Core Measure Question Text:** ... You kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people?
-
-**Description:** Last time a person kept using alcohol or other drugs even though it was causing social  problems, leading to fights, or getting you into trouble with other people
+**Description/Question:** [... You kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people? ] When was the last time you…
 
 **Variable type:** String
 
@@ -1265,15 +495,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Work Or Life Dysfunction
+ ```s1d```
 
-
-**Variable name:** ```s1d```
-
-**JCOIN Core Measure Question Text:** … your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events?
-
-**Description:** Last time a person's use of alcohol or other drugs caused giving up or reducing involvement in activities at work, school, home or social events
+**Description/Question:** [… your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events? ] When was the last time you…
 
 **Variable type:** String
 
@@ -1283,15 +507,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Withdrawal
+ ```s1e```
 
-
-**Variable name:** ```s1e```
-
-**JCOIN Core Measure Question Text:** ... You had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems?
-
-**Description:** Last time a person had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or used any  alcohol or other drugs to stop being sick or avoid withdrawal problems
+**Description/Question:** [... You had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems? ] When was the last time you…
 
 **Variable type:** String
 
@@ -1301,15 +519,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Any Opioids
+ ```s2a```
 
-
-**Variable name:** ```s2a```
-
-**JCOIN Core Measure Question Text:** ... used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?
-
-**Description:** Last time a person used any kind of heroin, fentanyl, or other opioid
+**Description/Question:** [... used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?] When was the last time…
 
 **Variable type:** String
 
@@ -1319,15 +531,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Opioid Overdose
+ ```s2b```
 
-
-**Variable name:** ```s2b```
-
-**JCOIN Core Measure Question Text:** ... had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]
-
-**Description:** Last time a person had an opioid overdose
+**Description/Question:** [... had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]] When was the last time…
 
 **Variable type:** String
 
@@ -1337,15 +543,9 @@
  
 ---------
 
- 
-### Last Time Drug Use: Oud Medication-Assisted Treatment
+ ```s2c```
 
-
-**Variable name:** ```s2c```
-
-**JCOIN Core Measure Question Text:** ... went to any kind of medication assisted treatment for opioid use disorder?
-
-**Description:** Last time a person had a medication assisted treatment for opioid use disorder
+**Description/Question:** [... went to any kind of medication assisted treatment for opioid use disorder?] When was the last time…
 
 **Variable type:** String
 
@@ -1355,15 +555,9 @@
  
 ---------
 
- 
-### Opioid Overdose Count
+ ```s3a```
 
-
-**Variable name:** ```s3a```
-
-**JCOIN Core Measure Question Text:** During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you overdose on heroin, fentanyl or other opioids?  [Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention]
-
-**Description:** Number of times a person overdosed on heroin, fentanyl or other opioids during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...overdose on heroin, fentanyl or other opioids?  [Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention] ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1373,15 +567,9 @@
  
 ---------
 
- 
-### Opioid Overdose Count: Receiving Naloxone
+ ```s3b```
 
-
-**Variable name:** ```s3b```
-
-**JCOIN Core Measure Question Text:** During the past 90 days [prior to entering jail or prison/since your last assessment], how many times did you receive naloxone (Evzio or Narcan) to reverse your overdose?
-
-**Description:** Number of times a person received naloxone (Evzio or Narcan) to reverse your overdose during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...did you receive naloxone (Evzio or Narcan) to reverse your overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1391,15 +579,9 @@
  
 ---------
 
- 
-### Person Who Administered Nalaxone For Overdose
+ ```s3c```
 
-
-**Variable name:** ```s3c```
-
-**JCOIN Core Measure Question Text:** Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)
-
-**Description:** People who administered naloxone or narcan
+**Description/Question:** Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)
 
 **Variable type:** Array
 
@@ -1409,15 +591,9 @@
  
 ---------
 
- 
-### Drugs 4 Hrs Before Overdose
+ ```s3d```
 
-
-**Variable name:** ```s3d```
-
-**JCOIN Core Measure Question Text:** What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)
-
-**Description:** Drugs taken in the 4 hours before overdose
+**Description/Question:** What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)
 
 **Variable type:** Array
 
@@ -1427,15 +603,9 @@
  
 ---------
 
- 
-### Emergency Medical Service Following Overdose
+ ```s3e```
 
-
-**Variable name:** ```s3e```
-
-**JCOIN Core Measure Question Text:** How many of these times did you receive emergency medical service following an overdose?
-
-**Description:** Number of times a person received emergency medical service following an overdose
+**Description/Question:** [...receive emergency medical service following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1443,15 +613,9 @@
  
 ---------
 
- 
-### Emergency Department Visit Count Following Overdose
+ ```s3f```
 
-
-**Variable name:** ```s3f```
-
-**JCOIN Core Measure Question Text:** How many of these times did you go to the emergency department following an overdose?
-
-**Description:** Number of times a person went to the emergency department following an overdose
+**Description/Question:** [...go to the emergency department following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1459,15 +623,9 @@
  
 ---------
 
- 
-### Hospital Admissions Count Following Overdose
+ ```s3g```
 
-
-**Variable name:** ```s3g```
-
-**JCOIN Core Measure Question Text:** How many of these times did you get admitted to the hospital following an overdose?
-
-**Description:** Number of times a person got admitted to the hospital following an overdose
+**Description/Question:** [...get admitted to the hospital following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1475,15 +633,9 @@
  
 ---------
 
- 
-### Substance Use Treatment Referral Count Following Overdose
+ ```s3h```
 
-
-**Variable name:** ```s3h```
-
-**JCOIN Core Measure Question Text:** How many of these times did you receive a referral to substance use treatment from the police, EMS, ED or hospital staff?
-
-**Description:** Number of times a person received a referral to substance use treatment from the police, EMS, ED or hospital staff
+**Description/Question:** [...receive a referral to substance use treatment from the police, EMS, ED or hospital staff?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
 
 **Variable type:** Integer
 
@@ -1491,15 +643,9 @@
  
 ---------
 
- 
-### Drug Use Count
+ ```s4a```
 
-
-**Variable name:** ```s4a```
-
-**JCOIN Core Measure Question Text:** ...on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?
-
-**Description:** Number of times a person used any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs  during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1507,15 +653,9 @@
  
 ---------
 
- 
-### Alcohol Use Count
+ ```s4b```
 
-
-**Variable name:** ```s4b```
-
-**JCOIN Core Measure Question Text:** ...how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?
-
-**Description:** Number of times a person drank any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)
+**Description/Question:** [...how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1523,15 +663,9 @@
  
 ---------
 
- 
-### Alcohol Use Count: Binge Drinking
+ ```s4c```
 
-
-**Variable name:** ```s4c```
-
-**JCOIN Core Measure Question Text:** ...how many times did you have 5 or more drinks?
-
-**Description:** Number of times a person had 5 or more drinks during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...how many times did you have 5 or more drinks?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1539,15 +673,9 @@
  
 ---------
 
- 
-### Marijuana Use Count: Medical
+ ```s4d```
 
-
-**Variable name:** ```s4d```
-
-**JCOIN Core Measure Question Text:** ...how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?
-
-**Description:** Number of times a person used medical marijuana that was obtained from a dispensary with their own recommendation card or prescription during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1555,15 +683,9 @@
  
 ---------
 
- 
-### Marijuana Use Count: Not Own
+ ```s4e```
 
-
-**Variable name:** ```s4e```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?
-
-**Description:** Number of times a person used other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not their own
+**Description/Question:** [... how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1571,15 +693,9 @@
  
 ---------
 
- 
-### Opioid Use Count: Heroin
+ ```s4f```
 
-
-**Variable name:** ```s4f```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use heroin (alone or mixed with other drugs)?
-
-**Description:** Number of times a person used heroin (alone or mixed with other drugs) during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use heroin (alone or mixed with other drugs)?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1587,15 +703,9 @@
  
 ---------
 
- 
-### Opioid Use Count: Fentanyl
+ ```s4g```
 
-
-**Variable name:** ```s4g```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use fentanyl (alone or mixed with other drugs)?
-
-**Description:** Number of times a person used fentanyl (alone or mixed with other drugs)  during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use fentanyl (alone or mixed with other drugs)?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1603,15 +713,9 @@
  
 ---------
 
- 
-### Opioid Use Count: Street Methadone
+ ```s4h```
 
-
-**Variable name:** ```s4h```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use nonprescription or street methadone?
-
-**Description:** Number of times a person used nonprescription or street methadone  during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use nonprescription or street methadone?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1619,15 +723,9 @@
  
 ---------
 
- 
-### Opioid Use Count: Suboxone
+ ```s4j```
 
-
-**Variable name:** ```s4j```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use use nonprescription or street Suboxone?
-
-**Description:** Number of times a person used nonprescription or street Suboxone  during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use use nonprescription or street Suboxone?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1635,15 +733,9 @@
  
 ---------
 
- 
-### Opioid Use Count: Other
+ ```s4k```
 
-
-**Variable name:** ```s4k```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?
-
-**Description:** Number of times a person used other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)  during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1651,15 +743,9 @@
  
 ---------
 
- 
-### Cocaine Use Count
+ ```s4m```
 
-
-**Variable name:** ```s4m```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use crack, smoked rock, freebase, or other forms of cocaine?
-
-**Description:** Number of times a person used crack, smoked rock, freebase, or other forms of cocaine during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use crack, smoked rock, freebase, or other forms of cocaine?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1667,15 +753,9 @@
  
 ---------
 
- 
-### Speed Use Count
+ ```s4n```
 
-
-**Variable name:** ```s4n```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use any methamphetamines, amphetamines, or other forms of speed?
-
-**Description:** Number of times a person used any methamphetamines, amphetamines, or other forms of speed during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use any methamphetamines, amphetamines, or other forms of speed?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1683,15 +763,9 @@
  
 ---------
 
- 
-### Benzodiazapine, Anti-Anxiety, And Tranquilizer Use Count
+ ```s4p```
 
-
-**Variable name:** ```s4p```
-
-**JCOIN Core Measure Question Text:** ... how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?
-
-**Description:** Number of times a person used any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax) during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [... how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?      ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1699,15 +773,9 @@
  
 ---------
 
- 
-### Drug Use Count: Other
+ ```s4z```
 
-
-**Variable name:** ```s4z```
-
-**JCOIN Core Measure Question Text:** ...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)?
-
-**Description:** Number of days a person use any other drug that has not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** Integer
 
@@ -1715,15 +783,9 @@
  
 ---------
 
- 
-### Drug Use: Description Of Other Drugs
+ ```s4z_describe```
 
-
-**Variable name:** ```s4z_describe```
-
-**JCOIN Core Measure Question Text:** ...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )
-
-**Description:** A description of drugs that have not been mentioned (such as hallucinogens, downers) during the past 90 days  (or prior to entering jail or prison/since last assessment).
+**Description/Question:** [...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
 
 **Variable type:** String
 
@@ -1731,15 +793,9 @@
  
 ---------
 
- 
-### Place Of No Opioid Use (Jail, Hospital, Etc)
+ ```s5```
 
-
-**Variable name:** ```s5```
-
-**JCOIN Core Measure Question Text:** During the past 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)
-
-**Description:** Number of days a person has been in jail, hospital, or other place where they could not use heroin, fentanyl, other opioids, alcohol, marijuana, or other drugs
+**Description/Question:** During the past 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)
 
 **Variable type:** Integer
 
@@ -1754,15 +810,9 @@
  
 ---------
 
- 
-### Activities Against Law Besides Drugs
+ ```j1```
 
-
-**Variable name:** ```j1```
-
-**JCOIN Core Measure Question Text:** During the past 90 days (since last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use? [IF 0, GO TO J2]
-
-**Description:** During the past 90 days (since last assessment), on how many days were a person involved in any activities that might get a person into trouble or be against the law besides drug use? [IF 0, GO TO J2]
+**Description/Question:** During the past 90 days (since last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use? [IF 0, GO TO J2]
 
 **Variable type:** Integer
 
@@ -1772,15 +822,9 @@
  
 ---------
 
- 
-### Drug Possession
+ ```j1a1```
 
-
-**Variable name:** ```j1a1```
-
-**JCOIN Core Measure Question Text:** ... been in possession of small amounts of drugs? (drug possession)
-
-**Description:** Number of times  a person  been in possession of small amounts of drugs? (drug possession)
+**Description/Question:** [... been in possession of small amounts of drugs? (drug possession)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1790,15 +834,9 @@
  
 ---------
 
- 
-### Drunkenness Or Other Liquor Law Violations
+ ```j1a2```
 
-
-**Variable name:** ```j1a2```
-
-**JCOIN Core Measure Question Text:** ... been drunk or high in public? (drunkenness or other liquor law violations)
-
-**Description:** Number of times  a person  been drunk or high in public? (drunkenness or other liquor law violations)
+**Description/Question:** [... been drunk or high in public? (drunkenness or other liquor law violations)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1808,15 +846,9 @@
  
 ---------
 
- 
-### Driving Under The Influence Or While Intoxicated
+ ```j1a3```
 
-
-**Variable name:** ```j1a3```
-
-**JCOIN Core Measure Question Text:** ... driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)
-
-**Description:** Number of times  a person  driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)
+**Description/Question:** [... driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1826,15 +858,9 @@
  
 ---------
 
- 
-### Possession, Dealing, Distribution Or Sale Of Drugs
+ ```j1a4```
 
-
-**Variable name:** ```j1a4```
-
-**JCOIN Core Measure Question Text:** ...sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)
-
-**Description:** Number of times  a person …sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)
+**Description/Question:** [...sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1844,15 +870,9 @@
  
 ---------
 
- 
-### Vandalism Or Property Destruction
+ ```j1a5```
 
-
-**Variable name:** ```j1a5```
-
-**JCOIN Core Measure Question Text:** ... purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)
-
-**Description:** Number of times  a person  purposely damaged or destroyed property that did not belong to a person? (vandalism or property destruction)
+**Description/Question:** [... purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1862,15 +882,9 @@
  
 ---------
 
- 
-### Receiving, Possessing Or Selling Stolen Goods
+ ```j1a6```
 
-
-**Variable name:** ```j1a6```
-
-**JCOIN Core Measure Question Text:** ... bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)
-
-**Description:** Number of times  a person  bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)
+**Description/Question:** [... bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1880,15 +894,9 @@
  
 ---------
 
- 
-### Forgery, Fraud Or Embezzlement
+ ```j1a7```
 
-
-**Variable name:** ```j1a7```
-
-**JCOIN Core Measure Question Text:** ... passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)
-
-**Description:** Number of times  a person  passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)
+**Description/Question:** [... passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)     ] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1898,15 +906,9 @@
  
 ---------
 
- 
-### Shoplifting
+ ```j1a8```
 
-
-**Variable name:** ```j1a8```
-
-**JCOIN Core Measure Question Text:** ... taken something from a store without paying for it? (shoplifting)
-
-**Description:** Number of times  a person  taken something from a store without paying for it? (shoplifting)
+**Description/Question:** [... taken something from a store without paying for it? (shoplifting)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1916,15 +918,9 @@
  
 ---------
 
- 
-### Larceny Or Theft
+ ```j1a9```
 
-
-**Variable name:** ```j1a9```
-
-**JCOIN Core Measure Question Text:** ... other than from a store, taken money or property that didn't belong to you? (larceny or theft)
-
-**Description:** Number of times  a person  other than from a store, taken money or property that didn't belong to a person? (larceny or theft)
+**Description/Question:** [... other than from a store, taken money or property that didn't belong to you? (larceny or theft)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1934,15 +930,9 @@
  
 ---------
 
- 
-### Burglary Or Breaking And Entering
+ ```j1a10```
 
-
-**Variable name:** ```j1a10```
-
-**JCOIN Core Measure Question Text:** ... broken into a house or building to steal something or just to look around? (burglary or breaking and entering)
-
-**Description:** Number of times  a person  broken into a house or building to steal something or just to look around? (burglary or breaking and entering)
+**Description/Question:** [... broken into a house or building to steal something or just to look around? (burglary or breaking and entering)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1952,15 +942,9 @@
  
 ---------
 
- 
-### Motor Vehicle Theft
+ ```j1a11```
 
-
-**Variable name:** ```j1a11```
-
-**JCOIN Core Measure Question Text:** ... taken a car without people in it that didn't belong to you? (motor vehicle theft)
-
-**Description:** Number of times  a person  taken a car without people in it that didn't belong to a person? (motor vehicle theft)
+**Description/Question:** [... taken a car without people in it that didn't belong to you? (motor vehicle theft)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1970,15 +954,9 @@
  
 ---------
 
- 
-### Carjacking
+ ```j1a12```
 
-
-**Variable name:** ```j1a12```
-
-**JCOIN Core Measure Question Text:** ... taken a car from someone who was in it? (carjacking)
-
-**Description:** Number of times  a person  taken a car from someone who was in it? (carjacking)
+**Description/Question:** [... taken a car from someone who was in it? (carjacking)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -1988,15 +966,9 @@
  
 ---------
 
- 
-### Simple Assault Or Battery
+ ```j1a13```
 
-
-**Variable name:** ```j1a13```
-
-**JCOIN Core Measure Question Text:** ... hit someone or gotten into a physical fight? (simple assault or battery)
-
-**Description:** Number of times  a person  hit someone or gotten into a physical fight? (simple assault or battery)
+**Description/Question:** [... hit someone or gotten into a physical fight? (simple assault or battery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2006,15 +978,9 @@
  
 ---------
 
- 
-### Robbery
+ ```j1a14```
 
-
-**Variable name:** ```j1a14```
-
-**JCOIN Core Measure Question Text:** ... used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)
-
-**Description:** Number of times  a person  used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)
+**Description/Question:** [... used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2024,15 +990,9 @@
  
 ---------
 
- 
-### Aggravated Assault Or Battery
+ ```j1a15```
 
-
-**Variable name:** ```j1a15```
-
-**JCOIN Core Measure Question Text:** ... hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)
-
-**Description:** Number of times  a person  hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)
+**Description/Question:** [... hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2042,15 +1002,9 @@
  
 ---------
 
- 
-### Forcible Rape
+ ```j1a16```
 
-
-**Variable name:** ```j1a16```
-
-**JCOIN Core Measure Question Text:** ... made someone have sex with you by force when they did not want to have sex? (forcible rape)
-
-**Description:** Number of times  a person  made someone have sex with a person by force when they did not want to have sex? (forcible rape)
+**Description/Question:** [... made someone have sex with you by force when they did not want to have sex? (forcible rape)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2060,15 +1014,9 @@
  
 ---------
 
- 
-### Murder, Homicide Or No-Negligent Manslaughter
+ ```j1a17```
 
-
-**Variable name:** ```j1a17```
-
-**JCOIN Core Measure Question Text:** ... been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)
-
-**Description:** Number of times  a person  been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)
+**Description/Question:** [... been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2078,15 +1026,9 @@
  
 ---------
 
- 
-### Arson
+ ```j1a18```
 
-
-**Variable name:** ```j1a18```
-
-**JCOIN Core Measure Question Text:** ... intentionally set a building, car or other property on fire? (arson)
-
-**Description:** Number of times  a person  intentionally set a building, car or other property on fire? (arson)
+**Description/Question:** [... intentionally set a building, car or other property on fire? (arson)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2096,15 +1038,9 @@
  
 ---------
 
- 
-### Prostitution, Pimping Or Commercialized Sex
+ ```j1a19```
 
-
-**Variable name:** ```j1a19```
-
-**JCOIN Core Measure Question Text:** ... traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)
-
-**Description:** Number of times  a person  traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)
+**Description/Question:** [... traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2114,15 +1050,9 @@
  
 ---------
 
- 
-### Other Unlawful Activities
+ ```j1a99```
 
-
-**Variable name:** ```j1a99```
-
-**JCOIN Core Measure Question Text:** ... done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)
-
-**Description:** Number of times  a person  done something else that would have gotten a person into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)
+**Description/Question:** [... done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
 
 **Variable type:** Integer
 
@@ -2132,15 +1062,9 @@
  
 ---------
 
- 
-### Overall Charged Arrests
+ ```j2```
 
-
-**Variable name:** ```j2```
-
-**JCOIN Core Measure Question Text:** During the past 90 days (since last assessment), how many times were you arrested and charged?
-
-**Description:** Number of a times person was arrested and charged
+**Description/Question:** During the past 90 days (since last assessment), how many times were you arrested and charged?
 
 **Variable type:** Integer
 
@@ -2148,15 +1072,9 @@
  
 ---------
 
- 
-### Drug Possession Arrests
+ ```j2a```
 
-
-**Variable name:** ```j2a```
-
-**JCOIN Core Measure Question Text:** Number of arrests for drug possession (for small amounts)
-
-**Description:** Number of arrests for drug possession (for small amounts)
+**Description/Question:** [Number of arrests for drug possession (for small amounts)] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2164,15 +1082,9 @@
  
 ---------
 
- 
-### Law Violations Arrests
+ ```j2b```
 
-
-**Variable name:** ```j2b```
-
-**JCOIN Core Measure Question Text:** Number of arrests for drunkenness or other liquor law violations
-
-**Description:** Number of arrests for drunkenness or other liquor law violations
+**Description/Question:** [Number of arrests for drunkenness or other liquor law violations] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2180,15 +1092,9 @@
  
 ---------
 
- 
-### Driving Under The Influence/Intoxicated Arrests
+ ```j2c```
 
-
-**Variable name:** ```j2c```
-
-**JCOIN Core Measure Question Text:** Number of arrests for driving under the influence or while intoxicated
-
-**Description:** Number of arrests for driving under the influence or while intoxicated
+**Description/Question:** [Number of arrests for driving under the influence or while intoxicated] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2196,15 +1102,9 @@
  
 ---------
 
- 
-### Drug Activity Arrests
+ ```j2d```
 
-
-**Variable name:** ```j2d```
-
-**JCOIN Core Measure Question Text:** Number of arrests for possession, dealing, distribution or sale of drugs
-
-**Description:** Number of arrests for possession, dealing, distribution or sale of drugs
+**Description/Question:** [Number of arrests for possession, dealing, distribution or sale of drugs] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2212,15 +1112,9 @@
  
 ---------
 
- 
-### Vandalism Or Property Destruction Arrests
+ ```j2e```
 
-
-**Variable name:** ```j2e```
-
-**JCOIN Core Measure Question Text:** Number of arrests for vandalism or property destruction
-
-**Description:** Number of arrests for vandalism or property destruction
+**Description/Question:** [Number of arrests for vandalism or property destruction] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2228,15 +1122,9 @@
  
 ---------
 
- 
-### Stolen Goods Arrests
+ ```j2f```
 
-
-**Variable name:** ```j2f```
-
-**JCOIN Core Measure Question Text:** Number of arrests for receiving, possessing or selling stolen goods
-
-**Description:** Number of arrests for receiving, possessing or selling stolen goods
+**Description/Question:** [Number of arrests for receiving, possessing or selling stolen goods] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2244,15 +1132,9 @@
  
 ---------
 
- 
-### Forgery, Fraud Or Embezzlement Arrests
+ ```j2g```
 
-
-**Variable name:** ```j2g```
-
-**JCOIN Core Measure Question Text:** Number of arrests for forgery, fraud or embezzlement
-
-**Description:** Number of arrests for forgery, fraud or embezzlement
+**Description/Question:** [Number of arrests for forgery, fraud or embezzlement] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2260,15 +1142,9 @@
  
 ---------
 
- 
-### Shoplifting Arrests
+ ```j2h```
 
-
-**Variable name:** ```j2h```
-
-**JCOIN Core Measure Question Text:** Number of arrests for shoplifting
-
-**Description:** Number of arrests for shoplifting
+**Description/Question:** [Number of arrests for shoplifting] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2276,15 +1152,9 @@
  
 ---------
 
- 
-### Theft/Larceny Arrests
+ ```j2i```
 
-
-**Variable name:** ```j2i```
-
-**JCOIN Core Measure Question Text:** Number of arrests for larceny or theft
-
-**Description:** Number of arrests for larceny or theft
+**Description/Question:** [Number of arrests for larceny or theft] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2292,15 +1162,9 @@
  
 ---------
 
- 
-### Burglary Or Breaking And Entering Arrests
+ ```j2j```
 
-
-**Variable name:** ```j2j```
-
-**JCOIN Core Measure Question Text:** Number of arrests for burglary or breaking and entering
-
-**Description:** Number of arrests for burglary or breaking and entering
+**Description/Question:** [Number of arrests for burglary or breaking and entering] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2308,15 +1172,9 @@
  
 ---------
 
- 
-### Vehicle Theft Arrests
+ ```j2k```
 
-
-**Variable name:** ```j2k```
-
-**JCOIN Core Measure Question Text:** Number of arrests for motor vehicle theft
-
-**Description:** Number of arrests for motor vehicle theft
+**Description/Question:** [Number of arrests for motor vehicle theft] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2324,15 +1182,9 @@
  
 ---------
 
- 
-### Car Jacking Arrests
+ ```j2l```
 
-
-**Variable name:** ```j2l```
-
-**JCOIN Core Measure Question Text:** Number of arrests for car jacking
-
-**Description:** Number of arrests for car jacking
+**Description/Question:** [Number of arrests for car jacking] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2340,15 +1192,9 @@
  
 ---------
 
- 
-### Simple Assault Or Battery Arrests
+ ```j2m```
 
-
-**Variable name:** ```j2m```
-
-**JCOIN Core Measure Question Text:** Number of arrests for simple assault or battery
-
-**Description:** Number of arrests for simple assault or battery
+**Description/Question:** [Number of arrests for simple assault or battery] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2356,15 +1202,9 @@
  
 ---------
 
- 
-### Robbery Arrests
+ ```j2n```
 
-
-**Variable name:** ```j2n```
-
-**JCOIN Core Measure Question Text:** Number of arrests for robbery
-
-**Description:** Number of arrests for robbery
+**Description/Question:** [Number of arrests for robbery] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2372,15 +1212,9 @@
  
 ---------
 
- 
-### Aggravated Assault Or Battery Arrests
+ ```j2o```
 
-
-**Variable name:** ```j2o```
-
-**JCOIN Core Measure Question Text:** Number of arrests for aggravated assault or battery
-
-**Description:** Number of arrests for aggravated assault or battery
+**Description/Question:** [Number of arrests for aggravated assault or battery] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2388,15 +1222,9 @@
  
 ---------
 
- 
-### Forcible Rape Arrests
+ ```j2p```
 
-
-**Variable name:** ```j2p```
-
-**JCOIN Core Measure Question Text:** Number of arrests for forcible rape
-
-**Description:** Number of arrests for forcible rape
+**Description/Question:** [Number of arrests for forcible rape] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2404,15 +1232,9 @@
  
 ---------
 
- 
-### Negligent Manslaughter Arrests
+ ```j2q```
 
-
-**Variable name:** ```j2q```
-
-**JCOIN Core Measure Question Text:** Number of arrests for murder, homicide or non-negligent manslaughter
-
-**Description:** Number of arrests for murder, homicide or non-negligent manslaughter
+**Description/Question:** [Number of arrests for murder, homicide or non-negligent manslaughter] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2420,15 +1242,9 @@
  
 ---------
 
- 
-### Arson Arrests
+ ```j2r```
 
-
-**Variable name:** ```j2r```
-
-**JCOIN Core Measure Question Text:** Number of arrests for arson
-
-**Description:** Number of arrests for arson
+**Description/Question:** [Number of arrests for arson] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2436,15 +1252,9 @@
  
 ---------
 
- 
-### Commercialized Sex Arrests
+ ```j2s```
 
-
-**Variable name:** ```j2s```
-
-**JCOIN Core Measure Question Text:** Number of arrests for prostitution, pimping or commercialized sex
-
-**Description:** Number of arrests for prostitution, pimping or commercialized sex
+**Description/Question:** [Number of arrests for prostitution, pimping or commercialized sex] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2452,15 +1262,9 @@
  
 ---------
 
- 
-### Other Charges Arrests
+ ```j2t```
 
-
-**Variable name:** ```j2t```
-
-**JCOIN Core Measure Question Text:** Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)
-
-**Description:** Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy)
+**Description/Question:** [Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy) ] During the past 90 days (since last assessment)
 
 **Variable type:** Integer
 
@@ -2468,15 +1272,9 @@
  
 ---------
 
- 
-### Electronic Monitoring
+ ```j3a```
 
-
-**Variable name:** ```j3a```
-
-**JCOIN Core Measure Question Text:** ...on electronic monitoring?
-
-**Description:** Number of days person has been on electronic monitoring
+**Description/Question:** [...on electronic monitoring?] During the past xx days (since last assessment), how many days have you been …
 
 **Variable type:** Integer
 
@@ -2484,15 +1282,9 @@
  
 ---------
 
- 
-### House Arrest
+ ```j3b```
 
-
-**Variable name:** ```j3b```
-
-**JCOIN Core Measure Question Text:** ...on house arrest?
-
-**Description:** Number of days a person has been on house arrest
+**Description/Question:** [...on house arrest?] During the past xx days (since last assessment), how many days have you been …
 
 **Variable type:** Integer
 
@@ -2500,15 +1292,9 @@
  
 ---------
 
- 
-### Jail Time
+ ```j3c```
 
-
-**Variable name:** ```j3c```
-
-**JCOIN Core Measure Question Text:** ...in jail?
-
-**Description:** Number of days a person has been in jail
+**Description/Question:** [...in jail?] During the past xx days (since last assessment), how many days have you been …
 
 **Variable type:** Integer
 
@@ -2516,15 +1302,9 @@
  
 ---------
 
- 
-### Prison Time
+ ```j3d```
 
-
-**Variable name:** ```j3d```
-
-**JCOIN Core Measure Question Text:** ...in prison?
-
-**Description:** Number of days a person has been in prison
+**Description/Question:** [...in prison?] During the past xx days (since last assessment), how many days have you been …
 
 **Variable type:** Integer
 
@@ -2532,15 +1312,9 @@
  
 ---------
 
- 
-### Current Jail Or Prison
+ ```j3e```
 
-
-**Variable name:** ```j3e```
-
-**JCOIN Core Measure Question Text:** Are you currently in jail or prison? (CAN MARK IF OBVIOUS)
-
-**Description:** Person is currently in jail or prison
+**Description/Question:** Are you currently in jail or prison? (CAN MARK IF OBVIOUS)
 
 **Variable type:** String
 
@@ -2550,15 +1324,9 @@
  
 ---------
 
- 
-### Length Of Jail Or Prison Time
+ ```j3f```
 
-
-**Variable name:** ```j3f```
-
-**JCOIN Core Measure Question Text:** How long have you been in jail or prison? (just this episode)
-
-**Description:** Length of jail or prison time for this episode
+**Description/Question:** How long have you been in jail or prison? (just this episode)
 
 **Variable type:** Integer
 
@@ -2566,15 +1334,9 @@
  
 ---------
 
- 
-### Parole
+ ```j4a```
 
-
-**Variable name:** ```j4a```
-
-**JCOIN Core Measure Question Text:** ...been on parole?
-
-**Description:** Number of days a person has been on parole
+**Description/Question:** [...been on parole?] During the past xx days (since last assessment), how many days have you…
 
 **Variable type:** Integer
 
@@ -2582,15 +1344,9 @@
  
 ---------
 
- 
-### Probation
+ ```j4b```
 
-
-**Variable name:** ```j4b```
-
-**JCOIN Core Measure Question Text:** ...been on probation?
-
-**Description:** Number of days a person has been on probation
+**Description/Question:** [...been on probation?] During the past xx days (since last assessment), how many days have you…
 
 **Variable type:** Integer
 
@@ -2598,15 +1354,9 @@
  
 ---------
 
- 
-### Other Kind Of Community Supervision
+ ```j4c```
 
-
-**Variable name:** ```j4c```
-
-**JCOIN Core Measure Question Text:** ...been on any other kind of community supervision?
-
-**Description:** Number of days a person has been on any other kind of community supervision
+**Description/Question:** [...been on any other kind of community supervision?] During the past xx days (since last assessment), how many days have you…
 
 **Variable type:** Integer
 
@@ -2614,15 +1364,9 @@
  
 ---------
 
- 
-### Meeting With Probation Or Parole Officer
+ ```j4d```
 
-
-**Variable name:** ```j4d```
-
-**JCOIN Core Measure Question Text:** ...met with your probation or parole officer?
-
-**Description:** Number of days a person has met with a probation or parole officer
+**Description/Question:** [...met with your probation or parole officer?] During the past xx days (since last assessment), how many days have you…
 
 **Variable type:** Integer
 
@@ -2630,15 +1374,9 @@
  
 ---------
 
- 
-### Trouble With Probation Or Parole Officer
+ ```j4e```
 
-
-**Variable name:** ```j4e```
-
-**JCOIN Core Measure Question Text:** ...been in trouble with your probation or parole officer?
-
-**Description:** Number of days a person has been in trouble with a probation or parole officer
+**Description/Question:** [...been in trouble with your probation or parole officer?] During the past xx days (since last assessment), how many days have you…
 
 **Variable type:** Integer
 
@@ -2646,15 +1384,9 @@
  
 ---------
 
- 
-### Life Time Arrests
+ ```j5a```
 
-
-**Variable name:** ```j5a```
-
-**JCOIN Core Measure Question Text:** ...how many times in your life have you been arrested including as a juvenile?
-
-**Description:** Number of days a person has been arrested in their lifetime (including juvenile)
+**Description/Question:** [...how many times in your life have you been arrested including as a juvenile?] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2662,15 +1394,9 @@
  
 ---------
 
- 
-### First Time Arrest
+ ```j5b```
 
-
-**Variable name:** ```j5b```
-
-**JCOIN Core Measure Question Text:** ...how old were you the first time you were arrested?
-
-**Description:** Age at time of first arrest
+**Description/Question:** [...how old were you the first time you were arrested? ] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2678,15 +1404,9 @@
  
 ---------
 
- 
-### Lifetime Years In Detention, Jail, Or Prison Time
+ ```j5c_years```
 
-
-**Variable name:** ```j5c_years```
-
-**JCOIN Core Measure Question Text:** ...how much total time have you spent in detention, jail or prison during your lifetime?
-
-**Description:** Number of times a person has spent in detention, jail or prison during a personr lifetime?
+**Description/Question:** [...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2694,15 +1414,9 @@
  
 ---------
 
- 
-### Lifetime Months In Detention, Jail, Or Prison Time
+ ```j5c_months```
 
-
-**Variable name:** ```j5c_months```
-
-**JCOIN Core Measure Question Text:** ...how much total time have you spent in detention, jail or prison during your lifetime?
-
-**Description:** Number of times a person has spent in detention, jail or prison during lifetime
+**Description/Question:** [...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2710,15 +1424,9 @@
  
 ---------
 
- 
-### Lifetime Guity And Sentenced
+ ```j5d```
 
-
-**Variable name:** ```j5d```
-
-**JCOIN Core Measure Question Text:** ...how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?
-
-**Description:** Number of times a person has been found guilty and sentenced (including adjudications as a a personth or convictions as an adult)
+**Description/Question:** [...how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2726,15 +1434,9 @@
  
 ---------
 
- 
-### First Time Adjudication Conviction
+ ```j5e```
 
-
-**Variable name:** ```j5e```
-
-**JCOIN Core Measure Question Text:** ...how old were you the first time you were adjudicated or convicted?
-
-**Description:** Age at which a person was first adjudicated and convicted
+**Description/Question:** [...how old were you the first time you were adjudicated or convicted?] During your lifetime…
 
 **Variable type:** Integer
 
@@ -2749,15 +1451,9 @@
  
 ---------
 
- 
-### Emergency Room:  Number Of Visits
+ ```u1```
 
-
-**Variable name:** ```u1```
-
-**JCOIN Core Measure Question Text:** ...times have you had to go to an emergency room without being admitted to the hospital?
-
-**Description:** Number of times person had to go to ER
+**Description/Question:** [...times have you had to go to an emergency room without being admitted to the hospital?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2765,15 +1461,9 @@
  
 ---------
 
- 
-### Hospital Detox Program: Number Of Nights
+ ```u2```
 
-
-**Variable name:** ```u2```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a hospital detoxification program for your alcohol and other drug use (across all episodes)?
-
-**Description:** Number of nights person was in hospital detox for alcohol/drug use
+**Description/Question:** [...nights were you in a hospital detoxification program for your alcohol and other drug use (across all episodes)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2781,15 +1471,9 @@
  
 ---------
 
- 
-### Hospitalization:  Number Of Nights
+ ```u3```
 
-
-**Variable name:** ```u3```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a hospital for any other reason than detoxification?
-
-**Description:** Number of nights person was in hospital other than detox
+**Description/Question:** [...nights were you in a hospital for any other reason than detoxification?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2797,15 +1481,9 @@
  
 ---------
 
- 
-### Residential Detox: Number Of Nights
+ ```u4```
 
-
-**Variable name:** ```u4```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a non-hospital or social detoxification program from alcohol or other drugs (also called residential detox)?
-
-**Description:** Number of nights person was in non-hospital/social/residential detox
+**Description/Question:** [...nights were you in a non-hospital or social detoxification program from alcohol or other drugs (also called residential detox)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2813,15 +1491,9 @@
  
 ---------
 
- 
-### Residential Treatment Program For Alcohol/Drugs: Number Of Nights
+ ```u5a```
 
-
-**Variable name:** ```u5a```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a residential treatment program for alcohol or drug use?
-
-**Description:** Number of nights person was in residential treatment program for alcohol/drug use
+**Description/Question:** [...nights were you in a residential treatment program for alcohol or drug use?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2829,15 +1501,9 @@
  
 ---------
 
- 
-### Residential Treatment Program For Mental Health: Number Of Nights
+ ```u5b```
 
-
-**Variable name:** ```u5b```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a residential treatment program for mental health?
-
-**Description:** Number of nights person was in residential treatment program for mental health
+**Description/Question:** [...nights were you in a residential treatment program for mental health?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2845,15 +1511,9 @@
  
 ---------
 
- 
-### Rehab Facility For Physical Health: Number Of Nights
+ ```u5c```
 
-
-**Variable name:** ```u5c```
-
-**JCOIN Core Measure Question Text:** ...nights were you in a residential, nursing home, or other rehabilitation facility for your physical health?
-
-**Description:** Number of nights person was in rehab facility for physical health
+**Description/Question:** [...nights were you in a residential, nursing home, or other rehabilitation facility for your physical health?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2861,15 +1521,9 @@
  
 ---------
 
- 
-### Primary Care Provider:  Number Of Visits
+ ```u6```
 
-
-**Variable name:** ```u6```
-
-**JCOIN Core Measure Question Text:** ...times have you visited a primary care provier (physician, nurse, nurse practitioner, or physician's assistant)?
-
-**Description:** Number of times person has visited primary care provider
+**Description/Question:** [...times have you visited a primary care provier (physician, nurse, nurse practitioner, or physician's assistant)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
 
 **Variable type:** Integer
 
@@ -2877,15 +1531,9 @@
  
 ---------
 
- 
-### Primary Care Visit Reason: Alcohol/Drug Use
+ ```u6a```
 
-
-**Variable name:** ```u6a```
-
-**JCOIN Core Measure Question Text:** Alcohol or other drug use?
-
-**Description:** Indicates whether or not person visited primary care provider for alcohol/drug use
+**Description/Question:** [Alcohol or other drug use?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
 
 **Variable type:** String
 
@@ -2893,15 +1541,9 @@
  
 ---------
 
- 
-### Primary Care Visit Reason: Mental Health
+ ```u6b```
 
-
-**Variable name:** ```u6b```
-
-**JCOIN Core Measure Question Text:** Mental health?
-
-**Description:** Indicates whether or not person visited primary care provider for mental health
+**Description/Question:** [Mental health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
 
 **Variable type:** String
 
@@ -2909,15 +1551,9 @@
  
 ---------
 
- 
-### Primary Care Visit Reason:  Physical Health
+ ```u6c```
 
-
-**Variable name:** ```u6c```
-
-**JCOIN Core Measure Question Text:** Physical health?
-
-**Description:** Indicates whether or not person visited primary care provider for physical health
+**Description/Question:** [Physical health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
 
 **Variable type:** String
 
@@ -2925,15 +1561,9 @@
  
 ---------
 
- 
-### Primary Care Visit Reason:  Some Other Reason (Specify)
+ ```u6d```
 
-
-**Variable name:** ```u6d```
-
-**JCOIN Core Measure Question Text:** Some other reason?
-
-**Description:** Indicates whether or not person visited primary care provider for some other reason
+**Description/Question:** [Some other reason?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
 
 **Variable type:** String
 
@@ -2941,15 +1571,9 @@
  
 ---------
 
- 
-### Primary Care Visit Reason: Specify Other Reason
+ ```u6d_specify```
 
-
-**Variable name:** ```u6d_specify```
-
-**JCOIN Core Measure Question Text:** Specify other reason you visited primary care provider
-
-**Description:** Specifies other reason person visited primary care provider
+**Description/Question:** [Specify other reason you visited primary care provider] Why did you visit a primary care provider? (ADD SKIP LOGIC)
 
 **Variable type:** String
 
@@ -2957,15 +1581,9 @@
  
 ---------
 
- 
-### Outpatient Treament Program For Alcohol/Substance Use: Number Of Days
+ ```u7```
 
-
-**Variable name:** ```u7```
-
-**JCOIN Core Measure Question Text:** …days did you participate in any other outpatient treatment program specializing in alcohol or substance use? (OTHER THAN U1-6)
-
-**Description:** Number of days person participated in outpatient alcohol/substance use treatment program
+**Description/Question:** […days did you participate in any other outpatient treatment program specializing in alcohol or substance use? (OTHER THAN U1-6)                 ] Other than times you already mentioned in <reference to u6>, during the past 3 months (since last assessment), how many…
 
 **Variable type:** Integer
 
@@ -2973,15 +1591,9 @@
  
 ---------
 
- 
-### Outpatient Treatment Program: Number Of Days Physically Visiting Program
+ ```u7a```
 
-
-**Variable name:** ```u7a```
-
-**JCOIN Core Measure Question Text:** How many of these days did you physically visit the (outpatient treatment) program?
-
-**Description:** Number of days person physically visited outpatient treatment program
+**Description/Question:** How many of these days did you physically visit the (outpatient treatment) program?
 
 **Variable type:** Integer
 
@@ -2989,15 +1601,9 @@
  
 ---------
 
- 
-### Outpatient Treatment Program: Number Of Days Participating Online
+ ```u7b```
 
-
-**Variable name:** ```u7b```
-
-**JCOIN Core Measure Question Text:** How many of these days did you participate (in the outpatient tx program) online (e.g., smart phone, computer, or tablet)?
-
-**Description:** Number of days person participated in outpatient tx program online
+**Description/Question:** How many of these days did you participate (in the outpatient tx program) online (e.g., smart phone, computer, or tablet)?
 
 **Variable type:** Integer
 
@@ -3005,15 +1611,9 @@
  
 ---------
 
- 
-### Outpatient Treatment Program: Number Of Days Seeing Doctor
+ ```u7c```
 
-
-**Variable name:** ```u7c```
-
-**JCOIN Core Measure Question Text:** How many of these days did you see a doctor (at the outpatient treatment program)?
-
-**Description:** Number of days person saw a doctor at outpatient tx program
+**Description/Question:** How many of these days did you see a doctor (at the outpatient treatment program)?
 
 **Variable type:** Integer
 
@@ -3021,15 +1621,9 @@
  
 ---------
 
- 
-### Outpatient Treatment Program: Number Of Days Participating In Therapy
+ ```u7d```
 
-
-**Variable name:** ```u7d```
-
-**JCOIN Core Measure Question Text:** How many of these days did you only participate in individual or group therapy?
-
-**Description:** Number of days person only participated in therapy at outpatient tx program
+**Description/Question:** How many of these days did you only participate in individual or group therapy?
 
 **Variable type:** Integer
 
@@ -3037,15 +1631,9 @@
  
 ---------
 
- 
-### Outpatient Treatment Program: Number Of Days For Medication Management
+ ```u7e```
 
-
-**Variable name:** ```u7e```
-
-**JCOIN Core Measure Question Text:** How many of these days were for medication management only?
-
-**Description:** Number of days person only received medication management at outpatient tx program
+**Description/Question:** How many of these days were for medication management only?
 
 **Variable type:** Integer
 
@@ -3053,15 +1641,9 @@
  
 ---------
 
- 
-### Psychiatrist/Psychologist:  Number Of Total Visits
+ ```u8```
 
-
-**Variable name:** ```u8```
-
-**JCOIN Core Measure Question Text:** Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist (Ph.D., Psy.D)?
-
-**Description:** Number of times person has seen a psychiatrist or psychologist:  Total
+**Description/Question:** Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist (Ph.D., Psy.D)?
 
 **Variable type:** Integer
 
@@ -3069,15 +1651,9 @@
  
 ---------
 
- 
-### Psychiatrist/Psychologist: Number Of In-Person Visits
+ ```u8a```
 
-
-**Variable name:** ```u8a```
-
-**JCOIN Core Measure Question Text:** How many of these times did you physically visit the program (psychiatrist/psychologist)?
-
-**Description:** Number of times person has seen a psychiatrist/psychologist:  In person
+**Description/Question:** How many of these times did you physically visit the program (psychiatrist/psychologist)?
 
 **Variable type:** Integer
 
@@ -3085,15 +1661,9 @@
  
 ---------
 
- 
-### Psychiatrist/Psychologist: Number Of Online Visits
+ ```u8b```
 
-
-**Variable name:** ```u8b```
-
-**JCOIN Core Measure Question Text:** How many of these times did you participate online (phone, computer, or tablet; with a psychiatrist/psychologist)?
-
-**Description:** Number of times person has seen a psychiatrist/psychologist:  Online
+**Description/Question:** How many of these times did you participate online (phone, computer, or tablet; with a psychiatrist/psychologist)?
 
 **Variable type:** Integer
 
@@ -3101,15 +1671,9 @@
  
 ---------
 
- 
-### Counselor/Social Worker: Number Of Total Visits
+ ```u9```
 
-
-**Variable name:** ```u9```
-
-**JCOIN Core Measure Question Text:** Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen any other kind or counselor or social worker?
-
-**Description:** Number of times person has seen a counselor/social worker:  Total
+**Description/Question:** Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen any other kind or counselor or social worker?
 
 **Variable type:** Integer
 
@@ -3117,15 +1681,9 @@
  
 ---------
 
- 
-### Counselor/Social Worker: Number Of In-Person Visits
+ ```u9a```
 
-
-**Variable name:** ```u9a```
-
-**JCOIN Core Measure Question Text:** ...did you physically visit the program (counselor/social worker)?
-
-**Description:** Number of times person has seen a counselor/social worker:  In person
+**Description/Question:** [...did you physically visit the program (counselor/social worker)?] How many of these times did you…
 
 **Variable type:** Integer
 
@@ -3133,15 +1691,9 @@
  
 ---------
 
- 
-### Counselor/Social Worker: Number Of Online Visits
+ ```u9b```
 
-
-**Variable name:** ```u9b```
-
-**JCOIN Core Measure Question Text:** ...did you participate online (phone, computer, or tablet; with a counselor/social worker)?
-
-**Description:** Number of times person has seen a counselor/social worker:  Online
+**Description/Question:** ...did you participate online (phone, computer, or tablet; with a counselor/social worker)?
 
 **Variable type:** Integer
 
@@ -3149,15 +1701,9 @@
  
 ---------
 
- 
-### Healthcare Cost
+ ```u13```
 
-
-**Variable name:** ```u13```
-
-**JCOIN Core Measure Question Text:** In the past xx days (since last assessment), how much money have you spent on all healthcare (e.g., copayments or prescriptions)?
-
-**Description:** Amount of money person has spent on healthcare
+**Description/Question:** In the past xx days (since last assessment), how much money have you spent on all healthcare (e.g., copayments or prescriptions)?
 
 **Variable type:** Number
 
@@ -3165,15 +1711,9 @@
  
 ---------
 
- 
-### Substance Use Treatment
+ ```u14```
 
-
-**Variable name:** ```u14```
-
-**JCOIN Core Measure Question Text:** Have you received any substance use treatment in the past xx days (since last assessment)?
-
-**Description:** Indicates whether or not person has received substance use treatment
+**Description/Question:** Have you received any substance use treatment in the past xx days (since last assessment)?
 
 **Variable type:** String
 
@@ -3181,15 +1721,9 @@
  
 ---------
 
- 
-### Substance Use Tx Provider:  Well-Organized
+ ```u14a```
 
-
-**Variable name:** ```u14a```
-
-**JCOIN Core Measure Question Text:** The provider is organized and well-run.
-
-**Description:** Indicates level of agreement with provider's organization
+**Description/Question:** [The provider is organized and well-run.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
 
 **Variable type:** String
 
@@ -3197,15 +1731,9 @@
  
 ---------
 
- 
-### Substance Use Tx Provider:  Satisfaction
+ ```u14b```
 
-
-**Variable name:** ```u14b```
-
-**JCOIN Core Measure Question Text:** You are satisfied with this provider.
-
-**Description:** Indicates level of satisfaction with provider
+**Description/Question:** [You are satisfied with this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
 
 **Variable type:** String
 
@@ -3213,15 +1741,9 @@
  
 ---------
 
- 
-### Substance Use Tx Provider:  Efficient Staff
+ ```u14c```
 
-
-**Variable name:** ```u14c```
-
-**JCOIN Core Measure Question Text:** The staff are efficient at doing their job.
-
-**Description:** Indicates level of agreement with provider's staff efficiency
+**Description/Question:** [The staff are efficient at doing their job.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
 
 **Variable type:** String
 
@@ -3229,15 +1751,9 @@
  
 ---------
 
- 
-### Substance Use Tx Provider:  Personal Counseling
+ ```u14d```
 
-
-**Variable name:** ```u14d```
-
-**JCOIN Core Measure Question Text:** You can get plenty of personal counseling at this provider.
-
-**Description:** Indicates level of agreement with personal counseling provided
+**Description/Question:** [You can get plenty of personal counseling at this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
 
 **Variable type:** String
 
@@ -3245,15 +1761,9 @@
  
 ---------
 
- 
-### Substance Use Tx Provider:  Medication Assistance For Opioid Use
+ ```u14e```
 
-
-**Variable name:** ```u14e```
-
-**JCOIN Core Measure Question Text:** You can get plenty of medication assistance for opioid use at this provider.
-
-**Description:** Indicates level of agreement with provider's medication assistance
+**Description/Question:** [You can get plenty of medication assistance for opioid use at this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
 
 **Variable type:** String
 
@@ -3268,15 +1778,9 @@
  
 ---------
 
- 
-### Not Candidate For Oud Treatment
+ ```m1```
 
-
-**Variable name:** ```m1```
-
-**JCOIN Core Measure Question Text:** If respondent is not a candidate for OUD treatment, mark here and skip this set of items:
-
-**Description:** Indicates person is not a candidate for OUD treatment
+**Description/Question:** If respondent is not a candidate for OUD treatment, mark here and skip this set of items:
 
 **Variable type:** Boolean
 
@@ -3284,15 +1788,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Oud Medication
+ ```m2_meds```
 
-
-**Variable name:** ```m2_meds```
-
-**JCOIN Core Measure Question Text:** OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol) [Ask M3]
-
-**Description:** Indicates person prefers OUD medication for treatment
+**Description/Question:** [OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol) [Ask M3]] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3300,15 +1798,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Detox
+ ```m2_detox```
 
-
-**Variable name:** ```m2_detox```
-
-**JCOIN Core Measure Question Text:** Detox
-
-**Description:** Indicates person prefers detox for treatment
+**Description/Question:** [Detox] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3316,15 +1808,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Outpatient Counseling
+ ```m2_outpt_counsel```
 
-
-**Variable name:** ```m2_outpt_counsel```
-
-**JCOIN Core Measure Question Text:** Outpatient counseling
-
-**Description:** Indicates person prefers outpatient counseling for treatment
+**Description/Question:** [Outpatient counseling] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3332,15 +1818,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Intensive Outpatient
+ ```m2_outpt_intensive```
 
-
-**Variable name:** ```m2_outpt_intensive```
-
-**JCOIN Core Measure Question Text:** Intensive outpatient
-
-**Description:** Indicates person prefers intensive outpatient for treatment
+**Description/Question:** [Intensive outpatient  ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3348,15 +1828,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Residential Treatment
+ ```m2_residential```
 
-
-**Variable name:** ```m2_residential```
-
-**JCOIN Core Measure Question Text:** Residential treatment
-
-**Description:** Indicates person prefers residential treatment for OUD
+**Description/Question:** [Residential treatment ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3364,15 +1838,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Other Treatment
+ ```m2_other```
 
-
-**Variable name:** ```m2_other```
-
-**JCOIN Core Measure Question Text:** Other
-
-**Description:** Indicates person prefers other treatment for OUD
+**Description/Question:** [Other ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3380,15 +1848,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Other Treatment Specified
+ ```m2_other_specify```
 
-
-**Variable name:** ```m2_other_specify```
-
-**JCOIN Core Measure Question Text:** Other (specify)
-
-**Description:** Specifies other treatment person prefers for OUD
+**Description/Question:** [Other (specify)] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3396,15 +1858,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  No Treatment
+ ```m2_none```
 
-
-**Variable name:** ```m2_none```
-
-**JCOIN Core Measure Question Text:** No treatment
-
-**Description:** Indicates person prefers no treatment for OUD
+**Description/Question:** [No treatment ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3412,15 +1868,9 @@
  
 ---------
 
- 
-### Preferred Type Of Oud Treatment:  Don'T Know Or No Preference
+ ```m2_dont_know```
 
-
-**Variable name:** ```m2_dont_know```
-
-**JCOIN Core Measure Question Text:** Don’t know / No preference
-
-**Description:** Indicates person does not know (or does not have) an OUD treatment preference
+**Description/Question:** [Don’t know / No preference ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
 
 **Variable type:** Boolean
 
@@ -3428,13 +1878,9 @@
  
 ---------
 
- 
-### Preferred Oud Medication
+ ```m3```
 
-
-**Variable name:** ```m3```
-
-**Description:** Specifies which OUD medication person prefers
+**Description/Question:** Which OUD medication treatment type would you most prefer to receive if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of questions.]
 
 **Variable type:** String
 
@@ -3442,13 +1888,9 @@
  
 ---------
 
- 
-### Type Of Buprenorphine Preferred
+ ```m4```
 
-
-**Variable name:** ```m4```
-
-**Description:** Specifies which type of buprenorphine person would prefer
+**Description/Question:** Which type of buprenorphine? (SELECT ONLY ONE)
 
 **Variable type:** String
 
@@ -3456,13 +1898,9 @@
  
 ---------
 
- 
-### Type Of Naltrexone Preferred
+ ```m5```
 
-
-**Variable name:** ```m5```
-
-**Description:** Specifies which type of naltrexone person would prefer
+**Description/Question:** Which type of naltrexone? (SELECT ONLY ONE)
 
 **Variable type:** String
 
@@ -3477,15 +1915,9 @@
  
 ---------
 
- 
-### People In Household
+ ```d7a```
 
-
-**Variable name:** ```d7a```
-
-**JCOIN Core Measure Question Text:** How many people, including yourself, are there in your household?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [How many people, including yourself, are there in your household?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Integer
 
@@ -3495,15 +1927,9 @@
  
 ---------
 
- 
-### People Under 18 Years Old In Household
+ ```d7b```
 
-
-**Variable name:** ```d7b```
-
-**JCOIN Core Measure Question Text:** How many of the people in your household are under the age of 18?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [How many of the people in your household are under the age of 18?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Integer
 
@@ -3513,15 +1939,9 @@
  
 ---------
 
- 
-### Total Household Income
+ ```d7c```
 
-
-**Variable name:** ```d7c```
-
-**JCOIN Core Measure Question Text:** During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, what was the total income of everyone in your household together that provided you with support?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, what was the total income of everyone in your household together that provided you with support?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Number
 
@@ -3531,15 +1951,9 @@
  
 ---------
 
- 
-### Total Household Income From Legal Sources
+ ```d7d```
 
-
-**Variable name:** ```d7d```
-
-**JCOIN Core Measure Question Text:** During the past 12 months, which of the following is the category that your total household income from legal sources would be in?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past 12 months, which of the following is the category that your total household income from legal sources would be in?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** String
 
@@ -3549,15 +1963,9 @@
  
 ---------
 
- 
-### Public Assistance For Household
+ ```d7d1```
 
-
-**Variable name:** ```d7d1```
-
-**JCOIN Core Measure Question Text:** During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Boolean
 
@@ -3567,15 +1975,9 @@
  
 ---------
 
- 
-### Total Household Money From Public Assistance
+ ```d7d2```
 
-
-**Variable name:** ```d7d2```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), approximately how much money has your household all together received from public assistance sources like unemployment, food stamps (TANF), subsidized housing, supplemental security income?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past xx days (since last assessment), approximately how much money has your household all together received from public assistance sources like unemployment, food stamps (TANF), subsidized housing, supplemental security income?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Number
 
@@ -3585,15 +1987,9 @@
  
 ---------
 
- 
-### Other Non-Employmnet Income Sources
+ ```d7e1```
 
-
-**Variable name:** ```d7e1```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** String
 
@@ -3603,15 +1999,9 @@
  
 ---------
 
- 
-### Total Household Money From Other Non-Employment Income Sources
+ ```d7e2```
 
-
-**Variable name:** ```d7e2```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), approximately how much money has your household all together received from other non-employment sources like retirement, pension, alimony, child support, interest?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past xx days (since last assessment), approximately how much money has your household all together received from other non-employment sources like retirement, pension, alimony, child support, interest?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Number
 
@@ -3621,15 +2011,9 @@
  
 ---------
 
- 
-### Non-Employment Income With Risk Of Legal Or Other Trouble
+ ```d7f1```
 
-
-**Variable name:** ```d7f1```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** String
 
@@ -3639,15 +2023,9 @@
  
 ---------
 
- 
-### Total Household Money With Risk Of Causing  Legal Or Other Trouble Activities
+ ```d7f2```
 
-
-**Variable name:** ```d7f2```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), outside of employment described above, how much money did you earn from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [During the past xx days (since last assessment), outside of employment described above, how much money did you earn from activities that might get you into trouble or be against the law, like dealing, gambling, or theft? ] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
 
 **Variable type:** Number
 
@@ -3657,15 +2035,9 @@
  
 ---------
 
- 
-### Current School Or Work Situation Description
+ ```d8```
 
-
-**Variable name:** ```d8```
-
-**JCOIN Core Measure Question Text:** Which one of the following statements best describes your work or school situation currently? (CLARIFY AND CODE) [For D8, include work under the table but not any other illegal work or income]
-
-**Description:** NO DESCRIPTION
+**Description/Question:** Which one of the following statements best describes your work or school situation currently? (CLARIFY AND CODE) [For D8, include work under the table but not any other illegal work or income]
 
 **Variable type:** String
 
@@ -3675,15 +2047,9 @@
  
 ---------
 
- 
-### Number Of Days Worked
+ ```d8a```
 
-
-**Variable name:** ```d8a```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), on how many days have you worked?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** During the past xx days (since last assessment), on how many days have you worked?
 
 **Variable type:** Integer
 
@@ -3693,15 +2059,9 @@
  
 ---------
 
- 
-### Days Per Week Worked
+ ```d8b```
 
-
-**Variable name:** ```d8b```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), how many days per week do you typically work?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** During the past xx days (since last assessment), how many days per week do you typically work?
 
 **Variable type:** Integer
 
@@ -3711,15 +2071,9 @@
  
 ---------
 
- 
-### Hours Per Week Worked
+ ```d8b1```
 
-
-**Variable name:** ```d8b1```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), How many hours per week do you usually work?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** During the past xx days (since last assessment), How many hours per week do you usually work?
 
 **Variable type:** Integer
 
@@ -3729,15 +2083,9 @@
  
 ---------
 
- 
-### Hourly Rate
+ ```d8c```
 
-
-**Variable name:** ```d8c```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]
-
-**Description:** NO DESCRIPTION
+**Description/Question:** During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]
 
 **Variable type:** Number
 
@@ -3747,15 +2095,9 @@
  
 ---------
 
- 
-### Health Insurance From Work
+ ```d8d_health_insurance```
 
-
-**Variable name:** ```d8d_health_insurance```
-
-**JCOIN Core Measure Question Text:** Health Insurance
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Health Insurance] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
 
 **Variable type:** String
 
@@ -3765,15 +2107,9 @@
  
 ---------
 
- 
-### Paid Time Off From Work
+ ```d8d_paid_time_off```
 
-
-**Variable name:** ```d8d_paid_time_off```
-
-**JCOIN Core Measure Question Text:** Paid time off
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Paid time off] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
 
 **Variable type:** String
 
@@ -3783,15 +2119,9 @@
  
 ---------
 
- 
-### Benefit Or Pension Plan From Work
+ ```d8d_benefit_plan```
 
-
-**Variable name:** ```d8d_benefit_plan```
-
-**JCOIN Core Measure Question Text:** Defined benefit plan or pension
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Defined benefit plan or pension] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
 
 **Variable type:** String
 
@@ -3801,15 +2131,9 @@
  
 ---------
 
- 
-### Retirement Plan From Work
+ ```d8d_retirement_plan```
 
-
-**Variable name:** ```d8d_retirement_plan```
-
-**JCOIN Core Measure Question Text:** An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
 
 **Variable type:** String
 
@@ -3819,11 +2143,9 @@
  
 ---------
 
-**Variable name:** ```d8e```
+ ```d8e```
 
-**JCOIN Core Measure Question Text:** What is your occupation?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** What is your occupation?
 
 **Variable type:** String
 
@@ -3831,15 +2153,9 @@
  
 ---------
 
- 
-### Currently Covered By Health Insurance
+ ```d9```
 
-
-**Variable name:** ```d9```
-
-**JCOIN Core Measure Question Text:** Are you currently covered by health insurance or some other kind of health care plan?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** Are you currently covered by health insurance or some other kind of health care plan?
 
 **Variable type:** Boolean
 
@@ -3849,15 +2165,9 @@
  
 ---------
 
- 
-### Private Health Insurance Plan Coverage
+ ```d9a_private```
 
-
-**Variable name:** ```d9a_private```
-
-**JCOIN Core Measure Question Text:** Private health insurance
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Private health insurance] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3867,15 +2177,9 @@
  
 ---------
 
- 
-### Medicare Plan Coverage
+ ```d9a_medicare```
 
-
-**Variable name:** ```d9a_medicare```
-
-**JCOIN Core Measure Question Text:** Medicare
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Medicare] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3885,15 +2189,9 @@
  
 ---------
 
- 
-### Medigap Plan Coverage
+ ```d9a_medigap```
 
-
-**Variable name:** ```d9a_medigap```
-
-**JCOIN Core Measure Question Text:** Medigap
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Medigap] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3903,15 +2201,9 @@
  
 ---------
 
- 
-### Medicaid Plan Coverage
+ ```d9a_medicaid```
 
-
-**Variable name:** ```d9a_medicaid```
-
-**JCOIN Core Measure Question Text:** Medicaid ({If Available, Display State Plan Name})
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Medicaid ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3921,15 +2213,9 @@
  
 ---------
 
- 
-### Children'S Health Insurance Coverage
+ ```d9a_schip```
 
-
-**Variable name:** ```d9a_schip```
-
-**JCOIN Core Measure Question Text:** SCHIP (CHIP/Children’s Health Insurance Program)
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [SCHIP (CHIP/Children’s Health Insurance Program)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3939,15 +2225,9 @@
  
 ---------
 
- 
-### Military Plan Coverage
+ ```d9a_military```
 
-
-**Variable name:** ```d9a_military```
-
-**JCOIN Core Measure Question Text:** Military Health Care (Tricare/VA/CHAMP-VA)
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Military Health Care (Tricare/VA/CHAMP-VA)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3957,15 +2237,9 @@
  
 ---------
 
- 
-### Indian Health Service Coverage
+ ```d9a_indian```
 
-
-**Variable name:** ```d9a_indian```
-
-**JCOIN Core Measure Question Text:** Indian Health Service
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Indian Health Service] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3975,15 +2249,9 @@
  
 ---------
 
- 
-### State Health Coverage
+ ```d9a_state```
 
-
-**Variable name:** ```d9a_state```
-
-**JCOIN Core Measure Question Text:** State-Sponsored Health Plan ({If Available, Display State Plan Name})
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [State-Sponsored Health Plan ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -3993,15 +2261,9 @@
  
 ---------
 
- 
-### Other Government Coverage
+ ```d9a_other_government```
 
-
-**Variable name:** ```d9a_other_government```
-
-**JCOIN Core Measure Question Text:** Other government program
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Other government program] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -4011,15 +2273,9 @@
  
 ---------
 
- 
-### Single Service Coverage
+ ```d9a_single_service```
 
-
-**Variable name:** ```d9a_single_service```
-
-**JCOIN Core Measure Question Text:** Single service plan (e.g., dental, vision, prescriptions)
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Single service plan (e.g., dental, vision, prescriptions)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -4029,15 +2285,9 @@
  
 ---------
 
- 
-### Don'T Know About Coverage
+ ```d9a_dont_know```
 
-
-**Variable name:** ```d9a_dont_know```
-
-**JCOIN Core Measure Question Text:** Don’t know
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Don’t know] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
 
 **Variable type:** Boolean
 
@@ -4047,15 +2297,9 @@
  
 ---------
 
- 
-### Days Uninsured
+ ```d10```
 
-
-**Variable name:** ```d10```
-
-**JCOIN Core Measure Question Text:** During the past xx days (since last assessment), on how many days were you uninsured?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** During the past xx days (since last assessment), on how many days were you uninsured?
 
 **Variable type:** Integer
 
@@ -4065,15 +2309,9 @@
  
 ---------
 
- 
-### Number Of Days At Self Help Group
+ ```d11a```
 
-
-**Variable name:** ```d11a```
-
-**JCOIN Core Measure Question Text:** Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4083,15 +2321,9 @@
  
 ---------
 
- 
-### Number Of Days At Non-Alcoholic, Structured Activities
+ ```d11b```
 
-
-**Variable name:** ```d11b```
-
-**JCOIN Core Measure Question Text:** Been in other structured activities where no one was using alcohol or drugs?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Been in other structured activities where no one was using alcohol or drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4101,15 +2333,9 @@
  
 ---------
 
- 
-### Number Of Days Being Homeless
+ ```d11c```
 
-
-**Variable name:** ```d11c```
-
-**JCOIN Core Measure Question Text:** Been homeless or had to stay with someone else to avoid being homeless?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Been homeless or had to stay with someone else to avoid being homeless? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4119,15 +2345,9 @@
  
 ---------
 
- 
-### Number Of Days In Homeless Shelter
+ ```d11d```
 
-
-**Variable name:** ```d11d```
-
-**JCOIN Core Measure Question Text:** Lived in a homeless shelter or emergency housing?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Lived in a homeless shelter or emergency housing? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4137,15 +2357,9 @@
  
 ---------
 
- 
-### Number Of Days In Household With Alcohol Use
+ ```d11e```
 
-
-**Variable name:** ```d11e```
-
-**JCOIN Core Measure Question Text:** Lived where other people were using alcohol?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Lived where other people were using alcohol? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4155,15 +2369,9 @@
  
 ---------
 
- 
-### Number Of Days In Household With Drug Use
+ ```d11f```
 
-
-**Variable name:** ```d11f```
-
-**JCOIN Core Measure Question Text:** Lived where other people were using drugs?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Lived where other people were using drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4173,15 +2381,9 @@
  
 ---------
 
- 
-### Number Of Days Of Formal Activities With Alcohol
+ ```d11g```
 
-
-**Variable name:** ```d11g```
-
-**JCOIN Core Measure Question Text:** Been to formal activities where people were using alcohol or drugs?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Been to formal activities where people were using alcohol or drugs?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4191,15 +2393,9 @@
  
 ---------
 
- 
-### Number Of Days Of Home Or Family Trouble
+ ```d11h```
 
-
-**Variable name:** ```d11h```
-
-**JCOIN Core Measure Question Text:** Gotten into trouble at home or with your family for any reason?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Gotten into trouble at home or with your family for any reason? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4209,15 +2405,9 @@
  
 ---------
 
- 
-### Number Of Days Of  Abusive Behavior In Arguments
+ ```d11i```
 
-
-**Variable name:** ```d11i```
-
-**JCOIN Core Measure Question Text:** Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4227,15 +2417,9 @@
  
 ---------
 
- 
-### Number Of Days Being Physically, Emotionally, Sexually Abused
+ ```d11j```
 
-
-**Variable name:** ```d11j```
-
-**JCOIN Core Measure Question Text:** Been attacked with a weapon, beaten, sexually abused or emotionally abused?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Been attacked with a weapon, beaten, sexually abused or emotionally abused?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
 
 **Variable type:** Integer
 
@@ -4245,15 +2429,9 @@
  
 ---------
 
- 
-### Received Narcan Kit
+ ```o3```
 
-
-**Variable name:** ```o3```
-
-**JCOIN Core Measure Question Text:** At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (“Narcan kit”) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (“Narcan kit”) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]] If respondent was in jail/prison during the past 3 months but not currently, ask:
 
 **Variable type:** String
 
@@ -4263,15 +2441,9 @@
  
 ---------
 
- 
-### Used Narcan Kit
+ ```o3a```
 
-
-**Variable name:** ```o3a```
-
-**JCOIN Core Measure Question Text:** Have you had to use it?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Have you had to use it?] If respondent was in jail/prison during the past 3 months but not currently, ask:
 
 **Variable type:** Boolean
 
@@ -4281,20 +2453,626 @@
  
 ---------
 
- 
-### Refilled Narcan Kit
+ ```o3b```
 
-
-**Variable name:** ```o3b```
-
-**JCOIN Core Measure Question Text:** Have you obtained a refill/replacement kit?
-
-**Description:** NO DESCRIPTION
+**Description/Question:** [Have you obtained a refill/replacement kit?] If respondent was in jail/prison during the past 3 months but not currently, ask:
 
 **Variable type:** Boolean
 
 **Possible values:** Any of the fields type and other constraints
 
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47
+
+</details>
+
+
+<details>
+	<summary><h2>PROMIS 29+2/ PROPr</h2></summary>
+
+ 
+---------
+
+ ```p1a```
+
+**Description/Question:** [... do chores such as sweeping, mopping, janitorial work or other house cleaning work] In the past 7 days I was able to . . .
+
+**Variable type:** String
+
+**Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
+ 
+---------
+
+ ```p1b```
+
+**Description/Question:** [...go up and down stairs at a normal pace] In the past 7 days I was able to . . .
+
+**Variable type:** String
+
+**Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
+ 
+---------
+
+ ```p1c```
+
+**Description/Question:** [...walk around for at least 15 minutes] In the past 7 days I was able to . . .
+
+**Variable type:** String
+
+**Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
+ 
+---------
+
+ ```p1d```
+
+**Description/Question:** [... get from place to place] In the past 7 days I was able to . . .
+
+**Variable type:** String
+
+**Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
+ 
+---------
+
+ ```p2a```
+
+**Description/Question:** [...I had trouble doing all of my regular leisure activities with others ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p2b```
+
+**Description/Question:** [...I had trouble doing all of the family activities that I want to do ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p2c```
+
+**Description/Question:** [...I had trouble doing all of my usual work (include work at home) ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p2d```
+
+**Description/Question:** [...I had trouble doing all of the activities with friends that I want to do ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p3a```
+
+**Description/Question:** [...I felt fearful] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p3b```
+
+**Description/Question:** [...I found it hard to focus on anything other than my anxiety] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p3c```
+
+**Description/Question:** [...My worries overwhelmed me] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p3d```
+
+**Description/Question:** [...I felt uneasy] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p4a```
+
+**Description/Question:** [...I felt worthless] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p4b```
+
+**Description/Question:** [...I felt helpless] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p4c```
+
+**Description/Question:** [...I felt depressed] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p4d```
+
+**Description/Question:** [...I felt hopeless ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Never,Rarely,Sometimes,Often,Always
+ 
+---------
+
+ ```p5a```
+
+**Description/Question:** [...I felt fatigued] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p5b```
+
+**Description/Question:** [...I had trouble starting things because I was tired  ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p5c```
+
+**Description/Question:** […how run-down did you feel on average? ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p5d```
+
+**Description/Question:** […how fatigued were you on average?] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p6a```
+
+**Description/Question:** [...my sleep quality was] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Very poor,Poor,Fair,Good,Very good
+ 
+---------
+
+ ```p6b```
+
+**Description/Question:** [...my sleep was refreshing] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p6c```
+
+**Description/Question:** [...I had problems with my sleep] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p6d```
+
+**Description/Question:** [...I had difficulty falling asleep] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p7a```
+
+**Description/Question:** [...I have been able to concentrate ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p7b```
+
+**Description/Question:** [...I have been able to remember to do things, like take medicine or buy something I needed ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p8a```
+
+**Description/Question:** [...How much did pain interfere with your day to day activities? ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p8b```
+
+**Description/Question:** [...How much did pain interfere with work around the home? ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p8c```
+
+**Description/Question:** [...How much did pain interfere with your ability to participate in social activities? ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p8d```
+
+**Description/Question:** [...How much did pain interfere with your household chores? ] In the past 7 days…
+
+**Variable type:** String
+
+**Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
+ 
+---------
+
+ ```p9```
+
+**Description/Question:** [In the past 7 days, how would you rate your pain on average?] For the next question, please responds on scale from 0 being no pain to 10 being the worst pain imaginable.
+
+**Variable type:** Integer
+
+**Possible values:** Any of the fields type and other constraints
+
+</details>
+
+
+<details>
+	<summary><h2>Risk of Harms and Consequences</h2></summary>
+
+ 
+---------
+
+ ```r1a```
+
+**Description/Question:** […had two or more sex partners during the same time period?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1b```
+
+**Description/Question:** […had sex without using any kind of condom, dental dam or other barrier to protect you and your partner from diseases or pregnancy?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1c```
+
+**Description/Question:** […had sex while you or your partner was intoxicated from alcohol or other drugs?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1d```
+
+**Description/Question:** […used a needle to inject drugs like heroin, cocaine or amphetamines?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1g```
+
+**Description/Question:** […were attacked with a weapon, including a gun, knife, stick, bottle or other weapon?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1h```
+
+**Description/Question:** […were physically abused, to the point that you had bruises, cuts or broken bones?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1j```
+
+**Description/Question:** […were sexually abused, where someone pressured or forced you to participate in sexual acts against your will, including your regular sex partner, a family member or friend?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1k```
+
+**Description/Question:** […were emotionally abused, where someone did or said things to make you feel very bad about yourself or your life?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1m```
+
+**Description/Question:** […were physically, sexual or emotionally abused several times or over a long period of time?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r1n```
+
+**Description/Question:** […were afraid for your life or that you might be seriously injured by the abuse?] When was the last time you…
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r2a```
+
+**Description/Question:** […became very distressed and upset when something reminded you of the past?] When was the last time you. . .
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r2b```
+
+**Description/Question:** […thought about ending your life or dying by suicide?] When was the last time you. . .
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3a```
+
+**Description/Question:** [Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3b```
+
+**Description/Question:** [Hepatitis C? ] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3c```
+
+**Description/Question:** [Hepatitis B? ] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3d```
+
+**Description/Question:** [Other sexually transmitted diseases or infections, such as syphilis.] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3e```
+
+**Description/Question:** [Tuberculosis or TB?] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3f```
+
+**Description/Question:** [Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse that you had…
+
+**Variable type:** String
+
+**Possible values:** Yes,No,Don't recall
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3a_first_dx```
+
+**Description/Question:** [Human Immunodeficiency Virus, HIV or AIDS?] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3b_first_dx```
+
+**Description/Question:** [Hepatitis C? ] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3c_first_dx```
+
+**Description/Question:** [Hepatitis B? ] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3d_first_dx```
+
+**Description/Question:** [Other sexually transmitted diseases or infections, such as syphilis.] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3e_first_dx```
+
+**Description/Question:** [Tuberculosis or TB?] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
+ 
+---------
+
+ ```r3f_first_dx```
+
+**Description/Question:** [Coronavirus 19 or COVID19?] If yes, when were you FIRST diagnosed?
+
+**Variable type:** String
+
+**Possible values:** Never,More than a year ago,4 to 12 months ago,2 to 3 months ago,Past month,Do not know,Not reported
+
+**Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
 
 </details>

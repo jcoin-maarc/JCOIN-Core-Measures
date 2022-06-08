@@ -53,7 +53,8 @@ fields:
     jcoin:final_variable_name: last_drug_use
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person used alcohol or other drugs weekly or more often
+  description: "[... you used alcohol or other drugs weekly or more often?  ] When\
+    \ was the last time you\u2026"
   name: s1a
   title: Last time drug use
   type: string
@@ -76,9 +77,9 @@ fields:
     jcoin:final_variable_name: last_drug_get_use_recover
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person spent a lot of time either getting alcohol or other
-    drugs, using alcohol or other drugs, or recovering from the effects of alcohol
-    or other drugs (feeling sick)
+  description: "[... You spent a lot of time either getting alcohol or other drugs,\
+    \ using alcohol or other drugs, or recovering from the effects of alcohol or other\
+    \ drugs (feeling sick)? ] When was the last time you\u2026"
   name: s1b
   title: 'Last time drug use: getting, using, or recovering'
   type: string
@@ -101,9 +102,9 @@ fields:
     jcoin:final_variable_name: last_drug_use_social_dysfunction
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person kept using alcohol or other drugs even though it
-    was causing social  problems, leading to fights, or getting you into trouble with
-    other people
+  description: "[... You kept using alcohol or other drugs even though it was causing\
+    \ social   problems, leading to fights, or getting you into trouble with other\
+    \ people? ] When was the last time you\u2026"
   name: s1c
   title: 'Last time drug use: social dysfunction'
   type: string
@@ -126,8 +127,9 @@ fields:
     jcoin:final_variable_name: last_drug_use_work_life_dysfunction
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person's use of alcohol or other drugs caused giving up
-    or reducing involvement in activities at work, school, home or social events
+  description: "[\u2026 your use of alcohol or other drugs caused you to give up or\
+    \ reduce your involvement in activities at work, school, home or social events?\
+    \ ] When was the last time you\u2026"
   name: s1d
   title: 'Last time drug use: work or life dysfunction'
   type: string
@@ -151,9 +153,10 @@ fields:
     jcoin:final_variable_name: last_drug_use_withdrawal
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person had withdrawal problems from alcohol or other drugs
-    like shaky hands, throwing up, having trouble sitting still or sleeping, or used
-    any  alcohol or other drugs to stop being sick or avoid withdrawal problems
+  description: "[... You had withdrawal problems from alcohol or other drugs like\
+    \ shaky hands, throwing up, having trouble sitting still or sleeping, or you used\
+    \ any  alcohol or other drugs to stop being sick or avoid withdrawal problems?\
+    \ ] When was the last time you\u2026"
   name: s1e
   title: 'Last time drug use: withdrawal'
   type: string
@@ -176,7 +179,10 @@ fields:
     jcoin:final_variable_name: last_time_opioid_use
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person used any kind of heroin, fentanyl, or other opioid
+  description: "[... used any kind of heroin, fentanyl or other opioid?(such as codeine,\
+    \ Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene,\
+    \ morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?] When was\
+    \ the last time\u2026"
   name: s2a
   title: 'Last time drug use: any opioids'
   type: string
@@ -198,7 +204,9 @@ fields:
     jcoin:final_variable_name: last_time_opioid_overdose
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person had an opioid overdose
+  description: "[... had an opioid overdose? [used enough of the drug that it produced\
+    \ a life-threatening reaction that required medical attention]] When was the last\
+    \ time\u2026"
   name: s2b
   title: 'Last time drug use: opioid overdose'
   type: string
@@ -220,44 +228,44 @@ fields:
     jcoin:final_variable_name: last_time_opioid_med_treatment
     notes: Not reported not a part of the core measures but id'ed a few missing values
       that cant be accounted for by skip logic. In future, may want to make more precise
-  description: Last time a person had a medication assisted treatment for opioid use
-    disorder
+  description: "[... went to any kind of medication assisted treatment for opioid\
+    \ use disorder?] When was the last time\u2026"
   name: s2c
   title: 'Last time drug use: OUD medication-assisted treatment'
   type: string
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3a
-    jcoin:core_measure_question: During the past 90 days [prior to entering jail or
-      prison/since your last assessment], how many times did you overdose on heroin,
-      fentanyl or other opioids?  [Overdose means that you took enough of the drug
-      that it caused a life-threatening reaction that required medical attention]
+    jcoin:core_measure_question: '...overdose on heroin, fentanyl or other opioids?  [Overdose
+      means that you took enough of the drug that it caused a life-threatening reaction
+      that required medical attention]'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: opioid_overdose_ct
     notes: Overdose means that you took enough of the drug that it caused a life-threatening
       reaction that required medical attention
-  description: Number of times a person overdosed on heroin, fentanyl or other opioids
-    during the past 90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[...overdose on heroin, fentanyl or other opioids?  [Overdose means
+    that you took enough of the drug that it caused a life-threatening reaction that
+    required medical attention] ] During the past xx days (since last assessment),
+    how many times did you (CAN CODE 0 IF NEVER ON S2b). . .'
   name: s3a
   title: Opioid Overdose Count
   type: integer
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3b
-    jcoin:core_measure_question: During the past 90 days [prior to entering jail or
-      prison/since your last assessment], how many times did you receive naloxone
-      (Evzio or Narcan) to reverse your overdose?
+    jcoin:core_measure_question: '...did you receive naloxone (Evzio or Narcan) to
+      reverse your overdose?'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: opioid_overdose_naloxone_ct
     notes: Overdose means that you took enough of the drug that it caused a life-threatening
       reaction that required medical attention
-  description: Number of times a person received naloxone (Evzio or Narcan) to reverse
-    your overdose during the past 90 days  (or prior to entering jail or prison/since
-    last assessment).
+  description: '[...did you receive naloxone (Evzio or Narcan) to reverse your overdose?  ]
+    During the past xx days (since last assessment), how many times did you (CAN CODE
+    0 IF NEVER ON S2b). . .'
   name: s3b
   title: 'Opioid Overdose Count: Receiving Naloxone'
   type: integer
@@ -267,11 +275,9 @@ fields:
     jcoin:core_measure_question: Who administered the naloxone or Narcan? (SELECT
       ALL THAT APPLY)
     jcoin:core_measure_section: Substance Use
-    jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
-      how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: who_administered_naloxone
     notes: 'TODO: expand fields to each of the possible selections'
-  description: People who administered naloxone or narcan
+  description: Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)
   name: s3c
   title: Person Who Administered Nalaxone for Overdose
   type: array
@@ -281,67 +287,68 @@ fields:
     jcoin:core_measure_question: What drugs had you taken in the 4 hours before you
       overdosed? (SELECT ALL THAT APPLY)
     jcoin:core_measure_section: Substance Use
-    jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
-      how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: drugs_4hrs_prior_to_overdose
     notes: 'TODO: expand fields to each of the possible selections'
-  description: Drugs taken in the 4 hours before overdose
+  description: What drugs had you taken in the 4 hours before you overdosed? (SELECT
+    ALL THAT APPLY)
   name: s3d
   title: Drugs 4 hrs Before Overdose
   type: array
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3e
-    jcoin:core_measure_question: How many of these times did you receive emergency
-      medical service following an overdose?
+    jcoin:core_measure_question: '...receive emergency medical service following an
+      overdose?'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: emergency_service_after_overdose
-  description: Number of times a person received emergency medical service following
-    an overdose
+  description: "[...receive emergency medical service following an overdose?\_\_]\
+    \ During the past xx days (since last assessment), how many times did you (CAN\
+    \ CODE 0 IF NEVER ON S2b). . ."
   name: s3e
   title: Emergency Medical Service Following Overdose
   type: integer
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3f
-    jcoin:core_measure_question: How many of these times did you go to the emergency
-      department following an overdose?
+    jcoin:core_measure_question: '...go to the emergency department following an overdose?'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: emergency_dept_after_overdose_ct
-  description: Number of times a person went to the emergency department following
-    an overdose
+  description: "[...go to the emergency department following an overdose?\_\_] During\
+    \ the past xx days (since last assessment), how many times did you (CAN CODE 0\
+    \ IF NEVER ON S2b). . ."
   name: s3f
   title: Emergency Department Visit Count Following Overdose
   type: integer
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3g
-    jcoin:core_measure_question: How many of these times did you get admitted to the
-      hospital following an overdose?
+    jcoin:core_measure_question: '...get admitted to the hospital following an overdose?'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: hospital_admission_after_overdose_ct
-  description: Number of times a person got admitted to the hospital following an
-    overdose
+  description: "[...get admitted to the hospital following an overdose?\_\_] During\
+    \ the past xx days (since last assessment), how many times did you (CAN CODE 0\
+    \ IF NEVER ON S2b). . ."
   name: s3g
   title: Hospital Admissions Count Following Overdose
   type: integer
 - constraints: {}
   custom:
     jcoin:core_measure_id: S3h
-    jcoin:core_measure_question: How many of these times did you receive a referral
-      to substance use treatment from the police, EMS, ED or hospital staff?
+    jcoin:core_measure_question: '...receive a referral to substance use treatment
+      from the police, EMS, ED or hospital staff?'
     jcoin:core_measure_section: Substance Use
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
     jcoin:final_variable_name: substance_use_treatment_referral_ct
-  description: Number of times a person received a referral to substance use treatment
-    from the police, EMS, ED or hospital staff
+  description: "[...receive a referral to substance use treatment from the police,\
+    \ EMS, ED or hospital staff?\_\_] During the past xx days (since last assessment),\
+    \ how many times did you (CAN CODE 0 IF NEVER ON S2b). . ."
   name: s3h
   title: Substance Use Treatment Referral Count Following Overdose
   type: integer
@@ -354,9 +361,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: drug_use_ct
-  description: Number of times a person used any heroin, fentanyl, opioids, alcohol,
-    marijuana or other illicit drugs  during the past 90 days  (or prior to entering
-    jail or prison/since last assessment).
+  description: '[...on how many days did you use any heroin, fentanyl, opioids, alcohol,
+    marijuana or other illicit drugs?    ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
   name: s4a
   title: Drug Use Count
   type: integer
@@ -369,8 +376,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: alcohol_use_ct
-  description: Number of times a person drank any kind of alcohol (beer, gin, rum,
-    scotch, tequila, whiskey, wine or mixed drinks)
+  description: '[...how many times did you drink any kind of alcohol (beer, gin, rum,
+    scotch, tequila, whiskey, wine or mixed drinks)?    ] During the past xx days
+    (since last assessment), on how many days did you. . . [Write 0 days if no use]'
   name: s4b
   title: Alcohol Use Count
   type: integer
@@ -382,8 +390,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: alcohol_binge_ct
-  description: Number of times a person had 5 or more drinks during the past 90 days  (or
-    prior to entering jail or prison/since last assessment).
+  description: '[...how many times did you have 5 or more drinks?    ] During the
+    past xx days (since last assessment), on how many days did you. . . [Write 0 days
+    if no use]'
   name: s4c
   title: 'Alcohol Use Count: Binge Drinking'
   type: integer
@@ -396,9 +405,10 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: marijuana_medical_use_ct
-  description: Number of times a person used medical marijuana that was obtained from
-    a dispensary with their own recommendation card or prescription during the past
-    90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[...how many times did you use medical marijuana that was obtained
+    from a dispensary with your own recommendation card or prescription?    ] During
+    the past xx days (since last assessment), on how many days did you. . . [Write
+    0 days if no use]'
   name: s4d
   title: 'Marijuana use count: medical'
   type: integer
@@ -413,9 +423,11 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: marijuana_not_own_use_ct
-  description: Number of times a person used other marijuana, including hashish, edibles,
-    tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb,
-    pot, reefer, weed), or medical marijuana that was not their own
+  description: '[... how many times did you use other marijuana, including hashish,
+    edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis,
+    herb, pot, reefer, weed), or medical marijuana that was not your own?     ] During
+    the past xx days (since last assessment), on how many days did you. . . [Write
+    0 days if no use]'
   name: s4e
   title: 'Marijuana use count: Not own'
   type: integer
@@ -428,8 +440,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: opioid_heroin_use_ct
-  description: Number of times a person used heroin (alone or mixed with other drugs)
-    during the past 90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[... how many times did you use heroin (alone or mixed with other
+    drugs)?     ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
   name: s4f
   title: 'Opioid use count: Heroin'
   type: integer
@@ -442,8 +455,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: opioid_fentanyl_use_ct
-  description: Number of times a person used fentanyl (alone or mixed with other drugs)  during
-    the past 90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[... how many times did you use fentanyl (alone or mixed with other
+    drugs)?    ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
   name: s4g
   title: 'Opioid use count: Fentanyl'
   type: integer
@@ -456,8 +470,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: opioid_street_methadone_use_ct
-  description: Number of times a person used nonprescription or street methadone  during
-    the past 90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[... how many times did you use nonprescription or street methadone?     ]
+    During the past xx days (since last assessment), on how many days did you. . .
+    [Write 0 days if no use]'
   name: s4h
   title: 'Opioid use count: Street Methadone'
   type: integer
@@ -470,8 +485,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: opioid_suboxone_use_ct
-  description: Number of times a person used nonprescription or street Suboxone  during
-    the past 90 days  (or prior to entering jail or prison/since last assessment).
+  description: '[... how many times did you use use nonprescription or street Suboxone?       ]
+    During the past xx days (since last assessment), on how many days did you. . .
+    [Write 0 days if no use]'
   name: s4j
   title: 'Opioid use count: Suboxone'
   type: integer
@@ -486,11 +502,11 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: opioid_other_use_ct
-  description: Number of times a person used other opioids, opiates, painkillers,
+  description: '[... how many times did you use other opioids, opiates, painkillers,
     or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi,
     OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with
-    codeine, Vicodin, Zohydro)  during the past 90 days  (or prior to entering jail
-    or prison/since last assessment).
+    codeine, Vicodin, Zohydro)?       ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
   name: s4k
   title: 'Opioid use count: other'
   type: integer
@@ -503,9 +519,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: cocaine_use_ct
-  description: Number of times a person used crack, smoked rock, freebase, or other
-    forms of cocaine during the past 90 days  (or prior to entering jail or prison/since
-    last assessment).
+  description: '[... how many times did you use crack, smoked rock, freebase, or other
+    forms of cocaine?       ] During the past xx days (since last assessment), on
+    how many days did you. . . [Write 0 days if no use]'
   name: s4m
   title: Cocaine use count
   type: integer
@@ -518,9 +534,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: speed_use_ct
-  description: Number of times a person used any methamphetamines, amphetamines, or
-    other forms of speed during the past 90 days  (or prior to entering jail or prison/since
-    last assessment).
+  description: '[... how many times did you use any methamphetamines, amphetamines,
+    or other forms of speed?       ] During the past xx days (since last assessment),
+    on how many days did you. . . [Write 0 days if no use]'
   name: s4n
   title: Speed use count
   type: integer
@@ -535,11 +551,11 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: benzos_anti_anxiety_use_ct
-  description: Number of times a person used any benzodiazepines, anti-anxiety drugs
-    or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin,
+  description: '[... how many times did you use any benzodiazepines, anti-anxiety
+    drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin,
     Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed,
-    Xanax) during the past 90 days  (or prior to entering jail or prison/since last
-    assessment).
+    Xanax)?      ] During the past xx days (since last assessment), on how many days
+    did you. . . [Write 0 days if no use]'
   name: s4p
   title: Benzodiazapine, anti-anxiety, and tranquilizer use count
   type: integer
@@ -552,9 +568,9 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: drug_use_other_ct
-  description: Number of days a person use any other drug that has not been mentioned
-    (such as hallucinogens, downers) during the past 90 days  (or prior to entering
-    jail or prison/since last assessment).
+  description: '[...on how many days did you use any other drug that has not been
+    mentioned (such as hallucinogens, downers)? ] During the past xx days (since last
+    assessment), on how many days did you. . . [Write 0 days if no use]'
   name: s4z
   title: 'Drug use count: other'
   type: integer
@@ -567,9 +583,10 @@ fields:
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       on how many days did you. . . [Write 0 days if no use]
     jcoin:final_variable_name: drug_use_other_desc
-  description: A description of drugs that have not been mentioned (such as hallucinogens,
-    downers) during the past 90 days  (or prior to entering jail or prison/since last
-    assessment).
+  description: '[...on how many days did you use any other drug that has not been
+    mentioned (such as hallucinogens, downers)? (Please describe )] During the past
+    xx days (since last assessment), on how many days did you. . . [Write 0 days if
+    no use]'
   name: s4z_describe
   title: 'Drug use: description of other drugs'
   type: string
@@ -582,9 +599,10 @@ fields:
       alcohol, marijuana or other drugs? (USE 0 FOR NONE)
     jcoin:core_measure_section: Substance Use
     jcoin:final_variable_name: place_of_no_drug_use_ct
-  description: Number of days a person has been in jail, hospital, or other place
-    where they could not use heroin, fentanyl, other opioids, alcohol, marijuana,
-    or other drugs
+  description: During the past 90 days (prior to entering jail or prison/ since your
+    last assessment), on how many days have you been in a jail, hospital or other
+    place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana
+    or other drugs? (USE 0 FOR NONE)
   name: s5
   title: Place of No Opioid Use (Jail, Hospital, etc)
   type: integer
@@ -597,8 +615,8 @@ fields:
     jcoin:final_variable_name: activities_against_law_besides_drugs_ct
     notes: '[IF 0, GO TO J2]'
   description: During the past 90 days (since last assessment), on how many days were
-    a person involved in any activities that might get a person into trouble or be
-    against the law besides drug use? [IF 0, GO TO J2]
+    you involved in any activities that might get you into trouble or be against the
+    law besides drug use? [IF 0, GO TO J2]
   name: j1
   title: Activities against law besides drugs
   type: integer
@@ -612,8 +630,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: drug_possession_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  been in possession of small amounts of drugs?
-    (drug possession)
+  description: "[... been in possession of small amounts of drugs? (drug possession)]\
+    \ During the past xx days (since last assessment), how many times have you\u2026\
+    (common charge names associated with behavior for reference only)"
   name: j1a1
   title: Drug possession
   type: integer
@@ -627,8 +646,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: drunkenness_or_other_liquor_law_violations_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  been drunk or high in public? (drunkenness
-    or other liquor law violations)
+  description: "[... been drunk or high in public? (drunkenness or other liquor law\
+    \ violations)] During the past xx days (since last assessment), how many times\
+    \ have you\u2026(common charge names associated with behavior for reference only)"
   name: j1a2
   title: Drunkenness or other liquor law violations
   type: integer
@@ -642,8 +662,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: driving_under_the_influence_or_while_intoxicated_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  driven a vehicle while under the influence
-    of alcohol or drugs? (driving under the influence or while intoxicated)
+  description: "[... driven a vehicle while under the influence of alcohol or drugs?\
+    \ (driving under the influence or while intoxicated)] During the past xx days\
+    \ (since last assessment), how many times have you\u2026(common charge names associated\
+    \ with behavior for reference only)"
   name: j1a3
   title: Driving under the influence or while intoxicated
   type: integer
@@ -657,8 +679,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: possession_dealing_distribution_or_sale_of_drugs_ct
     notes: (common charge names associated with behavior for reference only)
-  description: "Number of times  a person \u2026sold, distributed or helped to make\
-    \ illegal drugs?  (possession, dealing, distribution or sale of drugs)"
+  description: "[...sold, distributed or helped to make illegal drugs?  (possession,\
+    \ dealing, distribution or sale of drugs)] During the past xx days (since last\
+    \ assessment), how many times have you\u2026(common charge names associated with\
+    \ behavior for reference only)"
   name: j1a4
   title: Possession, dealing, distribution or sale of drugs
   type: integer
@@ -672,8 +696,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: vandalism_or_property_destruction_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  purposely damaged or destroyed property
-    that did not belong to a person? (vandalism or property destruction)
+  description: "[... purposely damaged or destroyed property that did not belong to\
+    \ you? (vandalism or property destruction)] During the past xx days (since last\
+    \ assessment), how many times have you\u2026(common charge names associated with\
+    \ behavior for reference only)"
   name: j1a5
   title: Vandalism or property destruction
   type: integer
@@ -687,8 +713,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: receiving_possessing_or_selling_stolen_goods_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  bought, received, possessed or sold any
-    stolen goods? (receiving, possessing or selling stolen goods)
+  description: "[... bought, received, possessed or sold any stolen goods? (receiving,\
+    \ possessing or selling stolen goods)] During the past xx days (since last assessment),\
+    \ how many times have you\u2026(common charge names associated with behavior for\
+    \ reference only)"
   name: j1a6
   title: Receiving, possessing or selling stolen goods
   type: integer
@@ -702,8 +730,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: forgery_fraud_or_embezzlement_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  passed bad checks, forged or altered a prescription,
-    or took money illegally from an employer?  (forgery, fraud or embezzlement)
+  description: "[... passed bad checks, forged or altered a prescription, or took\
+    \ money illegally from an employer?  (forgery, fraud or embezzlement)     ] During\
+    \ the past xx days (since last assessment), how many times have you\u2026(common\
+    \ charge names associated with behavior for reference only)"
   name: j1a7
   title: Forgery, fraud or embezzlement
   type: integer
@@ -717,8 +747,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: shoplifting_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  taken something from a store without paying
-    for it? (shoplifting)
+  description: "[... taken something from a store without paying for it? (shoplifting)]\
+    \ During the past xx days (since last assessment), how many times have you\u2026\
+    (common charge names associated with behavior for reference only)"
   name: j1a8
   title: Shoplifting
   type: integer
@@ -732,8 +763,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: larceny_or_theft_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  other than from a store, taken money or
-    property that didn't belong to a person? (larceny or theft)
+  description: "[... other than from a store, taken money or property that didn't\
+    \ belong to you? (larceny or theft)] During the past xx days (since last assessment),\
+    \ how many times have you\u2026(common charge names associated with behavior for\
+    \ reference only)"
   name: j1a9
   title: Larceny or theft
   type: integer
@@ -747,8 +780,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: burglary_or_breaking_and_entering_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  broken into a house or building to steal
-    something or just to look around? (burglary or breaking and entering)
+  description: "[... broken into a house or building to steal something or just to\
+    \ look around? (burglary or breaking and entering)] During the past xx days (since\
+    \ last assessment), how many times have you\u2026(common charge names associated\
+    \ with behavior for reference only)"
   name: j1a10
   title: Burglary or breaking and entering
   type: integer
@@ -762,8 +797,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: motor_vehicle_theft_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  taken a car without people in it that didn't
-    belong to a person? (motor vehicle theft)
+  description: "[... taken a car without people in it that didn't belong to you? (motor\
+    \ vehicle theft)] During the past xx days (since last assessment), how many times\
+    \ have you\u2026(common charge names associated with behavior for reference only)"
   name: j1a11
   title: Motor vehicle theft
   type: integer
@@ -776,8 +812,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: carjacking_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  taken a car from someone who was in it?
-    (carjacking)
+  description: "[... taken a car from someone who was in it? (carjacking)] During\
+    \ the past xx days (since last assessment), how many times have you\u2026(common\
+    \ charge names associated with behavior for reference only)"
   name: j1a12
   title: Carjacking
   type: integer
@@ -791,8 +828,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: simple_assault_or_battery_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  hit someone or gotten into a physical fight?
-    (simple assault or battery)
+  description: "[... hit someone or gotten into a physical fight? (simple assault\
+    \ or battery)] During the past xx days (since last assessment), how many times\
+    \ have you\u2026(common charge names associated with behavior for reference only)"
   name: j1a13
   title: Simple assault or battery
   type: integer
@@ -806,8 +844,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: robbery_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  used a weapon, force, or strong-arm methods
-    to get money or things from a person? (robbery)
+  description: "[... used a weapon, force, or strong-arm methods to get money or things\
+    \ from a person? (robbery)] During the past xx days (since last assessment), how\
+    \ many times have you\u2026(common charge names associated with behavior for reference\
+    \ only)"
   name: j1a14
   title: Robbery
   type: integer
@@ -821,8 +861,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: aggravated_assault_or_battery_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  hurt someone badly enough they needed bandages
-    or a doctor? (aggravated assault or battery)
+  description: "[... hurt someone badly enough they needed bandages or a doctor? (aggravated\
+    \ assault or battery)] During the past xx days (since last assessment), how many\
+    \ times have you\u2026(common charge names associated with behavior for reference\
+    \ only)"
   name: j1a15
   title: Aggravated assault or battery
   type: integer
@@ -836,8 +878,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: forcible_rape_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  made someone have sex with a person by force
-    when they did not want to have sex? (forcible rape)
+  description: "[... made someone have sex with you by force when they did not want\
+    \ to have sex? (forcible rape)] During the past xx days (since last assessment),\
+    \ how many times have you\u2026(common charge names associated with behavior for\
+    \ reference only)"
   name: j1a16
   title: Forcible rape
   type: integer
@@ -851,8 +895,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: murder_homicide_or_no-negligent_manslaughter_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  been involved in the death or murder of
-    another person, including accidents? (murder, homicide or no-negligent manslaughter)
+  description: "[... been involved in the death or murder of another person, including\
+    \ accidents? (murder, homicide or no-negligent manslaughter)] During the past\
+    \ xx days (since last assessment), how many times have you\u2026(common charge\
+    \ names associated with behavior for reference only)"
   name: j1a17
   title: Murder, homicide or no-negligent manslaughter
   type: integer
@@ -866,8 +912,9 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: arson_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  intentionally set a building, car or other
-    property on fire? (arson)
+  description: "[... intentionally set a building, car or other property on fire?\
+    \ (arson)] During the past xx days (since last assessment), how many times have\
+    \ you\u2026(common charge names associated with behavior for reference only)"
   name: j1a18
   title: Arson
   type: integer
@@ -881,8 +928,10 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: prostitution_pimping_or_commercialized_sex_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  traded sex for food, drugs or money? (prostitution,
-    pimping or commercialized sex)
+  description: "[... traded sex for food, drugs or money? (prostitution, pimping or\
+    \ commercialized sex)] During the past xx days (since last assessment), how many\
+    \ times have you\u2026(common charge names associated with behavior for reference\
+    \ only)"
   name: j1a19
   title: Prostitution, pimping or commercialized sex
   type: integer
@@ -898,11 +947,12 @@ fields:
       \ for reference only)"
     jcoin:final_variable_name: other_unlawful_activities_ct
     notes: (common charge names associated with behavior for reference only)
-  description: Number of times  a person  done something else that would have gotten
-    a person into trouble with the police if they had known about it? (carrying a
-    weapon, gang involvement, domestic violence, trespass, gambling, distributing
-    the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE
-    DESCRIBE)
+  description: "[... done something else that would have gotten you into trouble with\
+    \ the police if they had known about it? (carrying a weapon, gang involvement,\
+    \ domestic violence, trespass, gambling, distributing the peace, disorderly conduct,\
+    \ paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)] During the past\
+    \ xx days (since last assessment), how many times have you\u2026(common charge\
+    \ names associated with behavior for reference only)"
   name: j1a99
   title: Other unlawful activities
   type: integer
@@ -912,7 +962,8 @@ fields:
       how many times were you arrested and charged?
     jcoin:core_measure_section: Justice Involvement
     jcoin:final_variable_name: overall_charged_arrests_ct
-  description: Number of a times person was arrested and charged
+  description: During the past 90 days (since last assessment), how many times were
+    you arrested and charged?
   name: j2
   title: Overall charged arrests
   type: integer
@@ -923,7 +974,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: drug_possession_arrests_ct
-  description: Number of arrests for drug possession (for small amounts)
+  description: '[Number of arrests for drug possession (for small amounts)] During
+    the past 90 days (since last assessment)'
   name: j2a
   title: Drug possession arrests
   type: integer
@@ -934,7 +986,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: law_violations_arrests_ct
-  description: Number of arrests for drunkenness or other liquor law violations
+  description: '[Number of arrests for drunkenness or other liquor law violations]
+    During the past 90 days (since last assessment)'
   name: j2b
   title: Law violations arrests
   type: integer
@@ -945,7 +998,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: driving_under_the_influence/intoxicated_arrests_ct
-  description: Number of arrests for driving under the influence or while intoxicated
+  description: '[Number of arrests for driving under the influence or while intoxicated]
+    During the past 90 days (since last assessment)'
   name: j2c
   title: Driving under the influence/intoxicated arrests
   type: integer
@@ -956,8 +1010,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: drug_activity_arrests_ct
-  description: Number of arrests for possession, dealing, distribution or sale of
-    drugs
+  description: '[Number of arrests for possession, dealing, distribution or sale of
+    drugs] During the past 90 days (since last assessment)'
   name: j2d
   title: Drug activity arrests
   type: integer
@@ -967,7 +1021,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: vandalism_or_property_destruction_arrests_ct
-  description: Number of arrests for vandalism or property destruction
+  description: '[Number of arrests for vandalism or property destruction] During the
+    past 90 days (since last assessment)'
   name: j2e
   title: Vandalism or property destruction arrests
   type: integer
@@ -978,7 +1033,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: stolen_goods_arrests_ct
-  description: Number of arrests for receiving, possessing or selling stolen goods
+  description: '[Number of arrests for receiving, possessing or selling stolen goods]
+    During the past 90 days (since last assessment)'
   name: j2f
   title: Stolen goods arrests
   type: integer
@@ -988,7 +1044,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: forgery_fraud_or_embezzlement_arrests_ct
-  description: Number of arrests for forgery, fraud or embezzlement
+  description: '[Number of arrests for forgery, fraud or embezzlement] During the
+    past 90 days (since last assessment)'
   name: j2g
   title: Forgery, fraud or embezzlement arrests
   type: integer
@@ -998,7 +1055,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: shoplifting_arrests_ct
-  description: Number of arrests for shoplifting
+  description: '[Number of arrests for shoplifting] During the past 90 days (since
+    last assessment)'
   name: j2h
   title: Shoplifting arrests
   type: integer
@@ -1008,7 +1066,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: theft_larceny_arrests_ct
-  description: Number of arrests for larceny or theft
+  description: '[Number of arrests for larceny or theft] During the past 90 days (since
+    last assessment)'
   name: j2i
   title: Theft/larceny arrests
   type: integer
@@ -1018,7 +1077,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: burglary_or_breaking_and_entering_arrests_ct
-  description: Number of arrests for burglary or breaking and entering
+  description: '[Number of arrests for burglary or breaking and entering] During the
+    past 90 days (since last assessment)'
   name: j2j
   title: Burglary or breaking and entering arrests
   type: integer
@@ -1028,7 +1088,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: vehicle_theft_arrests_ct
-  description: Number of arrests for motor vehicle theft
+  description: '[Number of arrests for motor vehicle theft] During the past 90 days
+    (since last assessment)'
   name: j2k
   title: Vehicle theft arrests
   type: integer
@@ -1038,7 +1099,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: car_jacking_arrests_ct
-  description: Number of arrests for car jacking
+  description: '[Number of arrests for car jacking] During the past 90 days (since
+    last assessment)'
   name: j2l
   title: Car jacking arrests
   type: integer
@@ -1048,7 +1110,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: simple_assault_or_battery_arrests_ct
-  description: Number of arrests for simple assault or battery
+  description: '[Number of arrests for simple assault or battery] During the past
+    90 days (since last assessment)'
   name: j2m
   title: Simple assault or battery arrests
   type: integer
@@ -1058,7 +1121,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: robbery_arrests_ct
-  description: Number of arrests for robbery
+  description: '[Number of arrests for robbery] During the past 90 days (since last
+    assessment)'
   name: j2n
   title: Robbery arrests
   type: integer
@@ -1068,7 +1132,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: aggravated_assault_or_battery_arrests_ct
-  description: Number of arrests for aggravated assault or battery
+  description: '[Number of arrests for aggravated assault or battery] During the past
+    90 days (since last assessment)'
   name: j2o
   title: Aggravated assault or battery arrests
   type: integer
@@ -1078,7 +1143,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: forcible_rape_arrests_ct
-  description: Number of arrests for forcible rape
+  description: '[Number of arrests for forcible rape] During the past 90 days (since
+    last assessment)'
   name: j2p
   title: Forcible rape arrests
   type: integer
@@ -1089,7 +1155,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: negligent_manslaughter_arrests_ct
-  description: Number of arrests for murder, homicide or non-negligent manslaughter
+  description: '[Number of arrests for murder, homicide or non-negligent manslaughter]
+    During the past 90 days (since last assessment)'
   name: j2q
   title: Negligent manslaughter arrests
   type: integer
@@ -1099,7 +1166,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: arson_arrests_ct
-  description: Number of arrests for arson
+  description: '[Number of arrests for arson] During the past 90 days (since last
+    assessment)'
   name: j2r
   title: Arson arrests
   type: integer
@@ -1110,7 +1178,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: commercialized_sex_arrests_ct
-  description: Number of arrests for prostitution, pimping or commercialized sex
+  description: '[Number of arrests for prostitution, pimping or commercialized sex]
+    During the past 90 days (since last assessment)'
   name: j2s
   title: Commercialized sex arrests
   type: integer
@@ -1122,9 +1191,10 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: During the past 90 days (since last assessment)
     jcoin:final_variable_name: other_charges_arrests_ct
-  description: Number of arrests for other charges (carrying a weapon, gang involvement,
+  description: '[Number of arrests for other charges (carrying a weapon, gang involvement,
     domestic violence, trespass, gambling, disturbing the peace, disorderly conduct,
-    paraphernalia, runaway, curfew, truancy)
+    paraphernalia, runaway, curfew, truancy) ] During the past 90 days (since last
+    assessment)'
   name: j2t
   title: Other charges arrests
   type: integer
@@ -1135,7 +1205,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you been \u2026"
     jcoin:final_variable_name: num_days_electronic_monitoring
-  description: Number of days person has been on electronic monitoring
+  description: "[...on electronic monitoring?] During the past xx days (since last\
+    \ assessment), how many days have you been \u2026"
   name: j3a
   title: Electronic monitoring
   type: integer
@@ -1146,7 +1217,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you been \u2026"
     jcoin:final_variable_name: num_days_house_arrest
-  description: Number of days a person has been on house arrest
+  description: "[...on house arrest?] During the past xx days (since last assessment),\
+    \ how many days have you been \u2026"
   name: j3b
   title: House arrest
   type: integer
@@ -1157,7 +1229,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you been \u2026"
     jcoin:final_variable_name: num_days_jail_time
-  description: Number of days a person has been in jail
+  description: "[...in jail?] During the past xx days (since last assessment), how\
+    \ many days have you been \u2026"
   name: j3c
   title: Jail time
   type: integer
@@ -1168,7 +1241,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you been \u2026"
     jcoin:final_variable_name: num_days_prison_time
-  description: Number of days a person has been in prison
+  description: "[...in prison?] During the past xx days (since last assessment), how\
+    \ many days have you been \u2026"
   name: j3d
   title: Prison time
   type: integer
@@ -1181,11 +1255,9 @@ fields:
     jcoin:core_measure_question: Are you currently in jail or prison? (CAN MARK IF
       OBVIOUS)
     jcoin:core_measure_section: Justice Involvement
-    jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
-      \ how many days have you been \u2026"
     jcoin:final_variable_name: current_jail_or_prison_ind
     notes: 'MBK: added Unknown to satisfy a small amount of respondents for one hub.'
-  description: Person is currently in jail or prison
+  description: Are you currently in jail or prison? (CAN MARK IF OBVIOUS)
   name: j3e
   title: Current jail or prison
   type: string
@@ -1194,10 +1266,8 @@ fields:
     jcoin:core_measure_question: How long have you been in jail or prison? (just this
       episode)
     jcoin:core_measure_section: Justice Involvement
-    jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
-      \ how many days have you been \u2026"
     jcoin:final_variable_name: length_of_jail_or_prison_time
-  description: Length of jail or prison time for this episode
+  description: How long have you been in jail or prison? (just this episode)
   name: j3f
   title: Length of jail or prison time
   type: integer
@@ -1208,7 +1278,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you\u2026"
     jcoin:final_variable_name: num_days_parole
-  description: Number of days a person has been on parole
+  description: "[...been on parole?] During the past xx days (since last assessment),\
+    \ how many days have you\u2026"
   name: j4a
   title: Parole
   type: integer
@@ -1219,7 +1290,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you\u2026"
     jcoin:final_variable_name: num_days_probation
-  description: Number of days a person has been on probation
+  description: "[...been on probation?] During the past xx days (since last assessment),\
+    \ how many days have you\u2026"
   name: j4b
   title: Probation
   type: integer
@@ -1230,7 +1302,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you\u2026"
     jcoin:final_variable_name: num_days_other_kind_of_community_supervision
-  description: Number of days a person has been on any other kind of community supervision
+  description: "[...been on any other kind of community supervision?] During the past\
+    \ xx days (since last assessment), how many days have you\u2026"
   name: j4c
   title: Other kind of community supervision
   type: integer
@@ -1241,7 +1314,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you\u2026"
     jcoin:final_variable_name: num_days_meeting_with_probation_or_parole_officer
-  description: Number of days a person has met with a probation or parole officer
+  description: "[...met with your probation or parole officer?] During the past xx\
+    \ days (since last assessment), how many days have you\u2026"
   name: j4d
   title: Meeting with probation or parole officer
   type: integer
@@ -1253,8 +1327,8 @@ fields:
     jcoin:core_measure_subsection_text: "During the past xx days (since last assessment),\
       \ how many days have you\u2026"
     jcoin:final_variable_name: num_days_trouble_with_probation_or_parole_officer
-  description: Number of days a person has been in trouble with a probation or parole
-    officer
+  description: "[...been in trouble with your probation or parole officer?] During\
+    \ the past xx days (since last assessment), how many days have you\u2026"
   name: j4e
   title: Trouble with probation or parole officer
   type: integer
@@ -1265,8 +1339,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: num_days_life_time_arrests
-  description: Number of days a person has been arrested in their lifetime (including
-    juvenile)
+  description: "[...how many times in your life have you been arrested including as\
+    \ a juvenile?] During your lifetime\u2026"
   name: j5a
   title: Life time arrests
   type: integer
@@ -1276,7 +1350,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: age_at_first_time_arrest
-  description: Age at time of first arrest
+  description: "[...how old were you the first time you were arrested? ] During your\
+    \ lifetime\u2026"
   name: j5b
   title: First time arrest
   type: integer
@@ -1287,8 +1362,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: lifetime_years_in_detention_jail_or_prison_time_ct
-  description: Number of times a person has spent in detention, jail or prison during
-    a personr lifetime?
+  description: "[...how much total time have you spent in detention, jail or prison\
+    \ during your lifetime?] During your lifetime\u2026"
   name: j5c_years
   title: Lifetime years in detention, jail, or prison time
   type: integer
@@ -1299,8 +1374,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: lifetime_months_in_detention_jail_or_prison_time_ct
-  description: Number of times a person has spent in detention, jail or prison during
-    lifetime
+  description: "[...how much total time have you spent in detention, jail or prison\
+    \ during your lifetime?] During your lifetime\u2026"
   name: j5c_months
   title: Lifetime months in detention, jail, or prison time
   type: integer
@@ -1311,8 +1386,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: lifetime_guity_and_sentenced_ct
-  description: Number of times a person has been found guilty and sentenced (including
-    adjudications as a a personth or convictions as an adult)
+  description: "[...how many times have you been found guilty and sentenced (including\
+    \ adjudications as a youth or convictions as an adult)?] During your lifetime\u2026"
   name: j5d
   title: Lifetime guity and sentenced
   type: integer
@@ -1323,7 +1398,8 @@ fields:
     jcoin:core_measure_section: Justice Involvement
     jcoin:core_measure_subsection_text: "During your lifetime\u2026"
     jcoin:final_variable_name: first_time_adjudication_conviction_ct
-  description: Age at which a person was first adjudicated and convicted
+  description: "[...how old were you the first time you were adjudicated or convicted?]\
+    \ During your lifetime\u2026"
   name: j5e
   title: First time adjudication conviction
   type: integer
@@ -1335,7 +1411,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of times person had to go to ER
+  description: '[...times have you had to go to an emergency room without being admitted
+    to the hospital?] During the past xx days (since last assessment), how many .
+    . . [Write 0 days if you have not had this experience]'
   name: u1
   title: 'Emergency room:  Number of visits'
   type: integer
@@ -1347,7 +1425,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in hospital detox for alcohol/drug use
+  description: '[...nights were you in a hospital detoxification program for your
+    alcohol and other drug use (across all episodes)?] During the past xx days (since
+    last assessment), how many . . . [Write 0 days if you have not had this experience]'
   name: u2
   title: 'Hospital detox program: Number of nights'
   type: integer
@@ -1359,7 +1439,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in hospital other than detox
+  description: '[...nights were you in a hospital for any other reason than detoxification?]
+    During the past xx days (since last assessment), how many . . . [Write 0 days
+    if you have not had this experience]'
   name: u3
   title: 'Hospitalization:  Number of nights'
   type: integer
@@ -1371,7 +1453,10 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in non-hospital/social/residential detox
+  description: '[...nights were you in a non-hospital or social detoxification program
+    from alcohol or other drugs (also called residential detox)?] During the past
+    xx days (since last assessment), how many . . . [Write 0 days if you have not
+    had this experience]'
   name: u4
   title: 'Residential detox: Number of nights'
   type: integer
@@ -1383,8 +1468,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in residential treatment program for alcohol/drug
-    use
+  description: '[...nights were you in a residential treatment program for alcohol
+    or drug use?] During the past xx days (since last assessment), how many . . .
+    [Write 0 days if you have not had this experience]'
   name: u5a
   title: 'Residential treatment program for alcohol/drugs: Number of nights'
   type: integer
@@ -1396,8 +1482,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in residential treatment program for mental
-    health
+  description: '[...nights were you in a residential treatment program for mental
+    health?] During the past xx days (since last assessment), how many . . . [Write
+    0 days if you have not had this experience]'
   name: u5b
   title: 'Residential treatment program for mental health: Number of nights'
   type: integer
@@ -1409,7 +1496,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of nights person was in rehab facility for physical health
+  description: '[...nights were you in a residential, nursing home, or other rehabilitation
+    facility for your physical health?] During the past xx days (since last assessment),
+    how many . . . [Write 0 days if you have not had this experience]'
   name: u5c
   title: 'Rehab facility for physical health: Number of nights'
   type: integer
@@ -1421,7 +1510,9 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: During the past xx days (since last assessment),
       how many . . . [Write 0 days if you have not had this experience]
-  description: Number of times person has visited primary care provider
+  description: '[...times have you visited a primary care provier (physician, nurse,
+    nurse practitioner, or physician''s assistant)?] During the past xx days (since
+    last assessment), how many . . . [Write 0 days if you have not had this experience]'
   name: u6
   title: 'Primary care provider:  Number of visits'
   type: integer
@@ -1435,8 +1526,8 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: Why did you visit a primary care provider?
       (ADD SKIP LOGIC)
-  description: Indicates whether or not person visited primary care provider for alcohol/drug
-    use
+  description: '[Alcohol or other drug use?] Why did you visit a primary care provider?
+    (ADD SKIP LOGIC)'
   name: u6a
   title: 'Primary care visit reason: Alcohol/drug use'
   type: string
@@ -1450,8 +1541,8 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: Why did you visit a primary care provider?
       (ADD SKIP LOGIC)
-  description: Indicates whether or not person visited primary care provider for mental
-    health
+  description: '[Mental health?] Why did you visit a primary care provider? (ADD SKIP
+    LOGIC)'
   name: u6b
   title: 'Primary care visit reason: Mental health'
   type: string
@@ -1465,8 +1556,8 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: Why did you visit a primary care provider?
       (ADD SKIP LOGIC)
-  description: Indicates whether or not person visited primary care provider for physical
-    health
+  description: '[Physical health?] Why did you visit a primary care provider? (ADD
+    SKIP LOGIC)'
   name: u6c
   title: 'Primary care visit reason:  Physical health'
   type: string
@@ -1480,8 +1571,8 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: Why did you visit a primary care provider?
       (ADD SKIP LOGIC)
-  description: Indicates whether or not person visited primary care provider for some
-    other reason
+  description: '[Some other reason?] Why did you visit a primary care provider? (ADD
+    SKIP LOGIC)'
   name: u6d
   title: 'Primary care visit reason:  Some other reason (specify)'
   type: string
@@ -1492,7 +1583,8 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: Why did you visit a primary care provider?
       (ADD SKIP LOGIC)
-  description: Specifies other reason person visited primary care provider
+  description: '[Specify other reason you visited primary care provider] Why did you
+    visit a primary care provider? (ADD SKIP LOGIC)'
   name: u6d_specify
   title: 'Primary care visit reason: Specify other reason'
   type: string
@@ -1504,8 +1596,10 @@ fields:
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: "Other than times you already mentioned in\
       \ <reference to u6>, during the past 3 months (since last assessment), how many\u2026"
-  description: Number of days person participated in outpatient alcohol/substance
-    use treatment program
+  description: "[\u2026days did you participate in any other outpatient treatment\
+    \ program specializing in alcohol or substance use? (OTHER THAN U1-6)        \
+    \         ] Other than times you already mentioned in <reference to u6>, during\
+    \ the past 3 months (since last assessment), how many\u2026"
   name: u7
   title: 'Outpatient treament program for alcohol/substance use: Number of days'
   type: integer
@@ -1515,7 +1609,8 @@ fields:
     jcoin:core_measure_question: How many of these days did you physically visit the
       (outpatient treatment) program?
     jcoin:core_measure_section: Utilization of Services
-  description: Number of days person physically visited outpatient treatment program
+  description: How many of these days did you physically visit the (outpatient treatment)
+    program?
   name: u7a
   title: 'Outpatient treatment program: Number of days physically visiting program'
   type: integer
@@ -1525,7 +1620,8 @@ fields:
     jcoin:core_measure_question: How many of these days did you participate (in the
       outpatient tx program) online (e.g., smart phone, computer, or tablet)?
     jcoin:core_measure_section: Utilization of Services
-  description: Number of days person participated in outpatient tx program online
+  description: How many of these days did you participate (in the outpatient tx program)
+    online (e.g., smart phone, computer, or tablet)?
   name: u7b
   title: 'Outpatient treatment program: Number of days participating online'
   type: integer
@@ -1535,7 +1631,8 @@ fields:
     jcoin:core_measure_question: How many of these days did you see a doctor (at the
       outpatient treatment program)?
     jcoin:core_measure_section: Utilization of Services
-  description: Number of days person saw a doctor at outpatient tx program
+  description: How many of these days did you see a doctor (at the outpatient treatment
+    program)?
   name: u7c
   title: 'Outpatient treatment program: Number of days seeing doctor'
   type: integer
@@ -1545,8 +1642,8 @@ fields:
     jcoin:core_measure_question: How many of these days did you only participate in
       individual or group therapy?
     jcoin:core_measure_section: Utilization of Services
-  description: Number of days person only participated in therapy at outpatient tx
-    program
+  description: How many of these days did you only participate in individual or group
+    therapy?
   name: u7d
   title: 'Outpatient treatment program: Number of days participating in therapy'
   type: integer
@@ -1556,8 +1653,7 @@ fields:
     jcoin:core_measure_question: How many of these days were for medication management
       only?
     jcoin:core_measure_section: Utilization of Services
-  description: Number of days person only received medication management at outpatient
-    tx program
+  description: How many of these days were for medication management only?
   name: u7e
   title: 'Outpatient treatment program: Number of days for medication management'
   type: integer
@@ -1568,7 +1664,9 @@ fields:
       the past 3 months (since last assessment), how many times have you seen a psychiatrist
       (MD) or psychologist (Ph.D., Psy.D)?
     jcoin:core_measure_section: Utilization of Services
-  description: 'Number of times person has seen a psychiatrist or psychologist:  Total'
+  description: Other than times you already mentioned above, during the past 3 months
+    (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist
+    (Ph.D., Psy.D)?
   name: u8
   title: 'Psychiatrist/psychologist:  Number of total visits'
   type: integer
@@ -1578,7 +1676,7 @@ fields:
     jcoin:core_measure_question: How many of these times did you physically visit
       the program (psychiatrist/psychologist)?
     jcoin:core_measure_section: Utilization of Services
-  description: 'Number of times person has seen a psychiatrist/psychologist:  In person'
+  description: How many of these times did you physically visit the program (psychiatrist/psychologist)?
   name: u8a
   title: 'Psychiatrist/psychologist: Number of in-person visits'
   type: integer
@@ -1588,7 +1686,8 @@ fields:
     jcoin:core_measure_question: How many of these times did you participate online
       (phone, computer, or tablet; with a psychiatrist/psychologist)?
     jcoin:core_measure_section: Utilization of Services
-  description: 'Number of times person has seen a psychiatrist/psychologist:  Online'
+  description: How many of these times did you participate online (phone, computer,
+    or tablet; with a psychiatrist/psychologist)?
   name: u8b
   title: 'Psychiatrist/psychologist: Number of online visits'
   type: integer
@@ -1599,7 +1698,9 @@ fields:
       the past 3 months (since last assessment), how many times have you seen any
       other kind or counselor or social worker?
     jcoin:core_measure_section: Utilization of Services
-  description: 'Number of times person has seen a counselor/social worker:  Total'
+  description: Other than times you already mentioned above, during the past 3 months
+    (since last assessment), how many times have you seen any other kind or counselor
+    or social worker?
   name: u9
   title: 'Counselor/social worker: Number of total visits'
   type: integer
@@ -1610,7 +1711,8 @@ fields:
       worker)?'
     jcoin:core_measure_section: Utilization of Services
     jcoin:core_measure_subsection_text: "How many of these times did you\u2026"
-  description: 'Number of times person has seen a counselor/social worker:  In person'
+  description: "[...did you physically visit the program (counselor/social worker)?]\
+    \ How many of these times did you\u2026"
   name: u9a
   title: 'Counselor/social worker: Number of in-person visits'
   type: integer
@@ -1620,7 +1722,8 @@ fields:
     jcoin:core_measure_question: '...did you participate online (phone, computer,
       or tablet; with a counselor/social worker)?'
     jcoin:core_measure_section: Utilization of Services
-  description: 'Number of times person has seen a counselor/social worker:  Online'
+  description: '...did you participate online (phone, computer, or tablet; with a
+    counselor/social worker)?'
   name: u9b
   title: 'Counselor/social worker: Number of online visits'
   type: integer
@@ -1630,7 +1733,8 @@ fields:
     jcoin:core_measure_question: In the past xx days (since last assessment), how
       much money have you spent on all healthcare (e.g., copayments or prescriptions)?
     jcoin:core_measure_section: Utilization of Services
-  description: Amount of money person has spent on healthcare
+  description: In the past xx days (since last assessment), how much money have you
+    spent on all healthcare (e.g., copayments or prescriptions)?
   name: u13
   title: Healthcare cost
   type: number
@@ -1644,7 +1748,8 @@ fields:
     jcoin:core_measure_question: Have you received any substance use treatment in
       the past xx days (since last assessment)?
     jcoin:core_measure_section: Utilization of Services
-  description: Indicates whether or not person has received substance use treatment
+  description: Have you received any substance use treatment in the past xx days (since
+    last assessment)?
   name: u14
   title: Substance use treatment
   type: string
@@ -1663,7 +1768,10 @@ fields:
       your most recent substance abuse treatment provider in the past xx days (since
       last assessment), please indicate how much you agree with each of the following
       statements
-  description: Indicates level of agreement with provider's organization
+  description: '[The provider is organized and well-run.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
   name: u14a
   title: 'Substance use tx provider:  Well-organized'
   type: string
@@ -1682,7 +1790,10 @@ fields:
       your most recent substance abuse treatment provider in the past xx days (since
       last assessment), please indicate how much you agree with each of the following
       statements
-  description: Indicates level of satisfaction with provider
+  description: '[You are satisfied with this provider.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
   name: u14b
   title: 'Substance use tx provider:  Satisfaction'
   type: string
@@ -1701,7 +1812,10 @@ fields:
       your most recent substance abuse treatment provider in the past xx days (since
       last assessment), please indicate how much you agree with each of the following
       statements
-  description: Indicates level of agreement with provider's staff efficiency
+  description: '[The staff are efficient at doing their job.] Considering the substance
+    use treatment from your most recent substance abuse treatment provider in the
+    past xx days (since last assessment), please indicate how much you agree with
+    each of the following statements'
   name: u14c
   title: 'Substance use tx provider:  Efficient staff'
   type: string
@@ -1721,7 +1835,10 @@ fields:
       your most recent substance abuse treatment provider in the past xx days (since
       last assessment), please indicate how much you agree with each of the following
       statements
-  description: Indicates level of agreement with personal counseling provided
+  description: '[You can get plenty of personal counseling at this provider.] Considering
+    the substance use treatment from your most recent substance abuse treatment provider
+    in the past xx days (since last assessment), please indicate how much you agree
+    with each of the following statements'
   name: u14d
   title: 'Substance use tx provider:  Personal counseling'
   type: string
@@ -1741,7 +1858,10 @@ fields:
       your most recent substance abuse treatment provider in the past xx days (since
       last assessment), please indicate how much you agree with each of the following
       statements
-  description: Indicates level of agreement with provider's medication assistance
+  description: '[You can get plenty of medication assistance for opioid use at this
+    provider.] Considering the substance use treatment from your most recent substance
+    abuse treatment provider in the past xx days (since last assessment), please indicate
+    how much you agree with each of the following statements'
   name: u14e
   title: 'Substance use tx provider:  Medication assistance for opioid use'
   type: string
@@ -1751,7 +1871,8 @@ fields:
     jcoin:core_measure_question: 'If respondent is not a candidate for OUD treatment,
       mark here and skip this set of items:'
     jcoin:core_measure_section: Treatment Preferences
-  description: Indicates person is not a candidate for OUD treatment
+  description: 'If respondent is not a candidate for OUD treatment, mark here and
+    skip this set of items:'
   name: m1
   title: Not candidate for OUD treatment
   type: boolean
@@ -1764,7 +1885,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers OUD medication for treatment
+  description: '[OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol)
+    [Ask M3]] Which type of opioid use disorder (OUD) treatment would you most prefer
+    to receive if it were available to you now? (CHECK ALL THAT APPLY)'
   name: m2_meds
   title: 'Preferred type of OUD treatment:  OUD medication'
   type: boolean
@@ -1776,7 +1899,8 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers detox for treatment
+  description: '[Detox] Which type of opioid use disorder (OUD) treatment would you
+    most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)'
   name: m2_detox
   title: 'Preferred type of OUD treatment:  Detox'
   type: boolean
@@ -1788,7 +1912,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers outpatient counseling for treatment
+  description: '[Outpatient counseling] Which type of opioid use disorder (OUD) treatment
+    would you most prefer to receive if it were available to you now? (CHECK ALL THAT
+    APPLY)'
   name: m2_outpt_counsel
   title: 'Preferred type of OUD treatment:  Outpatient counseling'
   type: boolean
@@ -1800,7 +1926,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers intensive outpatient for treatment
+  description: "[Intensive outpatient\u202F\_] Which type of opioid use disorder (OUD)\
+    \ treatment would you most prefer to receive if it were available to you now?\
+    \ (CHECK ALL THAT APPLY)"
   name: m2_outpt_intensive
   title: 'Preferred type of OUD treatment:  Intensive outpatient'
   type: boolean
@@ -1812,7 +1940,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers residential treatment for OUD
+  description: "[Residential treatment\_] Which type of opioid use disorder (OUD)\
+    \ treatment would you most prefer to receive if it were available to you now?\
+    \ (CHECK ALL THAT APPLY)"
   name: m2_residential
   title: 'Preferred type of OUD treatment:  Residential treatment'
   type: boolean
@@ -1824,7 +1954,8 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers other treatment for OUD
+  description: '[Other ] Which type of opioid use disorder (OUD) treatment would you
+    most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)'
   name: m2_other
   title: 'Preferred type of OUD treatment:  Other treatment'
   type: boolean
@@ -1836,7 +1967,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Specifies other treatment person prefers for OUD
+  description: '[Other (specify)] Which type of opioid use disorder (OUD) treatment
+    would you most prefer to receive if it were available to you now? (CHECK ALL THAT
+    APPLY)'
   name: m2_other_specify
   title: 'Preferred type of OUD treatment:  Other treatment specified'
   type: boolean
@@ -1848,7 +1981,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person prefers no treatment for OUD
+  description: "[No treatment\_] Which type of opioid use disorder (OUD) treatment\
+    \ would you most prefer to receive if it were available to you now? (CHECK ALL\
+    \ THAT APPLY)"
   name: m2_none
   title: 'Preferred type of OUD treatment:  No treatment'
   type: boolean
@@ -1860,8 +1995,9 @@ fields:
     jcoin:core_measure_subsection_text: Which type of opioid use disorder (OUD) treatment
       would you most prefer to receive if it were available to you now? (CHECK ALL
       THAT APPLY)
-  description: Indicates person does not know (or does not have) an OUD treatment
-    preference
+  description: "[Don\u2019t know / No preference\_] Which type of opioid use disorder\
+    \ (OUD) treatment would you most prefer to receive if it were available to you\
+    \ now? (CHECK ALL THAT APPLY)"
   name: m2_dont_know
   title: 'Preferred type of OUD treatment:  Don''t know or no preference'
   type: boolean
@@ -1873,12 +2009,13 @@ fields:
     - Don't know/No preference
   custom:
     jcoin:core_measure_id: txprefs_meds_prefer
+    jcoin:core_measure_question: 'Which OUD medication treatment type would you most
+      prefer to receive if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If
+      M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of questions.]'
     jcoin:core_measure_section: Treatment Preferences
-    jcoin:core_measure_subsection_text: 'Which OUD medication treatment type would
-      you most prefer to receive if it were available to you now? (SELECT ONLY ONE)
-      [SKIP LOGIC:  If M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of
-      questions.]'
-  description: Specifies which OUD medication person prefers
+  description: 'Which OUD medication treatment type would you most prefer to receive
+    if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If M3=2, ask
+    M4. If M3=3, ask M5. Otherwise go to next set of questions.]'
   name: m3
   title: Preferred OUD medication
   type: string
@@ -1892,8 +2029,9 @@ fields:
     - Don't know/No preference
   custom:
     jcoin:core_measure_id: txprefs_bupren_prefer
+    jcoin:core_measure_question: Which type of buprenorphine? (SELECT ONLY ONE)
     jcoin:core_measure_section: Treatment Preferences
-  description: Specifies which type of buprenorphine person would prefer
+  description: Which type of buprenorphine? (SELECT ONLY ONE)
   name: m4
   title: Type of buprenorphine preferred
   type: string
@@ -1904,50 +2042,56 @@ fields:
     - Don't know/No preference
   custom:
     jcoin:core_measure_id: txprefs_naltrex_prefer
+    jcoin:core_measure_question: Which type of naltrexone? (SELECT ONLY ONE)
     jcoin:core_measure_section: Treatment Preferences
-  description: Specifies which type of naltrexone person would prefer
+  description: Which type of naltrexone? (SELECT ONLY ONE)
   name: m5
   title: Type of naltrexone preferred
   type: string
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
+    jcoin:core_measure_question: How many people, including yourself, are there in
+      your household?
+    jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
       \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
       \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
       \ includes people you live with, and with whom you share your income and expenses\
       \ \u2013 husband, wife, children, relatives, and others."
-    jcoin:core_measure_question: How many people, including yourself, are there in
-      your household?
-    jcoin:core_measure_section: Demographics
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o3
+  description: "[How many people, including yourself, are there in your household?]\
+    \ The next few questions are about your HOUSEHOLD in the past <if baseline: 90\
+    \ days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7a
   title: People in household
   type: integer
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
+    jcoin:core_measure_question: How many of the people in your household are under
+      the age of 18?
+    jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
       \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
       \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
       \ includes people you live with, and with whom you share your income and expenses\
       \ \u2013 husband, wife, children, relatives, and others."
-    jcoin:core_measure_question: How many of the people in your household are under
-      the age of 18?
-    jcoin:core_measure_section: Demographics
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o4
+  description: "[How many of the people in your household are under the age of 18?]\
+    \ The next few questions are about your HOUSEHOLD in the past <if baseline: 90\
+    \ days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7b
   title: People under 18 years old in household
   type: integer
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     heal:common_data_element_system: The next question is about the income of everyone
       in your household together.  We do not need an exact number.  You can give your
       answer to the nearest hundreds or thousands of dollars if that is easier.
@@ -1956,9 +2100,22 @@ fields:
       what was the total income of everyone in your household together that provided
       you with support?'
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o5
+  description: "[During the past <if baseline: 90 days/90 days prior to entering jail;\
+    \ if follow up: xx days (since last assessment/interview/contact/visit)>, what\
+    \ was the total income of everyone in your household together that provided you\
+    \ with support?] The next few questions are about your HOUSEHOLD in the past <if\
+    \ baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since\
+    \ last assessment/interview/contact/visit)>.  Your household includes people you\
+    \ live with, and with whom you share your income and expenses \u2013 husband,\
+    \ wife, children, relatives, and others."
   name: d7c
   title: Total household income
   type: number
@@ -1972,88 +2129,123 @@ fields:
     - '$50,001 - $100,000 '
     - More than $100,000
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past 12 months, which of the following
       is the category that your total household income from legal sources would be
       in?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o6
+  description: "[During the past 12 months, which of the following is the category\
+    \ that your total household income from legal sources would be in?] The next few\
+    \ questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days\
+    \ prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7d
   title: Total household income from legal sources
   type: string
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: 'During the past <if baseline: 90 days/90 days prior
       to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>,
       did your household receive any public assistance like unemployment, food stamps
       / TANF, subsidized housing, or supplemental security income?'
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: If No, then skip to d7e1. The demographics core measure section was split
       between data models for demographic subsections collected only at baseline (i.e.,
       d1 - d6) and all time points (d7 - d11; o7
+  description: "[During the past <if baseline: 90 days/90 days prior to entering jail;\
+    \ if follow up: xx days (since last assessment/interview/contact/visit)>, did\
+    \ your household receive any public assistance like unemployment, food stamps\
+    \ / TANF, subsidized housing, or supplemental security income?] The next few questions\
+    \ are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to\
+    \ entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7d1
   title: Public assistance for household
   type: boolean
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past xx days (since last assessment),
       approximately how much money has your household all together received from public
       assistance sources like unemployment, food stamps (TANF), subsidized housing,
       supplemental security income?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o8
+  description: "[During the past xx days (since last assessment), approximately how\
+    \ much money has your household all together received from public assistance sources\
+    \ like unemployment, food stamps (TANF), subsidized housing, supplemental security\
+    \ income?] The next few questions are about your HOUSEHOLD in the past <if baseline:\
+    \ 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7d2
   title: Total household money from public assistance
   type: number
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past xx days (since last assessment),
       did your household receive any other non-employment income sources like retirement,
       pension, alimony, child support, or interest?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: If No, [GO TO D7f1] The demographics core measure section was split between
       data models for demographic subsections collected only at baseline (i.e., d1
       - d6) and all time points (d7 - d11; o9
+  description: "[During the past xx days (since last assessment), did your household\
+    \ receive any other non-employment income sources like retirement, pension, alimony,\
+    \ child support, or interest?] The next few questions are about your HOUSEHOLD\
+    \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+    \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+    \ includes people you live with, and with whom you share your income and expenses\
+    \ \u2013 husband, wife, children, relatives, and others."
   name: d7e1
   title: Other non-employmnet income sources
   type: string
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past xx days (since last assessment),
       approximately how much money has your household all together received from other
       non-employment sources like retirement, pension, alimony, child support, interest?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o10
+  description: "[During the past xx days (since last assessment), approximately how\
+    \ much money has your household all together received from other non-employment\
+    \ sources like retirement, pension, alimony, child support, interest?] The next\
+    \ few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90\
+    \ days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7e2
   title: Total household money from other non-employment income sources
   type: number
@@ -2063,37 +2255,51 @@ fields:
     - 'No'
     - Refused to answer
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past xx days (since last assessment),
       outside of employment described above, did you receive any other income from
       activities that might get you into trouble or be against the law, like dealing,
       gambling, or theft?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o11
+  description: "[During the past xx days (since last assessment), outside of employment\
+    \ described above, did you receive any other income from activities that might\
+    \ get you into trouble or be against the law, like dealing, gambling, or theft?]\
+    \ The next few questions are about your HOUSEHOLD in the past <if baseline: 90\
+    \ days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7f1
   title: Non-employment income with risk of legal or other trouble
   type: string
 - constraints: {}
   custom:
-    heal:common_data_element_code: "The next few questions are about your HOUSEHOLD\
-      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
-      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
-      \ includes people you live with, and with whom you share your income and expenses\
-      \ \u2013 husband, wife, children, relatives, and others."
     jcoin:core_measure_question: During the past xx days (since last assessment),
       outside of employment described above, how much money did you earn from activities
       that might get you into trouble or be against the law, like dealing, gambling,
       or theft?
     jcoin:core_measure_section: Demographics
+    jcoin:core_measure_subsection_text: "The next few questions are about your HOUSEHOLD\
+      \ in the past <if baseline: 90 days/90 days prior to entering jail; if follow\
+      \ up: xx days (since last assessment/interview/contact/visit)>.  Your household\
+      \ includes people you live with, and with whom you share your income and expenses\
+      \ \u2013 husband, wife, children, relatives, and others."
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o12
+  description: "[During the past xx days (since last assessment), outside of employment\
+    \ described above, how much money did you earn from activities that might get\
+    \ you into trouble or be against the law, like dealing, gambling, or theft? ]\
+    \ The next few questions are about your HOUSEHOLD in the past <if baseline: 90\
+    \ days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.\
+    \  Your household includes people you live with, and with whom you share your\
+    \ income and expenses \u2013 husband, wife, children, relatives, and others."
   name: d7f2
   title: Total household money with risk of causing  legal or other trouble activities
   type: number
@@ -2124,6 +2330,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o13
+  description: Which one of the following statements best describes your work or school
+    situation currently? (CLARIFY AND CODE) [For D8, include work under the table
+    but not any other illegal work or income]
   name: d8
   title: Current school or work situation description
   type: string
@@ -2135,6 +2344,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o14
+  description: During the past xx days (since last assessment), on how many days have
+    you worked?
   name: d8a
   title: Number of days worked
   type: integer
@@ -2146,6 +2357,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o15
+  description: During the past xx days (since last assessment), how many days per
+    week do you typically work?
   name: d8b
   title: Days per week worked
   type: integer
@@ -2157,6 +2370,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o16
+  description: During the past xx days (since last assessment), How many hours per
+    week do you usually work?
   name: d8b1
   title: Hours per week worked
   type: integer
@@ -2169,6 +2384,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o17
+  description: During the past xx days (since last assessment), approximately how
+    much do you make per hour? [If someone is working multiple jobs, take the average
+    amount per hour across the job]
   name: d8c
   title: Hourly rate
   type: number
@@ -2185,6 +2403,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o18
+  description: '[Health Insurance] Do any of the places that you work offer you the
+    following benefits? (MARK ALL THAT APPLY)'
   name: d8d_health_insurance
   title: Health insurance from work
   type: string
@@ -2201,6 +2421,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o19
+  description: '[Paid time off] Do any of the places that you work offer you the following
+    benefits? (MARK ALL THAT APPLY)'
   name: d8d_paid_time_off
   title: Paid time off from work
   type: string
@@ -2217,6 +2439,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o20
+  description: '[Defined benefit plan or pension] Do any of the places that you work
+    offer you the following benefits? (MARK ALL THAT APPLY)'
   name: d8d_benefit_plan
   title: Benefit or pension plan from work
   type: string
@@ -2234,6 +2458,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o21
+  description: '[An arrangement such as a 401(k) or 403(b) plan, under which your
+    employer contributes money towards your retirement every pay period] Do any of
+    the places that you work offer you the following benefits? (MARK ALL THAT APPLY)'
   name: d8d_retirement_plan
   title: Retirement plan from work
   type: string
@@ -2241,7 +2468,9 @@ fields:
   custom:
     jcoin:core_measure_question: What is your occupation?
     jcoin:core_measure_section: Demographics
+  description: What is your occupation?
   name: d8e
+  title: Occupation
   type: string
 - constraints: {}
   custom:
@@ -2251,6 +2480,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o22
+  description: Are you currently covered by health insurance or some other kind of
+    health care plan?
   name: d9
   title: Currently covered by health insurance
   type: boolean
@@ -2266,6 +2497,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o23
+  description: '[Private health insurance] What kind of health insurance or health
+    care coverage do you have?  Include those that pay for only one type of service
+    (such as nursing home care, accidents, or dental care).  Exclude private plans
+    that only provide extra cash while hospitalized.  If you have more than one kind
+    of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
   name: d9a_private
   title: Private health insurance plan coverage
   type: boolean
@@ -2281,6 +2517,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o24
+  description: '[Medicare] What kind of health insurance or health care coverage do
+    you have?  Include those that pay for only one type of service (such as nursing
+    home care, accidents, or dental care).  Exclude private plans that only provide
+    extra cash while hospitalized.  If you have more than one kind of health insurance,
+    tell me all plans that you have. [MARK ALL THAT APPLY]'
   name: d9a_medicare
   title: Medicare plan coverage
   type: boolean
@@ -2296,6 +2537,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o25
+  description: '[Medigap] What kind of health insurance or health care coverage do
+    you have?  Include those that pay for only one type of service (such as nursing
+    home care, accidents, or dental care).  Exclude private plans that only provide
+    extra cash while hospitalized.  If you have more than one kind of health insurance,
+    tell me all plans that you have. [MARK ALL THAT APPLY]'
   name: d9a_medigap
   title: Medigap plan coverage
   type: boolean
@@ -2311,6 +2557,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o26
+  description: '[Medicaid ({If Available, Display State Plan Name})] What kind of
+    health insurance or health care coverage do you have?  Include those that pay
+    for only one type of service (such as nursing home care, accidents, or dental
+    care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
   name: d9a_medicaid
   title: Medicaid plan coverage
   type: boolean
@@ -2326,6 +2578,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o27
+  description: "[SCHIP (CHIP/Children\u2019s Health Insurance Program)] What kind\
+    \ of health insurance or health care coverage do you have?  Include those that\
+    \ pay for only one type of service (such as nursing home care, accidents, or dental\
+    \ care).  Exclude private plans that only provide extra cash while hospitalized.\
+    \  If you have more than one kind of health insurance, tell me all plans that\
+    \ you have. [MARK ALL THAT APPLY]"
   name: d9a_schip
   title: Children's Health Insurance coverage
   type: boolean
@@ -2341,6 +2599,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o28
+  description: '[Military Health Care (Tricare/VA/CHAMP-VA)] What kind of health insurance
+    or health care coverage do you have?  Include those that pay for only one type
+    of service (such as nursing home care, accidents, or dental care).  Exclude private
+    plans that only provide extra cash while hospitalized.  If you have more than
+    one kind of health insurance, tell me all plans that you have. [MARK ALL THAT
+    APPLY]'
   name: d9a_military
   title: Military plan coverage
   type: boolean
@@ -2356,6 +2620,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o29
+  description: '[Indian Health Service] What kind of health insurance or health care
+    coverage do you have?  Include those that pay for only one type of service (such
+    as nursing home care, accidents, or dental care).  Exclude private plans that
+    only provide extra cash while hospitalized.  If you have more than one kind of
+    health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
   name: d9a_indian
   title: Indian Health Service coverage
   type: boolean
@@ -2372,6 +2641,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o30
+  description: '[State-Sponsored Health Plan ({If Available, Display State Plan Name})]
+    What kind of health insurance or health care coverage do you have?  Include those
+    that pay for only one type of service (such as nursing home care, accidents, or
+    dental care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
   name: d9a_state
   title: State health coverage
   type: boolean
@@ -2387,6 +2662,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o31
+  description: '[Other government program] What kind of health insurance or health
+    care coverage do you have?  Include those that pay for only one type of service
+    (such as nursing home care, accidents, or dental care).  Exclude private plans
+    that only provide extra cash while hospitalized.  If you have more than one kind
+    of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]'
   name: d9a_other_government
   title: Other government coverage
   type: boolean
@@ -2402,6 +2682,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o32
+  description: '[Single service plan (e.g., dental, vision, prescriptions)] What kind
+    of health insurance or health care coverage do you have?  Include those that pay
+    for only one type of service (such as nursing home care, accidents, or dental
+    care).  Exclude private plans that only provide extra cash while hospitalized.  If
+    you have more than one kind of health insurance, tell me all plans that you have.
+    [MARK ALL THAT APPLY]'
   name: d9a_single_service
   title: Single service coverage
   type: boolean
@@ -2417,6 +2703,11 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o33
+  description: "[Don\u2019t know] What kind of health insurance or health care coverage\
+    \ do you have?  Include those that pay for only one type of service (such as nursing\
+    \ home care, accidents, or dental care).  Exclude private plans that only provide\
+    \ extra cash while hospitalized.  If you have more than one kind of health insurance,\
+    \ tell me all plans that you have. [MARK ALL THAT APPLY]"
   name: d9a_dont_know
   title: Don't know about coverage
   type: boolean
@@ -2428,6 +2719,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o34
+  description: During the past xx days (since last assessment), on how many days were
+    you uninsured?
   name: d10
   title: Days uninsured
   type: integer
@@ -2441,6 +2734,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o35
+  description: '[Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery)
+    for your alcohol or other drug use? ] During the past xx days (since last assessment),
+    on how many days have you . . .  [NOTE: MAX DAYS = 90]'
   name: d11a
   title: Number of days at self help group
   type: integer
@@ -2454,6 +2750,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o36
+  description: '[Been in other structured activities where no one was using alcohol
+    or drugs? ] During the past xx days (since last assessment), on how many days
+    have you . . .  [NOTE: MAX DAYS = 90]'
   name: d11b
   title: Number of days at non-alcoholic, structured activities
   type: integer
@@ -2467,6 +2766,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o37
+  description: '[Been homeless or had to stay with someone else to avoid being homeless?
+    ] During the past xx days (since last assessment), on how many days have you .
+    . .  [NOTE: MAX DAYS = 90]'
   name: d11c
   title: Number of days being homeless
   type: integer
@@ -2479,6 +2781,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o38
+  description: '[Lived in a homeless shelter or emergency housing? ] During the past
+    xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
   name: d11d
   title: Number of days in homeless shelter
   type: integer
@@ -2491,6 +2796,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o39
+  description: '[Lived where other people were using alcohol? ] During the past xx
+    days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
   name: d11e
   title: Number of days in household with alcohol use
   type: integer
@@ -2503,6 +2811,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o40
+  description: '[Lived where other people were using drugs? ] During the past xx days
+    (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]'
   name: d11f
   title: Number of days in household with drug use
   type: integer
@@ -2516,6 +2826,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o41
+  description: '[Been to formal activities where people were using alcohol or drugs?]
+    During the past xx days (since last assessment), on how many days have you . .
+    .  [NOTE: MAX DAYS = 90]'
   name: d11g
   title: Number of days of formal activities with alcohol
   type: integer
@@ -2529,6 +2842,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o42
+  description: '[Gotten into trouble at home or with your family for any reason? ]
+    During the past xx days (since last assessment), on how many days have you . .
+    .  [NOTE: MAX DAYS = 90]'
   name: d11h
   title: Number of days of home or family trouble
   type: integer
@@ -2542,6 +2858,10 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o43
+  description: '[Had an argument in which you swore, cursed, threatened another person,
+    threw something, or pushed or hit another person in any way? ] During the past
+    xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS
+    = 90]'
   name: d11i
   title: Number of days of  abusive behavior in arguments
   type: integer
@@ -2555,6 +2875,9 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o44
+  description: '[Been attacked with a weapon, beaten, sexually abused or emotionally
+    abused?] During the past xx days (since last assessment), on how many days have
+    you . . .  [NOTE: MAX DAYS = 90]'
   name: d11j
   title: Number of days being physically, emotionally, sexually abused
   type: integer
@@ -2575,6 +2898,12 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o45
+  description: "[At your most recent release from [jail/prison], did you receive a\
+    \ Naloxone rescue kit (\u201CNarcan kit\u201D) to save yourself or someone else\
+    \ in the event of an opioid overdose? [Overdose definition = use enough of the\
+    \ drug to cause a life-threatening reaction that requires medical attention]]\
+    \ If respondent was in jail/prison during the past 3 months but not currently,\
+    \ ask:"
   name: o3
   title: Received Narcan kit
   type: string
@@ -2587,6 +2916,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o46
+  description: '[Have you had to use it?] If respondent was in jail/prison during
+    the past 3 months but not currently, ask:'
   name: o3a
   title: Used Narcan Kit
   type: boolean
@@ -2599,6 +2930,8 @@ fields:
     notes: The demographics core measure section was split between data models for
       demographic subsections collected only at baseline (i.e., d1 - d6) and all time
       points (d7 - d11; o47
+  description: '[Have you obtained a refill/replacement kit?] If respondent was in
+    jail/prison during the past 3 months but not currently, ask:'
   name: o3b
   title: Refilled Narcan Kit
   type: boolean
@@ -2613,8 +2946,10 @@ fields:
     jcoin:core_measure_question: '... do chores such as sweeping, mopping, janitorial
       work or other house cleaning work'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection: Physical Function
     jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  description: '[... do chores such as sweeping, mopping, janitorial work or other
+    house cleaning work] In the past 7 days I was able to . . .'
   name: p1a
   title: Difficulty with chores and house keeping
   type: string
@@ -2628,8 +2963,10 @@ fields:
   custom:
     jcoin:core_measure_question: '...go up and down stairs at a normal pace'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection: Physical Function
     jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  description: '[...go up and down stairs at a normal pace] In the past 7 days I was
+    able to . . .'
   name: p1b
   title: Difficulty using stairs
   type: string
@@ -2643,8 +2980,10 @@ fields:
   custom:
     jcoin:core_measure_question: '...walk around for at least 15 minutes'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection: Physical Function
     jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  description: '[...walk around for at least 15 minutes] In the past 7 days I was
+    able to . . .'
   name: p1c
   title: Difficulty walking
   type: string
@@ -2658,8 +2997,10 @@ fields:
   custom:
     jcoin:core_measure_question: '... get from place to place'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Physical Function
+    jcoin:core_measure_subsection: Physical Function
     jcoin:core_measure_subsection_text: In the past 7 days I was able to . . .
+  description: '[... get from place to place] In the past 7 days I was able to . .
+    .'
   name: p1d
   title: Difficulty traveling
   type: string
@@ -2674,8 +3015,10 @@ fields:
     jcoin:core_measure_question: '...I had trouble doing all of my regular leisure
       activities with others'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection: Ability to Participate in Social Roles and Activities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had trouble doing all of my regular leisure activities with\
+    \ others ] In the past 7 days\u2026"
   name: p2a
   title: Trouble with Leisure activities with others
   type: string
@@ -2690,8 +3033,10 @@ fields:
     jcoin:core_measure_question: '...I had trouble doing all of the family activities
       that I want to do'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection: Ability to Participate in Social Roles and Activities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had trouble doing all of the family activities that I want to\
+    \ do ] In the past 7 days\u2026"
   name: p2b
   title: Trouble with family activities
   type: string
@@ -2706,8 +3051,10 @@ fields:
     jcoin:core_measure_question: '...I had trouble doing all of my usual work (include
       work at home)'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection: Ability to Participate in Social Roles and Activities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had trouble doing all of my usual work (include work at home)\
+    \ ] In the past 7 days\u2026"
   name: p2c
   title: Trouble with work
   type: string
@@ -2722,8 +3069,10 @@ fields:
     jcoin:core_measure_question: '...I had trouble doing all of the activities with
       friends that I want to do'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Ability to Participate in Social Roles and Activities
+    jcoin:core_measure_subsection: Ability to Participate in Social Roles and Activities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had trouble doing all of the activities with friends that I\
+    \ want to do ] In the past 7 days\u2026"
   name: p2d
   title: Trouble with activities with friends
   type: string
@@ -2737,8 +3086,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt fearful'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection: Anxiety
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt fearful] In the past 7 days\u2026"
   name: p3a
   title: Feeling fearful
   type: string
@@ -2753,8 +3103,10 @@ fields:
     jcoin:core_measure_question: '...I found it hard to focus on anything other than
       my anxiety'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection: Anxiety
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I found it hard to focus on anything other than my anxiety] In\
+    \ the past 7 days\u2026"
   name: p3b
   title: Feeling hard to focus on anything other than anxiety
   type: string
@@ -2768,8 +3120,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...My worries overwhelmed me'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection: Anxiety
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...My worries overwhelmed me] In the past 7 days\u2026"
   name: p3c
   title: Feeling overwhelming worry
   type: string
@@ -2783,8 +3136,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt uneasy'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Anxiety
+    jcoin:core_measure_subsection: Anxiety
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt uneasy] In the past 7 days\u2026"
   name: p3d
   title: Feeling uneasy
   type: string
@@ -2798,8 +3152,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt worthless'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection: Depression
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt worthless] In the past 7 days\u2026"
   name: p4a
   title: Feeling worthless
   type: string
@@ -2813,8 +3168,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt helpless'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection: Depression
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt helpless] In the past 7 days\u2026"
   name: p4b
   title: Feeling helpless
   type: string
@@ -2828,8 +3184,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt depressed'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection: Depression
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt depressed] In the past 7 days\u2026"
   name: p4c
   title: Feeling depressed
   type: string
@@ -2843,8 +3200,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt hopeless'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Depression
+    jcoin:core_measure_subsection: Depression
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt hopeless ] In the past 7 days\u2026"
   name: p4d
   title: Feeling hopeless
   type: string
@@ -2858,8 +3216,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I felt fatigued'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection: Fatigue
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I felt fatigued] In the past 7 days\u2026"
   name: p5a
   title: Feeling fatigued
   type: string
@@ -2873,8 +3232,10 @@ fields:
   custom:
     jcoin:core_measure_question: '...I had trouble starting things because I was tired'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection: Fatigue
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had trouble starting things because I was tired  ] In the past\
+    \ 7 days\u2026"
   name: p5b
   title: Trouble starting things because tired
   type: string
@@ -2888,8 +3249,9 @@ fields:
   custom:
     jcoin:core_measure_question: "\u2026how run-down did you feel on average?"
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection: Fatigue
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[\u2026how run-down did you feel on average? ] In the past 7 days\u2026"
   name: p5c
   title: Feeling run-down
   type: string
@@ -2903,8 +3265,9 @@ fields:
   custom:
     jcoin:core_measure_question: "\u2026how fatigued were you on average?"
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Fatigue
+    jcoin:core_measure_subsection: Fatigue
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[\u2026how fatigued were you on average?] In the past 7 days\u2026"
   name: p5d
   title: Fatigue level
   type: string
@@ -2918,8 +3281,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...my sleep quality was'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection: Sleep Disturbance
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...my sleep quality was] In the past 7 days\u2026"
   name: p6a
   title: Sleep quality
   type: string
@@ -2933,8 +3297,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...my sleep was refreshing'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection: Sleep Disturbance
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...my sleep was refreshing] In the past 7 days\u2026"
   name: p6b
   title: Refreshing sleep
   type: string
@@ -2948,8 +3313,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I had problems with my sleep'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection: Sleep Disturbance
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had problems with my sleep] In the past 7 days\u2026"
   name: p6c
   title: Sleep problems
   type: string
@@ -2963,8 +3329,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I had difficulty falling asleep'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Sleep Disturbance
+    jcoin:core_measure_subsection: Sleep Disturbance
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I had difficulty falling asleep] In the past 7 days\u2026"
   name: p6d
   title: Difficulty falling asleep
   type: string
@@ -2978,8 +3345,9 @@ fields:
   custom:
     jcoin:core_measure_question: '...I have been able to concentrate'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Cognitive Function Abilities
+    jcoin:core_measure_subsection: Cognitive Function Abilities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I have been able to concentrate ] In the past 7 days\u2026"
   name: p7a
   title: Concentration
   type: string
@@ -2994,8 +3362,10 @@ fields:
     jcoin:core_measure_question: '...I have been able to remember to do things, like
       take medicine or buy something I needed'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Cognitive Function Abilities
+    jcoin:core_measure_subsection: Cognitive Function Abilities
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...I have been able to remember to do things, like take medicine\
+    \ or buy something I needed ] In the past 7 days\u2026"
   name: p7b
   title: Remembering things
   type: string
@@ -3010,8 +3380,10 @@ fields:
     jcoin:core_measure_question: '...How much did pain interfere with your day to
       day activities?'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection: Pain Interference
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...How much did pain interfere with your day to day activities? ]\
+    \ In the past 7 days\u2026"
   name: p8a
   title: Pain interference with day to day activity
   type: string
@@ -3026,8 +3398,10 @@ fields:
     jcoin:core_measure_question: '...How much did pain interfere with work around
       the home?'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection: Pain Interference
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...How much did pain interfere with work around the home? ] In the\
+    \ past 7 days\u2026"
   name: p8b
   title: Pain inteference with home work
   type: string
@@ -3042,8 +3416,10 @@ fields:
     jcoin:core_measure_question: '...How much did pain interfere with your ability
       to participate in social activities?'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection: Pain Interference
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...How much did pain interfere with your ability to participate in\
+    \ social activities? ] In the past 7 days\u2026"
   name: p8c
   title: Pain interference with social activities
   type: string
@@ -3058,8 +3434,10 @@ fields:
     jcoin:core_measure_question: '...How much did pain interfere with your household
       chores?'
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Pain Interference
+    jcoin:core_measure_subsection: Pain Interference
     jcoin:core_measure_subsection_text: "In the past 7 days\u2026"
+  description: "[...How much did pain interfere with your household chores? ] In the\
+    \ past 7 days\u2026"
   name: p8d
   title: Pain interference with household chores
   type: string
@@ -3068,9 +3446,12 @@ fields:
     jcoin:core_measure_question: In the past 7 days, how would you rate your pain
       on average?
     jcoin:core_measure_section: PROMIS 29+2/ PROPr
-    jcoin:core_measure_sub_section: Pain Intensity
+    jcoin:core_measure_subsection: Pain Intensity
     jcoin:core_measure_subsection_text: For the next question, please responds on
       scale from 0 being no pain to 10 being the worst pain imaginable.
+  description: '[In the past 7 days, how would you rate your pain on average?] For
+    the next question, please responds on scale from 0 being no pain to 10 being the
+    worst pain imaginable.'
   name: p9
   title: Pain intensity rating
   type: integer
@@ -3092,6 +3473,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026had two or more sex partners during the same time period?]\
+    \ When was the last time you\u2026"
   name: r1a
   title: Multiple sex partners
   type: string
@@ -3114,6 +3497,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026had sex without using any kind of condom, dental dam or other\
+    \ barrier to protect you and your partner from diseases or pregnancy?] When was\
+    \ the last time you\u2026"
   name: r1b
   title: Unprotected sex
   type: string
@@ -3135,6 +3521,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026had sex while you or your partner was intoxicated from alcohol\
+    \ or other drugs?] When was the last time you\u2026"
   name: r1c
   title: Alcohol and drug intoxication
   type: string
@@ -3156,6 +3544,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026used a needle to inject drugs like heroin, cocaine or amphetamines?]\
+    \ When was the last time you\u2026"
   name: r1d
   title: Drug injection with needle
   type: string
@@ -3177,6 +3567,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were attacked with a weapon, including a gun, knife, stick,\
+    \ bottle or other weapon?] When was the last time you\u2026"
   name: r1g
   title: Attacked with weapon
   type: string
@@ -3198,6 +3590,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were physically abused, to the point that you had bruises,\
+    \ cuts or broken bones?] When was the last time you\u2026"
   name: r1h
   title: Physical abuse
   type: string
@@ -3220,6 +3614,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were sexually abused, where someone pressured or forced you\
+    \ to participate in sexual acts against your will, including your regular sex\
+    \ partner, a family member or friend?] When was the last time you\u2026"
   name: r1j
   title: Sexually abused
   type: string
@@ -3241,6 +3638,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were emotionally abused, where someone did or said things to\
+    \ make you feel very bad about yourself or your life?] When was the last time\
+    \ you\u2026"
   name: r1k
   title: Emotionally abused
   type: string
@@ -3262,6 +3662,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were physically, sexual or emotionally abused several times\
+    \ or over a long period of time?] When was the last time you\u2026"
   name: r1m
   title: Physically, sexually, or emotionally abused
   type: string
@@ -3283,6 +3685,8 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026were afraid for your life or that you might be seriously injured\
+    \ by the abuse?] When was the last time you\u2026"
   name: r1n
   title: Afraid for life or serious injury from abuse
   type: string
@@ -3304,7 +3708,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026became very distressed and upset when something reminded you\
+    \ of the past?] When was the last time you. . ."
   name: r2a
+  title: Distressed/upset about past
   type: string
 - constraints:
     enum:
@@ -3324,7 +3731,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[\u2026thought about ending your life or dying by suicide?] When was\
+    \ the last time you. . ."
   name: r2b
+  title: Suicidal thoughts
   type: string
 - constraints:
     enum:
@@ -3340,7 +3750,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by\
+    \ a doctor or nurse that you had\u2026"
   name: r3a
+  title: HIV/AIDS
   type: string
 - constraints:
     enum:
@@ -3356,7 +3769,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Hepatitis C? ] Were you ever told by a doctor or nurse that you had\u2026"
   name: r3b
+  title: Hepatitis C
   type: string
 - constraints:
     enum:
@@ -3372,7 +3787,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Hepatitis B? ] Were you ever told by a doctor or nurse that you had\u2026"
   name: r3c
+  title: Hepatitis B
   type: string
 - constraints:
     enum:
@@ -3389,7 +3806,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Other sexually transmitted diseases or infections, such as syphilis.]\
+    \ Were you ever told by a doctor or nurse that you had\u2026"
   name: r3d
+  title: Other sexually transmitted diseases
   type: string
 - constraints:
     enum:
@@ -3405,7 +3825,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Tuberculosis or TB?] Were you ever told by a doctor or nurse that\
+    \ you had\u2026"
   name: r3e
+  title: Tuberculosis
   type: string
 - constraints:
     enum:
@@ -3421,7 +3844,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: "[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse\
+    \ that you had\u2026"
   name: r3f
+  title: COVID
   type: string
 - constraints:
     enum:
@@ -3440,7 +3866,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Human Immunodeficiency Virus, HIV or AIDS?] If yes, when were you
+    FIRST diagnosed?'
   name: r3a_first_dx
+  title: First diagnosis of HIV/AIDS
   type: string
 - constraints:
     enum:
@@ -3459,7 +3888,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Hepatitis C? ] If yes, when were you FIRST diagnosed?'
   name: r3b_first_dx
+  title: First diagnosis of Hepatitis C
   type: string
 - constraints:
     enum:
@@ -3478,7 +3909,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Hepatitis B? ] If yes, when were you FIRST diagnosed?'
   name: r3c_first_dx
+  title: First diagnosis of Hepatitis B
   type: string
 - constraints:
     enum:
@@ -3498,7 +3931,10 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Other sexually transmitted diseases or infections, such as syphilis.]
+    If yes, when were you FIRST diagnosed?'
   name: r3d_first_dx
+  title: First diagnosis of other STDs
   type: string
 - constraints:
     enum:
@@ -3517,7 +3953,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Tuberculosis or TB?] If yes, when were you FIRST diagnosed?'
   name: r3e_first_dx
+  title: First diagnosis of Tuberculosis
   type: string
 - constraints:
     enum:
@@ -3536,7 +3974,9 @@ fields:
       CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
       THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
       WITH HUB CONSENT FORMS)'
+  description: '[Coronavirus 19 or COVID19?] If yes, when were you FIRST diagnosed?'
   name: r3f_first_dx
+  title: First diagnosis of COVID
   type: string
 missingValues:
 - NaN

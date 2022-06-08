@@ -117,10 +117,10 @@ def make_field_md(field):
 
     field_list = [
         ("","\n---------"), #field divider
-        ("",add_title(field)),
-        ("**Variable name:**",f"```{add_variable_name(field)}```"),
-       ("**JCOIN Core Measure Question Text:**", add_core_measure_question(field)),
-        ("**Description:**",add_description(field)),
+       # ("",add_title(field)),
+        ("",f"```{add_variable_name(field)}```"),
+      # ("**JCOIN Core Measure Question Text:**", add_core_measure_question(field)),
+        ("**Description/Question:**",add_description(field)),
         ("**Variable type:**",add_type(field)),
         ("**Possible values:**",add_enums(field)),
         ("**Required:**",add_required(field)),
