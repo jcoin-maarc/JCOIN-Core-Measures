@@ -11,7 +11,7 @@ from pathlib import Path
 dd_key = {
     "Category/Core Measure Section":"jcoin:core_measure_section",
     "Variable Name":"name",	
-    #"Variable Title":"title",	
+    "Variable Title":"title",	
     "Variable Description/Question":"description",	
     "Variable Type":"type",
     "Required":"required",

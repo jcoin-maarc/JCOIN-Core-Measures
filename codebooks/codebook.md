@@ -9,6 +9,10 @@
  
 ---------
 
+ 
+### Jcoin Data Commons Person Identifier
+
+
  ```jdc_person_id```
 
 **Description/Question:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
@@ -28,6 +32,10 @@
  
 ---------
 
+ 
+### Quarter Enrolled
+
+
  ```quarter_enrolled```
 
 **Description/Question:** The financial quarter and year of enrollment
@@ -40,6 +48,10 @@
  
 ---------
 
+ 
+### State Of Site For Enrollment
+
+
  ```state_of_site_enrollment```
 
 **Description/Question:** The U.S. State abbreviation of the site where client (participant) was initially enrolled
@@ -51,6 +63,10 @@
 **Required:** Yes
  
 ---------
+
+ 
+### Current Study Status
+
 
  ```current_study_status```
 
@@ -71,6 +87,10 @@
  
 ---------
 
+ 
+### Gender Identity
+
+
  ```o2```
 
 **Description/Question:** What is your gender identity?
@@ -84,6 +104,10 @@
 **Notes:** For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True
  
 ---------
+
+ 
+### Gender Identity (Condensed)
+
 
  ```d4b```
 
@@ -99,6 +123,10 @@
  
 ---------
 
+ 
+### Race: White
+
+
  ```d3_white```
 
 **Description/Question:** [White] What is your race? SELECT ALL THAT APPLY
@@ -110,6 +138,10 @@
 **Required:** Yes
  
 ---------
+
+ 
+### Race: Black Or African American
+
 
  ```d3_black```
 
@@ -123,6 +155,10 @@
  
 ---------
 
+ 
+### Race: American Indian Or Alaska Native
+
+
  ```d3_american_indian```
 
 **Description/Question:** [American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY
@@ -134,6 +170,10 @@
 **Required:** Yes
  
 ---------
+
+ 
+### Race: Native Hawaiian Or Other Pacific Islander
+
 
  ```d3_hawaiian```
 
@@ -147,6 +187,10 @@
  
 ---------
 
+ 
+### Race: Asian
+
+
  ```d3_asian```
 
 **Description/Question:** [Asian] What is your race? SELECT ALL THAT APPLY
@@ -158,6 +202,10 @@
 **Required:** Yes
  
 ---------
+
+ 
+### Race: Other
+
 
  ```d3_other```
 
@@ -171,6 +219,10 @@
  
 ---------
 
+ 
+### Race: American Indian Principal Tribe Or Community Specified
+
+
  ```d3_specify_tribe```
 
 **Description/Question:** [American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY
@@ -182,6 +234,10 @@
 **Required:** Yes
  
 ---------
+
+ 
+### Race: Other Specified
+
 
  ```d3_specify_other```
 
@@ -195,6 +251,10 @@
  
 ---------
 
+ 
+### Hispanic, Latino, Or Spanish Origin
+
+
  ```d2```
 
 **Description/Question:** Are you of Hispanic, Latino, or Spanish origin?
@@ -207,6 +267,10 @@
  
 ---------
 
+ 
+### Sexual Orientation
+
+
  ```d4c```
 
 **Description/Question:** Sexual orientation:  Do you think of yourself as…
@@ -217,6 +281,10 @@
  
 ---------
 
+ 
+### Sexual Orientation:  Other Specified
+
+
  ```d4c_specify_other```
 
 **Description/Question:** Sexual orientation:  Do you think of yourself as…
@@ -226,6 +294,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Ever Pregnant
+
 
  ```d4d```
 
@@ -239,6 +311,10 @@
  
 ---------
 
+ 
+### Marital Status
+
+
  ```d5```
 
 **Description/Question:** What is your marital status?
@@ -248,6 +324,10 @@
 **Possible values:** Married,Widowed,Divorced,Separated,Never married
  
 ---------
+
+ 
+### Married With Partner
+
 
  ```d5a```
 
@@ -259,6 +339,10 @@
  
 ---------
 
+ 
+### Education
+
+
  ```d6```
 
 **Description/Question:** What is the highest grade or level of school you have completed or the highest degree you have received?
@@ -269,6 +353,10 @@
  
 ---------
 
+ 
+### Education:  Highest Grade Level (If Less Than Ged Or H.S. Diploma)
+
+
  ```d6_grade```
 
 **Description/Question:** What is the highest grade completed?
@@ -278,6 +366,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Education: Other Specified
+
 
  ```d6_specify_other```
 
@@ -296,6 +388,10 @@
  
 ---------
 
+ 
+### Interviewed During Incarceration
+
+
  ```u14f```
 
 **Description/Question:** Interview conducted with participant during incarceration?
@@ -305,6 +401,10 @@
 **Possible values:** Yes,No
  
 ---------
+
+ 
+### Days Incarcerated (In Past 30/Xx Days)
+
 
  ```u14g```
 
@@ -316,6 +416,10 @@
  
 ---------
 
+ 
+### Medication Ever Prescribed For Opioid Use Disorder?
+
+
  ```u15```
 
 **Description/Question:** Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)
@@ -325,6 +429,10 @@
 **Possible values:** Yes,No
  
 ---------
+
+ 
+### Buprenorphine-Naloxone Or Buprenorphine Daily Sublingual: Lifetime Months
+
 
  ```u15a1```
 
@@ -336,6 +444,10 @@
  
 ---------
 
+ 
+### Buprenorphine Injection (Sublocade):  Lifetime Months
+
+
  ```u15b1```
 
 **Description/Question:** Lifetime months (buprenorphine injection [Sublocade])
@@ -345,6 +457,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Buprenorphine  Weekly Injection (Brixadi):  Lifetime Months
+
 
  ```u15c1```
 
@@ -356,6 +472,10 @@
  
 ---------
 
+ 
+### Buprenorphine  Monthly Injection (Brixadi):  Lifetime Months
+
+
  ```u15d1```
 
 **Description/Question:** Lifetime months (buprenorphine monthly injection [Brixadi])
@@ -365,6 +485,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Buprenorphine 6-Month Implant (Probuphine):  Lifetime Months
+
 
  ```u15e1```
 
@@ -376,6 +500,10 @@
  
 ---------
 
+ 
+### Naltrexone Daily (Oral):  Lifetime Months
+
+
  ```u15f1```
 
 **Description/Question:** Lifetime months (Naltrexone daily (oral))
@@ -386,6 +514,10 @@
  
 ---------
 
+ 
+### Naltrexone Monthly Injection (Vivitrol):  Lifetime Months
+
+
  ```u15g1```
 
 **Description/Question:** Lifetime months (Naltrexone monthly injection [Vivitrol])
@@ -395,6 +527,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Methadone Daily:  Lifetime Months
+
 
  ```u15h1```
 
@@ -414,6 +550,10 @@
  
 ---------
 
+ 
+### Jcoin Data Commons Person Identifier
+
+
  ```jdc_person_id```
 
 **Description/Question:** The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).
@@ -426,6 +566,10 @@
  
 ---------
 
+ 
+### Visit Number
+
+
  ```visit_number```
 
 **Description/Question:** A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).
@@ -435,8 +579,42 @@
 **Possible values:** Any of the fields type and other constraints
 
 **Required:** Yes
+
+</details>
+
+
+<details>
+	<summary><h2>Other</h2></summary>
+
  
 ---------
+
+ 
+### Visit Date (Shifted)
+
+
+ ```shifted_visit_dt```
+
+**Description/Question:** This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer
+
+**Variable type:** Integer
+
+**Possible values:** Any of the fields type and other constraints
+
+**Required:** Yes
+
+</details>
+
+
+<details>
+	<summary><h2>Record and linkage</h2></summary>
+
+ 
+---------
+
+ 
+### Visit Type
+
 
  ```visit_type```
 
@@ -457,6 +635,10 @@
  
 ---------
 
+ 
+### Last Time Drug Use
+
+
  ```s1a```
 
 **Description/Question:** [... you used alcohol or other drugs weekly or more often?  ] When was the last time you…
@@ -471,6 +653,10 @@
  
 ---------
 
+ 
+### Last Time Drug Use: Getting, Using, Or Recovering
+
+
  ```s1b```
 
 **Description/Question:** [... You spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)? ] When was the last time you…
@@ -482,6 +668,10 @@
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
  
 ---------
+
+ 
+### Last Time Drug Use: Social Dysfunction
+
 
  ```s1c```
 
@@ -495,6 +685,10 @@
  
 ---------
 
+ 
+### Last Time Drug Use: Work Or Life Dysfunction
+
+
  ```s1d```
 
 **Description/Question:** [… your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events? ] When was the last time you…
@@ -506,6 +700,10 @@
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
  
 ---------
+
+ 
+### Last Time Drug Use: Withdrawal
+
 
  ```s1e```
 
@@ -519,6 +717,10 @@
  
 ---------
 
+ 
+### Last Time Drug Use: Any Opioids
+
+
  ```s2a```
 
 **Description/Question:** [... used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?] When was the last time…
@@ -530,6 +732,10 @@
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
  
 ---------
+
+ 
+### Last Time Drug Use: Opioid Overdose
+
 
  ```s2b```
 
@@ -543,6 +749,10 @@
  
 ---------
 
+ 
+### Last Time Drug Use: Oud Medication-Assisted Treatment
+
+
  ```s2c```
 
 **Description/Question:** [... went to any kind of medication assisted treatment for opioid use disorder?] When was the last time…
@@ -554,6 +764,10 @@
 **Notes:** Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise
  
 ---------
+
+ 
+### Opioid Overdose Count
+
 
  ```s3a```
 
@@ -567,6 +781,10 @@
  
 ---------
 
+ 
+### Opioid Overdose Count: Receiving Naloxone
+
+
  ```s3b```
 
 **Description/Question:** [...did you receive naloxone (Evzio or Narcan) to reverse your overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
@@ -578,6 +796,10 @@
 **Notes:** Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention
  
 ---------
+
+ 
+### Person Who Administered Nalaxone For Overdose
+
 
  ```s3c```
 
@@ -591,6 +813,10 @@
  
 ---------
 
+ 
+### Drugs 4 Hrs Before Overdose
+
+
  ```s3d```
 
 **Description/Question:** What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)
@@ -603,6 +829,10 @@
  
 ---------
 
+ 
+### Emergency Medical Service Following Overdose
+
+
  ```s3e```
 
 **Description/Question:** [...receive emergency medical service following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
@@ -612,6 +842,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Emergency Department Visit Count Following Overdose
+
 
  ```s3f```
 
@@ -623,6 +857,10 @@
  
 ---------
 
+ 
+### Hospital Admissions Count Following Overdose
+
+
  ```s3g```
 
 **Description/Question:** [...get admitted to the hospital following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .
@@ -632,6 +870,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Substance Use Treatment Referral Count Following Overdose
+
 
  ```s3h```
 
@@ -643,6 +885,10 @@
  
 ---------
 
+ 
+### Drug Use Count
+
+
  ```s4a```
 
 **Description/Question:** [...on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -652,6 +898,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Alcohol Use Count
+
 
  ```s4b```
 
@@ -663,6 +913,10 @@
  
 ---------
 
+ 
+### Alcohol Use Count: Binge Drinking
+
+
  ```s4c```
 
 **Description/Question:** [...how many times did you have 5 or more drinks?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -672,6 +926,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Marijuana Use Count: Medical
+
 
  ```s4d```
 
@@ -683,6 +941,10 @@
  
 ---------
 
+ 
+### Marijuana Use Count: Not Own
+
+
  ```s4e```
 
 **Description/Question:** [... how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -692,6 +954,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Opioid Use Count: Heroin
+
 
  ```s4f```
 
@@ -703,6 +969,10 @@
  
 ---------
 
+ 
+### Opioid Use Count: Fentanyl
+
+
  ```s4g```
 
 **Description/Question:** [... how many times did you use fentanyl (alone or mixed with other drugs)?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -712,6 +982,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Opioid Use Count: Street Methadone
+
 
  ```s4h```
 
@@ -723,6 +997,10 @@
  
 ---------
 
+ 
+### Opioid Use Count: Suboxone
+
+
  ```s4j```
 
 **Description/Question:** [... how many times did you use use nonprescription or street Suboxone?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -732,6 +1010,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Opioid Use Count: Other
+
 
  ```s4k```
 
@@ -743,6 +1025,10 @@
  
 ---------
 
+ 
+### Cocaine Use Count
+
+
  ```s4m```
 
 **Description/Question:** [... how many times did you use crack, smoked rock, freebase, or other forms of cocaine?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -752,6 +1038,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Speed Use Count
+
 
  ```s4n```
 
@@ -763,6 +1053,10 @@
  
 ---------
 
+ 
+### Benzodiazapine, Anti-Anxiety, And Tranquilizer Use Count
+
+
  ```s4p```
 
 **Description/Question:** [... how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?      ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -772,6 +1066,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Drug Use Count: Other
+
 
  ```s4z```
 
@@ -783,6 +1081,10 @@
  
 ---------
 
+ 
+### Drug Use: Description Of Other Drugs
+
+
  ```s4z_describe```
 
 **Description/Question:** [...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]
@@ -792,6 +1094,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Place Of No Opioid Use (Jail, Hospital, Etc)
+
 
  ```s5```
 
@@ -810,6 +1116,10 @@
  
 ---------
 
+ 
+### Activities Against Law Besides Drugs
+
+
  ```j1```
 
 **Description/Question:** During the past 90 days (since last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use? [IF 0, GO TO J2]
@@ -821,6 +1131,10 @@
 **Notes:** [IF 0, GO TO J2]
  
 ---------
+
+ 
+### Drug Possession
+
 
  ```j1a1```
 
@@ -834,6 +1148,10 @@
  
 ---------
 
+ 
+### Drunkenness Or Other Liquor Law Violations
+
+
  ```j1a2```
 
 **Description/Question:** [... been drunk or high in public? (drunkenness or other liquor law violations)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -845,6 +1163,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Driving Under The Influence Or While Intoxicated
+
 
  ```j1a3```
 
@@ -858,6 +1180,10 @@
  
 ---------
 
+ 
+### Possession, Dealing, Distribution Or Sale Of Drugs
+
+
  ```j1a4```
 
 **Description/Question:** [...sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -869,6 +1195,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Vandalism Or Property Destruction
+
 
  ```j1a5```
 
@@ -882,6 +1212,10 @@
  
 ---------
 
+ 
+### Receiving, Possessing Or Selling Stolen Goods
+
+
  ```j1a6```
 
 **Description/Question:** [... bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -893,6 +1227,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Forgery, Fraud Or Embezzlement
+
 
  ```j1a7```
 
@@ -906,6 +1244,10 @@
  
 ---------
 
+ 
+### Shoplifting
+
+
  ```j1a8```
 
 **Description/Question:** [... taken something from a store without paying for it? (shoplifting)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -917,6 +1259,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Larceny Or Theft
+
 
  ```j1a9```
 
@@ -930,6 +1276,10 @@
  
 ---------
 
+ 
+### Burglary Or Breaking And Entering
+
+
  ```j1a10```
 
 **Description/Question:** [... broken into a house or building to steal something or just to look around? (burglary or breaking and entering)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -941,6 +1291,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Motor Vehicle Theft
+
 
  ```j1a11```
 
@@ -954,6 +1308,10 @@
  
 ---------
 
+ 
+### Carjacking
+
+
  ```j1a12```
 
 **Description/Question:** [... taken a car from someone who was in it? (carjacking)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -965,6 +1323,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Simple Assault Or Battery
+
 
  ```j1a13```
 
@@ -978,6 +1340,10 @@
  
 ---------
 
+ 
+### Robbery
+
+
  ```j1a14```
 
 **Description/Question:** [... used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -989,6 +1355,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Aggravated Assault Or Battery
+
 
  ```j1a15```
 
@@ -1002,6 +1372,10 @@
  
 ---------
 
+ 
+### Forcible Rape
+
+
  ```j1a16```
 
 **Description/Question:** [... made someone have sex with you by force when they did not want to have sex? (forcible rape)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -1013,6 +1387,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Murder, Homicide Or No-Negligent Manslaughter
+
 
  ```j1a17```
 
@@ -1026,6 +1404,10 @@
  
 ---------
 
+ 
+### Arson
+
+
  ```j1a18```
 
 **Description/Question:** [... intentionally set a building, car or other property on fire? (arson)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -1037,6 +1419,10 @@
 **Notes:** (common charge names associated with behavior for reference only)
  
 ---------
+
+ 
+### Prostitution, Pimping Or Commercialized Sex
+
 
  ```j1a19```
 
@@ -1050,6 +1436,10 @@
  
 ---------
 
+ 
+### Other Unlawful Activities
+
+
  ```j1a99```
 
 **Description/Question:** [... done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)
@@ -1062,6 +1452,10 @@
  
 ---------
 
+ 
+### Overall Charged Arrests
+
+
  ```j2```
 
 **Description/Question:** During the past 90 days (since last assessment), how many times were you arrested and charged?
@@ -1071,6 +1465,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Drug Possession Arrests
+
 
  ```j2a```
 
@@ -1082,6 +1480,10 @@
  
 ---------
 
+ 
+### Law Violations Arrests
+
+
  ```j2b```
 
 **Description/Question:** [Number of arrests for drunkenness or other liquor law violations] During the past 90 days (since last assessment)
@@ -1091,6 +1493,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Driving Under The Influence/Intoxicated Arrests
+
 
  ```j2c```
 
@@ -1102,6 +1508,10 @@
  
 ---------
 
+ 
+### Drug Activity Arrests
+
+
  ```j2d```
 
 **Description/Question:** [Number of arrests for possession, dealing, distribution or sale of drugs] During the past 90 days (since last assessment)
@@ -1111,6 +1521,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Vandalism Or Property Destruction Arrests
+
 
  ```j2e```
 
@@ -1122,6 +1536,10 @@
  
 ---------
 
+ 
+### Stolen Goods Arrests
+
+
  ```j2f```
 
 **Description/Question:** [Number of arrests for receiving, possessing or selling stolen goods] During the past 90 days (since last assessment)
@@ -1131,6 +1549,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Forgery, Fraud Or Embezzlement Arrests
+
 
  ```j2g```
 
@@ -1142,6 +1564,10 @@
  
 ---------
 
+ 
+### Shoplifting Arrests
+
+
  ```j2h```
 
 **Description/Question:** [Number of arrests for shoplifting] During the past 90 days (since last assessment)
@@ -1151,6 +1577,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Theft/Larceny Arrests
+
 
  ```j2i```
 
@@ -1162,6 +1592,10 @@
  
 ---------
 
+ 
+### Burglary Or Breaking And Entering Arrests
+
+
  ```j2j```
 
 **Description/Question:** [Number of arrests for burglary or breaking and entering] During the past 90 days (since last assessment)
@@ -1171,6 +1605,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Vehicle Theft Arrests
+
 
  ```j2k```
 
@@ -1182,6 +1620,10 @@
  
 ---------
 
+ 
+### Car Jacking Arrests
+
+
  ```j2l```
 
 **Description/Question:** [Number of arrests for car jacking] During the past 90 days (since last assessment)
@@ -1191,6 +1633,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Simple Assault Or Battery Arrests
+
 
  ```j2m```
 
@@ -1202,6 +1648,10 @@
  
 ---------
 
+ 
+### Robbery Arrests
+
+
  ```j2n```
 
 **Description/Question:** [Number of arrests for robbery] During the past 90 days (since last assessment)
@@ -1211,6 +1661,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Aggravated Assault Or Battery Arrests
+
 
  ```j2o```
 
@@ -1222,6 +1676,10 @@
  
 ---------
 
+ 
+### Forcible Rape Arrests
+
+
  ```j2p```
 
 **Description/Question:** [Number of arrests for forcible rape] During the past 90 days (since last assessment)
@@ -1231,6 +1689,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Negligent Manslaughter Arrests
+
 
  ```j2q```
 
@@ -1242,6 +1704,10 @@
  
 ---------
 
+ 
+### Arson Arrests
+
+
  ```j2r```
 
 **Description/Question:** [Number of arrests for arson] During the past 90 days (since last assessment)
@@ -1251,6 +1717,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Commercialized Sex Arrests
+
 
  ```j2s```
 
@@ -1262,6 +1732,10 @@
  
 ---------
 
+ 
+### Other Charges Arrests
+
+
  ```j2t```
 
 **Description/Question:** [Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy) ] During the past 90 days (since last assessment)
@@ -1271,6 +1745,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Electronic Monitoring
+
 
  ```j3a```
 
@@ -1282,6 +1760,10 @@
  
 ---------
 
+ 
+### House Arrest
+
+
  ```j3b```
 
 **Description/Question:** [...on house arrest?] During the past xx days (since last assessment), how many days have you been …
@@ -1291,6 +1773,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Jail Time
+
 
  ```j3c```
 
@@ -1302,6 +1788,10 @@
  
 ---------
 
+ 
+### Prison Time
+
+
  ```j3d```
 
 **Description/Question:** [...in prison?] During the past xx days (since last assessment), how many days have you been …
@@ -1311,6 +1801,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Current Jail Or Prison
+
 
  ```j3e```
 
@@ -1324,6 +1818,10 @@
  
 ---------
 
+ 
+### Length Of Jail Or Prison Time
+
+
  ```j3f```
 
 **Description/Question:** How long have you been in jail or prison? (just this episode)
@@ -1333,6 +1831,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Parole
+
 
  ```j4a```
 
@@ -1344,6 +1846,10 @@
  
 ---------
 
+ 
+### Probation
+
+
  ```j4b```
 
 **Description/Question:** [...been on probation?] During the past xx days (since last assessment), how many days have you…
@@ -1353,6 +1859,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Other Kind Of Community Supervision
+
 
  ```j4c```
 
@@ -1364,6 +1874,10 @@
  
 ---------
 
+ 
+### Meeting With Probation Or Parole Officer
+
+
  ```j4d```
 
 **Description/Question:** [...met with your probation or parole officer?] During the past xx days (since last assessment), how many days have you…
@@ -1373,6 +1887,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Trouble With Probation Or Parole Officer
+
 
  ```j4e```
 
@@ -1384,6 +1902,10 @@
  
 ---------
 
+ 
+### Life Time Arrests
+
+
  ```j5a```
 
 **Description/Question:** [...how many times in your life have you been arrested including as a juvenile?] During your lifetime…
@@ -1393,6 +1915,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### First Time Arrest
+
 
  ```j5b```
 
@@ -1404,6 +1930,10 @@
  
 ---------
 
+ 
+### Lifetime Years In Detention, Jail, Or Prison Time
+
+
  ```j5c_years```
 
 **Description/Question:** [...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime…
@@ -1413,6 +1943,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Lifetime Months In Detention, Jail, Or Prison Time
+
 
  ```j5c_months```
 
@@ -1424,6 +1958,10 @@
  
 ---------
 
+ 
+### Lifetime Guity And Sentenced
+
+
  ```j5d```
 
 **Description/Question:** [...how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?] During your lifetime…
@@ -1433,6 +1971,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### First Time Adjudication Conviction
+
 
  ```j5e```
 
@@ -1451,6 +1993,10 @@
  
 ---------
 
+ 
+### Emergency Room:  Number Of Visits
+
+
  ```u1```
 
 **Description/Question:** [...times have you had to go to an emergency room without being admitted to the hospital?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
@@ -1460,6 +2006,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Hospital Detox Program: Number Of Nights
+
 
  ```u2```
 
@@ -1471,6 +2021,10 @@
  
 ---------
 
+ 
+### Hospitalization:  Number Of Nights
+
+
  ```u3```
 
 **Description/Question:** [...nights were you in a hospital for any other reason than detoxification?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
@@ -1480,6 +2034,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Residential Detox: Number Of Nights
+
 
  ```u4```
 
@@ -1491,6 +2049,10 @@
  
 ---------
 
+ 
+### Residential Treatment Program For Alcohol/Drugs: Number Of Nights
+
+
  ```u5a```
 
 **Description/Question:** [...nights were you in a residential treatment program for alcohol or drug use?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
@@ -1500,6 +2062,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Residential Treatment Program For Mental Health: Number Of Nights
+
 
  ```u5b```
 
@@ -1511,6 +2077,10 @@
  
 ---------
 
+ 
+### Rehab Facility For Physical Health: Number Of Nights
+
+
  ```u5c```
 
 **Description/Question:** [...nights were you in a residential, nursing home, or other rehabilitation facility for your physical health?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]
@@ -1520,6 +2090,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Primary Care Provider:  Number Of Visits
+
 
  ```u6```
 
@@ -1531,6 +2105,10 @@
  
 ---------
 
+ 
+### Primary Care Visit Reason: Alcohol/Drug Use
+
+
  ```u6a```
 
 **Description/Question:** [Alcohol or other drug use?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
@@ -1540,6 +2118,10 @@
 **Possible values:** Yes,No
  
 ---------
+
+ 
+### Primary Care Visit Reason: Mental Health
+
 
  ```u6b```
 
@@ -1551,6 +2133,10 @@
  
 ---------
 
+ 
+### Primary Care Visit Reason:  Physical Health
+
+
  ```u6c```
 
 **Description/Question:** [Physical health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)
@@ -1560,6 +2146,10 @@
 **Possible values:** Yes,No
  
 ---------
+
+ 
+### Primary Care Visit Reason:  Some Other Reason (Specify)
+
 
  ```u6d```
 
@@ -1571,6 +2161,10 @@
  
 ---------
 
+ 
+### Primary Care Visit Reason: Specify Other Reason
+
+
  ```u6d_specify```
 
 **Description/Question:** [Specify other reason you visited primary care provider] Why did you visit a primary care provider? (ADD SKIP LOGIC)
@@ -1580,6 +2174,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Outpatient Treament Program For Alcohol/Substance Use: Number Of Days
+
 
  ```u7```
 
@@ -1591,6 +2189,10 @@
  
 ---------
 
+ 
+### Outpatient Treatment Program: Number Of Days Physically Visiting Program
+
+
  ```u7a```
 
 **Description/Question:** How many of these days did you physically visit the (outpatient treatment) program?
@@ -1600,6 +2202,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Outpatient Treatment Program: Number Of Days Participating Online
+
 
  ```u7b```
 
@@ -1611,6 +2217,10 @@
  
 ---------
 
+ 
+### Outpatient Treatment Program: Number Of Days Seeing Doctor
+
+
  ```u7c```
 
 **Description/Question:** How many of these days did you see a doctor (at the outpatient treatment program)?
@@ -1620,6 +2230,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Outpatient Treatment Program: Number Of Days Participating In Therapy
+
 
  ```u7d```
 
@@ -1631,6 +2245,10 @@
  
 ---------
 
+ 
+### Outpatient Treatment Program: Number Of Days For Medication Management
+
+
  ```u7e```
 
 **Description/Question:** How many of these days were for medication management only?
@@ -1640,6 +2258,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Psychiatrist/Psychologist:  Number Of Total Visits
+
 
  ```u8```
 
@@ -1651,6 +2273,10 @@
  
 ---------
 
+ 
+### Psychiatrist/Psychologist: Number Of In-Person Visits
+
+
  ```u8a```
 
 **Description/Question:** How many of these times did you physically visit the program (psychiatrist/psychologist)?
@@ -1660,6 +2286,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Psychiatrist/Psychologist: Number Of Online Visits
+
 
  ```u8b```
 
@@ -1671,6 +2301,10 @@
  
 ---------
 
+ 
+### Counselor/Social Worker: Number Of Total Visits
+
+
  ```u9```
 
 **Description/Question:** Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen any other kind or counselor or social worker?
@@ -1680,6 +2314,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Counselor/Social Worker: Number Of In-Person Visits
+
 
  ```u9a```
 
@@ -1691,6 +2329,10 @@
  
 ---------
 
+ 
+### Counselor/Social Worker: Number Of Online Visits
+
+
  ```u9b```
 
 **Description/Question:** ...did you participate online (phone, computer, or tablet; with a counselor/social worker)?
@@ -1700,6 +2342,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Healthcare Cost
+
 
  ```u13```
 
@@ -1711,6 +2357,10 @@
  
 ---------
 
+ 
+### Substance Use Treatment
+
+
  ```u14```
 
 **Description/Question:** Have you received any substance use treatment in the past xx days (since last assessment)?
@@ -1720,6 +2370,10 @@
 **Possible values:** Yes,No,Unknown
  
 ---------
+
+ 
+### Substance Use Tx Provider:  Well-Organized
+
 
  ```u14a```
 
@@ -1731,6 +2385,10 @@
  
 ---------
 
+ 
+### Substance Use Tx Provider:  Satisfaction
+
+
  ```u14b```
 
 **Description/Question:** [You are satisfied with this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
@@ -1740,6 +2398,10 @@
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
  
 ---------
+
+ 
+### Substance Use Tx Provider:  Efficient Staff
+
 
  ```u14c```
 
@@ -1751,6 +2413,10 @@
  
 ---------
 
+ 
+### Substance Use Tx Provider:  Personal Counseling
+
+
  ```u14d```
 
 **Description/Question:** [You can get plenty of personal counseling at this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements
@@ -1760,6 +2426,10 @@
 **Possible values:** Strongly agree, Somewhat agree, Neutral,Somewhat disagree,Strongly disagree
  
 ---------
+
+ 
+### Substance Use Tx Provider:  Medication Assistance For Opioid Use
+
 
  ```u14e```
 
@@ -1778,6 +2448,10 @@
  
 ---------
 
+ 
+### Not Candidate For Oud Treatment
+
+
  ```m1```
 
 **Description/Question:** If respondent is not a candidate for OUD treatment, mark here and skip this set of items:
@@ -1787,6 +2461,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Preferred Type Of Oud Treatment:  Oud Medication
+
 
  ```m2_meds```
 
@@ -1798,6 +2476,10 @@
  
 ---------
 
+ 
+### Preferred Type Of Oud Treatment:  Detox
+
+
  ```m2_detox```
 
 **Description/Question:** [Detox] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
@@ -1807,6 +2489,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Preferred Type Of Oud Treatment:  Outpatient Counseling
+
 
  ```m2_outpt_counsel```
 
@@ -1818,6 +2504,10 @@
  
 ---------
 
+ 
+### Preferred Type Of Oud Treatment:  Intensive Outpatient
+
+
  ```m2_outpt_intensive```
 
 **Description/Question:** [Intensive outpatient  ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
@@ -1827,6 +2517,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Preferred Type Of Oud Treatment:  Residential Treatment
+
 
  ```m2_residential```
 
@@ -1838,6 +2532,10 @@
  
 ---------
 
+ 
+### Preferred Type Of Oud Treatment:  Other Treatment
+
+
  ```m2_other```
 
 **Description/Question:** [Other ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
@@ -1847,6 +2545,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Preferred Type Of Oud Treatment:  Other Treatment Specified
+
 
  ```m2_other_specify```
 
@@ -1858,6 +2560,10 @@
  
 ---------
 
+ 
+### Preferred Type Of Oud Treatment:  No Treatment
+
+
  ```m2_none```
 
 **Description/Question:** [No treatment ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)
@@ -1867,6 +2573,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Preferred Type Of Oud Treatment:  Don'T Know Or No Preference
+
 
  ```m2_dont_know```
 
@@ -1878,6 +2588,10 @@
  
 ---------
 
+ 
+### Preferred Oud Medication
+
+
  ```m3```
 
 **Description/Question:** Which OUD medication treatment type would you most prefer to receive if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of questions.]
@@ -1888,6 +2602,10 @@
  
 ---------
 
+ 
+### Type Of Buprenorphine Preferred
+
+
  ```m4```
 
 **Description/Question:** Which type of buprenorphine? (SELECT ONLY ONE)
@@ -1897,6 +2615,10 @@
 **Possible values:** I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone),I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi),I would prefer to receive the 6-month buprenorphine implant,Don't know/No preference
  
 ---------
+
+ 
+### Type Of Naltrexone Preferred
+
 
  ```m5```
 
@@ -1915,6 +2637,10 @@
  
 ---------
 
+ 
+### People In Household
+
+
  ```d7a```
 
 **Description/Question:** [How many people, including yourself, are there in your household?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
@@ -1926,6 +2652,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3
  
 ---------
+
+ 
+### People Under 18 Years Old In Household
+
 
  ```d7b```
 
@@ -1939,6 +2669,10 @@
  
 ---------
 
+ 
+### Total Household Income
+
+
  ```d7c```
 
 **Description/Question:** [During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, what was the total income of everyone in your household together that provided you with support?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
@@ -1950,6 +2684,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5
  
 ---------
+
+ 
+### Total Household Income From Legal Sources
+
 
  ```d7d```
 
@@ -1963,6 +2701,10 @@
  
 ---------
 
+ 
+### Public Assistance For Household
+
+
  ```d7d1```
 
 **Description/Question:** [During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
@@ -1974,6 +2716,10 @@
 **Notes:** If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7
  
 ---------
+
+ 
+### Total Household Money From Public Assistance
+
 
  ```d7d2```
 
@@ -1987,6 +2733,10 @@
  
 ---------
 
+ 
+### Other Non-Employmnet Income Sources
+
+
  ```d7e1```
 
 **Description/Question:** [During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
@@ -1998,6 +2748,10 @@
 **Notes:** If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9
  
 ---------
+
+ 
+### Total Household Money From Other Non-Employment Income Sources
+
 
  ```d7e2```
 
@@ -2011,6 +2765,10 @@
  
 ---------
 
+ 
+### Non-Employment Income With Risk Of Legal Or Other Trouble
+
+
  ```d7f1```
 
 **Description/Question:** [During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.
@@ -2022,6 +2780,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11
  
 ---------
+
+ 
+### Total Household Money With Risk Of Causing  Legal Or Other Trouble Activities
+
 
  ```d7f2```
 
@@ -2035,6 +2797,10 @@
  
 ---------
 
+ 
+### Current School Or Work Situation Description
+
+
  ```d8```
 
 **Description/Question:** Which one of the following statements best describes your work or school situation currently? (CLARIFY AND CODE) [For D8, include work under the table but not any other illegal work or income]
@@ -2046,6 +2812,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13
  
 ---------
+
+ 
+### Number Of Days Worked
+
 
  ```d8a```
 
@@ -2059,6 +2829,10 @@
  
 ---------
 
+ 
+### Days Per Week Worked
+
+
  ```d8b```
 
 **Description/Question:** During the past xx days (since last assessment), how many days per week do you typically work?
@@ -2070,6 +2844,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15
  
 ---------
+
+ 
+### Hours Per Week Worked
+
 
  ```d8b1```
 
@@ -2083,6 +2861,10 @@
  
 ---------
 
+ 
+### Hourly Rate
+
+
  ```d8c```
 
 **Description/Question:** During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]
@@ -2094,6 +2876,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17
  
 ---------
+
+ 
+### Health Insurance From Work
+
 
  ```d8d_health_insurance```
 
@@ -2107,6 +2893,10 @@
  
 ---------
 
+ 
+### Paid Time Off From Work
+
+
  ```d8d_paid_time_off```
 
 **Description/Question:** [Paid time off] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
@@ -2118,6 +2908,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19
  
 ---------
+
+ 
+### Benefit Or Pension Plan From Work
+
 
  ```d8d_benefit_plan```
 
@@ -2131,6 +2925,10 @@
  
 ---------
 
+ 
+### Retirement Plan From Work
+
+
  ```d8d_retirement_plan```
 
 **Description/Question:** [An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)
@@ -2143,6 +2941,10 @@
  
 ---------
 
+ 
+### Occupation
+
+
  ```d8e```
 
 **Description/Question:** What is your occupation?
@@ -2152,6 +2954,10 @@
 **Possible values:** Any of the fields type and other constraints
  
 ---------
+
+ 
+### Currently Covered By Health Insurance
+
 
  ```d9```
 
@@ -2165,6 +2971,10 @@
  
 ---------
 
+ 
+### Private Health Insurance Plan Coverage
+
+
  ```d9a_private```
 
 **Description/Question:** [Private health insurance] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2176,6 +2986,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23
  
 ---------
+
+ 
+### Medicare Plan Coverage
+
 
  ```d9a_medicare```
 
@@ -2189,6 +3003,10 @@
  
 ---------
 
+ 
+### Medigap Plan Coverage
+
+
  ```d9a_medigap```
 
 **Description/Question:** [Medigap] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2200,6 +3018,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25
  
 ---------
+
+ 
+### Medicaid Plan Coverage
+
 
  ```d9a_medicaid```
 
@@ -2213,6 +3035,10 @@
  
 ---------
 
+ 
+### Children'S Health Insurance Coverage
+
+
  ```d9a_schip```
 
 **Description/Question:** [SCHIP (CHIP/Children’s Health Insurance Program)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2224,6 +3050,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27
  
 ---------
+
+ 
+### Military Plan Coverage
+
 
  ```d9a_military```
 
@@ -2237,6 +3067,10 @@
  
 ---------
 
+ 
+### Indian Health Service Coverage
+
+
  ```d9a_indian```
 
 **Description/Question:** [Indian Health Service] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2248,6 +3082,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29
  
 ---------
+
+ 
+### State Health Coverage
+
 
  ```d9a_state```
 
@@ -2261,6 +3099,10 @@
  
 ---------
 
+ 
+### Other Government Coverage
+
+
  ```d9a_other_government```
 
 **Description/Question:** [Other government program] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2272,6 +3114,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31
  
 ---------
+
+ 
+### Single Service Coverage
+
 
  ```d9a_single_service```
 
@@ -2285,6 +3131,10 @@
  
 ---------
 
+ 
+### Don'T Know About Coverage
+
+
  ```d9a_dont_know```
 
 **Description/Question:** [Don’t know] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]
@@ -2296,6 +3146,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33
  
 ---------
+
+ 
+### Days Uninsured
+
 
  ```d10```
 
@@ -2309,6 +3163,10 @@
  
 ---------
 
+ 
+### Number Of Days At Self Help Group
+
+
  ```d11a```
 
 **Description/Question:** [Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
@@ -2320,6 +3178,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35
  
 ---------
+
+ 
+### Number Of Days At Non-Alcoholic, Structured Activities
+
 
  ```d11b```
 
@@ -2333,6 +3195,10 @@
  
 ---------
 
+ 
+### Number Of Days Being Homeless
+
+
  ```d11c```
 
 **Description/Question:** [Been homeless or had to stay with someone else to avoid being homeless? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
@@ -2344,6 +3210,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37
  
 ---------
+
+ 
+### Number Of Days In Homeless Shelter
+
 
  ```d11d```
 
@@ -2357,6 +3227,10 @@
  
 ---------
 
+ 
+### Number Of Days In Household With Alcohol Use
+
+
  ```d11e```
 
 **Description/Question:** [Lived where other people were using alcohol? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
@@ -2368,6 +3242,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39
  
 ---------
+
+ 
+### Number Of Days In Household With Drug Use
+
 
  ```d11f```
 
@@ -2381,6 +3259,10 @@
  
 ---------
 
+ 
+### Number Of Days Of Formal Activities With Alcohol
+
+
  ```d11g```
 
 **Description/Question:** [Been to formal activities where people were using alcohol or drugs?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
@@ -2392,6 +3274,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41
  
 ---------
+
+ 
+### Number Of Days Of Home Or Family Trouble
+
 
  ```d11h```
 
@@ -2405,6 +3291,10 @@
  
 ---------
 
+ 
+### Number Of Days Of  Abusive Behavior In Arguments
+
+
  ```d11i```
 
 **Description/Question:** [Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]
@@ -2416,6 +3306,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43
  
 ---------
+
+ 
+### Number Of Days Being Physically, Emotionally, Sexually Abused
+
 
  ```d11j```
 
@@ -2429,6 +3323,10 @@
  
 ---------
 
+ 
+### Received Narcan Kit
+
+
  ```o3```
 
 **Description/Question:** [At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (“Narcan kit”) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]] If respondent was in jail/prison during the past 3 months but not currently, ask:
@@ -2441,6 +3339,10 @@
  
 ---------
 
+ 
+### Used Narcan Kit
+
+
  ```o3a```
 
 **Description/Question:** [Have you had to use it?] If respondent was in jail/prison during the past 3 months but not currently, ask:
@@ -2452,6 +3354,10 @@
 **Notes:** The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46
  
 ---------
+
+ 
+### Refilled Narcan Kit
+
 
  ```o3b```
 
@@ -2472,6 +3378,10 @@
  
 ---------
 
+ 
+### Difficulty With Chores And House Keeping
+
+
  ```p1a```
 
 **Description/Question:** [... do chores such as sweeping, mopping, janitorial work or other house cleaning work] In the past 7 days I was able to . . .
@@ -2481,6 +3391,10 @@
 **Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
  
 ---------
+
+ 
+### Difficulty Using Stairs
+
 
  ```p1b```
 
@@ -2492,6 +3406,10 @@
  
 ---------
 
+ 
+### Difficulty Walking
+
+
  ```p1c```
 
 **Description/Question:** [...walk around for at least 15 minutes] In the past 7 days I was able to . . .
@@ -2501,6 +3419,10 @@
 **Possible values:** Without any difficulty, With a little difficulty,  With some difficulty, With much difficulty, Unable to do
  
 ---------
+
+ 
+### Difficulty Traveling
+
 
  ```p1d```
 
@@ -2512,6 +3434,10 @@
  
 ---------
 
+ 
+### Trouble With Leisure Activities With Others
+
+
  ```p2a```
 
 **Description/Question:** [...I had trouble doing all of my regular leisure activities with others ] In the past 7 days…
@@ -2521,6 +3447,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Trouble With Family Activities
+
 
  ```p2b```
 
@@ -2532,6 +3462,10 @@
  
 ---------
 
+ 
+### Trouble With Work
+
+
  ```p2c```
 
 **Description/Question:** [...I had trouble doing all of my usual work (include work at home) ] In the past 7 days…
@@ -2541,6 +3475,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Trouble With Activities With Friends
+
 
  ```p2d```
 
@@ -2552,6 +3490,10 @@
  
 ---------
 
+ 
+### Feeling Fearful
+
+
  ```p3a```
 
 **Description/Question:** [...I felt fearful] In the past 7 days…
@@ -2561,6 +3503,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Feeling Hard To Focus On Anything Other Than Anxiety
+
 
  ```p3b```
 
@@ -2572,6 +3518,10 @@
  
 ---------
 
+ 
+### Feeling Overwhelming Worry
+
+
  ```p3c```
 
 **Description/Question:** [...My worries overwhelmed me] In the past 7 days…
@@ -2581,6 +3531,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Feeling Uneasy
+
 
  ```p3d```
 
@@ -2592,6 +3546,10 @@
  
 ---------
 
+ 
+### Feeling Worthless
+
+
  ```p4a```
 
 **Description/Question:** [...I felt worthless] In the past 7 days…
@@ -2601,6 +3559,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Feeling Helpless
+
 
  ```p4b```
 
@@ -2612,6 +3574,10 @@
  
 ---------
 
+ 
+### Feeling Depressed
+
+
  ```p4c```
 
 **Description/Question:** [...I felt depressed] In the past 7 days…
@@ -2621,6 +3587,10 @@
 **Possible values:** Never,Rarely,Sometimes,Often,Always
  
 ---------
+
+ 
+### Feeling Hopeless
+
 
  ```p4d```
 
@@ -2632,6 +3602,10 @@
  
 ---------
 
+ 
+### Feeling Fatigued
+
+
  ```p5a```
 
 **Description/Question:** [...I felt fatigued] In the past 7 days…
@@ -2641,6 +3615,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Trouble Starting Things Because Tired
+
 
  ```p5b```
 
@@ -2652,6 +3630,10 @@
  
 ---------
 
+ 
+### Feeling Run-Down
+
+
  ```p5c```
 
 **Description/Question:** […how run-down did you feel on average? ] In the past 7 days…
@@ -2661,6 +3643,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Fatigue Level
+
 
  ```p5d```
 
@@ -2672,6 +3658,10 @@
  
 ---------
 
+ 
+### Sleep Quality
+
+
  ```p6a```
 
 **Description/Question:** [...my sleep quality was] In the past 7 days…
@@ -2681,6 +3671,10 @@
 **Possible values:** Very poor,Poor,Fair,Good,Very good
  
 ---------
+
+ 
+### Refreshing Sleep
+
 
  ```p6b```
 
@@ -2692,6 +3686,10 @@
  
 ---------
 
+ 
+### Sleep Problems
+
+
  ```p6c```
 
 **Description/Question:** [...I had problems with my sleep] In the past 7 days…
@@ -2701,6 +3699,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Difficulty Falling Asleep
+
 
  ```p6d```
 
@@ -2712,6 +3714,10 @@
  
 ---------
 
+ 
+### Concentration
+
+
  ```p7a```
 
 **Description/Question:** [...I have been able to concentrate ] In the past 7 days…
@@ -2721,6 +3727,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Remembering Things
+
 
  ```p7b```
 
@@ -2732,6 +3742,10 @@
  
 ---------
 
+ 
+### Pain Interference With Day To Day Activity
+
+
  ```p8a```
 
 **Description/Question:** [...How much did pain interfere with your day to day activities? ] In the past 7 days…
@@ -2741,6 +3755,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Pain Inteference With Home Work
+
 
  ```p8b```
 
@@ -2752,6 +3770,10 @@
  
 ---------
 
+ 
+### Pain Interference With Social Activities
+
+
  ```p8c```
 
 **Description/Question:** [...How much did pain interfere with your ability to participate in social activities? ] In the past 7 days…
@@ -2762,6 +3784,10 @@
  
 ---------
 
+ 
+### Pain Interference With Household Chores
+
+
  ```p8d```
 
 **Description/Question:** [...How much did pain interfere with your household chores? ] In the past 7 days…
@@ -2771,6 +3797,10 @@
 **Possible values:** Not at all,A little bit,Somewhat,Quite a bit,Very much
  
 ---------
+
+ 
+### Pain Intensity Rating
+
 
  ```p9```
 
@@ -2789,6 +3819,10 @@
  
 ---------
 
+ 
+### Multiple Sex Partners
+
+
  ```r1a```
 
 **Description/Question:** […had two or more sex partners during the same time period?] When was the last time you…
@@ -2800,6 +3834,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Unprotected Sex
+
 
  ```r1b```
 
@@ -2813,6 +3851,10 @@
  
 ---------
 
+ 
+### Alcohol And Drug Intoxication
+
+
  ```r1c```
 
 **Description/Question:** […had sex while you or your partner was intoxicated from alcohol or other drugs?] When was the last time you…
@@ -2824,6 +3866,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Drug Injection With Needle
+
 
  ```r1d```
 
@@ -2837,6 +3883,10 @@
  
 ---------
 
+ 
+### Attacked With Weapon
+
+
  ```r1g```
 
 **Description/Question:** […were attacked with a weapon, including a gun, knife, stick, bottle or other weapon?] When was the last time you…
@@ -2848,6 +3898,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Physical Abuse
+
 
  ```r1h```
 
@@ -2861,6 +3915,10 @@
  
 ---------
 
+ 
+### Sexually Abused
+
+
  ```r1j```
 
 **Description/Question:** […were sexually abused, where someone pressured or forced you to participate in sexual acts against your will, including your regular sex partner, a family member or friend?] When was the last time you…
@@ -2872,6 +3930,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Emotionally Abused
+
 
  ```r1k```
 
@@ -2885,6 +3947,10 @@
  
 ---------
 
+ 
+### Physically, Sexually, Or Emotionally Abused
+
+
  ```r1m```
 
 **Description/Question:** […were physically, sexual or emotionally abused several times or over a long period of time?] When was the last time you…
@@ -2896,6 +3962,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Afraid For Life Or Serious Injury From Abuse
+
 
  ```r1n```
 
@@ -2909,6 +3979,10 @@
  
 ---------
 
+ 
+### Distressed/Upset About Past
+
+
  ```r2a```
 
 **Description/Question:** […became very distressed and upset when something reminded you of the past?] When was the last time you. . .
@@ -2920,6 +3994,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Suicidal Thoughts
+
 
  ```r2b```
 
@@ -2933,6 +4011,10 @@
  
 ---------
 
+ 
+### Hiv/Aids
+
+
  ```r3a```
 
 **Description/Question:** [Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by a doctor or nurse that you had…
@@ -2944,6 +4026,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Hepatitis C
+
 
  ```r3b```
 
@@ -2957,6 +4043,10 @@
  
 ---------
 
+ 
+### Hepatitis B
+
+
  ```r3c```
 
 **Description/Question:** [Hepatitis B? ] Were you ever told by a doctor or nurse that you had…
@@ -2968,6 +4058,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Other Sexually Transmitted Diseases
+
 
  ```r3d```
 
@@ -2981,6 +4075,10 @@
  
 ---------
 
+ 
+### Tuberculosis
+
+
  ```r3e```
 
 **Description/Question:** [Tuberculosis or TB?] Were you ever told by a doctor or nurse that you had…
@@ -2992,6 +4090,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### Covid
+
 
  ```r3f```
 
@@ -3005,6 +4107,10 @@
  
 ---------
 
+ 
+### First Diagnosis Of Hiv/Aids
+
+
  ```r3a_first_dx```
 
 **Description/Question:** [Human Immunodeficiency Virus, HIV or AIDS?] If yes, when were you FIRST diagnosed?
@@ -3016,6 +4122,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### First Diagnosis Of Hepatitis C
+
 
  ```r3b_first_dx```
 
@@ -3029,6 +4139,10 @@
  
 ---------
 
+ 
+### First Diagnosis Of Hepatitis B
+
+
  ```r3c_first_dx```
 
 **Description/Question:** [Hepatitis B? ] If yes, when were you FIRST diagnosed?
@@ -3040,6 +4154,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### First Diagnosis Of Other Stds
+
 
  ```r3d_first_dx```
 
@@ -3053,6 +4171,10 @@
  
 ---------
 
+ 
+### First Diagnosis Of Tuberculosis
+
+
  ```r3e_first_dx```
 
 **Description/Question:** [Tuberculosis or TB?] If yes, when were you FIRST diagnosed?
@@ -3064,6 +4186,10 @@
 **Notes:** RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)
  
 ---------
+
+ 
+### First Diagnosis Of Covid
+
 
  ```r3f_first_dx```
 
