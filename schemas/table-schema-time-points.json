@@ -30,11 +30,11 @@
         {
             "name": "shifted_visit_dt",
             "title": "Visit Date (shifted)",
-            "type": "integer",
+            "type": "date",
+            "format": "%Y%m%d",
             "description": "This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer",
             "constraints": {
-                "required": true,
-                "pattern": "[0-9]{8}"
+                "required": true
             },
             "custom": {}
         },
@@ -1213,15 +1213,15 @@
         {
             "name": "j3e",
             "title": "Current jail or prison",
-            "type": "string",
+            "type": "boolean",
             "description": "Are you currently in jail or prison? (CAN MARK IF OBVIOUS)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "MBK: added Unknown to satisfy a small amount of respondents for one hub.",
                 "jcoin:core_measure_section": "Justice Involvement",
@@ -1335,10 +1335,11 @@
         {
             "name": "j5c_years",
             "title": "Lifetime years in detention, jail, or prison time",
-            "type": "integer",
+            "type": "number",
             "description": "[...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime\u2026",
             "constraints": {},
             "custom": {
+                "notes": "MBK: changed from integer to number to allow partial years/months",
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:core_measure_question": "...how much total time have you spent in detention, jail or prison during your lifetime?",
@@ -1348,10 +1349,11 @@
         {
             "name": "j5c_months",
             "title": "Lifetime months in detention, jail, or prison time",
-            "type": "integer",
+            "type": "number",
             "description": "[...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime\u2026",
             "constraints": {},
             "custom": {
+                "notes": "MBK: changed from integer to number to allow partial years/months",
                 "jcoin:core_measure_section": "Justice Involvement",
                 "jcoin:core_measure_subsection_text": "During your lifetime\u2026",
                 "jcoin:core_measure_question": "...how much total time have you spent in detention, jail or prison during your lifetime?",
@@ -1491,14 +1493,15 @@
         {
             "name": "u6a",
             "title": "Primary care visit reason: Alcohol/drug use",
-            "type": "string",
+            "type": "boolean",
             "description": "[Alcohol or other drug use?] Why did you visit a primary care provider? (ADD SKIP LOGIC)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Utilization of Services",
                 "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
@@ -1509,14 +1512,15 @@
         {
             "name": "u6b",
             "title": "Primary care visit reason: Mental health",
-            "type": "string",
+            "type": "boolean",
             "description": "[Mental health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Utilization of Services",
                 "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
@@ -1527,14 +1531,15 @@
         {
             "name": "u6c",
             "title": "Primary care visit reason:  Physical health",
-            "type": "string",
+            "type": "boolean",
             "description": "[Physical health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Utilization of Services",
                 "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
@@ -1545,14 +1550,15 @@
         {
             "name": "u6d",
             "title": "Primary care visit reason:  Some other reason (specify)",
-            "type": "string",
+            "type": "boolean",
             "description": "[Some other reason?] Why did you visit a primary care provider? (ADD SKIP LOGIC)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Utilization of Services",
                 "jcoin:core_measure_subsection_text": "Why did you visit a primary care provider? (ADD SKIP LOGIC)",
@@ -1734,15 +1740,15 @@
         {
             "name": "u14",
             "title": "Substance use treatment",
-            "type": "string",
+            "type": "boolean",
             "description": "Have you received any substance use treatment in the past xx days (since last assessment)?",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Utilization of Services",
                 "jcoin:core_measure_question": "Have you received any substance use treatment in the past xx days (since last assessment)?",
@@ -1757,8 +1763,8 @@
             "constraints": {
                 "enum": [
                     "Strongly agree",
-                    " Somewhat agree",
-                    " Neutral",
+                    "Somewhat agree",
+                    "Neutral",
                     "Somewhat disagree",
                     "Strongly disagree"
                 ]
@@ -1778,8 +1784,8 @@
             "constraints": {
                 "enum": [
                     "Strongly agree",
-                    " Somewhat agree",
-                    " Neutral",
+                    "Somewhat agree",
+                    "Neutral",
                     "Somewhat disagree",
                     "Strongly disagree"
                 ]
@@ -1799,8 +1805,8 @@
             "constraints": {
                 "enum": [
                     "Strongly agree",
-                    " Somewhat agree",
-                    " Neutral",
+                    "Somewhat agree",
+                    "Neutral",
                     "Somewhat disagree",
                     "Strongly disagree"
                 ]
@@ -1820,8 +1826,8 @@
             "constraints": {
                 "enum": [
                     "Strongly agree",
-                    " Somewhat agree",
-                    " Neutral",
+                    "Somewhat agree",
+                    "Neutral",
                     "Somewhat disagree",
                     "Strongly disagree"
                 ]
@@ -1841,8 +1847,8 @@
             "constraints": {
                 "enum": [
                     "Strongly agree",
-                    " Somewhat agree",
-                    " Neutral",
+                    "Somewhat agree",
+                    "Neutral",
                     "Somewhat disagree",
                     "Strongly disagree"
                 ]
@@ -2087,11 +2093,11 @@
             "constraints": {
                 "enum": [
                     "Less than $12,500",
-                    "$12,500 - $20,000 ",
-                    "$20,001 - $30,000 ",
-                    "$30,001 - $40,000 ",
-                    "$40,001 \u2013 $50,000 ",
-                    "$50,001 - $100,000 ",
+                    "$12,500 - $20,000",
+                    "$20,001 - $30,000",
+                    "$30,001 - $40,000",
+                    "$40,001 \u2013 $50,000",
+                    "$50,001 - $100,000",
                     "More than $100,000"
                 ]
             },
@@ -2157,15 +2163,15 @@
         {
             "name": "d7f1",
             "title": "Non-employment income with risk of legal or other trouble",
-            "type": "string",
+            "type": "boolean",
             "description": "[During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others.",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Refused to answer"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11",
                 "jcoin:core_measure_section": "Demographics",
@@ -2268,15 +2274,15 @@
         {
             "name": "d8d_health_insurance",
             "title": "Health insurance from work",
-            "type": "string",
+            "type": "boolean",
             "description": "[Health Insurance] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't Know"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18",
                 "jcoin:core_measure_section": "Demographics",
@@ -2287,15 +2293,15 @@
         {
             "name": "d8d_paid_time_off",
             "title": "Paid time off from work",
-            "type": "string",
+            "type": "boolean",
             "description": "[Paid time off] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't Know"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19",
                 "jcoin:core_measure_section": "Demographics",
@@ -2306,15 +2312,15 @@
         {
             "name": "d8d_benefit_plan",
             "title": "Benefit or pension plan from work",
-            "type": "string",
+            "type": "boolean",
             "description": "[Defined benefit plan or pension] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't Know"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20",
                 "jcoin:core_measure_section": "Demographics",
@@ -2325,15 +2331,15 @@
         {
             "name": "d8d_retirement_plan",
             "title": "Retirement plan from work",
-            "type": "string",
+            "type": "boolean",
             "description": "[An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't Know"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21",
                 "jcoin:core_measure_section": "Demographics",
@@ -2344,10 +2350,17 @@
         {
             "name": "d8e",
             "title": "Occupation",
-            "type": "string",
+            "type": "boolean",
             "description": "What is your occupation?",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22",
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "What is your occupation?"
             }
@@ -2357,9 +2370,15 @@
             "title": "Currently covered by health insurance",
             "type": "boolean",
             "description": "Are you currently covered by health insurance or some other kind of health care plan?",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
-                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22",
+                "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23",
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "Are you currently covered by health insurance or some other kind of health care plan?"
             }
@@ -2369,6 +2388,12 @@
             "title": "Private health insurance plan coverage",
             "type": "boolean",
             "description": "[Private health insurance] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23",
@@ -2382,6 +2407,12 @@
             "title": "Medicare plan coverage",
             "type": "boolean",
             "description": "[Medicare] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24",
@@ -2395,6 +2426,12 @@
             "title": "Medigap plan coverage",
             "type": "boolean",
             "description": "[Medigap] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25",
@@ -2408,6 +2445,12 @@
             "title": "Medicaid plan coverage",
             "type": "boolean",
             "description": "[Medicaid ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26",
@@ -2421,6 +2464,12 @@
             "title": "Children's Health Insurance coverage",
             "type": "boolean",
             "description": "[SCHIP (CHIP/Children\u2019s Health Insurance Program)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27",
@@ -2434,6 +2483,12 @@
             "title": "Military plan coverage",
             "type": "boolean",
             "description": "[Military Health Care (Tricare/VA/CHAMP-VA)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28",
@@ -2447,6 +2502,12 @@
             "title": "Indian Health Service coverage",
             "type": "boolean",
             "description": "[Indian Health Service] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29",
@@ -2460,6 +2521,12 @@
             "title": "State health coverage",
             "type": "boolean",
             "description": "[State-Sponsored Health Plan ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30",
@@ -2473,6 +2540,12 @@
             "title": "Other government coverage",
             "type": "boolean",
             "description": "[Other government program] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31",
@@ -2486,6 +2559,12 @@
             "title": "Single service coverage",
             "type": "boolean",
             "description": "[Single service plan (e.g., dental, vision, prescriptions)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32",
@@ -2499,6 +2578,12 @@
             "title": "Don't know about coverage",
             "type": "boolean",
             "description": "[Don\u2019t know] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33",
@@ -2652,15 +2737,15 @@
         {
             "name": "o3",
             "title": "Received Narcan kit",
-            "type": "string",
+            "type": "boolean",
             "description": "[At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (\u201cNarcan kit\u201d) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]] If respondent was in jail/prison during the past 3 months but not currently, ask:",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "n/a not recently incarcerated"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45",
                 "jcoin:core_measure_section": "Demographics",
@@ -2673,6 +2758,12 @@
             "title": "Used Narcan Kit",
             "type": "boolean",
             "description": "[Have you had to use it?] If respondent was in jail/prison during the past 3 months but not currently, ask:",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46",
@@ -2686,6 +2777,12 @@
             "title": "Refilled Narcan Kit",
             "type": "boolean",
             "description": "[Have you obtained a refill/replacement kit?] If respondent was in jail/prison during the past 3 months but not currently, ask:",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47",
@@ -2702,10 +2799,10 @@
             "constraints": {
                 "enum": [
                     "Without any difficulty",
-                    " With a little difficulty",
-                    "  With some difficulty",
-                    " With much difficulty",
-                    " Unable to do"
+                    "With a little difficulty",
+                    "With some difficulty",
+                    "With much difficulty",
+                    "Unable to do"
                 ]
             },
             "custom": {
@@ -2723,10 +2820,10 @@
             "constraints": {
                 "enum": [
                     "Without any difficulty",
-                    " With a little difficulty",
-                    "  With some difficulty",
-                    " With much difficulty",
-                    " Unable to do"
+                    "With a little difficulty",
+                    "With some difficulty",
+                    "With much difficulty",
+                    "Unable to do"
                 ]
             },
             "custom": {
@@ -2744,10 +2841,10 @@
             "constraints": {
                 "enum": [
                     "Without any difficulty",
-                    " With a little difficulty",
-                    "  With some difficulty",
-                    " With much difficulty",
-                    " Unable to do"
+                    "With a little difficulty",
+                    "With some difficulty",
+                    "With much difficulty",
+                    "Unable to do"
                 ]
             },
             "custom": {
@@ -2765,10 +2862,10 @@
             "constraints": {
                 "enum": [
                     "Without any difficulty",
-                    " With a little difficulty",
-                    "  With some difficulty",
-                    " With much difficulty",
-                    " Unable to do"
+                    "With a little difficulty",
+                    "With some difficulty",
+                    "With much difficulty",
+                    "Unable to do"
                 ]
             },
             "custom": {
@@ -3616,15 +3713,15 @@
         {
             "name": "r3a",
             "title": "HIV/AIDS",
-            "type": "string",
+            "type": "boolean",
             "description": "[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3635,15 +3732,15 @@
         {
             "name": "r3b",
             "title": "Hepatitis C",
-            "type": "string",
+            "type": "boolean",
             "description": "[Hepatitis C? ] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3654,15 +3751,15 @@
         {
             "name": "r3c",
             "title": "Hepatitis B",
-            "type": "string",
+            "type": "boolean",
             "description": "[Hepatitis B? ] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3673,15 +3770,15 @@
         {
             "name": "r3d",
             "title": "Other sexually transmitted diseases",
-            "type": "string",
+            "type": "boolean",
             "description": "[Other sexually transmitted diseases or infections, such as syphilis.] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3692,15 +3789,15 @@
         {
             "name": "r3e",
             "title": "Tuberculosis",
-            "type": "string",
+            "type": "boolean",
             "description": "[Tuberculosis or TB?] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3711,15 +3808,15 @@
         {
             "name": "r3f",
             "title": "COVID",
-            "type": "string",
+            "type": "boolean",
             "description": "[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse that you had\u2026",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Don't recall"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
                 "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -3871,10 +3968,29 @@
         "visit_number"
     ],
     "missingValues": [
-        "NaN",
-        "NA",
         "",
-        "."
+        "-3",
+        "-4",
+        "-6",
+        "-7",
+        "-8",
+        "-9",
+        "-10",
+        "-11",
+        "-12",
+        "-13",
+        "-14",
+        "NotAsked",
+        "Missing",
+        "Confidential",
+        "Refused",
+        "DontKnow",
+        "LegitimatelySkipped",
+        "Refused to answer",
+        "n/a not recently incarcerated",
+        "Don't recall",
+        "Don't Know",
+        "Do not know"
     ],
     "description": "Time point Fields: Measures collected at all time points (baseline and follow ups)"
 }
