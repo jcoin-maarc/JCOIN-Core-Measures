@@ -62,8 +62,8 @@ with pd.ExcelWriter('data_dictionaries/jcoin_core_measure_data_dictionaries.xlsx
 
         dd = pd.DataFrame(make_dd_from_yaml(f))
         subsection = dd['Variable Name'].str.extract('(^[a-z][1-9]{1,2})')[0]
-        dd.insert(2,'Core Measure Subsection',subsection)
-        dd.to_csv('data_dictionaries/'+file_path+".tsv",sep='\t')
+        #dd.insert(2,'Core Measure Subsection',subsection)
+        dd.to_csv('data_dictionaries/'+file_path+".tsv",sep='\t',index=False)
         dd.to_excel(
             writer,
             sheet_name=sheet_name,
