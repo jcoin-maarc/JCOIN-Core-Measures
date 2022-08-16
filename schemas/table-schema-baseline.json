@@ -66,6 +66,37 @@
             }
         },
         {
+            "name": "d1",
+            "title": "Birth date",
+            "type": "date",
+            "description": "What is your birth date?",
+            "constraints": {},
+            "custom": {}
+        },
+        {
+            "name": "d1a",
+            "title": "Age",
+            "type": "integer",
+            "description": "About how old are you? (top coded at 90)",
+            "constraints": {},
+            "custom": {}
+        },
+        {
+            "name": "o1",
+            "title": "Sex at birth",
+            "type": "string",
+            "description": "What sex was originally listed on your birth certificate?",
+            "constraints": {
+                "enum": [
+                    "Male",
+                    "Female",
+                    "Decline to answer",
+                    "Something else"
+                ]
+            },
+            "custom": {}
+        },
+        {
             "name": "o2",
             "title": "Gender Identity",
             "type": "string",
@@ -344,9 +375,9 @@
             "constraints": {
                 "enum": [
                     "Never been pregnant",
-                    "Currenly pregnant",
-                    "Previously pregnant,had a child",
-                    "Previously pregnant,did not have a child",
+                    "Currently pregnant",
+                    "Previously pregnant, had a child",
+                    "Previously pregnant, did not have a child",
                     "Not applicable",
                     "Don't know"
                 ]
@@ -385,8 +416,8 @@
             "description": "Are you currently living as married with a romantic partner?",
             "constraints": {
                 "enum": [
-                    "Yes,I am living as married with partner",
-                    "No,I am not living as married with partner"
+                    "Yes, I am living as married with partner",
+                    "No, I am not living as married with partner"
                 ]
             },
             "custom": {

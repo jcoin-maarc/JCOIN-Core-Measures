@@ -166,17 +166,17 @@ if __name__ == "__main__":
         tbl_schema_dict["description"] = schema_description
         validate_report = validate_schema(tbl_schema_dict)
 
-        #write table schema dictionary to YAML file
-        yaml_dir = os.path.join('schemas', f"{schema_path}.yaml")
-        if validate_report.metadata_valid:
-            with open(yaml_dir, "w") as f:
-                yaml.safe_dump(tbl_schema_dict, f)
-        else:
-            print("Schema not valid due to these errors:")
-            print("\n".join(validate_report["errors"]))
-            sys.exit()
+        # #write table schema dictionary to YAML file
+        # yaml_dir = os.path.join('schemas', f"{schema_path}.yaml")
+        # if validate_report.metadata_valid:
+        #     with open(yaml_dir, "w") as f:
+        #         yaml.safe_dump(tbl_schema_dict, f)
+        # else:
+        #     print("Schema not valid due to these errors:")
+        #     print("\n".join(validate_report["errors"]))
+        #     sys.exit()
 
-
+        # write table schema to JSON file
         json_dir = os.path.join('schemas', f"{schema_path}.json")
         if validate_report.metadata_valid:
             with open(json_dir, "w") as f:

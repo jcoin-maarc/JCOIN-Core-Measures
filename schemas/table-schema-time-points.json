@@ -30,7 +30,7 @@
         {
             "name": "shifted_visit_dt",
             "title": "Visit Date (shifted)",
-            "type": "integer",
+            "type": "date",
             "description": "This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer",
             "constraints": {
                 "required": true,
