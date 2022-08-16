@@ -17,6 +17,7 @@ from collections.abc import Iterable
 
 #need to make sure dtypes are consistent with schema specs
 #https://specs.frictionlessdata.io/table-schema/#types-and-formats
+# TODO: take directly from table schema spec on frictionless
 dtypes_columns = {
     "required":bool,
     "maxLength":int,
@@ -88,8 +89,10 @@ def format_table_schema_df(
         _combine_cols_into_dict)
     tbl_schema_df["custom"] = custom
     # combine constraint columns
-    ## convert enum to list
+    ## convert enum and boolean true/false fields to list (are arrays)
     tbl_schema_df['enum'].update(tbl_schema_df['enum'].apply( _split_if_str))
+    tbl_schema_df['trueValues'].update(tbl_schema_df['trueValues'].apply( _split_if_str))
+    tbl_schema_df['falseValues'].update(tbl_schema_df['falseValues'].apply( _split_if_str))
     constraints = tbl_schema_df[constraint_columns].pipe(
         _combine_cols_into_dict
     )
