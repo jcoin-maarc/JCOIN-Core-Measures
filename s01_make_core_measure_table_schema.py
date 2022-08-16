@@ -67,8 +67,13 @@ def format_table_schema_df(
         return df.apply(lambda x: x.dropna().to_dict(),axis='columns')
     
     def _split_if_str(s,delimiter='|'):
+        ''' 
+        converts a string to a list if it is a string.
+        Also strips leading and trailing white space
+        in this list 
+        '''
         if type(s) is str:
-            return s.split(delimiter)
+            return [x.lstrip().rstrip() for x in s.split(delimiter)]
         else:
             return None
 
