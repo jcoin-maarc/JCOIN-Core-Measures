@@ -69,6 +69,7 @@
             "name": "d1",
             "title": "Birth date",
             "type": "date",
+            "format": "%Y%m%d",
             "description": "What is your birth date?",
             "constraints": {},
             "custom": {}
@@ -148,15 +149,16 @@
         {
             "name": "d3_white",
             "title": "Race: White",
-            "type": "string",
+            "type": "boolean",
             "description": "[White] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -171,15 +173,16 @@
         {
             "name": "d3_black",
             "title": "Race: Black or African American",
-            "type": "string",
+            "type": "boolean",
             "description": "[Black or African American] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -194,15 +197,16 @@
         {
             "name": "d3_american_indian",
             "title": "Race: American Indian or Alaska Native",
-            "type": "string",
+            "type": "boolean",
             "description": "[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -217,15 +221,16 @@
         {
             "name": "d3_hawaiian",
             "title": "Race: Native Hawaiian or Other Pacific Islander",
-            "type": "string",
+            "type": "boolean",
             "description": "[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -240,15 +245,16 @@
         {
             "name": "d3_asian",
             "title": "Race: Asian",
-            "type": "string",
+            "type": "boolean",
             "description": "[Asian] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -263,15 +269,16 @@
         {
             "name": "d3_other",
             "title": "Race: Other",
-            "type": "string",
+            "type": "boolean",
             "description": "[Other] What is your race? SELECT ALL THAT APPLY",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -318,15 +325,16 @@
         {
             "name": "d2",
             "title": "Hispanic, Latino, or Spanish Origin",
-            "type": "string",
+            "type": "boolean",
             "description": "Are you of Hispanic, Latino, or Spanish origin?",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {
-                "required": true,
-                "enum": [
-                    "Yes",
-                    "No",
-                    "Unknown"
-                ]
+                "required": true
             },
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
@@ -477,14 +485,15 @@
         {
             "name": "u14f",
             "title": "Interviewed during incarceration",
-            "type": "string",
+            "type": "boolean",
             "description": "Interview conducted with participant during incarceration?",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Interview conducted with participant during incarceration?",
@@ -506,14 +515,15 @@
         {
             "name": "u15",
             "title": "Medication ever prescribed for opioid use disorder?",
-            "type": "string",
+            "type": "boolean",
             "description": "Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)",
-            "constraints": {
-                "enum": [
-                    "Yes",
-                    "No"
-                ]
-            },
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
+            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)",
@@ -621,10 +631,29 @@
         "jdc_person_id"
     ],
     "missingValues": [
-        "NaN",
-        "NA",
         "",
-        "."
+        "-3",
+        "-4",
+        "-6",
+        "-7",
+        "-8",
+        "-9",
+        "-10",
+        "-11",
+        "-12",
+        "-13",
+        "-14",
+        "NotAsked",
+        "Missing",
+        "Confidential",
+        "Refused",
+        "DontKnow",
+        "LegitimatelySkipped",
+        "Refused to answer",
+        "n/a not recently incarcerated",
+        "Don't recall",
+        "Don't Know",
+        "Do not know"
     ],
     "description": "Baseline Fields: Measures collected only at baseline "
 }
