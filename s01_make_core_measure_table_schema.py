@@ -22,6 +22,7 @@ dtypes_columns = {
     "maxLength":int,
     "pattern":str,
     'enum':list,
+    'format':str
 }
 
 
@@ -38,7 +39,9 @@ def format_table_schema_df(
     tbl_schema_df,
     regex_of_custom_fields="^jcoin:|notes|^heal:",
     constraint_columns=['required','maxLength','pattern','required','enum'],
-    fields=["name", "title","type", "description", "constraints", "custom"],
+    fields=["name", "title","type","format", "description",
+        "trueValues","falseValues",
+         "constraints", "custom",],
 ):
     """
     Formats a pandas dataframe table schema based on a very specific template
@@ -157,11 +160,33 @@ if __name__ == "__main__":
             #foreign_keys = ["jdc_person_id"]
 
         #convert and format the table schema dictionary
+        consistency_codes = {
+            # from Chestnut
+            "-3":"NotAsked",
+            "-4":"Missing",
+            "-6":"Confidential",
+            "-7":"Refused",
+            "-8":"DontKnow",
+            "-9":"LegitimatelySkipped",
+            # from core measures for boolean columns
+            "-10":'Refused to answer',
+            "-11":"n/a not recently incarcerated",
+            "-12":"Don't recall",
+            "-13":"Don't Know",
+            "-14":"Do not know"
+        }
+        missing_values = (
+            [""] + 
+            list(consistency_codes.keys()) + 
+            list(consistency_codes.values())
+        )
+            
         tbl_schema_dict = convert_table_schema_df_to_dict(
             tbl_schema_df,
             table_description=schema_description,
             primary_keys=primary_keys,
             foreign_keys=foreign_keys,
+            missing_values=missing_values
         )
         tbl_schema_dict["description"] = schema_description
         validate_report = validate_schema(tbl_schema_dict)
