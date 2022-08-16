@@ -54,3 +54,10 @@ Note: In development is the interactive "codebook", the data dictionary excel fo
     upon putting all variables (besides MOUD follow up measures) into data model
 - 1.1.0: 
     added shift_visit_dt to time points data model. for human-readable data dictionaries, added the variable "title" for easier look up and reference.
+    Version 1.3.0 of schemas
+- 1.2.0
+    Major
+    - for boolean columns (and string columns with Yes/No added: added trueValues and falseValues
+    Minor
+    - added missing demographic fields
+    - corrected typos
