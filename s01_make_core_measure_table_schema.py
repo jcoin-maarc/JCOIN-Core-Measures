@@ -1,10 +1,10 @@
-''' 
+""" 
 converts a tabular flat frictionless schema
 into a YAML file after cleaning up string columns
 
 Goal of this step (rather than adding directly to a YAML)
 is to expedite creation of schema by leveraging spreadsheet view
-''' 
+"""
 
 import os
 import pandas as pd
@@ -14,16 +14,16 @@ from frictionless import validate_schema
 from collections.abc import Iterable
 
 
-
-#need to make sure dtypes are consistent with schema specs
-#https://specs.frictionlessdata.io/table-schema/#types-and-formats
+# need to make sure dtypes are consistent with schema specs
+# https://specs.frictionlessdata.io/table-schema/#types-and-formats
 # TODO: take directly from table schema spec on frictionless
 dtypes_columns = {
-    "required":bool,
-    "maxLength":int,
-    "pattern":str,
-    'enum':list,
-    'format':str
+    "required": bool,
+    "maxLength": int,
+    "pattern": str,
+    "enum": list,
+    "format": str,
+    "encodings": dict,
 }
 
 
@@ -39,10 +39,19 @@ def read_table_schema_spreadsheet(schema_path, delimiter=None):
 def format_table_schema_df(
     tbl_schema_df,
     regex_of_custom_fields="^jcoin:|notes|^heal:",
-    constraint_columns=['required','maxLength','pattern','required','enum'],
-    fields=["name", "title","type","format", "description",
-        "trueValues","falseValues",
-         "constraints", "custom",],
+    constraint_columns=["required", "maxLength", "pattern", "required", "enum"],
+    fields=[
+        "name",
+        "title",
+        "type",
+        "format",
+        "description",
+        "trueValues",
+        "falseValues",
+        "constraints",
+        "custom",
+        "encoding",
+    ],
 ):
     """
     Formats a pandas dataframe table schema based on a very specific template
@@ -64,39 +73,51 @@ def format_table_schema_df(
     -------------
     df : formatted table schema
     """
+
     def _combine_cols_into_dict(df):
-        return df.apply(lambda x: x.dropna().to_dict(),axis='columns')
-    
-    def _split_if_str(s,delimiter='|'):
-        ''' 
+        return df.apply(lambda x: x.dropna().to_dict(), axis="columns")
+
+    def _split_if_str(s, delimiter="|"):
+        """
         converts a string to a list if it is a string.
         Also strips leading and trailing white space
-        in this list 
-        '''
+        in this list
+        """
         if type(s) is str:
             return [x.lstrip().rstrip() for x in s.split(delimiter)]
         else:
             return None
 
     for cols in tbl_schema_df.columns:
-        #python 3.10 has diff string dtypes so just have to see if it has str method
-        #print(tbl_schema_df[cols].dtype)
+        # python 3.10 has diff string dtypes so just have to see if it has str method
+        # print(tbl_schema_df[cols].dtype)
         if tbl_schema_df[cols].dtype.type is str:
-            #print(cols + "is string") 
-            tbl_schema_df[cols] = tbl_schema_df[cols].str.strip().str.replace('\n',' ')
+            # print(cols + "is string")
+            tbl_schema_df[cols] = tbl_schema_df[cols].str.strip().str.replace("\n", " ")
     # combine custom columns
     custom = tbl_schema_df.filter(regex=regex_of_custom_fields).pipe(
-        _combine_cols_into_dict)
+        _combine_cols_into_dict
+    )
     tbl_schema_df["custom"] = custom
     # combine constraint columns
     ## convert enum and boolean true/false fields to list (are arrays)
-    tbl_schema_df['enum'].update(tbl_schema_df['enum'].apply( _split_if_str))
-    tbl_schema_df['trueValues'].update(tbl_schema_df['trueValues'].apply( _split_if_str))
-    tbl_schema_df['falseValues'].update(tbl_schema_df['falseValues'].apply( _split_if_str))
-    constraints = tbl_schema_df[constraint_columns].pipe(
-        _combine_cols_into_dict
+    tbl_schema_df["enum"].update(tbl_schema_df["enum"].apply(_split_if_str))
+    tbl_schema_df["trueValues"].update(tbl_schema_df["trueValues"].apply(_split_if_str))
+    tbl_schema_df["falseValues"].update(
+        tbl_schema_df["falseValues"].apply(_split_if_str)
     )
+    
+    #convert encodings to dictionary and update the encoding column
+    #assumes encoding is integer
+    encoding = tbl_schema_df['encoding']\
+        .pipe(lambda x: x.loc[x.notna()])\
+        .apply(lambda x: [x.split('=') for x in x.split('|')])\
+        .apply(lambda x: {y[0].strip():int(y[1].strip()) for y in x})
+    tbl_schema_df['encoding'].update(encoding)
+
+    constraints = tbl_schema_df[constraint_columns].pipe(_combine_cols_into_dict)
     tbl_schema_df["constraints"] = constraints  # just reformatting so update
+
     if fields:
         return tbl_schema_df[fields]
     else:
@@ -145,56 +166,55 @@ def convert_table_schema_df_to_dict(
 
     return tbl_schema_dict
 
+
 if __name__ == "__main__":
     table_schemas = {
         "Baseline Fields: Measures collected only at baseline ": "table-schema-baseline",
         "Time point Fields: Measures collected at all time points (baseline and follow ups)": "table-schema-time-points",
     }
 
-
     for schema_description, schema_path in table_schemas.items():
 
         # format the flattened tabular table schema view
-        spreadsheet_dir = os.path.join('csvs', f"{schema_path}.csv")
-        tbl_schema_df = read_table_schema_spreadsheet(spreadsheet_dir,delimiter=',').pipe(
-            format_table_schema_df
-        )
-        #tbl_schema_df.replace('\n','').to_csv(os.path.splitext(spreadsheet_dir)[0]+".tsv",sep='\t')
+        spreadsheet_dir = os.path.join("csvs", f"{schema_path}.csv")
+        tbl_schema_df = read_table_schema_spreadsheet(
+            spreadsheet_dir, delimiter=","
+        ).pipe(format_table_schema_df)
+        # tbl_schema_df.replace('\n','').to_csv(os.path.splitext(spreadsheet_dir)[0]+".tsv",sep='\t')
         if "baseline fields:" in schema_description.lower():
             primary_keys = ["jdc_person_id"]
             foreign_keys = None
         elif "time point fields:" in schema_description.lower():
             primary_keys = ["jdc_person_id", "visit_number"]
-            #foreign_keys = ["jdc_person_id"]
+            # foreign_keys = ["jdc_person_id"]
 
-        #convert and format the table schema dictionary
+        # convert and format the table schema dictionary
         consistency_codes = {
             # from Chestnut
-            "-3":"NotAsked",
-            "-4":"Missing",
-            "-6":"Confidential",
-            "-7":"Refused",
-            "-8":"DontKnow",
-            "-9":"LegitimatelySkipped",
+            "-3": "NotAsked",
+            "-4": "Missing",
+            "-6": "Confidential",
+            "-7": "Refused",
+            "-8": "DontKnow",
+            "-9": "LegitimatelySkipped",
             # from core measures for boolean columns
-            "-10":'Refused to answer',
-            "-11":"n/a not recently incarcerated",
-            "-12":"Don't recall",
-            "-13":"Don't Know",
-            "-14":"Do not know"
+            "-10": "Refused to answer",
+            "-11": "n/a not recently incarcerated",
+            "-12": "Don't recall",
+            "-13": "Don't Know",
+            "-14": "Do not know",
+            "-98": "Unknown",
         }
         missing_values = (
-            [""] + 
-            list(consistency_codes.keys()) + 
-            list(consistency_codes.values())
+            [""] + list(consistency_codes.keys()) + list(consistency_codes.values())
         )
-            
+
         tbl_schema_dict = convert_table_schema_df_to_dict(
             tbl_schema_df,
             table_description=schema_description,
             primary_keys=primary_keys,
             foreign_keys=foreign_keys,
-            missing_values=missing_values
+            missing_values=missing_values,
         )
         tbl_schema_dict["description"] = schema_description
         validate_report = validate_schema(tbl_schema_dict)
@@ -210,10 +230,10 @@ if __name__ == "__main__":
         #     sys.exit()
 
         # write table schema to JSON file
-        json_dir = os.path.join('schemas', f"{schema_path}.json")
+        json_dir = os.path.join("schemas", f"{schema_path}.json")
         if validate_report.metadata_valid:
             with open(json_dir, "w") as f:
-                json.dump(tbl_schema_dict, f,indent=4)
+                json.dump(tbl_schema_dict, f, indent=4)
         else:
             print("Schema not valid due to these errors:")
             print("\n".join(validate_report["errors"]))
