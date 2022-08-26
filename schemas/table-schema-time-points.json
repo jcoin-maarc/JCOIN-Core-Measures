@@ -2000,6 +2000,12 @@
             "title": "Not candidate for OUD treatment",
             "type": "boolean",
             "description": "If respondent is not a candidate for OUD treatment, mark here and skip this set of items:",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2012,6 +2018,12 @@
             "title": "Preferred type of OUD treatment:  OUD medication",
             "type": "boolean",
             "description": "[OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol) [Ask M3]] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2025,6 +2037,12 @@
             "title": "Preferred type of OUD treatment:  Detox",
             "type": "boolean",
             "description": "[Detox] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2038,6 +2056,12 @@
             "title": "Preferred type of OUD treatment:  Outpatient counseling",
             "type": "boolean",
             "description": "[Outpatient counseling] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2051,6 +2075,12 @@
             "title": "Preferred type of OUD treatment:  Intensive outpatient",
             "type": "boolean",
             "description": "[Intensive outpatient\u202f\u00a0] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2064,6 +2094,12 @@
             "title": "Preferred type of OUD treatment:  Residential treatment",
             "type": "boolean",
             "description": "[Residential treatment\u00a0] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2077,6 +2113,12 @@
             "title": "Preferred type of OUD treatment:  Other treatment",
             "type": "boolean",
             "description": "[Other ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2090,6 +2132,12 @@
             "title": "Preferred type of OUD treatment:  Other treatment specified",
             "type": "boolean",
             "description": "[Other (specify)] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2103,6 +2151,12 @@
             "title": "Preferred type of OUD treatment:  No treatment",
             "type": "boolean",
             "description": "[No treatment\u00a0] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2116,6 +2170,12 @@
             "title": "Preferred type of OUD treatment:  Don't know or no preference",
             "type": "boolean",
             "description": "[Don\u2019t know / No preference\u00a0] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Treatment Preferences",
@@ -2274,6 +2334,12 @@
             "title": "Public assistance for household",
             "type": "boolean",
             "description": "[During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses \u2013 husband, wife, children, relatives, and others.",
+            "trueValues": [
+                "Yes"
+            ],
+            "falseValues": [
+                "No"
+            ],
             "constraints": {},
             "custom": {
                 "notes": "If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7",
