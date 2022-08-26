@@ -29,7 +29,8 @@ check = current[["lbls"]].join(encodings, how="left")
 check["lbls_from_encodings"] = check["encoding"]\
     .fillna('')\
     .str.replace("=(\d+|-\d+)", "", regex=True)\
-    .map(strip_list)
+    .map(strip_list)\
+    .map(lambda x:{key:int(val) for key,val in x.items()})
     
 check["is_same"] = check["lbls_from_encodings"].fillna("") == check["lbls"].fillna("")
 
