@@ -765,7 +765,9 @@
         "Don't recall",
         "Don't Know",
         "Do not know",
-        "Unknown"
+        "Unknown",
+        "Left Blank",
+        "Legitimately skipped"
     ],
     "description": "Baseline Fields: Measures collected only at baseline "
 }

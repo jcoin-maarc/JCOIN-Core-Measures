@@ -4696,6 +4696,7 @@
         "-13",
         "-14",
         "-98",
+        "-15",
         "NotAsked",
         "Missing",
         "Confidential",
@@ -4707,7 +4708,9 @@
         "Don't recall",
         "Don't Know",
         "Do not know",
-        "Unknown"
+        "Unknown",
+        "Left blank",
+        "Legitimately skipped"
     ],
     "description": "Time point Fields: Measures collected at all time points (baseline and follow ups)"
 }
