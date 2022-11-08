@@ -6,19 +6,22 @@ The goal of this repository is to make data models for data validation and trans
 For more information on the frictionless data toolkit, [click here](https://frictionlessdata.io/)
 
 ## Human readable data data dictionaries
-`data_dictionaries` for spreadsheet format
-and `codebooks` for an interactive codebook
+See archive for previous versions. See github issues for future planned work.
 
-Note: In development is the interactive "codebook", the data dictionary excel formatting (eg merging cells with redundant info like Section and subsection question text) detailed explanations of the:
+## Schemas and data dictionaries
 
-## Steps to manually fill out csvs, make frictionless schemas, and make data dictionary
-1. Manually fill out table schema spreadsheets in `csvs`
-2. Clean up strings and convert to YAML table schemas with `make_core_measure_table_schemas.py`
-    - originally converted to JSON to retain order\n but decided to switch to YAML to maintain consistency with other models
-    - saved in `schemas`
-3. Convert table schema fields to data dictionaries (ie easy-to-read reference of variables for each data set) with `make_data_dictionary.py`
-    - saved in `data_dictionaries`
+> WARNING: while the content will not change dramatically some of the scripts will to make this process more efficient.
 
+`csvs`: tabular version of data dictionaries.
+`make_core_measure_table_schemas.py`: converts to JSON schema (which is saved in `schemas`)
+
+## Encoding transforms
+
+`encodings`: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). 
+
+> NOTE: while schemas by definition do not contain any information used for transformations, we included the encodings here for easier editing and look up.
+
+> NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)
 
 ## Data model 
 
