@@ -30,25 +30,6 @@ Note: In development is the interactive "codebook", the data dictionary excel fo
     2. Person/visit level: measures collected at all timepoints which is called `time-points`
 
 
-
-# Notes and TODOs  
-
-- integer encodings
-    - Many software programs and analysts require or prefer integer encodings rather than string labels. To accommodate this across a wide range of software programs, the plan is to make a specification called "encodings" which will be mappings of integer encodings to variable values in data model.
-    (we will also provide the outputted data files in various formats --- SPSS, SAS, Stata, RData, etc in future using this).
-- consistency codes for missing values
-    - eg skipped due to reason x, prefer not to answer and associated integer codes for these
-    - ETA: 2022 Q2 JDC uploads
-- user formatting for human readable data dictionary (eg freeze pane, etc)
-- Fields left to add:
-    - `MOUD for follow up measures` 
-- file-level name changes
-    - baseline measures to person 
-- field/variable -level changes
-    - currently for choice options, the choices are in front, depending on the group, it may be best to put these at end and with "choice=" text as is done in REDCAP etc.
-- data model "entity" graph visualization
-- fill out rest of `required` property
-
 ## Version history
 - 1.0.0:
     upon putting all variables (besides MOUD follow up measures) into data model
