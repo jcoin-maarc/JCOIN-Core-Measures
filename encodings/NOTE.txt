@@ -1,0 +1,7 @@
+See https://github.com/jcoin-maarc/JCOIN-Core-Measures/issues/4
+
+
+Need to delete the flagged #tmp in the reserve_codes.yaml
+
+
+And then delete the flipped reserve codes
