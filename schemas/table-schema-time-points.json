@@ -3968,29 +3968,11 @@
         "visit_number"
     ],
     "missingValues": [
-        "",
-        "-3",
-        "-4",
-        "-6",
-        "-7",
-        "-8",
-        "-9",
-        "-10",
-        "-11",
-        "-12",
-        "-13",
-        "-14",
-        "NotAsked",
-        "Missing",
-        "Confidential",
+        "Don't know",
         "Refused",
-        "DontKnow",
-        "LegitimatelySkipped",
-        "Refused to answer",
-        "n/a not recently incarcerated",
-        "Don't recall",
-        "Don't Know",
-        "Do not know"
+        "Left blank",
+        "Legitimately skipped",
+        "Missing"
     ],
     "description": "Time point Fields: Measures collected at all time points (baseline and follow ups)"
 }

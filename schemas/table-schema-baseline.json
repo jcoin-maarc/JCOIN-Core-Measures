@@ -631,13 +631,11 @@
         "jdc_person_id"
     ],
     "missingValues": [
-        "NotAsked",
-        "Missing",
-        "Confidential",
+        "Don't know",
         "Refused",
-        "DontKnow",
-        "LegitimatelySkipped",
-        "Refused to answer"
+        "Left blank",
+        "Legitimately skipped",
+        "Missing"
     ],
     "description": "Baseline Fields: Measures collected only at baseline "
 }
