@@ -65,7 +65,6 @@
             "type": "string",
             "description": "[... you used alcohol or other drugs weekly or more often?  ] When was the last time you\u2026",
             "constraints": {
-                "required": true,
                 "enum": [
                     "Never",
                     "More than a year ago",
