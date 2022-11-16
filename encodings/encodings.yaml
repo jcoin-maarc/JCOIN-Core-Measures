@@ -1,749 +1,632 @@
 current_study_status:
-  encodings:
-    1: On study
-    2: Dropped out
-    3: Withdrawn by investigator
-    4: Completed study
+  1: On study
+  2: Dropped out
+  3: Withdrawn by investigator
+  4: Completed study
 d2:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_american_indian:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_asian:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_black:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_hawaiian:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_other:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d3_white:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d4b:
-  encodings:
-    1: Male
-    2: Female
-    3: Transgender
-    4: Gender nonconforming
-    99: Something else
+  1: Male
+  2: Female
+  3: Transgender
+  4: Gender nonconforming
+  99: Something else
 d4c:
-  encodings:
-    1: Straight or heterosexual
-    2: Lesbian or gay
-    3: Bisexual
-    4: Queer,pansexual, and/or questioning
-    99: Something else
+  1: Straight or heterosexual
+  2: Lesbian or gay
+  3: Bisexual
+  4: Queer,pansexual, and/or questioning
+  99: Something else
 d4d:
-  encodings:
-    1: Never been pregnant
-    2: Currently pregnant
-    4: Previously pregnant, had a child
-    5: Previously pregnant, did not have a child
-    6: Not applicable
+  1: Never been pregnant
+  2: Currently pregnant
+  4: Previously pregnant, had a child
+  5: Previously pregnant, did not have a child
+  6: Not applicable
 d5:
-  encodings:
-    1: Married
-    2: Widowed
-    3: Divorced
-    4: Separated
-    5: Never married
+  1: Married
+  2: Widowed
+  3: Divorced
+  4: Separated
+  5: Never married
 d5a:
-  encodings:
-    1: Yes, I am living as married with partner
-    2: No, I am not living as married with partner
+  1: Yes, I am living as married with partner
+  2: No, I am not living as married with partner
 d6:
-  encodings:
-    1: Did not complete high school
-    2: GED or equivalent
-    3: Regular high school diploma
-    4: Some college credit but less than 1 year of college credit
-    5: 1 or more years of college credit but no degree
-    6: Associate's degree (e.g., AA or AS)
-    7: Bachelor's degree (e.g.,  BA or BS)
-    8: Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)
-    99: Other (specify)
+  1: Did not complete high school
+  2: GED or equivalent
+  3: Regular high school diploma
+  4: Some college credit but less than 1 year of college credit
+  5: 1 or more years of college credit but no degree
+  6: Associate's degree (e.g., AA or AS)
+  7: Bachelor's degree (e.g.,  BA or BS)
+  8: Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)
+  99: Other (specify)
 d7d:
-  encodings:
-    1: Less than $12,500
-    2: $12,500 - $20,000
-    3: $20,001 - $30,000
-    4: $30,001 - $40,000
-    5: $40,001 - $50,000
-    6: $50,001 - $100,000
-    7: More than $100,000
+  1: Less than $12,500
+  2: $12,500 - $20,000
+  3: $20,001 - $30,000
+  4: $30,001 - $40,000
+  5: $40,001 - $50,000
+  6: $50,001 - $100,000
+  7: More than $100,000
 d7f1:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d8:
-  encodings:
-    1: Working full-time, 35 hours or more a week
-    2: Working part-time, less than 35 hours a week
-    3: Have a job where you are paid one day at a time (day labor)
-    4: Have a job, but not at work because of treatment, extended illness, maternity
-      leave, furlough or strike
-    5: Have a job but not at work because it is seasonal work
-    6: Unemployed or laid off and looking for work
-    7: Unemployed or laid off and not looking for work
-    8: Full-time homemaker (keeping house)
-    9: In school or training
-    10: In school or training, but not currently going to classes
-    11: Retired
-    12: In jail, prison or detention
-    13: Too disabled for work
-    14: In the military
-    15: Doing volunteer work
-    99: Some other work situation
+  1: Working full-time, 35 hours or more a week
+  2: Working part-time, less than 35 hours a week
+  3: Have a job where you are paid one day at a time (day labor)
+  4: Have a job, but not at work because of treatment, extended illness, maternity
+    leave, furlough or strike
+  5: Have a job but not at work because it is seasonal work
+  6: Unemployed or laid off and looking for work
+  7: Unemployed or laid off and not looking for work
+  8: Full-time homemaker (keeping house)
+  9: In school or training
+  10: In school or training, but not currently going to classes
+  11: Retired
+  12: In jail, prison or detention
+  13: Too disabled for work
+  14: In the military
+  15: Doing volunteer work
+  99: Some other work situation
 d8d_benefit_plan:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d8d_health_insurance:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d8d_paid_time_off:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d8d_retirement_plan:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_dont_know:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_indian:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_medicaid:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_medicare:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_medigap:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_military:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_other_government:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_private:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_schip:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_single_service:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 d9a_state:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 j3e:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 m3:
-  encodings:
-    1: Methadone
-    2: Buprenorphine/Suboxone
-    3: Naltrexone/Vivitrol
+  1: Methadone
+  2: Buprenorphine/Suboxone
+  3: Naltrexone/Vivitrol
 m4:
-  encodings:
-    1: I would prefer to receive daily buprenorphine-naloxone sublingual tablets or
-      films (Suboxone)
-    2: I would prefer to receive monthly or weekly buprenorphine injections (e.g.,
-      Sublocade, Brixadi)
-    3: I would prefer to receive the 6-month buprenorphine implant
+  1: I would prefer to receive daily buprenorphine-naloxone sublingual tablets or
+    films (Suboxone)
+  2: I would prefer to receive monthly or weekly buprenorphine injections (e.g.,
+    Sublocade, Brixadi)
+  3: I would prefer to receive the 6-month buprenorphine implant
 m5:
-  encodings:
-    1: I would prefer to receive daily naltrexone oral (Revia)
-    2: I would prefer to receive monthly naltrexone injections (Vivitrol)
-    3: Don't know/No preference
+  1: I would prefer to receive daily naltrexone oral (Revia)
+  2: I would prefer to receive monthly naltrexone injections (Vivitrol)
+  3: Don't know/No preference
 o1:
-  encodings:
-    1: Male
-    2: Female
-    99: Something else
+  1: Male
+  2: Female
+  99: Something else
 o2:
-  encodings:
-    1: Male
-    2: Female
-    3: Transgender man/trans man/female-to-male (FTM)
-    4: Transgender woman/trans woman/male-to-female (MTF)
-    5: Genderqueer/gender nonconforming/neither exclusively male nor female
-    6: Additional gender category (or other)
+  1: Male
+  2: Female
+  3: Transgender man/trans man/female-to-male (FTM)
+  4: Transgender woman/trans woman/male-to-female (MTF)
+  5: Genderqueer/gender nonconforming/neither exclusively male nor female
+  6: Additional gender category (or other)
 o3:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 o3a:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 o3b:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 p1a:
-  encodings:
-    1: Without any difficulty
-    2: With a little difficulty
-    3: With some difficulty
-    4: With much difficulty
-    5: Unable to do
+  1: Without any difficulty
+  2: With a little difficulty
+  3: With some difficulty
+  4: With much difficulty
+  5: Unable to do
 p1b:
-  encodings:
-    1: Without any difficulty
-    2: With a little difficulty
-    3: With some difficulty
-    4: With much difficulty
-    5: Unable to do
+  1: Without any difficulty
+  2: With a little difficulty
+  3: With some difficulty
+  4: With much difficulty
+  5: Unable to do
 p1c:
-  encodings:
-    1: Without any difficulty
-    2: With a little difficulty
-    3: With some difficulty
-    4: With much difficulty
-    5: Unable to do
+  1: Without any difficulty
+  2: With a little difficulty
+  3: With some difficulty
+  4: With much difficulty
+  5: Unable to do
 p1d:
-  encodings:
-    1: Without any difficulty
-    2: With a little difficulty
-    3: With some difficulty
-    4: With much difficulty
-    5: Unable to do
+  1: Without any difficulty
+  2: With a little difficulty
+  3: With some difficulty
+  4: With much difficulty
+  5: Unable to do
 p2a:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p2b:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p2c:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p2d:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p3a:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p3b:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p3c:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p3d:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p4a:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p4b:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p4c:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p4d:
-  encodings:
-    1: Never
-    2: Rarely
-    3: Sometimes
-    4: Often
-    5: Always
+  1: Never
+  2: Rarely
+  3: Sometimes
+  4: Often
+  5: Always
 p5a:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p5b:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p5c:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p5d:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p6a:
-  encodings:
-    1: Very poor
-    2: Poor
-    3: Fair
-    4: Good
-    5: Very good
+  1: Very poor
+  2: Poor
+  3: Fair
+  4: Good
+  5: Very good
 p6b:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p6c:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p6d:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p7a:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p7b:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p8a:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p8b:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p8c:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 p8d:
-  encodings:
-    1: Not at all
-    2: A little bit
-    3: Somewhat
-    4: Quite a bit
-    5: Very much
+  1: Not at all
+  2: A little bit
+  3: Somewhat
+  4: Quite a bit
+  5: Very much
 r1a:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1b:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1c:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1d:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1g:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1h:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1j:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1k:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1m:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r1n:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r2a:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r2b:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3a:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 r3a_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3b:
-  encodings:
-    1: 'No'
+  1: 'No'
 r3b_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3c:
-  encodings:
-    1: 'No'
+  1: 'No'
 r3c_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3d:
-  encodings:
-    1: 'No'
+  1: 'No'
 r3d_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3e:
-  encodings:
-    1: 'No'
+  1: 'No'
 r3e_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 r3f:
-  encodings:
-    1: 'No'
+  1: 'No'
 r3f_first_dx:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    88: Do not know
-    99: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  88: Do not know
+  99: Not reported
 s1a:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s1b:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s1c:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s1d:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s1e:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s2a:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s2b:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 s2c:
-  encodings:
-    0: Never
-    1: More than a year ago
-    2: 4 to 12 months ago
-    3: 2 to 3 months ago
-    4: Past month
-    5: Do not know
-    6: Not reported
+  0: Never
+  1: More than a year ago
+  2: 4 to 12 months ago
+  3: 2 to 3 months ago
+  4: Past month
+  5: Do not know
+  6: Not reported
 u14:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u14a:
-  encodings:
-    1: Strongly agree
-    2: Somewhat agree
-    3: Neutral
-    4: Somewhat disagree
-    5: Strongly disagree
+  1: Strongly agree
+  2: Somewhat agree
+  3: Neutral
+  4: Somewhat disagree
+  5: Strongly disagree
 u14b:
-  encodings:
-    1: Strongly agree
-    2: Somewhat agree
-    3: Neutral
-    4: Somewhat disagree
-    5: Strongly disagree
+  1: Strongly agree
+  2: Somewhat agree
+  3: Neutral
+  4: Somewhat disagree
+  5: Strongly disagree
 u14c:
-  encodings:
-    1: Strongly agree
-    2: Somewhat agree
-    3: Neutral
-    4: Somewhat disagree
-    5: Strongly disagree
+  1: Strongly agree
+  2: Somewhat agree
+  3: Neutral
+  4: Somewhat disagree
+  5: Strongly disagree
 u14d:
-  encodings:
-    1: Strongly agree
-    2: Somewhat agree
-    3: Neutral
-    4: Somewhat disagree
-    5: Strongly disagree
+  1: Strongly agree
+  2: Somewhat agree
+  3: Neutral
+  4: Somewhat disagree
+  5: Strongly disagree
 u14e:
-  encodings:
-    1: Strongly agree
-    2: Somewhat agree
-    3: Neutral
-    4: Somewhat disagree
-    5: Strongly disagree
+  1: Strongly agree
+  2: Somewhat agree
+  3: Neutral
+  4: Somewhat disagree
+  5: Strongly disagree
 u14f:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u15:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u6a:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u6b:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u6c:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 u6d:
-  encodings:
-    0: 'No'
-    1: 'Yes'
+  0: 'No'
+  1: 'Yes'
 visit_type:
-  encodings:
-    1: Baseline
-    2: Follow-up
+  1: Baseline
+  2: Follow-up
