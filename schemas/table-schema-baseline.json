@@ -63,13 +63,6 @@
             "custom": {
                 "jcoin:core_measure_section": "Enrollment",
                 "jcoin:final_variable_name": "current_study_status"
-            },
-            "encoding": {
-                "On study": 1,
-                "Dropped out": 2,
-                "Withdrawn by investigator": 3,
-                "Completed study": 4,
-                "Unknown": -98
             }
         },
         {
@@ -77,17 +70,13 @@
             "title": "Birth date",
             "type": "date",
             "format": "%Y%m%d",
-            "description": "What is your birth date?",
-            "constraints": {},
-            "custom": {}
+            "description": "What is your birth date?"
         },
         {
             "name": "d1a",
             "title": "Age",
             "type": "integer",
-            "description": "About how old are you? (top coded at 90)",
-            "constraints": {},
-            "custom": {}
+            "description": "About how old are you? (top coded at 90)"
         },
         {
             "name": "o1",
@@ -101,13 +90,6 @@
                     "Decline to answer",
                     "Something else"
                 ]
-            },
-            "custom": {},
-            "encoding": {
-                "Male": 1,
-                "Female": 2,
-                "Decline to answer": 3,
-                "Something else": 99
             }
         },
         {
@@ -133,15 +115,6 @@
                 "jcoin:core_measure_question": "What is your gender identity?",
                 "jcoin:core_measure_id": "o2",
                 "jcoin:final_variable_name": "gender_identity_long"
-            },
-            "encoding": {
-                "Male": 1,
-                "Female": 2,
-                "Transgender man/trans man/female-to-male (FTM)": 3,
-                "Transgender woman/trans woman/male-to-female (MTF)": 4,
-                "Genderqueer/gender nonconforming/neither exclusively male nor female": 5,
-                "Additional gender category (or other)": 6,
-                "Not reported": 7
             }
         },
         {
@@ -166,14 +139,6 @@
                 "jcoin:core_measure_question": "What is your gender identity?",
                 "jcoin:core_measure_id": "d4b",
                 "jcoin:final_variable_name": "gender identity_short"
-            },
-            "encoding": {
-                "Male": 1,
-                "Female": 2,
-                "Transgender": 3,
-                "Gender nonconforming": 4,
-                "Something else": 99,
-                "Not reported": 88
             }
         },
         {
@@ -198,11 +163,6 @@
                 "jcoin:final_variable_name": "race_white",
                 "heal:common_data_element_code": "C41261",
                 "heal:common_data_element_system": "NCI Thesaurus"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -227,11 +187,6 @@
                 "jcoin:final_variable_name": "race_black",
                 "heal:common_data_element_code": "C16352",
                 "heal:common_data_element_system": "NCI Thesaurus"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -256,11 +211,6 @@
                 "jcoin:final_variable_name": "race_american_indian",
                 "heal:common_data_element_code": "C41259",
                 "heal:common_data_element_system": "NCI Thesaurus"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -285,11 +235,6 @@
                 "jcoin:final_variable_name": "race_hawaiian",
                 "heal:common_data_element_code": "C41219",
                 "heal:common_data_element_system": "NCI Thesaurus"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -314,11 +259,6 @@
                 "jcoin:final_variable_name": "race_asian",
                 "heal:common_data_element_code": "C41260",
                 "heal:common_data_element_system": "NCI Thesaurus"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -341,11 +281,6 @@
                 "jcoin:core_measure_question": "Other",
                 "jcoin:core_measure_id": "d3",
                 "jcoin:final_variable_name": "race_other"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -401,11 +336,6 @@
                 "jcoin:core_measure_question": "Are you of Hispanic, Latino, or Spanish origin?",
                 "jcoin:core_measure_id": "d2",
                 "jcoin:final_variable_name": "hispanic"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0,
-                "Unknown": -98
             }
         },
         {
@@ -426,13 +356,6 @@
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "Sexual orientation:  Do you think of yourself as\u2026",
                 "jcoin:final_variable_name": "sexual_orientation"
-            },
-            "encoding": {
-                "Straight or heterosexual": 1,
-                "Lesbian or gay": 2,
-                "Bisexual": 3,
-                "Queer,pansexual, and/or questioning": 4,
-                "Something else": 99
             }
         },
         {
@@ -440,7 +363,6 @@
             "title": "Sexual orientation:  Other specified",
             "type": "string",
             "description": "Sexual orientation:  Do you think of yourself as\u2026",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "Sexual orientation:  Do you think of yourself as\u2026",
@@ -467,14 +389,6 @@
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "Have you ever been pregnant?",
                 "jcoin:final_variable_name": "pregnant"
-            },
-            "encoding": {
-                "Never been pregnant": 1,
-                "Currently pregnant": 2,
-                "Previously pregnant, had a child": 4,
-                "Previously pregnant, did not have a child": 5,
-                "Not applicable": 6,
-                "Don't know": 7
             }
         },
         {
@@ -495,13 +409,6 @@
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "What is your marital status?",
                 "jcoin:final_variable_name": "marital_status"
-            },
-            "encoding": {
-                "Married": 1,
-                "Widowed": 2,
-                "Divorced": 3,
-                "Separated": 4,
-                "Never married": 5
             }
         },
         {
@@ -519,10 +426,6 @@
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "Are you currently living as married with a romantic partner?",
                 "jcoin:final_variable_name": "unmarried_partner"
-            },
-            "encoding": {
-                "Yes, I am living as married with partner": 1,
-                "No, I am not living as married with partner": 2
             }
         },
         {
@@ -547,17 +450,6 @@
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "What is the highest grade or level of school you have completed or the highest degree you have received?",
                 "jcoin:final_variable_name": "education"
-            },
-            "encoding": {
-                "Did not complete high school": 1,
-                "GED or equivalent": 2,
-                "Regular high school diploma": 3,
-                "Some college credit but less than 1 year of college credit": 4,
-                "1 or more years of college credit but no degree": 5,
-                "Associate's degree (e.g., AA or AS)": 6,
-                "Bachelor's degree (e.g.,  BA or BS)": 7,
-                "Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)": 8,
-                "Other (specify)": 99
             }
         },
         {
@@ -565,7 +457,6 @@
             "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
             "type": "integer",
             "description": "What is the highest grade completed?",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "What is the highest grade completed?",
@@ -577,7 +468,6 @@
             "title": "Education: Other specified",
             "type": "string",
             "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "Demographics",
                 "jcoin:core_measure_question": "What is the highest grade or level of school you have completed or the highest degree you have received?",
@@ -595,15 +485,10 @@
             "falseValues": [
                 "No"
             ],
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Interview conducted with participant during incarceration?",
                 "jcoin:final_variable_name": "iv_incarceration"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0
             }
         },
         {
@@ -611,7 +496,6 @@
             "title": "Days incarcerated (in past 30/xx days)",
             "type": "integer",
             "description": "During the past xx/30 days, how many days have you been incarcerated?",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "During the past xx/30 days, how many days have you been incarcerated?",
@@ -629,15 +513,10 @@
             "falseValues": [
                 "No"
             ],
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)",
                 "jcoin:final_variable_name": "oud_meds_rx"
-            },
-            "encoding": {
-                "Yes": 1,
-                "No": 0
             }
         },
         {
@@ -645,7 +524,6 @@
             "title": "Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months",
             "type": "integer",
             "description": "Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",
@@ -657,7 +535,6 @@
             "title": "Buprenorphine injection (Sublocade):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (buprenorphine injection [Sublocade])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (buprenorphine injection [Sublocade])",
@@ -669,7 +546,6 @@
             "title": "Buprenorphine  weekly injection (Brixadi):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (buprenorphine weekly injection [Brixadi])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (buprenorphine weekly injection [Brixadi])",
@@ -681,7 +557,6 @@
             "title": "Buprenorphine  monthly injection (Brixadi):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (buprenorphine monthly injection [Brixadi])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (buprenorphine monthly injection [Brixadi])",
@@ -693,7 +568,6 @@
             "title": "Buprenorphine 6-month implant (Probuphine):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (buprenorphine 6-month implant [Probuphine])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (buprenorphine 6-month implant [Probuphine])",
@@ -705,7 +579,6 @@
             "title": "Naltrexone daily (oral):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (Naltrexone daily (oral))",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (Naltrexone daily (oral))",
@@ -717,7 +590,6 @@
             "title": "Naltrexone monthly injection (Vivitrol):  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (Naltrexone monthly injection [Vivitrol])",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (Naltrexone monthly injection [Vivitrol])",
@@ -729,7 +601,6 @@
             "title": "Methadone daily:  Lifetime months",
             "type": "integer",
             "description": "Lifetime months (methadone daily)",
-            "constraints": {},
             "custom": {
                 "jcoin:core_measure_section": "MOUD",
                 "jcoin:core_measure_question": "Lifetime months (methadone daily)",
