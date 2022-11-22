@@ -8,7 +8,7 @@ for s in schemapath:
     with open(s,'r') as f:
         sjson = json.load(f)
 
-    sjson['fields'] = [{k:v for k,v in f.items() if k!='encoding' and v} 
+    sjson['fields'] = [{k:v for k,v in f.items() if not k in ['encoding','custom']} 
         for f in sjson['fields']]
 
     
