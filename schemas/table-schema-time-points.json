@@ -33,7 +33,7 @@
       "description": "A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
       "constraints": {
         "required": true,
-        "maximum": 1
+        "minimum": 1
       },
       "custom": {
         "jcoin:core_measure_section": "Record and linkage",
