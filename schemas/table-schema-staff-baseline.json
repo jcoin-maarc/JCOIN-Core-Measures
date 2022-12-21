@@ -1,0 +1,320 @@
+{
+  "primaryKey": [
+    "jdc_person_id"
+  ],
+  "missingValues": [
+    "Don't know",
+    "Refused",
+    "Left blank",
+    "Legitimately skipped",
+    "Missing"
+  ],
+  "description": "Staff specific measures",
+  "fields": [
+    {
+      "name": "jdc_person_id",
+      "title": "JCOIN data commons person identifier",
+      "type": "string",
+      "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
+      "constraints": {
+        "required": true,
+        "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
+      }
+    },
+    {
+      "name": "quarter_enrolled",
+      "title": "Quarter Enrolled",
+      "type": "string",
+      "description": "The financial quarter and year of enrollment",
+      "constraints": {
+        "required": true,
+        "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]",
+        "maxLength": 6
+      }
+    },
+    {
+      "name": "staff_type",
+      "title": "Staff Type",
+      "type": "string",
+      "description": "The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",
+      "constraints": {
+        "maxLength": 80
+      }
+    },
+    {
+      "name": "current_study_status",
+      "title": "Current Study Status",
+      "type": "string",
+      "description": "A summary of the current status of staff member's involvement in study",
+      "constraints": {
+        "required": true,
+        "enum": [
+          "On study",
+          "Dropped out",
+          "Withdrawn by investigator",
+          "Completed study",
+          "Unknown"
+        ]
+      }
+    },
+    {
+      "name": "d1a",
+      "title": "Age",
+      "type": "integer",
+      "description": "About how old are you? (top coded at 90)"
+    },
+    {
+      "name": "o1",
+      "title": "Sex at birth",
+      "type": "string",
+      "description": "What sex was originally listed on your birth certificate?",
+      "constraints": {
+        "enum": [
+          "Male",
+          "Female",
+          "Decline to answer",
+          "Something else"
+        ]
+      }
+    },
+    {
+      "name": "o2",
+      "title": "Gender Identity",
+      "type": "string",
+      "description": "What is your gender identity?",
+      "constraints": {
+        "enum": [
+          "Male",
+          "Female",
+          "Transgender man/trans man/female-to-male (FTM)",
+          "Transgender woman/trans woman/male-to-female (MTF)",
+          "Genderqueer/gender nonconforming/neither exclusively male nor female",
+          "Additional gender category (or other)",
+          "Not reported"
+        ]
+      },
+      "custom": {
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transfgender' else True"
+      }
+    },
+    {
+      "name": "d4b",
+      "title": "Gender Identity (condensed)",
+      "type": "string",
+      "description": "What is your gender identity?",
+      "constraints": {
+        "enum": [
+          "Male",
+          "Female",
+          "Transgender",
+          "Gender nonconforming",
+          "Something else",
+          "Not reported"
+        ]
+      },
+      "custom": {
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+      }
+    },
+    {
+      "name": "d3_white",
+      "title": "Race: White",
+      "type": "boolean",
+      "description": "[White] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_black",
+      "title": "Race: Black or African American",
+      "type": "boolean",
+      "description": "[Black or African American] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_american_indian",
+      "title": "Race: American Indian or Alaska Native",
+      "type": "boolean",
+      "description": "[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_hawaiian",
+      "title": "Race: Native Hawaiian or Other Pacific Islander",
+      "type": "boolean",
+      "description": "[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_asian",
+      "title": "Race: Asian",
+      "type": "boolean",
+      "description": "[Asian] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_other",
+      "title": "Race: Other",
+      "type": "boolean",
+      "description": "[Other] What is your race? SELECT ALL THAT APPLY",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d3_specify_tribe",
+      "title": "Race: American indian principal tribe or community specified",
+      "type": "string",
+      "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
+      "constraints": {
+        "maxLength": 80
+      }
+    },
+    {
+      "name": "d3_specify_other",
+      "title": "Race: Other specified",
+      "type": "string",
+      "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
+      "constraints": {
+        "maxLength": 80
+      }
+    },
+    {
+      "name": "d2",
+      "title": "Hispanic, Latino, or Spanish Origin",
+      "type": "boolean",
+      "description": "Are you of Hispanic, Latino, or Spanish origin?",
+      "trueValues": [
+        "Yes"
+      ],
+      "falseValues": [
+        "No"
+      ]
+    },
+    {
+      "name": "d4c",
+      "title": "Sexual orientation",
+      "type": "string",
+      "description": "Sexual orientation:  Do you think of yourself as",
+      "constraints": {
+        "enum": [
+          "Straight or heterosexual",
+          "Lesbian or gay",
+          "Bisexual",
+          "Queer,pansexual, and/or questioning",
+          "Something else"
+        ]
+      }
+    },
+    {
+      "name": "d4c_specify_other",
+      "title": "Sexual orientation:  Other specified",
+      "type": "string",
+      "description": "Sexual orientation:  Do you think of yourself as"
+    },
+    {
+      "name": "d4d",
+      "title": "Ever pregnant",
+      "type": "string",
+      "description": "Have you ever been pregnant?",
+      "constraints": {
+        "enum": [
+          "Never been pregnant",
+          "Currently pregnant",
+          "Previously pregnant, had a child",
+          "Previously pregnant, did not have a child",
+          "Not applicable",
+          "Don't know"
+        ]
+      },
+      "custom": {
+        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+      }
+    },
+    {
+      "name": "d5",
+      "title": "Marital status",
+      "type": "string",
+      "description": "What is your marital status?",
+      "constraints": {
+        "enum": [
+          "Married",
+          "Widowed",
+          "Divorced",
+          "Separated",
+          "Never married"
+        ]
+      }
+    },
+    {
+      "name": "d5a",
+      "title": "Married with partner",
+      "type": "string",
+      "description": "Are you currently living as married with a romantic partner?",
+      "constraints": {
+        "enum": [
+          "Yes, I am living as married with partner",
+          "No, I am not living as married with partner"
+        ]
+      }
+    },
+    {
+      "name": "d6",
+      "title": "Education",
+      "type": "string",
+      "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
+      "constraints": {
+        "enum": [
+          "Did not complete high school",
+          "GED or equivalent",
+          "Regular high school diploma",
+          "Some college credit but less than 1 year of college credit",
+          "1 or more years of college credit but no degree",
+          "Associate's degree (e.g., AA or AS)",
+          "Bachelor's degree (e.g.,  BA or BS)",
+          "Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)",
+          "Other (specify)"
+        ]
+      }
+    },
+    {
+      "name": "d6_grade",
+      "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
+      "type": "integer",
+      "description": "What is the highest grade completed?"
+    },
+    {
+      "name": "d6_specify_other",
+      "title": "Education: Other specified",
+      "type": "string",
+      "description": "What is the highest grade or level of school you have completed or the highest degree you have received?"
+    }
+  ]
+}

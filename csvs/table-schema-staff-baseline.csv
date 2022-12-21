@@ -1,0 +1,27 @@
+name,title,type,description,constraints.required,constraints.pattern,constraints.minimum,format,constraints.enum,constraints.maxLength,custom.notes,trueValues,falseValues
+jdc_person_id,JCOIN data commons person identifier,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,TRUE,[A-Z][0-9]{3}-[0-9]{4},,,,,,,
+quarter_enrolled,Quarter Enrolled,string,The financial quarter and year of enrollment,TRUE,[0-9][0-9][0-9][0-9]Q[0-9],,,,6,,,
+staff_type,Staff Type,string,"The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",,,,,,80,,,
+current_study_status,Current Study Status,string,A summary of the current status of staff member's involvement in study,TRUE,,,,On study|Dropped out|Withdrawn by investigator|Completed study|Unknown,,,,
+d1a,Age,integer,About how old are you? (top coded at 90),,,,,,,,,
+o1,Sex at birth,string,What sex was originally listed on your birth certificate?,,,,,Male|Female|Decline to answer|Something else,,,,
+o2,Gender Identity,string,What is your gender identity?,,,,,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
+ False if not 'Male' and not 'Transfgender' else True",,
+d4b,Gender Identity (condensed),string,What is your gender identity?,,,,,Male|Female|Transgender|Gender nonconforming|Something else|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",,
+d3_white,Race: White,boolean,[White] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_black,Race: Black or African American,boolean,[Black or African American] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_american_indian,Race: American Indian or Alaska Native,boolean,[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_hawaiian,Race: Native Hawaiian or Other Pacific Islander,boolean,[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_asian,Race: Asian,boolean,[Asian] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_other,Race: Other,boolean,[Other] What is your race? SELECT ALL THAT APPLY,,,,,,,,Yes,No
+d3_specify_tribe,Race: American indian principal tribe or community specified,string,[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY,,,,,,80,,,
+d3_specify_other,Race: Other specified,string,[Other specified] What is your race? SELECT ALL THAT APPLY,,,,,,80,,,
+d2,"Hispanic, Latino, or Spanish Origin",boolean,"Are you of Hispanic, Latino, or Spanish origin?",,,,,,,,Yes,No
+d4c,Sexual orientation,string,Sexual orientation:  Do you think of yourself as,,,,,"Straight or heterosexual|Lesbian or gay|Bisexual|Queer,pansexual, and/or questioning|Something else",,,,
+d4c_specify_other,Sexual orientation:  Other specified,string,Sexual orientation:  Do you think of yourself as,,,,,,,,,
+d4d,Ever pregnant,string,Have you ever been pregnant?,,,,,"Never been pregnant|Currently pregnant|Previously pregnant, had a child|Previously pregnant, did not have a child|Not applicable|Don't know",,"Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.",,
+d5,Marital status,string,What is your marital status?,,,,,Married|Widowed|Divorced|Separated|Never married,,,,
+d5a,Married with partner,string,Are you currently living as married with a romantic partner?,,,,,"Yes, I am living as married with partner|No, I am not living as married with partner",,,,
+d6,Education,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,,,"Did not complete high school|GED or equivalent|Regular high school diploma|Some college credit but less than 1 year of college credit|1 or more years of college credit but no degree|Associate's degree (e.g., AA or AS)|Bachelor's degree (e.g.,  BA or BS)|Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)|Other (specify)",,,,
+d6_grade,Education:  Highest grade level (if less than GED or h.s. diploma),integer,What is the highest grade completed?,,,,,,,,,
+d6_specify_other,Education: Other specified,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,,,,,,,
