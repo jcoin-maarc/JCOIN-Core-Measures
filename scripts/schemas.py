@@ -14,11 +14,10 @@ def to_csv():
         path = Path(path)
         outdir = path.parent.with_stem("csvs")
         fields = convert_json_to_template_csv(jsontemplate_path=path,fields_name='fields')
-        etl.fromdicts(fields).tocsv(
+        etl.fromdicts(fields.data).tocsv(
             outdir/path.with_suffix(".csv").name,encoding='utf-8'
         )
-
-
+# to_csv()
 def update_json():
     """ 
     update a json schema with fields and properties from csv file
@@ -28,9 +27,14 @@ def update_json():
     for path in csvs:
         path = Path(path)
         outfile = path.parent.with_stem("schemas")/path.with_suffix(".json").name
+        assert outfile.exists(),f"Please make sure {outfile.name} exists."
         schema = Schema(outfile)
-        del schema['fields']
+
         fields = convert_template_csv_to_json(path,data_dictionary_props={})
+
+        if schema.get('fields'):
+            del schema['fields']
+
         schema['fields'] = fields['data_dictionary']
         schema.to_json(outfile)
 
@@ -42,7 +46,7 @@ and produce and flattened tabular data dictionary in a csv file.
 '''
 
 if __name__=="__main__":
-
+    
     assert sys.argv[1] in ['tocsv','updatejson'],cli_message
 
     if sys.argv[1]=='tocsv':
