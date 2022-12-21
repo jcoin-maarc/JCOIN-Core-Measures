@@ -9,7 +9,7 @@
     "Legitimately skipped",
     "Missing"
   ],
-  "description": "Baseline Fields: Measures collected only at baseline ",
+  "description": "Person-level measures. As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
   "fields": [
     {
       "name": "jdc_person_id",
