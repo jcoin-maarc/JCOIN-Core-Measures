@@ -19,39 +19,10 @@
       "constraints": {
         "required": true,
         "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
-      }
-    },
-    {
-      "name": "visit_number",
-      "title": "Visit Number",
-      "type": "integer",
-      "description": "A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
-      "constraints": {
-        "required": true,
-        "minimum":1
-      }
-    },
-    {
-      "name": "shifted_visit_dt",
-      "title": "Visit Date (shifted)",
-      "type": "date",
-      "description": "This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer",
-      "constraints": {
-        "required": true
       },
-      "format": "%Y%m%d"
-    },
-    {
-      "name": "visit_type",
-      "title": "Visit Type",
-      "type": "string",
-      "description": "The visit type/category (either baseline or follow up)",
-      "constraints": {
-        "required": true,
-        "enum": [
-          "Baseline",
-          "Follow-up"
-        ]
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "jdc_person_id"
       }
     },
     {
@@ -61,8 +32,12 @@
       "description": "The financial quarter and year of enrollment",
       "constraints": {
         "required": true,
-        "maxLength": 6,
-        "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]"
+        "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]",
+        "maxLength": 6
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "quarter_enrolled"
       }
     },
     {
@@ -72,6 +47,10 @@
       "description": "The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",
       "constraints": {
         "maxLength": 80
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "staff_type"
       }
     },
     {
@@ -88,13 +67,21 @@
           "Completed study",
           "Unknown"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "current_study_status"
       }
     },
     {
       "name": "d1a",
       "title": "Age",
       "type": "integer",
-      "description": "About how old are you? (top coded at 90)"
+      "description": "About how old are you? (top coded at 90)",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "age"
+      }
     },
     {
       "name": "o1",
@@ -108,6 +95,10 @@
           "Decline to answer",
           "Something else"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_at_birth"
       }
     },
     {
@@ -127,7 +118,9 @@
         ]
       },
       "custom": {
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transfgender' else True"
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True",
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id"
       }
     },
     {
@@ -146,7 +139,9 @@
         ]
       },
       "custom": {
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id_condensed"
       }
     },
     {
@@ -154,6 +149,10 @@
       "title": "Race: White",
       "type": "boolean",
       "description": "[White] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_white"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -166,6 +165,10 @@
       "title": "Race: Black or African American",
       "type": "boolean",
       "description": "[Black or African American] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_black"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -178,6 +181,10 @@
       "title": "Race: American Indian or Alaska Native",
       "type": "boolean",
       "description": "[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_AIAN"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -190,6 +197,10 @@
       "title": "Race: Native Hawaiian or Other Pacific Islander",
       "type": "boolean",
       "description": "[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_hawaiian_OPI"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -202,6 +213,10 @@
       "title": "Race: Asian",
       "type": "boolean",
       "description": "[Asian] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_asian"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -214,6 +229,10 @@
       "title": "Race: Other",
       "type": "boolean",
       "description": "[Other] What is your race? SELECT ALL THAT APPLY",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_other"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -228,6 +247,10 @@
       "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
       "constraints": {
         "maxLength": 80
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_AI_tribe"
       }
     },
     {
@@ -237,6 +260,10 @@
       "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
       "constraints": {
         "maxLength": 80
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_other_specified"
       }
     },
     {
@@ -244,6 +271,10 @@
       "title": "Hispanic, Latino, or Spanish Origin",
       "type": "boolean",
       "description": "Are you of Hispanic, Latino, or Spanish origin?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "hispanic_latino"
+      },
       "trueValues": [
         "Yes"
       ],
@@ -264,13 +295,21 @@
           "Queer,pansexual, and/or questioning",
           "Something else"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_orient_category"
       }
     },
     {
       "name": "d4c_specify_other",
       "title": "Sexual orientation:  Other specified",
       "type": "string",
-      "description": "Sexual orientation:  Do you think of yourself as"
+      "description": "Sexual orientation:  Do you think of yourself as",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_orient_other"
+      }
     },
     {
       "name": "d4d",
@@ -288,7 +327,9 @@
         ]
       },
       "custom": {
-        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.",
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "ever_pregnant"
       }
     },
     {
@@ -304,6 +345,10 @@
           "Separated",
           "Never married"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "marital_status"
       }
     },
     {
@@ -316,6 +361,10 @@
           "Yes, I am living as married with partner",
           "No, I am not living as married with partner"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "living_as_married"
       }
     },
     {
@@ -335,693 +384,30 @@
           "Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)",
           "Other (specify)"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_category"
       }
     },
     {
       "name": "d6_grade",
       "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
       "type": "integer",
-      "description": "What is the highest grade completed?"
+      "description": "What is the highest grade completed?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_highest_grade"
+      }
     },
     {
       "name": "d6_specify_other",
       "title": "Education: Other specified",
       "type": "string",
-      "description": "What is the highest grade or level of school you have completed or the highest degree you have received?"
-    },
-    {
-      "name": "or1",
-      "title": "Confidence to implement",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that the organization can get people invested in implementing [intervention].]]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or2",
-      "title": "Commitment to implement",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel committed to implementing [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or3",
-      "title": "Confidence in tracking",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that they can keep track of progress in implementing [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or4",
-      "title": "Whatever it takes attitude to implement",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here will do whatever it takes to implement [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or5",
-      "title": "Confidence in organizational support",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel feel confident that the organization can support people as they adjust to [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or6",
-      "title": "Want to implement",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here want to implement [intervention]]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or7",
-      "title": "Confidence in maintaining momentum",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that they can keep the momentum going in implementing [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or8",
-      "title": "Confidence in handling challenges",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that they can handle the challenges that might arise in implementing [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or9",
-      "title": "Determination in implementating",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here are determined to implement [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or10",
-      "title": "Confidence in coordinating tasks",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that they can coordinate tasks so that implementation goes smoothly.]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or11",
-      "title": "Motivation to implement",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here are motivated to implement [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "or12",
-      "title": "Confidence in managing politics",
-      "type": "string",
-      "description": "Rate each of the following statements on a 5-point scale where 1=Disagree and 5=Agree [People who work here feel confident that they can manage the politics of implementing [intervention].]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "oc1",
-      "title": "Pressure",
-      "type": "string",
-      "description": "Rate each of the following items on a scale of 1-5 where 1=Disagree and 5=Agree [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "oc2",
-      "title": "Stress and strain signs",
-      "type": "string",
-      "description": "Rate each of the following items on a scale of 1-5 where 1=Disagree and 5=Agree [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "oc3",
-      "title": "Heavy workload",
-      "type": "string",
-      "description": "Rate each of the following items on a scale of 1-5 where 1=Disagree and 5=Agree [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "oc4",
-      "title": "Frustration",
-      "type": "string",
-      "description": "Rate each of the following items on a scale of 1-5 where 1=Disagree and 5=Agree [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Disagree",
-          "2",
-          "3",
-          "4",
-          "5 Agree"
-        ]
-      }
-    },
-    {
-      "name": "sm1",
-      "title": "MOUD Attitudes: Methadone",
-      "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Not at all Effective",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Effective"
-        ]
-      }
-    },
-    {
-      "name": "sm2",
-      "title": "MOUD Attitudes: Buprenorphine (Suboxone) - oral",
-      "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Not at all Effective",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Effective"
-        ]
-      }
-    },
-    {
-      "name": "sm3",
-      "title": "MOUD Attitudes: Buprenorphine (Sublocade) - monthly injection",
-      "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Not at all Effective",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Effective"
-        ]
-      }
-    },
-    {
-      "name": "sm4",
-      "title": "MOUD Attitudes: Naltrexone - oral",
-      "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Not at all Effective",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Effective"
-        ]
-      }
-    },
-    {
-      "name": "sm5",
-      "title": "MOUD Attitudes: Naltrexone (Vivitrol) - monthly injection",
-      "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Not at all Effective",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Effective"
-        ]
-      }
-    },
-    {
-      "name": "sm6",
-      "title": "MOUD Acceptance: Methadone",
-      "type": "string",
-      "description": "In your opinion, how acceptable is each of the following medications for the treatment of opioid use disorder with justice-involved populations? (1=Completely Unacceptable, 7 = Very Acceptable)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Completely unacceptable",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Acceptable"
-        ]
-      }
-    },
-    {
-      "name": "sm7",
-      "title": "MOUD Acceptance: Buprenorphine (Suboxone) - oral",
-      "type": "string",
-      "description": "In your opinion, how acceptable is each of the following medications for the treatment of opioid use disorder with justice-involved populations? (1=Completely Unacceptable, 7 = Very Acceptable)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Completely unacceptable",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Acceptable"
-        ]
-      }
-    },
-    {
-      "name": "sm8",
-      "title": "MOUD Acceptance: Buprenorphine (Sublocade) - monthly injection",
-      "type": "string",
-      "description": "In your opinion, how acceptable is each of the following medications for the treatment of opioid use disorder with justice-involved populations? (1=Completely Unacceptable, 7 = Very Acceptable)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Completely unacceptable",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Acceptable"
-        ]
-      }
-    },
-    {
-      "name": "sm9",
-      "title": "MOUD Acceptance: Naltrexone - oral",
-      "type": "string",
-      "description": "In your opinion, how acceptable is each of the following medications for the treatment of opioid use disorder with justice-involved populations? (1=Completely Unacceptable, 7 = Very Acceptable)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Completely unacceptable",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Acceptable"
-        ]
-      }
-    },
-    {
-      "name": "sm10",
-      "title": "MOUD Acceptance: Naltrexone (Vivitrol) - monthly injection",
-      "type": "string",
-      "description": "In your opinion, how acceptable is each of the following medications for the treatment of opioid use disorder with justice-involved populations? (1=Completely Unacceptable, 7 = Very Acceptable)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 Completely unacceptable",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Very Acceptable"
-        ]
-      }
-    },
-    {
-      "name": "sm11",
-      "title": "MOUD Training: Methadone",
-      "type": "string",
-      "description": "To what extent have you received specific training about the following medications for opioid use disorder? (1=No Training, 7=Extensive Training)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 No training",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Extensive Training"
-        ]
-      }
-    },
-    {
-      "name": "sm12",
-      "title": "MOUD Training: Buprenorphine (Suboxone) - oral",
-      "type": "string",
-      "description": "To what extent have you received specific training about the following medications for opioid use disorder? (1=No Training, 7=Extensive Training)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 No training",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Extensive Training"
-        ]
-      }
-    },
-    {
-      "name": "sm13",
-      "title": "MOUD Training: Buprenorphine (Sublocade) - monthly injection",
-      "type": "string",
-      "description": "To what extent have you received specific training about the following medications for opioid use disorder? (1=No Training, 7=Extensive Training)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 No training",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Extensive Training"
-        ]
-      }
-    },
-    {
-      "name": "sm14",
-      "title": "MOUD Training: Naltrexone - oral",
-      "type": "string",
-      "description": "To what extent have you received specific training about the following medications for opioid use disorder? (1=No Training, 7=Extensive Training)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 No training",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Extensive Training"
-        ]
-      }
-    },
-    {
-      "name": "sm15",
-      "title": "MOUD Training: Naltrexone (Vivitrol) - monthly injection",
-      "type": "string",
-      "description": "To what extent have you received specific training about the following medications for opioid use disorder? (1=No Training, 7=Extensive Training)[Staff members are under too much pressure to do their jobs effectively]",
-      "constraints": {
-        "enum": [
-          "1 No training",
-          "2",
-          "3",
-          "4",
-          "5",
-          "6",
-          "7 Extensive Training"
-        ]
-      }
-    },
-    {
-      "name": "im1",
-      "title": "Implementation Outcome Measures: Fitting",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im2",
-      "title": "Implementation Outcome Measures: Suitable",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im3",
-      "title": "Implementation Outcome Measures: Applicable",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im4",
-      "title": "Implementation Outcome Measures: Good match.",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im5",
-      "title": "Implementation Outcome Measures: Implementable.",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im6",
-      "title": "Implementation Outcome Measures: Possible",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im7",
-      "title": "Implementation Outcome Measures: Doable",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im8",
-      "title": "Implementation Outcome Measures: Easy to use",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im9",
-      "title": "Implementation Outcome Measures: Approval",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im10",
-      "title": "Implementation Outcome Measures: Appealing",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im11",
-      "title": "Implementation Outcome Measures: Like",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
-      }
-    },
-    {
-      "name": "im12",
-      "title": "Implementation Outcome Measures: Welcome",
-      "type": "string",
-      "description": "Staff members are under too much pressure to do their jobs effectively",
-      "constraints": {
-        "enum": [
-          "1 Completely disagree",
-          "2 Disagree",
-          "3 Neither agree nor disagree",
-          "4 Agree",
-          "5 Completely agree"
-        ]
+      "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_other_specified"
       }
     }
   ]

@@ -20,6 +20,10 @@
       "constraints": {
         "required": true,
         "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "jdc_person_id"
       }
     },
     {
@@ -30,6 +34,10 @@
       "constraints": {
         "required": true,
         "minimum": 1
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "visit_number"
       }
     },
     {
@@ -40,7 +48,11 @@
       "constraints": {
         "required": true
       },
-      "format": "%Y%m%d"
+      "format": "%Y%m%d",
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "shifted_visit_dt"
+      }
     },
     {
       "name": "visit_type",
@@ -53,6 +65,10 @@
           "Baseline",
           "Follow-up"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "visit_type"
       }
     },
     {
@@ -68,6 +84,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_confidence",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-7"
       }
     },
     {
@@ -83,6 +104,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_commitment",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-8"
       }
     },
     {
@@ -98,6 +124,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_tracking",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-9"
       }
     },
     {
@@ -113,6 +144,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_attitude",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-10"
       }
     },
     {
@@ -128,6 +164,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_org_support",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-11"
       }
     },
     {
@@ -143,6 +184,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_want",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-12"
       }
     },
     {
@@ -158,6 +204,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_momentum",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-13"
       }
     },
     {
@@ -173,6 +224,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_challenges",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-14"
       }
     },
     {
@@ -188,6 +244,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_determin",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-15"
       }
     },
     {
@@ -203,6 +264,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_coordinate",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-16"
       }
     },
     {
@@ -218,6 +284,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_motivation",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-17"
       }
     },
     {
@@ -233,6 +304,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational readiness for implementing change (ORIC)",
+        "jcoin:final_variable_name": "org_readiness_politics",
+        "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-18"
       }
     },
     {
@@ -248,6 +324,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational Climate: Stress",
+        "jcoin:final_variable_name": "org_climate_pressure",
+        "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
       }
     },
     {
@@ -263,6 +344,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational Climate: Stress",
+        "jcoin:final_variable_name": "org_climate_stress",
+        "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
       }
     },
     {
@@ -278,6 +364,11 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational Climate: Stress",
+        "jcoin:final_variable_name": "org_climate_workload",
+        "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
       }
     },
     {
@@ -293,13 +384,18 @@
           "4",
           "5 Agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Organizational Climate: Stress",
+        "jcoin:final_variable_name": "org_climate_frustration",
+        "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
       }
     },
     {
       "name": "sm1",
       "title": "MOUD Attitudes: Methadone",
       "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
+      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide   Don't know  option.) [Staff members are under too much pressure to do their jobs effectively]",
       "constraints": {
         "enum": [
           "1 Not at all Effective",
@@ -310,13 +406,17 @@
           "6",
           "7 Very Effective"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "attitude_methadone"
       }
     },
     {
       "name": "sm2",
       "title": "MOUD Attitudes: Buprenorphine (Suboxone) - oral",
       "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
+      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide   Don't know  option.) [Staff members are under too much pressure to do their jobs effectively]",
       "constraints": {
         "enum": [
           "1 Not at all Effective",
@@ -327,13 +427,17 @@
           "6",
           "7 Very Effective"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "attitude_suboxone_oral"
       }
     },
     {
       "name": "sm3",
       "title": "MOUD Attitudes: Buprenorphine (Sublocade) - monthly injection",
       "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
+      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide   Don't know  option.) [Staff members are under too much pressure to do their jobs effectively]",
       "constraints": {
         "enum": [
           "1 Not at all Effective",
@@ -344,13 +448,17 @@
           "6",
           "7 Very Effective"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "attitude_sublocade_inject"
       }
     },
     {
       "name": "sm4",
       "title": "MOUD Attitudes: Naltrexone - oral",
       "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
+      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide   Don't know  option.) [Staff members are under too much pressure to do their jobs effectively]",
       "constraints": {
         "enum": [
           "1 Not at all Effective",
@@ -361,13 +469,17 @@
           "6",
           "7 Very Effective"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "attitude_naltrexone_oral"
       }
     },
     {
       "name": "sm5",
       "title": "MOUD Attitudes: Naltrexone (Vivitrol) - monthly injection",
       "type": "string",
-      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide �Don�t know� option.) [Staff members are under too much pressure to do their jobs effectively]",
+      "description": "Based on your knowledge and personal experience, to what extent do you consider each of the following medications for opioid use disorder to be effective with justice-involved populations? (1=Not at all Effective, 7=Very Effective; provide   Don't know  option.) [Staff members are under too much pressure to do their jobs effectively]",
       "constraints": {
         "enum": [
           "1 Not at all Effective",
@@ -378,6 +490,10 @@
           "6",
           "7 Very Effective"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "attitude_naltrexone_inject"
       }
     },
     {
@@ -395,6 +511,10 @@
           "6",
           "7 Very Acceptable"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "acceptance_methadone"
       }
     },
     {
@@ -412,6 +532,10 @@
           "6",
           "7 Very Acceptable"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "acceptance_suboxone_oral"
       }
     },
     {
@@ -429,6 +553,10 @@
           "6",
           "7 Very Acceptable"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "acceptance_sublocade_inject"
       }
     },
     {
@@ -446,6 +574,10 @@
           "6",
           "7 Very Acceptable"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "acceptance_naltrexone_oral"
       }
     },
     {
@@ -463,6 +595,10 @@
           "6",
           "7 Very Acceptable"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "acceptance_naltrexone_inject"
       }
     },
     {
@@ -480,6 +616,10 @@
           "6",
           "7 Extensive Training"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "training_methadone"
       }
     },
     {
@@ -497,6 +637,10 @@
           "6",
           "7 Extensive Training"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "training_suboxone_oral"
       }
     },
     {
@@ -514,6 +658,10 @@
           "6",
           "7 Extensive Training"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "training_sublocade_inject"
       }
     },
     {
@@ -531,6 +679,10 @@
           "6",
           "7 Extensive Training"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "training_naltrexone_oral"
       }
     },
     {
@@ -548,6 +700,10 @@
           "6",
           "7 Extensive Training"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Staff Attitudes Toward MOUD",
+        "jcoin:final_variable_name": "training_naltrexone_inject"
       }
     },
     {
@@ -563,6 +719,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_fitting"
       }
     },
     {
@@ -578,6 +738,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_suitable"
       }
     },
     {
@@ -593,6 +757,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_applicable"
       }
     },
     {
@@ -608,6 +776,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_good match"
       }
     },
     {
@@ -623,6 +795,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_implementable"
       }
     },
     {
@@ -638,6 +814,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_possible"
       }
     },
     {
@@ -653,6 +833,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_doable"
       }
     },
     {
@@ -668,6 +852,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_easy to use"
       }
     },
     {
@@ -683,6 +871,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_approval"
       }
     },
     {
@@ -698,6 +890,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_appealing"
       }
     },
     {
@@ -713,6 +909,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_like"
       }
     },
     {
@@ -728,6 +928,10 @@
           "4 Agree",
           "5 Completely agree"
         ]
+      },
+      "custom": {
+        "jcoin:core_measure_section": "Implementation Outcome Measures",
+        "jcoin:final_variable_name": "outcome_welcome"
       }
     }
   ]
