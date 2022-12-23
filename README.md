@@ -3,17 +3,25 @@
 The goal of this repository is to make data models for data validation and transformation in a frictionless format and use these to render human-readable data dictionaries consumable by analysts.
 
 
-For more information on the frictionless data toolkit, [click here](https://frictionlessdata.io/)
+For more information on the frictionless data toolkit, [click here](https://frictionlessdata.io/).
 
 ## Human readable data data dictionaries
 See archive for previous versions. See github issues for future planned work.
 
+The schema/data dictionaries were created to represent 
+the publicly available [core measures document](docs/JCOIN-core-measures_public.pdf) 
 ## Schemas and data dictionaries
 
 > WARNING: while the content will not change dramatically some of the scripts will to make this process more efficient.
 
-`csvs`: tabular version of data dictionaries.
-`make_core_measure_table_schemas.py`: converts to JSON schema (which is saved in `schemas`)
+`csvs`: tabular version of data dictionaries with standard frictionless names.
+
+`scripts/schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option,
+    minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+
+> IMPORTANT: the source of truth for schemas are the schemas/*.json files. 
+
+> The schemas were created using the publicly available JCOIN-core-measures-public.pdf document. Additionally, fields were added to satisfy additional fields for reporting such as quarter_enrolled, current_submission_status etc.
 
 ## Encoding transforms
 
@@ -45,3 +53,5 @@ See archive for previous versions. See github issues for future planned work.
     Minor
     - added missing demographic fields
     - corrected typos
+- 1.3.0b
+    Added staff schemas
