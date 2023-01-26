@@ -47,27 +47,38 @@ def update_json():
         schema.to_json(outfile)
 
 @click.command(name="tohtml")
-def to_html():
+@click.option("--freeze-fields",default=['name','title'])
+@click.option("--freeze-headers",is_flag=True,default=True)
+def to_html(freeze_fields,freeze_headers):
     def _to_html_list(v):
         items = v.split("|")
         ul = "<ul>{li}</ul>"
         list_items = ["<li>"+i+"</li>" for i in items]
         return ul.format(li="".join(list_items))
+    def _add_searchbar():
+        pass
 
-    to_html_list = lambda v: "<ul>"+"".join([f'<li>{v1}</li>' for v1 in '|'.split(v)])+"</ul>"
+    # def _freeze_headers(styledf):
+    #     if freeze_headers:
+    #         print("Freezing headers")
+    #         styledf = styledf.set_sticky(axis=1)
+    #     return styledf
+    
     for csvpath in csvs:
         df = pd.read_csv(csvpath)
         dfhtml = (
             df
-            .set_index('name')
+            .set_index(freeze_fields)
             .applymap(lambda v:_to_html_list(v) 
                 if type(v)==str and re.search("\|",str(v)) else v)
             .fillna("")
-            .to_html(
+            .style.set_sticky(axis=0)
+            # .pipe(_freeze_headers)
+        )
+        return dfhtml.to_html(
                 csvpath.parents[1]/
                 'htmls'/
                 csvpath.with_suffix(".html").name)
-        )
 
 @click.group()
 def cli():
