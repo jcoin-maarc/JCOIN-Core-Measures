@@ -9,7 +9,7 @@ For more information on the frictionless data toolkit, [click here](https://fric
 See archive for previous versions. See github issues for future planned work.
 
 The schema/data dictionaries were created to represent 
-the publicly available [core measures document](docs/JCOIN-core-measures_public.pdf) 
+the publicly available [core measures document](docs/assets/JCOIN-core-measures_public.pdf) 
 ## Schemas and data dictionaries
 
 > WARNING: while the content will not change dramatically some of the scripts will to make this process more efficient.
