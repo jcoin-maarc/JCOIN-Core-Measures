@@ -1,0 +1,44 @@
+#https://www.mkdocs.org/user-guide/configuration/#
+site_name: JCOIN Data Commons Documentation
+site_url: https://jcoin-maarc.github.io/jdc-docs-public
+nav:
+  - Home: index.md
+  - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
+  - Staff Core Measures:
+    - staff.md
+  - Client Core Measures:
+    - clients.md
+theme:
+  name: material
+  palette:
+    scheme: heal_platform
+  font:
+    text: Montserrat
+  logo: assets/HEAL_Initiative_White-cropped.svg
+  features:
+    - navigation.indexes
+    - navigation.indexes
+    - navigation.tracking
+  favicon: assets/heal_logo.png
+extra_css:
+  - stylesheets/extra.css
+extra:
+  homepage: https://jcoin.datacommons.io/
+use_directory_urls: true
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: True
+      baselevel: 1
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.snippets:
+      url_download: True
+plugins:
+  - search
+  - mkdocs-video:
+      is_video: True
+  # - mermaid2
+  #- offline

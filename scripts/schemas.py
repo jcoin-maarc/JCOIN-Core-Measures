@@ -11,8 +11,6 @@ import click
 import re
 jsons = Path(__file__).parents[1].joinpath('schemas').glob("*")
 csvs = Path(__file__).parents[1].joinpath('csvs').glob("*")
-html = Path(__file__).parents[1].joinpath('htmls')
-html.mkdir(exist_ok=True)
 
 @click.command(name="tocsv")
 def to_csv():
@@ -58,11 +56,11 @@ def to_html(freeze_fields,freeze_headers):
     def _add_searchbar():
         pass
 
-    # def _freeze_headers(styledf):
-    #     if freeze_headers:
-    #         print("Freezing headers")
-    #         styledf = styledf.set_sticky(axis=1)
-    #     return styledf
+    def _freeze_headers(styledf):
+        if freeze_headers:
+            print("Freezing headers")
+            styledf = styledf.set_sticky(axis=1)
+        return styledf
     
     for csvpath in csvs:
         df = pd.read_csv(csvpath)
@@ -73,12 +71,12 @@ def to_html(freeze_fields,freeze_headers):
                 if type(v)==str and re.search("\|",str(v)) else v)
             .fillna("")
             .style.set_sticky(axis=0)
-            # .pipe(_freeze_headers)
+            .pipe(_freeze_headers)
         )
-        return dfhtml.to_html(
-                csvpath.parents[1]/
-                'htmls'/
-                csvpath.with_suffix(".html").name)
+        dfhtml.to_html(
+            csvpath.parents[1]/
+            'docs/assets'/
+            csvpath.with_suffix(".html").name)
 
 @click.group()
 def cli():

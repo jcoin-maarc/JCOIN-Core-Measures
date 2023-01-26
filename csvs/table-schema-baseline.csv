@@ -6,7 +6,8 @@ current_study_status,Current Study Status,string,A summary of the current status
 d1,Birth date,date,What is your birth date?,,,,,,,%Y%m%d,,,
 d1a,Age,integer,About how old are you? (top coded at 90),,,,,,,,,,
 o1,Sex at birth,string,What sex was originally listed on your birth certificate?,,,,,,Male|Female|Decline to answer|Something else,,,,
-o2,Gender Identity,string,What is your gender identity?,,,,Demographics,gender_identity_long,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True",,
+o2,Gender Identity,string,What is your gender identity?,,,,Demographics,gender_identity_long,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
+ False if not 'Male' and not 'Transfgender' else True",,
 d4b,Gender Identity (condensed),string,What is your gender identity?,,,,Demographics,gender identity_short,Male|Female|Transgender|Gender nonconforming|Something else|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",,
 d3_white,Race: White,boolean,[White] What is your race? SELECT ALL THAT APPLY,True,,,Demographics,race_white,,,,Yes,No
 d3_black,Race: Black or African American,boolean,[Black or African American] What is your race? SELECT ALL THAT APPLY,True,,,Demographics,race_black,,,,Yes,No
