@@ -1,0 +1,4137 @@
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>title</th>
+      <th>type</th>
+      <th>description</th>
+      <th>constraints.required</th>
+      <th>constraints.pattern</th>
+      <th>custom.jcoin:core_measure_section</th>
+      <th>custom.jcoin:final_variable_name</th>
+      <th>constraints.minimum</th>
+      <th>format</th>
+      <th>constraints.enum</th>
+      <th>custom.notes</th>
+      <th>trueValues</th>
+      <th>falseValues</th>
+      <th>constraints.maximum</th>
+    </tr>
+    <tr>
+      <th>name</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>jdc_person_id</th>
+      <td>JCOIN data commons person identifier</td>
+      <td>string</td>
+      <td>The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).</td>
+      <td>True</td>
+      <td>[A-Z][0-9]{3}-[0-9]{4}</td>
+      <td>Record and linkage</td>
+      <td>jdc_person_id</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>visit_number</th>
+      <td>Visit Number</td>
+      <td>integer</td>
+      <td>A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).</td>
+      <td>True</td>
+      <td></td>
+      <td>Record and linkage</td>
+      <td>visit_number</td>
+      <td>1.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>shifted_visit_dt</th>
+      <td>Visit Date (shifted)</td>
+      <td>date</td>
+      <td>This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer</td>
+      <td>True</td>
+      <td></td>
+      <td>Record and linkage</td>
+      <td>shifted_visit_dt</td>
+      <td></td>
+      <td>%Y%m%d</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>visit_type</th>
+      <td>Visit Type</td>
+      <td>string</td>
+      <td>The visit type/category (either baseline or follow up)</td>
+      <td>True</td>
+      <td></td>
+      <td>Record and linkage</td>
+      <td>visit_type</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Baseline&lt;/li&gt;&lt;li&gt;Follow-up&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s1a</th>
+      <td>Last time drug use</td>
+      <td>string</td>
+      <td>[... you used alcohol or other drugs weekly or more often?  ] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_drug_use</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s1b</th>
+      <td>Last time drug use: getting, using, or recovering</td>
+      <td>string</td>
+      <td>[... You spent a lot of time either getting alcohol or other drugs, using alcohol or other drugs, or recovering from the effects of alcohol or other drugs (feeling sick)? ] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_drug_get_use_recover</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s1c</th>
+      <td>Last time drug use: social dysfunction</td>
+      <td>string</td>
+      <td>[... You kept using alcohol or other drugs even though it was causing social   problems, leading to fights, or getting you into trouble with other people? ] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_drug_use_social_dysfunction</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s1d</th>
+      <td>Last time drug use: work or life dysfunction</td>
+      <td>string</td>
+      <td>[… your use of alcohol or other drugs caused you to give up or reduce your involvement in activities at work, school, home or social events? ] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_drug_use_work_life_dysfunction</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s1e</th>
+      <td>Last time drug use: withdrawal</td>
+      <td>string</td>
+      <td>[... You had withdrawal problems from alcohol or other drugs like shaky hands, throwing up, having trouble sitting still or sleeping, or you used any  alcohol or other drugs to stop being sick or avoid withdrawal problems? ] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_drug_use_withdrawal</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s2a</th>
+      <td>Last time drug use: any opioids</td>
+      <td>string</td>
+      <td>[... used any kind of heroin, fentanyl or other opioid?(such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?] When was the last time…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_time_opioid_use</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s2b</th>
+      <td>Last time drug use: opioid overdose</td>
+      <td>string</td>
+      <td>[... had an opioid overdose? [used enough of the drug that it produced a life-threatening reaction that required medical attention]] When was the last time…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_time_opioid_overdose</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s2c</th>
+      <td>Last time drug use: OUD medication-assisted treatment</td>
+      <td>string</td>
+      <td>[... went to any kind of medication assisted treatment for opioid use disorder?] When was the last time…</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>last_time_opioid_med_treatment</td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>Not reported not a part of the core measures but id'ed a few missing values that cant be accounted for by skip logic. In future, may want to make more precise</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3a</th>
+      <td>Opioid Overdose Count</td>
+      <td>integer</td>
+      <td>[...overdose on heroin, fentanyl or other opioids?  [Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention] ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_overdose_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3b</th>
+      <td>Opioid Overdose Count: Receiving Naloxone</td>
+      <td>integer</td>
+      <td>[...did you receive naloxone (Evzio or Narcan) to reverse your overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_overdose_naloxone_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Overdose means that you took enough of the drug that it caused a life-threatening reaction that required medical attention</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3c</th>
+      <td>Person Who Administered Nalaxone for Overdose</td>
+      <td>array</td>
+      <td>Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>who_administered_naloxone</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>TODO: expand fields to each of the possible selections</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3d</th>
+      <td>Drugs 4 hrs Before Overdose</td>
+      <td>array</td>
+      <td>What drugs had you taken in the 4 hours before you overdosed? (SELECT ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>drugs_4hrs_prior_to_overdose</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>TODO: expand fields to each of the possible selections</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3e</th>
+      <td>Emergency Medical Service Following Overdose</td>
+      <td>integer</td>
+      <td>[...receive emergency medical service following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>emergency_service_after_overdose</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3f</th>
+      <td>Emergency Department Visit Count Following Overdose</td>
+      <td>integer</td>
+      <td>[...go to the emergency department following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>emergency_dept_after_overdose_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3g</th>
+      <td>Hospital Admissions Count Following Overdose</td>
+      <td>integer</td>
+      <td>[...get admitted to the hospital following an overdose?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>hospital_admission_after_overdose_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s3h</th>
+      <td>Substance Use Treatment Referral Count Following Overdose</td>
+      <td>integer</td>
+      <td>[...receive a referral to substance use treatment from the police, EMS, ED or hospital staff?  ] During the past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER ON S2b). . .</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>substance_use_treatment_referral_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4a</th>
+      <td>Drug Use Count</td>
+      <td>integer</td>
+      <td>[...on how many days did you use any heroin, fentanyl, opioids, alcohol, marijuana or other illicit drugs?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>drug_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4b</th>
+      <td>Alcohol Use Count</td>
+      <td>integer</td>
+      <td>[...how many times did you drink any kind of alcohol (beer, gin, rum, scotch, tequila, whiskey, wine or mixed drinks)?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>alcohol_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4c</th>
+      <td>Alcohol Use Count: Binge Drinking</td>
+      <td>integer</td>
+      <td>[...how many times did you have 5 or more drinks?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>alcohol_binge_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4d</th>
+      <td>Marijuana use count: medical</td>
+      <td>integer</td>
+      <td>[...how many times did you use medical marijuana that was obtained from a dispensary with your own recommendation card or prescription?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>marijuana_medical_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4e</th>
+      <td>Marijuana use count: Not own</td>
+      <td>integer</td>
+      <td>[... how many times did you use other marijuana, including hashish, edibles, tinctures or concentrated drops, blunts or other forms of THC (cannabis, herb, pot, reefer, weed), or medical marijuana that was not your own?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>marijuana_not_own_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4f</th>
+      <td>Opioid use count: Heroin</td>
+      <td>integer</td>
+      <td>[... how many times did you use heroin (alone or mixed with other drugs)?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_heroin_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4g</th>
+      <td>Opioid use count: Fentanyl</td>
+      <td>integer</td>
+      <td>[... how many times did you use fentanyl (alone or mixed with other drugs)?    ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_fentanyl_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4h</th>
+      <td>Opioid use count: Street Methadone</td>
+      <td>integer</td>
+      <td>[... how many times did you use nonprescription or street methadone?     ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_street_methadone_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4j</th>
+      <td>Opioid use count: Suboxone</td>
+      <td>integer</td>
+      <td>[... how many times did you use use nonprescription or street Suboxone?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_suboxone_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4k</th>
+      <td>Opioid use count: other</td>
+      <td>integer</td>
+      <td>[... how many times did you use other opioids, opiates, painkillers, or other analgesics (such as codeine, Darvocet, Darvon, Demerol, Dilaudid, Karachi, OxyContin, Oxys, Percocet, Propoxyphene, morphine, opium, Talwin or Tylenol with codeine, Vicodin, Zohydro)?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>opioid_other_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4m</th>
+      <td>Cocaine use count</td>
+      <td>integer</td>
+      <td>[... how many times did you use crack, smoked rock, freebase, or other forms of cocaine?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>cocaine_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4n</th>
+      <td>Speed use count</td>
+      <td>integer</td>
+      <td>[... how many times did you use any methamphetamines, amphetamines, or other forms of speed?       ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>speed_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4p</th>
+      <td>Benzodiazapine, anti-anxiety, and tranquilizer use count</td>
+      <td>integer</td>
+      <td>[... how many times did you use any benzodiazepines, anti-anxiety drugs or tranquilizers (such as Ativan, Equanil, Dalmane, Deprol, Diazepam, Klonopin, Librium, Lortab, Meprobamate, Miltown, Prosom, Serax, Traxene, Valium, Verseed, Xanax)?      ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>benzos_anti_anxiety_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4z</th>
+      <td>Drug use count: other</td>
+      <td>integer</td>
+      <td>[...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? ] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>drug_use_other_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s4z_describe</th>
+      <td>Drug use: description of other drugs</td>
+      <td>string</td>
+      <td>[...on how many days did you use any other drug that has not been mentioned (such as hallucinogens, downers)? (Please describe )] During the past xx days (since last assessment), on how many days did you. . . [Write 0 days if no use]</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>drug_use_other_desc</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>s5</th>
+      <td>Place of No Opioid Use (Jail, Hospital, etc)</td>
+      <td>integer</td>
+      <td>During the past 90 days (prior to entering jail or prison/ since your last assessment), on how many days have you been in a jail, hospital or other place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana or other drugs? (USE 0 FOR NONE)</td>
+      <td></td>
+      <td></td>
+      <td>Substance Use</td>
+      <td>place_of_no_drug_use_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1</th>
+      <td>Activities against law besides drugs</td>
+      <td>integer</td>
+      <td>During the past 90 days (since last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use? [IF 0, GO TO J2]</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>activities_against_law_besides_drugs_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>[IF 0, GO TO J2]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a1</th>
+      <td>Drug possession</td>
+      <td>integer</td>
+      <td>[... been in possession of small amounts of drugs? (drug possession)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>drug_possession_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a2</th>
+      <td>Drunkenness or other liquor law violations</td>
+      <td>integer</td>
+      <td>[... been drunk or high in public? (drunkenness or other liquor law violations)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>drunkenness_or_other_liquor_law_violations_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a3</th>
+      <td>Driving under the influence or while intoxicated</td>
+      <td>integer</td>
+      <td>[... driven a vehicle while under the influence of alcohol or drugs? (driving under the influence or while intoxicated)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>driving_under_the_influence_or_while_intoxicated_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a4</th>
+      <td>Possession, dealing, distribution or sale of drugs</td>
+      <td>integer</td>
+      <td>[...sold, distributed or helped to make illegal drugs?  (possession, dealing, distribution or sale of drugs)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>possession_dealing_distribution_or_sale_of_drugs_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a5</th>
+      <td>Vandalism or property destruction</td>
+      <td>integer</td>
+      <td>[... purposely damaged or destroyed property that did not belong to you? (vandalism or property destruction)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>vandalism_or_property_destruction_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a6</th>
+      <td>Receiving, possessing or selling stolen goods</td>
+      <td>integer</td>
+      <td>[... bought, received, possessed or sold any stolen goods? (receiving, possessing or selling stolen goods)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>receiving_possessing_or_selling_stolen_goods_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a7</th>
+      <td>Forgery, fraud or embezzlement</td>
+      <td>integer</td>
+      <td>[... passed bad checks, forged or altered a prescription, or took money illegally from an employer?  (forgery, fraud or embezzlement)     ] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>forgery_fraud_or_embezzlement_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a8</th>
+      <td>Shoplifting</td>
+      <td>integer</td>
+      <td>[... taken something from a store without paying for it? (shoplifting)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>shoplifting_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a9</th>
+      <td>Larceny or theft</td>
+      <td>integer</td>
+      <td>[... other than from a store, taken money or property that didn't belong to you? (larceny or theft)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>larceny_or_theft_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a10</th>
+      <td>Burglary or breaking and entering</td>
+      <td>integer</td>
+      <td>[... broken into a house or building to steal something or just to look around? (burglary or breaking and entering)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>burglary_or_breaking_and_entering_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a11</th>
+      <td>Motor vehicle theft</td>
+      <td>integer</td>
+      <td>[... taken a car without people in it that didn't belong to you? (motor vehicle theft)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>motor_vehicle_theft_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a12</th>
+      <td>Carjacking</td>
+      <td>integer</td>
+      <td>[... taken a car from someone who was in it? (carjacking)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>carjacking_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a13</th>
+      <td>Simple assault or battery</td>
+      <td>integer</td>
+      <td>[... hit someone or gotten into a physical fight? (simple assault or battery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>simple_assault_or_battery_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a14</th>
+      <td>Robbery</td>
+      <td>integer</td>
+      <td>[... used a weapon, force, or strong-arm methods to get money or things from a person? (robbery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>robbery_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a15</th>
+      <td>Aggravated assault or battery</td>
+      <td>integer</td>
+      <td>[... hurt someone badly enough they needed bandages or a doctor? (aggravated assault or battery)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>aggravated_assault_or_battery_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a16</th>
+      <td>Forcible rape</td>
+      <td>integer</td>
+      <td>[... made someone have sex with you by force when they did not want to have sex? (forcible rape)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>forcible_rape_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a17</th>
+      <td>Murder, homicide or no-negligent manslaughter</td>
+      <td>integer</td>
+      <td>[... been involved in the death or murder of another person, including accidents? (murder, homicide or no-negligent manslaughter)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>murder_homicide_or_no-negligent_manslaughter_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a18</th>
+      <td>Arson</td>
+      <td>integer</td>
+      <td>[... intentionally set a building, car or other property on fire? (arson)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>arson_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a19</th>
+      <td>Prostitution, pimping or commercialized sex</td>
+      <td>integer</td>
+      <td>[... traded sex for food, drugs or money? (prostitution, pimping or commercialized sex)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>prostitution_pimping_or_commercialized_sex_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j1a99</th>
+      <td>Other unlawful activities</td>
+      <td>integer</td>
+      <td>[... done something else that would have gotten you into trouble with the police if they had known about it? (carrying a weapon, gang involvement, domestic violence, trespass, gambling, distributing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy,  ) (PLEASE DESCRIBE)] During the past xx days (since last assessment), how many times have you…(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>other_unlawful_activities_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>(common charge names associated with behavior for reference only)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2</th>
+      <td>Overall charged arrests</td>
+      <td>integer</td>
+      <td>During the past 90 days (since last assessment), how many times were you arrested and charged?</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>overall_charged_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2a</th>
+      <td>Drug possession arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for drug possession (for small amounts)] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>drug_possession_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2b</th>
+      <td>Law violations arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for drunkenness or other liquor law violations] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>law_violations_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2c</th>
+      <td>Driving under the influence/intoxicated arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for driving under the influence or while intoxicated] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>driving_under_the_influence/intoxicated_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2d</th>
+      <td>Drug activity arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for possession, dealing, distribution or sale of drugs] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>drug_activity_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2e</th>
+      <td>Vandalism or property destruction arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for vandalism or property destruction] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>vandalism_or_property_destruction_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2f</th>
+      <td>Stolen goods arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for receiving, possessing or selling stolen goods] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>stolen_goods_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2g</th>
+      <td>Forgery, fraud or embezzlement arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for forgery, fraud or embezzlement] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>forgery_fraud_or_embezzlement_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2h</th>
+      <td>Shoplifting arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for shoplifting] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>shoplifting_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2i</th>
+      <td>Theft/larceny arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for larceny or theft] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>theft_larceny_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2j</th>
+      <td>Burglary or breaking and entering arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for burglary or breaking and entering] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>burglary_or_breaking_and_entering_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2k</th>
+      <td>Vehicle theft arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for motor vehicle theft] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>vehicle_theft_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2l</th>
+      <td>Car jacking arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for car jacking] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>car_jacking_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2m</th>
+      <td>Simple assault or battery arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for simple assault or battery] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>simple_assault_or_battery_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2n</th>
+      <td>Robbery arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for robbery] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>robbery_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2o</th>
+      <td>Aggravated assault or battery arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for aggravated assault or battery] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>aggravated_assault_or_battery_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2p</th>
+      <td>Forcible rape arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for forcible rape] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>forcible_rape_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2q</th>
+      <td>Negligent manslaughter arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for murder, homicide or non-negligent manslaughter] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>negligent_manslaughter_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2r</th>
+      <td>Arson arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for arson] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>arson_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2s</th>
+      <td>Commercialized sex arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for prostitution, pimping or commercialized sex] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>commercialized_sex_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j2t</th>
+      <td>Other charges arrests</td>
+      <td>integer</td>
+      <td>[Number of arrests for other charges (carrying a weapon, gang involvement, domestic violence, trespass, gambling, disturbing the peace, disorderly conduct, paraphernalia, runaway, curfew, truancy) ] During the past 90 days (since last assessment)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>other_charges_arrests_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3a</th>
+      <td>Electronic monitoring</td>
+      <td>integer</td>
+      <td>[...on electronic monitoring?] During the past xx days (since last assessment), how many days have you been …</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_electronic_monitoring</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3b</th>
+      <td>House arrest</td>
+      <td>integer</td>
+      <td>[...on house arrest?] During the past xx days (since last assessment), how many days have you been …</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_house_arrest</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3c</th>
+      <td>Jail time</td>
+      <td>integer</td>
+      <td>[...in jail?] During the past xx days (since last assessment), how many days have you been …</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_jail_time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3d</th>
+      <td>Prison time</td>
+      <td>integer</td>
+      <td>[...in prison?] During the past xx days (since last assessment), how many days have you been …</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_prison_time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3e</th>
+      <td>Current jail or prison</td>
+      <td>boolean</td>
+      <td>Are you currently in jail or prison? (CAN MARK IF OBVIOUS)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>current_jail_or_prison_ind</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MBK: added Unknown to satisfy a small amount of respondents for one hub.</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j3f</th>
+      <td>Length of jail or prison time</td>
+      <td>integer</td>
+      <td>How long have you been in jail or prison? (just this episode)</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>length_of_jail_or_prison_time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j4a</th>
+      <td>Parole</td>
+      <td>integer</td>
+      <td>[...been on parole?] During the past xx days (since last assessment), how many days have you…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_parole</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j4b</th>
+      <td>Probation</td>
+      <td>integer</td>
+      <td>[...been on probation?] During the past xx days (since last assessment), how many days have you…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_probation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j4c</th>
+      <td>Other kind of community supervision</td>
+      <td>integer</td>
+      <td>[...been on any other kind of community supervision?] During the past xx days (since last assessment), how many days have you…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_other_kind_of_community_supervision</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j4d</th>
+      <td>Meeting with probation or parole officer</td>
+      <td>integer</td>
+      <td>[...met with your probation or parole officer?] During the past xx days (since last assessment), how many days have you…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_meeting_with_probation_or_parole_officer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j4e</th>
+      <td>Trouble with probation or parole officer</td>
+      <td>integer</td>
+      <td>[...been in trouble with your probation or parole officer?] During the past xx days (since last assessment), how many days have you…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_trouble_with_probation_or_parole_officer</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5a</th>
+      <td>Life time arrests</td>
+      <td>integer</td>
+      <td>[...how many times in your life have you been arrested including as a juvenile?] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>num_days_life_time_arrests</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5b</th>
+      <td>First time arrest</td>
+      <td>integer</td>
+      <td>[...how old were you the first time you were arrested? ] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>age_at_first_time_arrest</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5c_years</th>
+      <td>Lifetime years in detention, jail, or prison time</td>
+      <td>number</td>
+      <td>[...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>lifetime_years_in_detention_jail_or_prison_time_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MBK: changed from integer to number to allow partial years/months</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5c_months</th>
+      <td>Lifetime months in detention, jail, or prison time</td>
+      <td>number</td>
+      <td>[...how much total time have you spent in detention, jail or prison during your lifetime?] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>lifetime_months_in_detention_jail_or_prison_time_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>MBK: changed from integer to number to allow partial years/months</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5d</th>
+      <td>Lifetime guity and sentenced</td>
+      <td>integer</td>
+      <td>[...how many times have you been found guilty and sentenced (including adjudications as a youth or convictions as an adult)?] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>lifetime_guity_and_sentenced_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>j5e</th>
+      <td>First time adjudication conviction</td>
+      <td>integer</td>
+      <td>[...how old were you the first time you were adjudicated or convicted?] During your lifetime…</td>
+      <td></td>
+      <td></td>
+      <td>Justice Involvement</td>
+      <td>first_time_adjudication_conviction_ct</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u1</th>
+      <td>Emergency room:  Number of visits</td>
+      <td>integer</td>
+      <td>[...times have you had to go to an emergency room without being admitted to the hospital?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u2</th>
+      <td>Hospital detox program: Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a hospital detoxification program for your alcohol and other drug use (across all episodes)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u3</th>
+      <td>Hospitalization:  Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a hospital for any other reason than detoxification?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u4</th>
+      <td>Residential detox: Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a non-hospital or social detoxification program from alcohol or other drugs (also called residential detox)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u5a</th>
+      <td>Residential treatment program for alcohol/drugs: Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a residential treatment program for alcohol or drug use?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u5b</th>
+      <td>Residential treatment program for mental health: Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a residential treatment program for mental health?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u5c</th>
+      <td>Rehab facility for physical health: Number of nights</td>
+      <td>integer</td>
+      <td>[...nights were you in a residential, nursing home, or other rehabilitation facility for your physical health?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6</th>
+      <td>Primary care provider:  Number of visits</td>
+      <td>integer</td>
+      <td>[...times have you visited a primary care provier (physician, nurse, nurse practitioner, or physician's assistant)?] During the past xx days (since last assessment), how many . . . [Write 0 days if you have not had this experience]</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6a</th>
+      <td>Primary care visit reason: Alcohol/drug use</td>
+      <td>boolean</td>
+      <td>[Alcohol or other drug use?] Why did you visit a primary care provider? (ADD SKIP LOGIC)</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6b</th>
+      <td>Primary care visit reason: Mental health</td>
+      <td>boolean</td>
+      <td>[Mental health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6c</th>
+      <td>Primary care visit reason:  Physical health</td>
+      <td>boolean</td>
+      <td>[Physical health?] Why did you visit a primary care provider? (ADD SKIP LOGIC)</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6d</th>
+      <td>Primary care visit reason:  Some other reason (specify)</td>
+      <td>boolean</td>
+      <td>[Some other reason?] Why did you visit a primary care provider? (ADD SKIP LOGIC)</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u6d_specify</th>
+      <td>Primary care visit reason: Specify other reason</td>
+      <td>string</td>
+      <td>[Specify other reason you visited primary care provider] Why did you visit a primary care provider? (ADD SKIP LOGIC)</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7</th>
+      <td>Outpatient treament program for alcohol/substance use: Number of days</td>
+      <td>integer</td>
+      <td>[…days did you participate in any other outpatient treatment program specializing in alcohol or substance use? (OTHER THAN U1-6)                 ] Other than times you already mentioned in &lt;reference to u6&gt;, during the past 3 months (since last assessment), how many…</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7a</th>
+      <td>Outpatient treatment program: Number of days physically visiting program</td>
+      <td>integer</td>
+      <td>How many of these days did you physically visit the (outpatient treatment) program?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7b</th>
+      <td>Outpatient treatment program: Number of days participating online</td>
+      <td>integer</td>
+      <td>How many of these days did you participate (in the outpatient tx program) online (e.g., smart phone, computer, or tablet)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7c</th>
+      <td>Outpatient treatment program: Number of days seeing doctor</td>
+      <td>integer</td>
+      <td>How many of these days did you see a doctor (at the outpatient treatment program)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7d</th>
+      <td>Outpatient treatment program: Number of days participating in therapy</td>
+      <td>integer</td>
+      <td>How many of these days did you only participate in individual or group therapy?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u7e</th>
+      <td>Outpatient treatment program: Number of days for medication management</td>
+      <td>integer</td>
+      <td>How many of these days were for medication management only?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u8</th>
+      <td>Psychiatrist/psychologist:  Number of total visits</td>
+      <td>integer</td>
+      <td>Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist (Ph.D., Psy.D)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u8a</th>
+      <td>Psychiatrist/psychologist: Number of in-person visits</td>
+      <td>integer</td>
+      <td>How many of these times did you physically visit the program (psychiatrist/psychologist)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u8b</th>
+      <td>Psychiatrist/psychologist: Number of online visits</td>
+      <td>integer</td>
+      <td>How many of these times did you participate online (phone, computer, or tablet; with a psychiatrist/psychologist)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u9</th>
+      <td>Counselor/social worker: Number of total visits</td>
+      <td>integer</td>
+      <td>Other than times you already mentioned above, during the past 3 months (since last assessment), how many times have you seen any other kind or counselor or social worker?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u9a</th>
+      <td>Counselor/social worker: Number of in-person visits</td>
+      <td>integer</td>
+      <td>[...did you physically visit the program (counselor/social worker)?] How many of these times did you…</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u9b</th>
+      <td>Counselor/social worker: Number of online visits</td>
+      <td>integer</td>
+      <td>...did you participate online (phone, computer, or tablet; with a counselor/social worker)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u13</th>
+      <td>Healthcare cost</td>
+      <td>number</td>
+      <td>In the past xx days (since last assessment), how much money have you spent on all healthcare (e.g., copayments or prescriptions)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14</th>
+      <td>Substance use treatment</td>
+      <td>boolean</td>
+      <td>Have you received any substance use treatment in the past xx days (since last assessment)?</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14a</th>
+      <td>Substance use tx provider:  Well-organized</td>
+      <td>string</td>
+      <td>[The provider is organized and well-run.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Strongly agree&lt;/li&gt;&lt;li&gt;Somewhat agree&lt;/li&gt;&lt;li&gt;Neutral&lt;/li&gt;&lt;li&gt;Somewhat disagree&lt;/li&gt;&lt;li&gt;Strongly disagree&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14b</th>
+      <td>Substance use tx provider:  Satisfaction</td>
+      <td>string</td>
+      <td>[You are satisfied with this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Strongly agree&lt;/li&gt;&lt;li&gt;Somewhat agree&lt;/li&gt;&lt;li&gt;Neutral&lt;/li&gt;&lt;li&gt;Somewhat disagree&lt;/li&gt;&lt;li&gt;Strongly disagree&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14c</th>
+      <td>Substance use tx provider:  Efficient staff</td>
+      <td>string</td>
+      <td>[The staff are efficient at doing their job.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Strongly agree&lt;/li&gt;&lt;li&gt;Somewhat agree&lt;/li&gt;&lt;li&gt;Neutral&lt;/li&gt;&lt;li&gt;Somewhat disagree&lt;/li&gt;&lt;li&gt;Strongly disagree&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14d</th>
+      <td>Substance use tx provider:  Personal counseling</td>
+      <td>string</td>
+      <td>[You can get plenty of personal counseling at this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Strongly agree&lt;/li&gt;&lt;li&gt;Somewhat agree&lt;/li&gt;&lt;li&gt;Neutral&lt;/li&gt;&lt;li&gt;Somewhat disagree&lt;/li&gt;&lt;li&gt;Strongly disagree&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>u14e</th>
+      <td>Substance use tx provider:  Medication assistance for opioid use</td>
+      <td>string</td>
+      <td>[You can get plenty of medication assistance for opioid use at this provider.] Considering the substance use treatment from your most recent substance abuse treatment provider in the past xx days (since last assessment), please indicate how much you agree with each of the following statements</td>
+      <td></td>
+      <td></td>
+      <td>Utilization of Services</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Strongly agree&lt;/li&gt;&lt;li&gt;Somewhat agree&lt;/li&gt;&lt;li&gt;Neutral&lt;/li&gt;&lt;li&gt;Somewhat disagree&lt;/li&gt;&lt;li&gt;Strongly disagree&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m1</th>
+      <td>Not candidate for OUD treatment</td>
+      <td>boolean</td>
+      <td>If respondent is not a candidate for OUD treatment, mark here and skip this set of items:</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_meds</th>
+      <td>Preferred type of OUD treatment:  OUD medication</td>
+      <td>boolean</td>
+      <td>[OUD medication (e.g. methadone, buprenorphine/Suboxone, naltrexone/Vivitrol) [Ask M3]] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_detox</th>
+      <td>Preferred type of OUD treatment:  Detox</td>
+      <td>boolean</td>
+      <td>[Detox] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_outpt_counsel</th>
+      <td>Preferred type of OUD treatment:  Outpatient counseling</td>
+      <td>boolean</td>
+      <td>[Outpatient counseling] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_outpt_intensive</th>
+      <td>Preferred type of OUD treatment:  Intensive outpatient</td>
+      <td>boolean</td>
+      <td>[Intensive outpatient  ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_residential</th>
+      <td>Preferred type of OUD treatment:  Residential treatment</td>
+      <td>boolean</td>
+      <td>[Residential treatment ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_other</th>
+      <td>Preferred type of OUD treatment:  Other treatment</td>
+      <td>boolean</td>
+      <td>[Other ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_other_specify</th>
+      <td>Preferred type of OUD treatment:  Other treatment specified</td>
+      <td>boolean</td>
+      <td>[Other (specify)] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_none</th>
+      <td>Preferred type of OUD treatment:  No treatment</td>
+      <td>boolean</td>
+      <td>[No treatment ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m2_dont_know</th>
+      <td>Preferred type of OUD treatment:  Don't know or no preference</td>
+      <td>boolean</td>
+      <td>[Don’t know / No preference ] Which type of opioid use disorder (OUD) treatment would you most prefer to receive if it were available to you now? (CHECK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m3</th>
+      <td>Preferred OUD medication</td>
+      <td>string</td>
+      <td>Which OUD medication treatment type would you most prefer to receive if it were available to you now? (SELECT ONLY ONE) [SKIP LOGIC:  If M3=2, ask M4. If M3=3, ask M5. Otherwise go to next set of questions.]</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Methadone&lt;/li&gt;&lt;li&gt;Buprenorphine/Suboxone&lt;/li&gt;&lt;li&gt;Naltrexone/Vivitrol&lt;/li&gt;&lt;li&gt;Don't know/No preference&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m4</th>
+      <td>Type of buprenorphine preferred</td>
+      <td>string</td>
+      <td>Which type of buprenorphine? (SELECT ONLY ONE)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;I would prefer to receive daily buprenorphine-naloxone sublingual tablets or films (Suboxone)&lt;/li&gt;&lt;li&gt;I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade, Brixadi)&lt;/li&gt;&lt;li&gt;I would prefer to receive the 6-month buprenorphine implant&lt;/li&gt;&lt;li&gt;Don't know/No preference&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>m5</th>
+      <td>Type of naltrexone preferred</td>
+      <td>string</td>
+      <td>Which type of naltrexone? (SELECT ONLY ONE)</td>
+      <td></td>
+      <td></td>
+      <td>Treatment Preferences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;I would prefer to receive daily naltrexone oral (Revia)&lt;/li&gt;&lt;li&gt;I would prefer to receive monthly naltrexone injections (Vivitrol)&lt;/li&gt;&lt;li&gt;Don't know/No preference&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7a</th>
+      <td>People in household</td>
+      <td>integer</td>
+      <td>[How many people, including yourself, are there in your household?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7b</th>
+      <td>People under 18 years old in household</td>
+      <td>integer</td>
+      <td>[How many of the people in your household are under the age of 18?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7c</th>
+      <td>Total household income</td>
+      <td>number</td>
+      <td>[During the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;, what was the total income of everyone in your household together that provided you with support?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7d</th>
+      <td>Total household income from legal sources</td>
+      <td>string</td>
+      <td>[During the past 12 months, which of the following is the category that your total household income from legal sources would be in?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Less than $12,500&lt;/li&gt;&lt;li&gt;$12,500 - $20,000&lt;/li&gt;&lt;li&gt;$20,001 - $30,000&lt;/li&gt;&lt;li&gt;$30,001 - $40,000&lt;/li&gt;&lt;li&gt;$40,001 - $50,000&lt;/li&gt;&lt;li&gt;$50,001 - $100,000&lt;/li&gt;&lt;li&gt;More than $100,000&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7d1</th>
+      <td>Public assistance for household</td>
+      <td>boolean</td>
+      <td>[During the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;, did your household receive any public assistance like unemployment, food stamps / TANF, subsidized housing, or supplemental security income?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7d2</th>
+      <td>Total household money from public assistance</td>
+      <td>number</td>
+      <td>[During the past xx days (since last assessment), approximately how much money has your household all together received from public assistance sources like unemployment, food stamps (TANF), subsidized housing, supplemental security income?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7e1</th>
+      <td>Other non-employmnet income sources</td>
+      <td>string</td>
+      <td>[During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7e2</th>
+      <td>Total household money from other non-employment income sources</td>
+      <td>number</td>
+      <td>[During the past xx days (since last assessment), approximately how much money has your household all together received from other non-employment sources like retirement, pension, alimony, child support, interest?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o10</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7f1</th>
+      <td>Non-employment income with risk of legal or other trouble</td>
+      <td>boolean</td>
+      <td>[During the past xx days (since last assessment), outside of employment described above, did you receive any other income from activities that might get you into trouble or be against the law, like dealing, gambling, or theft?] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d7f2</th>
+      <td>Total household money with risk of causing  legal or other trouble activities</td>
+      <td>number</td>
+      <td>[During the past xx days (since last assessment), outside of employment described above, how much money did you earn from activities that might get you into trouble or be against the law, like dealing, gambling, or theft? ] The next few questions are about your HOUSEHOLD in the past &lt;if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)&gt;.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o12</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8</th>
+      <td>Current school or work situation description</td>
+      <td>string</td>
+      <td>Which one of the following statements best describes your work or school situation currently? (CLARIFY AND CODE) [For D8, include work under the table but not any other illegal work or income]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Working full-time, 35 hours or more a week&lt;/li&gt;&lt;li&gt;Working part-time, less than 35 hours a week&lt;/li&gt;&lt;li&gt;Have a job where you are paid one day at a time (day labor)&lt;/li&gt;&lt;li&gt;Have a job, but not at work because of treatment, extended illness, maternity leave, furlough or strike&lt;/li&gt;&lt;li&gt;Have a job, but not at work because it is seasonal work&lt;/li&gt;&lt;li&gt;Unemployed or laid off and looking for work&lt;/li&gt;&lt;li&gt;Unemployed or laid off and not looking for work&lt;/li&gt;&lt;li&gt;Full-time homemaker (keeping house)&lt;/li&gt;&lt;li&gt;In school or training&lt;/li&gt;&lt;li&gt;In school or training, but not currently going to classes&lt;/li&gt;&lt;li&gt;Retired&lt;/li&gt;&lt;li&gt;In jail, prison or detention&lt;/li&gt;&lt;li&gt;Too disabled for work&lt;/li&gt;&lt;li&gt;In the military&lt;/li&gt;&lt;li&gt;Doing volunteer work&lt;/li&gt;&lt;li&gt;Some other work situation&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8a</th>
+      <td>Number of days worked</td>
+      <td>integer</td>
+      <td>During the past xx days (since last assessment), on how many days have you worked?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o14</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8b</th>
+      <td>Days per week worked</td>
+      <td>integer</td>
+      <td>During the past xx days (since last assessment), how many days per week do you typically work?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8b1</th>
+      <td>Hours per week worked</td>
+      <td>integer</td>
+      <td>During the past xx days (since last assessment), How many hours per week do you usually work?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8c</th>
+      <td>Hourly rate</td>
+      <td>number</td>
+      <td>During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8d_health_insurance</th>
+      <td>Health insurance from work</td>
+      <td>boolean</td>
+      <td>[Health Insurance] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8d_paid_time_off</th>
+      <td>Paid time off from work</td>
+      <td>boolean</td>
+      <td>[Paid time off] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8d_benefit_plan</th>
+      <td>Benefit or pension plan from work</td>
+      <td>boolean</td>
+      <td>[Defined benefit plan or pension] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8d_retirement_plan</th>
+      <td>Retirement plan from work</td>
+      <td>boolean</td>
+      <td>[An arrangement such as a 401(k) or 403(b) plan, under which your employer contributes money towards your retirement every pay period] Do any of the places that you work offer you the following benefits? (MARK ALL THAT APPLY)</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d8e</th>
+      <td>Occupation</td>
+      <td>string</td>
+      <td>What is your occupation?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9</th>
+      <td>Currently covered by health insurance</td>
+      <td>boolean</td>
+      <td>Are you currently covered by health insurance or some other kind of health care plan?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_private</th>
+      <td>Private health insurance plan coverage</td>
+      <td>boolean</td>
+      <td>[Private health insurance] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_medicare</th>
+      <td>Medicare plan coverage</td>
+      <td>boolean</td>
+      <td>[Medicare] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_medigap</th>
+      <td>Medigap plan coverage</td>
+      <td>boolean</td>
+      <td>[Medigap] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_medicaid</th>
+      <td>Medicaid plan coverage</td>
+      <td>boolean</td>
+      <td>[Medicaid ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_schip</th>
+      <td>Children's Health Insurance coverage</td>
+      <td>boolean</td>
+      <td>[SCHIP (CHIP/Children’s Health Insurance Program)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_military</th>
+      <td>Military plan coverage</td>
+      <td>boolean</td>
+      <td>[Military Health Care (Tricare/VA/CHAMP-VA)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_indian</th>
+      <td>Indian Health Service coverage</td>
+      <td>boolean</td>
+      <td>[Indian Health Service] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_state</th>
+      <td>State health coverage</td>
+      <td>boolean</td>
+      <td>[State-Sponsored Health Plan ({If Available, Display State Plan Name})] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_other_government</th>
+      <td>Other government coverage</td>
+      <td>boolean</td>
+      <td>[Other government program] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_single_service</th>
+      <td>Single service coverage</td>
+      <td>boolean</td>
+      <td>[Single service plan (e.g., dental, vision, prescriptions)] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d9a_dont_know</th>
+      <td>Don't know about coverage</td>
+      <td>boolean</td>
+      <td>[Don’t know] What kind of health insurance or health care coverage do you have?  Include those that pay for only one type of service (such as nursing home care, accidents, or dental care).  Exclude private plans that only provide extra cash while hospitalized.  If you have more than one kind of health insurance, tell me all plans that you have. [MARK ALL THAT APPLY]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d10</th>
+      <td>Days uninsured</td>
+      <td>integer</td>
+      <td>During the past xx days (since last assessment), on how many days were you uninsured?</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o34</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11a</th>
+      <td>Number of days at self help group</td>
+      <td>integer</td>
+      <td>[Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11b</th>
+      <td>Number of days at non-alcoholic, structured activities</td>
+      <td>integer</td>
+      <td>[Been in other structured activities where no one was using alcohol or drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o36</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11c</th>
+      <td>Number of days being homeless</td>
+      <td>integer</td>
+      <td>[Been homeless or had to stay with someone else to avoid being homeless? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11d</th>
+      <td>Number of days in homeless shelter</td>
+      <td>integer</td>
+      <td>[Lived in a homeless shelter or emergency housing? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o38</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11e</th>
+      <td>Number of days in household with alcohol use</td>
+      <td>integer</td>
+      <td>[Lived where other people were using alcohol? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11f</th>
+      <td>Number of days in household with drug use</td>
+      <td>integer</td>
+      <td>[Lived where other people were using drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o40</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11g</th>
+      <td>Number of days of formal activities with alcohol</td>
+      <td>integer</td>
+      <td>[Been to formal activities where people were using alcohol or drugs?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11h</th>
+      <td>Number of days of home or family trouble</td>
+      <td>integer</td>
+      <td>[Gotten into trouble at home or with your family for any reason? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o42</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11i</th>
+      <td>Number of days of  abusive behavior in arguments</td>
+      <td>integer</td>
+      <td>[Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>d11j</th>
+      <td>Number of days being physically, emotionally, sexually abused</td>
+      <td>integer</td>
+      <td>[Been attacked with a weapon, beaten, sexually abused or emotionally abused?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o44</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>o3</th>
+      <td>Received Narcan kit</td>
+      <td>boolean</td>
+      <td>[At your most recent release from [jail/prison], did you receive a Naloxone rescue kit (“Narcan kit”) to save yourself or someone else in the event of an opioid overdose? [Overdose definition = use enough of the drug to cause a life-threatening reaction that requires medical attention]] If respondent was in jail/prison during the past 3 months but not currently, ask:</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>o3a</th>
+      <td>Used Narcan Kit</td>
+      <td>boolean</td>
+      <td>[Have you had to use it?] If respondent was in jail/prison during the past 3 months but not currently, ask:</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>o3b</th>
+      <td>Refilled Narcan Kit</td>
+      <td>boolean</td>
+      <td>[Have you obtained a refill/replacement kit?] If respondent was in jail/prison during the past 3 months but not currently, ask:</td>
+      <td></td>
+      <td></td>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p1a</th>
+      <td>Difficulty with chores and house keeping</td>
+      <td>string</td>
+      <td>[... do chores such as sweeping, mopping, janitorial work or other house cleaning work] In the past 7 days I was able to . . .</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Without any difficulty&lt;/li&gt;&lt;li&gt;With a little difficulty&lt;/li&gt;&lt;li&gt;With some difficulty&lt;/li&gt;&lt;li&gt;With much difficulty&lt;/li&gt;&lt;li&gt;Unable to do&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p1b</th>
+      <td>Difficulty using stairs</td>
+      <td>string</td>
+      <td>[...go up and down stairs at a normal pace] In the past 7 days I was able to . . .</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Without any difficulty&lt;/li&gt;&lt;li&gt;With a little difficulty&lt;/li&gt;&lt;li&gt;With some difficulty&lt;/li&gt;&lt;li&gt;With much difficulty&lt;/li&gt;&lt;li&gt;Unable to do&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p1c</th>
+      <td>Difficulty walking</td>
+      <td>string</td>
+      <td>[...walk around for at least 15 minutes] In the past 7 days I was able to . . .</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Without any difficulty&lt;/li&gt;&lt;li&gt;With a little difficulty&lt;/li&gt;&lt;li&gt;With some difficulty&lt;/li&gt;&lt;li&gt;With much difficulty&lt;/li&gt;&lt;li&gt;Unable to do&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p1d</th>
+      <td>Difficulty traveling</td>
+      <td>string</td>
+      <td>[... get from place to place] In the past 7 days I was able to . . .</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Without any difficulty&lt;/li&gt;&lt;li&gt;With a little difficulty&lt;/li&gt;&lt;li&gt;With some difficulty&lt;/li&gt;&lt;li&gt;With much difficulty&lt;/li&gt;&lt;li&gt;Unable to do&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p2a</th>
+      <td>Trouble with Leisure activities with others</td>
+      <td>string</td>
+      <td>[...I had trouble doing all of my regular leisure activities with others ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p2b</th>
+      <td>Trouble with family activities</td>
+      <td>string</td>
+      <td>[...I had trouble doing all of the family activities that I want to do ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p2c</th>
+      <td>Trouble with work</td>
+      <td>string</td>
+      <td>[...I had trouble doing all of my usual work (include work at home) ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p2d</th>
+      <td>Trouble with activities with friends</td>
+      <td>string</td>
+      <td>[...I had trouble doing all of the activities with friends that I want to do ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p3a</th>
+      <td>Feeling fearful</td>
+      <td>string</td>
+      <td>[...I felt fearful] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p3b</th>
+      <td>Feeling hard to focus on anything other than anxiety</td>
+      <td>string</td>
+      <td>[...I found it hard to focus on anything other than my anxiety] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p3c</th>
+      <td>Feeling overwhelming worry</td>
+      <td>string</td>
+      <td>[...My worries overwhelmed me] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p3d</th>
+      <td>Feeling uneasy</td>
+      <td>string</td>
+      <td>[...I felt uneasy] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p4a</th>
+      <td>Feeling worthless</td>
+      <td>string</td>
+      <td>[...I felt worthless] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p4b</th>
+      <td>Feeling helpless</td>
+      <td>string</td>
+      <td>[...I felt helpless] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p4c</th>
+      <td>Feeling depressed</td>
+      <td>string</td>
+      <td>[...I felt depressed] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p4d</th>
+      <td>Feeling hopeless</td>
+      <td>string</td>
+      <td>[...I felt hopeless ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;Rarely&lt;/li&gt;&lt;li&gt;Sometimes&lt;/li&gt;&lt;li&gt;Often&lt;/li&gt;&lt;li&gt;Always&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p5a</th>
+      <td>Feeling fatigued</td>
+      <td>string</td>
+      <td>[...I felt fatigued] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p5b</th>
+      <td>Trouble starting things because tired</td>
+      <td>string</td>
+      <td>[...I had trouble starting things because I was tired  ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p5c</th>
+      <td>Feeling run-down</td>
+      <td>string</td>
+      <td>[…how run-down did you feel on average? ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p5d</th>
+      <td>Fatigue level</td>
+      <td>string</td>
+      <td>[…how fatigued were you on average?] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p6a</th>
+      <td>Sleep quality</td>
+      <td>string</td>
+      <td>[...my sleep quality was] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Very poor&lt;/li&gt;&lt;li&gt;Poor&lt;/li&gt;&lt;li&gt;Fair&lt;/li&gt;&lt;li&gt;Good&lt;/li&gt;&lt;li&gt;Very good&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p6b</th>
+      <td>Refreshing sleep</td>
+      <td>string</td>
+      <td>[...my sleep was refreshing] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p6c</th>
+      <td>Sleep problems</td>
+      <td>string</td>
+      <td>[...I had problems with my sleep] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p6d</th>
+      <td>Difficulty falling asleep</td>
+      <td>string</td>
+      <td>[...I had difficulty falling asleep] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p7a</th>
+      <td>Concentration</td>
+      <td>string</td>
+      <td>[...I have been able to concentrate ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p7b</th>
+      <td>Remembering things</td>
+      <td>string</td>
+      <td>[...I have been able to remember to do things, like take medicine or buy something I needed ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p8a</th>
+      <td>Pain interference with day to day activity</td>
+      <td>string</td>
+      <td>[...How much did pain interfere with your day to day activities? ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p8b</th>
+      <td>Pain inteference with home work</td>
+      <td>string</td>
+      <td>[...How much did pain interfere with work around the home? ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p8c</th>
+      <td>Pain interference with social activities</td>
+      <td>string</td>
+      <td>[...How much did pain interfere with your ability to participate in social activities? ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p8d</th>
+      <td>Pain interference with household chores</td>
+      <td>string</td>
+      <td>[...How much did pain interfere with your household chores? ] In the past 7 days…</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Not at all&lt;/li&gt;&lt;li&gt;A little bit&lt;/li&gt;&lt;li&gt;Somewhat&lt;/li&gt;&lt;li&gt;Quite a bit&lt;/li&gt;&lt;li&gt;Very much&lt;/li&gt;&lt;/ul&gt;</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>p9</th>
+      <td>Pain intensity rating</td>
+      <td>integer</td>
+      <td>[In the past 7 days, how would you rate your pain on average?] For the next question, please responds on scale from 0 being no pain to 10 being the worst pain imaginable.</td>
+      <td></td>
+      <td></td>
+      <td>PROMIS 29+2/ PROPr</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>r1a</th>
+      <td>Multiple sex partners</td>
+      <td>string</td>
+      <td>[…had two or more sex partners during the same time period?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1b</th>
+      <td>Unprotected sex</td>
+      <td>string</td>
+      <td>[…had sex without using any kind of condom, dental dam or other barrier to protect you and your partner from diseases or pregnancy?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1c</th>
+      <td>Alcohol and drug intoxication</td>
+      <td>string</td>
+      <td>[…had sex while you or your partner was intoxicated from alcohol or other drugs?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1d</th>
+      <td>Drug injection with needle</td>
+      <td>string</td>
+      <td>[…used a needle to inject drugs like heroin, cocaine or amphetamines?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1g</th>
+      <td>Attacked with weapon</td>
+      <td>string</td>
+      <td>[…were attacked with a weapon, including a gun, knife, stick, bottle or other weapon?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1h</th>
+      <td>Physical abuse</td>
+      <td>string</td>
+      <td>[…were physically abused, to the point that you had bruises, cuts or broken bones?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1j</th>
+      <td>Sexually abused</td>
+      <td>string</td>
+      <td>[…were sexually abused, where someone pressured or forced you to participate in sexual acts against your will, including your regular sex partner, a family member or friend?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1k</th>
+      <td>Emotionally abused</td>
+      <td>string</td>
+      <td>[…were emotionally abused, where someone did or said things to make you feel very bad about yourself or your life?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1m</th>
+      <td>Physically, sexually, or emotionally abused</td>
+      <td>string</td>
+      <td>[…were physically, sexual or emotionally abused several times or over a long period of time?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r1n</th>
+      <td>Afraid for life or serious injury from abuse</td>
+      <td>string</td>
+      <td>[…were afraid for your life or that you might be seriously injured by the abuse?] When was the last time you…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r2a</th>
+      <td>Distressed/upset about past</td>
+      <td>string</td>
+      <td>[…became very distressed and upset when something reminded you of the past?] When was the last time you. . .</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r2b</th>
+      <td>Suicidal thoughts</td>
+      <td>string</td>
+      <td>[…thought about ending your life or dying by suicide?] When was the last time you. . .</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3a</th>
+      <td>HIV/AIDS</td>
+      <td>boolean</td>
+      <td>[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3b</th>
+      <td>Hepatitis C</td>
+      <td>boolean</td>
+      <td>[Hepatitis C? ] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3c</th>
+      <td>Hepatitis B</td>
+      <td>boolean</td>
+      <td>[Hepatitis B? ] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3d</th>
+      <td>Other sexually transmitted diseases</td>
+      <td>boolean</td>
+      <td>[Other sexually transmitted diseases or infections, such as syphilis.] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3e</th>
+      <td>Tuberculosis</td>
+      <td>boolean</td>
+      <td>[Tuberculosis or TB?] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3f</th>
+      <td>COVID</td>
+      <td>boolean</td>
+      <td>[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse that you had…</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3a_first_dx</th>
+      <td>First diagnosis of HIV/AIDS</td>
+      <td>string</td>
+      <td>[Human Immunodeficiency Virus, HIV or AIDS?] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3b_first_dx</th>
+      <td>First diagnosis of Hepatitis C</td>
+      <td>string</td>
+      <td>[Hepatitis C? ] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3c_first_dx</th>
+      <td>First diagnosis of Hepatitis B</td>
+      <td>string</td>
+      <td>[Hepatitis B? ] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3d_first_dx</th>
+      <td>First diagnosis of other STDs</td>
+      <td>string</td>
+      <td>[Other sexually transmitted diseases or infections, such as syphilis.] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3e_first_dx</th>
+      <td>First diagnosis of Tuberculosis</td>
+      <td>string</td>
+      <td>[Tuberculosis or TB?] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <th>r3f_first_dx</th>
+      <td>First diagnosis of COVID</td>
+      <td>string</td>
+      <td>[Coronavirus 19 or COVID19?] If yes, when were you FIRST diagnosed?</td>
+      <td></td>
+      <td></td>
+      <td>Risk of Harms and Consequences</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>&lt;ul&gt;&lt;li&gt;Never&lt;/li&gt;&lt;li&gt;More than a year ago&lt;/li&gt;&lt;li&gt;4 to 12 months ago&lt;/li&gt;&lt;li&gt;2 to 3 months ago&lt;/li&gt;&lt;li&gt;Past month&lt;/li&gt;&lt;li&gt;Do not know&lt;/li&gt;&lt;li&gt;Not reported&lt;/li&gt;&lt;/ul&gt;</td>
+      <td>RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
