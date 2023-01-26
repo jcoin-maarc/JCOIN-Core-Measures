@@ -45,7 +45,7 @@ def update_json():
         schema.to_json(outfile)
 
 @click.command(name="tohtml")
-@click.option("--freeze-fields",default=['name','title'])
+@click.option("--freeze-fields",default=['custom.jcoin:core_measure_section','name','title'])
 @click.option("--freeze-headers",is_flag=True,default=True)
 def to_html(freeze_fields,freeze_headers):
     def _to_html_list(v):
@@ -66,7 +66,7 @@ def to_html(freeze_fields,freeze_headers):
         df = pd.read_csv(csvpath)
         dfhtml = (
             df
-            .set_index(freeze_fields)
+            #.set_index(freeze_fields)
             .applymap(lambda v:_to_html_list(v) 
                 if type(v)==str and re.search("\|",str(v)) else v)
             .fillna("")
@@ -76,7 +76,8 @@ def to_html(freeze_fields,freeze_headers):
         dfhtml.to_html(
             csvpath.parents[1]/
             'docs/assets'/
-            csvpath.with_suffix(".html").name)
+            csvpath.with_suffix(".html").name,
+            index=False)
 
 @click.group()
 def cli():

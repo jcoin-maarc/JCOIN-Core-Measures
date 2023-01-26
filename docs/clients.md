@@ -1,11 +1,17 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Client (participant) core measures
 
-### Baseline
+=== "Baseline"
 
---8<-- "docs/assets/table-schema-baseline.html"
+    --8<-- "docs/assets/table-schema-baseline.html"
 
-### Timepoints
+=== "Timepoints"
 
---8<-- "docs/assets/table-schema-time-points.html"
+    --8<-- "docs/assets/table-schema-time-points.html"
 
 

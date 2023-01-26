@@ -1,1 +1,1 @@
-# JCOIN Core Measures
+--8<-- "README.md"

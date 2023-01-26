@@ -1,6 +1,6 @@
 #https://www.mkdocs.org/user-guide/configuration/#
-site_name: JCOIN Data Commons Documentation
-site_url: https://jcoin-maarc.github.io/jdc-docs-public
+site_name: JCOIN Core Measures
+site_url: https://jcoin-maarc.github.io/JCOIN-Core-Measures
 nav:
   - Home: index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
@@ -19,6 +19,8 @@ theme:
     - navigation.indexes
     - navigation.indexes
     - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
   favicon: assets/heal_logo.png
 extra_css:
   - stylesheets/extra.css
@@ -26,6 +28,7 @@ extra:
   homepage: https://jcoin.datacommons.io/
 use_directory_urls: true
 markdown_extensions:
+  - tables
   - admonition
   - attr_list
   - md_in_html
@@ -36,6 +39,8 @@ markdown_extensions:
   - pymdownx.details
   - pymdownx.snippets:
       url_download: True
+  - pymdownx.tabbed:
+      alternate_style: true 
 plugins:
   - search
   - mkdocs-video:

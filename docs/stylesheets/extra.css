@@ -13,3 +13,6 @@
   text-decoration-style:        dotted;
 }
 
+.md-grid {
+  max-width: 90%;
+}

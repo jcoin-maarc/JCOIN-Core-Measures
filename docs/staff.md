@@ -1,10 +1,17 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
+
 # Staff core measures
 
-### Baseline
+=== "Baseline"
 
---8<-- "docs/assets/table-schema-staff-baseline.html"
+    --8<-- "docs/assets/table-schema-staff-baseline.html"
 
-### Timepoints
+=== "Timepoints"
 
---8<-- "docs/assets/table-schema-staff-time-points.html"
+    --8<-- "docs/assets/table-schema-staff-time-points.html"
 

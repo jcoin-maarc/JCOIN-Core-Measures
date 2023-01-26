@@ -1,4 +1,4 @@
-# JCOIN Frictionless Table Schemas/Data Dictionaries
+# JCOIN Core Measures Table Schemas/Data Dictionaries
 
 The goal of this repository is to make data models for data validation and transformation in a frictionless format and use these to render human-readable data dictionaries consumable by analysts.
 
