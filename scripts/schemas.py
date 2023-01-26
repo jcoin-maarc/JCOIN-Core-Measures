@@ -1,16 +1,20 @@
 """ 
 uses healdata utils tools to 
-convert from json to csv
+convert from json to csv to searchable dictionaries in html
 """
 
 import healdata_utils.transforms.csvtemplate.conversion as healdata
 import sys
 import pandas as pd
 from pathlib import Path
+import click
+import re
 jsons = Path(__file__).parents[1].joinpath('schemas').glob("*")
 csvs = Path(__file__).parents[1].joinpath('csvs').glob("*")
 html = Path(__file__).parents[1].joinpath('htmls')
 html.mkdir(exist_ok=True)
+
+@click.command(name="tocsv")
 def to_csv():
     #convert json to csv
     for path in jsons:
@@ -20,7 +24,8 @@ def to_csv():
         etl.fromdicts(fields.data).tocsv(
             outdir/path.with_suffix(".csv").name,encoding='utf-8'
         )
-# to_csv()
+
+@click.command(name="updatejson")
 def update_json():
     """ 
     update a json schema with fields and properties from csv file
@@ -41,37 +46,36 @@ def update_json():
         schema['fields'] = fields['data_dictionary']
         schema.to_json(outfile)
 
+@click.command(name="tohtml")
 def to_html():
-    to_html_list = lambda v: ['<li>+v1+</li>' for v1 in '|'.split(v)]
+    def _to_html_list(v):
+        items = v.split("|")
+        ul = "<ul>{li}</ul>"
+        list_items = ["<li>"+i+"</li>" for i in items]
+        return ul.format(li="".join(list_items))
+
+    to_html_list = lambda v: "<ul>"+"".join([f'<li>{v1}</li>' for v1 in '|'.split(v)])+"</ul>"
     for csvpath in csvs:
         df = pd.read_csv(csvpath)
         dfhtml = (
             df
             .set_index('name')
-            .applymap(lambda v:[f"<ul>{to_html_list(v)}</ul>"] if type(v)==str else v)
+            .applymap(lambda v:_to_html_list(v) 
+                if type(v)==str and re.search("\|",str(v)) else v)
             .fillna("")
-            .style.format(escape='html')
             .to_html(
                 csvpath.parents[1]/
                 'htmls'/
                 csvpath.with_suffix(".html").name)
         )
 
-cli_message = '''
-Please enter either tocsv or updatejson:
-if updatejson, will take your csv file of fields and update the existing
-json frictionless schema. If to csv, will take existing json frictionless schema
-and produce and flattened tabular data dictionary in a csv file.
-'''
+@click.group()
+def cli():
+    pass 
+
+cli.add_command(to_html)
+cli.add_command(update_json)
+cli.add_command(to_csv)
 
 if __name__=="__main__":
-    
-    assert sys.argv[1] in ['tocsv','updatejson'],cli_message
-
-    if sys.argv[1]=='tocsv':
-        to_csv()
-        to_html()
-    elif sys.argv[1]=='updatejson':
-        update_json()
-    elif sys.argv[1]=='tohtml':
-        to_html()
+    cli()
