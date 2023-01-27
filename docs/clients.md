@@ -3,8 +3,9 @@ hide:
   - navigation
   - toc
 ---
-
 # Client (participant) core measures
+
+<input type="text" id="searchInput" onkeyup= filterTables() placeholder="Search in all columns...">
 
 === "Baseline"
 

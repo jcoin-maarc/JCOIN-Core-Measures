@@ -47,3 +47,5 @@ plugins:
       is_video: True
   # - mermaid2
   #- offline
+extra_javascript:
+  - javascripts/filterTable.js
