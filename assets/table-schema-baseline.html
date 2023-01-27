@@ -1,673 +1,424 @@
-<style type="text/css">
-#T_d86ab thead tr th:nth-child(1) {
-  position: sticky;
-  background-color: inherit;
-  left: 0px;
-  z-index: 3 !important;
-}
-#T_d86ab tbody tr th:nth-child(1) {
-  position: sticky;
-  background-color: inherit;
-  left: 0px;
-  z-index: 1;
-}
-#T_d86ab thead tr:nth-child(1) th {
-  position: sticky;
-  background-color: inherit;
-  top: 0px;
-  z-index: 2;
-}
-</style>
-<table id="T_d86ab">
+<table border="1" class="dataframe">
   <thead>
-    <tr>
-      <th class="blank level0" >&nbsp;</th>
-      <th id="T_d86ab_level0_col0" class="col_heading level0 col0" >name</th>
-      <th id="T_d86ab_level0_col1" class="col_heading level0 col1" >title</th>
-      <th id="T_d86ab_level0_col2" class="col_heading level0 col2" >type</th>
-      <th id="T_d86ab_level0_col3" class="col_heading level0 col3" >description</th>
-      <th id="T_d86ab_level0_col4" class="col_heading level0 col4" >constraints.required</th>
-      <th id="T_d86ab_level0_col5" class="col_heading level0 col5" >constraints.maxLength</th>
-      <th id="T_d86ab_level0_col6" class="col_heading level0 col6" >constraints.pattern</th>
-      <th id="T_d86ab_level0_col7" class="col_heading level0 col7" >custom.jcoin:core_measure_section</th>
-      <th id="T_d86ab_level0_col8" class="col_heading level0 col8" >custom.jcoin:final_variable_name</th>
-      <th id="T_d86ab_level0_col9" class="col_heading level0 col9" >constraints.enum</th>
-      <th id="T_d86ab_level0_col10" class="col_heading level0 col10" >format</th>
-      <th id="T_d86ab_level0_col11" class="col_heading level0 col11" >custom.notes</th>
-      <th id="T_d86ab_level0_col12" class="col_heading level0 col12" >trueValues</th>
-      <th id="T_d86ab_level0_col13" class="col_heading level0 col13" >falseValues</th>
+    <tr style="text-align: right;">
+      <th>section</th>
+      <th>name</th>
+      <th>title</th>
+      <th>description</th>
+      <th>constraints.enum</th>
+      <th>type</th>
+      <th>format</th>
+      <th>trueValues</th>
+      <th>falseValues</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th id="T_d86ab_level0_row0" class="row_heading level0 row0" >0</th>
-      <td id="T_d86ab_row0_col0" class="data row0 col0" >jdc_person_id</td>
-      <td id="T_d86ab_row0_col1" class="data row0 col1" >JCOIN data commons person identifier</td>
-      <td id="T_d86ab_row0_col2" class="data row0 col2" >string</td>
-      <td id="T_d86ab_row0_col3" class="data row0 col3" >The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).</td>
-      <td id="T_d86ab_row0_col4" class="data row0 col4" >True</td>
-      <td id="T_d86ab_row0_col5" class="data row0 col5" >9.000000</td>
-      <td id="T_d86ab_row0_col6" class="data row0 col6" >[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]</td>
-      <td id="T_d86ab_row0_col7" class="data row0 col7" >Record and linkage</td>
-      <td id="T_d86ab_row0_col8" class="data row0 col8" >jdc_person_id</td>
-      <td id="T_d86ab_row0_col9" class="data row0 col9" ></td>
-      <td id="T_d86ab_row0_col10" class="data row0 col10" ></td>
-      <td id="T_d86ab_row0_col11" class="data row0 col11" ></td>
-      <td id="T_d86ab_row0_col12" class="data row0 col12" ></td>
-      <td id="T_d86ab_row0_col13" class="data row0 col13" ></td>
+      <td>Record and linkage</td>
+      <td>jdc_person_id</td>
+      <td>JCOIN data commons person identifier</td>
+      <td>The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row1" class="row_heading level0 row1" >1</th>
-      <td id="T_d86ab_row1_col0" class="data row1 col0" >quarter_enrolled</td>
-      <td id="T_d86ab_row1_col1" class="data row1 col1" >Quarter Enrolled</td>
-      <td id="T_d86ab_row1_col2" class="data row1 col2" >string</td>
-      <td id="T_d86ab_row1_col3" class="data row1 col3" >The financial quarter and year of enrollment</td>
-      <td id="T_d86ab_row1_col4" class="data row1 col4" >True</td>
-      <td id="T_d86ab_row1_col5" class="data row1 col5" >6.000000</td>
-      <td id="T_d86ab_row1_col6" class="data row1 col6" >[0-9][0-9][0-9][0-9]Q[0-9]</td>
-      <td id="T_d86ab_row1_col7" class="data row1 col7" >Enrollment</td>
-      <td id="T_d86ab_row1_col8" class="data row1 col8" >quarter_enrolled</td>
-      <td id="T_d86ab_row1_col9" class="data row1 col9" ></td>
-      <td id="T_d86ab_row1_col10" class="data row1 col10" ></td>
-      <td id="T_d86ab_row1_col11" class="data row1 col11" ></td>
-      <td id="T_d86ab_row1_col12" class="data row1 col12" ></td>
-      <td id="T_d86ab_row1_col13" class="data row1 col13" ></td>
+      <td>Enrollment</td>
+      <td>quarter_enrolled</td>
+      <td>Quarter Enrolled</td>
+      <td>The financial quarter and year of enrollment</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row2" class="row_heading level0 row2" >2</th>
-      <td id="T_d86ab_row2_col0" class="data row2 col0" >state_of_site_enrollment</td>
-      <td id="T_d86ab_row2_col1" class="data row2 col1" >State of Site For Enrollment</td>
-      <td id="T_d86ab_row2_col2" class="data row2 col2" >string</td>
-      <td id="T_d86ab_row2_col3" class="data row2 col3" >The U.S. State abbreviation of the site where client (participant) was initially enrolled</td>
-      <td id="T_d86ab_row2_col4" class="data row2 col4" >True</td>
-      <td id="T_d86ab_row2_col5" class="data row2 col5" >2.000000</td>
-      <td id="T_d86ab_row2_col6" class="data row2 col6" >[A-Z][A-Z]</td>
-      <td id="T_d86ab_row2_col7" class="data row2 col7" >Enrollment</td>
-      <td id="T_d86ab_row2_col8" class="data row2 col8" >state of site</td>
-      <td id="T_d86ab_row2_col9" class="data row2 col9" ></td>
-      <td id="T_d86ab_row2_col10" class="data row2 col10" ></td>
-      <td id="T_d86ab_row2_col11" class="data row2 col11" ></td>
-      <td id="T_d86ab_row2_col12" class="data row2 col12" ></td>
-      <td id="T_d86ab_row2_col13" class="data row2 col13" ></td>
+      <td>Enrollment</td>
+      <td>state_of_site_enrollment</td>
+      <td>State of Site For Enrollment</td>
+      <td>The U.S. State abbreviation of the site where client (participant) was initially enrolled</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row3" class="row_heading level0 row3" >3</th>
-      <td id="T_d86ab_row3_col0" class="data row3 col0" >current_study_status</td>
-      <td id="T_d86ab_row3_col1" class="data row3 col1" >Current Study Status</td>
-      <td id="T_d86ab_row3_col2" class="data row3 col2" >string</td>
-      <td id="T_d86ab_row3_col3" class="data row3 col3" >A summary of the current status where client (participant) is in study</td>
-      <td id="T_d86ab_row3_col4" class="data row3 col4" >True</td>
-      <td id="T_d86ab_row3_col5" class="data row3 col5" ></td>
-      <td id="T_d86ab_row3_col6" class="data row3 col6" ></td>
-      <td id="T_d86ab_row3_col7" class="data row3 col7" >Enrollment</td>
-      <td id="T_d86ab_row3_col8" class="data row3 col8" >current_study_status</td>
-      <td id="T_d86ab_row3_col9" class="data row3 col9" ><ul><li>On study</li><li>Dropped out</li><li>Withdrawn by investigator</li><li>Completed study</li><li>Unknown</li></ul></td>
-      <td id="T_d86ab_row3_col10" class="data row3 col10" ></td>
-      <td id="T_d86ab_row3_col11" class="data row3 col11" ></td>
-      <td id="T_d86ab_row3_col12" class="data row3 col12" ></td>
-      <td id="T_d86ab_row3_col13" class="data row3 col13" ></td>
+      <td>Enrollment</td>
+      <td>current_study_status</td>
+      <td>Current Study Status</td>
+      <td>A summary of the current status where client (participant) is in study</td>
+      <td><ul><li>On study</li><li>Dropped out</li><li>Withdrawn by investigator</li><li>Completed study</li><li>Unknown</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row4" class="row_heading level0 row4" >4</th>
-      <td id="T_d86ab_row4_col0" class="data row4 col0" >d1</td>
-      <td id="T_d86ab_row4_col1" class="data row4 col1" >Birth date</td>
-      <td id="T_d86ab_row4_col2" class="data row4 col2" >date</td>
-      <td id="T_d86ab_row4_col3" class="data row4 col3" >What is your birth date?</td>
-      <td id="T_d86ab_row4_col4" class="data row4 col4" ></td>
-      <td id="T_d86ab_row4_col5" class="data row4 col5" ></td>
-      <td id="T_d86ab_row4_col6" class="data row4 col6" ></td>
-      <td id="T_d86ab_row4_col7" class="data row4 col7" ></td>
-      <td id="T_d86ab_row4_col8" class="data row4 col8" ></td>
-      <td id="T_d86ab_row4_col9" class="data row4 col9" ></td>
-      <td id="T_d86ab_row4_col10" class="data row4 col10" >%Y%m%d</td>
-      <td id="T_d86ab_row4_col11" class="data row4 col11" ></td>
-      <td id="T_d86ab_row4_col12" class="data row4 col12" ></td>
-      <td id="T_d86ab_row4_col13" class="data row4 col13" ></td>
+      <td></td>
+      <td>d1</td>
+      <td>Birth date</td>
+      <td>What is your birth date?</td>
+      <td></td>
+      <td>date</td>
+      <td>%Y%m%d</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row5" class="row_heading level0 row5" >5</th>
-      <td id="T_d86ab_row5_col0" class="data row5 col0" >d1a</td>
-      <td id="T_d86ab_row5_col1" class="data row5 col1" >Age</td>
-      <td id="T_d86ab_row5_col2" class="data row5 col2" >integer</td>
-      <td id="T_d86ab_row5_col3" class="data row5 col3" >About how old are you? (top coded at 90)</td>
-      <td id="T_d86ab_row5_col4" class="data row5 col4" ></td>
-      <td id="T_d86ab_row5_col5" class="data row5 col5" ></td>
-      <td id="T_d86ab_row5_col6" class="data row5 col6" ></td>
-      <td id="T_d86ab_row5_col7" class="data row5 col7" ></td>
-      <td id="T_d86ab_row5_col8" class="data row5 col8" ></td>
-      <td id="T_d86ab_row5_col9" class="data row5 col9" ></td>
-      <td id="T_d86ab_row5_col10" class="data row5 col10" ></td>
-      <td id="T_d86ab_row5_col11" class="data row5 col11" ></td>
-      <td id="T_d86ab_row5_col12" class="data row5 col12" ></td>
-      <td id="T_d86ab_row5_col13" class="data row5 col13" ></td>
+      <td></td>
+      <td>d1a</td>
+      <td>Age</td>
+      <td>About how old are you? (top coded at 90)</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row6" class="row_heading level0 row6" >6</th>
-      <td id="T_d86ab_row6_col0" class="data row6 col0" >o1</td>
-      <td id="T_d86ab_row6_col1" class="data row6 col1" >Sex at birth</td>
-      <td id="T_d86ab_row6_col2" class="data row6 col2" >string</td>
-      <td id="T_d86ab_row6_col3" class="data row6 col3" >What sex was originally listed on your birth certificate?</td>
-      <td id="T_d86ab_row6_col4" class="data row6 col4" ></td>
-      <td id="T_d86ab_row6_col5" class="data row6 col5" ></td>
-      <td id="T_d86ab_row6_col6" class="data row6 col6" ></td>
-      <td id="T_d86ab_row6_col7" class="data row6 col7" ></td>
-      <td id="T_d86ab_row6_col8" class="data row6 col8" ></td>
-      <td id="T_d86ab_row6_col9" class="data row6 col9" ><ul><li>Male</li><li>Female</li><li>Decline to answer</li><li>Something else</li></ul></td>
-      <td id="T_d86ab_row6_col10" class="data row6 col10" ></td>
-      <td id="T_d86ab_row6_col11" class="data row6 col11" ></td>
-      <td id="T_d86ab_row6_col12" class="data row6 col12" ></td>
-      <td id="T_d86ab_row6_col13" class="data row6 col13" ></td>
+      <td></td>
+      <td>o1</td>
+      <td>Sex at birth</td>
+      <td>What sex was originally listed on your birth certificate?</td>
+      <td><ul><li>Male</li><li>Female</li><li>Decline to answer</li><li>Something else</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row7" class="row_heading level0 row7" >7</th>
-      <td id="T_d86ab_row7_col0" class="data row7 col0" >o2</td>
-      <td id="T_d86ab_row7_col1" class="data row7 col1" >Gender Identity</td>
-      <td id="T_d86ab_row7_col2" class="data row7 col2" >string</td>
-      <td id="T_d86ab_row7_col3" class="data row7 col3" >What is your gender identity?</td>
-      <td id="T_d86ab_row7_col4" class="data row7 col4" ></td>
-      <td id="T_d86ab_row7_col5" class="data row7 col5" ></td>
-      <td id="T_d86ab_row7_col6" class="data row7 col6" ></td>
-      <td id="T_d86ab_row7_col7" class="data row7 col7" >Demographics</td>
-      <td id="T_d86ab_row7_col8" class="data row7 col8" >gender_identity_long</td>
-      <td id="T_d86ab_row7_col9" class="data row7 col9" ><ul><li>Male</li><li>Female</li><li>Transgender man/trans man/female-to-male (FTM)</li><li>Transgender woman/trans woman/male-to-female (MTF)</li><li>Genderqueer/gender nonconforming/neither exclusively male nor female</li><li>Additional gender category (or other)</li><li>Not reported</li></ul></td>
-      <td id="T_d86ab_row7_col10" class="data row7 col10" ></td>
-      <td id="T_d86ab_row7_col11" class="data row7 col11" >For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
- False if not 'Male' and not 'Transfgender' else True</td>
-      <td id="T_d86ab_row7_col12" class="data row7 col12" ></td>
-      <td id="T_d86ab_row7_col13" class="data row7 col13" ></td>
+      <td>Demographics</td>
+      <td>o2</td>
+      <td>Gender Identity</td>
+      <td>What is your gender identity?</td>
+      <td><ul><li>Male</li><li>Female</li><li>Transgender man/trans man/female-to-male (FTM)</li><li>Transgender woman/trans woman/male-to-female (MTF)</li><li>Genderqueer/gender nonconforming/neither exclusively male nor female</li><li>Additional gender category (or other)</li><li>Not reported</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row8" class="row_heading level0 row8" >8</th>
-      <td id="T_d86ab_row8_col0" class="data row8 col0" >d4b</td>
-      <td id="T_d86ab_row8_col1" class="data row8 col1" >Gender Identity (condensed)</td>
-      <td id="T_d86ab_row8_col2" class="data row8 col2" >string</td>
-      <td id="T_d86ab_row8_col3" class="data row8 col3" >What is your gender identity?</td>
-      <td id="T_d86ab_row8_col4" class="data row8 col4" ></td>
-      <td id="T_d86ab_row8_col5" class="data row8 col5" ></td>
-      <td id="T_d86ab_row8_col6" class="data row8 col6" ></td>
-      <td id="T_d86ab_row8_col7" class="data row8 col7" >Demographics</td>
-      <td id="T_d86ab_row8_col8" class="data row8 col8" >gender identity_short</td>
-      <td id="T_d86ab_row8_col9" class="data row8 col9" ><ul><li>Male</li><li>Female</li><li>Transgender</li><li>Gender nonconforming</li><li>Something else</li><li>Not reported</li></ul></td>
-      <td id="T_d86ab_row8_col10" class="data row8 col10" ></td>
-      <td id="T_d86ab_row8_col11" class="data row8 col11" >For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]</td>
-      <td id="T_d86ab_row8_col12" class="data row8 col12" ></td>
-      <td id="T_d86ab_row8_col13" class="data row8 col13" ></td>
+      <td>Demographics</td>
+      <td>d4b</td>
+      <td>Gender Identity (condensed)</td>
+      <td>What is your gender identity?</td>
+      <td><ul><li>Male</li><li>Female</li><li>Transgender</li><li>Gender nonconforming</li><li>Something else</li><li>Not reported</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row9" class="row_heading level0 row9" >9</th>
-      <td id="T_d86ab_row9_col0" class="data row9 col0" >d3_white</td>
-      <td id="T_d86ab_row9_col1" class="data row9 col1" >Race: White</td>
-      <td id="T_d86ab_row9_col2" class="data row9 col2" >boolean</td>
-      <td id="T_d86ab_row9_col3" class="data row9 col3" >[White] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row9_col4" class="data row9 col4" >True</td>
-      <td id="T_d86ab_row9_col5" class="data row9 col5" ></td>
-      <td id="T_d86ab_row9_col6" class="data row9 col6" ></td>
-      <td id="T_d86ab_row9_col7" class="data row9 col7" >Demographics</td>
-      <td id="T_d86ab_row9_col8" class="data row9 col8" >race_white</td>
-      <td id="T_d86ab_row9_col9" class="data row9 col9" ></td>
-      <td id="T_d86ab_row9_col10" class="data row9 col10" ></td>
-      <td id="T_d86ab_row9_col11" class="data row9 col11" ></td>
-      <td id="T_d86ab_row9_col12" class="data row9 col12" >Yes</td>
-      <td id="T_d86ab_row9_col13" class="data row9 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_white</td>
+      <td>Race: White</td>
+      <td>[White] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row10" class="row_heading level0 row10" >10</th>
-      <td id="T_d86ab_row10_col0" class="data row10 col0" >d3_black</td>
-      <td id="T_d86ab_row10_col1" class="data row10 col1" >Race: Black or African American</td>
-      <td id="T_d86ab_row10_col2" class="data row10 col2" >boolean</td>
-      <td id="T_d86ab_row10_col3" class="data row10 col3" >[Black or African American] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row10_col4" class="data row10 col4" >True</td>
-      <td id="T_d86ab_row10_col5" class="data row10 col5" ></td>
-      <td id="T_d86ab_row10_col6" class="data row10 col6" ></td>
-      <td id="T_d86ab_row10_col7" class="data row10 col7" >Demographics</td>
-      <td id="T_d86ab_row10_col8" class="data row10 col8" >race_black</td>
-      <td id="T_d86ab_row10_col9" class="data row10 col9" ></td>
-      <td id="T_d86ab_row10_col10" class="data row10 col10" ></td>
-      <td id="T_d86ab_row10_col11" class="data row10 col11" ></td>
-      <td id="T_d86ab_row10_col12" class="data row10 col12" >Yes</td>
-      <td id="T_d86ab_row10_col13" class="data row10 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_black</td>
+      <td>Race: Black or African American</td>
+      <td>[Black or African American] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row11" class="row_heading level0 row11" >11</th>
-      <td id="T_d86ab_row11_col0" class="data row11 col0" >d3_american_indian</td>
-      <td id="T_d86ab_row11_col1" class="data row11 col1" >Race: American Indian or Alaska Native</td>
-      <td id="T_d86ab_row11_col2" class="data row11 col2" >boolean</td>
-      <td id="T_d86ab_row11_col3" class="data row11 col3" >[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row11_col4" class="data row11 col4" >True</td>
-      <td id="T_d86ab_row11_col5" class="data row11 col5" ></td>
-      <td id="T_d86ab_row11_col6" class="data row11 col6" ></td>
-      <td id="T_d86ab_row11_col7" class="data row11 col7" >Demographics</td>
-      <td id="T_d86ab_row11_col8" class="data row11 col8" >race_american_indian</td>
-      <td id="T_d86ab_row11_col9" class="data row11 col9" ></td>
-      <td id="T_d86ab_row11_col10" class="data row11 col10" ></td>
-      <td id="T_d86ab_row11_col11" class="data row11 col11" ></td>
-      <td id="T_d86ab_row11_col12" class="data row11 col12" >Yes</td>
-      <td id="T_d86ab_row11_col13" class="data row11 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_american_indian</td>
+      <td>Race: American Indian or Alaska Native</td>
+      <td>[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row12" class="row_heading level0 row12" >12</th>
-      <td id="T_d86ab_row12_col0" class="data row12 col0" >d3_hawaiian</td>
-      <td id="T_d86ab_row12_col1" class="data row12 col1" >Race: Native Hawaiian or Other Pacific Islander</td>
-      <td id="T_d86ab_row12_col2" class="data row12 col2" >boolean</td>
-      <td id="T_d86ab_row12_col3" class="data row12 col3" >[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row12_col4" class="data row12 col4" >True</td>
-      <td id="T_d86ab_row12_col5" class="data row12 col5" ></td>
-      <td id="T_d86ab_row12_col6" class="data row12 col6" ></td>
-      <td id="T_d86ab_row12_col7" class="data row12 col7" >Demographics</td>
-      <td id="T_d86ab_row12_col8" class="data row12 col8" >race_hawaiian</td>
-      <td id="T_d86ab_row12_col9" class="data row12 col9" ></td>
-      <td id="T_d86ab_row12_col10" class="data row12 col10" ></td>
-      <td id="T_d86ab_row12_col11" class="data row12 col11" ></td>
-      <td id="T_d86ab_row12_col12" class="data row12 col12" >Yes</td>
-      <td id="T_d86ab_row12_col13" class="data row12 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_hawaiian</td>
+      <td>Race: Native Hawaiian or Other Pacific Islander</td>
+      <td>[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row13" class="row_heading level0 row13" >13</th>
-      <td id="T_d86ab_row13_col0" class="data row13 col0" >d3_asian</td>
-      <td id="T_d86ab_row13_col1" class="data row13 col1" >Race: Asian</td>
-      <td id="T_d86ab_row13_col2" class="data row13 col2" >boolean</td>
-      <td id="T_d86ab_row13_col3" class="data row13 col3" >[Asian] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row13_col4" class="data row13 col4" >True</td>
-      <td id="T_d86ab_row13_col5" class="data row13 col5" ></td>
-      <td id="T_d86ab_row13_col6" class="data row13 col6" ></td>
-      <td id="T_d86ab_row13_col7" class="data row13 col7" >Demographics</td>
-      <td id="T_d86ab_row13_col8" class="data row13 col8" >race_asian</td>
-      <td id="T_d86ab_row13_col9" class="data row13 col9" ></td>
-      <td id="T_d86ab_row13_col10" class="data row13 col10" ></td>
-      <td id="T_d86ab_row13_col11" class="data row13 col11" ></td>
-      <td id="T_d86ab_row13_col12" class="data row13 col12" >Yes</td>
-      <td id="T_d86ab_row13_col13" class="data row13 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_asian</td>
+      <td>Race: Asian</td>
+      <td>[Asian] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row14" class="row_heading level0 row14" >14</th>
-      <td id="T_d86ab_row14_col0" class="data row14 col0" >d3_other</td>
-      <td id="T_d86ab_row14_col1" class="data row14 col1" >Race: Other</td>
-      <td id="T_d86ab_row14_col2" class="data row14 col2" >boolean</td>
-      <td id="T_d86ab_row14_col3" class="data row14 col3" >[Other] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row14_col4" class="data row14 col4" >True</td>
-      <td id="T_d86ab_row14_col5" class="data row14 col5" ></td>
-      <td id="T_d86ab_row14_col6" class="data row14 col6" ></td>
-      <td id="T_d86ab_row14_col7" class="data row14 col7" >Demographics</td>
-      <td id="T_d86ab_row14_col8" class="data row14 col8" >race_other</td>
-      <td id="T_d86ab_row14_col9" class="data row14 col9" ></td>
-      <td id="T_d86ab_row14_col10" class="data row14 col10" ></td>
-      <td id="T_d86ab_row14_col11" class="data row14 col11" ></td>
-      <td id="T_d86ab_row14_col12" class="data row14 col12" >Yes</td>
-      <td id="T_d86ab_row14_col13" class="data row14 col13" >No</td>
+      <td>Demographics</td>
+      <td>d3_other</td>
+      <td>Race: Other</td>
+      <td>[Other] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row15" class="row_heading level0 row15" >15</th>
-      <td id="T_d86ab_row15_col0" class="data row15 col0" >d3_specify_tribe</td>
-      <td id="T_d86ab_row15_col1" class="data row15 col1" >Race: American indian principal tribe or community specified</td>
-      <td id="T_d86ab_row15_col2" class="data row15 col2" >string</td>
-      <td id="T_d86ab_row15_col3" class="data row15 col3" >[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row15_col4" class="data row15 col4" ></td>
-      <td id="T_d86ab_row15_col5" class="data row15 col5" >80.000000</td>
-      <td id="T_d86ab_row15_col6" class="data row15 col6" ></td>
-      <td id="T_d86ab_row15_col7" class="data row15 col7" >Demographics</td>
-      <td id="T_d86ab_row15_col8" class="data row15 col8" >race_specify_american_indian_tribe</td>
-      <td id="T_d86ab_row15_col9" class="data row15 col9" ></td>
-      <td id="T_d86ab_row15_col10" class="data row15 col10" ></td>
-      <td id="T_d86ab_row15_col11" class="data row15 col11" ></td>
-      <td id="T_d86ab_row15_col12" class="data row15 col12" ></td>
-      <td id="T_d86ab_row15_col13" class="data row15 col13" ></td>
+      <td>Demographics</td>
+      <td>d3_specify_tribe</td>
+      <td>Race: American indian principal tribe or community specified</td>
+      <td>[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row16" class="row_heading level0 row16" >16</th>
-      <td id="T_d86ab_row16_col0" class="data row16 col0" >d3_specify_other</td>
-      <td id="T_d86ab_row16_col1" class="data row16 col1" >Race: Other specified</td>
-      <td id="T_d86ab_row16_col2" class="data row16 col2" >string</td>
-      <td id="T_d86ab_row16_col3" class="data row16 col3" >[Other specified] What is your race? SELECT ALL THAT APPLY</td>
-      <td id="T_d86ab_row16_col4" class="data row16 col4" ></td>
-      <td id="T_d86ab_row16_col5" class="data row16 col5" >80.000000</td>
-      <td id="T_d86ab_row16_col6" class="data row16 col6" ></td>
-      <td id="T_d86ab_row16_col7" class="data row16 col7" >Demographics</td>
-      <td id="T_d86ab_row16_col8" class="data row16 col8" >race_specify_other</td>
-      <td id="T_d86ab_row16_col9" class="data row16 col9" ></td>
-      <td id="T_d86ab_row16_col10" class="data row16 col10" ></td>
-      <td id="T_d86ab_row16_col11" class="data row16 col11" ></td>
-      <td id="T_d86ab_row16_col12" class="data row16 col12" ></td>
-      <td id="T_d86ab_row16_col13" class="data row16 col13" ></td>
+      <td>Demographics</td>
+      <td>d3_specify_other</td>
+      <td>Race: Other specified</td>
+      <td>[Other specified] What is your race? SELECT ALL THAT APPLY</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row17" class="row_heading level0 row17" >17</th>
-      <td id="T_d86ab_row17_col0" class="data row17 col0" >d2</td>
-      <td id="T_d86ab_row17_col1" class="data row17 col1" >Hispanic, Latino, or Spanish Origin</td>
-      <td id="T_d86ab_row17_col2" class="data row17 col2" >boolean</td>
-      <td id="T_d86ab_row17_col3" class="data row17 col3" >Are you of Hispanic, Latino, or Spanish origin?</td>
-      <td id="T_d86ab_row17_col4" class="data row17 col4" >True</td>
-      <td id="T_d86ab_row17_col5" class="data row17 col5" ></td>
-      <td id="T_d86ab_row17_col6" class="data row17 col6" ></td>
-      <td id="T_d86ab_row17_col7" class="data row17 col7" >Demographics</td>
-      <td id="T_d86ab_row17_col8" class="data row17 col8" >hispanic</td>
-      <td id="T_d86ab_row17_col9" class="data row17 col9" ></td>
-      <td id="T_d86ab_row17_col10" class="data row17 col10" ></td>
-      <td id="T_d86ab_row17_col11" class="data row17 col11" ></td>
-      <td id="T_d86ab_row17_col12" class="data row17 col12" >Yes</td>
-      <td id="T_d86ab_row17_col13" class="data row17 col13" >No</td>
+      <td>Demographics</td>
+      <td>d2</td>
+      <td>Hispanic, Latino, or Spanish Origin</td>
+      <td>Are you of Hispanic, Latino, or Spanish origin?</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row18" class="row_heading level0 row18" >18</th>
-      <td id="T_d86ab_row18_col0" class="data row18 col0" >d4c</td>
-      <td id="T_d86ab_row18_col1" class="data row18 col1" >Sexual orientation</td>
-      <td id="T_d86ab_row18_col2" class="data row18 col2" >string</td>
-      <td id="T_d86ab_row18_col3" class="data row18 col3" >Sexual orientation:  Do you think of yourself as…</td>
-      <td id="T_d86ab_row18_col4" class="data row18 col4" ></td>
-      <td id="T_d86ab_row18_col5" class="data row18 col5" ></td>
-      <td id="T_d86ab_row18_col6" class="data row18 col6" ></td>
-      <td id="T_d86ab_row18_col7" class="data row18 col7" >Demographics</td>
-      <td id="T_d86ab_row18_col8" class="data row18 col8" >sexual_orientation</td>
-      <td id="T_d86ab_row18_col9" class="data row18 col9" ><ul><li>Straight or heterosexual</li><li>Lesbian or gay</li><li>Bisexual</li><li>Queer,pansexual, and/or questioning</li><li>Something else</li></ul></td>
-      <td id="T_d86ab_row18_col10" class="data row18 col10" ></td>
-      <td id="T_d86ab_row18_col11" class="data row18 col11" ></td>
-      <td id="T_d86ab_row18_col12" class="data row18 col12" ></td>
-      <td id="T_d86ab_row18_col13" class="data row18 col13" ></td>
+      <td>Demographics</td>
+      <td>d4c</td>
+      <td>Sexual orientation</td>
+      <td>Sexual orientation:  Do you think of yourself as…</td>
+      <td><ul><li>Straight or heterosexual</li><li>Lesbian or gay</li><li>Bisexual</li><li>Queer,pansexual, and/or questioning</li><li>Something else</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row19" class="row_heading level0 row19" >19</th>
-      <td id="T_d86ab_row19_col0" class="data row19 col0" >d4c_specify_other</td>
-      <td id="T_d86ab_row19_col1" class="data row19 col1" >Sexual orientation:  Other specified</td>
-      <td id="T_d86ab_row19_col2" class="data row19 col2" >string</td>
-      <td id="T_d86ab_row19_col3" class="data row19 col3" >Sexual orientation:  Do you think of yourself as…</td>
-      <td id="T_d86ab_row19_col4" class="data row19 col4" ></td>
-      <td id="T_d86ab_row19_col5" class="data row19 col5" ></td>
-      <td id="T_d86ab_row19_col6" class="data row19 col6" ></td>
-      <td id="T_d86ab_row19_col7" class="data row19 col7" >Demographics</td>
-      <td id="T_d86ab_row19_col8" class="data row19 col8" >sexual_orientation_other</td>
-      <td id="T_d86ab_row19_col9" class="data row19 col9" ></td>
-      <td id="T_d86ab_row19_col10" class="data row19 col10" ></td>
-      <td id="T_d86ab_row19_col11" class="data row19 col11" ></td>
-      <td id="T_d86ab_row19_col12" class="data row19 col12" ></td>
-      <td id="T_d86ab_row19_col13" class="data row19 col13" ></td>
+      <td>Demographics</td>
+      <td>d4c_specify_other</td>
+      <td>Sexual orientation:  Other specified</td>
+      <td>Sexual orientation:  Do you think of yourself as…</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row20" class="row_heading level0 row20" >20</th>
-      <td id="T_d86ab_row20_col0" class="data row20 col0" >d4d</td>
-      <td id="T_d86ab_row20_col1" class="data row20 col1" >Ever pregnant</td>
-      <td id="T_d86ab_row20_col2" class="data row20 col2" >string</td>
-      <td id="T_d86ab_row20_col3" class="data row20 col3" >Have you ever been pregnant?</td>
-      <td id="T_d86ab_row20_col4" class="data row20 col4" ></td>
-      <td id="T_d86ab_row20_col5" class="data row20 col5" ></td>
-      <td id="T_d86ab_row20_col6" class="data row20 col6" ></td>
-      <td id="T_d86ab_row20_col7" class="data row20 col7" >Demographics</td>
-      <td id="T_d86ab_row20_col8" class="data row20 col8" >pregnant</td>
-      <td id="T_d86ab_row20_col9" class="data row20 col9" ><ul><li>Never been pregnant</li><li>Currently pregnant</li><li>Previously pregnant, had a child</li><li>Previously pregnant, did not have a child</li><li>Not applicable</li><li>Don't know</li></ul></td>
-      <td id="T_d86ab_row20_col10" class="data row20 col10" ></td>
-      <td id="T_d86ab_row20_col11" class="data row20 col11" >Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.</td>
-      <td id="T_d86ab_row20_col12" class="data row20 col12" ></td>
-      <td id="T_d86ab_row20_col13" class="data row20 col13" ></td>
+      <td>Demographics</td>
+      <td>d4d</td>
+      <td>Ever pregnant</td>
+      <td>Have you ever been pregnant?</td>
+      <td><ul><li>Never been pregnant</li><li>Currently pregnant</li><li>Previously pregnant, had a child</li><li>Previously pregnant, did not have a child</li><li>Not applicable</li><li>Don't know</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row21" class="row_heading level0 row21" >21</th>
-      <td id="T_d86ab_row21_col0" class="data row21 col0" >d5</td>
-      <td id="T_d86ab_row21_col1" class="data row21 col1" >Marital status</td>
-      <td id="T_d86ab_row21_col2" class="data row21 col2" >string</td>
-      <td id="T_d86ab_row21_col3" class="data row21 col3" >What is your marital status?</td>
-      <td id="T_d86ab_row21_col4" class="data row21 col4" ></td>
-      <td id="T_d86ab_row21_col5" class="data row21 col5" ></td>
-      <td id="T_d86ab_row21_col6" class="data row21 col6" ></td>
-      <td id="T_d86ab_row21_col7" class="data row21 col7" >Demographics</td>
-      <td id="T_d86ab_row21_col8" class="data row21 col8" >marital_status</td>
-      <td id="T_d86ab_row21_col9" class="data row21 col9" ><ul><li>Married</li><li>Widowed</li><li>Divorced</li><li>Separated</li><li>Never married</li></ul></td>
-      <td id="T_d86ab_row21_col10" class="data row21 col10" ></td>
-      <td id="T_d86ab_row21_col11" class="data row21 col11" ></td>
-      <td id="T_d86ab_row21_col12" class="data row21 col12" ></td>
-      <td id="T_d86ab_row21_col13" class="data row21 col13" ></td>
+      <td>Demographics</td>
+      <td>d5</td>
+      <td>Marital status</td>
+      <td>What is your marital status?</td>
+      <td><ul><li>Married</li><li>Widowed</li><li>Divorced</li><li>Separated</li><li>Never married</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row22" class="row_heading level0 row22" >22</th>
-      <td id="T_d86ab_row22_col0" class="data row22 col0" >d5a</td>
-      <td id="T_d86ab_row22_col1" class="data row22 col1" >Married with partner</td>
-      <td id="T_d86ab_row22_col2" class="data row22 col2" >string</td>
-      <td id="T_d86ab_row22_col3" class="data row22 col3" >Are you currently living as married with a romantic partner?</td>
-      <td id="T_d86ab_row22_col4" class="data row22 col4" ></td>
-      <td id="T_d86ab_row22_col5" class="data row22 col5" ></td>
-      <td id="T_d86ab_row22_col6" class="data row22 col6" ></td>
-      <td id="T_d86ab_row22_col7" class="data row22 col7" >Demographics</td>
-      <td id="T_d86ab_row22_col8" class="data row22 col8" >unmarried_partner</td>
-      <td id="T_d86ab_row22_col9" class="data row22 col9" ><ul><li>Yes, I am living as married with partner</li><li>No, I am not living as married with partner</li></ul></td>
-      <td id="T_d86ab_row22_col10" class="data row22 col10" ></td>
-      <td id="T_d86ab_row22_col11" class="data row22 col11" ></td>
-      <td id="T_d86ab_row22_col12" class="data row22 col12" ></td>
-      <td id="T_d86ab_row22_col13" class="data row22 col13" ></td>
+      <td>Demographics</td>
+      <td>d5a</td>
+      <td>Married with partner</td>
+      <td>Are you currently living as married with a romantic partner?</td>
+      <td><ul><li>Yes, I am living as married with partner</li><li>No, I am not living as married with partner</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row23" class="row_heading level0 row23" >23</th>
-      <td id="T_d86ab_row23_col0" class="data row23 col0" >d6</td>
-      <td id="T_d86ab_row23_col1" class="data row23 col1" >Education</td>
-      <td id="T_d86ab_row23_col2" class="data row23 col2" >string</td>
-      <td id="T_d86ab_row23_col3" class="data row23 col3" >What is the highest grade or level of school you have completed or the highest degree you have received?</td>
-      <td id="T_d86ab_row23_col4" class="data row23 col4" ></td>
-      <td id="T_d86ab_row23_col5" class="data row23 col5" ></td>
-      <td id="T_d86ab_row23_col6" class="data row23 col6" ></td>
-      <td id="T_d86ab_row23_col7" class="data row23 col7" >Demographics</td>
-      <td id="T_d86ab_row23_col8" class="data row23 col8" >education</td>
-      <td id="T_d86ab_row23_col9" class="data row23 col9" ><ul><li>Did not complete high school</li><li>GED or equivalent</li><li>Regular high school diploma</li><li>Some college credit but less than 1 year of college credit</li><li>1 or more years of college credit but no degree</li><li>Associate's degree (e.g., AA or AS)</li><li>Bachelor's degree (e.g.,  BA or BS)</li><li>Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)</li><li>Other (specify)</li></ul></td>
-      <td id="T_d86ab_row23_col10" class="data row23 col10" ></td>
-      <td id="T_d86ab_row23_col11" class="data row23 col11" ></td>
-      <td id="T_d86ab_row23_col12" class="data row23 col12" ></td>
-      <td id="T_d86ab_row23_col13" class="data row23 col13" ></td>
+      <td>Demographics</td>
+      <td>d6</td>
+      <td>Education</td>
+      <td>What is the highest grade or level of school you have completed or the highest degree you have received?</td>
+      <td><ul><li>Did not complete high school</li><li>GED or equivalent</li><li>Regular high school diploma</li><li>Some college credit but less than 1 year of college credit</li><li>1 or more years of college credit but no degree</li><li>Associate's degree (e.g., AA or AS)</li><li>Bachelor's degree (e.g.,  BA or BS)</li><li>Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)</li><li>Other (specify)</li></ul></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row24" class="row_heading level0 row24" >24</th>
-      <td id="T_d86ab_row24_col0" class="data row24 col0" >d6_grade</td>
-      <td id="T_d86ab_row24_col1" class="data row24 col1" >Education:  Highest grade level (if less than GED or h.s. diploma)</td>
-      <td id="T_d86ab_row24_col2" class="data row24 col2" >integer</td>
-      <td id="T_d86ab_row24_col3" class="data row24 col3" >What is the highest grade completed?</td>
-      <td id="T_d86ab_row24_col4" class="data row24 col4" ></td>
-      <td id="T_d86ab_row24_col5" class="data row24 col5" ></td>
-      <td id="T_d86ab_row24_col6" class="data row24 col6" ></td>
-      <td id="T_d86ab_row24_col7" class="data row24 col7" >Demographics</td>
-      <td id="T_d86ab_row24_col8" class="data row24 col8" >education_grade</td>
-      <td id="T_d86ab_row24_col9" class="data row24 col9" ></td>
-      <td id="T_d86ab_row24_col10" class="data row24 col10" ></td>
-      <td id="T_d86ab_row24_col11" class="data row24 col11" ></td>
-      <td id="T_d86ab_row24_col12" class="data row24 col12" ></td>
-      <td id="T_d86ab_row24_col13" class="data row24 col13" ></td>
+      <td>Demographics</td>
+      <td>d6_grade</td>
+      <td>Education:  Highest grade level (if less than GED or h.s. diploma)</td>
+      <td>What is the highest grade completed?</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row25" class="row_heading level0 row25" >25</th>
-      <td id="T_d86ab_row25_col0" class="data row25 col0" >d6_specify_other</td>
-      <td id="T_d86ab_row25_col1" class="data row25 col1" >Education: Other specified</td>
-      <td id="T_d86ab_row25_col2" class="data row25 col2" >string</td>
-      <td id="T_d86ab_row25_col3" class="data row25 col3" >What is the highest grade or level of school you have completed or the highest degree you have received?</td>
-      <td id="T_d86ab_row25_col4" class="data row25 col4" ></td>
-      <td id="T_d86ab_row25_col5" class="data row25 col5" ></td>
-      <td id="T_d86ab_row25_col6" class="data row25 col6" ></td>
-      <td id="T_d86ab_row25_col7" class="data row25 col7" >Demographics</td>
-      <td id="T_d86ab_row25_col8" class="data row25 col8" >education_other</td>
-      <td id="T_d86ab_row25_col9" class="data row25 col9" ></td>
-      <td id="T_d86ab_row25_col10" class="data row25 col10" ></td>
-      <td id="T_d86ab_row25_col11" class="data row25 col11" ></td>
-      <td id="T_d86ab_row25_col12" class="data row25 col12" ></td>
-      <td id="T_d86ab_row25_col13" class="data row25 col13" ></td>
+      <td>Demographics</td>
+      <td>d6_specify_other</td>
+      <td>Education: Other specified</td>
+      <td>What is the highest grade or level of school you have completed or the highest degree you have received?</td>
+      <td></td>
+      <td>string</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row26" class="row_heading level0 row26" >26</th>
-      <td id="T_d86ab_row26_col0" class="data row26 col0" >u14f</td>
-      <td id="T_d86ab_row26_col1" class="data row26 col1" >Interviewed during incarceration</td>
-      <td id="T_d86ab_row26_col2" class="data row26 col2" >boolean</td>
-      <td id="T_d86ab_row26_col3" class="data row26 col3" >Interview conducted with participant during incarceration?</td>
-      <td id="T_d86ab_row26_col4" class="data row26 col4" ></td>
-      <td id="T_d86ab_row26_col5" class="data row26 col5" ></td>
-      <td id="T_d86ab_row26_col6" class="data row26 col6" ></td>
-      <td id="T_d86ab_row26_col7" class="data row26 col7" >MOUD</td>
-      <td id="T_d86ab_row26_col8" class="data row26 col8" >iv_incarceration</td>
-      <td id="T_d86ab_row26_col9" class="data row26 col9" ></td>
-      <td id="T_d86ab_row26_col10" class="data row26 col10" ></td>
-      <td id="T_d86ab_row26_col11" class="data row26 col11" ></td>
-      <td id="T_d86ab_row26_col12" class="data row26 col12" >Yes</td>
-      <td id="T_d86ab_row26_col13" class="data row26 col13" >No</td>
+      <td>MOUD</td>
+      <td>u14f</td>
+      <td>Interviewed during incarceration</td>
+      <td>Interview conducted with participant during incarceration?</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row27" class="row_heading level0 row27" >27</th>
-      <td id="T_d86ab_row27_col0" class="data row27 col0" >u14g</td>
-      <td id="T_d86ab_row27_col1" class="data row27 col1" >Days incarcerated (in past 30/xx days)</td>
-      <td id="T_d86ab_row27_col2" class="data row27 col2" >integer</td>
-      <td id="T_d86ab_row27_col3" class="data row27 col3" >During the past xx/30 days, how many days have you been incarcerated?</td>
-      <td id="T_d86ab_row27_col4" class="data row27 col4" ></td>
-      <td id="T_d86ab_row27_col5" class="data row27 col5" ></td>
-      <td id="T_d86ab_row27_col6" class="data row27 col6" ></td>
-      <td id="T_d86ab_row27_col7" class="data row27 col7" >MOUD</td>
-      <td id="T_d86ab_row27_col8" class="data row27 col8" >incarceration_days</td>
-      <td id="T_d86ab_row27_col9" class="data row27 col9" ></td>
-      <td id="T_d86ab_row27_col10" class="data row27 col10" ></td>
-      <td id="T_d86ab_row27_col11" class="data row27 col11" ></td>
-      <td id="T_d86ab_row27_col12" class="data row27 col12" ></td>
-      <td id="T_d86ab_row27_col13" class="data row27 col13" ></td>
+      <td>MOUD</td>
+      <td>u14g</td>
+      <td>Days incarcerated (in past 30/xx days)</td>
+      <td>During the past xx/30 days, how many days have you been incarcerated?</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row28" class="row_heading level0 row28" >28</th>
-      <td id="T_d86ab_row28_col0" class="data row28 col0" >u15</td>
-      <td id="T_d86ab_row28_col1" class="data row28 col1" >Medication ever prescribed for opioid use disorder?</td>
-      <td id="T_d86ab_row28_col2" class="data row28 col2" >boolean</td>
-      <td id="T_d86ab_row28_col3" class="data row28 col3" >Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)</td>
-      <td id="T_d86ab_row28_col4" class="data row28 col4" ></td>
-      <td id="T_d86ab_row28_col5" class="data row28 col5" ></td>
-      <td id="T_d86ab_row28_col6" class="data row28 col6" ></td>
-      <td id="T_d86ab_row28_col7" class="data row28 col7" >MOUD</td>
-      <td id="T_d86ab_row28_col8" class="data row28 col8" >oud_meds_rx</td>
-      <td id="T_d86ab_row28_col9" class="data row28 col9" ></td>
-      <td id="T_d86ab_row28_col10" class="data row28 col10" ></td>
-      <td id="T_d86ab_row28_col11" class="data row28 col11" ></td>
-      <td id="T_d86ab_row28_col12" class="data row28 col12" >Yes</td>
-      <td id="T_d86ab_row28_col13" class="data row28 col13" >No</td>
+      <td>MOUD</td>
+      <td>u15</td>
+      <td>Medication ever prescribed for opioid use disorder?</td>
+      <td>Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)</td>
+      <td></td>
+      <td>boolean</td>
+      <td></td>
+      <td>Yes</td>
+      <td>No</td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row29" class="row_heading level0 row29" >29</th>
-      <td id="T_d86ab_row29_col0" class="data row29 col0" >u15a1</td>
-      <td id="T_d86ab_row29_col1" class="data row29 col1" >Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months</td>
-      <td id="T_d86ab_row29_col2" class="data row29 col2" >integer</td>
-      <td id="T_d86ab_row29_col3" class="data row29 col3" >Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])</td>
-      <td id="T_d86ab_row29_col4" class="data row29 col4" ></td>
-      <td id="T_d86ab_row29_col5" class="data row29 col5" ></td>
-      <td id="T_d86ab_row29_col6" class="data row29 col6" ></td>
-      <td id="T_d86ab_row29_col7" class="data row29 col7" >MOUD</td>
-      <td id="T_d86ab_row29_col8" class="data row29 col8" >buprenorphine_tab_mos</td>
-      <td id="T_d86ab_row29_col9" class="data row29 col9" ></td>
-      <td id="T_d86ab_row29_col10" class="data row29 col10" ></td>
-      <td id="T_d86ab_row29_col11" class="data row29 col11" ></td>
-      <td id="T_d86ab_row29_col12" class="data row29 col12" ></td>
-      <td id="T_d86ab_row29_col13" class="data row29 col13" ></td>
+      <td>MOUD</td>
+      <td>u15a1</td>
+      <td>Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months</td>
+      <td>Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row30" class="row_heading level0 row30" >30</th>
-      <td id="T_d86ab_row30_col0" class="data row30 col0" >u15b1</td>
-      <td id="T_d86ab_row30_col1" class="data row30 col1" >Buprenorphine injection (Sublocade):  Lifetime months</td>
-      <td id="T_d86ab_row30_col2" class="data row30 col2" >integer</td>
-      <td id="T_d86ab_row30_col3" class="data row30 col3" >Lifetime months (buprenorphine injection [Sublocade])</td>
-      <td id="T_d86ab_row30_col4" class="data row30 col4" ></td>
-      <td id="T_d86ab_row30_col5" class="data row30 col5" ></td>
-      <td id="T_d86ab_row30_col6" class="data row30 col6" ></td>
-      <td id="T_d86ab_row30_col7" class="data row30 col7" >MOUD</td>
-      <td id="T_d86ab_row30_col8" class="data row30 col8" >sublocade_mos</td>
-      <td id="T_d86ab_row30_col9" class="data row30 col9" ></td>
-      <td id="T_d86ab_row30_col10" class="data row30 col10" ></td>
-      <td id="T_d86ab_row30_col11" class="data row30 col11" ></td>
-      <td id="T_d86ab_row30_col12" class="data row30 col12" ></td>
-      <td id="T_d86ab_row30_col13" class="data row30 col13" ></td>
+      <td>MOUD</td>
+      <td>u15b1</td>
+      <td>Buprenorphine injection (Sublocade):  Lifetime months</td>
+      <td>Lifetime months (buprenorphine injection [Sublocade])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row31" class="row_heading level0 row31" >31</th>
-      <td id="T_d86ab_row31_col0" class="data row31 col0" >u15c1</td>
-      <td id="T_d86ab_row31_col1" class="data row31 col1" >Buprenorphine  weekly injection (Brixadi):  Lifetime months</td>
-      <td id="T_d86ab_row31_col2" class="data row31 col2" >integer</td>
-      <td id="T_d86ab_row31_col3" class="data row31 col3" >Lifetime months (buprenorphine weekly injection [Brixadi])</td>
-      <td id="T_d86ab_row31_col4" class="data row31 col4" ></td>
-      <td id="T_d86ab_row31_col5" class="data row31 col5" ></td>
-      <td id="T_d86ab_row31_col6" class="data row31 col6" ></td>
-      <td id="T_d86ab_row31_col7" class="data row31 col7" >MOUD</td>
-      <td id="T_d86ab_row31_col8" class="data row31 col8" >brixadi_weekly_mos</td>
-      <td id="T_d86ab_row31_col9" class="data row31 col9" ></td>
-      <td id="T_d86ab_row31_col10" class="data row31 col10" ></td>
-      <td id="T_d86ab_row31_col11" class="data row31 col11" ></td>
-      <td id="T_d86ab_row31_col12" class="data row31 col12" ></td>
-      <td id="T_d86ab_row31_col13" class="data row31 col13" ></td>
+      <td>MOUD</td>
+      <td>u15c1</td>
+      <td>Buprenorphine  weekly injection (Brixadi):  Lifetime months</td>
+      <td>Lifetime months (buprenorphine weekly injection [Brixadi])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row32" class="row_heading level0 row32" >32</th>
-      <td id="T_d86ab_row32_col0" class="data row32 col0" >u15d1</td>
-      <td id="T_d86ab_row32_col1" class="data row32 col1" >Buprenorphine  monthly injection (Brixadi):  Lifetime months</td>
-      <td id="T_d86ab_row32_col2" class="data row32 col2" >integer</td>
-      <td id="T_d86ab_row32_col3" class="data row32 col3" >Lifetime months (buprenorphine monthly injection [Brixadi])</td>
-      <td id="T_d86ab_row32_col4" class="data row32 col4" ></td>
-      <td id="T_d86ab_row32_col5" class="data row32 col5" ></td>
-      <td id="T_d86ab_row32_col6" class="data row32 col6" ></td>
-      <td id="T_d86ab_row32_col7" class="data row32 col7" >MOUD</td>
-      <td id="T_d86ab_row32_col8" class="data row32 col8" >brixadi_monthly_mos</td>
-      <td id="T_d86ab_row32_col9" class="data row32 col9" ></td>
-      <td id="T_d86ab_row32_col10" class="data row32 col10" ></td>
-      <td id="T_d86ab_row32_col11" class="data row32 col11" ></td>
-      <td id="T_d86ab_row32_col12" class="data row32 col12" ></td>
-      <td id="T_d86ab_row32_col13" class="data row32 col13" ></td>
+      <td>MOUD</td>
+      <td>u15d1</td>
+      <td>Buprenorphine  monthly injection (Brixadi):  Lifetime months</td>
+      <td>Lifetime months (buprenorphine monthly injection [Brixadi])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row33" class="row_heading level0 row33" >33</th>
-      <td id="T_d86ab_row33_col0" class="data row33 col0" >u15e1</td>
-      <td id="T_d86ab_row33_col1" class="data row33 col1" >Buprenorphine 6-month implant (Probuphine):  Lifetime months</td>
-      <td id="T_d86ab_row33_col2" class="data row33 col2" >integer</td>
-      <td id="T_d86ab_row33_col3" class="data row33 col3" >Lifetime months (buprenorphine 6-month implant [Probuphine])</td>
-      <td id="T_d86ab_row33_col4" class="data row33 col4" ></td>
-      <td id="T_d86ab_row33_col5" class="data row33 col5" ></td>
-      <td id="T_d86ab_row33_col6" class="data row33 col6" ></td>
-      <td id="T_d86ab_row33_col7" class="data row33 col7" >MOUD</td>
-      <td id="T_d86ab_row33_col8" class="data row33 col8" >probuphine_mos</td>
-      <td id="T_d86ab_row33_col9" class="data row33 col9" ></td>
-      <td id="T_d86ab_row33_col10" class="data row33 col10" ></td>
-      <td id="T_d86ab_row33_col11" class="data row33 col11" ></td>
-      <td id="T_d86ab_row33_col12" class="data row33 col12" ></td>
-      <td id="T_d86ab_row33_col13" class="data row33 col13" ></td>
+      <td>MOUD</td>
+      <td>u15e1</td>
+      <td>Buprenorphine 6-month implant (Probuphine):  Lifetime months</td>
+      <td>Lifetime months (buprenorphine 6-month implant [Probuphine])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row34" class="row_heading level0 row34" >34</th>
-      <td id="T_d86ab_row34_col0" class="data row34 col0" >u15f1</td>
-      <td id="T_d86ab_row34_col1" class="data row34 col1" >Naltrexone daily (oral):  Lifetime months</td>
-      <td id="T_d86ab_row34_col2" class="data row34 col2" >integer</td>
-      <td id="T_d86ab_row34_col3" class="data row34 col3" >Lifetime months (Naltrexone daily (oral))</td>
-      <td id="T_d86ab_row34_col4" class="data row34 col4" ></td>
-      <td id="T_d86ab_row34_col5" class="data row34 col5" ></td>
-      <td id="T_d86ab_row34_col6" class="data row34 col6" ></td>
-      <td id="T_d86ab_row34_col7" class="data row34 col7" >MOUD</td>
-      <td id="T_d86ab_row34_col8" class="data row34 col8" >naltrexone_mos</td>
-      <td id="T_d86ab_row34_col9" class="data row34 col9" ></td>
-      <td id="T_d86ab_row34_col10" class="data row34 col10" ></td>
-      <td id="T_d86ab_row34_col11" class="data row34 col11" ></td>
-      <td id="T_d86ab_row34_col12" class="data row34 col12" ></td>
-      <td id="T_d86ab_row34_col13" class="data row34 col13" ></td>
+      <td>MOUD</td>
+      <td>u15f1</td>
+      <td>Naltrexone daily (oral):  Lifetime months</td>
+      <td>Lifetime months (Naltrexone daily (oral))</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row35" class="row_heading level0 row35" >35</th>
-      <td id="T_d86ab_row35_col0" class="data row35 col0" >u15g1</td>
-      <td id="T_d86ab_row35_col1" class="data row35 col1" >Naltrexone monthly injection (Vivitrol):  Lifetime months</td>
-      <td id="T_d86ab_row35_col2" class="data row35 col2" >integer</td>
-      <td id="T_d86ab_row35_col3" class="data row35 col3" >Lifetime months (Naltrexone monthly injection [Vivitrol])</td>
-      <td id="T_d86ab_row35_col4" class="data row35 col4" ></td>
-      <td id="T_d86ab_row35_col5" class="data row35 col5" ></td>
-      <td id="T_d86ab_row35_col6" class="data row35 col6" ></td>
-      <td id="T_d86ab_row35_col7" class="data row35 col7" >MOUD</td>
-      <td id="T_d86ab_row35_col8" class="data row35 col8" >vivitrol_mos</td>
-      <td id="T_d86ab_row35_col9" class="data row35 col9" ></td>
-      <td id="T_d86ab_row35_col10" class="data row35 col10" ></td>
-      <td id="T_d86ab_row35_col11" class="data row35 col11" ></td>
-      <td id="T_d86ab_row35_col12" class="data row35 col12" ></td>
-      <td id="T_d86ab_row35_col13" class="data row35 col13" ></td>
+      <td>MOUD</td>
+      <td>u15g1</td>
+      <td>Naltrexone monthly injection (Vivitrol):  Lifetime months</td>
+      <td>Lifetime months (Naltrexone monthly injection [Vivitrol])</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
-      <th id="T_d86ab_level0_row36" class="row_heading level0 row36" >36</th>
-      <td id="T_d86ab_row36_col0" class="data row36 col0" >u15h1</td>
-      <td id="T_d86ab_row36_col1" class="data row36 col1" >Methadone daily:  Lifetime months</td>
-      <td id="T_d86ab_row36_col2" class="data row36 col2" >integer</td>
-      <td id="T_d86ab_row36_col3" class="data row36 col3" >Lifetime months (methadone daily)</td>
-      <td id="T_d86ab_row36_col4" class="data row36 col4" ></td>
-      <td id="T_d86ab_row36_col5" class="data row36 col5" ></td>
-      <td id="T_d86ab_row36_col6" class="data row36 col6" ></td>
-      <td id="T_d86ab_row36_col7" class="data row36 col7" >MOUD</td>
-      <td id="T_d86ab_row36_col8" class="data row36 col8" >methadone_mos</td>
-      <td id="T_d86ab_row36_col9" class="data row36 col9" ></td>
-      <td id="T_d86ab_row36_col10" class="data row36 col10" ></td>
-      <td id="T_d86ab_row36_col11" class="data row36 col11" ></td>
-      <td id="T_d86ab_row36_col12" class="data row36 col12" ></td>
-      <td id="T_d86ab_row36_col13" class="data row36 col13" ></td>
+      <td>MOUD</td>
+      <td>u15h1</td>
+      <td>Methadone daily:  Lifetime months</td>
+      <td>Lifetime months (methadone daily)</td>
+      <td></td>
+      <td>integer</td>
+      <td></td>
+      <td></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
