@@ -1,0 +1,7 @@
+name: JCOIN_Core_Measures
+dependencies:
+  - python=3.10
+  - pip
+  - jupyter
+  - pip:
+    - -r requirements.txt

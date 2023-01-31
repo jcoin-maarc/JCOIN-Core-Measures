@@ -49,99 +49,48 @@ def update_json():
         schema["fields"] = fields["data_dictionary"]
         schema.to_json(outfile)
 
-
-# html_template = """
-# <html>
-
-# <head>
-#     <script>
-#     {filterTable}
-#     {selectColumns}
-#     </script>
-# </head>
-# <body>
-
-# </body>
-# """
-
-
-@click.command(name="tohtml")
-@click.option(
-    "--freeze-fields", default=["custom.jcoin:core_measure_section", "name", "title"]
-)
-@click.option("--freeze-headers", is_flag=True, default=True)
-def to_html(freeze_fields, freeze_headers):
+@click.command(name="tostreamlit")
+def to_streamlit():
     def _to_html_list(v):
         items = v.split("|")
         ul = "<ul>{li}</ul>"
         list_items = ["<li>" + i + "</li>" for i in items]
         return ul.format(li="".join(list_items))
 
-    # def _filter_table(colnum,colname):
-
-    #     filterCol = Path(__file__).joinpath('filterTable.js').read_text()
-    #     filterColInput = """<input type="text" id="filterInput" onkeyup="filterTable({colnum})" placeholder="Filter by {colname}">"""
-
-    #     return filterColInput
-
-    # def _col_checkbox(colnum,colname):
-
-    #     selectColumn = Path(__file__).joinpath('selectTable.js').read_text()
-    #     selectTableInput = f"""{colname}<br><input type="checkbox" name="columnCheckbox" value={colnum} onchange="updateTable()" checked>{colname}<br>"""
-
-    #     return selectTableInput
-
-    def _freeze_headers(styledf):
-        pass
-
-    # filterTable = Path(__file__).joinpath('filterTable.js').read_text()
-    # selectColumn = Path(__file__).joinpath('selectTable.js').read_text()
-
-    for csvpath in csvs:
-        df = pd.read_csv(csvpath)
-        # df.columns = [_col_with_searchbar(colnum, colname) for enumerate(df.columns)]
-
-        tmpcols = [
-            "custom.jcoin:core_measure_section",
-            "name",
-            "title",
-            "description",
-            "constraints.enum",
-            "type",
-            "format",
-            "trueValues",
-            "falseValues",
-        ]
-
-        dfhtml = (
-            df.applymap(
+    for csvpath,jsonpath in zip(list(csvs),list(jsons)):
+        schema = Schema(jsonpath)
+        #TODO: get fields directly from schema above
+        #TODO: contribute to Schema.to_summary method in frictionless
+        fieldsdf = (
+            pd.read_csv(csvpath)
+            .applymap(
                 lambda v: _to_html_list(v)
                 if type(v) == str and re.search("\|", str(v))
                 else v
             )
-            .fillna("")
-            # TODO: include all columns and have ability to hide/unhide rows
-            [tmpcols]
-            .rename(columns={tmpcols[0]: "section"})
-            .pipe(
-                lambda df: df.to_html(
-                    csvpath.parents[1]
-                    / "docs/assets"
-                    / csvpath.with_suffix(".html").name,
-                    columns=df.columns,
-                    escape=False,
-                    index=False,
-                )
-            )
+            # .fillna("")
+
+            # .rename(columns={tmpcols[0]: "section"})
+            # .pipe(
+            #     lambda df: df.to_html(
+            #         csvpath.parents[1]
+            #         / "docs/assets"
+            #         / csvpath.with_suffix(".html").name,
+            #         columns=df.columns,
+            #         escape=False,
+            #         index=False,
+            #     )
+            # )
         )
+        # make dataframe w
+
 
 
 @click.group()
 def cli():
     pass
 
-
-cli.add_command(to_html)
+cli.add_command(to_streamlit)
 cli.add_command(update_json)
 cli.add_command(to_csv)
 
