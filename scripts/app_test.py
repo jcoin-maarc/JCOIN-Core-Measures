@@ -2,49 +2,58 @@ from st_aggrid  import AgGrid,GridOptionsBuilder
 import streamlit as st 
 import pandas as pd 
 from pathlib import Path
-
-# @st.experimental_memo
-# def load_data():
-#     pass 
-
+from frictionless import Schema
+from collections.abc import MutableSequence
+import io
 #with a container/tab
-repo_dir = Path(__file__).parents[1]
-sourcedf = pd.read_csv(repo_dir.joinpath("csvs/table-schema-baseline.csv"))
-sourcecols = sourcedf.columns.tolist()
+REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master/"
+schema_name ="table-schema-baseline"
 
-sections_colname = 'custom.jcoin:core_measure_section'
-sections_vals = sourcedf[sections_colname].fillna("None").unique()
-# section selector
-sections_select = st.multiselect(
-    label="Select sections to look at:",
-    options=sections_vals,
-    default=sections_vals
-)
-#column selector
-column_options = st.multiselect(
-    label="Select variable info to look at:",
-    options=sourcedf.columns.tolist(),
-    default=['name','title','description','type'])
-
-
-# search selector
-column_to_search = st.selectbox("Select how you want to search for variables:",options=sourcecols)
-# search text
-text_to_search = st.text_input(f"Type your search in {column_to_search} here ")
-
-#filter dataframe based on sections/columns
-is_selected_section = sourcedf[sections_colname].isin(sections_select)
-if text_to_search:
-    contains_text = (
-        sourcedf[column_to_search]
-        .str.contains(pat=text_to_search,regex=False,case=False)
+def make_agrid(url_or_path):
+    sourcedf = pd.read_csv(url_or_path)
+    options = GridOptionsBuilder.from_dataframe(sourcedf)
+    options.configure_side_bar()
+    options.configure_selection(selection_mode = 'multiple')
+    selected_table = AgGrid(
+        sourcedf,
+        gridOptions=options.build()
     )
-    is_selected = (is_selected_section & contains_text)
-else:
-    is_selected = (is_selected_section & is_selected_section)
-   
-targetdf = sourcedf.loc[is_selected,column_options]
-#render dataframe
-#selected_rows = AgGrid(targetdf)
+    return selected_table
 
-st.dataframe(targetdf)
+def render_schema_page(schema_name):
+    schema = Schema(f"{REPO_DIR}/schemas/{schema_name}.json")
+    
+    for propname,prop in schema.items():
+        st.markdown(f"## {propname}")
+        if propname=="fields":
+            selected_table = make_agrid(f"{REPO_DIR}/csvs/{schema_name}.csv")
+        elif isinstance(prop,MutableSequence):
+            st.markdown("\n".join([f"- {val}" for val in prop]))
+        else:
+            st.markdown(prop)
+
+    outdict = schema.to_dict()
+    schema['fields'] = selected_table 
+
+    return schema
+
+
+def download_excel_button(dictionary):
+    buffer = io.BytesIO()
+    with pd.ExcelWriter(buffer,engine="xlsxwriter") as writer:
+        for name,item in dictionary.items():
+            try:
+                df = pd.DataFrame(item)
+            except ValueError:
+                df = pd.DataFrame([item])
+
+            df.to_excel(writer,sheet_name=name)
+        writer.save()
+
+    st.download_button("Download selected data dictionary",
+        buffer)
+
+
+
+schema = render_schema_page(schema_name)
+download_excel_button(schema)
