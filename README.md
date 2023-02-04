@@ -1,35 +1,31 @@
 # JCOIN Core Measures Table Schemas/Data Dictionaries
 
-The goal of this repository is to make data models for data validation and transformation in a frictionless format and use these to render human-readable data dictionaries consumable by analysts.
+The goal of this repository is to make data models (ie schemas) and digestable products such as tabular data files that allow
+easier search and discovery of the JCOIN Core Measure variables. 
 
+For more information on the Table Schema specification used here, see the Frictionless Table Schema specification. Additionally,we conform to (and leverage tools from) the agreed upon HEAL initiative variable level metadata specifications and standards.
 
-For more information on the frictionless data toolkit, [click here](https://frictionlessdata.io/).
-
-## Human readable data data dictionaries
-See archive for previous versions. See github issues for future planned work.
-
-The schema/data dictionaries were created to represent 
+The schema/data dictionaries were created to represent (and build upon)
 the publicly available [core measures document](docs/assets/JCOIN-core-measures_public.pdf) 
-## Schemas and data dictionaries
 
-> WARNING: while the content will not change dramatically some of the scripts will to make this process more efficient.
 
-`csvs`: tabular version of data dictionaries with standard frictionless names.
+## Directories
 
-`scripts/schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option,
-    minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+`csvs`: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.
 
-> IMPORTANT: the source of truth for schemas are the schemas/*.json files. 
+`scripts/schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+
+> IMPORTANT: the source of truth for schemas are the schemas/*.json files (if the csv differs from the json file). However, the schemas.py script is intended to allow this json source of truth to be updated if using the csv to edit or update the schemas.
 
 > The schemas were created using the publicly available JCOIN-core-measures-public.pdf document. Additionally, fields were added to satisfy additional fields for reporting such as quarter_enrolled, current_submission_status etc.
-
-## Encoding transforms
 
 `encodings`: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). 
 
 > NOTE: while schemas by definition do not contain any information used for transformations, we included the encodings here for easier editing and look up.
 
 > NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)
+
+`apps`: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.
 
 ## Data model 
 
@@ -41,7 +37,7 @@ the publicly available [core measures document](docs/assets/JCOIN-core-measures_
     2. Person/visit level: measures collected at all timepoints which is called `time-points`
 
 
-## Version history
+## Version history (this list is no longer updated as we will now use tags)
 - 1.0.0:
     upon putting all variables (besides MOUD follow up measures) into data model
 - 1.1.0: 
@@ -54,4 +50,4 @@ the publicly available [core measures document](docs/assets/JCOIN-core-measures_
     - added missing demographic fields
     - corrected typos
 - 1.3.0b
-    Added staff schemas
+    Added staff schemas (both baseline and "time-points")

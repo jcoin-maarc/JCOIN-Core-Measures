@@ -12,8 +12,11 @@ import re
 jsons = Path(__file__).parents[1].joinpath("schemas").glob("*")
 csvs = Path(__file__).parents[1].joinpath("csvs").glob("*")
 
+tocsv_help = """
+Flattens the json spec to a csv using the healdata_utils tool
+"""
 
-@click.command(name="tocsv")
+@click.command(name="tocsv",help=tocsv_help)
 def to_csv():
     import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert json to csv
@@ -27,12 +30,12 @@ def to_csv():
             outdir / path.with_suffix(".csv").name, encoding="utf-8"
         )
 
-
-@click.command(name="updatejson")
+update_json_help = """
+update a json schema with fields and properties from csv file
+"""
+@click.command(name="updatejson",help=update_json_help)
 def update_json():
-    """
-    update a json schema with fields and properties from csv file
-    """
+
     import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert csv to json
     for path in csvs:
@@ -55,23 +58,18 @@ import utils
 utils.makepage("{schema_name}")
 
 """ 
-
-@click.command(name="tostreamlit")
+streamlit_help = """ 
+creates a page for each schema in the multipage streamlit app
+NOTE: this command assumes all packages called from saved script are set up to run correctly
+"""
+@click.command(name="tostreamlit",help=streamlit_help)
 def to_streamlit():
-    """ 
-    creates a page for each schema in the multipage streamlit app
-    NOTE: this command assumes all packages called from saved script are set up to run correctly
-    """
     for i,csvpath in enumerate(sorted(csvs)):
         schema_name = csvpath.stem
         pagesdir = Path(__file__).parents[1]/"app"/"pages"
         pagespath = pagesdir.joinpath(f"{str(i+1)}_{schema_name}.py")
         pagescript = streamlit_app_template.format(schema_name=schema_name)
         pagespath.write_text(pagescript)
-
-
-
-
 
 @click.group()
 def cli():
