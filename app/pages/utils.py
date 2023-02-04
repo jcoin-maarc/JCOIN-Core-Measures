@@ -7,7 +7,6 @@ from collections.abc import MutableSequence
 import io
 #with a container/tab
 REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master/"
-schema_name ="table-schema-baseline"
 
 def make_agrid(url_or_path):
     sourcedf = pd.read_csv(url_or_path)
@@ -38,7 +37,7 @@ def render_schema_page(schema_name):
     return schema
 
 
-def download_excel_button(dictionary):
+def download_excel(dictionary):
     buffer = io.BytesIO()
     with pd.ExcelWriter(buffer,engine="xlsxwriter") as writer:
         for name,item in dictionary.items():
@@ -49,11 +48,12 @@ def download_excel_button(dictionary):
 
             df.to_excel(writer,sheet_name=name)
         writer.save()
+    
+    return buffer
 
-    st.download_button("Download selected data dictionary",
-        buffer)
-
-
-
-schema = render_schema_page(schema_name)
-download_excel_button(schema)
+def makepage(schema_name):
+    schema = render_schema_page(schema_name)
+    buffer = download_excel(schema)
+    st.download_button(f"Download **{schema_name}** data dictionary",
+        data=buffer,file_name="table-schema-baseline.xlsx")
+    
