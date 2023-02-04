@@ -1,9 +1,8 @@
 """ 
 uses healdata utils tools to 
-convert from json to csv to searchable dictionaries in html
+convert from json to csv to interactive dictionaries in a multipage streamlit app
 """
 
-import healdata_utils.transforms.csvtemplate.conversion as healdata
 import sys
 import pandas as pd
 from pathlib import Path
@@ -16,6 +15,7 @@ csvs = Path(__file__).parents[1].joinpath("csvs").glob("*")
 
 @click.command(name="tocsv")
 def to_csv():
+    import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert json to csv
     for path in jsons:
         path = Path(path)
@@ -33,7 +33,7 @@ def update_json():
     """
     update a json schema with fields and properties from csv file
     """
-
+    import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert csv to json
     for path in csvs:
         path = Path(path)
@@ -52,13 +52,17 @@ def update_json():
 streamlit_app_template = """ 
 import utils
 
-app.makepage("{schema_name}")
+utils.makepage("{schema_name}")
 
 """ 
 
 @click.command(name="tostreamlit")
 def to_streamlit():
-    for i,csvpath in enumerate(csvs):
+    """ 
+    creates a page for each schema in the multipage streamlit app
+    NOTE: this command assumes all packages called from saved script are set up to run correctly
+    """
+    for i,csvpath in enumerate(sorted(csvs)):
         schema_name = csvpath.stem
         pagesdir = Path(__file__).parents[1]/"app"/"pages"
         pagespath = pagesdir.joinpath(f"{str(i+1)}_{schema_name}.py")
