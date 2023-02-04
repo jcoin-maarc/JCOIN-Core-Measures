@@ -49,40 +49,23 @@ def update_json():
         schema["fields"] = fields["data_dictionary"]
         schema.to_json(outfile)
 
+streamlit_app_template = """ 
+import utils
+
+app.makepage("{schema_name}")
+
+""" 
+
 @click.command(name="tostreamlit")
 def to_streamlit():
-    def _to_html_list(v):
-        items = v.split("|")
-        ul = "<ul>{li}</ul>"
-        list_items = ["<li>" + i + "</li>" for i in items]
-        return ul.format(li="".join(list_items))
+    for i,csvpath in enumerate(csvs):
+        schema_name = csvpath.stem
+        pagesdir = Path(__file__).parents[1]/"app"/"pages"
+        pagespath = pagesdir.joinpath(f"{str(i+1)}_{schema_name}.py")
+        pagescript = streamlit_app_template.format(schema_name=schema_name)
+        pagespath.write_text(pagescript)
 
-    for csvpath,jsonpath in zip(list(csvs),list(jsons)):
-        schema = Schema(jsonpath)
-        #TODO: get fields directly from schema above
-        #TODO: contribute to Schema.to_summary method in frictionless
-        fieldsdf = (
-            pd.read_csv(csvpath)
-            .applymap(
-                lambda v: _to_html_list(v)
-                if type(v) == str and re.search("\|", str(v))
-                else v
-            )
-            # .fillna("")
 
-            # .rename(columns={tmpcols[0]: "section"})
-            # .pipe(
-            #     lambda df: df.to_html(
-            #         csvpath.parents[1]
-            #         / "docs/assets"
-            #         / csvpath.with_suffix(".html").name,
-            #         columns=df.columns,
-            #         escape=False,
-            #         index=False,
-            #     )
-            # )
-        )
-        # make dataframe w
 
 
 
