@@ -1,5 +1,5 @@
  
 import utils
 
-app.makepage("table-schema-baseline")
+utils.makepage("table-schema-baseline")
 

@@ -1,5 +1,5 @@
  
 import utils
 
-app.makepage("table-schema-staff-baseline")
+utils.makepage("table-schema-staff-baseline")
 

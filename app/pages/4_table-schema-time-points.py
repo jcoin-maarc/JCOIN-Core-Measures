@@ -1,5 +1,5 @@
  
 import utils
 
-app.makepage("table-schema-time-points")
+utils.makepage("table-schema-time-points")
 
