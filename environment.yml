@@ -1,7 +1,7 @@
-name: JCOIN_Core_Measures
+name: JCOIN-Core-Measures
 dependencies:
   - python=3.10
   - pip
   - jupyter
   - pip:
-    - -e .
+    - '.'
