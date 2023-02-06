@@ -13,7 +13,9 @@ the publicly available [core measures document](docs/assets/JCOIN-core-measures_
 
 `csvs`: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.
 
-`scripts/schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+`core_measures`: python modules (run `pip install -e .`)
+    - `schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+    - `app`: contains modules/fxns for the streamlit app
 
 > IMPORTANT: the source of truth for schemas are the schemas/*.json files (if the csv differs from the json file). However, the schemas.py script is intended to allow this json source of truth to be updated if using the csv to edit or update the schemas.
 
