@@ -10,7 +10,7 @@ import click
 import re
 
 jsons = Path(os.getcwd()).joinpath("schemas").glob("*")
-csvs = Path(os.getcwd()).parents[1].joinpath("csvs").glob("*")
+csvs = Path(os.getcwd()).joinpath("csvs").glob("*")
 
 tocsv_help = """
 Flattens the json spec to a csv using the healdata_utils tool
