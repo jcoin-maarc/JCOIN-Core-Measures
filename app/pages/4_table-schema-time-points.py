@@ -1,5 +1,5 @@
  
-import utils
+from core_measures import app
 
-utils.makepage("table-schema-time-points")
+app.utils.makepage("table-schema-time-points")
 

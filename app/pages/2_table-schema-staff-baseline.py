@@ -1,5 +1,5 @@
  
-import utils
+from core_measures import app
 
-utils.makepage("table-schema-staff-baseline")
+app.utils.makepage("table-schema-staff-baseline")
 
