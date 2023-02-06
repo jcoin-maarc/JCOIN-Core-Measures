@@ -5,7 +5,7 @@ setup(
     install_requires=[
         "streamlit-aggrid",
         "streamlit",
-        "frictionless",
+        "frictionless==4.40.8",
         "xlsxwriter"
     ],
     extras_require={
