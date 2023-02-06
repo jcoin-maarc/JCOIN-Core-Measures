@@ -1,6 +1,6 @@
 import streamlit as st 
 import sys
-sys.path.append("./pages")
+sys.path.append("pages")
 
 st.set_page_config(
     page_title="Justice Community Opioid Intervention Network (JCOIN) Core Measures",

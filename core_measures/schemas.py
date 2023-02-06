@@ -3,14 +3,14 @@ uses healdata utils tools to
 convert from json to csv to interactive dictionaries in a multipage streamlit app
 """
 
-import sys
+import os
 import pandas as pd
 from pathlib import Path
 import click
 import re
 
-jsons = Path(__file__).parents[1].joinpath("schemas").glob("*")
-csvs = Path(__file__).parents[1].joinpath("csvs").glob("*")
+jsons = Path(os.getcwd()).joinpath("schemas").glob("*")
+csvs = Path(os.getcwd()).parents[1].joinpath("csvs").glob("*")
 
 tocsv_help = """
 Flattens the json spec to a csv using the healdata_utils tool
@@ -53,9 +53,9 @@ def update_json():
         schema.to_json(outfile)
 
 streamlit_app_template = """ 
-import utils
+from core_measures import app
 
-utils.makepage("{schema_name}")
+app.utils.makepage("{schema_name}")
 
 """ 
 streamlit_help = """ 
@@ -66,7 +66,7 @@ NOTE: this command assumes all packages called from saved script are set up to r
 def to_streamlit():
     for i,csvpath in enumerate(sorted(csvs)):
         schema_name = csvpath.stem
-        pagesdir = Path(__file__).parents[1]/"app"/"pages"
+        pagesdir = Path(os.getcwd())/"app"/"pages"
         pagespath = pagesdir.joinpath(f"{str(i+1)}_{schema_name}.py")
         pagescript = streamlit_app_template.format(schema_name=schema_name)
         pagespath.write_text(pagescript)

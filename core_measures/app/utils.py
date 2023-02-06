@@ -32,7 +32,6 @@ def render_schema_page(schema_name):
         else:
             st.markdown(prop)
 
-    outdict = schema.to_dict()
     schema['fields'] = selected_table 
 
     return schema
@@ -56,5 +55,5 @@ def makepage(schema_name):
     schema = render_schema_page(schema_name)
     buffer = download_excel(schema)
     st.download_button(f"Download **{schema_name}** data dictionary",
-        data=buffer,file_name="table-schema-baseline.xlsx")
+        data=buffer,file_name=f"{schema_name}.xlsx")
     

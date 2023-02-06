@@ -4,4 +4,4 @@ dependencies:
   - pip
   - jupyter
   - pip:
-    - -r requirements.txt
+    - -e .
