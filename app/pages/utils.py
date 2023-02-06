@@ -6,7 +6,7 @@ from frictionless import Schema
 from collections.abc import MutableSequence
 import io
 #with a container/tab
-REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master/"
+REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master"
 
 def make_agrid(url_or_path):
     sourcedf = pd.read_csv(url_or_path)
@@ -20,7 +20,8 @@ def make_agrid(url_or_path):
     return selected_table
 
 def render_schema_page(schema_name):
-    schema = Schema(f"{REPO_DIR}/schemas/{schema_name}.json")
+    st.write(f"{REPO_DIR}/schemas/{schema_name}.json")
+    schema = Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_dict()
     
     for propname,prop in schema.items():
         st.markdown(f"## {propname}")
