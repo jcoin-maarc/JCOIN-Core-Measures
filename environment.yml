@@ -1,7 +1,4 @@
-name: JCOIN-Core-Measures
+name: streamlit_app
 dependencies:
-  - python=3.10
-  - pip
-  - jupyter
   - pip:
     - '.'
