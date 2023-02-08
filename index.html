@@ -217,15 +217,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#directories" class="md-nav__link">
-    Directories
+  <a href="#data-model" class="md-nav__link">
+    Data model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-model" class="md-nav__link">
-    Data model
+  <a href="#directories" class="md-nav__link">
+    Directories
   </a>
   
 </li>
@@ -416,15 +416,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#directories" class="md-nav__link">
-    Directories
+  <a href="#data-model" class="md-nav__link">
+    Data model
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-model" class="md-nav__link">
-    Data model
+  <a href="#directories" class="md-nav__link">
+    Directories
   </a>
   
 </li>
@@ -450,26 +450,11 @@
                 
                 
                 <h1 id="jcoin-core-measures-table-schemasdata-dictionaries">JCOIN Core Measures Table Schemas/Data Dictionaries<a class="headerlink" href="#jcoin-core-measures-table-schemasdata-dictionaries" title="Permanent link">&para;</a></h1>
-<p>The goal of this repository is to make data models (ie schemas) and digestable products such as tabular data files that allow
-easier search and discovery of the JCOIN Core Measure variables. </p>
+<p>The goal of this repository is to make data models (ie schemas) and digestable products that allow
+easier search and discovery of the JCOIN Core Measure variables for harmonization and analysis. </p>
 <p>For more information on the Table Schema specification used here, see the Frictionless Table Schema specification. Additionally,we conform to (and leverage tools from) the agreed upon HEAL initiative variable level metadata specifications and standards.</p>
 <p>The schema/data dictionaries were created to represent (and build upon)
 the publicly available <a href="docs/assets/JCOIN-core-measures_public.pdf">core measures document</a> </p>
-<h2 id="directories">Directories<a class="headerlink" href="#directories" title="Permanent link">&para;</a></h2>
-<p><code>csvs</code>: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.</p>
-<p><code>core_measures</code>: python modules (run <code>pip install -e .</code>)
-    - <code>schemas.py</code>: simple CLI function to update csv files given updates to json files and vice versa. When using the <code>updatejson</code> option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
-    - <code>app</code>: contains modules/fxns for the streamlit app (note -- the  <code>environment.yml</code> at root of repo is used for app deployment -- cannot have any base python packages)</p>
-<blockquote>
-<p>IMPORTANT: the source of truth for schemas are the schemas/*.json files (if the csv differs from the json file). However, the schemas.py script is intended to allow this json source of truth to be updated if using the csv to edit or update the schemas.</p>
-<p>The schemas were created using the publicly available JCOIN-core-measures-public.pdf document. Additionally, fields were added to satisfy additional fields for reporting such as quarter_enrolled, current_submission_status etc.</p>
-</blockquote>
-<p><code>encodings</code>: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). </p>
-<blockquote>
-<p>NOTE: while schemas by definition do not contain any information used for transformations, we included the encodings here for easier editing and look up.</p>
-<p>NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)</p>
-</blockquote>
-<p><code>apps</code>: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.</p>
 <h2 id="data-model">Data model<a class="headerlink" href="#data-model" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -486,6 +471,22 @@ the publicly available <a href="docs/assets/JCOIN-core-measures_public.pdf">core
 </ol>
 </li>
 </ul>
+<h2 id="directories">Directories<a class="headerlink" href="#directories" title="Permanent link">&para;</a></h2>
+<p>The public repository where data dictionaries are stored is located <a href="https://github.com/jcoin-maarc/JCOIN-Core-Measures">here</a>. Below describes the directories in this repository:</p>
+<p><code>csvs</code>: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.</p>
+<p><code>core_measures</code>: python modules (run <code>pip install -e .</code>)
+    - <code>schemas.py</code>: simple CLI function to update csv files given updates to json files and vice versa. When using the <code>updatejson</code> option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+    - <code>app</code>: contains modules/fxns for the streamlit app (note -- the  <code>environment.yml</code> at root of repo is used for app deployment -- cannot have any base python packages)</p>
+<blockquote>
+<p>IMPORTANT: the source of truth for schemas are the schemas/*.json files (if the csv differs from the json file). However, the schemas.py script is intended to allow this json source of truth to be updated if using the csv to edit or update the schemas.</p>
+<p>The schemas were created using the publicly available JCOIN-core-measures-public.pdf document. Additionally, fields were added to satisfy additional fields for reporting such as quarter_enrolled, current_submission_status etc.</p>
+</blockquote>
+<p><code>encodings</code>: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). </p>
+<blockquote>
+<p>NOTE: while schemas by definition do not contain any information used for transformations, we included the encodings here for easier editing and look up.</p>
+<p>NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)</p>
+</blockquote>
+<p><code>apps</code>: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.</p>
 <h2 id="version-history-this-list-is-no-longer-updated-as-we-will-now-use-tags">Version history (this list is no longer updated as we will now use tags)<a class="headerlink" href="#version-history-this-list-is-no-longer-updated-as-we-will-now-use-tags" title="Permanent link">&para;</a></h2>
 <ul>
 <li>1.0.0:
