@@ -1,12 +1,13 @@
 # JCOIN Core Measures Table Schemas/Data Dictionaries
 
-The goal of this repository is to make data models (ie schemas) and digestable products such as tabular data files that allow
-easier search and discovery of the JCOIN Core Measure variables. 
+The goal of this repository is to make data models (ie schemas) and digestable products that allow
+easier search and discovery of the JCOIN Core Measure variables for harmonization and analysis. 
 
 For more information on the Table Schema specification used here, see the Frictionless Table Schema specification. Additionally,we conform to (and leverage tools from) the agreed upon HEAL initiative variable level metadata specifications and standards.
 
 The schema/data dictionaries were created to represent (and build upon)
-the publicly available [core measures document](docs/assets/JCOIN-core-measures_public.pdf) 
+the publicly available core measures PDF document.
+
 
 ## Data model 
 
