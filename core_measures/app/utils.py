@@ -8,25 +8,33 @@ import io
 #with a container/tab
 REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master"
 
-def make_agrid(url_or_path):
-    sourcedf = pd.read_csv(url_or_path)
-    options = GridOptionsBuilder.from_dataframe(sourcedf)
+def load_csv(url_or_path):
+    return pd.read_csv(url_or_path)
+
+def load_schema(schema_name):
+    return Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_dict()
+def make_agrid(fieldsdf):
+    options = GridOptionsBuilder.from_dataframe(fieldsdf)
     options.configure_side_bar()
     options.configure_selection(selection_mode = 'multiple')
     selected_table = AgGrid(
-        sourcedf,
+        fieldsdf,
         gridOptions=options.build()
     )
     return selected_table
 
-def render_schema_page(schema_name):
-    st.write(f"{REPO_DIR}/schemas/{schema_name}.json")
-    schema = Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_dict()
-    
-    for propname,prop in schema.items():
+def render_schema_page(fieldsdf,schema,schema_name):
+
+    orderedschema = {}
+    for prop in ["title","description","fields"]: #items to go first
+        if prop in list(schema):
+            orderedschema[prop] = schema.pop(prop)
+    orderedschema.update(schema)
+
+    for propname,prop in orderedschema.items():
         st.markdown(f"## {propname}")
         if propname=="fields":
-            selected_table = make_agrid(f"{REPO_DIR}/csvs/{schema_name}.csv")
+            selected_table = make_agrid(fieldsdf)
         elif isinstance(prop,MutableSequence):
             st.markdown("\n".join([f"- {val}" for val in prop]))
         else:
@@ -52,8 +60,15 @@ def download_excel(dictionary):
     return buffer
 
 def makepage(schema_name):
-    schema = render_schema_page(schema_name)
+    fieldsdf = load_csv(f"{REPO_DIR}/csvs/{schema_name}.csv")
+    schema = load_schema(schema_name)
+    schema['fields'] = fieldsdf
     buffer = download_excel(schema)
-    st.download_button(f"Download **{schema_name}** data dictionary",
-        data=buffer,file_name=f"{schema_name}.xlsx")
+
+    st.download_button(f"Download {schema_name} in excel",data=buffer,file_name=f"{schema_name}.xlsx")
+    st.download_button(f"Download {schema_name} in json",data=Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_json(),file_name=f"{schema_name}.xlsx")
+    schema = render_schema_page(fieldsdf=fieldsdf,schema=schema,schema_name=schema_name)
+
+
+
     
