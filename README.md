@@ -40,6 +40,8 @@ The public repository where data dictionaries are stored is located [here](https
 
 `apps`: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.
 
+`docs`: here are the contents of the core measures website page. Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
+
 ## Version history (this list is no longer updated as we will now use tags)
 - 1.0.0:
     upon putting all variables (besides MOUD follow up measures) into data model
