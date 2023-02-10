@@ -16,3 +16,7 @@
 .md-grid {
   max-width: 90%;
 }
+
+iframe {
+  border: none;
+}

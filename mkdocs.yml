@@ -4,14 +4,15 @@ site_url: https://jcoin-maarc.github.io/JCOIN-Core-Measures
 nav:
   - Home: index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
-  - Client Core Measures: clients.md
-    # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-baseline
-    # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-time-points
-  - Staff Core Measures: staff.md
-    # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-baseline
-    # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-time-points
+  - Core Measures: core_measures/index.md
+    - Client: core_measures/clients.md
+      # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-baseline
+      # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-time-points
+    - Staff: core_measures/staff.md
+      # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-baseline
+      # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-time-points
 
-  - Source Core Measures PDF: source.md
+    - Source PDF: core_measures/source.md
 
 theme:
   name: material
