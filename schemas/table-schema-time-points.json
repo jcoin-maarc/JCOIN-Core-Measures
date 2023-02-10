@@ -18,7 +18,7 @@
       "type": "string",
       "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
       "constraints": {
-        "required": true,
+        "required": 1,
         "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
       },
       "custom": {
@@ -32,7 +32,7 @@
       "type": "integer",
       "description": "A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
       "constraints": {
-        "required": true,
+        "required": 1,
         "minimum": 1
       },
       "custom": {
@@ -46,7 +46,7 @@
       "type": "date",
       "description": "This is the date of the visit (ie time point) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer",
       "constraints": {
-        "required": true
+        "required": 1
       },
       "custom": {
         "jcoin:core_measure_section": "Record and linkage",
@@ -60,7 +60,7 @@
       "type": "string",
       "description": "The visit type/category (either baseline or follow up)",
       "constraints": {
-        "required": true,
+        "required": 1,
         "enum": [
           "Baseline",
           "Follow-up"

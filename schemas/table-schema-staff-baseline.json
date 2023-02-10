@@ -17,7 +17,7 @@
       "type": "string",
       "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
       "constraints": {
-        "required": true,
+        "required": 1,
         "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
       },
       "custom": {
@@ -31,7 +31,7 @@
       "type": "string",
       "description": "The financial quarter and year of enrollment",
       "constraints": {
-        "required": true,
+        "required": 1,
         "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]",
         "maxLength": 6
       },
@@ -45,12 +45,12 @@
       "title": "Staff Type",
       "type": "string",
       "description": "The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",
-      "constraints": {
-        "maxLength": 80
-      },
       "custom": {
         "jcoin:core_measure_section": "Enrollment",
         "jcoin:final_variable_name": "staff_type"
+      },
+      "constraints": {
+        "maxLength": 80
       }
     },
     {
@@ -59,7 +59,7 @@
       "type": "string",
       "description": "A summary of the current status of staff member's involvement in study",
       "constraints": {
-        "required": true,
+        "required": 1,
         "enum": [
           "On study",
           "Dropped out",
@@ -88,6 +88,10 @@
       "title": "Sex at birth",
       "type": "string",
       "description": "What sex was originally listed on your birth certificate?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_at_birth"
+      },
       "constraints": {
         "enum": [
           "Male",
@@ -95,10 +99,6 @@
           "Decline to answer",
           "Something else"
         ]
-      },
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "sex_at_birth"
       }
     },
     {
@@ -106,6 +106,11 @@
       "title": "Gender Identity",
       "type": "string",
       "description": "What is your gender identity?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id",
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True"
+      },
       "constraints": {
         "enum": [
           "Male",
@@ -116,11 +121,6 @@
           "Additional gender category (or other)",
           "Not reported"
         ]
-      },
-      "custom": {
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True",
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "gender_id"
       }
     },
     {
@@ -128,6 +128,11 @@
       "title": "Gender Identity (condensed)",
       "type": "string",
       "description": "What is your gender identity?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id_condensed",
+        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+      },
       "constraints": {
         "enum": [
           "Male",
@@ -137,11 +142,6 @@
           "Something else",
           "Not reported"
         ]
-      },
-      "custom": {
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "gender_id_condensed"
       }
     },
     {
@@ -245,12 +245,12 @@
       "title": "Race: American indian principal tribe or community specified",
       "type": "string",
       "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
-      "constraints": {
-        "maxLength": 80
-      },
       "custom": {
         "jcoin:core_measure_section": "Demographics",
         "jcoin:final_variable_name": "race_AI_tribe"
+      },
+      "constraints": {
+        "maxLength": 80
       }
     },
     {
@@ -258,12 +258,12 @@
       "title": "Race: Other specified",
       "type": "string",
       "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
-      "constraints": {
-        "maxLength": 80
-      },
       "custom": {
         "jcoin:core_measure_section": "Demographics",
         "jcoin:final_variable_name": "race_other_specified"
+      },
+      "constraints": {
+        "maxLength": 80
       }
     },
     {
@@ -287,6 +287,10 @@
       "title": "Sexual orientation",
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_orient_category"
+      },
       "constraints": {
         "enum": [
           "Straight or heterosexual",
@@ -295,10 +299,6 @@
           "Queer,pansexual, and/or questioning",
           "Something else"
         ]
-      },
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "sex_orient_category"
       }
     },
     {
@@ -316,6 +316,11 @@
       "title": "Ever pregnant",
       "type": "string",
       "description": "Have you ever been pregnant?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "ever_pregnant",
+        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+      },
       "constraints": {
         "enum": [
           "Never been pregnant",
@@ -325,11 +330,6 @@
           "Not applicable",
           "Don't know"
         ]
-      },
-      "custom": {
-        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.",
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "ever_pregnant"
       }
     },
     {
@@ -337,6 +337,10 @@
       "title": "Marital status",
       "type": "string",
       "description": "What is your marital status?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "marital_status"
+      },
       "constraints": {
         "enum": [
           "Married",
@@ -345,10 +349,6 @@
           "Separated",
           "Never married"
         ]
-      },
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "marital_status"
       }
     },
     {
@@ -356,15 +356,15 @@
       "title": "Married with partner",
       "type": "string",
       "description": "Are you currently living as married with a romantic partner?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "living_as_married"
+      },
       "constraints": {
         "enum": [
           "Yes, I am living as married with partner",
           "No, I am not living as married with partner"
         ]
-      },
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "living_as_married"
       }
     },
     {
@@ -372,6 +372,10 @@
       "title": "Education",
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_category"
+      },
       "constraints": {
         "enum": [
           "Did not complete high school",
@@ -384,10 +388,6 @@
           "Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)",
           "Other (specify)"
         ]
-      },
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "educ_category"
       }
     },
     {
