@@ -8,6 +8,9 @@ import pandas as pd
 from pathlib import Path
 import click
 import re
+import petl as etl
+from .utils import combine_schemas_to_excel
+from frictionless import Schema
 
 jsons = Path(os.getcwd()).joinpath("schemas").glob("*")
 csvs = Path(os.getcwd()).joinpath("csvs").glob("*")
@@ -26,9 +29,14 @@ def to_csv():
         fields = healdata.convert_json_to_template_csv(
             jsontemplate_path=path, fields_name="fields"
         )
-        etl.fromdicts(fields.data).tocsv(
-            outdir / path.with_suffix(".csv").name, encoding="utf-8"
-        )
+        cols = ['jcoin:core_measure_section','name','type','description','trueValues','falseValues','constraints.enums']
+        cols.extend([c for c in df.columns if not c in cols])
+        fieldsdata = etl.fromdicts(fields.data).cut(cols)
+        fieldsdata.tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
+
+    xlsxpath = Path(outdir.with_name("xlsx"))
+    xlsxpath.mkdir(exist_ok=True)
+    combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures.xlsx"))
 
 update_json_help = """
 update a json schema with fields and properties from csv file
