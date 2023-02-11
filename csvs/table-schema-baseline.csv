@@ -3,9 +3,9 @@ Record and linkage,jdc_person_id,string,The generated unique identifier specific
 Enrollment,quarter_enrolled,string,The financial quarter and year of enrollment,,,,Quarter Enrolled,1,6,[0-9][0-9][0-9][0-9]Q[0-9],quarter_enrolled,,
 Enrollment,state_of_site_enrollment,string,The U.S. State abbreviation of the site where client (participant) was initially enrolled,,,,State of Site For Enrollment,1,2,[A-Z][A-Z],state of site,,
 Enrollment,current_study_status,string,A summary of the current status where client (participant) is in study,,,On study|Dropped out|Withdrawn by investigator|Completed study|Unknown,Current Study Status,1,,,current_study_status,,
-,d1,date,What is your birth date?,,,,Birth date,,,,,%Y%m%d,
-,d1a,integer,About how old are you? (top coded at 90),,,,Age,,,,,,
-,o1,string,What sex was originally listed on your birth certificate?,,,Male|Female|Decline to answer|Something else,Sex at birth,,,,,,
+Demographics,d1,date,What is your birth date?,,,,Birth date,,,,,%Y%m%d,
+Demographics,d1a,integer,About how old are you? (top coded at 90),,,,Age,,,,,,
+Demographics,o1,string,What sex was originally listed on your birth certificate?,,,Male|Female|Decline to answer|Something else,Sex at birth,,,,,,
 Demographics,o2,string,What is your gender identity?,,,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,Gender Identity,,,,gender_identity_long,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
  False if not 'Male' and not 'Transfgender' else True"
 Demographics,d4b,string,What is your gender identity?,,,Male|Female|Transgender|Gender nonconforming|Something else|Not reported,Gender Identity (condensed),,,,gender identity_short,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"

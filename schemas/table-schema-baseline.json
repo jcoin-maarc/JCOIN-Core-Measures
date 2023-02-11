@@ -69,6 +69,7 @@
       "jcoin:final_variable_name": "current_study_status"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d1",
       "type": "date",
       "description": "What is your birth date?",
@@ -76,12 +77,14 @@
       "format": "%Y%m%d"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d1a",
       "type": "integer",
       "description": "About how old are you? (top coded at 90)",
       "title": "Age"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "o1",
       "type": "string",
       "description": "What sex was originally listed on your birth certificate?",
