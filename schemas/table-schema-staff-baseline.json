@@ -12,86 +12,72 @@
   "description": "Person-level measures. As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
   "fields": [
     {
+      "jcoin:core_measure_section": "Record and linkage",
       "name": "jdc_person_id",
-      "title": "JCOIN data commons person identifier",
       "type": "string",
       "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
+      "title": "JCOIN data commons person identifier",
       "constraints": {
         "required": 1,
         "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
       },
-      "custom": {
-        "jcoin:core_measure_section": "Record and linkage",
-        "jcoin:final_variable_name": "jdc_person_id"
-      }
+      "jcoin:final_variable_name": "jdc_person_id"
     },
     {
+      "jcoin:core_measure_section": "Enrollment",
       "name": "quarter_enrolled",
-      "title": "Quarter Enrolled",
       "type": "string",
       "description": "The financial quarter and year of enrollment",
+      "title": "Quarter Enrolled",
       "constraints": {
         "required": 1,
         "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]",
         "maxLength": 6
       },
-      "custom": {
-        "jcoin:core_measure_section": "Enrollment",
-        "jcoin:final_variable_name": "quarter_enrolled"
-      }
+      "jcoin:final_variable_name": "quarter_enrolled"
     },
     {
+      "jcoin:core_measure_section": "Enrollment",
       "name": "staff_type",
-      "title": "Staff Type",
       "type": "string",
       "description": "The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",
-      "custom": {
-        "jcoin:core_measure_section": "Enrollment",
-        "jcoin:final_variable_name": "staff_type"
-      },
+      "title": "Staff Type",
+      "jcoin:final_variable_name": "staff_type",
       "constraints": {
         "maxLength": 80
       }
     },
     {
+      "jcoin:core_measure_section": "Enrollment",
       "name": "current_study_status",
-      "title": "Current Study Status",
       "type": "string",
       "description": "A summary of the current status of staff member's involvement in study",
       "constraints": {
-        "required": 1,
         "enum": [
           "On study",
           "Dropped out",
           "Withdrawn by investigator",
           "Completed study",
           "Unknown"
-        ]
+        ],
+        "required": 1
       },
-      "custom": {
-        "jcoin:core_measure_section": "Enrollment",
-        "jcoin:final_variable_name": "current_study_status"
-      }
+      "title": "Current Study Status",
+      "jcoin:final_variable_name": "current_study_status"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d1a",
-      "title": "Age",
       "type": "integer",
       "description": "About how old are you? (top coded at 90)",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "age"
-      }
+      "title": "Age",
+      "jcoin:final_variable_name": "age"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "o1",
-      "title": "Sex at birth",
       "type": "string",
       "description": "What sex was originally listed on your birth certificate?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "sex_at_birth"
-      },
       "constraints": {
         "enum": [
           "Male",
@@ -99,18 +85,15 @@
           "Decline to answer",
           "Something else"
         ]
-      }
+      },
+      "title": "Sex at birth",
+      "jcoin:final_variable_name": "sex_at_birth"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "o2",
-      "title": "Gender Identity",
       "type": "string",
       "description": "What is your gender identity?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "gender_id",
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True"
-      },
       "constraints": {
         "enum": [
           "Male",
@@ -121,18 +104,16 @@
           "Additional gender category (or other)",
           "Not reported"
         ]
-      }
+      },
+      "title": "Gender Identity",
+      "jcoin:final_variable_name": "gender_id",
+      "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d4b",
-      "title": "Gender Identity (condensed)",
       "type": "string",
       "description": "What is your gender identity?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "gender_id_condensed",
-        "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
-      },
       "constraints": {
         "enum": [
           "Male",
@@ -142,155 +123,136 @@
           "Something else",
           "Not reported"
         ]
-      }
+      },
+      "title": "Gender Identity (condensed)",
+      "jcoin:final_variable_name": "gender_id_condensed",
+      "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_white",
-      "title": "Race: White",
       "type": "boolean",
       "description": "[White] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_white"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: White",
+      "jcoin:final_variable_name": "race_white"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_black",
-      "title": "Race: Black or African American",
       "type": "boolean",
       "description": "[Black or African American] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_black"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: Black or African American",
+      "jcoin:final_variable_name": "race_black"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_american_indian",
-      "title": "Race: American Indian or Alaska Native",
       "type": "boolean",
       "description": "[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_AIAN"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: American Indian or Alaska Native",
+      "jcoin:final_variable_name": "race_AIAN"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_hawaiian",
-      "title": "Race: Native Hawaiian or Other Pacific Islander",
       "type": "boolean",
       "description": "[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_hawaiian_OPI"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: Native Hawaiian or Other Pacific Islander",
+      "jcoin:final_variable_name": "race_hawaiian_OPI"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_asian",
-      "title": "Race: Asian",
       "type": "boolean",
       "description": "[Asian] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_asian"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: Asian",
+      "jcoin:final_variable_name": "race_asian"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_other",
-      "title": "Race: Other",
       "type": "boolean",
       "description": "[Other] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_other"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Race: Other",
+      "jcoin:final_variable_name": "race_other"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_specify_tribe",
-      "title": "Race: American indian principal tribe or community specified",
       "type": "string",
       "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_AI_tribe"
-      },
+      "title": "Race: American indian principal tribe or community specified",
+      "jcoin:final_variable_name": "race_AI_tribe",
       "constraints": {
         "maxLength": 80
       }
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d3_specify_other",
-      "title": "Race: Other specified",
       "type": "string",
       "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "race_other_specified"
-      },
+      "title": "Race: Other specified",
+      "jcoin:final_variable_name": "race_other_specified",
       "constraints": {
         "maxLength": 80
       }
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d2",
-      "title": "Hispanic, Latino, or Spanish Origin",
       "type": "boolean",
       "description": "Are you of Hispanic, Latino, or Spanish origin?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "hispanic_latino"
-      },
       "trueValues": [
         "Yes"
       ],
       "falseValues": [
         "No"
-      ]
+      ],
+      "title": "Hispanic, Latino, or Spanish Origin",
+      "jcoin:final_variable_name": "hispanic_latino"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d4c",
-      "title": "Sexual orientation",
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "sex_orient_category"
-      },
       "constraints": {
         "enum": [
           "Straight or heterosexual",
@@ -299,28 +261,23 @@
           "Queer,pansexual, and/or questioning",
           "Something else"
         ]
-      }
+      },
+      "title": "Sexual orientation",
+      "jcoin:final_variable_name": "sex_orient_category"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d4c_specify_other",
-      "title": "Sexual orientation:  Other specified",
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "sex_orient_other"
-      }
+      "title": "Sexual orientation:  Other specified",
+      "jcoin:final_variable_name": "sex_orient_other"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d4d",
-      "title": "Ever pregnant",
       "type": "string",
       "description": "Have you ever been pregnant?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "ever_pregnant",
-        "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
-      },
       "constraints": {
         "enum": [
           "Never been pregnant",
@@ -330,17 +287,16 @@
           "Not applicable",
           "Don't know"
         ]
-      }
+      },
+      "title": "Ever pregnant",
+      "jcoin:final_variable_name": "ever_pregnant",
+      "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d5",
-      "title": "Marital status",
       "type": "string",
       "description": "What is your marital status?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "marital_status"
-      },
       "constraints": {
         "enum": [
           "Married",
@@ -349,33 +305,29 @@
           "Separated",
           "Never married"
         ]
-      }
+      },
+      "title": "Marital status",
+      "jcoin:final_variable_name": "marital_status"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d5a",
-      "title": "Married with partner",
       "type": "string",
       "description": "Are you currently living as married with a romantic partner?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "living_as_married"
-      },
       "constraints": {
         "enum": [
           "Yes, I am living as married with partner",
           "No, I am not living as married with partner"
         ]
-      }
+      },
+      "title": "Married with partner",
+      "jcoin:final_variable_name": "living_as_married"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d6",
-      "title": "Education",
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "educ_category"
-      },
       "constraints": {
         "enum": [
           "Did not complete high school",
@@ -388,27 +340,25 @@
           "Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)",
           "Other (specify)"
         ]
-      }
+      },
+      "title": "Education",
+      "jcoin:final_variable_name": "educ_category"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d6_grade",
-      "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
       "type": "integer",
       "description": "What is the highest grade completed?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "educ_highest_grade"
-      }
+      "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
+      "jcoin:final_variable_name": "educ_highest_grade"
     },
     {
+      "jcoin:core_measure_section": "Demographics",
       "name": "d6_specify_other",
-      "title": "Education: Other specified",
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
-      "custom": {
-        "jcoin:core_measure_section": "Demographics",
-        "jcoin:final_variable_name": "educ_other_specified"
-      }
+      "title": "Education: Other specified",
+      "jcoin:final_variable_name": "educ_other_specified"
     }
   ]
 }

@@ -9,17 +9,12 @@ from pathlib import Path
 import click
 import re
 import petl as etl
-from .utils import combine_schemas_to_excel
+from core_measures.utils import combine_schemas_to_excel
 from frictionless import Schema
 
-jsons = Path(os.getcwd()).joinpath("schemas").glob("*")
-csvs = Path(os.getcwd()).joinpath("csvs").glob("*")
+jsons = list(Path(__file__).parents[1].joinpath("schemas").glob("*"))
+csvs = list(Path(__file__).parents[1].joinpath("csvs").glob("*"))
 
-tocsv_help = """
-Flattens the json spec to a csv using the healdata_utils tool
-"""
-
-@click.command(name="tocsv",help=tocsv_help)
 def to_csv():
     import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert json to csv
@@ -29,19 +24,17 @@ def to_csv():
         fields = healdata.convert_json_to_template_csv(
             jsontemplate_path=path, fields_name="fields"
         )
-        cols = ['jcoin:core_measure_section','name','type','description','trueValues','falseValues','constraints.enums']
-        cols.extend([c for c in df.columns if not c in cols])
-        fieldsdata = etl.fromdicts(fields.data).cut(cols)
-        fieldsdata.tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
+        fieldsdata = etl.fromdicts(fields.data)
+        cols = [c for c in ['jcoin:core_measure_section','name','type','description','trueValues','falseValues',
+            'constraints.enum'] if c in fieldsdata.header()]
+        cols.extend([c for c in fieldsdata.header() if not c in cols])
+        fieldsdata.cut(cols).tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
 
     xlsxpath = Path(outdir.with_name("xlsx"))
     xlsxpath.mkdir(exist_ok=True)
     combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures.xlsx"))
 
-update_json_help = """
-update a json schema with fields and properties from csv file
-"""
-@click.command(name="updatejson",help=update_json_help)
+
 def update_json():
 
     import healdata_utils.transforms.csvtemplate.conversion as healdata
@@ -59,6 +52,8 @@ def update_json():
 
         schema["fields"] = fields["data_dictionary"]
         schema.to_json(outfile)
+        # run tocsv to make sure all files encoded properly and xlsx file updated
+        to_csv()
 
 streamlit_app_template = """ 
 from core_measures import app
@@ -79,13 +74,30 @@ def to_streamlit():
         pagescript = streamlit_app_template.format(schema_name=schema_name)
         pagespath.write_text(pagescript)
 
+# click commands
 @click.group()
 def cli():
     pass
 
+tocsv_help = """
+Flattens the json spec to a csv using the healdata_utils tool
+"""
+
+@click.command(name="tocsv",help=tocsv_help)
+def clito_csv():
+    to_csv()
+
+update_json_help = """
+update a json schema with fields and properties from csv file
+"""
+@click.command(name="updatejson",help=update_json_help)
+def cliupdate_json():
+    update_json()
+
+
 cli.add_command(to_streamlit)
-cli.add_command(update_json)
-cli.add_command(to_csv)
+cli.add_command(cliupdate_json)
+cli.add_command(clito_csv)
 
 if __name__ == "__main__":
     cli()

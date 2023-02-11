@@ -1,38 +1,39 @@
-name,title,type,description,constraints.required,constraints.maxLength,constraints.pattern,jcoin:core_measure_section,jcoin:final_variable_name,constraints.enum,format,jcoin:notes,trueValues,falseValues
-jdc_person_id,JCOIN data commons person identifier,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,TRUE,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],Record and linkage,jdc_person_id,,,,,
-quarter_enrolled,Quarter Enrolled,string,The financial quarter and year of enrollment,TRUE,6,[0-9][0-9][0-9][0-9]Q[0-9],Enrollment,quarter_enrolled,,,,,
-state_of_site_enrollment,State of Site For Enrollment,string,The U.S. State abbreviation of the site where client (participant) was initially enrolled,TRUE,2,[A-Z][A-Z],Enrollment,state of site,,,,,
-current_study_status,Current Study Status,string,A summary of the current status where client (participant) is in study,TRUE,,,Enrollment,current_study_status,On study|Dropped out|Withdrawn by investigator|Completed study|Unknown,,,,
-d1,Birth date,date,What is your birth date?,,,,,,,%Y%m%d,,,
-d1a,Age,integer,About how old are you? (top coded at 90),,,,,,,,,,
-o1,Sex at birth,string,What sex was originally listed on your birth certificate?,,,,,,Male|Female|Decline to answer|Something else,,,,
-o2,Gender Identity,string,What is your gender identity?,,,,Demographics,gender_identity_long,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]  False if not 'Male' and not 'Transfgender' else True",,
-d4b,Gender Identity (condensed),string,What is your gender identity?,,,,Demographics,gender identity_short,Male|Female|Transgender|Gender nonconforming|Something else|Not reported,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]",,
-d3_white,Race: White,boolean,[White] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_white,,,,Yes,No
-d3_black,Race: Black or African American,boolean,[Black or African American] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_black,,,,Yes,No
-d3_american_indian,Race: American Indian or Alaska Native,boolean,[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_american_indian,,,,Yes,No
-d3_hawaiian,Race: Native Hawaiian or Other Pacific Islander,boolean,[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_hawaiian,,,,Yes,No
-d3_asian,Race: Asian,boolean,[Asian] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_asian,,,,Yes,No
-d3_other,Race: Other,boolean,[Other] What is your race? SELECT ALL THAT APPLY,TRUE,,,Demographics,race_other,,,,Yes,No
-d3_specify_tribe,Race: American indian principal tribe or community specified,string,[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY,,80,,Demographics,race_specify_american_indian_tribe,,,,,
-d3_specify_other,Race: Other specified,string,[Other specified] What is your race? SELECT ALL THAT APPLY,,80,,Demographics,race_specify_other,,,,,
-d2,"Hispanic, Latino, or Spanish Origin",boolean,"Are you of Hispanic, Latino, or Spanish origin?",TRUE,,,Demographics,hispanic,,,,Yes,No
-d4c,Sexual orientation,string,Sexual orientation:  Do you think of yourself as…,,,,Demographics,sexual_orientation,"Straight or heterosexual|Lesbian or gay|Bisexual|Queer,pansexual, and/or questioning|Something else",,,,
-d4c_specify_other,Sexual orientation:  Other specified,string,Sexual orientation:  Do you think of yourself as…,,,,Demographics,sexual_orientation_other,,,,,
-d4d,Ever pregnant,string,Have you ever been pregnant?,,,,Demographics,pregnant,"Never been pregnant|Currently pregnant|Previously pregnant, had a child|Previously pregnant, did not have a child|Not applicable|Don't know",,"Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response.",,
-d5,Marital status,string,What is your marital status?,,,,Demographics,marital_status,Married|Widowed|Divorced|Separated|Never married,,,,
-d5a,Married with partner,string,Are you currently living as married with a romantic partner?,,,,Demographics,unmarried_partner,"Yes, I am living as married with partner|No, I am not living as married with partner",,,,
-d6,Education,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,,Demographics,education,"Did not complete high school|GED or equivalent|Regular high school diploma|Some college credit but less than 1 year of college credit|1 or more years of college credit but no degree|Associate's degree (e.g., AA or AS)|Bachelor's degree (e.g.,  BA or BS)|Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)|Other (specify)",,,,
-d6_grade,Education:  Highest grade level (if less than GED or h.s. diploma),integer,What is the highest grade completed?,,,,Demographics,education_grade,,,,,
-d6_specify_other,Education: Other specified,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,,Demographics,education_other,,,,,
-u14f,Interviewed during incarceration,boolean,Interview conducted with participant during incarceration?,,,,MOUD,iv_incarceration,,,,Yes,No
-u14g,Days incarcerated (in past 30/xx days),integer,"During the past xx/30 days, how many days have you been incarcerated?",,,,MOUD,incarceration_days,,,,,
-u15,Medication ever prescribed for opioid use disorder?,boolean,Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.),,,,MOUD,oud_meds_rx,,,,Yes,No
-u15a1,Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months,integer,"Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",,,,MOUD,buprenorphine_tab_mos,,,,,
-u15b1,Buprenorphine injection (Sublocade):  Lifetime months,integer,Lifetime months (buprenorphine injection [Sublocade]),,,,MOUD,sublocade_mos,,,,,
-u15c1,Buprenorphine  weekly injection (Brixadi):  Lifetime months,integer,Lifetime months (buprenorphine weekly injection [Brixadi]),,,,MOUD,brixadi_weekly_mos,,,,,
-u15d1,Buprenorphine  monthly injection (Brixadi):  Lifetime months,integer,Lifetime months (buprenorphine monthly injection [Brixadi]),,,,MOUD,brixadi_monthly_mos,,,,,
-u15e1,Buprenorphine 6-month implant (Probuphine):  Lifetime months,integer,Lifetime months (buprenorphine 6-month implant [Probuphine]),,,,MOUD,probuphine_mos,,,,,
-u15f1,Naltrexone daily (oral):  Lifetime months,integer,Lifetime months (Naltrexone daily (oral)),,,,MOUD,naltrexone_mos,,,,,
-u15g1,Naltrexone monthly injection (Vivitrol):  Lifetime months,integer,Lifetime months (Naltrexone monthly injection [Vivitrol]),,,,MOUD,vivitrol_mos,,,,,
-u15h1,Methadone daily:  Lifetime months,integer,Lifetime months (methadone daily),,,,MOUD,methadone_mos,,,,,
+jcoin:core_measure_section,name,type,description,trueValues,falseValues,constraints.enum,title,constraints.required,constraints.maxLength,constraints.pattern,jcoin:final_variable_name,format,jcoin:notes
+Record and linkage,jdc_person_id,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,,,,JCOIN data commons person identifier,1,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],jdc_person_id,,
+Enrollment,quarter_enrolled,string,The financial quarter and year of enrollment,,,,Quarter Enrolled,1,6,[0-9][0-9][0-9][0-9]Q[0-9],quarter_enrolled,,
+Enrollment,state_of_site_enrollment,string,The U.S. State abbreviation of the site where client (participant) was initially enrolled,,,,State of Site For Enrollment,1,2,[A-Z][A-Z],state of site,,
+Enrollment,current_study_status,string,A summary of the current status where client (participant) is in study,,,On study|Dropped out|Withdrawn by investigator|Completed study|Unknown,Current Study Status,1,,,current_study_status,,
+,d1,date,What is your birth date?,,,,Birth date,,,,,%Y%m%d,
+,d1a,integer,About how old are you? (top coded at 90),,,,Age,,,,,,
+,o1,string,What sex was originally listed on your birth certificate?,,,Male|Female|Decline to answer|Something else,Sex at birth,,,,,,
+Demographics,o2,string,What is your gender identity?,,,Male|Female|Transgender man/trans man/female-to-male (FTM)|Transgender woman/trans woman/male-to-female (MTF)|Genderqueer/gender nonconforming/neither exclusively male nor female|Additional gender category (or other)|Not reported,Gender Identity,,,,gender_identity_long,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] 
+ False if not 'Male' and not 'Transfgender' else True"
+Demographics,d4b,string,What is your gender identity?,,,Male|Female|Transgender|Gender nonconforming|Something else|Not reported,Gender Identity (condensed),,,,gender identity_short,,"For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+Demographics,d3_white,boolean,[White] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: White,1,,,race_white,,
+Demographics,d3_black,boolean,[Black or African American] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: Black or African American,1,,,race_black,,
+Demographics,d3_american_indian,boolean,[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: American Indian or Alaska Native,1,,,race_american_indian,,
+Demographics,d3_hawaiian,boolean,[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: Native Hawaiian or Other Pacific Islander,1,,,race_hawaiian,,
+Demographics,d3_asian,boolean,[Asian] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: Asian,1,,,race_asian,,
+Demographics,d3_other,boolean,[Other] What is your race? SELECT ALL THAT APPLY,Yes,No,,Race: Other,1,,,race_other,,
+Demographics,d3_specify_tribe,string,[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY,,,,Race: American indian principal tribe or community specified,,80,,race_specify_american_indian_tribe,,
+Demographics,d3_specify_other,string,[Other specified] What is your race? SELECT ALL THAT APPLY,,,,Race: Other specified,,80,,race_specify_other,,
+Demographics,d2,boolean,"Are you of Hispanic, Latino, or Spanish origin?",Yes,No,,"Hispanic, Latino, or Spanish Origin",1,,,hispanic,,
+Demographics,d4c,string,Sexual orientation:  Do you think of yourself as…,,,"Straight or heterosexual|Lesbian or gay|Bisexual|Queer,pansexual, and/or questioning|Something else",Sexual orientation,,,,sexual_orientation,,
+Demographics,d4c_specify_other,string,Sexual orientation:  Do you think of yourself as…,,,,Sexual orientation:  Other specified,,,,sexual_orientation_other,,
+Demographics,d4d,string,Have you ever been pregnant?,,,"Never been pregnant|Currently pregnant|Previously pregnant, had a child|Previously pregnant, did not have a child|Not applicable|Don't know",Ever pregnant,,,,pregnant,,"Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+Demographics,d5,string,What is your marital status?,,,Married|Widowed|Divorced|Separated|Never married,Marital status,,,,marital_status,,
+Demographics,d5a,string,Are you currently living as married with a romantic partner?,,,"Yes, I am living as married with partner|No, I am not living as married with partner",Married with partner,,,,unmarried_partner,,
+Demographics,d6,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,"Did not complete high school|GED or equivalent|Regular high school diploma|Some college credit but less than 1 year of college credit|1 or more years of college credit but no degree|Associate's degree (e.g., AA or AS)|Bachelor's degree (e.g.,  BA or BS)|Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)|Other (specify)",Education,,,,education,,
+Demographics,d6_grade,integer,What is the highest grade completed?,,,,Education:  Highest grade level (if less than GED or h.s. diploma),,,,education_grade,,
+Demographics,d6_specify_other,string,What is the highest grade or level of school you have completed or the highest degree you have received?,,,,Education: Other specified,,,,education_other,,
+MOUD,u14f,boolean,Interview conducted with participant during incarceration?,Yes,No,,Interviewed during incarceration,,,,iv_incarceration,,
+MOUD,u14g,integer,"During the past xx/30 days, how many days have you been incarcerated?",,,,Days incarcerated (in past 30/xx days),,,,incarceration_days,,
+MOUD,u15,boolean,Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.),Yes,No,,Medication ever prescribed for opioid use disorder?,,,,oud_meds_rx,,
+MOUD,u15a1,integer,"Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",,,,Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months,,,,buprenorphine_tab_mos,,
+MOUD,u15b1,integer,Lifetime months (buprenorphine injection [Sublocade]),,,,Buprenorphine injection (Sublocade):  Lifetime months,,,,sublocade_mos,,
+MOUD,u15c1,integer,Lifetime months (buprenorphine weekly injection [Brixadi]),,,,Buprenorphine  weekly injection (Brixadi):  Lifetime months,,,,brixadi_weekly_mos,,
+MOUD,u15d1,integer,Lifetime months (buprenorphine monthly injection [Brixadi]),,,,Buprenorphine  monthly injection (Brixadi):  Lifetime months,,,,brixadi_monthly_mos,,
+MOUD,u15e1,integer,Lifetime months (buprenorphine 6-month implant [Probuphine]),,,,Buprenorphine 6-month implant (Probuphine):  Lifetime months,,,,probuphine_mos,,
+MOUD,u15f1,integer,Lifetime months (Naltrexone daily (oral)),,,,Naltrexone daily (oral):  Lifetime months,,,,naltrexone_mos,,
+MOUD,u15g1,integer,Lifetime months (Naltrexone monthly injection [Vivitrol]),,,,Naltrexone monthly injection (Vivitrol):  Lifetime months,,,,vivitrol_mos,,
+MOUD,u15h1,integer,Lifetime months (methadone daily),,,,Methadone daily:  Lifetime months,,,,methadone_mos,,

@@ -42,15 +42,13 @@ def combine_schemas_to_excel(csvpaths,excelpath):
             schema = dict(Schema(str(path).replace("csvs","schemas").replace(".csv",".json")))
             del schema["fields"]
             schema = {name:(",\n".join(item) if isinstance(item,list) else item) for name,item in schema.items()}
+            schema['name'] = path.stem
             schemasheet.append(schema)
 
-            schemasheetdf = pd.DataFrame(schemasheet)
-            schemasheetdf['name'] = path.stem
-        
+        schemasheetdf = pd.DataFrame(schemasheet)
         cols = ['name','description']
-        cols.extend([c for c in df.columns if not c in cols])
-
-        schemasheetdf.to_excel(writer[cols],sheet_name="README")
+        cols.extend([c for c in schemasheetdf.columns if not c in cols])
+        schemasheetdf[cols].to_excel(writer,sheet_name="README")
         # wrap text of all cells
         worksheet = writer.sheets["README"]
         for row in worksheet.iter_rows(min_row=1, max_col=worksheet.max_column, max_row=len(schemasheetdf)):
@@ -58,6 +56,7 @@ def combine_schemas_to_excel(csvpaths,excelpath):
                 cell.alignment = cell.alignment.copy(wrap_text=True)
         _increase_colwidth(schemasheetdf, worksheet)
 
+        # add the table schema csvs as sheets
         for path in csvpaths:
             df = pd.read_csv(path)
             df.to_excel(writer,sheet_name=path.stem,index=False)
