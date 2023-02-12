@@ -1,12 +1,6 @@
 # JCOIN Core Measures Table Schemas/Data Dictionaries
 
-The goal of this repository is to make data models (ie schemas) and digestable products that allow
-easier search and discovery of the JCOIN Core Measure variables for harmonization and analysis. 
-
-For more information on the Table Schema specification used here, see the Frictionless Table Schema specification. Additionally,we conform to (and leverage tools from) the agreed upon HEAL initiative variable level metadata specifications and standards.
-
-The schema/data dictionaries were created to represent (and build upon)
-the publicly available core measures PDF document.
+This project builds data dictionaries (ie schemas) to represent (and build upon) the publicly available core measures PDF document. The goal of this project is to make machine readable data dictionaries and user-friendly products, allowing easier search and discovery of the JCOIN Core Measure variables for harmonization,analysis, and collaboration. 
 
 
 ## Data model 
@@ -18,6 +12,11 @@ the publicly available core measures PDF document.
         - note, this may be changed to from "baseline" to "person" in future to account for non-baseline measure in model (current enrollment status)
     2. Person/visit level: measures collected at all timepoints which is called `time-points`
 
+## Frictionless framework
+
+The frictionless framework plays a foundational component in our Core Measures, both in building upon the core measures and building core measure data packages. For more information on frictionless standards, [click here](https://specs.frictionlessdata.io/). Specifically, the core measure data dictionary relies heavily on the [Table Schema specification](https://specs.frictionlessdata.io/table-schema).
+
+# --8<-- [end:intro]
 ## Directories
 
 The public repository where data dictionaries are stored is located [here](https://github.com/jcoin-maarc/JCOIN-Core-Measures). Below describes the directories in this repository:
