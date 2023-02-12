@@ -33,6 +33,7 @@ def to_csv():
     xlsxpath = Path(outdir.with_name("xlsx"))
     xlsxpath.mkdir(exist_ok=True)
     combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures.xlsx"))
+    combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures_long.xlsx"),separate_sheets=False)
 
 
 def update_json():
