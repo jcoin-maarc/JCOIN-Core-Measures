@@ -56,25 +56,6 @@ def update_json():
         # run tocsv to make sure all files encoded properly and xlsx file updated
         to_csv()
 
-streamlit_app_template = """ 
-from core_measures import app
-
-app.utils.makepage("{schema_name}")
-
-""" 
-streamlit_help = """ 
-creates a page for each schema in the multipage streamlit app
-NOTE: this command assumes all packages called from saved script are set up to run correctly
-"""
-@click.command(name="tostreamlit",help=streamlit_help)
-def to_streamlit():
-    for i,csvpath in enumerate(sorted(csvs)):
-        schema_name = csvpath.stem
-        pagesdir = Path(os.getcwd())/"app"/"pages"
-        pagespath = pagesdir.joinpath(f"{str(i+1)}_{schema_name}.py")
-        pagescript = streamlit_app_template.format(schema_name=schema_name)
-        pagespath.write_text(pagescript)
-
 # click commands
 @click.group()
 def cli():
