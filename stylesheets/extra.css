@@ -1,11 +1,13 @@
-[data-md-color-scheme="heal_platform"] {
-  --md-primary-fg-color:        #402264;
-  --md-accent-fg-color:         #982568;
+[data-md-color-scheme="jdc"] {
+  --md-primary-fg-color:        #3283C8;
+  --md-accent-fg-color:         #EF8523;
 }
 
 .md-typeset a {
-  color:    #0044b3;
+  color:    #3283C8;
 }
+
+
 .md-typeset a:hover:not(.md-button), a:focus:not(.md-button) {
   text-decoration:              underline;
   text-decoration-thickness:    .125em;
@@ -13,10 +15,11 @@
   text-decoration-style:        dotted;
 }
 
-.md-grid {
-  max-width: 90%;
+.md-nav__link:focus, .md-nav__link:hover, .md-nav__link:active {
+  color: #3283C8;
+  }
+
+.md-header__title {
+  font-size: 1rem;
 }
 
-iframe {
-  border: none;
-}
