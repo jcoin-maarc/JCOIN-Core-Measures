@@ -48,7 +48,7 @@
         "maxLength": 2,
         "pattern": "[A-Z][A-Z]"
       },
-      "jcoin:final_variable_name": "state of site"
+      "jcoin:final_variable_name": "state_of_site_enrollment"
     },
     {
       "jcoin:core_measure_section": "Enrollment",
@@ -74,14 +74,16 @@
       "type": "date",
       "description": "What is your birth date?",
       "title": "Birth date",
-      "format": "%Y%m%d"
+      "format": "%Y%m%d",
+      "jcoin:final_variable_name": "birth_date"
     },
     {
       "jcoin:core_measure_section": "Demographics",
       "name": "d1a",
       "type": "integer",
       "description": "About how old are you? (top coded at 90)",
-      "title": "Age"
+      "title": "Age",
+      "jcoin:final_variable_name": "age"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -96,7 +98,8 @@
           "Something else"
         ]
       },
-      "title": "Sex at birth"
+      "title": "Sex at birth",
+      "jcoin:final_variable_name": "sex_at_birth"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -115,7 +118,7 @@
         ]
       },
       "title": "Gender Identity",
-      "jcoin:final_variable_name": "gender_identity_long",
+      "jcoin:final_variable_name": "gender_id",
       "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transfgender' else True"
     },
     {
@@ -134,7 +137,7 @@
         ]
       },
       "title": "Gender Identity (condensed)",
-      "jcoin:final_variable_name": "gender identity_short",
+      "jcoin:final_variable_name": "gender_id_condensed",
       "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
     },
     {
@@ -186,7 +189,7 @@
       "constraints": {
         "required": 1
       },
-      "jcoin:final_variable_name": "race_american_indian"
+      "jcoin:final_variable_name": "race_AIAN"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -203,7 +206,7 @@
       "constraints": {
         "required": 1
       },
-      "jcoin:final_variable_name": "race_hawaiian"
+      "jcoin:final_variable_name": "race_hawaiian_OPI"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -248,7 +251,7 @@
       "constraints": {
         "maxLength": 80
       },
-      "jcoin:final_variable_name": "race_specify_american_indian_tribe"
+      "jcoin:final_variable_name": "race_AI_tribe"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -259,7 +262,7 @@
       "constraints": {
         "maxLength": 80
       },
-      "jcoin:final_variable_name": "race_specify_other"
+      "jcoin:final_variable_name": "race_other_specified"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -276,7 +279,7 @@
       "constraints": {
         "required": 1
       },
-      "jcoin:final_variable_name": "hispanic"
+      "jcoin:final_variable_name": "hispanic_latino"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -293,7 +296,7 @@
         ]
       },
       "title": "Sexual orientation",
-      "jcoin:final_variable_name": "sexual_orientation"
+      "jcoin:final_variable_name": "sex_orient_category"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -301,7 +304,7 @@
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as…",
       "title": "Sexual orientation:  Other specified",
-      "jcoin:final_variable_name": "sexual_orientation_other"
+      "jcoin:final_variable_name": "sex_orient_other"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -319,7 +322,7 @@
         ]
       },
       "title": "Ever pregnant",
-      "jcoin:final_variable_name": "pregnant",
+      "jcoin:final_variable_name": "ever_pregnant",
       "jcoin:notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
     },
     {
@@ -351,7 +354,7 @@
         ]
       },
       "title": "Married with partner",
-      "jcoin:final_variable_name": "unmarried_partner"
+      "jcoin:final_variable_name": "living_as_married"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -372,7 +375,7 @@
         ]
       },
       "title": "Education",
-      "jcoin:final_variable_name": "education"
+      "jcoin:final_variable_name": "educ_category"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -380,7 +383,7 @@
       "type": "integer",
       "description": "What is the highest grade completed?",
       "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
-      "jcoin:final_variable_name": "education_grade"
+      "jcoin:final_variable_name": "educ_highest_grade"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -388,7 +391,7 @@
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
       "title": "Education: Other specified",
-      "jcoin:final_variable_name": "education_other"
+      "jcoin:final_variable_name": "educ_other_specified"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -402,7 +405,7 @@
         "No"
       ],
       "title": "Interviewed during incarceration",
-      "jcoin:final_variable_name": "iv_incarceration"
+      "jcoin:final_variable_name": "intv_while_incarc"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -410,7 +413,7 @@
       "type": "integer",
       "description": "During the past xx/30 days, how many days have you been incarcerated?",
       "title": "Days incarcerated (in past 30/xx days)",
-      "jcoin:final_variable_name": "incarceration_days"
+      "jcoin:final_variable_name": "days_incarcerated_interval"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -424,7 +427,7 @@
         "No"
       ],
       "title": "Medication ever prescribed for opioid use disorder?",
-      "jcoin:final_variable_name": "oud_meds_rx"
+      "jcoin:final_variable_name": "ever_rx_moud"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -432,7 +435,7 @@
       "type": "integer",
       "description": "Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",
       "title": "Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months",
-      "jcoin:final_variable_name": "buprenorphine_tab_mos"
+      "jcoin:final_variable_name": "months_daily_bup"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -440,7 +443,7 @@
       "type": "integer",
       "description": "Lifetime months (buprenorphine injection [Sublocade])",
       "title": "Buprenorphine injection (Sublocade):  Lifetime months",
-      "jcoin:final_variable_name": "sublocade_mos"
+      "jcoin:final_variable_name": "months_sublocade"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -448,7 +451,7 @@
       "type": "integer",
       "description": "Lifetime months (buprenorphine weekly injection [Brixadi])",
       "title": "Buprenorphine  weekly injection (Brixadi):  Lifetime months",
-      "jcoin:final_variable_name": "brixadi_weekly_mos"
+      "jcoin:final_variable_name": "months_weekly_brixadi"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -456,7 +459,7 @@
       "type": "integer",
       "description": "Lifetime months (buprenorphine monthly injection [Brixadi])",
       "title": "Buprenorphine  monthly injection (Brixadi):  Lifetime months",
-      "jcoin:final_variable_name": "brixadi_monthly_mos"
+      "jcoin:final_variable_name": "months_monthly_brixadi"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -464,7 +467,7 @@
       "type": "integer",
       "description": "Lifetime months (buprenorphine 6-month implant [Probuphine])",
       "title": "Buprenorphine 6-month implant (Probuphine):  Lifetime months",
-      "jcoin:final_variable_name": "probuphine_mos"
+      "jcoin:final_variable_name": "months_probuphine_implant"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -472,7 +475,7 @@
       "type": "integer",
       "description": "Lifetime months (Naltrexone daily (oral))",
       "title": "Naltrexone daily (oral):  Lifetime months",
-      "jcoin:final_variable_name": "naltrexone_mos"
+      "jcoin:final_variable_name": "months_daily_ntx"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -480,7 +483,7 @@
       "type": "integer",
       "description": "Lifetime months (Naltrexone monthly injection [Vivitrol])",
       "title": "Naltrexone monthly injection (Vivitrol):  Lifetime months",
-      "jcoin:final_variable_name": "vivitrol_mos"
+      "jcoin:final_variable_name": "months_monthly_vivitrol"
     },
     {
       "jcoin:core_measure_section": "MOUD",
@@ -488,7 +491,7 @@
       "type": "integer",
       "description": "Lifetime months (methadone daily)",
       "title": "Methadone daily:  Lifetime months",
-      "jcoin:final_variable_name": "methadone_mos"
+      "jcoin:final_variable_name": "months_methadone"
     }
   ]
 }
