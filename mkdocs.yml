@@ -4,14 +4,9 @@ site_url: https://jcoin-maarc.github.io/JCOIN-Core-Measures
 nav:
   - Home: index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
-  - Core Measures: core_measures/index.md
-    - Client: core_measures/clients.md
-      # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-baseline
-      # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-time-points
-    - Staff: core_measures/staff.md
-      # - Baseline: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-baseline
-      # - Timepoints: https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/table-schema-staff-time-points
-
+  - Core Measures: 
+    - Overview: core_measures/index.md
+    - Search Tool: core_measures/search-tool.md
     - Source PDF: core_measures/source.md
 
 theme:
@@ -47,7 +42,7 @@ markdown_extensions:
       url_download: True
 plugins:
   - search
-  - mkdocs-video:
-      is_video: True
-  # - mermaid2
-  #- offline
+  # - mkdocs-video:
+  #     is_video: True
+  # # - mermaid2
+  # #- offline

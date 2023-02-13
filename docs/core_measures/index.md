@@ -1,4 +1,3 @@
---8<-- [start:intro]
+--8<-- "README.md:intro"
 
 
-<iframe src="https://mbkranz-jcoin-core-measures-appmain-ah4ety.streamlit.app/all" title="download-all" width=5% height=1000px></iframe>
