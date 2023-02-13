@@ -20,6 +20,11 @@ This project builds data dictionaries (ie schemas) to represent (and build upon)
 
 The frictionless framework plays a foundational component in our Core Measures, both in building upon the core measures and building core measure data packages. For more information on frictionless standards, [click here](https://specs.frictionlessdata.io/). Specifically, the core measure data dictionary relies heavily on the [Table Schema specification](https://specs.frictionlessdata.io/table-schema).
 
+
+## Search tool
+
+To search the complete set of core measures and download a formatted excel version, click on the `Search tool` section. This provides a way to explore the most up-to-date data dictionaries and other dataset metadata properties such as missing values, descriptions, keys, etc.
+
 --8<-- [end:intro]
 
 ## Directories

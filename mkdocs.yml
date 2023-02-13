@@ -2,12 +2,10 @@
 site_name: JCOIN Core Measures
 site_url: https://jcoin-maarc.github.io/JCOIN-Core-Measures
 nav:
-  - Home: index.md
+  - index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
-  - Core Measures: 
-    - Overview: core_measures/index.md
-    - Search Tool: core_measures/search-tool.md
-    - Source PDF: core_measures/source.md
+  - Data Dictionary Search Tool: search-tool.md
+  - Source PDF: source.md
 
 theme:
   name: material
