@@ -76,8 +76,6 @@ update a json schema with fields and properties from csv file
 def cliupdate_json():
     update_json()
 
-
-cli.add_command(to_streamlit)
 cli.add_command(cliupdate_json)
 cli.add_command(clito_csv)
 
