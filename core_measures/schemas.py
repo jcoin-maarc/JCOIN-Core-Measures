@@ -9,53 +9,43 @@ from pathlib import Path
 import click
 import re
 import petl as etl
-from core_measures.utils import combine_schemas_to_excel
+from core_measures.utils import combine_schemas_to_excel,JsonToCsv,CsvToJson
 from frictionless import Schema
 
 jsons = list(Path(__file__).parents[1].joinpath("schemas").glob("*"))
 csvs = list(Path(__file__).parents[1].joinpath("csvs").glob("*"))
 
 def to_csv():
-    import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert json to csv
     for path in jsons:
-        path = Path(path)
+
+        table_fields = JsonToCsv(path).table
+        headers = table_fields.header()
+        cols = [c for c in ['custom.jcoin:core_measure_section','name','title','type','description','trueValues','falseValues',
+            'constraints.enum'] if c in headers]
+        cols.extend([c for c in headers if not c in cols])
+
         outdir = path.parent.with_stem("csvs")
-        fields = healdata.convert_json_to_template_csv(
-            jsontemplate_path=path, fields_name="fields"
-        )
-        fieldsdata = etl.fromdicts(fields.data)
-        cols = [c for c in ['jcoin:core_measure_section','name','type','description','trueValues','falseValues',
-            'constraints.enum'] if c in fieldsdata.header()]
-        cols.extend([c for c in fieldsdata.header() if not c in cols])
-        fieldsdata.cut(cols).tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
+        table_fields.cut(cols).tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
 
     xlsxpath = Path(outdir.with_name("xlsx"))
     xlsxpath.mkdir(exist_ok=True)
     combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures.xlsx"))
     combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures_long.xlsx"),separate_sheets=False)
 
-
 def update_json():
 
-    import healdata_utils.transforms.csvtemplate.conversion as healdata
     # convert csv to json
     for path in csvs:
-        path = Path(path)
-        outfile = path.parent.with_stem("schemas") / path.with_suffix(".json").name
-        assert outfile.exists(), f"Please make sure {outfile.name} exists."
-        schema = Schema(outfile)
+        csvpath = path
+        schemapath = path.parent.with_stem("schemas") / path.with_suffix(".json").name
+        assert schemapath.exists(), f"Please make sure {schemapath.name} exists."
+        CsvToJson(csvpath).to_json(schemapath)
+    
+    # run tocsv to make sure all files encoded properly and xlsx file updated
+    to_csv()
 
-        fields = healdata.convert_template_csv_to_json(path, data_dictionary_props={})
-
-        if schema.get("fields"):
-            del schema["fields"]
-
-        schema["fields"] = fields["data_dictionary"]
-        schema.to_json(outfile)
-        # run tocsv to make sure all files encoded properly and xlsx file updated
-        to_csv()
-
+update_json()
 # click commands
 @click.group()
 def cli():
