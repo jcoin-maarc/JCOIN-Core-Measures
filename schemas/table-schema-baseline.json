@@ -12,7 +12,10 @@
   "description": "Person-level measures. As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
   "fields": [
     {
-      "jcoin:core_measure_section": "Record and linkage",
+      "custom": {
+        "jcoin:core_measure_section": "Record and linkage",
+        "jcoin:final_variable_name": "jdc_person_id"
+      },
       "name": "jdc_person_id",
       "type": "string",
       "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
@@ -21,11 +24,13 @@
         "required": 1,
         "maxLength": 9,
         "pattern": "[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"
-      },
-      "jcoin:final_variable_name": "jdc_person_id"
+      }
     },
     {
-      "jcoin:core_measure_section": "Enrollment",
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "quarter_enrolled"
+      },
       "name": "quarter_enrolled",
       "type": "string",
       "description": "The financial quarter and year of enrollment",
@@ -34,11 +39,13 @@
         "required": 1,
         "maxLength": 6,
         "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]"
-      },
-      "jcoin:final_variable_name": "quarter_enrolled"
+      }
     },
     {
-      "jcoin:core_measure_section": "Enrollment",
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "state_of_site_enrollment"
+      },
       "name": "state_of_site_enrollment",
       "type": "string",
       "description": "The U.S. State abbreviation of the site where client (participant) was initially enrolled",
@@ -47,11 +54,13 @@
         "required": 1,
         "maxLength": 2,
         "pattern": "[A-Z][A-Z]"
-      },
-      "jcoin:final_variable_name": "state_of_site_enrollment"
+      }
     },
     {
-      "jcoin:core_measure_section": "Enrollment",
+      "custom": {
+        "jcoin:core_measure_section": "Enrollment",
+        "jcoin:final_variable_name": "current_study_status"
+      },
       "name": "current_study_status",
       "type": "string",
       "description": "A summary of the current status where client (participant) is in study",
@@ -65,28 +74,34 @@
         ],
         "required": 1
       },
-      "title": "Current Study Status",
-      "jcoin:final_variable_name": "current_study_status"
+      "title": "Current Study Status"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "birth_date"
+      },
       "name": "d1",
       "type": "date",
       "description": "What is your birth date?",
       "title": "Birth date",
-      "format": "%Y%m%d",
-      "jcoin:final_variable_name": "birth_date"
+      "format": "%Y%m%d"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "age"
+      },
       "name": "d1a",
       "type": "integer",
       "description": "About how old are you? (top coded at 90)",
-      "title": "Age",
-      "jcoin:final_variable_name": "age"
+      "title": "Age"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_at_birth"
+      },
       "name": "o1",
       "type": "string",
       "description": "What sex was originally listed on your birth certificate?",
@@ -98,11 +113,14 @@
           "Something else"
         ]
       },
-      "title": "Sex at birth",
-      "jcoin:final_variable_name": "sex_at_birth"
+      "title": "Sex at birth"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id",
+        "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transfgender' else True"
+      },
       "name": "o2",
       "type": "string",
       "description": "What is your gender identity?",
@@ -117,12 +135,14 @@
           "Not reported"
         ]
       },
-      "title": "Gender Identity",
-      "jcoin:final_variable_name": "gender_id",
-      "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transfgender' else True"
+      "title": "Gender Identity"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "gender_id_condensed",
+        "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+      },
       "name": "d4b",
       "type": "string",
       "description": "What is your gender identity?",
@@ -136,12 +156,13 @@
           "Not reported"
         ]
       },
-      "title": "Gender Identity (condensed)",
-      "jcoin:final_variable_name": "gender_id_condensed",
-      "jcoin:notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
+      "title": "Gender Identity (condensed)"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_white"
+      },
       "name": "d3_white",
       "type": "boolean",
       "description": "[White] What is your race? SELECT ALL THAT APPLY",
@@ -154,11 +175,13 @@
       "title": "Race: White",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_white"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_black"
+      },
       "name": "d3_black",
       "type": "boolean",
       "description": "[Black or African American] What is your race? SELECT ALL THAT APPLY",
@@ -171,11 +194,13 @@
       "title": "Race: Black or African American",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_black"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_AIAN"
+      },
       "name": "d3_american_indian",
       "type": "boolean",
       "description": "[American Indian or Alaska Native] What is your race? SELECT ALL THAT APPLY",
@@ -188,11 +213,13 @@
       "title": "Race: American Indian or Alaska Native",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_AIAN"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_hawaiian_OPI"
+      },
       "name": "d3_hawaiian",
       "type": "boolean",
       "description": "[Native Hawaiian or Other Pacific Islander] What is your race? SELECT ALL THAT APPLY",
@@ -205,11 +232,13 @@
       "title": "Race: Native Hawaiian or Other Pacific Islander",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_hawaiian_OPI"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_asian"
+      },
       "name": "d3_asian",
       "type": "boolean",
       "description": "[Asian] What is your race? SELECT ALL THAT APPLY",
@@ -222,11 +251,13 @@
       "title": "Race: Asian",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_asian"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_other"
+      },
       "name": "d3_other",
       "type": "boolean",
       "description": "[Other] What is your race? SELECT ALL THAT APPLY",
@@ -239,33 +270,39 @@
       "title": "Race: Other",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "race_other"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_AI_tribe"
+      },
       "name": "d3_specify_tribe",
       "type": "string",
       "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
       "title": "Race: American indian principal tribe or community specified",
       "constraints": {
         "maxLength": 80
-      },
-      "jcoin:final_variable_name": "race_AI_tribe"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "race_other_specified"
+      },
       "name": "d3_specify_other",
       "type": "string",
       "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
       "title": "Race: Other specified",
       "constraints": {
         "maxLength": 80
-      },
-      "jcoin:final_variable_name": "race_other_specified"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "hispanic_latino"
+      },
       "name": "d2",
       "type": "boolean",
       "description": "Are you of Hispanic, Latino, or Spanish origin?",
@@ -278,11 +315,13 @@
       "title": "Hispanic, Latino, or Spanish Origin",
       "constraints": {
         "required": 1
-      },
-      "jcoin:final_variable_name": "hispanic_latino"
+      }
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_orient_category"
+      },
       "name": "d4c",
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as…",
@@ -295,19 +334,24 @@
           "Something else"
         ]
       },
-      "title": "Sexual orientation",
-      "jcoin:final_variable_name": "sex_orient_category"
+      "title": "Sexual orientation"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "sex_orient_other"
+      },
       "name": "d4c_specify_other",
       "type": "string",
       "description": "Sexual orientation:  Do you think of yourself as…",
-      "title": "Sexual orientation:  Other specified",
-      "jcoin:final_variable_name": "sex_orient_other"
+      "title": "Sexual orientation:  Other specified"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "ever_pregnant",
+        "jcoin:notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+      },
       "name": "d4d",
       "type": "string",
       "description": "Have you ever been pregnant?",
@@ -321,12 +365,13 @@
           "Don't know"
         ]
       },
-      "title": "Ever pregnant",
-      "jcoin:final_variable_name": "ever_pregnant",
-      "jcoin:notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
+      "title": "Ever pregnant"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "marital_status"
+      },
       "name": "d5",
       "type": "string",
       "description": "What is your marital status?",
@@ -339,11 +384,13 @@
           "Never married"
         ]
       },
-      "title": "Marital status",
-      "jcoin:final_variable_name": "marital_status"
+      "title": "Marital status"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "living_as_married"
+      },
       "name": "d5a",
       "type": "string",
       "description": "Are you currently living as married with a romantic partner?",
@@ -353,11 +400,13 @@
           "No, I am not living as married with partner"
         ]
       },
-      "title": "Married with partner",
-      "jcoin:final_variable_name": "living_as_married"
+      "title": "Married with partner"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_category"
+      },
       "name": "d6",
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
@@ -374,27 +423,33 @@
           "Other (specify)"
         ]
       },
-      "title": "Education",
-      "jcoin:final_variable_name": "educ_category"
+      "title": "Education"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_highest_grade"
+      },
       "name": "d6_grade",
       "type": "integer",
       "description": "What is the highest grade completed?",
-      "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
-      "jcoin:final_variable_name": "educ_highest_grade"
+      "title": "Education:  Highest grade level (if less than GED or h.s. diploma)"
     },
     {
-      "jcoin:core_measure_section": "Demographics",
+      "custom": {
+        "jcoin:core_measure_section": "Demographics",
+        "jcoin:final_variable_name": "educ_other_specified"
+      },
       "name": "d6_specify_other",
       "type": "string",
       "description": "What is the highest grade or level of school you have completed or the highest degree you have received?",
-      "title": "Education: Other specified",
-      "jcoin:final_variable_name": "educ_other_specified"
+      "title": "Education: Other specified"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "intv_while_incarc"
+      },
       "name": "u14f",
       "type": "boolean",
       "description": "Interview conducted with participant during incarceration?",
@@ -404,19 +459,23 @@
       "falseValues": [
         "No"
       ],
-      "title": "Interviewed during incarceration",
-      "jcoin:final_variable_name": "intv_while_incarc"
+      "title": "Interviewed during incarceration"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "days_incarcerated_interval"
+      },
       "name": "u14g",
       "type": "integer",
       "description": "During the past xx/30 days, how many days have you been incarcerated?",
-      "title": "Days incarcerated (in past 30/xx days)",
-      "jcoin:final_variable_name": "days_incarcerated_interval"
+      "title": "Days incarcerated (in past 30/xx days)"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "ever_rx_moud"
+      },
       "name": "u15",
       "type": "boolean",
       "description": "Have you ever been prescribed and taken medication to treat opioid use disorder?  (Illicit use should be excluded.)",
@@ -426,72 +485,87 @@
       "falseValues": [
         "No"
       ],
-      "title": "Medication ever prescribed for opioid use disorder?",
-      "jcoin:final_variable_name": "ever_rx_moud"
+      "title": "Medication ever prescribed for opioid use disorder?"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_daily_bup"
+      },
       "name": "u15a1",
       "type": "integer",
       "description": "Lifetime months (buprenorphine-naloxone or buprenorphine daily sublingual [e.g., Suboxone film or tablet, generic films or tablets, or Subutex tablets])",
-      "title": "Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months",
-      "jcoin:final_variable_name": "months_daily_bup"
+      "title": "Buprenorphine-naloxone or buprenorphine daily sublingual: Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_sublocade"
+      },
       "name": "u15b1",
       "type": "integer",
       "description": "Lifetime months (buprenorphine injection [Sublocade])",
-      "title": "Buprenorphine injection (Sublocade):  Lifetime months",
-      "jcoin:final_variable_name": "months_sublocade"
+      "title": "Buprenorphine injection (Sublocade):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_weekly_brixadi"
+      },
       "name": "u15c1",
       "type": "integer",
       "description": "Lifetime months (buprenorphine weekly injection [Brixadi])",
-      "title": "Buprenorphine  weekly injection (Brixadi):  Lifetime months",
-      "jcoin:final_variable_name": "months_weekly_brixadi"
+      "title": "Buprenorphine  weekly injection (Brixadi):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_monthly_brixadi"
+      },
       "name": "u15d1",
       "type": "integer",
       "description": "Lifetime months (buprenorphine monthly injection [Brixadi])",
-      "title": "Buprenorphine  monthly injection (Brixadi):  Lifetime months",
-      "jcoin:final_variable_name": "months_monthly_brixadi"
+      "title": "Buprenorphine  monthly injection (Brixadi):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_probuphine_implant"
+      },
       "name": "u15e1",
       "type": "integer",
       "description": "Lifetime months (buprenorphine 6-month implant [Probuphine])",
-      "title": "Buprenorphine 6-month implant (Probuphine):  Lifetime months",
-      "jcoin:final_variable_name": "months_probuphine_implant"
+      "title": "Buprenorphine 6-month implant (Probuphine):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_daily_ntx"
+      },
       "name": "u15f1",
       "type": "integer",
       "description": "Lifetime months (Naltrexone daily (oral))",
-      "title": "Naltrexone daily (oral):  Lifetime months",
-      "jcoin:final_variable_name": "months_daily_ntx"
+      "title": "Naltrexone daily (oral):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_monthly_vivitrol"
+      },
       "name": "u15g1",
       "type": "integer",
       "description": "Lifetime months (Naltrexone monthly injection [Vivitrol])",
-      "title": "Naltrexone monthly injection (Vivitrol):  Lifetime months",
-      "jcoin:final_variable_name": "months_monthly_vivitrol"
+      "title": "Naltrexone monthly injection (Vivitrol):  Lifetime months"
     },
     {
-      "jcoin:core_measure_section": "MOUD",
+      "custom": {
+        "jcoin:core_measure_section": "MOUD",
+        "jcoin:final_variable_name": "months_methadone"
+      },
       "name": "u15h1",
       "type": "integer",
       "description": "Lifetime months (methadone daily)",
-      "title": "Methadone daily:  Lifetime months",
-      "jcoin:final_variable_name": "months_methadone"
+      "title": "Methadone daily:  Lifetime months"
     }
   ]
 }

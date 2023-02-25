@@ -1445,8 +1445,8 @@
       "type": "integer",
       "description": "[How many people, including yourself, are there in your household?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "People in household",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3",
-      "jcoin:final_variable_name": "household_people"
+      "jcoin:final_variable_name": "household_people",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o3"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1454,8 +1454,8 @@
       "type": "integer",
       "description": "[How many of the people in your household are under the age of 18?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "People under 18 years old in household",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o4",
-      "jcoin:final_variable_name": "household_under_18"
+      "jcoin:final_variable_name": "household_under_18",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o4"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1463,8 +1463,8 @@
       "type": "number",
       "description": "[During the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>, what was the total income of everyone in your household together that provided you with support?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "Total household income",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5",
-      "jcoin:final_variable_name": "household_income"
+      "jcoin:final_variable_name": "household_income",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o5"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1483,8 +1483,8 @@
         ]
       },
       "title": "Total household income from legal sources",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o6",
-      "jcoin:final_variable_name": "household_income_legal"
+      "jcoin:final_variable_name": "household_income_legal",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o6"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1498,8 +1498,8 @@
         "No"
       ],
       "title": "Public assistance for household",
-      "notes": "If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7",
-      "jcoin:final_variable_name": "household_public_assist_any"
+      "jcoin:final_variable_name": "household_public_assist_any",
+      "notes": "If No, then skip to d7e1. The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o7"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1507,8 +1507,8 @@
       "type": "number",
       "description": "[During the past xx days (since last assessment), approximately how much money has your household all together received from public assistance sources like unemployment, food stamps (TANF), subsidized housing, supplemental security income?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "Total household money from public assistance",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o8",
-      "jcoin:final_variable_name": "household_public_assist_dollars"
+      "jcoin:final_variable_name": "household_public_assist_dollars",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o8"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1516,8 +1516,8 @@
       "type": "string",
       "description": "[During the past xx days (since last assessment), did your household receive any other non-employment income sources like retirement, pension, alimony, child support, or interest?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "Other non-employmnet income sources",
-      "notes": "If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9",
-      "jcoin:final_variable_name": "household_nonemploy_any"
+      "jcoin:final_variable_name": "household_nonemploy_any",
+      "notes": "If No, [GO TO D7f1] The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o9"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1525,8 +1525,8 @@
       "type": "number",
       "description": "[During the past xx days (since last assessment), approximately how much money has your household all together received from other non-employment sources like retirement, pension, alimony, child support, interest?] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "Total household money from other non-employment income sources",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o10",
-      "jcoin:final_variable_name": "household_nonemploy_dollars"
+      "jcoin:final_variable_name": "household_nonemploy_dollars",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o10"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1540,8 +1540,8 @@
         "No"
       ],
       "title": "Non-employment income with risk of legal or other trouble",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11",
-      "jcoin:final_variable_name": "household_income_illegal_any"
+      "jcoin:final_variable_name": "household_income_illegal_any",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o11"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1549,8 +1549,8 @@
       "type": "number",
       "description": "[During the past xx days (since last assessment), outside of employment described above, how much money did you earn from activities that might get you into trouble or be against the law, like dealing, gambling, or theft? ] The next few questions are about your HOUSEHOLD in the past <if baseline: 90 days/90 days prior to entering jail; if follow up: xx days (since last assessment/interview/contact/visit)>.  Your household includes people you live with, and with whom you share your income and expenses – husband, wife, children, relatives, and others.",
       "title": "Total household money with risk of causing  legal or other trouble activities",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o12",
-      "jcoin:final_variable_name": "household_income_illegal_dollars"
+      "jcoin:final_variable_name": "household_income_illegal_dollars",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o12"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1578,8 +1578,8 @@
         ]
       },
       "title": "Current school or work situation description",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13",
-      "jcoin:final_variable_name": "current_work_school"
+      "jcoin:final_variable_name": "current_work_school",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o13"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1587,8 +1587,8 @@
       "type": "integer",
       "description": "During the past xx days (since last assessment), on how many days have you worked?",
       "title": "Number of days worked",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o14",
-      "jcoin:final_variable_name": "work_days"
+      "jcoin:final_variable_name": "work_days",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o14"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1596,8 +1596,8 @@
       "type": "integer",
       "description": "During the past xx days (since last assessment), how many days per week do you typically work?",
       "title": "Days per week worked",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15",
-      "jcoin:final_variable_name": "work_typical_days_week"
+      "jcoin:final_variable_name": "work_typical_days_week",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o15"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1605,8 +1605,8 @@
       "type": "integer",
       "description": "During the past xx days (since last assessment), How many hours per week do you usually work?",
       "title": "Hours per week worked",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o16",
-      "jcoin:final_variable_name": "work_hours_week"
+      "jcoin:final_variable_name": "work_hours_week",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o16"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1614,8 +1614,8 @@
       "type": "number",
       "description": "During the past xx days (since last assessment), approximately how much do you make per hour? [If someone is working multiple jobs, take the average amount per hour across the job]",
       "title": "Hourly rate",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17",
-      "jcoin:final_variable_name": "work_hourly_wage"
+      "jcoin:final_variable_name": "work_hourly_wage",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o17"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1629,8 +1629,8 @@
         "No"
       ],
       "title": "Health insurance from work",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18",
-      "jcoin:final_variable_name": "work_health_insurance"
+      "jcoin:final_variable_name": "work_health_insurance",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o18"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1644,8 +1644,8 @@
         "No"
       ],
       "title": "Paid time off from work",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19",
-      "jcoin:final_variable_name": "work_paid_time_off"
+      "jcoin:final_variable_name": "work_paid_time_off",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o19"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1659,8 +1659,8 @@
         "No"
       ],
       "title": "Benefit or pension plan from work",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20",
-      "jcoin:final_variable_name": "work_pension"
+      "jcoin:final_variable_name": "work_pension",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o20"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1674,8 +1674,8 @@
         "No"
       ],
       "title": "Retirement plan from work",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21",
-      "jcoin:final_variable_name": "work_retirement_plan"
+      "jcoin:final_variable_name": "work_retirement_plan",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o21"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1683,8 +1683,8 @@
       "type": "string",
       "description": "What is your occupation?",
       "title": "Occupation",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22",
-      "jcoin:final_variable_name": "work_occupation"
+      "jcoin:final_variable_name": "work_occupation",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o22"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1698,8 +1698,8 @@
         "No"
       ],
       "title": "Currently covered by health insurance",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23",
-      "jcoin:final_variable_name": "have_health_insurance"
+      "jcoin:final_variable_name": "have_health_insurance",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1713,8 +1713,8 @@
         "No"
       ],
       "title": "Private health insurance plan coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23",
-      "jcoin:final_variable_name": "insured_private"
+      "jcoin:final_variable_name": "insured_private",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o23"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1728,8 +1728,8 @@
         "No"
       ],
       "title": "Medicare plan coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24",
-      "jcoin:final_variable_name": "insured_medicare"
+      "jcoin:final_variable_name": "insured_medicare",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o24"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1743,8 +1743,8 @@
         "No"
       ],
       "title": "Medigap plan coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25",
-      "jcoin:final_variable_name": "insured_medigap"
+      "jcoin:final_variable_name": "insured_medigap",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o25"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1758,8 +1758,8 @@
         "No"
       ],
       "title": "Medicaid plan coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26",
-      "jcoin:final_variable_name": "insured_medicaid"
+      "jcoin:final_variable_name": "insured_medicaid",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o26"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1773,8 +1773,8 @@
         "No"
       ],
       "title": "Children's Health Insurance coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27",
-      "jcoin:final_variable_name": "insured_chip"
+      "jcoin:final_variable_name": "insured_chip",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o27"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1788,8 +1788,8 @@
         "No"
       ],
       "title": "Military plan coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28",
-      "jcoin:final_variable_name": "insured_military"
+      "jcoin:final_variable_name": "insured_military",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o28"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1803,8 +1803,8 @@
         "No"
       ],
       "title": "Indian Health Service coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29",
-      "jcoin:final_variable_name": "insured_indian"
+      "jcoin:final_variable_name": "insured_indian",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o29"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1818,8 +1818,8 @@
         "No"
       ],
       "title": "State health coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30",
-      "jcoin:final_variable_name": "insured_state"
+      "jcoin:final_variable_name": "insured_state",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o30"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1833,8 +1833,8 @@
         "No"
       ],
       "title": "Other government coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31",
-      "jcoin:final_variable_name": "insured_other_gov"
+      "jcoin:final_variable_name": "insured_other_gov",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o31"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1848,8 +1848,8 @@
         "No"
       ],
       "title": "Single service coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32",
-      "jcoin:final_variable_name": "insured_single_service"
+      "jcoin:final_variable_name": "insured_single_service",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o32"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1863,8 +1863,8 @@
         "No"
       ],
       "title": "Don't know about coverage",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33",
-      "jcoin:final_variable_name": "insured_dont_know"
+      "jcoin:final_variable_name": "insured_dont_know",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o33"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1872,8 +1872,8 @@
       "type": "integer",
       "description": "During the past xx days (since last assessment), on how many days were you uninsured?",
       "title": "Days uninsured",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o34",
-      "jcoin:final_variable_name": "days_uninsured"
+      "jcoin:final_variable_name": "days_uninsured",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o34"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1881,8 +1881,8 @@
       "type": "integer",
       "description": "[Been to self-help group meetings (such as AA, NA, CA, or SMART Recovery) for your alcohol or other drug use? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days at self help group",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35",
-      "jcoin:final_variable_name": "days_self_help"
+      "jcoin:final_variable_name": "days_self_help",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o35"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1890,8 +1890,8 @@
       "type": "integer",
       "description": "[Been in other structured activities where no one was using alcohol or drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days at non-alcoholic, structured activities",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o36",
-      "jcoin:final_variable_name": "days_drugfree_activity"
+      "jcoin:final_variable_name": "days_drugfree_activity",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o36"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1899,8 +1899,8 @@
       "type": "integer",
       "description": "[Been homeless or had to stay with someone else to avoid being homeless? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days being homeless",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37",
-      "jcoin:final_variable_name": "days_homeless"
+      "jcoin:final_variable_name": "days_homeless",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o37"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1908,8 +1908,8 @@
       "type": "integer",
       "description": "[Lived in a homeless shelter or emergency housing? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days in homeless shelter",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o38",
-      "jcoin:final_variable_name": "days_shelter"
+      "jcoin:final_variable_name": "days_shelter",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o38"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1917,8 +1917,8 @@
       "type": "integer",
       "description": "[Lived where other people were using alcohol? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days in household with alcohol use",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39",
-      "jcoin:final_variable_name": "days_household_alcohol"
+      "jcoin:final_variable_name": "days_household_alcohol",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o39"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1926,8 +1926,8 @@
       "type": "integer",
       "description": "[Lived where other people were using drugs? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days in household with drug use",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o40",
-      "jcoin:final_variable_name": "days_household_drug"
+      "jcoin:final_variable_name": "days_household_drug",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o40"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1935,8 +1935,8 @@
       "type": "integer",
       "description": "[Been to formal activities where people were using alcohol or drugs?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days of formal activities with alcohol",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41",
-      "jcoin:final_variable_name": "days_activities_substance_use"
+      "jcoin:final_variable_name": "days_activities_substance_use",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o41"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1944,8 +1944,8 @@
       "type": "integer",
       "description": "[Gotten into trouble at home or with your family for any reason? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days of home or family trouble",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o42",
-      "jcoin:final_variable_name": "days_family_trouble"
+      "jcoin:final_variable_name": "days_family_trouble",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o42"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1953,8 +1953,8 @@
       "type": "integer",
       "description": "[Had an argument in which you swore, cursed, threatened another person, threw something, or pushed or hit another person in any way? ] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days of  abusive behavior in arguments",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43",
-      "jcoin:final_variable_name": "days_arguments"
+      "jcoin:final_variable_name": "days_arguments",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o43"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1962,8 +1962,8 @@
       "type": "integer",
       "description": "[Been attacked with a weapon, beaten, sexually abused or emotionally abused?] During the past xx days (since last assessment), on how many days have you . . .  [NOTE: MAX DAYS = 90]",
       "title": "Number of days being physically, emotionally, sexually abused",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o44",
-      "jcoin:final_variable_name": "days_abused"
+      "jcoin:final_variable_name": "days_abused",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o44"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1977,8 +1977,8 @@
         "No"
       ],
       "title": "Received Narcan kit",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45",
-      "jcoin:final_variable_name": "narcan_received"
+      "jcoin:final_variable_name": "narcan_received",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o45"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -1992,8 +1992,8 @@
         "No"
       ],
       "title": "Used Narcan Kit",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46",
-      "jcoin:final_variable_name": "narcan_used"
+      "jcoin:final_variable_name": "narcan_used",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o46"
     },
     {
       "jcoin:core_measure_section": "Demographics",
@@ -2007,8 +2007,8 @@
         "No"
       ],
       "title": "Refilled Narcan Kit",
-      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47",
-      "jcoin:final_variable_name": "narcan_refilled"
+      "jcoin:final_variable_name": "narcan_refilled",
+      "notes": "The demographics core measure section was split between data models for demographic subsections collected only at baseline (i.e., d1 - d6) and all time points (d7 - d11; o47"
     },
     {
       "jcoin:core_measure_section": "PROMIS 29+2/ PROPr",
@@ -2526,10 +2526,10 @@
       "type": "integer",
       "description": "[In the past 7 days, how would you rate your pain on average?] For the next question, please responds on scale from 0 being no pain to 10 being the worst pain imaginable.",
       "title": "Pain intensity rating",
+      "jcoin:final_variable_name": "pain_intensity",
       "constraints": {
         "maximum": 10
-      },
-      "jcoin:final_variable_name": "pain_intensity"
+      }
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2548,8 +2548,8 @@
         ]
       },
       "title": "Multiple sex partners",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_multiple_partners"
+      "jcoin:final_variable_name": "last_time_multiple_partners",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2568,8 +2568,8 @@
         ]
       },
       "title": "Unprotected sex",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_unprotected_sex"
+      "jcoin:final_variable_name": "last_time_unprotected_sex",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2588,8 +2588,8 @@
         ]
       },
       "title": "Alcohol and drug intoxication",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_sex_intoxicated"
+      "jcoin:final_variable_name": "last_time_sex_intoxicated",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2608,8 +2608,8 @@
         ]
       },
       "title": "Drug injection with needle",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_injection_drug"
+      "jcoin:final_variable_name": "last_time_injection_drug",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2628,8 +2628,8 @@
         ]
       },
       "title": "Attacked with weapon",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_attacked_weapon"
+      "jcoin:final_variable_name": "last_time_attacked_weapon",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2648,8 +2648,8 @@
         ]
       },
       "title": "Physical abuse",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_physical_abuse"
+      "jcoin:final_variable_name": "last_time_physical_abuse",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2668,8 +2668,8 @@
         ]
       },
       "title": "Sexually abused",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_sex_abuse"
+      "jcoin:final_variable_name": "last_time_sex_abuse",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2688,8 +2688,8 @@
         ]
       },
       "title": "Emotionally abused",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_emotional_abuse"
+      "jcoin:final_variable_name": "last_time_emotional_abuse",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2708,8 +2708,8 @@
         ]
       },
       "title": "Physically, sexually, or emotionally abused",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_ongoing_abuse"
+      "jcoin:final_variable_name": "last_time_ongoing_abuse",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2728,8 +2728,8 @@
         ]
       },
       "title": "Afraid for life or serious injury from abuse",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_afraid_abuse"
+      "jcoin:final_variable_name": "last_time_afraid_abuse",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2748,8 +2748,8 @@
         ]
       },
       "title": "Distressed/upset about past",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_distressed_past"
+      "jcoin:final_variable_name": "last_time_distressed_past",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2768,8 +2768,8 @@
         ]
       },
       "title": "Suicidal thoughts",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "last_time_suicidal"
+      "jcoin:final_variable_name": "last_time_suicidal",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2783,8 +2783,8 @@
         "No"
       ],
       "title": "HIV/AIDS",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_hiv"
+      "jcoin:final_variable_name": "ever_dx_hiv",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2798,8 +2798,8 @@
         "No"
       ],
       "title": "Hepatitis C",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_hcv"
+      "jcoin:final_variable_name": "ever_dx_hcv",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2813,8 +2813,8 @@
         "No"
       ],
       "title": "Hepatitis B",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_hepb"
+      "jcoin:final_variable_name": "ever_dx_hepb",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2828,8 +2828,8 @@
         "No"
       ],
       "title": "Other sexually transmitted diseases",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_std"
+      "jcoin:final_variable_name": "ever_dx_std",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2843,8 +2843,8 @@
         "No"
       ],
       "title": "Tuberculosis",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_tb"
+      "jcoin:final_variable_name": "ever_dx_tb",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2858,8 +2858,8 @@
         "No"
       ],
       "title": "COVID",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "ever_dx_covid"
+      "jcoin:final_variable_name": "ever_dx_covid",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2878,8 +2878,8 @@
         ]
       },
       "title": "First diagnosis of HIV/AIDS",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_hiv"
+      "jcoin:final_variable_name": "first_dx_hiv",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2898,8 +2898,8 @@
         ]
       },
       "title": "First diagnosis of Hepatitis C",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_hcv"
+      "jcoin:final_variable_name": "first_dx_hcv",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2918,8 +2918,8 @@
         ]
       },
       "title": "First diagnosis of Hepatitis B",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_hepb"
+      "jcoin:final_variable_name": "first_dx_hepb",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2938,8 +2938,8 @@
         ]
       },
       "title": "First diagnosis of other STDs",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_std"
+      "jcoin:final_variable_name": "first_dx_std",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2958,8 +2958,8 @@
         ]
       },
       "title": "First diagnosis of Tuberculosis",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_tb"
+      "jcoin:final_variable_name": "first_dx_tb",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     },
     {
       "jcoin:core_measure_section": "Risk of Harms and Consequences",
@@ -2978,8 +2978,8 @@
         ]
       },
       "title": "First diagnosis of COVID",
-      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)",
-      "jcoin:final_variable_name": "first_dx_covid"
+      "jcoin:final_variable_name": "first_dx_covid",
+      "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
     }
   ]
 }
