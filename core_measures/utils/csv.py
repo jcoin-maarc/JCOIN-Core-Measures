@@ -60,16 +60,22 @@ class CsvToJson:
         self.to_dict()
 
     def to_dict(self):
-        listcols = ['constraints.enum','trueValues','falseValues','missingValues']   
+
         cols = etl.fieldnames(self.table) 
+        listcols = ['constraints.enum','trueValues','falseValues','missingValues']   
+        intcols = ['constraints.maxLength','constraints.minLength','constraints.minimum','constraints.maximum',]
+        boolcols = ['constraints.required','constraints.unique']
+        
         convertlists = {name:parse_list_str for name in listcols if name in cols}
+        convertints = {name:int for name in intcols if name in cols}
+        convertbools = {name:bool for name in boolcols if name in cols}
+        
         fields = (
             self.table
             .convert(convertlists)
-            .convert('constraints.required',lambda v: bool(v) if v else v,failonerror=False)
-            .todf()
-            .replace("",None)
-            .to_dict(orient='records')
+            .convert(convertbools)
+            .convert(convertints)
+            .dicts()
         )
         self.fields = [convert_rec_to_json(field) for field in fields]
     def to_json(self,jsonpath):

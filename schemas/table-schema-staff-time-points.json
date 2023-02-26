@@ -20,7 +20,7 @@
             "description": "A number that identifies the visit (survey administration event) or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
             "constraints": {
                 "required": true,
-                "minimum": "1"
+                "minimum": 1
             },
             "jcoin:core_measure_section": "Record and linkage",
             "jcoin:final_variable_name": "visit_number"

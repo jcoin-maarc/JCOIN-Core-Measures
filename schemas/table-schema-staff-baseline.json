@@ -21,7 +21,7 @@
             "constraints": {
                 "required": true,
                 "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]",
-                "maxLength": "6"
+                "maxLength": 6
             },
             "jcoin:core_measure_section": "Enrollment",
             "jcoin:final_variable_name": "quarter_enrolled"
@@ -34,7 +34,7 @@
             "jcoin:core_measure_section": "Enrollment",
             "jcoin:final_variable_name": "staff_type",
             "constraints": {
-                "maxLength": "80"
+                "maxLength": 80
             }
         },
         {
@@ -210,7 +210,7 @@
             "jcoin:core_measure_section": "Demographics",
             "jcoin:final_variable_name": "race_AI_tribe",
             "constraints": {
-                "maxLength": "80"
+                "maxLength": 80
             }
         },
         {
@@ -221,7 +221,7 @@
             "jcoin:core_measure_section": "Demographics",
             "jcoin:final_variable_name": "race_other_specified",
             "constraints": {
-                "maxLength": "80"
+                "maxLength": 80
             }
         },
         {

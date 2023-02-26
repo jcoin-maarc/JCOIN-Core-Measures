@@ -12,7 +12,7 @@
             "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
             "constraints": {
                 "required": true,
-                "maxLength": "9",
+                "maxLength": 9,
                 "pattern": "[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]"
             }
         },
@@ -27,7 +27,7 @@
             "description": "The financial quarter and year of enrollment",
             "constraints": {
                 "required": true,
-                "maxLength": "6",
+                "maxLength": 6,
                 "pattern": "[0-9][0-9][0-9][0-9]Q[0-9]"
             }
         },
@@ -42,7 +42,7 @@
             "description": "The U.S. State abbreviation of the site where client (participant) was initially enrolled",
             "constraints": {
                 "required": true,
-                "maxLength": "2",
+                "maxLength": 2,
                 "pattern": "[A-Z][A-Z]"
             }
         },
@@ -272,7 +272,7 @@
             "type": "string",
             "description": "[American indian principal tribe or community specified] What is your race? SELECT ALL THAT APPLY",
             "constraints": {
-                "maxLength": "80"
+                "maxLength": 80
             }
         },
         {
@@ -285,7 +285,7 @@
             "type": "string",
             "description": "[Other specified] What is your race? SELECT ALL THAT APPLY",
             "constraints": {
-                "maxLength": "80"
+                "maxLength": 80
             }
         },
         {

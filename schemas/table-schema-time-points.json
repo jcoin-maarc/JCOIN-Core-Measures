@@ -20,7 +20,7 @@
             "description": "A number that identifies the visit or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
             "constraints": {
                 "required": true,
-                "minimum": "1"
+                "minimum": 1
             },
             "jcoin:core_measure_section": "Record and linkage",
             "jcoin:final_variable_name": "visit_number"
@@ -2517,7 +2517,7 @@
             "jcoin:core_measure_section": "PROMIS 29+2/ PROPr",
             "jcoin:final_variable_name": "pain_intensity",
             "constraints": {
-                "maximum": "10"
+                "maximum": 10
             }
         },
         {
