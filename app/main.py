@@ -48,7 +48,8 @@ with tab0:
     excel_long = requests.get(url_long).content
     excel_file = pd.ExcelFile(io.BytesIO(excel_long))
     schemas = pd.read_excel(excel_file,sheet_name="schemas")
-    make_agrid(schemas)
+    redox_colnames = ["schema","custom.jcoin:core_measure_section","name","custom.jcoin:original_name","constraints.enum"]
+    st.dataframe(schemas[redox_colnames])
 
 print(lbls.keys)
 for name,tab in zip(lbls.keys(),[tab1,tab2,tab3,tab4]):
