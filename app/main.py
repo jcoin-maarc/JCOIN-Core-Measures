@@ -39,7 +39,11 @@ tab0,tab1,tab2,tab3,tab4 = st.tabs(lbls.values())
 
 alltbl = lbls.pop("all")
 allhelp = """ 
-- To search for all core measure variables, use the search tool below.
+- To search for all core measure variables (across clients and staff and datasets), use the search tool below.
+    - `schema` = dataset
+    - `name` = name of variable in analytic dataset
+    - `custom.jcoin:original_variable_name` = name of variable in Source PDF
+    - `constraints.enum` = Possible values
 
 - Click other tabs data dictionaries for specific tables and corresponding table level properties (eg missingValues (ie reserve codes for missingness, table descriptions, primary keys))
 """ 
