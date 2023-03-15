@@ -23,7 +23,7 @@ The frictionless framework plays a foundational component in our Core Measures, 
 
 ## Search tool
 
-To search the complete set of core measures and download a formatted excel version, click on the `Search tool` section. This provides a way to explore the most up-to-date data dictionaries and other dataset metadata properties such as missing values, descriptions, keys, etc.
+To search the complete set of core measures and download a formatted excel version, click here(https://jcoin-maarc.github.io/JCOIN-Core-Measures/search-tool/). This provides a way to explore the most up-to-date data dictionaries and other dataset metadata properties such as missing values, descriptions, keys, etc.
 
 --8<-- [end:intro]
 
@@ -31,25 +31,29 @@ To search the complete set of core measures and download a formatted excel versi
 
 The public repository where data dictionaries are stored is located [here](https://github.com/jcoin-maarc/JCOIN-Core-Measures). Below describes the directories in this repository:
 
-`csvs`: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.
+### `csvs`: tabular version of data dictionaries with standard frictionless names intended to conform to overall HEAL specifications.
 
-`core_measures`: python modules (run `pip install -e .`)
-    - `schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
-    - `app`: contains modules/fxns for the streamlit app (note -- the  `environment.yml` at root of repo is used for app deployment -- cannot have any base python packages)
+### `core_measures`: python modules (run `pip install -e .`) Contents are:
+
+- `schemas.py`: simple CLI function to update csv files given updates to json files and vice versa. When using the `updatejson` option, minimally, there must be a schema json present with the same name stem (e.g., baseline.json) that contains at a minimum an empty json object but can also include schema-level properties such as a title and description. 
+
+- `app`: contains modules/fxns for the streamlit app (note -- the  `environment.yml` at root of repo is used for app deployment -- cannot have any base python packages)
 
 > IMPORTANT: the source of truth for schemas are the schemas/*.json files (if the csv differs from the json file). However, the schemas.py script is intended to allow this json source of truth to be updated if using the csv to edit or update the schemas.
 
 > The schemas were created using the publicly available JCOIN-core-measures-public.pdf document. Additionally, fields were added to satisfy additional fields for reporting such as quarter_enrolled, current_submission_status etc.
 
-`encodings`: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). 
+### `encodings`: contains the mappings (ie value labels and missing value reserve codes) for translation to other software (e.g., SPSS and Stata). 
 
 > NOTE: while schemas by definition do not contain any information used for transformations, we included the encodings here for easier editing and look up.
 
 > NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)
 
-`apps`: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.
+### `app`: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.
 
-`docs`: here are the contents of the core measures website page. Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
+### `docs`: here are the contents of the core measures website page. 
+
+> Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
 
 ## Version history (this list is no longer updated as we will now use tags)
 - 1.0.0:
