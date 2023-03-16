@@ -3,55 +3,55 @@ current_study_status:
   2: Dropped out
   3: Withdrawn by investigator
   4: Completed study
-d2:
+hispanic_latino:
   0: 'No'
   1: 'Yes'
-d3_american_indian:
+race_AIAN:
   0: 'No'
   1: 'Yes'
-d3_asian:
+race_asian:
   0: 'No'
   1: 'Yes'
-d3_black:
+race_black:
   0: 'No'
   1: 'Yes'
-d3_hawaiian:
+race_hawaiian_OPI:
   0: 'No'
   1: 'Yes'
-d3_other:
+race_other:
   0: 'No'
   1: 'Yes'
-d3_white:
+race_white:
   0: 'No'
   1: 'Yes'
-d4b:
+gender_id_condensed:
   1: Male
   2: Female
   3: Transgender
   4: Gender nonconforming
   99: Something else
-d4c:
+sex_orient_category:
   1: Straight or heterosexual
   2: Lesbian or gay
   3: Bisexual
   4: Queer,pansexual, and/or questioning
   99: Something else
-d4d:
+ever_pregnant:
   1: Never been pregnant
   2: Currently pregnant
   4: Previously pregnant, had a child
   5: Previously pregnant, did not have a child
   6: Not applicable
-d5:
+marital_status:
   1: Married
   2: Widowed
   3: Divorced
   4: Separated
   5: Never married
-d5a:
+living_as_married:
   1: Yes, I am living as married with partner
   2: No, I am not living as married with partner
-d6:
+educ_category:
   1: Did not complete high school
   2: GED or equivalent
   3: Regular high school diploma
@@ -61,7 +61,7 @@ d6:
   7: Bachelor's degree (e.g.,  BA or BS)
   8: Graduate degree (e.g., MSW, MA, MS, JD, MD, DSW, EdD, PhD)
   99: Other (specify)
-d7d:
+household_income_legal:
   1: Less than $12,500
   2: $12,500 - $20,000
   3: $20,001 - $30,000
@@ -69,10 +69,10 @@ d7d:
   5: $40,001 - $50,000
   6: $50,001 - $100,000
   7: More than $100,000
-d7f1:
+household_income_illegal_any:
   0: 'No'
   1: 'Yes'
-d8:
+current_work_school:
   1: Working full-time, 35 hours or more a week
   2: Working part-time, less than 35 hours a week
   3: Have a job where you are paid one day at a time (day labor)
@@ -90,272 +90,272 @@ d8:
   14: In the military
   15: Doing volunteer work
   99: Some other work situation
-d8d_benefit_plan:
+work_pension:
   0: 'No'
   1: 'Yes'
-d8d_health_insurance:
+work_health_insurance:
   0: 'No'
   1: 'Yes'
-d8d_paid_time_off:
+work_paid_time_off:
   0: 'No'
   1: 'Yes'
-d8d_retirement_plan:
+work_retirement_plan:
   0: 'No'
   1: 'Yes'
-d9:
+have_health_insurance:
   0: 'No'
   1: 'Yes'
-d9a_dont_know:
+insured_dont_know:
   0: 'No'
   1: 'Yes'
-d9a_indian:
+insured_indian:
   0: 'No'
   1: 'Yes'
-d9a_medicaid:
+insured_medicaid:
   0: 'No'
   1: 'Yes'
-d9a_medicare:
+insured_medicare:
   0: 'No'
   1: 'Yes'
-d9a_medigap:
+insured_medigap:
   0: 'No'
   1: 'Yes'
-d9a_military:
+insured_military:
   0: 'No'
   1: 'Yes'
-d9a_other_government:
+insured_other_gov:
   0: 'No'
   1: 'Yes'
-d9a_private:
+insured_private:
   0: 'No'
   1: 'Yes'
-d9a_schip:
+insured_chip:
   0: 'No'
   1: 'Yes'
-d9a_single_service:
+insured_single_service:
   0: 'No'
   1: 'Yes'
-d9a_state:
+insured_state:
   0: 'No'
   1: 'Yes'
-j3e:
+currently_incarcerated:
   0: 'No'
   1: 'Yes'
-m3:
+prefer_moud_type:
   1: Methadone
   2: Buprenorphine/Suboxone
   3: Naltrexone/Vivitrol
-m4:
+prefer_which_bup:
   1: I would prefer to receive daily buprenorphine-naloxone sublingual tablets or
     films (Suboxone)
-  2: I would prefer to receive monthly or weekly buprenorphine injections (e.g.,
-    Sublocade, Brixadi)
+  2: I would prefer to receive monthly or weekly buprenorphine injections (e.g., Sublocade,
+    Brixadi)
   3: I would prefer to receive the 6-month buprenorphine implant
-m5:
+prefer_which_naloxone:
   1: I would prefer to receive daily naltrexone oral (Revia)
   2: I would prefer to receive monthly naltrexone injections (Vivitrol)
   3: Don't know/No preference
-o1:
+sex_at_birth:
   1: Male
   2: Female
   99: Something else
-o2:
+gender_id:
   1: Male
   2: Female
   3: Transgender man/trans man/female-to-male (FTM)
   4: Transgender woman/trans woman/male-to-female (MTF)
   5: Genderqueer/gender nonconforming/neither exclusively male nor female
   6: Additional gender category (or other)
-o3:
+narcan_received:
   0: 'No'
   1: 'Yes'
-o3a:
+narcan_used:
   0: 'No'
   1: 'Yes'
-o3b:
+narcan_refilled:
   0: 'No'
   1: 'Yes'
-p1a:
+difficulty_chores:
   1: Without any difficulty
   2: With a little difficulty
   3: With some difficulty
   4: With much difficulty
   5: Unable to do
-p1b:
+difficulty_stairs:
   1: Without any difficulty
   2: With a little difficulty
   3: With some difficulty
   4: With much difficulty
   5: Unable to do
-p1c:
+difficulty_walking:
   1: Without any difficulty
   2: With a little difficulty
   3: With some difficulty
   4: With much difficulty
   5: Unable to do
-p1d:
+difficulty_traveling:
   1: Without any difficulty
   2: With a little difficulty
   3: With some difficulty
   4: With much difficulty
   5: Unable to do
-p2a:
+trouble_with_leisure:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p2b:
+trouble_with_family:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p2c:
+trouble_with_work:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p2d:
+trouble_with_activities:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p3a:
+past_week_fearful:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p3b:
+past_week_anxiety:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p3c:
+past_week_worried:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p3d:
+past_week_uneasy:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p4a:
+past_week_worthless:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p4b:
+past_week_helpless:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p4c:
+past_week_depressed:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p4d:
+past_week_hopeless:
   1: Never
   2: Rarely
   3: Sometimes
   4: Often
   5: Always
-p5a:
+past_week_fatigued:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p5b:
+past_week_tired:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p5c:
+past_week_rundown:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p5d:
+fatigue_level:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p6a:
+sleep_quality:
   1: Very poor
   2: Poor
   3: Fair
   4: Good
   5: Very good
-p6b:
+sleep_refreshing:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p6c:
+sleep_problems:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p6d:
+sleep_difficulty:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p7a:
+can_concentrate:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p7b:
+can_remember:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p8a:
+pain_daily_activity:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p8b:
+pain_work_around_house:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p8c:
+pain_social_activity:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-p8d:
+pain_household_chores:
   1: Not at all
   2: A little bit
   3: Somewhat
   4: Quite a bit
   5: Very much
-r1a:
+last_time_multiple_partners:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -363,7 +363,7 @@ r1a:
   4: Past month
   88: Do not know
   99: Not reported
-r1b:
+last_time_unprotected_sex:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -371,7 +371,7 @@ r1b:
   4: Past month
   88: Do not know
   99: Not reported
-r1c:
+last_time_sex_intoxicated:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -379,7 +379,7 @@ r1c:
   4: Past month
   88: Do not know
   99: Not reported
-r1d:
+last_time_injection_drug:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -387,7 +387,7 @@ r1d:
   4: Past month
   88: Do not know
   99: Not reported
-r1g:
+last_time_attacked_weapon:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -395,7 +395,7 @@ r1g:
   4: Past month
   88: Do not know
   99: Not reported
-r1h:
+last_time_physical_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -403,7 +403,7 @@ r1h:
   4: Past month
   88: Do not know
   99: Not reported
-r1j:
+last_time_sex_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -411,7 +411,7 @@ r1j:
   4: Past month
   88: Do not know
   99: Not reported
-r1k:
+last_time_emotional_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -419,7 +419,7 @@ r1k:
   4: Past month
   88: Do not know
   99: Not reported
-r1m:
+last_time_ongoing_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -427,7 +427,7 @@ r1m:
   4: Past month
   88: Do not know
   99: Not reported
-r1n:
+last_time_afraid_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -435,7 +435,7 @@ r1n:
   4: Past month
   88: Do not know
   99: Not reported
-r2a:
+last_time_distressed_past:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -443,7 +443,7 @@ r2a:
   4: Past month
   88: Do not know
   99: Not reported
-r2b:
+last_time_suicidal:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -451,10 +451,10 @@ r2b:
   4: Past month
   88: Do not know
   99: Not reported
-r3a:
+ever_dx_hiv:
   0: 'No'
   1: 'Yes'
-r3a_first_dx:
+first_dx_hiv:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -462,9 +462,9 @@ r3a_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-r3b:
+ever_dx_hcv:
   1: 'No'
-r3b_first_dx:
+first_dx_hcv:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -472,9 +472,9 @@ r3b_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-r3c:
+ever_dx_hepb:
   1: 'No'
-r3c_first_dx:
+first_dx_hepb:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -482,9 +482,9 @@ r3c_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-r3d:
+ever_dx_std:
   1: 'No'
-r3d_first_dx:
+first_dx_std:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -492,9 +492,9 @@ r3d_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-r3e:
+ever_dx_tb:
   1: 'No'
-r3e_first_dx:
+first_dx_tb:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -502,9 +502,9 @@ r3e_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-r3f:
+ever_dx_covid:
   1: 'No'
-r3f_first_dx:
+first_dx_covid:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -512,7 +512,7 @@ r3f_first_dx:
   4: Past month
   88: Do not know
   99: Not reported
-s1a:
+last_drug_use:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -520,7 +520,7 @@ s1a:
   4: Past month
   5: Do not know
   6: Not reported
-s1b:
+last_getting_using_drugs:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -528,7 +528,7 @@ s1b:
   4: Past month
   5: Do not know
   6: Not reported
-s1c:
+last_social_problems:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -536,7 +536,7 @@ s1c:
   4: Past month
   5: Do not know
   6: Not reported
-s1d:
+last_work_life_disruption:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -544,7 +544,7 @@ s1d:
   4: Past month
   5: Do not know
   6: Not reported
-s1e:
+last_withdrawal:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -552,7 +552,7 @@ s1e:
   4: Past month
   5: Do not know
   6: Not reported
-s2a:
+last_used_opioids:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -560,7 +560,7 @@ s2a:
   4: Past month
   5: Do not know
   6: Not reported
-s2b:
+last_opioid_overdose:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -568,7 +568,7 @@ s2b:
   4: Past month
   5: Do not know
   6: Not reported
-s2c:
+last_went_moud:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
@@ -576,55 +576,55 @@ s2c:
   4: Past month
   5: Do not know
   6: Not reported
-u14:
+received_sud_tx:
   0: 'No'
   1: 'Yes'
-u14a:
+sud_tx_organized:
   1: Strongly agree
   2: Somewhat agree
   3: Neutral
   4: Somewhat disagree
   5: Strongly disagree
-u14b:
+sud_tx_satisfied:
   1: Strongly agree
   2: Somewhat agree
   3: Neutral
   4: Somewhat disagree
   5: Strongly disagree
-u14c:
+sud_tx_efficient:
   1: Strongly agree
   2: Somewhat agree
   3: Neutral
   4: Somewhat disagree
   5: Strongly disagree
-u14d:
+sud_tx_personal:
   1: Strongly agree
   2: Somewhat agree
   3: Neutral
   4: Somewhat disagree
   5: Strongly disagree
-u14e:
+sud_tx_moud:
   1: Strongly agree
   2: Somewhat agree
   3: Neutral
   4: Somewhat disagree
   5: Strongly disagree
-u14f:
+intv_while_incarc:
   0: 'No'
   1: 'Yes'
-u15:
+ever_rx_moud:
   0: 'No'
   1: 'Yes'
-u6a:
+pc_reason_alc_drugs:
   0: 'No'
   1: 'Yes'
-u6b:
+pc_reason_mh:
   0: 'No'
   1: 'Yes'
-u6c:
+pc_reason_physical:
   0: 'No'
   1: 'Yes'
-u6d:
+pc_reason_other:
   0: 'No'
   1: 'Yes'
 visit_type:
