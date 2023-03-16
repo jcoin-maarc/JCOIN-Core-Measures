@@ -361,96 +361,72 @@ last_time_multiple_partners:
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_unprotected_sex:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_sex_intoxicated:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_injection_drug:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_attacked_weapon:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_physical_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_sex_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_emotional_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_ongoing_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_afraid_abuse:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_distressed_past:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_time_suicidal:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 ever_dx_hiv:
   0: 'No'
   1: 'Yes'
@@ -460,122 +436,99 @@ first_dx_hiv:
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
-ever_dx_hcv:
-  1: 'No'
+ever_dx_hcv:  
+  0: 'No'
+  1: 'Yes'
 first_dx_hcv:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
-ever_dx_hepb:
-  1: 'No'
+ever_dx_hepb:  
+  0: 'No'
+  1: 'Yes'
 first_dx_hepb:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 ever_dx_std:
-  1: 'No'
+  0: 'No'
+  1: 'Yes'
 first_dx_std:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
-ever_dx_tb:
-  1: 'No'
+ever_dx_tb:  
+  0: 'No'
+  1: 'Yes'
 first_dx_tb:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 ever_dx_covid:
-  1: 'No'
+  0: 'No'
+  1: 'Yes'
 first_dx_covid:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  88: Do not know
-  99: Not reported
 last_drug_use:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_getting_using_drugs:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_social_problems:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_work_life_disruption:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_withdrawal:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_used_opioids:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_opioid_overdose:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 last_went_moud:
   0: Never
   1: More than a year ago
   2: 4 to 12 months ago
   3: 2 to 3 months ago
   4: Past month
-  5: Do not know
-  6: Not reported
 received_sud_tx:
   0: 'No'
   1: 'Yes'
