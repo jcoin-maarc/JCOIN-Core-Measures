@@ -1,6 +1,7 @@
 #https://www.mkdocs.org/user-guide/configuration/#
 site_name: JCOIN Core Measures
 site_url: https://jcoin-maarc.github.io/JCOIN-Core-Measures
+repo_url: https://github.com/jcoin-maarc/JCOIN-Core-Measures
 nav:
   - index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
@@ -22,6 +23,8 @@ theme:
     # - navigation.tabs
     # - navigation.tabs.sticky
   favicon: assets/heal_logo.png
+  icon:
+    repo: fontawesome/brands/github
 extra_css:
   - stylesheets/extra.css
 extra:
