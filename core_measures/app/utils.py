@@ -55,7 +55,6 @@ def download_excel(dictionary):
                 df = pd.DataFrame([item])
 
             df.to_excel(writer,sheet_name=name)
-        writer.save()
     
     return buffer
 
