@@ -9,25 +9,20 @@ from pathlib import Path
 import click
 import re
 import petl as etl
-from core_measures.utils import combine_schemas_to_excel,JsonToCsv,CsvToJson
+from core_measures.utils import combine_schemas_to_excel,json_to_df,CsvToJson
 from frictionless import Schema
 
 jsons = list(Path(__file__).parents[1].joinpath("schemas").glob("*"))
 csvs = list(Path(__file__).parents[1].joinpath("csvs").glob("*"))
 
 def to_csv():
-    # convert json to csv
+   
     for path in jsons:
-
-        table_fields = JsonToCsv(path).table
-        headers = table_fields.header()
-        cols = [c for c in ['custom.jcoin:core_measure_section','name','title','type','description','trueValues','falseValues',
-            'constraints.enum'] if c in headers]
-        cols.extend([c for c in headers if not c in cols])
-
+        df = json_to_df(path)
         outdir = path.parent.with_stem("csvs")
-        table_fields.cut(cols).tocsv(outdir / path.with_suffix(".csv").name, encoding="utf-8")
+        df.to_csv(outdir / path.with_suffix(".csv").name,index=False)
 
+    # create excel
     xlsxpath = Path(outdir.with_name("xlsx"))
     xlsxpath.mkdir(exist_ok=True)
     combine_schemas_to_excel(csvs,str(xlsxpath/"core_measures.xlsx"))
@@ -45,7 +40,6 @@ def update_json():
     # run tocsv to make sure all files encoded properly and xlsx file updated
     to_csv()
 
-update_json()
 # click commands
 @click.group()
 def cli():

@@ -55,7 +55,7 @@ The public repository where data dictionaries are stored is located [here](https
 
 > Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
 
-## Version history (this list is no longer updated as we will now use tags)
+## Version history 
 - 1.0.0:
     upon putting all variables (besides MOUD follow up measures) into data model
 - 1.1.0: 
@@ -69,3 +69,8 @@ The public repository where data dictionaries are stored is located [here](https
     - corrected typos
 - 1.3.0b
     Added staff schemas (both baseline and "time-points")
+- 2.0.0
+    Added new variable names with more semantic meaning describing variable. The original names are kept in `custom.jcoin:original_name`
+    for ease of interoperatability. 
+- 2.0.1 (5/31/2023)
+    Added `visit_month` field.

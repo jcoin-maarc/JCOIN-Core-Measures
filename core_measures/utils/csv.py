@@ -2,7 +2,7 @@ import json
 from pathlib import Path
 from collections.abc import MutableMapping
 import petl as etl
-
+#TODO: change CsvToJson just to function
 def parse_dictionary_str(string,item_sep,keyval_sep):
     """ 
     parses a stringified dictionary into a dictionary
@@ -59,7 +59,7 @@ class CsvToJson:
 
         self.to_dict()
 
-    def to_dict(self):
+    def csv_to_dict(self):
 
         cols = etl.fieldnames(self.table) 
         listcols = ['constraints.enum','trueValues','falseValues','missingValues']   
