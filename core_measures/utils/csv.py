@@ -57,7 +57,7 @@ class CsvToJson:
     def __init__(self,csvpath):
         self.table = etl.fromcsv(csvpath,encoding="utf-8")
 
-        self.to_dict()
+        self.csv_to_dict()
 
     def csv_to_dict(self):
 
