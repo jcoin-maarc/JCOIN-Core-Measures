@@ -52,8 +52,11 @@ with tab0:
     excel_long = requests.get(url_long).content
     excel_file = pd.ExcelFile(io.BytesIO(excel_long))
     schemas = pd.read_excel(excel_file,sheet_name="schemas")
-    redox_colnames = ["schema","custom.jcoin:core_measure_section","name","custom.jcoin:original_name","constraints.enum"]
-    st.dataframe(schemas[redox_colnames])
+    #redox_colnames = ["schema","module","name","custom.jcoin:original_name","constraints.enum"]
+    cols_selected = st.multiselect("Variable properties",
+        options=schemas.columns.to_list(),
+        default=["schema","module","name","description"])
+    st.dataframe(schemas[cols_selected])
 
 print(lbls.keys)
 for name,tab in zip(lbls.keys(),[tab1,tab2,tab3,tab4]):
