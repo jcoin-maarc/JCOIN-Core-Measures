@@ -1,5 +1,6 @@
 {
-    "description": "Person-level measures. As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
+    "title":"Client participants: Baseline measures",
+    "description": "Measures collected before the start of the study for client participants. As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
     "fields": [
         {
             "module": "Record and linkage",
