@@ -6,24 +6,39 @@ import pandas as pd
 import io 
 import sys
 import json
+import re
 from collections.abc import MutableSequence
+
+def slugify(s):
+  s = s.lower().strip()
+  s = re.sub(r'[^\w\s-]', '', s)
+  s = re.sub(r'[\s_-]+', '-', s)
+  s = re.sub(r'^-+|-+$', '', s)
+  return s
 
 st.set_page_config(layout="wide")
 SCHEMA_DIR = "https://api.github.com/repos/jcoin-maarc/JCOIN-Core-Measures/contents/schemas"
 study_name = "JCOIN Core Measure"
 fields_propnames = ["fields","data_dictionary"]
+
 current_date = time.strftime("%Y_%m_%d")
+
+# Study title 
+st.markdown(f"# {study_name}")
+
 ## Read in schemas
 read_schema_dir = lambda schema_dir_url: requests.get(schema_dir_url).json()
 schemas = [json.loads(requests.get(schema["download_url"]).content) for schema in read_schema_dir(SCHEMA_DIR)]
-## Download button of all schemas
 
-# st.download_button(f"Click here to download all {study_name} data dictionaries",
-#     data=io.BytesIO(excel),
-#     file_name=Path(excel_url).stem+"_"+current_date+".xlsx")
 
-## Toggle the type of schema
-fields_toggle_type = "table"
+## Download button of all schemas in excel format
+## TODO: compile from schemas json array
+## TODO: make option of csvs with descriptor
+## NOTE: for now just leaving as core meaures
+excel = xlsx_file = requests.get(requests.get(re.sub("/schemas$","/xlsx",SCHEMA_DIR)).json()[0]["download_url"]).content
+st.download_button(f"Click here to download all {study_name} data dictionaries",
+    data=io.BytesIO(excel),
+    file_name="core_measures"+"_"+current_date+".xlsx")
 
 ## Select schema by title
 schemas_title_keyed = {schema["title"]:schema["fields"] for schema in schemas}
@@ -39,23 +54,29 @@ for prop in ["title","description"]: #items to go first
         orderedschema[prop] = schema.pop(prop)
 orderedschema.update(schema)
 
+
+## Toggle how fields are viewed
 field_tbl = pd.json_normalize(orderedschema[field_propname])
-selected_columns = st.multiselect(options=field_tbl.columns)
-if fields_toggle_type=="table":
-    orderedschema[field_propname] = field_tbl[selected_columns]
-elif fields_toggle_type=="json records":
+
+field_view_exts = {"table":".csv","json records":".json"}
+fields_view_type = st.radio(label="Variable View Type",options=field_view_ext.keys())
+if fields_view_type=="table":
+    fields = orderedschema[field_propname] = field_tbl[selected_columns]
+    download_fields = lambda fields: fields.to_csv(index=False).encode('utf-8')
+elif fields_view_type=="json records":
     fields = orderedschema[field_propname] = field_tbl[selected_columns].to_dict(orient="records")
+    download_fields = lambda fields: json.dumps(orderedschema,indent=2)
 else:
     raise Exception("only json and tabular toggle types")
 
-st.markdown(f"# {study_name}")
 
-st.download_button(f"Download Selected Fields from {selected} in csv",data=fields.to_csv(index=False).encode('utf-8'),file_name=f"{schema_name}.csv")
-st.download_button(f"Download Selected Fields {selected} in json",data=orderedschema,file_name=f"{schema_name}.json")
+# Download button for data dictionary
+st.download_button(f"Download Selected Data Dictionary in {selected} format",
+    data=download_fields(fields),
+    file_name=f"{slugify(selected)}{field_view_ext[fields_view_type]}")
 
-# st.download_button(f"Click here to download all {study_name} data dictionaries",
-#     data=io.BytesIO(excel),
-#     file_name=Path(excel_url).stem+"_"+current_date+".xlsx")
+
+# render schema properties
 for propname,prop in orderedschema.items():
 
     st.markdown(f"## {propname}")
@@ -64,26 +85,3 @@ for propname,prop in orderedschema.items():
         st.markdown("\n".join([f"- {val}" for val in prop]))
     else:
         st.write(prop)
-
-
-def download_excel(dictionary):
-    buffer = io.BytesIO()
-    with pd.ExcelWriter(buffer,engine="xlsxwriter") as writer:
-        for name,item in dictionary.items():
-            try:
-                df = pd.DataFrame(item)
-            except ValueError:
-                df = pd.DataFrame([item])
-
-            df.to_excel(writer,sheet_name=name)
-    
-    return buffer
-
-def makepage(schema_name):
-    fieldsdf = load_csv(f"{REPO_DIR}/csvs/{schema_name}.csv")
-    schema = load_schema(schema_name)
-    schema['fields'] = fieldsdf
-    buffer = download_excel(schema)
-
-    st.download_button(f"Download {schema_name} in json",data=Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_json(),file_name=f"{schema_name}.xlsx")
-    schema = render_schema_page(fieldsdf=fieldsdf,schema=schema,schema_name=schema_name)
