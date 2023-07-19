@@ -19,7 +19,7 @@ def slugify(s):
 st.set_page_config(layout="wide")
 SCHEMA_DIR = "https://api.github.com/repos/jcoin-maarc/JCOIN-Core-Measures/contents/schemas"
 SCHEMA_DIR = str(Path(__file__).parents[1]/"schemas")
-study_name = "JCOIN Core Measure"
+study_name = "JCOIN Core Measures"
 fields_propnames = ["fields","data_dictionary"]
 field_propname = "fields"
 current_date = time.strftime("%Y_%m_%d")
@@ -34,56 +34,73 @@ st.markdown(f"# {study_name}")
 # schemas = [json.loads(requests.get(schema["download_url"]).content) for schema in read_schema_dir(SCHEMA_DIR)]
 
 # Via local directory
-read_schema_dir = lambda _ : list(Path(SCHEMA_DIR).glob("*"))
-schemas = [json.loads(path.read_text()) for path in read_schema_dir()]
+schemas = [json.loads(path.read_text()) for path in Path(SCHEMA_DIR).glob("*")]
 
 ## Download button of all schemas in excel format
 ## TODO: compile from schemas json array
 ## TODO: make option of csvs with descriptor
 ## NOTE: for now just leaving as core meaures
-excel_path = Path(re.sub("/schemas$","/xlsx",SCHEMA_DIR)).as_posix()
-excel = xlsx_file = requests.get(requests.get(excel_path).json()[0]["download_url"]).content
-st.download_button(f"Click here to download all {study_name} data dictionaries",
-    data=io.BytesIO(excel),
-    file_name="core_measures"+"_"+current_date+".xlsx")
+excel = list(Path(SCHEMA_DIR).parent.joinpath("xlsx").glob("*"))[0]
+with open(excel,"rb") as f:
+    st.download_button(
+        f"Click here to download all {study_name} data dictionaries",
+        data=f,
+        file_name="core_measures"+"_"+current_date+".xlsx")
 
 ## Select schema by title
-selected = st.radio("Select a data dictionary:",options=[schema["title"] for schema in schemas])
+selected = st.selectbox("Select a data dictionary:",options=[schema["title"] for schema in schemas])
 for schema in schemas:
     if selected==schema["title"]:
         orderedschema = dict(schema)
 
-## Toggle how fields are viewed and downloaded
-field_tbl = pd.json_normalize(orderedschema[field_propname])
-field_columns = field_tbl.columns.tolist()
-selected_columns = st.multiselect(label="Selected Properties",options=field_columns,default=field_columns)
-field_view_exts = {"table":".csv","json records":".json"}
-fields_view_type = st.radio(label="Variable View Type",options=field_view_exts.keys())
-if fields_view_type=="table":
-    fields = orderedschema[field_propname] = field_tbl[selected_columns]
-    download_fields = lambda fields: fields.to_csv(index=False).encode('utf-8')
-    st_fields = lambda fields: st.dataframe(fields_tbl)
-elif fields_view_type=="json records":
-    fields = orderedschema[field_propname] = field_tbl[selected_columns].to_dict(orient="records")
-    download_fields = lambda fields: json.dumps(orderedschema,indent=2)
-    st_fields = lambda fields:st.json(fields)
-else:
-    raise Exception("only json and tabular toggle types")
+# Render schema properties
 
-
-# Download button for data dictionary
-st.download_button(f"Download Selected Data Dictionary in {selected} format",
-    data=download_fields(fields),
-    file_name=f"{slugify(selected)}{field_view_exts[fields_view_type]}")
-
-
-# render schema properties
 for propname,prop in orderedschema.items():
 
-    st.markdown(f"## {propname}")
+    ## fields property
     if propname==field_propname:
-        st_fields()
+        st.markdown(f"## `{propname}`")
+        
+        # Format fields
+        fields_tbl = pd.json_normalize(orderedschema[field_propname])
+        fields_columns = fields_tbl.columns.tolist()
+        ## Toggle how fields are viewed and downloaded
+        selected_columns = st.multiselect(label="Select Properties",options=fields_columns,default=fields_columns)
+        
+        ## Field view type
+        field_view_exts = {"table":".csv","json records":".json"}
+        fields_view_type = st.radio(
+            label="Variable View Format",
+            options=field_view_exts.keys(),
+            horizontal=True)
+
+        if fields_view_type=="table":
+            fields = orderedschema[field_propname] = fields_tbl[selected_columns]
+            download_fields = lambda fields: fields.to_csv(index=False).encode('utf-8')
+            st_fields = lambda fields: st.dataframe(fields_tbl)
+        elif fields_view_type=="json records":
+            fields = orderedschema[field_propname] = fields_tbl[selected_columns].to_dict(orient="records")
+            download_fields = lambda fields: json.dumps(orderedschema,indent=2)
+            st_fields = lambda fields:st.json(fields)
+        else:
+            raise Exception("only json and tabular toggle types")
+        st_fields(fields)
+
+        ## Download button for data dictionary
+         # NOTE: need selected columns so code here but displayed at `download_container`
+        st.download_button(f"Download Selected Fields in {fields_view_type} format",
+            data=download_fields(fields),
+            file_name=f"{slugify(selected)}{field_view_exts[fields_view_type]}")
+
+
+    ## any schema-level list property such as primaryKeys, missingValues
     elif isinstance(prop,MutableSequence):
+        st.markdown(f"## `{propname}`")
         st.markdown("\n".join([f"- {val}" for val in prop]))
+
+    ## other property types
+    elif isinstance(prop,str):
+        st.markdown(f"## `{propname}`")
+        st.markdown(prop)
     else:
         st.write(prop)
