@@ -77,7 +77,7 @@ for propname,prop in orderedschema.items():
         if fields_view_type=="table":
             fields = orderedschema[field_propname] = fields_tbl[selected_columns]
             download_fields = lambda fields: fields.to_csv(index=False).encode('utf-8')
-            st_fields = lambda fields: st.dataframe(fields_tbl)
+            st_fields = lambda fields: st.dataframe(fields)
         elif fields_view_type=="json records":
             fields = orderedschema[field_propname] = fields_tbl[selected_columns].to_dict(orient="records")
             download_fields = lambda fields: json.dumps(orderedschema,indent=2)
