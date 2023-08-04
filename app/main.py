@@ -8,7 +8,7 @@ import sys
 import json
 import re
 from collections.abc import MutableSequence
-
+from healdata_utils.utils import convert_rec_to_json
 def slugify(s):
   s = s.lower().strip()
   s = re.sub(r'[^\w\s-]', '', s)
@@ -79,7 +79,8 @@ for propname,prop in orderedschema.items():
             download_fields = lambda fields: fields.to_csv(index=False).encode('utf-8')
             st_fields = lambda fields: st.dataframe(fields)
         elif fields_view_type=="json records":
-            fields = orderedschema[field_propname] = fields_tbl[selected_columns].to_dict(orient="records")
+            flattened_fields= fields_tbl[selected_columns].to_dict(orient="records")
+            fields = orderedschema[field_propname] = [convert_rec_to_json(field) for field in flattened_fields]
             download_fields = lambda fields: json.dumps(orderedschema,indent=2)
             st_fields = lambda fields:st.json(fields)
         else:
