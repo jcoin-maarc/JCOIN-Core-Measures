@@ -1,7 +1,18 @@
 {
-    "title":"Client participants: Timepoint measures",
+    "title": "table-schema-time-points",
     "description": "Measures collected at all time points (baseline and follow ups).",
-    "fields": [
+    "primaryKey": [
+        "jdc_person_id",
+        "visit_number"
+    ],
+    "missingValues": [
+        "Don't know",
+        "Refused",
+        "Left blank",
+        "Legitimately skipped",
+        "Missing"
+    ],
+    "data_dictionary": [
         {
             "module": "Record and linkage",
             "name": "jdc_person_id",
@@ -2983,16 +2994,5 @@
             "original_name": "r3f_first_dx",
             "notes": "RECOMMENDED:  BEFORE SENSITIVE ITEMS SUCH AS THIS REMIND RESPONDENT ABOUT CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT WITH HUB CONSENT FORMS)"
         }
-    ],
-    "primaryKey": [
-        "jdc_person_id",
-        "visit_number"
-    ],
-    "missingValues": [
-        "Don't know",
-        "Refused",
-        "Left blank",
-        "Legitimately skipped",
-        "Missing"
     ]
 }
