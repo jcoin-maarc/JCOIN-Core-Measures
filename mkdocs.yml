@@ -5,7 +5,7 @@ repo_url: https://github.com/jcoin-maarc/JCOIN-Core-Measures
 nav:
   - index.md
   - Return to JCOIN Data Commons Documentation: https://jcoin-maarc.github.io/jdc-docs-public/
-  - Data Dictionary Search Tool: search-tool.md
+  - Variable level metdata: vlmd.md
   - Source PDF: source.md
 
 theme:
