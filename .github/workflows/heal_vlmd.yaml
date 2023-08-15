@@ -14,6 +14,8 @@ jobs:
   build:
     name: Convert to HEAL VLMD
     runs-on: ubuntu-latest
+    permissions:
+          contents: write
     steps:
       - name: Checkout master branch
         uses: actions/checkout@v3
