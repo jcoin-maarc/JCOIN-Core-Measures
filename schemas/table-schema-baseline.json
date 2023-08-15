@@ -61,15 +61,6 @@
         },
         {
             "module": "Demographics",
-            "name": "birth_date",
-            "title": "Birth date",
-            "type": "date",
-            "description": "What is your birth date?",
-            "original_name": "d1",
-            "format": "%Y%m%d"
-        },
-        {
-            "module": "Demographics",
             "name": "age",
             "title": "Age",
             "type": "integer",
