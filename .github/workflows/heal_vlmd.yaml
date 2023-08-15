@@ -26,8 +26,14 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install git+https://github.com/norc-heal/healdata-utils.git
+      
+      - name: Set Git user
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
       - name: Convert and commit files
         run: |
           python heal/convert.py
           git add *.json
           git commit -m "Updated HEAL VLMD"
+          git push
