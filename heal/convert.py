@@ -5,7 +5,7 @@ from healdata_utils.validators.validate import validate_vlmd_csv,validate_vlmd_j
 
 schemas = list(Path("schemas").glob("*.json"))
 
-
+# NOTE: temporarily avoiding additional properties not in HEAL schema
 for path in schemas:
     schema = json.loads(path.read_text())
     for prop in ["missingValues","primaryKey"]:
@@ -20,6 +20,6 @@ for path in schemas:
     jsonreport = validate_vlmd_json(dds["templatejson"])
 
     if csvreport["report"]["valid"] and jsonreport["report"]["valid"]:
-        Path("heal").joinpath(path.name).write_text(json.dumps(schema,indent=2))
+        Path("heal").joinpath(path.name).write_text(json.dumps(jsonreport["data"],indent=2))
     else:
         raise Exception(f"{str(path.name)} was not converted into a valid HEAL VLMD DD")
