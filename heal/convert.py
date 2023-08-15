@@ -19,7 +19,7 @@ for path in schemas:
     csvreport = validate_vlmd_csv(dds["templatecsv"]["data_dictionary"])
     jsonreport = validate_vlmd_json(dds["templatejson"])
 
-    if csvreport["valid"] and jsonreport["valid"]:
+    if csvreport["report"]["valid"] and jsonreport["report"]["valid"]:
         Path("heal").joinpath(path.name).write_text(json.dumps(schema,indent=2))
     else:
         raise Exception(f"{str(path.name)} was not converted into a valid HEAL VLMD DD")
