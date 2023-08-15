@@ -16,7 +16,7 @@ for path in schemas:
 
     
     dds = convert_frictionless_tableschema(schema)
-    csvreport = validate_vlmd_csv(dds["templatecsv"])
+    csvreport = validate_vlmd_csv(dds["templatecsv"]["data_dictionary"])
     jsonreport = validate_vlmd_json(dds["templatejson"])
 
     if csvreport["valid"] and jsonreport["valid"]:
