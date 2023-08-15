@@ -12,7 +12,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   build:
-    name: Build and Deploy Documentation
+    name: Convert to HEAL VLMD
     runs-on: ubuntu-latest
     steps:
       - name: Checkout master branch
@@ -26,7 +26,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install .
-      - name: Convert to HEAL VLMD
+      - name: Convert and commit files
         run: |
           python heal/convert.py
           git add *.json
