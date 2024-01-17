@@ -11,6 +11,8 @@ import copy
 from collections.abc import MutableMapping, MutableSequence, MutableSet,Sequence
 from functools import reduce
 
+from core_measures import schemas as schema_utils
+
 os.chdir(Path(__file__).parent)
 
 # load yaml
@@ -84,17 +86,6 @@ def run_pipeline_step(input, step):
     else:
         raise Exception("Step must be at least of length 1")
 
-# def render_markdown(item,schema,templatefile):
-#     env = jinja2.Environment(
-#         loader=jinja2.FileSystemLoader("docs/assets/templates"),
-#         trim_blocks=True,
-#         lstrip_blocks=True
-#     )
-
-#     template = env.get_template(templatefile)
-#     output = template.render(item=item,schema=schema)
-#     return output
-
 if __name__ == "__main__":
     # compile frictionless schema fields
     dictionary = load_all_yamls()
@@ -111,3 +102,5 @@ if __name__ == "__main__":
     for name,schema in tblschemas.items():
         Path(f"schemas/table-schema-{name}.json").write_text(json.dumps(schema, indent=4))
 
+    schema_utils.to_csv()
+    schema_utils.to_excel()
