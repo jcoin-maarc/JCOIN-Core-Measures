@@ -3,7 +3,7 @@
   "description": "Staff specific measures that may be collected at baseline or follow up time points.",
   "data_dictionary": [
     {
-      "module": "Record and linkage",
+      "section": "Record and linkage",
       "name": "jdc_person_id",
       "title": "JCOIN data commons person identifier",
       "type": "string",
@@ -14,7 +14,7 @@
       }
     },
     {
-      "module": "Record and linkage",
+      "section": "Record and linkage",
       "name": "visit_number",
       "title": "Visit Number",
       "type": "integer",
@@ -25,7 +25,7 @@
       }
     },
     {
-      "module": "Record and linkage",
+      "section": "Record and linkage",
       "name": "shifted_visit_dt",
       "title": "Visit Date (shifted)",
       "type": "date",
@@ -36,7 +36,7 @@
       "format": "%Y%m%d"
     },
     {
-      "module": "Record and linkage",
+      "section": "Record and linkage",
       "name": "visit_type",
       "title": "Visit Type",
       "type": "string",
@@ -50,7 +50,7 @@
       }
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_confidence",
       "title": "Confidence to implement",
       "type": "string",
@@ -67,7 +67,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-7"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_commitment",
       "title": "Commitment to implement",
       "type": "string",
@@ -84,7 +84,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-8"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_tracking",
       "title": "Confidence in tracking",
       "type": "string",
@@ -101,7 +101,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-9"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_attitude",
       "title": "Whatever it takes attitude to implement",
       "type": "string",
@@ -118,7 +118,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-10"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_org_support",
       "title": "Confidence in organizational support",
       "type": "string",
@@ -135,7 +135,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-11"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_want",
       "title": "Want to implement",
       "type": "string",
@@ -152,7 +152,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-12"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_momentum",
       "title": "Confidence in maintaining momentum",
       "type": "string",
@@ -169,7 +169,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-13"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_challenges",
       "title": "Confidence in handling challenges",
       "type": "string",
@@ -186,7 +186,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-14"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_determin",
       "title": "Determination in implementating",
       "type": "string",
@@ -203,7 +203,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-15"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_coordinate",
       "title": "Confidence in coordinating tasks",
       "type": "string",
@@ -220,7 +220,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-16"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_motivation",
       "title": "Motivation to implement",
       "type": "string",
@@ -237,7 +237,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-17"
     },
     {
-      "module": "Organizational readiness for implementing change (ORIC)",
+      "section": "Organizational readiness for implementing change (ORIC)",
       "name": "org_readiness_politics",
       "title": "Confidence in managing politics",
       "type": "string",
@@ -254,7 +254,7 @@
       "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-18"
     },
     {
-      "module": "Organizational Climate: Stress",
+      "section": "Organizational Climate: Stress",
       "name": "org_climate_pressure",
       "title": "Pressure",
       "type": "string",
@@ -271,7 +271,7 @@
       "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
     },
     {
-      "module": "Organizational Climate: Stress",
+      "section": "Organizational Climate: Stress",
       "name": "org_climate_stress",
       "title": "Stress and strain signs",
       "type": "string",
@@ -288,7 +288,7 @@
       "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
     },
     {
-      "module": "Organizational Climate: Stress",
+      "section": "Organizational Climate: Stress",
       "name": "org_climate_workload",
       "title": "Heavy workload",
       "type": "string",
@@ -305,7 +305,7 @@
       "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
     },
     {
-      "module": "Organizational Climate: Stress",
+      "section": "Organizational Climate: Stress",
       "name": "org_climate_frustration",
       "title": "Frustration",
       "type": "string",
@@ -322,7 +322,7 @@
       "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "attitude_methadone",
       "title": "MOUD Attitudes: Methadone",
       "type": "string",
@@ -340,7 +340,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "attitude_suboxone_oral",
       "title": "MOUD Attitudes: Buprenorphine (Suboxone) - oral",
       "type": "string",
@@ -358,7 +358,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "attitude_sublocade_inject",
       "title": "MOUD Attitudes: Buprenorphine (Sublocade) - monthly injection",
       "type": "string",
@@ -376,7 +376,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "attitude_naltrexone_oral",
       "title": "MOUD Attitudes: Naltrexone - oral",
       "type": "string",
@@ -394,7 +394,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "attitude_naltrexone_inject",
       "title": "MOUD Attitudes: Naltrexone (Vivitrol) - monthly injection",
       "type": "string",
@@ -412,7 +412,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "acceptance_methadone",
       "title": "MOUD Acceptance: Methadone",
       "type": "string",
@@ -430,7 +430,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "acceptance_suboxone_oral",
       "title": "MOUD Acceptance: Buprenorphine (Suboxone) - oral",
       "type": "string",
@@ -448,7 +448,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "acceptance_sublocade_inject",
       "title": "MOUD Acceptance: Buprenorphine (Sublocade) - monthly injection",
       "type": "string",
@@ -466,7 +466,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "acceptance_naltrexone_oral",
       "title": "MOUD Acceptance: Naltrexone - oral",
       "type": "string",
@@ -484,7 +484,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "acceptance_naltrexone_inject",
       "title": "MOUD Acceptance: Naltrexone (Vivitrol) - monthly injection",
       "type": "string",
@@ -502,7 +502,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "training_methadone",
       "title": "MOUD Training: Methadone",
       "type": "string",
@@ -520,7 +520,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "training_suboxone_oral",
       "title": "MOUD Training: Buprenorphine (Suboxone) - oral",
       "type": "string",
@@ -538,7 +538,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "training_sublocade_inject",
       "title": "MOUD Training: Buprenorphine (Sublocade) - monthly injection",
       "type": "string",
@@ -556,7 +556,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "training_naltrexone_oral",
       "title": "MOUD Training: Naltrexone - oral",
       "type": "string",
@@ -574,7 +574,7 @@
       }
     },
     {
-      "module": "Staff Attitudes Toward MOUD",
+      "section": "Staff Attitudes Toward MOUD",
       "name": "training_naltrexone_inject",
       "title": "MOUD Training: Naltrexone (Vivitrol) - monthly injection",
       "type": "string",
@@ -592,7 +592,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_fitting",
       "title": "Implementation Outcome Measures: Fitting",
       "type": "string",
@@ -608,7 +608,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_suitable",
       "title": "Implementation Outcome Measures: Suitable",
       "type": "string",
@@ -624,7 +624,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_applicable",
       "title": "Implementation Outcome Measures: Applicable",
       "type": "string",
@@ -640,7 +640,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_good match",
       "title": "Implementation Outcome Measures: Good match.",
       "type": "string",
@@ -656,7 +656,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_implementable",
       "title": "Implementation Outcome Measures: Implementable.",
       "type": "string",
@@ -672,7 +672,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_possible",
       "title": "Implementation Outcome Measures: Possible",
       "type": "string",
@@ -688,7 +688,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_doable",
       "title": "Implementation Outcome Measures: Doable",
       "type": "string",
@@ -704,7 +704,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_easy to use",
       "title": "Implementation Outcome Measures: Easy to use",
       "type": "string",
@@ -720,7 +720,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_approval",
       "title": "Implementation Outcome Measures: Approval",
       "type": "string",
@@ -736,7 +736,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_appealing",
       "title": "Implementation Outcome Measures: Appealing",
       "type": "string",
@@ -752,7 +752,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_like",
       "title": "Implementation Outcome Measures: Like",
       "type": "string",
@@ -768,7 +768,7 @@
       }
     },
     {
-      "module": "Implementation Outcome Measures",
+      "section": "Implementation Outcome Measures",
       "name": "outcome_welcome",
       "title": "Implementation Outcome Measures: Welcome",
       "type": "string",

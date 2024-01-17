@@ -3,7 +3,7 @@
     "description": "Measures collected before the start of the study for staff participants (most of these measures overlap with Client pariticpants: Baseline schema). As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
     "fields": [
         {
-            "module": "Record and linkage",
+            "section": "Record and linkage",
             "name": "jdc_person_id",
             "title": "JCOIN data commons person identifier",
             "type": "string",
@@ -15,7 +15,7 @@
             }
         },
         {
-            "module": "Enrollment",
+            "section": "Enrollment",
             "name": "quarter_enrolled",
             "title": "Quarter Enrolled",
             "type": "string",
@@ -28,7 +28,7 @@
             }
         },
         {
-            "module": "Enrollment",
+            "section": "Enrollment",
             "name": "staff_type",
             "title": "Staff Type",
             "type": "string",
@@ -39,7 +39,7 @@
             }
         },
         {
-            "module": "Enrollment",
+            "section": "Enrollment",
             "name": "current_study_status",
             "title": "Current Study Status",
             "type": "string",
@@ -57,7 +57,7 @@
             "original_name": "current_study_status"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "age",
             "title": "Age",
             "type": "integer",
@@ -65,7 +65,7 @@
             "original_name": "d1a"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "sex_at_birth",
             "title": "Sex at birth",
             "type": "string",
@@ -81,7 +81,7 @@
             "original_name": "o1"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "gender_id",
             "title": "Gender Identity",
             "type": "string",
@@ -101,7 +101,7 @@
             "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.] \r\n False if not 'Male' and not 'Transgender' else True"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "gender_id_condensed",
             "title": "Gender Identity (condensed)",
             "type": "string",
@@ -120,7 +120,7 @@
             "notes": "For gender/orientation/identity, use items O1-O2 if possible, otherwise use D4a-D4c.   [Must use one or the other.]"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_white",
             "title": "Race: White",
             "type": "boolean",
@@ -134,7 +134,7 @@
             "original_name": "d3_white"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_black",
             "title": "Race: Black or African American",
             "type": "boolean",
@@ -148,7 +148,7 @@
             "original_name": "d3_black"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_AIAN",
             "title": "Race: American Indian or Alaska Native",
             "type": "boolean",
@@ -162,7 +162,7 @@
             "original_name": "d3_american_indian"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_hawaiian_OPI",
             "title": "Race: Native Hawaiian or Other Pacific Islander",
             "type": "boolean",
@@ -176,7 +176,7 @@
             "original_name": "d3_hawaiian"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_asian",
             "title": "Race: Asian",
             "type": "boolean",
@@ -190,7 +190,7 @@
             "original_name": "d3_asian"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_other",
             "title": "Race: Other",
             "type": "boolean",
@@ -204,7 +204,7 @@
             "original_name": "d3_other"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_AI_tribe",
             "title": "Race: American indian principal tribe or community specified",
             "type": "string",
@@ -215,7 +215,7 @@
             }
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "race_other_specified",
             "title": "Race: Other specified",
             "type": "string",
@@ -226,7 +226,7 @@
             }
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "hispanic_latino",
             "title": "Hispanic, Latino, or Spanish Origin",
             "type": "boolean",
@@ -240,7 +240,7 @@
             "original_name": "d2"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "sex_orient_category",
             "title": "Sexual orientation",
             "type": "string",
@@ -257,7 +257,7 @@
             "original_name": "d4c"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "sex_orient_other",
             "title": "Sexual orientation:  Other specified",
             "type": "string",
@@ -265,7 +265,7 @@
             "original_name": "d4c_specify_other"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "ever_pregnant",
             "title": "Ever pregnant",
             "type": "string",
@@ -284,7 +284,7 @@
             "notes": "Does this just apply to that past 90 days?  If not, then the participant should be able to check more than one response."
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "marital_status",
             "title": "Marital status",
             "type": "string",
@@ -301,7 +301,7 @@
             "original_name": "d5"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "living_as_married",
             "title": "Married with partner",
             "type": "string",
@@ -315,7 +315,7 @@
             "original_name": "d5a"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "educ_category",
             "title": "Education",
             "type": "string",
@@ -336,7 +336,7 @@
             "original_name": "d6"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "educ_highest_grade",
             "title": "Education:  Highest grade level (if less than GED or h.s. diploma)",
             "type": "integer",
@@ -344,7 +344,7 @@
             "original_name": "d6_grade"
         },
         {
-            "module": "Demographics",
+            "section": "Demographics",
             "name": "educ_other_specified",
             "title": "Education: Other specified",
             "type": "string",

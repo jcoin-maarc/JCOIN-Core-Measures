@@ -1,7 +1,7 @@
 title: 'Client participants: Timepoint measures'
 description: Measures collected at all time points (baseline and follow ups).
 fields:
-- module: Record and linkage
+- section: Record and linkage
   name: jdc_person_id
   title: JCOIN data commons person identifier
   type: string
@@ -11,7 +11,7 @@ fields:
   constraints:
     required: true
     pattern: "[A-Z][0-9]{3}-[0-9]{4}"
-- module: Record and linkage
+- section: Record and linkage
   name: visit_number
   title: Visit Number
   type: integer
@@ -21,7 +21,7 @@ fields:
   constraints:
     required: true
     minimum: 1
-- module: Record and linkage
+- section: Record and linkage
   name: visit_month
   title: Visit Month
   type: string
@@ -37,7 +37,7 @@ fields:
   constraints:
     required: true
     pattern: "^Baseline$|^\\d+ month$"
-- module: Record and linkage
+- section: Record and linkage
   name: shifted_visit_date
   title: Visit Date (shifted)
   type: date
@@ -51,7 +51,7 @@ fields:
   constraints:
     required: true
   format: "%Y%m%d"
-- module: Record and linkage
+- section: Record and linkage
   name: visit_type
   title: Visit Type
   type: string
@@ -62,7 +62,7 @@ fields:
     - Follow-up
     required: true
   original_name: visit_type
-- module: Substance Use
+- section: Substance Use
   name: last_drug_use
   title: Last time drug use
   type: string
@@ -80,7 +80,7 @@ fields:
   original_name: s1a
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_getting_using_drugs
   title: 'Last time drug use: getting, using, or recovering'
   type: string
@@ -99,7 +99,7 @@ fields:
   original_name: s1b
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_social_problems
   title: 'Last time drug use: social dysfunction'
   type: string
@@ -118,7 +118,7 @@ fields:
   original_name: s1c
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_work_life_disruption
   title: 'Last time drug use: work or life dysfunction'
   type: string
@@ -137,7 +137,7 @@ fields:
   original_name: s1d
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_withdrawal
   title: 'Last time drug use: withdrawal'
   type: string
@@ -157,7 +157,7 @@ fields:
   original_name: s1e
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_used_opioids
   title: 'Last time drug use: any opioids'
   type: string
@@ -177,7 +177,7 @@ fields:
   original_name: s2a
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_opioid_overdose
   title: 'Last time drug use: opioid overdose'
   type: string
@@ -196,7 +196,7 @@ fields:
   original_name: s2b
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: last_went_moud
   title: 'Last time drug use: OUD medication-assisted treatment'
   type: string
@@ -214,7 +214,7 @@ fields:
   original_name: s2c
   notes: Not reported not a part of the core measures but id'ed a few missing values
     that cant be accounted for by skip logic. In future, may want to make more precise
-- module: Substance Use
+- section: Substance Use
   name: times_opioid_overdose
   title: Opioid Overdose Count
   type: integer
@@ -225,7 +225,7 @@ fields:
   original_name: s3a
   notes: Overdose means that you took enough of the drug that it caused a life-threatening
     reaction that required medical attention
-- module: Substance Use
+- section: Substance Use
   name: times_naloxone
   title: 'Opioid Overdose Count: Receiving Naloxone'
   type: integer
@@ -235,14 +235,14 @@ fields:
   original_name: s3b
   notes: Overdose means that you took enough of the drug that it caused a life-threatening
     reaction that required medical attention
-- module: Substance Use
+- section: Substance Use
   name: who_gave_naloxone
   title: Person Who Administered Nalaxone for Overdose
   type: any
   description: Who administered the naloxone or Narcan? (SELECT ALL THAT APPLY)
   original_name: s3c
   notes: 'TODO: expand fields to each of the possible selections'
-- module: Substance Use
+- section: Substance Use
   name: drugs_before_overdose
   title: Drugs 4 hrs Before Overdose
   type: any
@@ -250,7 +250,7 @@ fields:
     ALL THAT APPLY)
   original_name: s3d
   notes: 'TODO: expand fields to each of the possible selections'
-- module: Substance Use
+- section: Substance Use
   name: times_ems_after_overdose
   title: Emergency Medical Service Following Overdose
   type: integer
@@ -258,7 +258,7 @@ fields:
     the past xx days (since last assessment), how many times did you (CAN CODE 0 IF
     NEVER ON S2b). . ."
   original_name: s3e
-- module: Substance Use
+- section: Substance Use
   name: times_er_after_overdose
   title: Emergency Department Visit Count Following Overdose
   type: integer
@@ -266,7 +266,7 @@ fields:
     the past xx days (since last assessment), how many times did you (CAN CODE 0 IF
     NEVER ON S2b). . ."
   original_name: s3f
-- module: Substance Use
+- section: Substance Use
   name: times_hospital_after_overdose
   title: Hospital Admissions Count Following Overdose
   type: integer
@@ -274,7 +274,7 @@ fields:
     past xx days (since last assessment), how many times did you (CAN CODE 0 IF NEVER
     ON S2b). . ."
   original_name: s3g
-- module: Substance Use
+- section: Substance Use
   name: tx_refer_after_overdose
   title: Substance Use Treatment Referral Count Following Overdose
   type: integer
@@ -282,7 +282,7 @@ fields:
     EMS, ED or hospital staff?] During the past xx days (since last assessment), how
     many times did you (CAN CODE 0 IF NEVER ON S2b). . ."
   original_name: s3h
-- module: Substance Use
+- section: Substance Use
   name: days_drug_use
   title: Drug Use Count
   type: integer
@@ -290,7 +290,7 @@ fields:
     marijuana or other illicit drugs?    ] During the past xx days (since last assessment),
     on how many days did you. . . [Write 0 days if no use]"
   original_name: s4a
-- module: Substance Use
+- section: Substance Use
   name: days_alcohol_use
   title: Alcohol Use Count
   type: integer
@@ -298,7 +298,7 @@ fields:
     scotch, tequila, whiskey, wine or mixed drinks)?    ] During the past xx days
     (since last assessment), on how many days did you. . . [Write 0 days if no use]"
   original_name: s4b
-- module: Substance Use
+- section: Substance Use
   name: days_alcohol_binge
   title: 'Alcohol Use Count: Binge Drinking'
   type: integer
@@ -306,7 +306,7 @@ fields:
     past xx days (since last assessment), on how many days did you. . . [Write 0 days
     if no use]"
   original_name: s4c
-- module: Substance Use
+- section: Substance Use
   name: days_medical_marijuana
   title: 'Marijuana use count: medical'
   type: integer
@@ -315,7 +315,7 @@ fields:
     the past xx days (since last assessment), on how many days did you. . . [Write
     0 days if no use]"
   original_name: s4d
-- module: Substance Use
+- section: Substance Use
   name: days_other_marijuana
   title: 'Marijuana use count: Not own'
   type: integer
@@ -325,7 +325,7 @@ fields:
     the past xx days (since last assessment), on how many days did you. . . [Write
     0 days if no use]"
   original_name: s4e
-- module: Substance Use
+- section: Substance Use
   name: days_heroin
   title: 'Opioid use count: Heroin'
   type: integer
@@ -333,7 +333,7 @@ fields:
     drugs)?     ] During the past xx days (since last assessment), on how many days
     did you. . . [Write 0 days if no use]"
   original_name: s4f
-- module: Substance Use
+- section: Substance Use
   name: days_fentanyl
   title: 'Opioid use count: Fentanyl'
   type: integer
@@ -341,7 +341,7 @@ fields:
     drugs)?    ] During the past xx days (since last assessment), on how many days
     did you. . . [Write 0 days if no use]"
   original_name: s4g
-- module: Substance Use
+- section: Substance Use
   name: days_non_rx_methadone
   title: 'Opioid use count: Street Methadone'
   type: integer
@@ -349,7 +349,7 @@ fields:
     \    ] During the past xx days (since last assessment), on how many days did you.
     . . [Write 0 days if no use]"
   original_name: s4h
-- module: Substance Use
+- section: Substance Use
   name: days_non_rx_suboxone
   title: 'Opioid use count: Suboxone'
   type: integer
@@ -357,7 +357,7 @@ fields:
     \      ] During the past xx days (since last assessment), on how many days did
     you. . . [Write 0 days if no use]"
   original_name: s4j
-- module: Substance Use
+- section: Substance Use
   name: days_other_opioids
   title: 'Opioid use count: other'
   type: integer
@@ -367,7 +367,7 @@ fields:
     codeine, Vicodin, Zohydro)?       ] During the past xx days (since last assessment),
     on how many days did you. . . [Write 0 days if no use]"
   original_name: s4k
-- module: Substance Use
+- section: Substance Use
   name: days_cocaine
   title: Cocaine use count
   type: integer
@@ -375,7 +375,7 @@ fields:
     forms of cocaine?       ] During the past xx days (since last assessment), on
     how many days did you. . . [Write 0 days if no use]"
   original_name: s4m
-- module: Substance Use
+- section: Substance Use
   name: days_amphetamines
   title: Speed use count
   type: integer
@@ -383,7 +383,7 @@ fields:
     or other forms of speed?       ] During the past xx days (since last assessment),
     on how many days did you. . . [Write 0 days if no use]"
   original_name: s4n
-- module: Substance Use
+- section: Substance Use
   name: days_benzo
   title: Benzodiazapine, anti-anxiety, and tranquilizer use count
   type: integer
@@ -393,7 +393,7 @@ fields:
     Xanax)?      ] During the past xx days (since last assessment), on how many days
     did you. . . [Write 0 days if no use]"
   original_name: s4p
-- module: Substance Use
+- section: Substance Use
   name: days_other_drugs
   title: 'Drug use count: other'
   type: integer
@@ -401,7 +401,7 @@ fields:
     mentioned (such as hallucinogens, downers)? ] During the past xx days (since last
     assessment), on how many days did you. . . [Write 0 days if no use]"
   original_name: s4z
-- module: Substance Use
+- section: Substance Use
   name: other_drug_describe
   title: 'Drug use: description of other drugs'
   type: string
@@ -410,7 +410,7 @@ fields:
     xx days (since last assessment), on how many days did you. . . [Write 0 days if
     no use]"
   original_name: s4z_describe
-- module: Substance Use
+- section: Substance Use
   name: days_confined_no_use
   title: Place of No Opioid Use (Jail, Hospital, etc)
   type: integer
@@ -419,7 +419,7 @@ fields:
     place where you could not use heroin, fentanyl, other opioids, alcohol, marijuana
     or other drugs? (USE 0 FOR NONE)
   original_name: s5
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_illegal_activity
   title: Activities against law besides drugs
   type: integer
@@ -428,7 +428,7 @@ fields:
     law besides drug use? [IF 0, GO TO J2]
   original_name: j1
   notes: "[IF 0, GO TO J2]"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_drug_possession
   title: Drug possession
   type: integer
@@ -437,7 +437,7 @@ fields:
     charge names associated with behavior for reference only)"
   original_name: j1a1
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_public_drunk
   title: Drunkenness or other liquor law violations
   type: integer
@@ -446,7 +446,7 @@ fields:
     you...(common charge names associated with behavior for reference only)"
   original_name: j1a2
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_dui
   title: Driving under the influence or while intoxicated
   type: integer
@@ -456,7 +456,7 @@ fields:
     behavior for reference only)"
   original_name: j1a3
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_drug_dealing
   title: Possession, dealing, distribution or sale of drugs
   type: integer
@@ -466,7 +466,7 @@ fields:
     only)"
   original_name: j1a4
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_vandalism
   title: Vandalism or property destruction
   type: integer
@@ -476,7 +476,7 @@ fields:
     for reference only)"
   original_name: j1a5
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_stolen_goods
   title: Receiving, possessing or selling stolen goods
   type: integer
@@ -486,7 +486,7 @@ fields:
     only)"
   original_name: j1a6
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_forgery
   title: Forgery, fraud or embezzlement
   type: integer
@@ -496,7 +496,7 @@ fields:
     names associated with behavior for reference only)"
   original_name: j1a7
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_shoplift
   title: Shoplifting
   type: integer
@@ -505,7 +505,7 @@ fields:
     charge names associated with behavior for reference only)"
   original_name: j1a8
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_theft
   title: Larceny or theft
   type: integer
@@ -515,7 +515,7 @@ fields:
     only)"
   original_name: j1a9
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_burglary
   title: Burglary or breaking and entering
   type: integer
@@ -525,7 +525,7 @@ fields:
     behavior for reference only)"
   original_name: j1a10
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_auto_theft
   title: Motor vehicle theft
   type: integer
@@ -534,7 +534,7 @@ fields:
     have you...(common charge names associated with behavior for reference only)"
   original_name: j1a11
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_carjacking
   title: Carjacking
   type: integer
@@ -543,7 +543,7 @@ fields:
     names associated with behavior for reference only)"
   original_name: j1a12
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_assault
   title: Simple assault or battery
   type: integer
@@ -552,7 +552,7 @@ fields:
     you...(common charge names associated with behavior for reference only)"
   original_name: j1a13
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_robbery
   title: Robbery
   type: integer
@@ -562,7 +562,7 @@ fields:
     only)"
   original_name: j1a14
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_aggravated_assault
   title: Aggravated assault or battery
   type: integer
@@ -571,7 +571,7 @@ fields:
     times have you...(common charge names associated with behavior for reference only)"
   original_name: j1a15
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_rape
   title: Forcible rape
   type: integer
@@ -581,7 +581,7 @@ fields:
     only)"
   original_name: j1a16
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_homicide
   title: Murder, homicide or no-negligent manslaughter
   type: integer
@@ -591,7 +591,7 @@ fields:
     with behavior for reference only)"
   original_name: j1a17
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_arson
   title: Arson
   type: integer
@@ -600,7 +600,7 @@ fields:
     you...(common charge names associated with behavior for reference only)"
   original_name: j1a18
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_prostitution
   title: Prostitution, pimping or commercialized sex
   type: integer
@@ -609,7 +609,7 @@ fields:
     times have you...(common charge names associated with behavior for reference only)"
   original_name: j1a19
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_other_unlawful
   title: Other unlawful activities
   type: integer
@@ -621,147 +621,147 @@ fields:
     behavior for reference only)"
   original_name: j1a99
   notes: "(common charge names associated with behavior for reference only)"
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_charged_arrests
   title: Overall charged arrests
   type: integer
   description: During the past 90 days (since last assessment), how many times were
     you arrested and charged?
   original_name: j2
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_possession
   title: Drug possession arrests
   type: integer
   description: "[Number of arrests for drug possession (for small amounts)] During
     the past 90 days (since last assessment)"
   original_name: j2a
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_drunk
   title: Law violations arrests
   type: integer
   description: "[Number of arrests for drunkenness or other liquor law violations]
     During the past 90 days (since last assessment)"
   original_name: j2b
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_dui
   title: Driving under the influence/intoxicated arrests
   type: integer
   description: "[Number of arrests for driving under the influence or while intoxicated]
     During the past 90 days (since last assessment)"
   original_name: j2c
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_drug_dealing
   title: Drug activity arrests
   type: integer
   description: "[Number of arrests for possession, dealing, distribution or sale of
     drugs] During the past 90 days (since last assessment)"
   original_name: j2d
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_vandalism
   title: Vandalism or property destruction arrests
   type: integer
   description: "[Number of arrests for vandalism or property destruction] During the
     past 90 days (since last assessment)"
   original_name: j2e
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_stolen_goods
   title: Stolen goods arrests
   type: integer
   description: "[Number of arrests for receiving, possessing or selling stolen goods]
     During the past 90 days (since last assessment)"
   original_name: j2f
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_forgery
   title: Forgery, fraud or embezzlement arrests
   type: integer
   description: "[Number of arrests for forgery, fraud or embezzlement] During the
     past 90 days (since last assessment)"
   original_name: j2g
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_shoplifting
   title: Shoplifting arrests
   type: integer
   description: "[Number of arrests for shoplifting] During the past 90 days (since
     last assessment)"
   original_name: j2h
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_theft
   title: Theft/larceny arrests
   type: integer
   description: "[Number of arrests for larceny or theft] During the past 90 days (since
     last assessment)"
   original_name: j2i
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_burglary
   title: Burglary or breaking and entering arrests
   type: integer
   description: "[Number of arrests for burglary or breaking and entering] During the
     past 90 days (since last assessment)"
   original_name: j2j
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_auto_theft
   title: Vehicle theft arrests
   type: integer
   description: "[Number of arrests for motor vehicle theft] During the past 90 days
     (since last assessment)"
   original_name: j2k
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_carjacking
   title: Car jacking arrests
   type: integer
   description: "[Number of arrests for car jacking] During the past 90 days (since
     last assessment)"
   original_name: j2l
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_assault
   title: Simple assault or battery arrests
   type: integer
   description: "[Number of arrests for simple assault or battery] During the past
     90 days (since last assessment)"
   original_name: j2m
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_robbery
   title: Robbery arrests
   type: integer
   description: "[Number of arrests for robbery] During the past 90 days (since last
     assessment)"
   original_name: j2n
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_aggravated
   title: Aggravated assault or battery arrests
   type: integer
   description: "[Number of arrests for aggravated assault or battery] During the past
     90 days (since last assessment)"
   original_name: j2o
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_rape
   title: Forcible rape arrests
   type: integer
   description: "[Number of arrests for forcible rape] During the past 90 days (since
     last assessment)"
   original_name: j2p
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_homicide
   title: Negligent manslaughter arrests
   type: integer
   description: "[Number of arrests for murder, homicide or non-negligent manslaughter]
     During the past 90 days (since last assessment)"
   original_name: j2q
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_arson
   title: Arson arrests
   type: integer
   description: "[Number of arrests for arson] During the past 90 days (since last
     assessment)"
   original_name: j2r
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_prostitution
   title: Commercialized sex arrests
   type: integer
   description: "[Number of arrests for prostitution, pimping or commercialized sex]
     During the past 90 days (since last assessment)"
   original_name: j2s
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_arrest_other
   title: Other charges arrests
   type: integer
@@ -770,35 +770,35 @@ fields:
     paraphernalia, runaway, curfew, truancy) ] During the past 90 days (since last
     assessment)"
   original_name: j2t
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_electronic_monitoring
   title: Electronic monitoring
   type: integer
   description: "[...on electronic monitoring?] During the past xx days (since last
     assessment), how many days have you been ..."
   original_name: j3a
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_house_arrest
   title: House arrest
   type: integer
   description: "[...on house arrest?] During the past xx days (since last assessment),
     how many days have you been ..."
   original_name: j3b
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_jail
   title: Jail time
   type: integer
   description: "[...in jail?] During the past xx days (since last assessment), how
     many days have you been ..."
   original_name: j3c
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_prison
   title: Prison time
   type: integer
   description: "[...in prison?] During the past xx days (since last assessment), how
     many days have you been ..."
   original_name: j3d
-- module: Justice Involvement
+- section: Justice Involvement
   name: currently_incarcerated
   title: Current jail or prison
   type: boolean
@@ -809,62 +809,62 @@ fields:
   - 'No'
   original_name: j3e
   notes: 'MBK: added Unknown to satisfy a small amount of respondents for one hub.'
-- module: Justice Involvement
+- section: Justice Involvement
   name: length_current_incarceration
   title: Length of jail or prison time
   type: integer
   description: How long have you been in jail or prison? (just this episode)
   original_name: j3f
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_parole
   title: Parole
   type: integer
   description: "[...been on parole?] During the past xx days (since last assessment),
     how many days have you..."
   original_name: j4a
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_probation
   title: Probation
   type: integer
   description: "[...been on probation?] During the past xx days (since last assessment),
     how many days have you..."
   original_name: j4b
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_other_supervision
   title: Other kind of community supervision
   type: integer
   description: "[...been on any other kind of community supervision?] During the past
     xx days (since last assessment), how many days have you..."
   original_name: j4c
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_met_probation_officer
   title: Meeting with probation or parole officer
   type: integer
   description: "[...met with your probation or parole officer?] During the past xx
     days (since last assessment), how many days have you..."
   original_name: j4d
-- module: Justice Involvement
+- section: Justice Involvement
   name: days_trouble_probation_officer
   title: Trouble with probation or parole officer
   type: integer
   description: "[...been in trouble with your probation or parole officer?] During
     the past xx days (since last assessment), how many days have you..."
   original_name: j4e
-- module: Justice Involvement
+- section: Justice Involvement
   name: number_lifetime_arrests
   title: Life time arrests
   type: integer
   description: "[...how many times in your life have you been arrested including as
     a juvenile?] During your lifetime..."
   original_name: j5a
-- module: Justice Involvement
+- section: Justice Involvement
   name: age_first_arrest
   title: First time arrest
   type: integer
   description: "[...how old were you the first time you were arrested? ] During your
     lifetime..."
   original_name: j5b
-- module: Justice Involvement
+- section: Justice Involvement
   name: years_lifetime_incarceration
   title: Lifetime years in detention, jail, or prison time
   type: number
@@ -872,7 +872,7 @@ fields:
     during your lifetime?] During your lifetime..."
   original_name: j5c_years
   notes: 'MBK: changed from integer to number to allow partial years/months'
-- module: Justice Involvement
+- section: Justice Involvement
   name: months_lifetime_incarceration
   title: Lifetime months in detention, jail, or prison time
   type: number
@@ -880,21 +880,21 @@ fields:
     during your lifetime?] During your lifetime..."
   original_name: j5c_months
   notes: 'MBK: changed from integer to number to allow partial years/months'
-- module: Justice Involvement
+- section: Justice Involvement
   name: times_guilty_sentenced
   title: Lifetime guity and sentenced
   type: integer
   description: "[...how many times have you been found guilty and sentenced (including
     adjudications as a youth or convictions as an adult)?] During your lifetime..."
   original_name: j5d
-- module: Justice Involvement
+- section: Justice Involvement
   name: age_first_convicted
   title: First time adjudication conviction
   type: integer
   description: "[...how old were you the first time you were adjudicated or convicted?]
     During your lifetime..."
   original_name: j5e
-- module: Utilization of Services
+- section: Utilization of Services
   name: times_er_visits
   title: 'Emergency room:  Number of visits'
   type: integer
@@ -902,7 +902,7 @@ fields:
     to the hospital?] During the past xx days (since last assessment), how many .
     . . [Write 0 days if you have not had this experience]"
   original_name: u1
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_hospital_detox
   title: 'Hospital detox program: Number of nights'
   type: integer
@@ -910,7 +910,7 @@ fields:
     alcohol and other drug use (across all episodes)?] During the past xx days (since
     last assessment), how many . . . [Write 0 days if you have not had this experience]"
   original_name: u2
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_hospitalized
   title: 'Hospitalization:  Number of nights'
   type: integer
@@ -918,7 +918,7 @@ fields:
     During the past xx days (since last assessment), how many . . . [Write 0 days
     if you have not had this experience]"
   original_name: u3
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_residential_detox
   title: 'Residential detox: Number of nights'
   type: integer
@@ -927,7 +927,7 @@ fields:
     xx days (since last assessment), how many . . . [Write 0 days if you have not
     had this experience]"
   original_name: u4
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_residential_sud_tx
   title: 'Residential treatment program for alcohol/drugs: Number of nights'
   type: integer
@@ -935,7 +935,7 @@ fields:
     or drug use?] During the past xx days (since last assessment), how many . . .
     [Write 0 days if you have not had this experience]"
   original_name: u5a
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_residential_mh
   title: 'Residential treatment program for mental health: Number of nights'
   type: integer
@@ -943,7 +943,7 @@ fields:
     health?] During the past xx days (since last assessment), how many . . . [Write
     0 days if you have not had this experience]"
   original_name: u5b
-- module: Utilization of Services
+- section: Utilization of Services
   name: nights_physical_rehab
   title: 'Rehab facility for physical health: Number of nights'
   type: integer
@@ -951,7 +951,7 @@ fields:
     facility for your physical health?] During the past xx days (since last assessment),
     how many . . . [Write 0 days if you have not had this experience]"
   original_name: u5c
-- module: Utilization of Services
+- section: Utilization of Services
   name: visits_primary_care
   title: 'Primary care provider:  Number of visits'
   type: integer
@@ -959,7 +959,7 @@ fields:
     nurse practitioner, or physician's assistant)?] During the past xx days (since
     last assessment), how many . . . [Write 0 days if you have not had this experience]"
   original_name: u6
-- module: Utilization of Services
+- section: Utilization of Services
   name: pc_reason_alc_drugs
   title: 'Primary care visit reason: Alcohol/drug use'
   type: boolean
@@ -970,7 +970,7 @@ fields:
   falseValues:
   - 'No'
   original_name: u6a
-- module: Utilization of Services
+- section: Utilization of Services
   name: pc_reason_mh
   title: 'Primary care visit reason: Mental health'
   type: boolean
@@ -981,7 +981,7 @@ fields:
   falseValues:
   - 'No'
   original_name: u6b
-- module: Utilization of Services
+- section: Utilization of Services
   name: pc_reason_physical
   title: 'Primary care visit reason:  Physical health'
   type: boolean
@@ -992,7 +992,7 @@ fields:
   falseValues:
   - 'No'
   original_name: u6c
-- module: Utilization of Services
+- section: Utilization of Services
   name: pc_reason_other
   title: 'Primary care visit reason:  Some other reason (specify)'
   type: boolean
@@ -1003,14 +1003,14 @@ fields:
   falseValues:
   - 'No'
   original_name: u6d
-- module: Utilization of Services
+- section: Utilization of Services
   name: pc_reason_other_specify
   title: 'Primary care visit reason: Specify other reason'
   type: string
   description: "[Specify other reason you visited primary care provider] Why did you
     visit a primary care provider? (ADD SKIP LOGIC)"
   original_name: u6d_specify
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days
   title: 'Outpatient treament program for alcohol/substance use: Number of days'
   type: integer
@@ -1019,41 +1019,41 @@ fields:
     Other than times you already mentioned in <reference to u6>, during the past 3
     months (since last assessment), how many..."
   original_name: u7
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days_visited
   title: 'Outpatient treatment program: Number of days physically visiting program'
   type: integer
   description: How many of these days did you physically visit the (outpatient treatment)
     program?
   original_name: u7a
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days_online
   title: 'Outpatient treatment program: Number of days participating online'
   type: integer
   description: How many of these days did you participate (in the outpatient tx program)
     online (e.g., smart phone, computer, or tablet)?
   original_name: u7b
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days_doctor
   title: 'Outpatient treatment program: Number of days seeing doctor'
   type: integer
   description: How many of these days did you see a doctor (at the outpatient treatment
     program)?
   original_name: u7c
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days_therapy
   title: 'Outpatient treatment program: Number of days participating in therapy'
   type: integer
   description: How many of these days did you only participate in individual or group
     therapy?
   original_name: u7d
-- module: Utilization of Services
+- section: Utilization of Services
   name: op_tx_days_moud_only
   title: 'Outpatient treatment program: Number of days for medication management'
   type: integer
   description: How many of these days were for medication management only?
   original_name: u7e
-- module: Utilization of Services
+- section: Utilization of Services
   name: psych_visits
   title: 'Psychiatrist/psychologist:  Number of total visits'
   type: integer
@@ -1061,20 +1061,20 @@ fields:
     (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist
     (Ph.D., Psy.D)?
   original_name: u8
-- module: Utilization of Services
+- section: Utilization of Services
   name: psych_visits_in_person
   title: 'Psychiatrist/psychologist: Number of in-person visits'
   type: integer
   description: How many of these times did you physically visit the program (psychiatrist/psychologist)?
   original_name: u8a
-- module: Utilization of Services
+- section: Utilization of Services
   name: psych_visits_online
   title: 'Psychiatrist/psychologist: Number of online visits'
   type: integer
   description: How many of these times did you participate online (phone, computer,
     or tablet; with a psychiatrist/psychologist)?
   original_name: u8b
-- module: Utilization of Services
+- section: Utilization of Services
   name: counselor_visits
   title: 'Counselor/social worker: Number of total visits'
   type: integer
@@ -1082,28 +1082,28 @@ fields:
     (since last assessment), how many times have you seen any other kind or counselor
     or social worker?
   original_name: u9
-- module: Utilization of Services
+- section: Utilization of Services
   name: counselor_visits_in_person
   title: 'Counselor/social worker: Number of in-person visits'
   type: integer
   description: "[...did you physically visit the program (counselor/social worker)?]
     How many of these times did you..."
   original_name: u9a
-- module: Utilization of Services
+- section: Utilization of Services
   name: counselor_visits_online
   title: 'Counselor/social worker: Number of online visits'
   type: integer
   description: "...did you participate online (phone, computer, or tablet; with a
     counselor/social worker)?"
   original_name: u9b
-- module: Utilization of Services
+- section: Utilization of Services
   name: healthcare_expense
   title: Healthcare cost
   type: number
   description: In the past xx days (since last assessment), how much money have you
     spent on all healthcare (e.g., copayments or prescriptions)?
   original_name: u13
-- module: Utilization of Services
+- section: Utilization of Services
   name: received_sud_tx
   title: Substance use treatment
   type: boolean
@@ -1114,7 +1114,7 @@ fields:
   falseValues:
   - 'No'
   original_name: u14
-- module: Utilization of Services
+- section: Utilization of Services
   name: sud_tx_organized
   title: 'Substance use tx provider:  Well-organized'
   type: string
@@ -1130,7 +1130,7 @@ fields:
     - Somewhat disagree
     - Strongly disagree
   original_name: u14a
-- module: Utilization of Services
+- section: Utilization of Services
   name: sud_tx_satisfied
   title: 'Substance use tx provider:  Satisfaction'
   type: string
@@ -1146,7 +1146,7 @@ fields:
     - Somewhat disagree
     - Strongly disagree
   original_name: u14b
-- module: Utilization of Services
+- section: Utilization of Services
   name: sud_tx_efficient
   title: 'Substance use tx provider:  Efficient staff'
   type: string
@@ -1162,7 +1162,7 @@ fields:
     - Somewhat disagree
     - Strongly disagree
   original_name: u14c
-- module: Utilization of Services
+- section: Utilization of Services
   name: sud_tx_personal
   title: 'Substance use tx provider:  Personal counseling'
   type: string
@@ -1178,7 +1178,7 @@ fields:
     - Somewhat disagree
     - Strongly disagree
   original_name: u14d
-- module: Utilization of Services
+- section: Utilization of Services
   name: sud_tx_moud
   title: 'Substance use tx provider:  Medication assistance for opioid use'
   type: string
@@ -1194,7 +1194,7 @@ fields:
     - Somewhat disagree
     - Strongly disagree
   original_name: u14e
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: oud_tx_not_appropriate
   title: Not candidate for OUD treatment
   type: boolean
@@ -1205,7 +1205,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m1
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_meds
   title: 'Preferred type of OUD treatment:  OUD medication'
   type: boolean
@@ -1217,7 +1217,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_meds
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_detox
   title: 'Preferred type of OUD treatment:  Detox'
   type: boolean
@@ -1228,7 +1228,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_detox
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_op
   title: 'Preferred type of OUD treatment:  Outpatient counseling'
   type: boolean
@@ -1240,7 +1240,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_outpt_counsel
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_iop
   title: 'Preferred type of OUD treatment:  Intensive outpatient'
   type: boolean
@@ -1252,7 +1252,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_outpt_intensive
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_residential
   title: 'Preferred type of OUD treatment:  Residential treatment'
   type: boolean
@@ -1264,7 +1264,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_residential
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_other_tx
   title: 'Preferred type of OUD treatment:  Other treatment'
   type: boolean
@@ -1275,7 +1275,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_other
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_other_specify
   title: 'Preferred type of OUD treatment:  Other treatment specified'
   type: boolean
@@ -1287,7 +1287,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_other_specify
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_no_treatment
   title: 'Preferred type of OUD treatment:  No treatment'
   type: boolean
@@ -1298,7 +1298,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_none
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_oud_dk
   title: 'Preferred type of OUD treatment:  Don''t know or no preference'
   type: boolean
@@ -1310,7 +1310,7 @@ fields:
   falseValues:
   - 'No'
   original_name: m2_dont_know
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_moud_type
   title: Preferred OUD medication
   type: string
@@ -1324,7 +1324,7 @@ fields:
     - Naltrexone/Vivitrol
     - Don't know/No preference
   original_name: m3
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_which_bup
   title: Type of buprenorphine preferred
   type: string
@@ -1338,7 +1338,7 @@ fields:
     - I would prefer to receive the 6-month buprenorphine implant
     - Don't know/No preference
   original_name: m4
-- module: Treatment Preferences
+- section: Treatment Preferences
   name: prefer_which_naloxone
   title: Type of naltrexone preferred
   type: string
@@ -1349,7 +1349,7 @@ fields:
     - I would prefer to receive monthly naltrexone injections (Vivitrol)
     - Don't know/No preference
   original_name: m5
-- module: Demographics
+- section: Demographics
   name: household_people
   title: People in household
   type: integer
@@ -1362,7 +1362,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o3
-- module: Demographics
+- section: Demographics
   name: household_under_18
   title: People under 18 years old in household
   type: integer
@@ -1375,7 +1375,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o4
-- module: Demographics
+- section: Demographics
   name: household_income
   title: Total household income
   type: number
@@ -1390,7 +1390,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o5
-- module: Demographics
+- section: Demographics
   name: household_income_legal
   title: Total household income from legal sources
   type: string
@@ -1413,7 +1413,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o6
-- module: Demographics
+- section: Demographics
   name: household_public_assist_any
   title: Public assistance for household
   type: boolean
@@ -1433,7 +1433,7 @@ fields:
   notes: If No, then skip to d7e1. The demographics core measure section was split
     between data models for demographic subsections collected only at baseline (i.e.,
     d1 - d6) and all time points (d7 - d11; o7
-- module: Demographics
+- section: Demographics
   name: household_public_assist_dollars
   title: Total household money from public assistance
   type: number
@@ -1448,7 +1448,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o8
-- module: Demographics
+- section: Demographics
   name: household_nonemploy_any
   title: Other non-employmnet income sources
   type: string
@@ -1463,7 +1463,7 @@ fields:
   notes: If No, [GO TO D7f1] The demographics core measure section was split between
     data models for demographic subsections collected only at baseline (i.e., d1 -
     d6) and all time points (d7 - d11; o9
-- module: Demographics
+- section: Demographics
   name: household_nonemploy_dollars
   title: Total household money from other non-employment income sources
   type: number
@@ -1478,7 +1478,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o10
-- module: Demographics
+- section: Demographics
   name: household_income_illegal_any
   title: Non-employment income with risk of legal or other trouble
   type: boolean
@@ -1497,7 +1497,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o11
-- module: Demographics
+- section: Demographics
   name: household_income_illegal_dollars
   title: Total household money with risk of causing  legal or other trouble activities
   type: number
@@ -1512,7 +1512,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o12
-- module: Demographics
+- section: Demographics
   name: current_work_school
   title: Current school or work situation description
   type: string
@@ -1542,7 +1542,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o13
-- module: Demographics
+- section: Demographics
   name: work_days
   title: Number of days worked
   type: integer
@@ -1552,7 +1552,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o14
-- module: Demographics
+- section: Demographics
   name: work_typical_days_week
   title: Days per week worked
   type: integer
@@ -1562,7 +1562,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o15
-- module: Demographics
+- section: Demographics
   name: work_hours_week
   title: Hours per week worked
   type: integer
@@ -1572,7 +1572,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o16
-- module: Demographics
+- section: Demographics
   name: work_hourly_wage
   title: Hourly rate
   type: number
@@ -1583,7 +1583,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o17
-- module: Demographics
+- section: Demographics
   name: work_health_insurance
   title: Health insurance from work
   type: boolean
@@ -1597,7 +1597,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o18
-- module: Demographics
+- section: Demographics
   name: work_paid_time_off
   title: Paid time off from work
   type: boolean
@@ -1611,7 +1611,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o19
-- module: Demographics
+- section: Demographics
   name: work_pension
   title: Benefit or pension plan from work
   type: boolean
@@ -1625,7 +1625,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o20
-- module: Demographics
+- section: Demographics
   name: work_retirement_plan
   title: Retirement plan from work
   type: boolean
@@ -1640,7 +1640,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o21
-- module: Demographics
+- section: Demographics
   name: work_occupation
   title: Occupation
   type: string
@@ -1649,7 +1649,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o22
-- module: Demographics
+- section: Demographics
   name: have_health_insurance
   title: Currently covered by health insurance
   type: boolean
@@ -1663,7 +1663,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o23
-- module: Demographics
+- section: Demographics
   name: insured_private
   title: Private health insurance plan coverage
   type: boolean
@@ -1680,7 +1680,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o23
-- module: Demographics
+- section: Demographics
   name: insured_medicare
   title: Medicare plan coverage
   type: boolean
@@ -1697,7 +1697,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o24
-- module: Demographics
+- section: Demographics
   name: insured_medigap
   title: Medigap plan coverage
   type: boolean
@@ -1714,7 +1714,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o25
-- module: Demographics
+- section: Demographics
   name: insured_medicaid
   title: Medicaid plan coverage
   type: boolean
@@ -1732,7 +1732,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o26
-- module: Demographics
+- section: Demographics
   name: insured_chip
   title: Children's Health Insurance coverage
   type: boolean
@@ -1750,7 +1750,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o27
-- module: Demographics
+- section: Demographics
   name: insured_military
   title: Military plan coverage
   type: boolean
@@ -1768,7 +1768,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o28
-- module: Demographics
+- section: Demographics
   name: insured_indian
   title: Indian Health Service coverage
   type: boolean
@@ -1785,7 +1785,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o29
-- module: Demographics
+- section: Demographics
   name: insured_state
   title: State health coverage
   type: boolean
@@ -1803,7 +1803,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o30
-- module: Demographics
+- section: Demographics
   name: insured_other_gov
   title: Other government coverage
   type: boolean
@@ -1820,7 +1820,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o31
-- module: Demographics
+- section: Demographics
   name: insured_single_service
   title: Single service coverage
   type: boolean
@@ -1838,7 +1838,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o32
-- module: Demographics
+- section: Demographics
   name: insured_dont_know
   title: Don't know about coverage
   type: boolean
@@ -1855,7 +1855,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o33
-- module: Demographics
+- section: Demographics
   name: days_uninsured
   title: Days uninsured
   type: integer
@@ -1865,7 +1865,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o34
-- module: Demographics
+- section: Demographics
   name: days_self_help
   title: Number of days at self help group
   type: integer
@@ -1876,7 +1876,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o35
-- module: Demographics
+- section: Demographics
   name: days_drugfree_activity
   title: Number of days at non-alcoholic, structured activities
   type: integer
@@ -1887,7 +1887,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o36
-- module: Demographics
+- section: Demographics
   name: days_homeless
   title: Number of days being homeless
   type: integer
@@ -1898,7 +1898,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o37
-- module: Demographics
+- section: Demographics
   name: days_shelter
   title: Number of days in homeless shelter
   type: integer
@@ -1909,7 +1909,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o38
-- module: Demographics
+- section: Demographics
   name: days_household_alcohol
   title: Number of days in household with alcohol use
   type: integer
@@ -1920,7 +1920,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o39
-- module: Demographics
+- section: Demographics
   name: days_household_drug
   title: Number of days in household with drug use
   type: integer
@@ -1930,7 +1930,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o40
-- module: Demographics
+- section: Demographics
   name: days_activities_substance_use
   title: Number of days of formal activities with alcohol
   type: integer
@@ -1941,7 +1941,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o41
-- module: Demographics
+- section: Demographics
   name: days_family_trouble
   title: Number of days of home or family trouble
   type: integer
@@ -1952,7 +1952,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o42
-- module: Demographics
+- section: Demographics
   name: days_arguments
   title: Number of days of  abusive behavior in arguments
   type: integer
@@ -1964,7 +1964,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o43
-- module: Demographics
+- section: Demographics
   name: days_abused
   title: Number of days being physically, emotionally, sexually abused
   type: integer
@@ -1975,7 +1975,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o44
-- module: Demographics
+- section: Demographics
   name: narcan_received
   title: Received Narcan kit
   type: boolean
@@ -1992,7 +1992,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o45
-- module: Demographics
+- section: Demographics
   name: narcan_used
   title: Used Narcan Kit
   type: boolean
@@ -2006,7 +2006,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o46
-- module: Demographics
+- section: Demographics
   name: narcan_refilled
   title: Refilled Narcan Kit
   type: boolean
@@ -2020,7 +2020,7 @@ fields:
   notes: The demographics core measure section was split between data models for demographic
     subsections collected only at baseline (i.e., d1 - d6) and all time points (d7
     - d11; o47
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: difficulty_chores
   title: Difficulty with chores and house keeping
   type: string
@@ -2034,7 +2034,7 @@ fields:
     - With much difficulty
     - Unable to do
   original_name: p1a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: difficulty_stairs
   title: Difficulty using stairs
   type: string
@@ -2048,7 +2048,7 @@ fields:
     - With much difficulty
     - Unable to do
   original_name: p1b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: difficulty_walking
   title: Difficulty walking
   type: string
@@ -2062,7 +2062,7 @@ fields:
     - With much difficulty
     - Unable to do
   original_name: p1c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: difficulty_traveling
   title: Difficulty traveling
   type: string
@@ -2076,7 +2076,7 @@ fields:
     - With much difficulty
     - Unable to do
   original_name: p1d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: trouble_with_leisure
   title: Trouble with Leisure activities with others
   type: string
@@ -2090,7 +2090,7 @@ fields:
     - Often
     - Always
   original_name: p2a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: trouble_with_family
   title: Trouble with family activities
   type: string
@@ -2104,7 +2104,7 @@ fields:
     - Often
     - Always
   original_name: p2b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: trouble_with_work
   title: Trouble with work
   type: string
@@ -2118,7 +2118,7 @@ fields:
     - Often
     - Always
   original_name: p2c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: trouble_with_activities
   title: Trouble with activities with friends
   type: string
@@ -2132,7 +2132,7 @@ fields:
     - Often
     - Always
   original_name: p2d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_fearful
   title: Feeling fearful
   type: string
@@ -2145,7 +2145,7 @@ fields:
     - Often
     - Always
   original_name: p3a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_anxiety
   title: Feeling hard to focus on anything other than anxiety
   type: string
@@ -2159,7 +2159,7 @@ fields:
     - Often
     - Always
   original_name: p3b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_worried
   title: Feeling overwhelming worry
   type: string
@@ -2172,7 +2172,7 @@ fields:
     - Often
     - Always
   original_name: p3c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_uneasy
   title: Feeling uneasy
   type: string
@@ -2185,7 +2185,7 @@ fields:
     - Often
     - Always
   original_name: p3d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_worthless
   title: Feeling worthless
   type: string
@@ -2198,7 +2198,7 @@ fields:
     - Often
     - Always
   original_name: p4a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_helpless
   title: Feeling helpless
   type: string
@@ -2211,7 +2211,7 @@ fields:
     - Often
     - Always
   original_name: p4b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_depressed
   title: Feeling depressed
   type: string
@@ -2224,7 +2224,7 @@ fields:
     - Often
     - Always
   original_name: p4c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_hopeless
   title: Feeling hopeless
   type: string
@@ -2237,7 +2237,7 @@ fields:
     - Often
     - Always
   original_name: p4d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_fatigued
   title: Feeling fatigued
   type: string
@@ -2250,7 +2250,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p5a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_tired
   title: Trouble starting things because tired
   type: string
@@ -2264,7 +2264,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p5b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: past_week_rundown
   title: Feeling run-down
   type: string
@@ -2277,7 +2277,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p5c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: fatigue_level
   title: Fatigue level
   type: string
@@ -2290,7 +2290,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p5d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: sleep_quality
   title: Sleep quality
   type: string
@@ -2303,7 +2303,7 @@ fields:
     - Good
     - Very good
   original_name: p6a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: sleep_refreshing
   title: Refreshing sleep
   type: string
@@ -2316,7 +2316,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p6b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: sleep_problems
   title: Sleep problems
   type: string
@@ -2329,7 +2329,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p6c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: sleep_difficulty
   title: Difficulty falling asleep
   type: string
@@ -2342,7 +2342,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p6d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: can_concentrate
   title: Concentration
   type: string
@@ -2355,7 +2355,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p7a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: can_remember
   title: Remembering things
   type: string
@@ -2369,7 +2369,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p7b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: pain_daily_activity
   title: Pain interference with day to day activity
   type: string
@@ -2383,7 +2383,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p8a
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: pain_work_around_house
   title: Pain inteference with home work
   type: string
@@ -2397,7 +2397,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p8b
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: pain_social_activity
   title: Pain interference with social activities
   type: string
@@ -2411,7 +2411,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p8c
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: pain_household_chores
   title: Pain interference with household chores
   type: string
@@ -2425,7 +2425,7 @@ fields:
     - Quite a bit
     - Very much
   original_name: p8d
-- module: PROMIS 29+2/ PROPr
+- section: PROMIS 29+2/ PROPr
   name: pain_intensity
   title: Pain intensity rating
   type: integer
@@ -2435,7 +2435,7 @@ fields:
   original_name: p9
   constraints:
     maximum: 10
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_multiple_partners
   title: Multiple sex partners
   type: string
@@ -2455,7 +2455,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_unprotected_sex
   title: Unprotected sex
   type: string
@@ -2476,7 +2476,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_sex_intoxicated
   title: Alcohol and drug intoxication
   type: string
@@ -2496,7 +2496,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_injection_drug
   title: Drug injection with needle
   type: string
@@ -2516,7 +2516,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_attacked_weapon
   title: Attacked with weapon
   type: string
@@ -2536,7 +2536,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_physical_abuse
   title: Physical abuse
   type: string
@@ -2556,7 +2556,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_sex_abuse
   title: Sexually abused
   type: string
@@ -2577,7 +2577,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_emotional_abuse
   title: Emotionally abused
   type: string
@@ -2597,7 +2597,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_ongoing_abuse
   title: Physically, sexually, or emotionally abused
   type: string
@@ -2617,7 +2617,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_afraid_abuse
   title: Afraid for life or serious injury from abuse
   type: string
@@ -2637,7 +2637,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_distressed_past
   title: Distressed/upset about past
   type: string
@@ -2657,7 +2657,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: last_time_suicidal
   title: Suicidal thoughts
   type: string
@@ -2677,7 +2677,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_hiv
   title: HIV/AIDS
   type: boolean
@@ -2692,7 +2692,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_hcv
   title: Hepatitis C
   type: boolean
@@ -2706,7 +2706,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_hepb
   title: Hepatitis B
   type: boolean
@@ -2720,7 +2720,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_std
   title: Other sexually transmitted diseases
   type: boolean
@@ -2735,7 +2735,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_tb
   title: Tuberculosis
   type: boolean
@@ -2750,7 +2750,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: ever_dx_covid
   title: COVID
   type: boolean
@@ -2765,7 +2765,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_hiv
   title: First diagnosis of HIV/AIDS
   type: string
@@ -2785,7 +2785,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_hcv
   title: First diagnosis of Hepatitis C
   type: string
@@ -2804,7 +2804,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_hepb
   title: First diagnosis of Hepatitis B
   type: string
@@ -2823,7 +2823,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_std
   title: First diagnosis of other STDs
   type: string
@@ -2843,7 +2843,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_tb
   title: First diagnosis of Tuberculosis
   type: string
@@ -2862,7 +2862,7 @@ fields:
     CONFIDENTIALITY OF INTERVIEW AND SECURITY PROCEDURES TO PROTECT DATA AND THAT
     THERE ARE NO ADVERSE CONSEQUENCES FOR PARTICIPATION IN SURVEY/INTERVIEW (CONSISTENT
     WITH HUB CONSENT FORMS)'
-- module: Risk of Harms and Consequences
+- section: Risk of Harms and Consequences
   name: first_dx_covid
   title: First diagnosis of COVID
   type: string

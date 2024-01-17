@@ -1,4 +1,4 @@
-name,title,type,description,trueValues,falseValues,constraints.enum,module,original_name,constraints.required,constraints.maxLength,constraints.pattern,format,notes
+name,title,type,description,trueValues,falseValues,constraints.enum,section,original_name,constraints.required,constraints.maxLength,constraints.pattern,format,notes
 jdc_person_id,JCOIN data commons person identifier,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,,,,Record and linkage,jdc_person_id,True,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],,
 quarter_enrolled,Quarter Enrolled,string,The financial quarter and year of enrollment,,,,Enrollment,quarter_enrolled,True,6,[0-9][0-9][0-9][0-9]Q[0-9],,
 state_of_site_enrollment,State of Site For Enrollment,string,The U.S. State abbreviation of the site where client (participant) was initially enrolled,,,,Enrollment,state_of_site_enrollment,True,2,[A-Z][A-Z],,
