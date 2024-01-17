@@ -3,7 +3,7 @@ from setuptools import setup,find_namespace_packages
 setup(
     name='core_measures',
     install_requires=[
-        "healdata-utils==0.1.7",
+        "healdata-utils",
         "streamlit-aggrid",
         "streamlit",
         "frictionless==4.40.8",
