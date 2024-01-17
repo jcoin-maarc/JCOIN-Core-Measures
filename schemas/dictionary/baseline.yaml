@@ -207,10 +207,29 @@ fields:
   constraints:
     required: true
 - section: Demographics
+  name: race
+  title: Race
+  type: string
+  description: | 
+    Racial category derived from the individual racial category fields.
+      - Exactly one racial category field selected = title of racial category
+      - Two or more selected = Multiracial 
+  constraints:
+    required: true
+    enum: 
+    - White
+    - Black or African American
+    - American Indian or Alaska Native
+    - Asian
+    - Native Hawaiian or Other Pacific Islander
+    - Some other race
+    - Multiracial
+  original_name: d3
+- section: Demographics
   name: sex_orient_category
   title: Sexual orientation
   type: string
-  description: 'Sexual orientation:  Do you think of yourself asâ€¦'
+  description: 'Sexual orientation:  Do you think of yourself as...'
   constraints:
     enum:
     - Straight or heterosexual
@@ -223,7 +242,7 @@ fields:
   name: sex_orient_other
   title: 'Sexual orientation:  Other specified'
   type: string
-  description: 'Sexual orientation:  Do you think of yourself asâ€¦'
+  description: 'Sexual orientation:  Do you think of yourself as...'
   original_name: d4c_specify_other
 - section: Demographics
   name: ever_pregnant
