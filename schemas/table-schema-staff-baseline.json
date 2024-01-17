@@ -1,5 +1,5 @@
 {
-    "title":"Staff participants: Baseline measures",
+    "title": "Staff participants: Baseline measures",
     "description": "Measures collected before the start of the study for staff participants (most of these measures overlap with Client pariticpants: Baseline schema). As many of these measures are collected at 'baseline' it is currently called 'baseline.' However, this is a slight misnomer as, for example, current_study_status is dynamically updated.",
     "fields": [
         {
@@ -224,6 +224,26 @@
             "constraints": {
                 "maxLength": 80
             }
+        },
+        {
+            "section": "Demographics",
+            "name": "race",
+            "title": "Race",
+            "type": "string",
+            "description": "Racial category derived from the individual racial category fields.\n  - Exactly one racial category field selected = title of racial category\n  - Two or more selected = Multiracial \n",
+            "constraints": {
+                "required": true,
+                "enum": [
+                    "White",
+                    "Black or African American",
+                    "American Indian or Alaska Native",
+                    "Asian",
+                    "Native Hawaiian or Other Pacific Islander",
+                    "Some other race",
+                    "Multiracial"
+                ]
+            },
+            "original_name": "d3"
         },
         {
             "section": "Demographics",
