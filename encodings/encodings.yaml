@@ -24,6 +24,13 @@ race_other:
 race_white:
   0: 'No'
   1: 'Yes'
+race:
+  1: White
+  2: Black or African American
+  3: American Indian or Alaska Native
+  4: Asian
+  5: Native Hawaiian or Other Pacific Islander
+  6: Some other race
 gender_id_condensed:
   1: Male
   2: Female
