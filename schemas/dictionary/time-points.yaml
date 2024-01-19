@@ -16,7 +16,9 @@ fields:
   title: Visit Number
   type: integer
   description: A number that identifies the visit or timepoint of data collection
-    (baseline=1 and each subsequent follow up is 2 or greater).
+    (baseline=1 and each subsequent follow up is 2 or greater). The main purpose of this
+    field is to provide a unique identifier within each participant. See `visit_month` for 
+    a label of the visit.
   original_name: visit_number
   constraints:
     required: true
