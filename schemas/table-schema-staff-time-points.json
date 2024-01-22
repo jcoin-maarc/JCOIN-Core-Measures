@@ -8,10 +8,12 @@
             "title": "JCOIN data commons person identifier",
             "type": "string",
             "description": "The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).",
-            "original_name": "jdc_person_id",
             "constraints": {
                 "required": true,
                 "pattern": "[A-Z][0-9]{3}-[0-9]{4}"
+            },
+            "custom": {
+                "jcoin:original_name": "jdc_person_id"
             }
         },
         {
@@ -20,10 +22,12 @@
             "title": "Visit Number",
             "type": "integer",
             "description": "A number that identifies the visit (survey administration event) or timepoint of data collection (baseline=1 and each subsequent follow up is 2 or greater).",
-            "original_name": "visit_number",
             "constraints": {
                 "required": true,
                 "minimum": 1
+            },
+            "custom": {
+                "jcoin:original_name": "visit_number"
             }
         },
         {
@@ -32,11 +36,13 @@
             "title": "Visit Date (shifted)",
             "type": "date",
             "description": "This is the date of the visit (ie time point of survey administration) after shifting by a random number 182 days before or 182 days after the actual visit date. The shifting is done on the individual level which retains the time interval between visits (and allows calculations of days between time points or other date fields which are shifted by the same number of days). To avoid issues with type conversion errors, the date is of type integer",
-            "original_name": "shifted_visit_dt",
             "constraints": {
                 "required": true
             },
-            "format": "%Y%m%d"
+            "format": "%Y%m%d",
+            "custom": {
+                "jcoin:original_name": "shifted_visit_dt"
+            }
         },
         {
             "section": "Record and linkage",
@@ -51,7 +57,9 @@
                 ],
                 "required": true
             },
-            "original_name": "visit_type"
+            "custom": {
+                "jcoin:original_name": "visit_type"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -68,8 +76,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or1",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-7"
+            "custom": {
+                "jcoin:original_name": "or1",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-7"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -86,8 +96,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or2",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-8"
+            "custom": {
+                "jcoin:original_name": "or2",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-8"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -104,8 +116,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or3",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-9"
+            "custom": {
+                "jcoin:original_name": "or3",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-9"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -122,8 +136,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or4",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-10"
+            "custom": {
+                "jcoin:original_name": "or4",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-10"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -140,8 +156,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or5",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-11"
+            "custom": {
+                "jcoin:original_name": "or5",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-11"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -158,8 +176,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or6",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-12"
+            "custom": {
+                "jcoin:original_name": "or6",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-12"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -176,8 +196,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or7",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-13"
+            "custom": {
+                "jcoin:original_name": "or7",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-13"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -194,8 +216,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or8",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-14"
+            "custom": {
+                "jcoin:original_name": "or8",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-14"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -212,8 +236,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or9",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-15"
+            "custom": {
+                "jcoin:original_name": "or9",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-15"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -230,8 +256,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or10",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-16"
+            "custom": {
+                "jcoin:original_name": "or10",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-16"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -248,8 +276,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or11",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-17"
+            "custom": {
+                "jcoin:original_name": "or11",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-17"
+            }
         },
         {
             "section": "Organizational readiness for implementing change (ORIC)",
@@ -266,8 +296,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "or12",
-            "source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-18"
+            "custom": {
+                "jcoin:original_name": "or12",
+                "jcoin:source": "Shea et al., 2014  - Organizational Readiness for Implementing Change: A psychometric assessment of a \r\nnew measure.  Implementation Science 9:7. https://doi.org/10.1186/1748-5908-9-18"
+            }
         },
         {
             "section": "Organizational Climate: Stress",
@@ -284,8 +316,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "oc1",
-            "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            "custom": {
+                "jcoin:original_name": "oc1",
+                "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            }
         },
         {
             "section": "Organizational Climate: Stress",
@@ -302,8 +336,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "oc2",
-            "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            "custom": {
+                "jcoin:original_name": "oc2",
+                "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            }
         },
         {
             "section": "Organizational Climate: Stress",
@@ -320,8 +356,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "oc3",
-            "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            "custom": {
+                "jcoin:original_name": "oc3",
+                "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            }
         },
         {
             "section": "Organizational Climate: Stress",
@@ -338,8 +376,10 @@
                     "5 Agree"
                 ]
             },
-            "original_name": "oc4",
-            "source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            "custom": {
+                "jcoin:original_name": "oc4",
+                "jcoin:source": "TCU Survey of Organizational Functioning (Stress Measure)  - source document available at: http://ibr.tcu.edu/wp-content/uploads/2013/06/SOF-sg.pdf"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -358,7 +398,9 @@
                     "7 Very Effective"
                 ]
             },
-            "original_name": "sm1"
+            "custom": {
+                "jcoin:original_name": "sm1"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -377,7 +419,9 @@
                     "7 Very Effective"
                 ]
             },
-            "original_name": "sm2"
+            "custom": {
+                "jcoin:original_name": "sm2"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -396,7 +440,9 @@
                     "7 Very Effective"
                 ]
             },
-            "original_name": "sm3"
+            "custom": {
+                "jcoin:original_name": "sm3"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -415,7 +461,9 @@
                     "7 Very Effective"
                 ]
             },
-            "original_name": "sm4"
+            "custom": {
+                "jcoin:original_name": "sm4"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -434,7 +482,9 @@
                     "7 Very Effective"
                 ]
             },
-            "original_name": "sm5"
+            "custom": {
+                "jcoin:original_name": "sm5"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -453,7 +503,9 @@
                     "7 Very Acceptable"
                 ]
             },
-            "original_name": "sm6"
+            "custom": {
+                "jcoin:original_name": "sm6"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -472,7 +524,9 @@
                     "7 Very Acceptable"
                 ]
             },
-            "original_name": "sm7"
+            "custom": {
+                "jcoin:original_name": "sm7"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -491,7 +545,9 @@
                     "7 Very Acceptable"
                 ]
             },
-            "original_name": "sm8"
+            "custom": {
+                "jcoin:original_name": "sm8"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -510,7 +566,9 @@
                     "7 Very Acceptable"
                 ]
             },
-            "original_name": "sm9"
+            "custom": {
+                "jcoin:original_name": "sm9"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -529,7 +587,9 @@
                     "7 Very Acceptable"
                 ]
             },
-            "original_name": "sm10"
+            "custom": {
+                "jcoin:original_name": "sm10"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -548,7 +608,9 @@
                     "7 Extensive Training"
                 ]
             },
-            "original_name": "sm11"
+            "custom": {
+                "jcoin:original_name": "sm11"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -567,7 +629,9 @@
                     "7 Extensive Training"
                 ]
             },
-            "original_name": "sm12"
+            "custom": {
+                "jcoin:original_name": "sm12"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -586,7 +650,9 @@
                     "7 Extensive Training"
                 ]
             },
-            "original_name": "sm13"
+            "custom": {
+                "jcoin:original_name": "sm13"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -605,7 +671,9 @@
                     "7 Extensive Training"
                 ]
             },
-            "original_name": "sm14"
+            "custom": {
+                "jcoin:original_name": "sm14"
+            }
         },
         {
             "section": "Staff Attitudes Toward MOUD",
@@ -624,7 +692,9 @@
                     "7 Extensive Training"
                 ]
             },
-            "original_name": "sm15"
+            "custom": {
+                "jcoin:original_name": "sm15"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -641,7 +711,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im1"
+            "custom": {
+                "jcoin:original_name": "im1"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -658,7 +730,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im2"
+            "custom": {
+                "jcoin:original_name": "im2"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -675,7 +749,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im3"
+            "custom": {
+                "jcoin:original_name": "im3"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -692,7 +768,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im4"
+            "custom": {
+                "jcoin:original_name": "im4"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -709,7 +787,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im5"
+            "custom": {
+                "jcoin:original_name": "im5"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -726,7 +806,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im6"
+            "custom": {
+                "jcoin:original_name": "im6"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -743,7 +825,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im7"
+            "custom": {
+                "jcoin:original_name": "im7"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -760,7 +844,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im8"
+            "custom": {
+                "jcoin:original_name": "im8"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -777,7 +863,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im9"
+            "custom": {
+                "jcoin:original_name": "im9"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -794,7 +882,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im10"
+            "custom": {
+                "jcoin:original_name": "im10"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -811,7 +901,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im11"
+            "custom": {
+                "jcoin:original_name": "im11"
+            }
         },
         {
             "section": "Implementation Outcome Measures",
@@ -828,7 +920,9 @@
                     "5 Completely agree"
                 ]
             },
-            "original_name": "im12"
+            "custom": {
+                "jcoin:original_name": "im12"
+            }
         }
     ],
     "primaryKey": [
