@@ -16,6 +16,13 @@ fields:
       pattern: '[A-Z][0-9]{3}-[0-9]{4}'
     custom:
       jcoin:original_name: jdc_person_id
+  - section: Record and linkage
+    name: hub_id
+    title: Hub identifier
+    type: integer
+    description: Randomly generated integer for each unique hub.
+    constraints:
+      required: true
   - section: Enrollment
     name: quarter_enrolled
     title: Quarter Enrolled
