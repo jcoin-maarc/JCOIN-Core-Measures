@@ -1,4 +1,5 @@
 section,name,title,type,description,trueValues,falseValues,constraints.enum,constraints.required,constraints.maxLength,constraints.pattern,custom.jcoin:original_name,custom.jcoin:notes
+Record and linkage,hub_id,Hub identifier,integer,Randomly generated integer for each unique hub.,,,,True,,,,
 Record and linkage,jdc_person_id,JCOIN data commons person identifier,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,,,,True,9,[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9],jdc_person_id,
 Enrollment,quarter_enrolled,Quarter Enrolled,string,The financial quarter and year of enrollment,,,,True,6,[0-9][0-9][0-9][0-9]Q[0-9],quarter_enrolled,
 Enrollment,state_of_site_enrollment,State of Site For Enrollment,string,The U.S. State abbreviation of the site where client (participant) was initially enrolled,,,,True,2,[A-Z][A-Z],state_of_site_enrollment,

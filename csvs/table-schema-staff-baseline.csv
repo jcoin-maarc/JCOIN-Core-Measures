@@ -1,5 +1,6 @@
 section,name,title,type,description,trueValues,falseValues,constraints.enum,constraints.required,constraints.pattern,custom.jcoin:original_name,constraints.maxLength,custom.jcoin:notes
 Record and linkage,jdc_person_id,JCOIN data commons person identifier,string,The generated unique identifier specific to the JCOIN Data Commons for a given individual (client or staff).,,,,True,[A-Z][0-9]{3}-[0-9]{4},jdc_person_id,,
+Record and linkage,hub_id,Hub identifier,integer,Randomly generated integer for each unique hub.,,,,True,,,,
 Enrollment,quarter_enrolled,Quarter Enrolled,string,The financial quarter and year of enrollment,,,,True,[0-9][0-9][0-9][0-9]Q[0-9],quarter_enrolled,6,
 Enrollment,staff_type,Staff Type,string,"The type of staff (Court Coordinator, Judge, Law Enforcement, Lawyer, Peer, Treatment)",,,,,,staff_type,80,
 Enrollment,current_study_status,Current Study Status,string,A summary of the current status of staff member's involvement in study,,,On study|Dropped out|Withdrawn by investigator|Completed study|Unknown,True,,current_study_status,,
