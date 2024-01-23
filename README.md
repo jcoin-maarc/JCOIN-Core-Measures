@@ -55,7 +55,7 @@ The public repository where data dictionaries are stored is located [here](https
 
 > Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
 
-## Version history 
+## Schema version history 
 - 1.0.0:
     upon putting all variables (besides MOUD follow up measures) into data model
 - 1.1.0: 
@@ -74,3 +74,5 @@ The public repository where data dictionaries are stored is located [here](https
     for ease of interoperatability. 
 - 2.0.1 (5/31/2023)
     Added `visit_month` field.
+- 2.1.0
+    Minor additional annotations; added `hub_id`; incorporated combined race variable
