@@ -4,7 +4,6 @@ setup(
     name='core_measures',
     install_requires=[
         "healdata-utils",
-        "streamlit-aggrid",
         "streamlit",
         "frictionless==4.40.8",
         "xlsxwriter",
@@ -12,9 +11,5 @@ setup(
         
     ],
     package_dir={'': '.'},
-    packages=find_namespace_packages(where='.'),
-    entry_points='''
-        [console_scripts]
-        schemas=core_measures.schemas:cli
-    ''',
+    packages=find_namespace_packages(where='.')
 )

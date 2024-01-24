@@ -1,4 +1,3 @@
-from st_aggrid  import AgGrid,GridOptionsBuilder
 import streamlit as st 
 import pandas as pd 
 from pathlib import Path
@@ -6,22 +5,14 @@ from frictionless import Schema
 from collections.abc import MutableSequence
 import io
 #with a container/tab
-REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/master"
+REPO_DIR = "https://raw.githubusercontent.com/jcoin-maarc/JCOIN-Core-Measures/main"
 
 def load_csv(url_or_path):
     return pd.read_csv(url_or_path)
 
 def load_schema(schema_name):
     return Schema(f"{REPO_DIR}/schemas/{schema_name}.json").to_dict()
-def make_agrid(fieldsdf):
-    options = GridOptionsBuilder.from_dataframe(fieldsdf)
-    options.configure_side_bar()
-    options.configure_selection(selection_mode = 'multiple')
-    selected_table = AgGrid(
-        fieldsdf,
-        gridOptions=options.build()
-    )
-    return selected_table
+
 
 def render_schema_page(fieldsdf,schema,schema_name):
 
