@@ -21,6 +21,11 @@ This project builds data dictionaries (ie schemas) to represent (and build upon)
 The frictionless framework plays a foundational component in our Core Measures, both in building upon the core measures and building core measure data packages. For more information on frictionless standards, [click here](https://specs.frictionlessdata.io/). Specifically, the core measure data dictionary relies heavily on the [Table Schema specification](https://specs.frictionlessdata.io/table-schema).
 
 
+## HEAL variable level metadata (vlmd) specifications
+
+Our schemas were also designed to be compliant with [HEAL data ecosystem vlmd standards](https://github.com/HEAL/heal-metadata-schemas/tree/main/variable-level-metadata-schema). 
+
+
 ## Search tool
 
 To search the complete set of core measures and download a formatted excel version, click here(https://jcoin-maarc.github.io/JCOIN-Core-Measures/search-tool/). This provides a way to explore the most up-to-date data dictionaries and other dataset metadata properties such as missing values, descriptions, keys, etc.
