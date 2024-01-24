@@ -16,7 +16,7 @@ This project builds data dictionaries (ie schemas) to represent (and build upon)
         - note, this may be changed to from "baseline" to "person" in future to account for non-baseline measure in model (current enrollment status)
     2. Person/visit level: measures collected at all timepoints which is called `time-points`
 
-## Frictionless framework
+## Data package standards (Frictionless) framework
 
 The frictionless framework plays a foundational component in our Core Measures, both in building upon the core measures and building core measure data packages. For more information on frictionless standards, [click here](https://specs.frictionlessdata.io/). Specifically, the core measure data dictionary relies heavily on the [Table Schema specification](https://specs.frictionlessdata.io/table-schema).
 
@@ -49,11 +49,7 @@ The public repository where data dictionaries are stored is located [here](https
 
 > NOTE: encodings in this context = value labels (e.g., 1=Male, 2=Female) and not the encoding of a file (e.g., utf-8)
 
-### `app`: contains the multipage streamlit app making the variables and specifications easier to search and discover for harmonization and analysis.
-
-### `docs`: here are the contents of the core measures website page. 
-
-> Currently, the streamlit pages are embedded within the mkdocs for a consistent user-experience across jcoin websites.
+### `app`: contains the streamlit app code making the variables and specifications easier to search and discover for harmonization and analysis.
 
 ## Schema version history 
 - 1.0.0:
