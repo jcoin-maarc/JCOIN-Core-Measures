@@ -34,7 +34,7 @@ st.markdown(f"# {study_name}")
 # schemas = [json.loads(requests.get(schema["download_url"]).content) for schema in read_schema_dir(SCHEMA_DIR)]
 
 # Via local directory
-schemas = [json.loads(path.read_text()) for path in Path(SCHEMA_DIR).glob("*")]
+schemas = [json.loads(path.read_text()) for path in Path(SCHEMA_DIR).glob("*.json")]
 
 ## Download button of all schemas in excel format
 ## TODO: compile from schemas json array
