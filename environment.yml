@@ -1,4 +1,4 @@
-name: streamlit_app
+name: JCOIN_Core_Measures
 dependencies:
   - pip:
     - '.'

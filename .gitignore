@@ -4,6 +4,7 @@ notebooks/frictionless-testing.ipynb
 notebooks/staff-data-dictionary-hacky-generation.ipynb
 site/
 venv/
+.venv/
 
 *egg-info
 *__pycache__*
