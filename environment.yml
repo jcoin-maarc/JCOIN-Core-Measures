@@ -1,4 +1,5 @@
 name: JCOIN_Core_Measures
 dependencies:
+  - pip
   - pip:
     - '.'
