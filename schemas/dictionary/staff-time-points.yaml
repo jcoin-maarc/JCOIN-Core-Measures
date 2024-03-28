@@ -2,17 +2,7 @@ title: 'Staff participants: staff-specific timepoint measures'
 description: Staff specific measures that may be collected at baseline or follow up
   time points.
 fields:
-  - section: Record and linkage
-    name: jdc_person_id
-    title: JCOIN data commons person identifier
-    type: string
-    description: The generated unique identifier specific to the JCOIN Data Commons
-      for a given individual (client or staff).
-    constraints:
-      required: true
-      pattern: '[A-Z][0-9]{3}-[0-9]{4}'
-    custom:
-      jcoin:original_name: jdc_person_id
+  - $ref: "#ref/_definitions/jdc_person_id"
   - section: Record and linkage
     name: visit_number
     title: Visit Number
@@ -25,21 +15,7 @@ fields:
       minimum: 1
     custom:
       jcoin:original_name: visit_number
-  - section: Record and linkage
-    name: shifted_visit_dt
-    title: Visit Date (shifted)
-    type: date
-    description: This is the date of the visit (ie time point of survey administration)
-      after shifting by a random number 182 days before or 182 days after the actual
-      visit date. The shifting is done on the individual level which retains the time
-      interval between visits (and allows calculations of days between time points
-      or other date fields which are shifted by the same number of days). To avoid
-      issues with type conversion errors, the date is of type integer
-    constraints:
-      required: true
-    format: '%Y%m%d'
-    custom:
-      jcoin:original_name: shifted_visit_dt
+  - $ref: "#ref/_definitions/shifted_visit_date"
   - section: Record and linkage
     name: visit_type
     title: Visit Type
@@ -801,8 +777,4 @@ primaryKey:
   - jdc_person_id
   - visit_number
 missingValues:
-  - Don't know
-  - Refused
-  - Left blank
-  - Legitimately skipped
-  - Missing
+  $ref: "#/_definitions/missingValues"

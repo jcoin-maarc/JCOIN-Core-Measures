@@ -5,17 +5,7 @@ description: 'Measures collected before the start of the study for staff partici
   However, this is a slight misnomer as, for example, current_study_status is dynamically
   updated.'
 fields:
-  - section: Record and linkage
-    name: jdc_person_id
-    title: JCOIN data commons person identifier
-    type: string
-    description: The generated unique identifier specific to the JCOIN Data Commons
-      for a given individual (client or staff).
-    constraints:
-      required: true
-      pattern: '[A-Z][0-9]{3}-[0-9]{4}'
-    custom:
-      jcoin:original_name: jdc_person_id
+  - $ref: "#ref/_definitions/jdc_person_id"
   - section: Record and linkage
     name: hub_id
     title: Hub identifier
@@ -333,8 +323,4 @@ fields:
 primaryKey:
   - jdc_person_id
 missingValues:
-  - Don't know
-  - Refused
-  - Left blank
-  - Legitimately skipped
-  - Missing
+  $ref: "#/_definitions/missingValues"

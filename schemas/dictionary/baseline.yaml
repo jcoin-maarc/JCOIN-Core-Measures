@@ -11,18 +11,7 @@ fields:
     description: Randomly generated integer for each unique hub.
     constraints:
       required: true
-  - section: Record and linkage
-    name: jdc_person_id
-    title: JCOIN data commons person identifier
-    type: string
-    description: The generated unique identifier specific to the JCOIN Data Commons
-      for a given individual (client or staff).
-    constraints:
-      required: true
-      maxLength: 9
-      pattern: '[A-Z][0-9][0-9][0-9]-[0-9][0-9][0-9][0-9]'
-    custom:
-      jcoin:original_name: jdc_person_id
+  - $ref: "#ref/_definitions/jdc_person_id"
   - section: Enrollment
     name: quarter_enrolled
     title: Quarter Enrolled
@@ -50,18 +39,22 @@ fields:
     name: current_study_status
     title: Current Study Status
     type: string
-    description: A summary of the current status where client (participant) is in
-      study
+    description: |
+      A summary of the current status where client (participant) is in
+      study. 
     constraints:
       enum:
         - On study
-        - Dropped out
+        - Dropped out/lost to follow up
         - Withdrawn by investigator
+        - Re-incarcerated
+        - Deceased
         - Completed study
         - Unknown
       required: true
     custom:
       jcoin:original_name: current_study_status
+      jcoin:note: Re-incarcerated" = re-incarceration leading to dropout or withdrawal and "Withdrawn by investigator" = withdrawal by investigator for other reasons not listed
   - section: Demographics
     name: age
     title: Age
@@ -436,8 +429,4 @@ fields:
 primaryKey:
   - jdc_person_id
 missingValues:
-  - Don't know
-  - Refused
-  - Left blank
-  - Legitimately skipped
-  - Missing
+  $ref: "#/_definitions/missingValues"
