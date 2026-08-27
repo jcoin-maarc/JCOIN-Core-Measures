@@ -1124,6 +1124,7 @@ name: household_income_legal
     - Currently
     - Currently or prior to jail
     - Prior to jail
+    - 30 days prior to jail
     - 30 days prior to jail if applicable
     - 90 days prior to jail
   jcoin:section: Demographics
@@ -3456,6 +3457,7 @@ name: household_income_legal
   constraints:
     enum:
     - 30 days prior
+    - 30 days prior to jail
     - 90 days prior
     - 90 days prior to jail
   jcoin:section: Utilization of Services
