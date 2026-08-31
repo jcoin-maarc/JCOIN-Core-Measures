@@ -147,6 +147,9 @@ fields:
     - Orally administered by others
     - Other (please describe)
   jcoin:section: Study Information
+  jcoin:skipKey: Other
+  jcoin:skipValues:
+    - admin_method_oth
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM1
@@ -173,6 +176,9 @@ fields:
     - On a computer or tablet
     - Other (please describe)
   jcoin:section: Study Information
+  jcoin:skipKey: Other
+  jcoin:skipValues:
+    - admin_mode_oth
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM2
@@ -199,6 +205,9 @@ fields:
     - Spanish
     - Other (please describe)
   jcoin:section: Study Information
+  jcoin:skipKey: Other
+  jcoin:skipValues:
+    - language_oth
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM3
@@ -301,6 +310,9 @@ fields:
   title: Other problems during interview
   description: What problems prevented a quiet and private environment? Other (please describe)
   jcoin:section: Study Information
+  jcoin:skipKey: Other
+  jcoin:skipValues:
+    - interview_env_oth_desc
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: AM8
@@ -612,6 +624,9 @@ fields:
     - Separated
     - Never married
   jcoin:section: Demographics
+  jcoin:skipKey: Married
+  jcoin:skipValues:
+    - living_as_married
   jcoin:baseline: true
   jcoin:originalName: D5
   jcoin:notes: If Married, skip to D6.
@@ -790,6 +805,9 @@ name: household_income_legal
     household includes people you live with, and with whom you share your income and
     expenses - husband, wife, children, relatives, and others.'
   jcoin:section: Demographics
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - household_public_assist_dollars
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D7d1
@@ -839,6 +857,9 @@ name: household_income_legal
     people you live with, and with whom you share your income and expenses - husband,
     wife, children, relatives, and others.'
   jcoin:section: Demographics
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - household_income_illegal_dollars
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D7e1
@@ -999,6 +1020,16 @@ name: household_income_legal
   description: During the past xx days (since last assessment), on how many days have
     you worked?
   jcoin:section: Demographics
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - work_typical_days_week
+    - work_hours_week
+    - work_hourly_wage
+    - work_health_insurance
+    - work_paid_time_off
+    - work_pension
+    - work_retirement_plan
+    - work_occupation
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D8a
@@ -1140,6 +1171,19 @@ name: household_income_legal
   description: Are you currently covered by health insurance or some other kind of
     health care plan?
   jcoin:section: Demographics
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - insured_private
+    - insured_medicare
+    - insured_medigap
+    - insured_medicaid
+    - insured_chip
+    - insured_military
+    - insured_indian
+    - insured_state
+    - insured_other_gov
+    - insured_single_service
+    - insured_dont_know
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: D9
@@ -1517,6 +1561,10 @@ name: household_income_legal
     - 'Yes'
     - 'n/a not recently incarcerated'
   jcoin:section: Demographics
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - narcan_used
+    - narcan_refilled
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: O3
@@ -1532,6 +1580,9 @@ name: household_income_legal
   description: '[Have you had to use it?] If respondent was in jail/prison during
     the past 3 months but not currently, ask:'
   jcoin:section: Demographics
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - narcan_refilled
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: O3a
@@ -2246,6 +2297,9 @@ name: household_income_legal
   description: '[Human Immunodeficiency Virus, HIV or AIDS?] Were you ever told by
     a doctor or nurse that you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_hiv
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3a
@@ -2276,6 +2330,9 @@ name: household_income_legal
   title: Hepatitis C
   description: '[Hepatitis C? ] Were you ever told by a doctor or nurse that you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_hcv
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3b
@@ -2305,6 +2362,9 @@ name: household_income_legal
   title: Hepatitis B
   description: '[Hepatitis B? ] Were you ever told by a doctor or nurse that you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_hepb
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3c
@@ -2335,6 +2395,9 @@ name: household_income_legal
   description: '[Other sexually transmitted diseases or infections, such as syphilis.]
     Were you ever told by a doctor or nurse that you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_std
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3d
@@ -2366,6 +2429,9 @@ name: household_income_legal
   description: '[Tuberculosis or TB?] Were you ever told by a doctor or nurse that
     you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_tb
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3e
@@ -2396,6 +2462,9 @@ name: household_income_legal
   description: '[Coronavirus 19 or COVID19?] Were you ever told by a doctor or nurse
     that you had...'
   jcoin:section: Risk of Harm and Consequences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - first_dx_covid
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: R3f
@@ -2575,6 +2644,35 @@ name: household_income_legal
     required medical attention] ] During the past xx days (since last assessment),
     how many times did you (CAN CODE 0 IF NEVER ON S2b). . .'
   jcoin:section: Substance Use
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - times_naloxone
+    - who_gave_naloxone_paramed
+    - who_gave_naloxone_firefighter
+    - who_gave_naloxone_police
+    - who_gave_naloxone_er
+    - who_gave_naloxone_spouse
+    - who_gave_naloxone_partner
+    - who_gave_naloxone_parent
+    - who_gave_naloxone_friend
+    - who_gave_naloxone_stranger
+    - who_gave_naloxone_self
+    - who_gave_naloxone_other
+    - who_gave_naloxone_other_desc
+    - drugs_before_od_heroin
+    - drugs_before_od_fentanyl
+    - drugs_before_od_opiods
+    - drugs_before_od_crack
+    - drugs_before_od_meth
+    - drugs_before_od_xanax
+    - drugs_before_od_marijuana
+    - drugs_before_od_alcohol
+    - drugs_before_od_other
+    - drugs_before_od_other_desc
+    - times_ems_after_overdose
+    - times_er_after_overdose
+    - times_hospital_after_overdose
+    - tx_refer_after_overdose
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: S3a
@@ -2585,6 +2683,34 @@ name: household_income_legal
     During the past xx days (since last assessment), how many times did you (CAN CODE
     0 IF NEVER ON S2b). . .'
   jcoin:section: Substance Use
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - who_gave_naloxone_paramed
+    - who_gave_naloxone_firefighter
+    - who_gave_naloxone_police
+    - who_gave_naloxone_er
+    - who_gave_naloxone_spouse
+    - who_gave_naloxone_partner
+    - who_gave_naloxone_parent
+    - who_gave_naloxone_friend
+    - who_gave_naloxone_stranger
+    - who_gave_naloxone_self
+    - who_gave_naloxone_other
+    - who_gave_naloxone_other_desc
+    - drugs_before_od_heroin
+    - drugs_before_od_fentanyl
+    - drugs_before_od_opiods
+    - drugs_before_od_crack
+    - drugs_before_od_meth
+    - drugs_before_od_xanax
+    - drugs_before_od_marijuana
+    - drugs_before_od_alcohol
+    - drugs_before_od_other
+    - drugs_before_od_other_desc
+    - times_ems_after_overdose
+    - times_er_after_overdose
+    - times_hospital_after_overdose
+    - tx_refer_after_overdose
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: S3b
@@ -3217,6 +3343,13 @@ name: household_income_legal
     nurse practitioner, or physician''s assistant)?] During the past xx days (since
     last assessment), how many . . . [Write 0 days if you have not had this experience]'
   jcoin:section: Utilization of Services
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - pc_reason_alc_drugs
+    - pc_reason_mh
+    - pc_reason_physical
+    - pc_reason_other
+    - pc_reason_other_specify
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: U6
@@ -3303,6 +3436,12 @@ name: household_income_legal
     Other than times you already mentioned in <reference to u6>, during the past 3
     months (since last assessment), how many...'
   jcoin:section: Utilization of Services
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - op_tx_days_visited
+    - op_tx_days_online
+    - op_tx_days_foctor
+    - op_tx_days_moud_only
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: U7
@@ -3368,6 +3507,10 @@ name: household_income_legal
     (since last assessment), how many times have you seen a psychiatrist (MD) or psychologist
     (Ph.D., Psy.D)?
   jcoin:section: Utilization of Services
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - psych_visits_in_personb
+    - psych_visits_online
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: U8
@@ -3401,6 +3544,10 @@ name: household_income_legal
     (since last assessment), how many times have you seen any other kind or counselor
     or social worker?
   jcoin:section: Utilization of Services
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - counselor_visits_in_personb
+    - counselor_visits_online
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: U9
@@ -5771,6 +5918,20 @@ name: household_income_legal
   - 'No'
   title: Not a candidate for OUD treatment
   jcoin:section: Treatment Preferences
+  jcoin:skipKey: No
+  jcoin:skipValues:
+    - prefer_oud_meds
+    - prefer_oud_detox
+    - prefer_oud_op
+    - prefer_oud_iop
+    - prefer_oud_residential
+    - prefer_oud_other_tx
+    - prefer_oud_other_specify
+    - prefer_oud_no_treatment
+    - prefer_oud_dk
+    - prefer_moud_type
+    - prefer_which_bup
+    - prefer_which_naloxone
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: M1
@@ -5970,6 +6131,29 @@ name: household_income_legal
   title: Days involved in illegal activities
   description: During the past 90 days prior to entering jail or prison (or since your last assessment), on how many days were you involved in any activities that might get you into trouble or be against the law besides drug use?
   jcoin:section: Justice Involvement
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - times_drug_possession
+    - times_public_drunk
+    - times_dui
+    - times_drug_dealing
+    - times_vandalism
+    - times_stolen_goods
+    - times_forgery
+    - times_shoplifting
+    - times_theft
+    - times_burglary
+    - times_auto_theft
+    - times_carjacking
+    - times_assault
+    - times_robbery
+    - times_aggravated_assault
+    - times_rape
+    - times_homicide
+    - times_arson
+    - times_prostitution
+    - times_other_unlawful
+    - other_unlawful_spec
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J1
@@ -6181,6 +6365,28 @@ name: household_income_legal
   title: Number of times arrested and charged
   description: During the past 90 days prior to entering jail or prison (or since your last assessment), how many times were you arrested and charged?
   jcoin:section: Justice Involvement
+  jcoin:skipKey: 0
+  jcoin:skipValues:
+    - number_arrest_possession
+    - number_arrest_drunk
+    - number_arrest_dui
+    - number_arrest_drug_dealing
+    - number_arrest_vandalism
+    - number_arrest_stolen_goods
+    - number_arrest_forgery
+    - number_arrest_shoplifting
+    - number_arrest_theft
+    - number_arrest_burglary
+    - number_arrest_auto_theft
+    - number_arrest_carjacking
+    - number_arrest_assault
+    - number_arrest_robbery
+    - number_arrest_aggravated
+    - number_arrest_rape
+    - number_arrest_homicide
+    - number_arrest_arson
+    - number_arrest_prostitution
+    - number_arrest_other
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J2
@@ -6425,6 +6631,9 @@ name: household_income_legal
   title: Currently in jail
   description: Are you currently in jail or prison?
   jcoin:section: Justice Involvement
+  jcoin:skipKey: No
+  jcoin:skipValues: 
+    - length_current_incarceration
   jcoin:baseline: true
   jcoin:followup: true
   jcoin:originalName: J3e
