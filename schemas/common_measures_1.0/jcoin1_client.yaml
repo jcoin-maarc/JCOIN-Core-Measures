@@ -738,7 +738,7 @@ fields:
   jcoin:section: Demographics
   jcoin:baseline: true
   jcoin:followup: true
-name: household_income_legal
+- name: household_income_legal
   type: string
   title: Total household income from legal sources
   description: '[During the past 12 months, which of the following is the category
@@ -3652,7 +3652,7 @@ name: household_income_legal
   jcoin:originalName: U15a2
   jcoin:optional: true
   jcoin:skipIf: '(ever_rx_moud == "No") | (intv_while_incarc=="No")'
- - name: dose_pti_daily_bup
+- name: dose_pti_daily_bup
   type: string
   title: 'PTI Dose: Buprenorphine-naloxone or buprenorphine daily sublingual'
   description: 'Dose per day prior to incarceration: Buprenorphine-naloxone or buprenorphine
